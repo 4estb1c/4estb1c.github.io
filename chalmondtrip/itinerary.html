@@ -375,7 +375,15 @@ body {
 .opt-map-link { font-size:11px; opacity:.45; margin-left:6px; text-decoration:none; color:inherit; vertical-align:middle; }
 .opt-map-link:hover { opacity:.9; text-decoration:underline; }
 /* Per-day route maps */
-.day-map { height: 260px; border-radius: 8px; overflow: hidden; margin: 0 0 24px 0; border: 1px solid var(--rule); }
+.day-map { height: 260px; border-radius: 8px; overflow: hidden; margin: 0 0 10px 0; border: 1px solid var(--rule); }
+/* Map legend (numbered list of stops) */
+.day-legend { margin: 0 0 24px 0; }
+.legend-key { display:flex; flex-wrap:wrap; gap:6px 16px; font-family:'JetBrains Mono',monospace; font-size:10px; letter-spacing:.05em; text-transform:uppercase; color:var(--ink-soft); margin-bottom:9px; }
+.legend-key i { display:inline-block; width:9px; height:9px; border-radius:50%; margin-right:5px; vertical-align:middle; }
+.legend-list { list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(auto-fill, minmax(210px,1fr)); gap:4px 18px; }
+.legend-list li { display:flex; align-items:flex-start; gap:8px; font-size:12.5px; color:var(--ink-soft); line-height:1.4; }
+.legend-list .lg-n { flex:0 0 auto; width:18px; height:18px; border-radius:50%; color:#fff; font-family:'JetBrains Mono',monospace; font-size:10px; font-weight:700; display:flex; align-items:center; justify-content:center; margin-top:1px; }
+.legend-list .lg-t { min-width:0; }
 /* Activity numbering — standalone blocks and option groups share one per-day sequence */
 .schedule { counter-reset: act; }
 .block, .options-cluster { counter-increment: act; }
@@ -1556,10 +1564,12 @@ document.querySelectorAll('.city-tab').forEach(tab => {
 // Build a flat id→item lookup
 const _itemMap = {};
 const _allItems = {};
+const _catOf = {};
 for (const city of Object.values(TRIP_DATA.cities)) {
-  for (const items of Object.values(city.categories)) {
+  for (const [cat, items] of Object.entries(city.categories)) {
     for (const item of items) {
       _allItems[item.id] = item;
+      _catOf[item.id] = cat;
       if (item.images && item.images.length) _itemMap[item.id] = item;
     }
   }
@@ -1907,23 +1917,32 @@ document.querySelectorAll('.block-time').forEach(el => {
 function _mTxt(el){ return Array.from(el.childNodes).filter(n=>n.nodeType===3).map(n=>n.textContent).join('').trim(); }
 function _mMatch(raw, map){ raw = raw.toLowerCase().replace(/[‘’ʼ]/g,"'"); for (const [kw,id] of Object.entries(map)) if (id && raw.includes(kw)) return id; return null; }
 function _coordOf(id){ const it = _allItems[id]; return (it && it.lat && it.lng) ? [it.lat, it.lng] : null; }
-function _activityPoint(act){
+// Category → marker colour. Food/drink stops are orange, nightlife pink, the rest purple.
+const _FOOD  = new Set(['bbq','cafe','dessert','chicken','noodle','korean_food','street_food','fine_dining','fastfood','market','makgeolli','craft_beer']);
+const _NIGHT = new Set(['cocktail_bar','club','karaoke','casino','beer']);
+const _COL   = { food:'#e8763a', night:'#d6336c', other:'#9d4edd' };
+function _kindOf(id){ const c = _catOf[id]; if (_FOOD.has(c)) return 'food'; if (_NIGHT.has(c)) return 'night'; return 'other'; }
+function _colorOf(id){ return _COL[_kindOf(id)]; }
+// The data id a schedule activity maps to (block → its title; cluster → first locatable option).
+function _activityId(act){
   if (act.classList.contains('block')){
     const t = act.querySelector('.block-title');
-    return t ? _coordOf(_mMatch(_mTxt(t), TITLE_MAP)) : null;
+    return t ? _mMatch(_mTxt(t), TITLE_MAP) : null;
   }
   for (const nm of act.querySelectorAll('.opt-name')){
-    const c = _coordOf(_mMatch(_mTxt(nm), OPT_MAP));
-    if (c) return c;               // a cluster sits at its first locatable option
+    const id = _mMatch(_mTxt(nm), OPT_MAP);
+    if (id && _coordOf(id)) return id;   // a cluster sits at its first locatable option
   }
   return null;
 }
+function _activityPoint(act){ return _coordOf(_activityId(act)); }
 function _buildStops(dayEl){
   const acts = [...dayEl.querySelectorAll('.schedule > .block, .schedule > .options-cluster')];
   const stops = acts.map((act,i) => {
     const isBlock = act.classList.contains('block');
     const head = act.querySelector(isBlock ? '.block-title' : '.options-head');
-    return { n:i+1, isBlock, name: head ? _mTxt(head) : ('Stop '+(i+1)), own: _activityPoint(act), p:null };
+    const id = _activityId(act);
+    return { n:i+1, isBlock, id, color:_colorOf(id), name: head ? _mTxt(head) : ('Stop '+(i+1)), own: _coordOf(id), p:null };
   });
   // Blocks anchor to their own venue; option clusters stay in the day's current
   // area (carry forward) instead of jumping to a generic dish-keyword match,
@@ -1963,11 +1982,15 @@ function _initMap(dayNum){
   _initedMaps.add(dayNum);
   const _la = d.stops.map(s=>s.lat), _ln = d.stops.map(s=>s.lng);
   const _center = [ (Math.min(..._la)+Math.max(..._la))/2, (Math.min(..._ln)+Math.max(..._ln))/2 ];
-  const map = L.map(el, { zoomControl:false, scrollWheelZoom:false, dragging:true, touchZoom:false, doubleClickZoom:false, attributionControl:false, center:_center, zoom:13 });
+  const map = L.map(el, { zoomControl:false, scrollWheelZoom:false, dragging:true, touchZoom:true, doubleClickZoom:true, boxZoom:true, attributionControl:false, center:_center, zoom:13 });
+  L.control.zoom({ position:'topright' }).addTo(map);
+  // Wheel zoom only after the map is clicked/focused, so it never hijacks page scroll.
+  map.on('focus', () => map.scrollWheelZoom.enable());
+  map.on('blur',  () => map.scrollWheelZoom.disable());
   L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', { subdomains:'abcd', maxZoom:19, opacity:0.95 }).addTo(map);
   L.polyline(d.stops.map(s=>[s.lat,s.lng]), { color:d.color, weight:2.5, dashArray:'6,5', opacity:0.9 }).addTo(map);
   d.stops.forEach(s => {
-    const icon = L.divIcon({ html:'<div style="background:'+d.color+';color:#fff;border-radius:50%;width:22px;height:22px;display:flex;align-items:center;justify-content:center;font-family:JetBrains Mono,monospace;font-size:10px;font-weight:700;border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.3)">'+s.n+'</div>', className:'', iconSize:[22,22], iconAnchor:[11,11] });
+    const icon = L.divIcon({ html:'<div style="background:'+s.color+';color:#fff;border-radius:50%;width:22px;height:22px;display:flex;align-items:center;justify-content:center;font-family:JetBrains Mono,monospace;font-size:10px;font-weight:700;border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.3)">'+s.n+'</div>', className:'', iconSize:[22,22], iconAnchor:[11,11] });
     L.marker([s.lat,s.lng], {icon}).addTo(map).bindTooltip(s.n + '. ' + s.name, {direction:'top', offset:[0,-13]});
   });
   const bounds = L.latLngBounds(d.stops.map(s=>[s.lat,s.lng]));
@@ -1988,12 +2011,31 @@ const _ro = window.ResizeObserver ? new ResizeObserver(entries => {
     if (!_initedMaps.has(dn)) _initMap(dn); else _refit(dn);
   }
 }) : null;
+// Clean a stop heading down to a short legend label.
+function _legendName(t){
+  t = t.replace(/\s*\([^)]*\)/g,'').replace(/\s+/g,' ').trim();
+  if (t.length > 50) t = t.slice(0,48).trim() + '…';
+  return t.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
 document.querySelectorAll('.day').forEach(day => {
   const numEl = day.querySelector('.day-num'); if (!numEl) return;
   const dayNum = parseInt(numEl.textContent, 10);
   const div = document.createElement('div'); div.className='day-map'; div.id='day-map-'+dayNum;
   day.querySelector('.day-head').after(div);
   if (_ro) _ro.observe(div);
+  const route = DAY_ROUTES[dayNum];
+  if (route){
+    const lg = document.createElement('div'); lg.className='day-legend';
+    const key = '<div class="legend-key">'
+      + '<span><i style="background:'+_COL.food +'"></i>Food &amp; drink</span>'
+      + '<span><i style="background:'+_COL.night+'"></i>Nightlife</span>'
+      + '<span><i style="background:'+_COL.other+'"></i>Sights &amp; more</span></div>';
+    const items = route.stops.map(s =>
+      '<li><span class="lg-n" style="background:'+s.color+'">'+s.n+'</span>'
+      + '<span class="lg-t">'+_legendName(s.name)+'</span></li>').join('');
+    lg.innerHTML = key + '<ol class="legend-list">' + items + '</ol>';
+    div.after(lg);
+  }
 });
 setTimeout(_initVisibleMaps, 250);
 document.querySelectorAll('.city-tab').forEach(tab => tab.addEventListener('click', () => setTimeout(_initVisibleMaps, 250)));
