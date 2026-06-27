@@ -1,0 +1,15 @@
+User-agent: Googlebot-Image
+# Repeated 'disallow' rules for each image:
+Disallow: /images/*
+Disallow: /assets/*
+Allow: /images/autum.webp
+Allow: /images/bullish.webp
+Allow: /images/dataopenchampions.webp
+Allow: /images/dataopencake.webp
+Allow: /assets/favicon.ico
+Allow: /assets/leaderboard.webp
+Allow: /assets/tunnel.webp
+Allow: /assets/tunnel.webp
+Allow: /assets/antelope.webp
+Allow: /assets/fountain.webp
+Allow: /assets/swamp.webp

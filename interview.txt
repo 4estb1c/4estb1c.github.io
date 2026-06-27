@@ -1,0 +1,34 @@
+IMC: Secretary problem
+
+# Two Sigma
+- Min correlation between n variables
+- How to generate multivariate gausian from independent gausians
+- y ~ x vs x ~ y, how do b, t, and r^2 compare?
+
+
+# JS
+- Dollar auction strategy
+    - Dollar auction if you can commit to a strategy
+    - Dollar auction if the max bid is decreased by 10
+- High Medium Low
+    - Make a market on the EV
+    - Find optimal strategy and exact EV
+    - What is the best 1st number
+    - What is the worst 1st number
+- Coupon collector with 2 of each coupon needed
+
+# TGS
+- Dorm size estimator
+
+Expected number of cycles and expected cycle length in a permutation graph
+German tank problem
+Difference between regression and first principle component
+Show covariance is PSD
+
+Runs test mean and variance
+Generalized scale test https://en.wikipedia.org/wiki/Balance_puzzle
+n dimensional pizza cutting
+
+volume and surface area of an n-ball
+
+Catalan numbers C_n = 1/(2n+1) (2n+1 choose n) = (2n choose n) - (2n choose n + 1)

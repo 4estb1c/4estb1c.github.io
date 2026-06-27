@@ -1,0 +1,160 @@
+ .u-section-1 {
+   background-image: none;
+ }
+
+ .u-section-1 .u-sheet-1 {
+   min-height: 100vh;
+ }
+
+ .u-section-1 .u-post-details-1 {
+   min-height: 730px;
+   margin-top: 60px;
+   margin-bottom: 60px;
+ }
+
+ .u-section-1 .u-container-layout-1 {
+   padding: 0 0 25px;
+ }
+
+ .u-section-1 .u-group-1 {
+   width: 800px;
+   min-height: 500px;
+   height: auto;
+   margin: 0 auto;
+ }
+
+ .u-section-1 .u-group-1-wide {
+   width: 1000px;
+   min-height: 500px;
+   height: auto;
+   margin: 0 auto;
+ }
+
+ .u-section-1 .u-container-layout-2 {
+   padding: 0;
+ }
+
+ .u-section-1 .u-line-1 {
+   transform-origin: left center 0px;
+   margin-top: 40px;
+   margin-bottom: 0;
+ }
+
+ .u-section-1 .u-text-1 {
+   font-weight: normal;
+   font-size: 3rem;
+   margin: 20px 25px 0;
+ }
+
+ .u-section-1 .u-line-2 {
+   transform-origin: left center 0px;
+   margin-top: 20px;
+   margin-bottom: 0;
+ }
+
+ .u-section-1 .u-text-2 {
+   line-height: 1.2;
+   margin: 40px 25px 0;
+ }
+
+ @media (max-width: 1199px) {
+   .u-section-1 .u-group-1 {
+     min-height: 730px;
+     height: auto;
+   }
+
+   .u-section-1 .u-text-1 {
+     width: auto;
+   }
+
+   .u-section-1 .u-text-2 {
+     width: auto;
+   }
+ }
+
+ @media (max-width: 991px) {
+   .u-section-1 .u-container-layout-1 {
+     padding-top: 0;
+     padding-left: 0;
+     padding-right: 0;
+   }
+
+   .u-section-1 .u-group-1 {
+     width: 600px;
+   }
+
+   .u-section-1 .u-container-layout-2 {
+     padding: 0;
+   }
+ }
+
+ @media (max-width: 767px) {
+   .u-section-1 .u-group-1 {
+     width: 500px;
+   }
+
+   .u-section-1 .u-text-1 {
+     font-size: 2.25rem;
+     margin-left: 13px;
+     margin-right: 13px;
+   }
+
+   .u-section-1 .u-text-2 {
+     margin-left: 13px;
+     margin-right: 13px;
+   }
+ }
+
+ @media (max-width: 575px) {
+   .u-section-1 .u-group-1 {
+     margin-bottom: -30px;
+     margin-right: initial;
+     margin-left: initial;
+     width: auto;
+   }
+
+   .u-section-1 .u-container-layout-2 {
+     padding-bottom: 100px;
+   }
+
+   .u-section-1 .u-text-1 {
+     font-size: 1.875rem;
+     margin-left: 10px;
+     margin-right: 10px;
+   }
+
+   .u-section-1 .u-text-2 {
+     margin-left: 10px;
+     margin-right: 10px;
+   }
+ }
+
+ .fb-image {
+   position: relative;
+   display: block !important;
+   margin-left: auto;
+   margin-right: auto;
+   border-radius: 5px !important;
+   margin-top: 2rem !important;
+   margin-bottom: 2rem !important;
+ }
+
+ .fb-maxwidth-80 {
+   max-width: 80% !important;
+ }
+
+ .fb-maxwidth-70 {
+   max-width: 70% !important;
+ }
+
+ .fb-maxwidth-60 {
+   max-width: 60% !important;
+ }
+
+ .fb-maxwidth-50 {
+   max-width: 50% !important;
+ }
+
+ .fb-maxwidth-40 {
+   max-width: 40% !important;
+ }
