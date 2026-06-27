@@ -225,15 +225,14 @@ body {
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 4px;
-  display: flex;
-  align-items: baseline;
-  gap: 10px;
 }
 .block-title .cost {
   font-family: 'JetBrains Mono', monospace;
   font-size: 11px;
   font-weight: 400;
   color: var(--ink-soft);
+  margin-left: 8px;
+  white-space: nowrap;
 }
 .block-desc {
   font-size: 14px;
@@ -364,7 +363,7 @@ body {
 .area-label { font:700 10px/1.3 'JetBrains Mono',monospace; text-transform:uppercase; letter-spacing:.11em; color:var(--ink-soft); padding:18px 0 4px; border-top:1px solid var(--rule); }
 .area-label.first { border-top:none; padding-top:4px; }
 .options-cluster { padding:2px 0 4px; }
-.options-head { font:600 9px 'JetBrains Mono',monospace; text-transform:uppercase; letter-spacing:.1em; color:var(--ink-soft); opacity:.65; margin:10px 0 4px; }
+.options-head { font-family:'Fraunces',serif; font-size:18px; font-weight:700; color:var(--ink); margin:18px 0 6px; }
 .opt { padding:5px 0 3px; border-top:1px dashed var(--rule); }
 .options-head + .opt { border-top:none; }
 .opt-name { font-weight:600; font-size:13px; color:var(--ink); }
@@ -377,10 +376,11 @@ body {
 .opt-map-link:hover { opacity:.9; text-decoration:underline; }
 /* Per-day route maps */
 .day-map { height: 260px; border-radius: 8px; overflow: hidden; margin: 0 0 24px 0; border: 1px solid var(--rule); }
-/* Block event numbering via CSS counter */
-.schedule { counter-reset: block-count; }
-.block { counter-increment: block-count; }
-.block-time::before { content: counter(block-count) ' · '; font-weight: 700; color: var(--ink); }
+/* Activity numbering — standalone blocks and option groups share one per-day sequence */
+.schedule { counter-reset: act; }
+.block, .options-cluster { counter-increment: act; }
+.block-title::before { content: counter(act) ' · '; font-weight: 700; color: var(--ink); }
+.options-head::before { content: counter(act) ' · '; font-weight: 700; color: var(--ink); }
 
 @media (max-width: 600px) {
   .page { padding: 32px 20px 80px; }
@@ -519,21 +519,6 @@ body {
         <div class="opt-desc">The outdoor bar street behind Hongdae park — dozens of plastic tables, cheap pitchers, loud K-pop. The full Hongdae tableau.</div>
       </div>
     </div>
-    <div class="options-cluster">
-      <div class="options-head">clubs — all Hongdae, 2-min walk from Ho Bar</div>
-      <div class="opt">
-        <div class="opt-name">Club FF <span class="cost">~$10 cover</span></div>
-        <div class="opt-desc">Hongdae’s biggest dancefloor. Hip-hop, EDM, K-pop. Cover includes one drink. You’re sleeping 2 min away — peak energy is after 1am.</div>
-      </div>
-      <div class="opt">
-        <div class="opt-name">Club SOAP <span class="cost">~$15 cover</span></div>
-        <div class="opt-desc">Seoul’s most respected electronic club. Multi-room, curated lineups, serious sound system. Check Instagram for Saturday lineup.</div>
-      </div>
-      <div class="opt">
-        <div class="opt-name">NB2 Hongdae <span class="cost">~$8 cover</span></div>
-        <div class="opt-desc">YG-affiliated hip-hop club. Young crowd, cheap entry, both floors packed by 1am. Walking distance from Nine Brick.</div>
-      </div>
-    </div>
     </div>
 </div>
 
@@ -544,103 +529,6 @@ body {
       <div class="day-date">Thu Jul 30</div>
       <span class="day-city-tag" style="background:var(--seoul-soft); color:var(--seoul)">Seoul</span>
       <div class="day-num">06</div>
-    </div>
-    <div>
-      <div class="day-title">Spa, tower, pork belly.</div>
-      <div class="day-tagline">Everything within 2km: Dragon Hill → Hannam lunch → Namsan → Itaewon KBBQ.</div>
-      <div class="day-spend">
-        <span class="spend-item">Sleep: <strong>Nine Brick Hongdae</strong></span>
-        <span class="spend-item">Est. spend: <strong>~$80/pp</strong></span>
-      </div>
-    </div>
-  </div>
-  <div class="schedule">
-    <div class="area-label first">Yongsan / Hannam</div>
-    <div class="block highlight">
-      <div class="block-time">10:00</div>
-      <div class="block-title">Dragon Hill Spa — jjimjilbang + scrub <span class="cost">~$25</span></div>
-      <div class="block-desc">Korea’s most famous jimjilbang in Yongsan (10 min from Hongdae). ₩12,000 entry covers the full complex — hot/cold pools, mugwort steam, charcoal sauna. Add a body scrub (Italian-towel scrub, ₩20,000) for a deeply Korean experience. Plan 2—3 hours.</div>
-      <div class="block-tip">No tattoo restriction at Dragon Hill. Towels and shorts provided.</div>
-    </div>
-    <div class="options-cluster">
-      <div class="options-head">lunch — Hannam-dong (5 min walk from Dragon Hill)</div>
-      <div class="opt">
-        <div class="opt-name">Myeongdong Kyoja — Itaewon branch <span class="cost">~$12</span></div>
-        <div class="opt-desc">Michelin-listed kalguksu (knife-cut noodle soup) and mandu. The Itaewon branch has shorter queues than the Myeongdong original.</div>
-      </div>
-      <div class="opt">
-        <div class="opt-name">Naengmyeon / cold noodles (post-spa) <span class="cost">~$11</span></div>
-        <div class="opt-desc">After 2—3 hours in the sauna, a bowl of icy mul-naengmyeon (chilled buckwheat noodles) is exactly right. Several Hannam and Itaewon spots do a proper version. Cooling, light, and very Korean.</div>
-      </div>
-      <div class="opt">
-        <div class="opt-name">Local gimbap / jeongsik spots (side alleys) <span class="cost">~$10</span></div>
-        <div class="opt-desc">Hannam’s back alleys have cheap set-meal restaurants (baekban) with banchan spreads. Ask your hotel; they’ll point you to the best block.</div>
-      </div>
-    </div>
-    <div class="options-cluster">
-      <div class="options-head">afternoon — pick one</div>
-      <div class="opt">
-        <div class="opt-name">Leeum Museum of Art (Hannam) <span class="cost">~$22</span></div>
-        <div class="opt-desc">Samsung’s private museum in Hannam — Mario Botta, Jean Nouvel, and Rem Koolhaas designed the three buildings. Best contemporary Korean art collection in the country. Never crowded.</div>
-      </div>
-      <div class="opt">
-        <div class="opt-name">N Seoul Tower / Namsan cable car <span class="cost">~$10</span></div>
-        <div class="opt-desc">15-min cab from Hannam. Cable car up (₩16,000 return) or hike the steps in 25 min. Outdoor deck is free and often clearer than the observatory. Sunset panorama over the Han.</div>
-      </div>
-      <div class="opt">
-        <div class="opt-name">Namsan park walk <span class="cost">Free</span></div>
-        <div class="opt-desc">Skip the observatory; just walk the wooded Namsan circuit. Cool, shaded, uncrowded on weekdays. Good legs-reset after the spa.</div>
-      </div>
-    </div>
-    <div class="transit">→ taxi / metro — 10 min to Itaewon</div>
-    <div class="area-label">Itaewon — evening</div>
-    <div class="options-cluster">
-      <div class="options-head">dinner — Itaewon (all within 5-min walk of each other)</div>
-      <div class="opt">
-        <div class="opt-name">Bogwangjung KBBQ <span class="cost">~$45</span></div>
-        <div class="opt-desc">4.9★ samgyeopsal specialist. The chef cooks at your table, pairs cuts with sauces, tells you when to eat. Book ahead. The best single KBBQ dinner of the trip.</div>
-      </div>
-      <div class="opt">
-        <div class="opt-name">C’ote Korea <span class="cost">~$60</span></div>
-        <div class="opt-desc">French-Korean tasting menu in Itaewon. One nice dinner of the trip caliber. Book online.</div>
-      </div>
-      <div class="opt">
-        <div class="opt-name">Hannam Halal Guys / street vendors <span class="cost">~$12</span></div>
-        <div class="opt-desc">If you want something fast and cheap. The Itaewon strip has halal carts and quick-service spots through to late.</div>
-      </div>
-    </div>
-    <div class="options-cluster">
-      <div class="options-head">bars — Itaewon</div>
-      <div class="opt">
-        <div class="opt-name">Blacklist Bar <span class="cost">~$20</span></div>
-        <div class="opt-desc">Rooftop bar with Itaewon views and a strong cocktail list. 4.6★. Good energy late in the week.</div>
-      </div>
-      <div class="opt">
-        <div class="opt-name">Bar Cham <span class="cost">~$18</span></div>
-        <div class="opt-desc">Creative cocktails made with Korean spirits (soju, makgeolli, omija) in an intimate room. One of the most distinctly Korean bar experiences.</div>
-      </div>
-    </div>
-    <div class="options-cluster">
-      <div class="options-head">clubs — Itaewon</div>
-      <div class="opt">
-        <div class="opt-name">Cakeshop <span class="cost">~$15 cover</span></div>
-        <div class="opt-desc">Basement Itaewon. Best sound system in Seoul. Packed on any night of the week, techno/house/bass. Lockers available.</div>
-      </div>
-      <div class="opt">
-        <div class="opt-name">Venue <span class="cost">~$10</span></div>
-        <div class="opt-desc">Underground Itaewon — 100m from DUSK TILL DAWN. Techno, small and sweaty. Closes at 6am.</div>
-      </div>
-    </div>
-    </div>
-</div>
-
-<!-- DAY 7 -->
-<div class="day">
-  <div class="day-head">
-    <div>
-      <div class="day-date">Fri Jul 31</div>
-      <span class="day-city-tag" style="background:var(--seoul-soft); color:var(--seoul)">Seoul</span>
-      <div class="day-num">07</div>
     </div>
     <div>
       <div class="day-title">Color theory, chicken, river.</div>
@@ -752,6 +640,82 @@ body {
     </div>
 </div>
 
+<!-- DAY 7 -->
+<div class="day">
+  <div class="day-head">
+    <div>
+      <div class="day-date">Fri Jul 31</div>
+      <span class="day-city-tag" style="background:var(--seoul-soft); color:var(--seoul)">Day Trip</span>
+      <div class="day-num">07</div>
+    </div>
+    <div>
+      <div class="day-title">Garden of Morning Calm.</div>
+      <div class="day-tagline">ITX train to Gapyeong, 100 themed gardens, back to Hongdae to go out.</div>
+      <div class="day-spend">
+        <span class="spend-item">Sleep: <strong>Nine Brick Hongdae</strong></span>
+        <span class="spend-item">Est. spend: <strong>~$65/pp</strong></span>
+      </div>
+    </div>
+  </div>
+  <div class="schedule">
+    <div class="area-label first">Day trip — Gapyeong</div>
+    <div class="block">
+      <div class="block-time">07:30</div>
+      <div class="block-title">ITX-Cheongchun: Cheongnyangni → Gapyeong <span class="cost">₩10,800 (~$8)</span></div>
+      <div class="block-desc">Metro to Cheongnyangni Station (Line 1 / Gyeongui-Jungang), then ITX intercity train to Gapyeong (~1h15m). Scenic final stretch through mountain valleys. At Gapyeong take the shuttle bus to the garden (30 min, ₩3,000).</div>
+      <div class="block-tip">Book ITX tickets at korail.go.kr the day before. Bring the card used to purchase.</div>
+    </div>
+    <div class="block highlight">
+      <div class="block-time">09:30</div>
+      <div class="block-title">Garden of Morning Calm <span class="cost">₩11,000 (~$8)</span></div>
+      <div class="block-desc">5,000+ plant species across 100+ themed sections — rose garden, Korean traditional garden, waterfall trail, wildflower meadow. Late July is peak summer flower season. Budget 2.5 hours; arrive before day-trip buses fill the paths.</div>
+    </div>
+    <div class="options-cluster">
+      <div class="options-head">lunch — Gapyeong town (shuttle back)</div>
+      <div class="opt">
+        <div class="opt-name">Gapyeong riverside dakgalbi restaurant <span class="cost">~$14</span></div>
+        <div class="opt-desc">The origin region for dakgalbi. Spicy stir-fried chicken in cast iron by the river. The Gapyeong version is more pungent than Seoul’s — order extra tteok.</div>
+      </div>
+      <div class="opt">
+        <div class="opt-name">Local baekban (banchan set meal) <span class="cost">~$10</span></div>
+        <div class="opt-desc">Any neighbourhood restaurant in Gapyeong town does a set meal with rice, soup, and 8—10 side dishes. Quiet, unhurried, completely tourist-free.</div>
+      </div>
+    </div>
+    <div class="block">
+      <div class="block-time">14:00</div>
+      <div class="block-title">Nami Island (optional) <span class="cost">₩20,000 (~$15)</span></div>
+      <div class="block-desc">20-min walk + boat from Gapyeong pier. Tree-lined avenues from the Winter Sonata K-drama. Surreal and quiet on weekday afternoons — 1.5 hours is enough. Last ferry back around 5pm.</div>
+      <div class="block-tip">Skip if you’re gardenned-out and just want to head back. The garden is the main event.</div>
+    </div>
+    <div class="block">
+      <div class="block-time">17:00</div>
+      <div class="block-title">ITX back → metro to Hongdae</div>
+      <div class="block-desc">~1h20m door-to-door. Back by 7pm. Shower, change, decompress.</div>
+    </div>
+    <div class="area-label">Hongdae — big night out</div>
+    <div class="block highlight">
+      <div class="block-time">22:00</div>
+      <div class="block-title">Ho Bar III warm-up <span class="cost">~$5</span></div>
+      <div class="block-desc">You're back on home turf and well-rested from the gardens — time to go big. Start at the classic Hongdae dive: outdoor plastic-cup Cass at the loudest corner in the neighbourhood, then walk two minutes to the clubs.</div>
+    </div>
+    <div class="options-cluster">
+      <div class="options-head">clubs — Hongdae (all a 2-min walk; you're sleeping nearby)</div>
+      <div class="opt">
+        <div class="opt-name">Club FF <span class="cost">~$10 cover</span></div>
+        <div class="opt-desc">Hongdae's biggest dancefloor. Hip-hop, EDM, K-pop. Cover includes one drink. Peak energy after 1am — and you're sleeping 2 min away.</div>
+      </div>
+      <div class="opt">
+        <div class="opt-name">Club SOAP <span class="cost">~$15 cover</span></div>
+        <div class="opt-desc">Seoul's most respected electronic club. Multi-room, curated lineups, serious sound system. Check Instagram for the weekend lineup.</div>
+      </div>
+      <div class="opt">
+        <div class="opt-name">NB2 Hongdae <span class="cost">~$8 cover</span></div>
+        <div class="opt-desc">YG-affiliated hip-hop club. Young crowd, cheap entry, both floors packed by 1am. Walking distance from Nine Brick.</div>
+      </div>
+    </div>
+    </div>
+</div>
+
 <!-- DAY 8 -->
 <div class="day">
   <div class="day-head">
@@ -759,117 +723,6 @@ body {
       <div class="day-date">Sat Aug 1</div>
       <span class="day-city-tag" style="background:var(--seoul-soft); color:var(--seoul)">Seoul</span>
       <div class="day-num">08</div>
-    </div>
-    <div>
-      <div class="day-title">Coffee, concrete, and couture.</div>
-      <div class="day-tagline">Seongsu by day — Seoul's trendiest block. Dongdaemun fashion market after dark.</div>
-      <div class="day-spend">
-        <span class="spend-item">Sleep: <strong>Nine Brick Hongdae</strong></span>
-        <span class="spend-item">Est. spend: <strong>~$55/pp</strong></span>
-      </div>
-    </div>
-  </div>
-  <div class="schedule">
-    <div class="area-label first">Seongsu-dong — Seoul’s Shoreditch</div>
-    <div class="block highlight">
-      <div class="block-time">09:30</div>
-      <div class="block-title">Cafe Onion (Seongsu) <span class="cost">~$10</span></div>
-      <div class="block-desc">The anchor: a converted 1970s iron factory with the best cortado in Seoul and pastries worth eating. Industrial bones, high ceilings, long queues. Arrive at opening to beat the wait. The surrounding streets have sneaker boutiques, vinyl shops, and concept spaces.</div>
-      <div class="block-tip">Walk the blocks around Cafe Onion before or after — each building is a project.</div>
-    </div>
-    <div class="options-cluster">
-      <div class="options-head">more coffee / breakfast — Seongsu</div>
-      <div class="opt">
-        <div class="opt-name">Fritz Coffee Company (Seongsu branch) <span class="cost">~$7</span></div>
-        <div class="opt-desc">One of Seoul’s best specialty roasters. Clean espresso, excellent drip, relaxed interior. A shorter queue than Onion on most mornings.</div>
-      </div>
-      <div class="opt">
-        <div class="opt-name">Daelim Changgo (warehouse cafe) <span class="cost">~$7</span></div>
-        <div class="opt-desc">Giant converted warehouse turned multi-brand space. Cafes, shops, an art gallery. The full Seongsu warehouse-chic experience.</div>
-      </div>
-    </div>
-    <div class="options-cluster">
-      <div class="options-head">lunch — Seongsu</div>
-      <div class="opt">
-        <div class="opt-name">Grill5Taco (Seongsu) <span class="cost">~$14</span></div>
-        <div class="opt-desc">Seoul’s best tacos. Genuinely excellent, cheap, cheerful. Al pastor and bulgogi tacos side by side. Usually a short queue.</div>
-      </div>
-      <div class="opt">
-        <div class="opt-name">Able cafe (Korean fusion set) <span class="cost">~$16</span></div>
-        <div class="opt-desc">Korean-fusion lunch in a photogenic industrial space. Set meals with banchan, solid brunch options. Good if you want a sit-down.</div>
-      </div>
-      <div class="opt">
-        <div class="opt-name">Seongsu-dong local gimbap shops <span class="cost">~$8</span></div>
-        <div class="opt-desc">The residential side streets have family-run kimbap and jeongsik spots with no menus and no tourists. Cheap and proper.</div>
-      </div>
-      <div class="opt">
-        <div class="opt-name">Seongsu cafe cluster <span class="cost">~$10</span></div>
-        <div class="opt-desc">The streets near Seoul Forest have a cluster of cafes doing simple lunch sets. Good option if you’re heading to the park anyway.</div>
-      </div>
-    </div>
-    <div class="options-cluster">
-      <div class="options-head">afternoon — Seongsu</div>
-      <div class="opt">
-        <div class="opt-name">Seoul Forest <span class="cost">Free</span></div>
-        <div class="opt-desc">10-min walk from Cafe Onion. Deer park, butterfly garden, riverside trail. The best city park in Seoul. Take the 2pm hour before it fills with after-school families.</div>
-      </div>
-      <div class="opt">
-        <div class="opt-name">Boutique / concept store crawl <span class="cost">browse</span></div>
-        <div class="opt-desc">Seongsu has small-run clothing brands, sneaker shops, and design-object stores that don’t exist anywhere else in Seoul. No list needed — just walk the side streets.</div>
-      </div>
-      <div class="opt">
-        <div class="opt-name">LCDC Seoul (galleries + shops) <span class="cost">Free</span></div>
-        <div class="opt-desc">Multi-brand space in a warehouse. Three floors of Korean designer brands and a gallery. Good for finding things that aren’t on Garosu-gil.</div>
-      </div>
-    </div>
-    <div class="transit">→ metro Line 2 — 5 min to Sindang, or Line 2/5 to Dongdaemun</div>
-    <div class="area-label">Dongdaemun / Sindang — evening</div>
-    <div class="block">
-      <div class="block-time">15:00</div>
-      <div class="block-title">DDP — Dongdaemun Design Plaza <span class="cost">Free outside</span></div>
-      <div class="block-desc">Zaha Hadid’s white curvilinear landmark. Walk the exterior at dusk when the LED facade illuminates. Museum galleries inside have rotating design exhibitions (₩1,000—5,000). Best in late afternoon light.</div>
-      <div class="block-tip">The exterior is the attraction. You don’t need to pay for entry.</div>
-    </div>
-    <div class="options-cluster">
-      <div class="options-head">food — Dongdaemun / Sindang area</div>
-      <div class="opt">
-        <div class="opt-name">Sindang Tteokbokki Town <span class="cost">~$10</span></div>
-        <div class="opt-desc">An entire block of tteokbokki stalls around Sindang Station. Every vendor is slightly different: some add ramen, some add cheese, some add fish cake. Pick two or three and compare. Wholly local crowd.</div>
-      </div>
-      <div class="opt">
-        <div class="opt-name">Kyochon Chicken (Dongdaemun, 24h) <span class="cost">~$25</span></div>
-        <div class="opt-desc">5 min from DDP. Soy-garlic + honey half-and-half. Pair with Cass beer. The definitive version of Korean fried chicken.</div>
-      </div>
-      <div class="opt">
-        <div class="opt-name">DDP food court / street stalls <span class="cost">~$12</span></div>
-        <div class="opt-desc">Street food vendors operate outside DDP in the evenings. Corn dogs, hotteok, odeng (fishcake skewers), tteok. Walk and graze.</div>
-      </div>
-      <div class="opt">
-        <div class="opt-name">Dongdaemun area dakgalbi or Korean BBQ <span class="cost">~$20</span></div>
-        <div class="opt-desc">The streets around DDP have plenty of KBBQ and dakgalbi spots open late. Find one with a crowd and a grill.</div>
-      </div>
-    </div>
-    <div class="options-cluster">
-      <div class="options-head">night — Dongdaemun + Hongdae</div>
-      <div class="opt">
-        <div class="opt-name">Dongdaemun Night Market (DDP) <span class="cost">browse</span></div>
-        <div class="opt-desc">Opens 8pm, runs to 4am. Wholesale and retail fashion, accessories, custom alterations. Walk both main halls. Great for cheap streetwear and oddities.</div>
-      </div>
-      <div class="opt">
-        <div class="opt-name">FREEBIRD (Hongdae) <span class="cost">~$10</span></div>
-        <div class="opt-desc">Hongdae hip-hop club a block from SOAP. Cheaper cover, more accessible, same energy. Good if house music isn’t your thing.</div>
-      </div>
-    </div>
-    </div>
-</div>
-
-<!-- DAY 9 -->
-<div class="day">
-  <div class="day-head">
-    <div>
-      <div class="day-date">Sun Aug 2</div>
-      <span class="day-city-tag" style="background:var(--seoul-soft); color:var(--seoul)">Seoul</span>
-      <div class="day-num">09</div>
     </div>
     <div>
       <div class="day-title">Old Seoul in a day.</div>
@@ -948,7 +801,7 @@ body {
       </div>
       <div class="opt">
         <div class="opt-name">Traditional tea house <span class="cost">~$8</span></div>
-        <div class="opt-desc">Insadong has several tea houses (ë‹¤ì›) in hanok buildings. Chrysanthemum tea or omija tea with tteok. 30-minute sit-down break.</div>
+        <div class="opt-desc">Insadong has several tea houses (다원) in hanok buildings. Chrysanthemum tea or omija tea with tteok. 30-minute sit-down break.</div>
       </div>
     </div>
     <div class="transit">→ taxi or walk 10 min to Ikseon-dong</div>
@@ -961,20 +814,117 @@ body {
     <div class="options-cluster">
       <div class="options-head">specific bars — Ikseon-dong</div>
       <div class="opt">
-        <div class="opt-name">Bab Ajeossi Bar <span class="cost">~$15</span></div>
-        <div class="opt-desc">Creative Korean-spirit cocktails (omija, nuruk, soju base) in a warm hanok interior. The anchor of the alley.</div>
+        <div class="opt-name">Salon Sulla <span class="cost">~$15</span></div>
+        <div class="opt-desc">Natural-wine bar in a restored hanok — by-the-glass pours, candlelit low tables, the warm anchor of the Ikseon alley.</div>
       </div>
       <div class="opt">
-        <div class="opt-name">Blackbird <span class="cost">~$15</span></div>
-        <div class="opt-desc">Whisky-forward list. Dark, narrow, serious bartenders. Good for a longer sit-down.</div>
+        <div class="opt-name">Hang Out <span class="cost">~$15</span></div>
+        <div class="opt-desc">Tiny Ikseon craft-beer bar — rotating Korean taps, easy crowd, good for a longer sit-down.</div>
       </div>
       <div class="opt">
-        <div class="opt-name">Bar de Nuit <span class="cost">~$14</span></div>
-        <div class="opt-desc">French-influenced cocktail bar in Ikseon — good wine list, natural wine nights, minimal decor.</div>
+        <div class="opt-name">Art Monster Ikseondong <span class="cost">~$14</span></div>
+        <div class="opt-desc">House-brewed IPAs and lagers in an industrial-bright taproom — big pours and easy Ikseon-dong energy, always a fresh tap on.</div>
       </div>
       <div class="opt">
-        <div class="opt-name">Woo Saeng Go (ìš°ìƒê³ ) <span class="cost">~$12</span></div>
-        <div class="opt-desc">Makgeolli and Korean beer bar in the alley. Cheaper than the cocktail bars. Good pajeon and snacks.</div>
+        <div class="opt-name">Sikmul (식물) <span class="cost">~$12</span></div>
+        <div class="opt-desc">One of the original Ikseon hanok cafe-bars — plants everywhere, makgeolli and snacks by night. The spot that sparked the alley’s revival.</div>
+      </div>
+    </div>
+    </div>
+</div>
+
+<!-- DAY 9 -->
+<div class="day">
+  <div class="day-head">
+    <div>
+      <div class="day-date">Sun Aug 2</div>
+      <span class="day-city-tag" style="background:var(--seoul-soft); color:var(--seoul)">Seoul</span>
+      <div class="day-num">09</div>
+    </div>
+    <div>
+      <div class="day-title">Spa, tower, pork belly.</div>
+      <div class="day-tagline">Everything within 2km: Dragon Hill → Hannam lunch → Namsan → Itaewon KBBQ.</div>
+      <div class="day-spend">
+        <span class="spend-item">Sleep: <strong>Nine Brick Hongdae</strong></span>
+        <span class="spend-item">Est. spend: <strong>~$80/pp</strong></span>
+      </div>
+    </div>
+  </div>
+  <div class="schedule">
+    <div class="area-label first">Yongsan / Hannam</div>
+    <div class="block highlight">
+      <div class="block-time">10:00</div>
+      <div class="block-title">Dragon Hill Spa — jjimjilbang + scrub <span class="cost">~$25</span></div>
+      <div class="block-desc">Korea’s most famous jimjilbang in Yongsan (10 min from Hongdae). ₩12,000 entry covers the full complex — hot/cold pools, mugwort steam, charcoal sauna. Add a body scrub (Italian-towel scrub, ₩20,000) for a deeply Korean experience. Plan 2—3 hours.</div>
+      <div class="block-tip">No tattoo restriction at Dragon Hill. Towels and shorts provided.</div>
+    </div>
+    <div class="options-cluster">
+      <div class="options-head">lunch — Hannam-dong (5 min walk from Dragon Hill)</div>
+      <div class="opt">
+        <div class="opt-name">Myeongdong Kyoja — Itaewon branch <span class="cost">~$12</span></div>
+        <div class="opt-desc">Michelin-listed kalguksu (knife-cut noodle soup) and mandu. The Itaewon branch has shorter queues than the Myeongdong original.</div>
+      </div>
+      <div class="opt">
+        <div class="opt-name">Naengmyeon / cold noodles (post-spa) <span class="cost">~$11</span></div>
+        <div class="opt-desc">After 2—3 hours in the sauna, a bowl of icy mul-naengmyeon (chilled buckwheat noodles) is exactly right. Several Hannam and Itaewon spots do a proper version. Cooling, light, and very Korean.</div>
+      </div>
+      <div class="opt">
+        <div class="opt-name">Local gimbap / jeongsik spots (side alleys) <span class="cost">~$10</span></div>
+        <div class="opt-desc">Hannam’s back alleys have cheap set-meal restaurants (baekban) with banchan spreads. Ask your hotel; they’ll point you to the best block.</div>
+      </div>
+    </div>
+    <div class="options-cluster">
+      <div class="options-head">afternoon — pick one</div>
+      <div class="opt">
+        <div class="opt-name">Leeum Museum of Art (Hannam) <span class="cost">~$22</span></div>
+        <div class="opt-desc">Samsung’s private museum in Hannam — Mario Botta, Jean Nouvel, and Rem Koolhaas designed the three buildings. Best contemporary Korean art collection in the country. Never crowded.</div>
+      </div>
+      <div class="opt">
+        <div class="opt-name">N Seoul Tower / Namsan cable car <span class="cost">~$10</span></div>
+        <div class="opt-desc">15-min cab from Hannam. Cable car up (₩16,000 return) or hike the steps in 25 min. Outdoor deck is free and often clearer than the observatory. Sunset panorama over the Han.</div>
+      </div>
+      <div class="opt">
+        <div class="opt-name">Namsan park walk <span class="cost">Free</span></div>
+        <div class="opt-desc">Skip the observatory; just walk the wooded Namsan circuit. Cool, shaded, uncrowded on weekdays. Good legs-reset after the spa.</div>
+      </div>
+    </div>
+    <div class="transit">→ taxi / metro — 10 min to Itaewon</div>
+    <div class="area-label">Itaewon — evening</div>
+    <div class="options-cluster">
+      <div class="options-head">dinner — Itaewon (all within 5-min walk of each other)</div>
+      <div class="opt">
+        <div class="opt-name">Bogwangjung KBBQ <span class="cost">~$45</span></div>
+        <div class="opt-desc">4.9★ samgyeopsal specialist. The chef cooks at your table, pairs cuts with sauces, tells you when to eat. Book ahead. The best single KBBQ dinner of the trip.</div>
+      </div>
+      <div class="opt">
+        <div class="opt-name">Soseoul Hannam <span class="cost">~$60</span></div>
+        <div class="opt-desc">Modern Korean tasting menu in Hannam — refined seasonal courses, the one splurge dinner of the trip. Book ahead.</div>
+      </div>
+      <div class="opt">
+        <div class="opt-name">Hannam Halal Guys / street vendors <span class="cost">~$12</span></div>
+        <div class="opt-desc">If you want something fast and cheap. The Itaewon strip has halal carts and quick-service spots through to late.</div>
+      </div>
+    </div>
+    <div class="options-cluster">
+      <div class="options-head">bars — Itaewon</div>
+      <div class="opt">
+        <div class="opt-name">Blacklist Bar <span class="cost">~$20</span></div>
+        <div class="opt-desc">Rooftop bar with Itaewon views and a strong cocktail list. 4.6★. Good energy late in the week.</div>
+      </div>
+      <div class="opt">
+        <div class="opt-name">Bar Cham <span class="cost">~$18</span></div>
+        <div class="opt-desc">Creative cocktails made with Korean spirits (soju, makgeolli, omija) in an intimate room. One of the most distinctly Korean bar experiences.</div>
+      </div>
+    </div>
+    <div class="options-cluster">
+      <div class="options-head">clubs — Itaewon</div>
+      <div class="opt">
+        <div class="opt-name">Cakeshop <span class="cost">~$15 cover</span></div>
+        <div class="opt-desc">Basement Itaewon. Best sound system in Seoul. Packed on any night of the week, techno/house/bass. Lockers available.</div>
+      </div>
+      <div class="opt">
+        <div class="opt-name">Venue <span class="cost">~$10</span></div>
+        <div class="opt-desc">Underground Itaewon — 100m from DUSK TILL DAWN. Techno, small and sweaty. Closes at 6am.</div>
       </div>
     </div>
     </div>
@@ -985,64 +935,107 @@ body {
   <div class="day-head">
     <div>
       <div class="day-date">Mon Aug 3</div>
-      <span class="day-city-tag" style="background:var(--seoul-soft); color:var(--seoul)">Day Trip</span>
+      <span class="day-city-tag" style="background:var(--seoul-soft); color:var(--seoul)">Seoul</span>
       <div class="day-num">10</div>
     </div>
     <div>
-      <div class="day-title">Garden of Morning Calm.</div>
-      <div class="day-tagline">ITX train to Gapyeong, 100 themed gardens, back for Itaewon cocktails.</div>
+      <div class="day-title">Coffee, concrete, and couture.</div>
+      <div class="day-tagline">Seongsu by day — Seoul's trendiest block. Dongdaemun fashion market after dark.</div>
       <div class="day-spend">
         <span class="spend-item">Sleep: <strong>Nine Brick Hongdae</strong></span>
-        <span class="spend-item">Est. spend: <strong>~$65/pp</strong></span>
+        <span class="spend-item">Est. spend: <strong>~$55/pp</strong></span>
       </div>
     </div>
   </div>
   <div class="schedule">
-    <div class="area-label first">Day trip — Gapyeong</div>
-    <div class="block">
-      <div class="block-time">07:30</div>
-      <div class="block-title">ITX-Cheongchun: Cheongnyangni → Gapyeong <span class="cost">₩10,800 (~$8)</span></div>
-      <div class="block-desc">Metro to Cheongnyangni Station (Line 1 / Gyeongui-Jungang), then ITX intercity train to Gapyeong (~1h15m). Scenic final stretch through mountain valleys. At Gapyeong take the shuttle bus to the garden (30 min, ₩3,000).</div>
-      <div class="block-tip">Book ITX tickets at korail.go.kr the day before. Bring the card used to purchase.</div>
-    </div>
+    <div class="area-label first">Seongsu-dong — Seoul’s Shoreditch</div>
     <div class="block highlight">
       <div class="block-time">09:30</div>
-      <div class="block-title">Garden of Morning Calm <span class="cost">₩11,000 (~$8)</span></div>
-      <div class="block-desc">5,000+ plant species across 100+ themed sections — rose garden, Korean traditional garden, waterfall trail, wildflower meadow. Late July is peak summer flower season. Budget 2.5 hours; arrive before day-trip buses fill the paths.</div>
+      <div class="block-title">Cafe Onion (Seongsu) <span class="cost">~$10</span></div>
+      <div class="block-desc">The anchor: a converted 1970s iron factory with the best cortado in Seoul and pastries worth eating. Industrial bones, high ceilings, long queues. Arrive at opening to beat the wait. The surrounding streets have sneaker boutiques, vinyl shops, and concept spaces.</div>
+      <div class="block-tip">Walk the blocks around Cafe Onion before or after — each building is a project.</div>
     </div>
     <div class="options-cluster">
-      <div class="options-head">lunch — Gapyeong town (shuttle back)</div>
+      <div class="options-head">more coffee / breakfast — Seongsu</div>
       <div class="opt">
-        <div class="opt-name">Gapyeong riverside dakgalbi restaurant <span class="cost">~$14</span></div>
-        <div class="opt-desc">The origin region for dakgalbi. Spicy stir-fried chicken in cast iron by the river. The Gapyeong version is more pungent than Seoul’s — order extra tteok.</div>
+        <div class="opt-name">Fritz Coffee Company (Seongsu branch) <span class="cost">~$7</span></div>
+        <div class="opt-desc">One of Seoul’s best specialty roasters. Clean espresso, excellent drip, relaxed interior. A shorter queue than Onion on most mornings.</div>
       </div>
       <div class="opt">
-        <div class="opt-name">Local baekban (banchan set meal) <span class="cost">~$10</span></div>
-        <div class="opt-desc">Any neighbourhood restaurant in Gapyeong town does a set meal with rice, soup, and 8—10 side dishes. Quiet, unhurried, completely tourist-free.</div>
+        <div class="opt-name">Daelim Changgo (warehouse cafe) <span class="cost">~$7</span></div>
+        <div class="opt-desc">Giant converted warehouse turned multi-brand space. Cafes, shops, an art gallery. The full Seongsu warehouse-chic experience.</div>
       </div>
     </div>
-    <div class="block">
-      <div class="block-time">14:00</div>
-      <div class="block-title">Nami Island (optional) <span class="cost">₩20,000 (~$15)</span></div>
-      <div class="block-desc">20-min walk + boat from Gapyeong pier. Tree-lined avenues from the Winter Sonata K-drama. Surreal and quiet on weekday afternoons — 1.5 hours is enough. Last ferry back around 5pm.</div>
-      <div class="block-tip">Skip if you’re gardenned-out and just want to head back. The garden is the main event.</div>
-    </div>
-    <div class="block">
-      <div class="block-time">17:00</div>
-      <div class="block-title">ITX back → metro to Hongdae</div>
-      <div class="block-desc">~1h20m door-to-door. Back by 7pm. Shower, change, decompress.</div>
-    </div>
-    <div class="transit">→ metro/taxi — 10 min to Itaewon</div>
-    <div class="area-label">Itaewon — evening wind-down</div>
     <div class="options-cluster">
-      <div class="options-head">bars — Itaewon (low-key end to a big day)</div>
+      <div class="options-head">lunch — Seongsu</div>
       <div class="opt">
-        <div class="opt-name">Blacklist Bar (rooftop) <span class="cost">~$20</span></div>
-        <div class="opt-desc">Rooftop bar with Itaewon views and a strong cocktail list. 4.6★. The right gear-down speed after the countryside.</div>
+        <div class="opt-name">Grill5Taco (Seongsu) <span class="cost">~$14</span></div>
+        <div class="opt-desc">Seoul’s best tacos. Genuinely excellent, cheap, cheerful. Al pastor and bulgogi tacos side by side. Usually a short queue.</div>
       </div>
       <div class="opt">
-        <div class="opt-name">Southside Parlor <span class="cost">~$18</span></div>
-        <div class="opt-desc">Seasonal rotating cocktail menu, serious bartenders. Order what they recommend.</div>
+        <div class="opt-name">Chedda &amp; Oli (Seongsu brunch) <span class="cost">~$16</span></div>
+        <div class="opt-desc">All-day brunch a short walk from Seoul Forest — big plates, good coffee, a photogenic Seongsu room. A proper sit-down between cafe stops.</div>
+      </div>
+      <div class="opt">
+        <div class="opt-name">Seongsu-dong local gimbap shops <span class="cost">~$8</span></div>
+        <div class="opt-desc">The residential side streets have family-run kimbap and jeongsik spots with no menus and no tourists. Cheap and proper.</div>
+      </div>
+      <div class="opt">
+        <div class="opt-name">Seongsu cafe cluster <span class="cost">~$10</span></div>
+        <div class="opt-desc">The streets near Seoul Forest have a cluster of cafes doing simple lunch sets. Good option if you’re heading to the park anyway.</div>
+      </div>
+    </div>
+    <div class="options-cluster">
+      <div class="options-head">afternoon — Seongsu</div>
+      <div class="opt">
+        <div class="opt-name">Seoul Forest <span class="cost">Free</span></div>
+        <div class="opt-desc">10-min walk from Cafe Onion. Deer park, butterfly garden, riverside trail. The best city park in Seoul. Take the 2pm hour before it fills with after-school families.</div>
+      </div>
+      <div class="opt">
+        <div class="opt-name">Boutique / concept store crawl <span class="cost">browse</span></div>
+        <div class="opt-desc">Seongsu has small-run clothing brands, sneaker shops, and design-object stores that don’t exist anywhere else in Seoul. No list needed — just walk the side streets.</div>
+      </div>
+      <div class="opt">
+        <div class="opt-name">LCDC Seoul (galleries + shops) <span class="cost">Free</span></div>
+        <div class="opt-desc">Multi-brand space in a warehouse. Three floors of Korean designer brands and a gallery. Good for finding things that aren’t on Garosu-gil.</div>
+      </div>
+    </div>
+    <div class="transit">→ metro Line 2 — 5 min to Sindang, or Line 2/5 to Dongdaemun</div>
+    <div class="area-label">Dongdaemun / Sindang — evening</div>
+    <div class="block">
+      <div class="block-time">15:00</div>
+      <div class="block-title">DDP — Dongdaemun Design Plaza <span class="cost">Free outside</span></div>
+      <div class="block-desc">Zaha Hadid’s white curvilinear landmark. Walk the exterior at dusk when the LED facade illuminates. Museum galleries inside have rotating design exhibitions (₩1,000—5,000). Best in late afternoon light.</div>
+      <div class="block-tip">The exterior is the attraction. You don’t need to pay for entry.</div>
+    </div>
+    <div class="options-cluster">
+      <div class="options-head">food — Dongdaemun / Sindang area</div>
+      <div class="opt">
+        <div class="opt-name">Sindang Tteokbokki Town <span class="cost">~$10</span></div>
+        <div class="opt-desc">An entire block of tteokbokki stalls around Sindang Station. Every vendor is slightly different: some add ramen, some add cheese, some add fish cake. Pick two or three and compare. Wholly local crowd.</div>
+      </div>
+      <div class="opt">
+        <div class="opt-name">Kyochon Chicken (Dongdaemun, 24h) <span class="cost">~$25</span></div>
+        <div class="opt-desc">5 min from DDP. Soy-garlic + honey half-and-half. Pair with Cass beer. The definitive version of Korean fried chicken.</div>
+      </div>
+      <div class="opt">
+        <div class="opt-name">DDP food court / street stalls <span class="cost">~$12</span></div>
+        <div class="opt-desc">Street food vendors operate outside DDP in the evenings. Corn dogs, hotteok, odeng (fishcake skewers), tteok. Walk and graze.</div>
+      </div>
+      <div class="opt">
+        <div class="opt-name">Dongdaemun area dakgalbi or Korean BBQ <span class="cost">~$20</span></div>
+        <div class="opt-desc">The streets around DDP have plenty of KBBQ and dakgalbi spots open late. Find one with a crowd and a grill.</div>
+      </div>
+    </div>
+    <div class="options-cluster">
+      <div class="options-head">night — Dongdaemun + Hongdae</div>
+      <div class="opt">
+        <div class="opt-name">Dongdaemun Night Market (DDP) <span class="cost">browse</span></div>
+        <div class="opt-desc">Opens 8pm, runs to 4am. Wholesale and retail fashion, accessories, custom alterations. Walk both main halls. Great for cheap streetwear and oddities.</div>
+      </div>
+      <div class="opt">
+        <div class="opt-name">FREEBIRD (Hongdae) <span class="cost">~$10</span></div>
+        <div class="opt-desc">Hongdae hip-hop club a block from SOAP. Cheaper cover, more accessible, same energy. Good if house music isn’t your thing.</div>
       </div>
     </div>
     </div>
@@ -1122,8 +1115,215 @@ body {
       <div class="day-num">12</div>
     </div>
     <div>
+      <div class="day-title">Markets, beauty, easy night.</div>
+      <div class="day-tagline">Namdaemun + Myeongdong haul, then a low-key Itaewon nightcap.</div>
+      <div class="day-spend">
+        <span class="spend-item">Sleep: <strong>Nine Brick Hongdae</strong></span>
+        <span class="spend-item">Est. spend: <strong>~$80/pp</strong> (night out)</span>
+      </div>
+    </div>
+  </div>
+  <div class="schedule">
+    <div class="area-label first">Namdaemun / Myeongdong / Insadong</div>
+    <div class="block">
+      <div class="block-time">10:00</div>
+      <div class="block-title">Namdaemun Market <span class="cost">~$10</span></div>
+      <div class="block-desc">580-year-old permanent market open since the Joseon dynasty. Cheap kimbap rolls, Korean ginseng, last-minute gifts, real-people Seoul energy. Not fancy, not touristy, just real. 25 min from Hongdae by metro.</div>
+    </div>
+    <div class="options-cluster">
+      <div class="options-head">shopping — Myeongdong (10-min walk from Namdaemun)</div>
+      <div class="opt">
+        <div class="opt-name">Uniqlo Myeongdong (flagship) <span class="cost">~$20–120</span></div>
+        <div class="opt-desc">The largest Uniqlo in Korea, multiple floors — the complete LifeWear range plus Korea-exclusive colorways and collaborations not sold in the US. Right in the heart of Myeongdong. Get here before the K-beauty run so you don't carry bags all day.</div>
+      </div>
+      <div class="opt">
+        <div class="opt-name">Olive Young (main Myeongdong store) <span class="cost">browse</span></div>
+        <div class="opt-desc">Korea’s pharmacy chain — the best single-stop for skincare. Cosrx, Some By Mi, Skin1004, own-brand products at good prices. Get VAT refund forms filled at the counter.</div>
+      </div>
+      <div class="opt">
+        <div class="opt-name">Innisfree flagship <span class="cost">browse</span></div>
+        <div class="opt-desc">Jeju Island brand — green tea serums, sunscreen, sheet masks. Well-organized and easy to navigate.</div>
+      </div>
+      <div class="opt">
+        <div class="opt-name">The Face Shop <span class="cost">browse</span></div>
+        <div class="opt-desc">Reasonable prices, wide range. Good for stocking up on basics without the premium markup of the designer brands.</div>
+      </div>
+      <div class="opt">
+        <div class="opt-name">Dr.Jart+ / Sulwhasoo / Laneige <span class="cost">browse</span></div>
+        <div class="opt-desc">If you want prestige Korean beauty: these flagships are all on the same block. Tester bars at each one.</div>
+      </div>
+      <div class="opt">
+        <div class="opt-name">Tony Moly <span class="cost">browse</span></div>
+        <div class="opt-desc">Playful packaging, affordable prices. Good for gifts — the peach hand cream and banana sleeping masks travel well.</div>
+      </div>
+    </div>
+    <div class="options-cluster">
+      <div class="options-head">lunch — Myeongdong area</div>
+      <div class="opt">
+        <div class="opt-name">Myeongdong Kyoja (original) <span class="cost">~$12</span></div>
+        <div class="opt-desc">Famous kalguksu and mandu. Long queue but moves fast. The original location — 30+ years on the same block.</div>
+      </div>
+      <div class="opt">
+        <div class="opt-name">Myeongdong street food crawl <span class="cost">~$10</span></div>
+        <div class="opt-desc">Cheese corn dog from one stall, tteokbokki from another, tornado potato from a third. Walk the entire length and graze.</div>
+      </div>
+      <div class="opt">
+        <div class="opt-name">Korean set meal (jeongsik) in a side alley <span class="cost">~$12</span></div>
+        <div class="opt-desc">Step off the main shopping street into any of the back lanes and you’ll find cheap office-worker lunch restaurants with full banchan spreads.</div>
+      </div>
+      <div class="opt">
+        <div class="opt-name">Egg Drop sandwich <span class="cost">~$9</span></div>
+        <div class="opt-desc">Korean fluffy egg sandwich chain — a Myeongdong institution. Quick, satisfying, photogenic. Good if you’re tired of heavy food.</div>
+      </div>
+      <div class="opt">
+        <div class="opt-name">Lotteria (롯데리아) <span class="cost">~$8</span></div>
+        <div class="opt-desc">Korea’s original fast food chain (est. 1979). Try the rice burger — a fried patty inside a compressed rice "bun" — or the Hanwoo beef burger. Branches everywhere in Myeongdong. A cultural touchstone, not just fast food. Eat here at least once.</div>
+      </div>
+      <div class="opt">
+        <div class="opt-name">Jjajangmyeon (짜장면) — Korean-Chinese <span class="cost">~$10</span></div>
+        <div class="opt-desc">Look for a 중화요리 sign near Namdaemun or Myeongdong — thick noodles in fermented black bean sauce with pork, Korea’s ultimate comfort carb. Tangsuyuk (sweet-crispy pork) on the side is mandatory. The most-ordered delivery food in Korea.</div>
+      </div>
+    </div>
+    <div class="options-cluster">
+      <div class="options-head">gifts + stationery — Insadong (10-min walk)</div>
+      <div class="opt">
+        <div class="opt-name">Artbox Insadong <span class="cost">~$20</span></div>
+        <div class="opt-desc">Korean stationery paradise. Quality notebooks, character goods, pens, oddities at ₩3,000—10,000 each.</div>
+      </div>
+      <div class="opt">
+        <div class="opt-name">Insadong Ssamzigil courtyard <span class="cost">browse</span></div>
+        <div class="opt-desc">Independent ceramics, handmade craft, Korean design goods in a three-story courtyard. Better quality than the main drag.</div>
+      </div>
+      <div class="opt">
+        <div class="opt-name">Traditional paper (hanji) shops <span class="cost">browse</span></div>
+        <div class="opt-desc">Insadong has several hanji (Korean rice paper) shops selling stationery, cards, and lanterns. Genuinely beautiful and cheap.</div>
+      </div>
+      <div class="opt">
+        <div class="opt-name">Joayo / Noo-ri ceramic shops <span class="cost">browse</span></div>
+        <div class="opt-desc">Small independent ceramic studios on the Insadong back alleys. Hand-thrown teacups and bowls to take home.</div>
+      </div>
+    </div>
+    <div class="transit">→ metro 20 min to Itaewon</div>
+    <div class="area-label">Itaewon — easy evening</div>
+    <div class="options-cluster">
+      <div class="options-head">dinner — Itaewon</div>
+      <div class="opt">
+        <div class="opt-name">Itaewon pojangmacha / street stalls <span class="cost">~$12</span></div>
+        <div class="opt-desc">Quick tent-bar food, cheap and cheerful — keep dinner simple tonight.</div>
+      </div>
+    </div>
+    <div class="block">
+      <div class="block-time">21:00</div>
+      <div class="block-title">Bar Cham — relaxed nightcap <span class="cost">~$18</span></div>
+      <div class="block-desc">A deliberately low-key night after a hectic day of markets and beauty halls: one round of creative Korean-spirit cocktails (soju, makgeolli, omija) in Bar Cham's intimate room, then an early-ish night. You're resting up — tomorrow is the big Gangnam blowout: Garosu-gil by day, Octagon after dark.</div>
+    </div>
+    <div class="options-cluster">
+      <div class="options-head">or one more, still mellow</div>
+      <div class="opt">
+        <div class="opt-name">Southside Parlor <span class="cost">~$18</span></div>
+        <div class="opt-desc">Seasonal rotating cocktail menu, serious bartenders. Order what they recommend and call it a night.</div>
+      </div>
+    </div>
+    </div>
+</div>
+
+<!-- DAY 13 -->
+<div class="day">
+  <div class="day-head">
+    <div>
+      <div class="day-date">Thu Aug 6</div>
+      <span class="day-city-tag" style="background:var(--seoul-soft); color:var(--seoul)">Seoul</span>
+      <div class="day-num">13</div>
+    </div>
+    <div>
+      <div class="day-title">River, mall, Itaewon.</div>
+      <div class="day-tagline">Yeouido riverside cycling, The Hyundai Seoul, Itaewon night.</div>
+      <div class="day-spend">
+        <span class="spend-item">Sleep: <strong>Nine Brick Hongdae</strong></span>
+        <span class="spend-item">Est. spend: <strong>~$65/pp</strong></span>
+      </div>
+    </div>
+  </div>
+  <div class="schedule">
+    <div class="area-label first">Yeouido — morning</div>
+    <div class="block highlight">
+      <div class="block-time">10:30</div>
+      <div class="block-title">Yeouido Hangang Park — riverside bikes <span class="cost">~$5</span></div>
+      <div class="block-desc">Rent bikes at the Yeouido dock (₩3,000/hr) and cycle the path east toward Banpo or west toward Mapo. Han river views, parkside GS25 snacks, open sky. The best lazy afternoon in Seoul.</div>
+    </div>
+    <div class="options-cluster">
+      <div class="options-head">lunch — Yeouido area</div>
+      <div class="opt">
+        <div class="opt-name">GS25 riverside picnic <span class="cost">~$10</span></div>
+        <div class="opt-desc">Beer, ramyeon cup, kimbap roll, and whatever else looks good from the park convenience store. Eat on the grass. Maximum efficiency.</div>
+      </div>
+      <div class="opt">
+        <div class="opt-name">Local jeongsik / bibimbap near Yeouido Station <span class="cost">~$12</span></div>
+        <div class="opt-desc">The blocks around Yeouido Station (west of the park) have cheap set-meal restaurants serving weekday workers. Zero tourist presence.</div>
+      </div>
+      <div class="opt">
+        <div class="opt-name">Baemin delivery to the park <span class="cost">~$15</span></div>
+        <div class="opt-desc">Order Korean fried chicken or pizza delivery to your park coordinates via the Baemin app. Hotel staff can help set it up.</div>
+      </div>
+    </div>
+    <div class="options-cluster">
+      <div class="options-head">afternoon — Yeouido (pick one or both)</div>
+      <div class="opt">
+        <div class="opt-name">The Hyundai Seoul (더현대서울) <span class="cost">browse</span></div>
+        <div class="opt-desc">The most architecturally stunning mall in Korea is right here in Yeouido: a vast white atrium with an indoor forest, glass ceiling, and natural light. Opened 2021. Korean designer brands, Uniqlo, an outstanding food hall, and Nudake — Gentle Monster's dessert studio. Worth going even if you don't buy anything.</div>
+      </div>
+      <div class="opt">
+        <div class="opt-name">IFC Mall Yeouido <span class="cost">browse</span></div>
+        <div class="opt-desc">5-min walk from The Hyundai Seoul, underground in the IFC office tower complex. Less design-forward but solid food court, CGV cinema, and a good range of shops. Less crowded than The Hyundai. Worth pairing with the main mall if you have time.</div>
+      </div>
+      <div class="opt">
+        <div class="opt-name">Seonyudo Park <span class="cost">Free</span></div>
+        <div class="opt-desc">Tiny island in the Han — accessible by footbridge from Yangpyeong Station. Converted water treatment plant turned botanical garden. Rusted industrial forms overgrown with plants. Quiet, photogenic. 30-45 min is enough.</div>
+      </div>
+    </div>
+    <div class="transit">→ metro 20 min to Itaewon</div>
+    <div class="area-label">Itaewon — evening</div>
+    <div class="options-cluster">
+      <div class="options-head">dinner — Itaewon</div>
+      <div class="opt">
+        <div class="opt-name">Wang Thai <span class="cost">~$20</span></div>
+        <div class="opt-desc">One of Seoul’s longest-running Thai kitchens, in the heart of Itaewon. Green curry, pad see ew, cashew chicken. Arrive before 7pm to beat the wait.</div>
+      </div>
+      <div class="opt">
+        <div class="opt-name">Vatos Urban Tacos <span class="cost">~$18</span></div>
+        <div class="opt-desc">Korean-Mex: galbi tacos, kimchi quesadillas, loaded fries. Loud, fun, efficient.</div>
+      </div>
+      <div class="opt">
+        <div class="opt-name">Itaewon street food + chicken stalls <span class="cost">~$15</span></div>
+        <div class="opt-desc">The main Itaewon strip has pojangmacha (tent stalls) and fried chicken spots open late. Quick, cheap, cheerful.</div>
+      </div>
+    </div>
+    <div class="block highlight">
+      <div class="block-time">22:00</div>
+      <div class="block-title">DUSK TILL DAWN → Venue / Cove Bar <span class="cost">~$20</span></div>
+      <div class="block-desc">4.9★ cocktail lounge in Itaewon — jazz at perfect volume, genuinely great drinks. Then Venue (underground techno, 100m away) or Cove Bar (Haebangchon rooftop, open-air). Both close late.</div>
+    </div>
+    <div class="options-cluster">
+      <div class="options-head">more bars — Itaewon</div>
+      <div class="opt">
+        <div class="opt-name">Haebangchon pojangmacha <span class="cost">~$10</span></div>
+        <div class="opt-desc">The hill above Itaewon has outdoor tent bars that close around 2am. Cheap beer and soju with expats and locals mixed.</div>
+      </div>
+    </div>
+    </div>
+</div>
+
+<!-- DAY 14 -->
+<div class="day">
+  <div class="day-head">
+    <div>
+      <div class="day-date">Fri Aug 7</div>
+      <span class="day-city-tag" style="background:var(--seoul-soft); color:var(--seoul)">Seoul</span>
+      <div class="day-num">14</div>
+    </div>
+    <div>
       <div class="day-title">Gym, world-class art, the library in the mall.</div>
-      <div class="day-tagline">Fitness morning, Leeum Museum, COEX Starfield Library.</div>
+      <div class="day-tagline">Garosu-gil boutiques, COEX Starfield Library — then Octagon till late.</div>
       <div class="day-spend">
         <span class="spend-item">Sleep: <strong>Nine Brick Hongdae</strong></span>
         <span class="spend-item">Est. spend: <strong>~$60/pp</strong></span>
@@ -1239,8 +1439,8 @@ body {
         <div class="opt-desc">Go for drinks instead of dinner — the makgeolli and pajeon setup works perfectly as a drinking session.</div>
       </div>
       <div class="opt">
-        <div class="opt-name">Gin Gin Bar (Cheongdam) <span class="cost">~$18</span></div>
-        <div class="opt-desc">Gin-forward cocktail bar in Cheongdam. Good pours, relaxed setting.</div>
+        <div class="opt-name">Le Chamber (Cheongdam) <span class="cost">~$18</span></div>
+        <div class="opt-desc">Hidden Cheongdam speakeasy behind a bookcase door — one of Asia’s 50 Best Bars, immaculate classic cocktails.</div>
       </div>
       <div class="opt">
         <div class="opt-name">Alice Cheongdam <span class="cost">~$20</span></div>
@@ -1252,217 +1452,6 @@ body {
       <div class="block-title">Octagon Club (Gangnam) <span class="cost">~$25</span></div>
       <div class="block-desc">Consistently ranked top-5 in Asia. Three floors, industrial main room with world-class production, resident and international DJs. Cover ₩20,000—30,000. Smart dress enforced — no shorts, no sandals. Passport required for foreigners. Walk-in before midnight or book table service.</div>
       <div class="block-tip">Check Octagon’s Instagram for the lineup. If a big name is playing, pre-register online.</div>
-    </div>
-    </div>
-</div>
-
-<!-- DAY 13 -->
-<div class="day">
-  <div class="day-head">
-    <div>
-      <div class="day-date">Thu Aug 6</div>
-      <span class="day-city-tag" style="background:var(--seoul-soft); color:var(--seoul)">Seoul</span>
-      <div class="day-num">13</div>
-    </div>
-    <div>
-      <div class="day-title">River, mall, Itaewon.</div>
-      <div class="day-tagline">Yeouido riverside cycling, The Hyundai Seoul, Itaewon night.</div>
-      <div class="day-spend">
-        <span class="spend-item">Sleep: <strong>Nine Brick Hongdae</strong></span>
-        <span class="spend-item">Est. spend: <strong>~$65/pp</strong></span>
-      </div>
-    </div>
-  </div>
-  <div class="schedule">
-    <div class="area-label first">Yeouido — morning</div>
-    <div class="block highlight">
-      <div class="block-time">10:30</div>
-      <div class="block-title">Yeouido Hangang Park — riverside bikes <span class="cost">~$5</span></div>
-      <div class="block-desc">Rent bikes at the Yeouido dock (₩3,000/hr) and cycle the path east toward Banpo or west toward Mapo. Han river views, parkside GS25 snacks, open sky. The best lazy afternoon in Seoul.</div>
-    </div>
-    <div class="options-cluster">
-      <div class="options-head">lunch — Yeouido area</div>
-      <div class="opt">
-        <div class="opt-name">GS25 riverside picnic <span class="cost">~$10</span></div>
-        <div class="opt-desc">Beer, ramyeon cup, kimbap roll, and whatever else looks good from the park convenience store. Eat on the grass. Maximum efficiency.</div>
-      </div>
-      <div class="opt">
-        <div class="opt-name">Local jeongsik / bibimbap near Yeouido Station <span class="cost">~$12</span></div>
-        <div class="opt-desc">The blocks around Yeouido Station (west of the park) have cheap set-meal restaurants serving weekday workers. Zero tourist presence.</div>
-      </div>
-      <div class="opt">
-        <div class="opt-name">Baemin delivery to the park <span class="cost">~$15</span></div>
-        <div class="opt-desc">Order Korean fried chicken or pizza delivery to your park coordinates via the Baemin app. Hotel staff can help set it up.</div>
-      </div>
-    </div>
-    <div class="options-cluster">
-      <div class="options-head">afternoon — Yeouido (pick one or both)</div>
-      <div class="opt">
-        <div class="opt-name">The Hyundai Seoul (더현대서울) <span class="cost">browse</span></div>
-        <div class="opt-desc">The most architecturally stunning mall in Korea is right here in Yeouido: a vast white atrium with an indoor forest, glass ceiling, and natural light. Opened 2021. Korean designer brands, Uniqlo, an outstanding food hall, and Nudake — Gentle Monster's dessert studio. Worth going even if you don't buy anything.</div>
-      </div>
-      <div class="opt">
-        <div class="opt-name">IFC Mall Yeouido <span class="cost">browse</span></div>
-        <div class="opt-desc">5-min walk from The Hyundai Seoul, underground in the IFC office tower complex. Less design-forward but solid food court, CGV cinema, and a good range of shops. Less crowded than The Hyundai. Worth pairing with the main mall if you have time.</div>
-      </div>
-      <div class="opt">
-        <div class="opt-name">Seonyudo Park <span class="cost">Free</span></div>
-        <div class="opt-desc">Tiny island in the Han — accessible by footbridge from Yangpyeong Station. Converted water treatment plant turned botanical garden. Rusted industrial forms overgrown with plants. Quiet, photogenic. 30-45 min is enough.</div>
-      </div>
-    </div>
-    <div class="transit">→ metro 20 min to Itaewon</div>
-    <div class="area-label">Itaewon — evening</div>
-    <div class="options-cluster">
-      <div class="options-head">dinner — Itaewon</div>
-      <div class="opt">
-        <div class="opt-name">Bangkok Recipe <span class="cost">~$20</span></div>
-        <div class="opt-desc">The best Thai restaurant in Seoul. Green curry, larb, pad see ew. Arrive before 7pm to avoid the wait.</div>
-      </div>
-      <div class="opt">
-        <div class="opt-name">Vatos Urban Tacos <span class="cost">~$18</span></div>
-        <div class="opt-desc">Korean-Mex: galbi tacos, kimchi quesadillas, loaded fries. Loud, fun, efficient.</div>
-      </div>
-      <div class="opt">
-        <div class="opt-name">Itaewon street food + chicken stalls <span class="cost">~$15</span></div>
-        <div class="opt-desc">The main Itaewon strip has pojangmacha (tent stalls) and fried chicken spots open late. Quick, cheap, cheerful.</div>
-      </div>
-    </div>
-    <div class="block highlight">
-      <div class="block-time">22:00</div>
-      <div class="block-title">DUSK TILL DAWN → Venue / Pistil <span class="cost">~$20</span></div>
-      <div class="block-desc">4.9★ cocktail lounge in Itaewon — jazz at perfect volume, genuinely great drinks. Then Venue (underground techno, 100m away) or Pistil (Haebangchon rooftop, open-air, hip-hop). Both close at 6am.</div>
-    </div>
-    <div class="options-cluster">
-      <div class="options-head">more bars — Itaewon</div>
-      <div class="opt">
-        <div class="opt-name">Haebangchon pojangmacha <span class="cost">~$10</span></div>
-        <div class="opt-desc">The hill above Itaewon has outdoor tent bars that close around 2am. Cheap beer and soju with expats and locals mixed.</div>
-      </div>
-    </div>
-    </div>
-</div>
-
-<!-- DAY 14 -->
-<div class="day">
-  <div class="day-head">
-    <div>
-      <div class="day-date">Fri Aug 7</div>
-      <span class="day-city-tag" style="background:var(--seoul-soft); color:var(--seoul)">Seoul</span>
-      <div class="day-num">14</div>
-    </div>
-    <div>
-      <div class="day-title">Markets, beauty, Friday night.</div>
-      <div class="day-tagline">Namdaemun + Myeongdong haul, then Itaewon for the best Friday in Seoul.</div>
-      <div class="day-spend">
-        <span class="spend-item">Sleep: <strong>Nine Brick Hongdae</strong></span>
-        <span class="spend-item">Est. spend: <strong>~$80/pp</strong> (night out)</span>
-      </div>
-    </div>
-  </div>
-  <div class="schedule">
-    <div class="area-label first">Namdaemun / Myeongdong / Insadong</div>
-    <div class="block">
-      <div class="block-time">10:00</div>
-      <div class="block-title">Namdaemun Market <span class="cost">~$10</span></div>
-      <div class="block-desc">580-year-old permanent market open since the Joseon dynasty. Cheap kimbap rolls, Korean ginseng, last-minute gifts, real-people Seoul energy. Not fancy, not touristy, just real. 25 min from Hongdae by metro.</div>
-    </div>
-    <div class="options-cluster">
-      <div class="options-head">shopping — Myeongdong (10-min walk from Namdaemun)</div>
-      <div class="opt">
-        <div class="opt-name">Uniqlo Myeongdong (flagship) <span class="cost">~$20–120</span></div>
-        <div class="opt-desc">The largest Uniqlo in Korea, multiple floors — the complete LifeWear range plus Korea-exclusive colorways and collaborations not sold in the US. Right in the heart of Myeongdong. Get here before the K-beauty run so you don't carry bags all day.</div>
-      </div>
-      <div class="opt">
-        <div class="opt-name">Olive Young (main Myeongdong store) <span class="cost">browse</span></div>
-        <div class="opt-desc">Korea’s pharmacy chain — the best single-stop for skincare. Cosrx, Some By Mi, Skin1004, own-brand products at good prices. Get VAT refund forms filled at the counter.</div>
-      </div>
-      <div class="opt">
-        <div class="opt-name">Innisfree flagship <span class="cost">browse</span></div>
-        <div class="opt-desc">Jeju Island brand — green tea serums, sunscreen, sheet masks. Well-organized and easy to navigate.</div>
-      </div>
-      <div class="opt">
-        <div class="opt-name">The Face Shop <span class="cost">browse</span></div>
-        <div class="opt-desc">Reasonable prices, wide range. Good for stocking up on basics without the premium markup of the designer brands.</div>
-      </div>
-      <div class="opt">
-        <div class="opt-name">Dr.Jart+ / Sulwhasoo / Laneige <span class="cost">browse</span></div>
-        <div class="opt-desc">If you want prestige Korean beauty: these flagships are all on the same block. Tester bars at each one.</div>
-      </div>
-      <div class="opt">
-        <div class="opt-name">Tony Moly <span class="cost">browse</span></div>
-        <div class="opt-desc">Playful packaging, affordable prices. Good for gifts — the peach hand cream and banana sleeping masks travel well.</div>
-      </div>
-    </div>
-    <div class="options-cluster">
-      <div class="options-head">lunch — Myeongdong area</div>
-      <div class="opt">
-        <div class="opt-name">Myeongdong Kyoja (original) <span class="cost">~$12</span></div>
-        <div class="opt-desc">Famous kalguksu and mandu. Long queue but moves fast. The original location — 30+ years on the same block.</div>
-      </div>
-      <div class="opt">
-        <div class="opt-name">Myeongdong street food crawl <span class="cost">~$10</span></div>
-        <div class="opt-desc">Cheese corn dog from one stall, tteokbokki from another, tornado potato from a third. Walk the entire length and graze.</div>
-      </div>
-      <div class="opt">
-        <div class="opt-name">Korean set meal (jeongsik) in a side alley <span class="cost">~$12</span></div>
-        <div class="opt-desc">Step off the main shopping street into any of the back lanes and you’ll find cheap office-worker lunch restaurants with full banchan spreads.</div>
-      </div>
-      <div class="opt">
-        <div class="opt-name">Egg Drop sandwich <span class="cost">~$9</span></div>
-        <div class="opt-desc">Korean fluffy egg sandwich chain — a Myeongdong institution. Quick, satisfying, photogenic. Good if you’re tired of heavy food.</div>
-      </div>
-      <div class="opt">
-        <div class="opt-name">Lotteria (롯데리아) <span class="cost">~$8</span></div>
-        <div class="opt-desc">Korea’s original fast food chain (est. 1979). Try the rice burger — a fried patty inside a compressed rice "bun" — or the Hanwoo beef burger. Branches everywhere in Myeongdong. A cultural touchstone, not just fast food. Eat here at least once.</div>
-      </div>
-      <div class="opt">
-        <div class="opt-name">Jjajangmyeon (짜장면) — Korean-Chinese <span class="cost">~$10</span></div>
-        <div class="opt-desc">Look for a 중화요리 sign near Namdaemun or Myeongdong — thick noodles in fermented black bean sauce with pork, Korea’s ultimate comfort carb. Tangsuyuk (sweet-crispy pork) on the side is mandatory. The most-ordered delivery food in Korea.</div>
-      </div>
-    </div>
-    <div class="options-cluster">
-      <div class="options-head">gifts + stationery — Insadong (10-min walk)</div>
-      <div class="opt">
-        <div class="opt-name">Artbox Insadong <span class="cost">~$20</span></div>
-        <div class="opt-desc">Korean stationery paradise. Quality notebooks, character goods, pens, oddities at ₩3,000—10,000 each.</div>
-      </div>
-      <div class="opt">
-        <div class="opt-name">Insadong Ssamzigil courtyard <span class="cost">browse</span></div>
-        <div class="opt-desc">Independent ceramics, handmade craft, Korean design goods in a three-story courtyard. Better quality than the main drag.</div>
-      </div>
-      <div class="opt">
-        <div class="opt-name">Traditional paper (hanji) shops <span class="cost">browse</span></div>
-        <div class="opt-desc">Insadong has several hanji (Korean rice paper) shops selling stationery, cards, and lanterns. Genuinely beautiful and cheap.</div>
-      </div>
-      <div class="opt">
-        <div class="opt-name">Joayo / Noo-ri ceramic shops <span class="cost">browse</span></div>
-        <div class="opt-desc">Small independent ceramic studios on the Insadong back alleys. Hand-thrown teacups and bowls to take home.</div>
-      </div>
-    </div>
-    <div class="transit">→ metro 20 min to Itaewon — Friday night</div>
-    <div class="area-label">Itaewon — Friday night</div>
-    <div class="options-cluster">
-      <div class="options-head">dinner — Itaewon</div>
-      <div class="opt">
-        <div class="opt-name">Itaewon pojangmacha / street stalls <span class="cost">~$12</span></div>
-        <div class="opt-desc">Keep it light if you’re hitting the clubs early. Quick tent-bar food, cheap and cheerful.</div>
-      </div>
-    </div>
-    <div class="block highlight">
-      <div class="block-time">21:00</div>
-      <div class="block-title">Bar Cham → Cakeshop <span class="cost">~$20</span></div>
-      <div class="block-desc">Friday night Itaewon. Bar Cham for creative cocktails made with Korean spirits in an intimate room. Then Cakeshop: basement Itaewon, best sound system in the city, packed on Fridays, techno/house/bass. Lockers available. Closes at 6am.</div>
-    </div>
-    <div class="options-cluster">
-      <div class="options-head">more options — Friday clubs Itaewon</div>
-      <div class="opt">
-        <div class="opt-name">Venue (Itaewon basement) <span class="cost">~$10</span></div>
-        <div class="opt-desc">Underground techno, 100m from DUSK TILL DAWN. Smaller than Cakeshop, more raw.</div>
-      </div>
-      <div class="opt">
-        <div class="opt-name">Pistil (Haebangchon rooftop) <span class="cost">~$10</span></div>
-        <div class="opt-desc">Open-air rooftop above the hill. Hip-hop and R&B. Best for a warm Friday night.</div>
-      </div>
     </div>
     </div>
 </div>
@@ -1546,6 +1535,7 @@ body {
     </div>
 </div>
 
+
 </div><!-- /tab-seoul -->
 
 </div><!-- /.page -->
@@ -1593,6 +1583,8 @@ const TITLE_MAP = {
   'walkerhill casino':      'seo-ca3',
   'leeum':                  'seo-mu2',
   'mangwon hangang park':   null,
+  'gyeongui':               'seo-e5',
+  'bossam':                 'seo-bj1',
   'cakeshop':               'seo-nc2',
   'mongvely':               'seo-b1',
   // sights
@@ -1645,26 +1637,79 @@ const TITLE_MAP = {
   'sindang':                'seo-sf4',
 };
 
-// Track which galleries have already rendered, so the same set of images
-// never appears on more than one day (first occurrence wins).
-const _shownImg = new Set();
+// Per-day image de-dup: each gallery shows once per day (so a venue that recurs
+// on a later day still gets its photo), but never twice within the same day.
+const _shownByDay = new Map();
+function _firstShownInDay(el, id) {
+  const day = el.closest('.day') || document.body;
+  let s = _shownByDay.get(day);
+  if (!s) { s = new Set(); _shownByDay.set(day, s); }
+  if (s.has(id)) return false;
+  s.add(id);
+  return true;
+}
+
+// Shared: append a 📍 Google-Maps link to a heading element for a matched venue.
+// Prefer the exact Google place_id when we have one; otherwise search by name
+// (more reliable than centring the map on an approximate coordinate).
+function _addMapLink(headingEl, id) {
+  const it = _allItems[id];
+  if (!it || headingEl.querySelector('.opt-map-link')) return;
+  const q = encodeURIComponent(it.name + ', Seoul');
+  const href = it.place_id
+    ? 'https://www.google.com/maps/search/?api=1&query=' + q + '&query_place_id=' + it.place_id
+    : 'https://www.google.com/maps/search/?api=1&query=' + q;
+  const a = document.createElement('a');
+  a.href = href;
+  a.target = '_blank';
+  a.rel = 'noopener';
+  a.className = 'opt-map-link';
+  a.textContent = '📍';
+  a.title = 'Open in Google Maps';
+  headingEl.appendChild(a);
+}
+
+// Fallback 📍 for real activities with no data match: search Maps by title text.
+// Skips pure logistics / non-place lines (check-out, transit arrows, downtime…).
+const _NOPLACE = /check[\s-]?out|downtime|arrive icn|cts\s*→\s*icn|\bitx\b|→\s*metro|explore your neighbo|return to hongdae|baemin delivery|just hongdae|pack \+ rest/i;
+function _addSearchLink(headingEl, text) {
+  if (!text || headingEl.querySelector('.opt-map-link') || _NOPLACE.test(text)) return;
+  let q = text.split('→').pop()
+    .replace(/\([^)]*\)/g, '')
+    .replace(/\s+[—–]\s+.*$/, '')
+    .replace(/\s+\/\s+.*$/, '')
+    .trim();
+  if (q.length < 3) return;
+  const a = document.createElement('a');
+  a.href = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(q + ', Seoul');
+  a.target = '_blank';
+  a.rel = 'noopener';
+  a.className = 'opt-map-link';
+  a.textContent = '📍';
+  a.title = 'Open in Google Maps';
+  headingEl.appendChild(a);
+}
 
 document.querySelectorAll('.block').forEach(block => {
   const titleEl = block.querySelector('.block-title');
   if (!titleEl) return;
   // Title text without the cost span
-  const raw = Array.from(titleEl.childNodes)
+  const txt = Array.from(titleEl.childNodes)
     .filter(n => n.nodeType === Node.TEXT_NODE)
-    .map(n => n.textContent).join('').trim().toLowerCase();
+    .map(n => n.textContent).join('').trim();
+  const raw = txt.toLowerCase();
 
   let matchId = null;
   for (const [kw, id] of Object.entries(TITLE_MAP)) {
     if (raw.includes(kw)) { matchId = id; break; }
   }
+  if (!matchId) { _addSearchLink(titleEl, txt); return; }
+
+  _addMapLink(titleEl, matchId);          // 📍 even when the gallery is de-duped
+
   const item = _itemMap[matchId];
   if (!item || !item.images || !item.images.length) return;
-  if (_shownImg.has(matchId)) return;        // skip duplicate gallery
-  _shownImg.add(matchId);
+  if (!_firstShownInDay(block, matchId)) return;
 
   const wrap = document.createElement('div');
   wrap.className = 'block-imgs';
@@ -1682,8 +1727,8 @@ document.querySelectorAll('.block').forEach(block => {
 // ── 24h → 12h AM/PM ──────────────────────────────────────────
 // ---- Option images -------------------------------------------------------
 const OPT_MAP = {
-  "c'ote korea": 'seo-ir3',
-  "c'ote": 'seo-ir3',
+  'soseoul hannam':              'seo-ir3',
+  'soseoul':                     'seo-ir3',
   "o'kitchen": 'seo-ir4',
   'sinchon dakgalbi':           'seo-kf8',
   'dakgalbi alley':             'seo-kf8',
@@ -1691,7 +1736,7 @@ const OPT_MAP = {
   'hongdae gopchang':           'seo-kf10',
   'bogwangjung':                'seo-b3',
   'mapo galmaegi':              'seo-mp1',
-  'bangkok recipe':             'seo-ir1',
+  'wang thai':                   'seo-ir1',
   'vatos urban tacos':          'seo-ir2',
   'halal guys':                 'seo-ir6',
   'tartine hannam':             'seo-ir5',
@@ -1700,7 +1745,7 @@ const OPT_MAP = {
   'sanchon':                    'seo-ins1',
   'sundubu jjigae':             'seo-kf9',
   'sundubu':                    'seo-kf9',
-  'able cafe':                  'seo-sc4',
+  'chedda':                      'seo-sc4',
   'myeongdong kyoja':           'seo-no1',
   'sinchon budae':              'seo-kf7',
   'budae jjigae':               'seo-kf7',
@@ -1765,13 +1810,13 @@ const OPT_MAP = {
   'southside parlor':           'seo-cb7',
   'cakeshop':                   'seo-nc2',
   'venue':                      'seo-nc5',
-  'pistil':                     'seo-hb4',
-  'bab ajeossi':                'seo-hb5',
-  'blackbird':                  'seo-hb6',
-  'bar de nuit':                'seo-hb7',
-  'woo saeng go':               'seo-hb8',
+  'cove bar':                    'seo-hb4',
+  'salon sulla':                 'seo-hb5',
+  'hang out':                    'seo-hb6',
+  'art monster':                 'seo-hb7',
+  'sikmul':                      'seo-hb8',
   'alice cheongdam':            'seo-cb4',
-  'gin gin bar':                'seo-chm1',
+  'le chamber':                  'seo-chm1',
   'neurin maeul':               'seo-mk2',
   'whalehouse':                 'seo-st4',
   'jindalae makgeolli':         'seo-chm2',
@@ -1806,32 +1851,23 @@ const OPT_MAP = {
 document.querySelectorAll('.opt').forEach(opt => {
   const nameEl = opt.querySelector('.opt-name');
   if (!nameEl) return;
-  const raw = Array.from(nameEl.childNodes)
+  const txt = Array.from(nameEl.childNodes)
     .filter(n => n.nodeType === Node.TEXT_NODE)
-    .map(n => n.textContent).join('').trim().toLowerCase().replace(/[‘’ʼ]/g, "'");
+    .map(n => n.textContent).join('').trim();
+  const raw = txt.toLowerCase().replace(/[‘’ʼ]/g, "'");
 
   let matchId = null;
   for (const [kw, id] of Object.entries(OPT_MAP)) {
     if (raw.includes(kw)) { matchId = id; break; }
   }
 
-  // Map link — inject for any matched item that has coordinates
-  const anyItem = _allItems[matchId];
-  if (anyItem && anyItem.lat && anyItem.lng) {
-    const a = document.createElement('a');
-    a.href = 'https://www.google.com/maps/search/' + encodeURIComponent(anyItem.name) + '/@' + anyItem.lat + ',' + anyItem.lng + ',17z';
-    a.target = '_blank';
-    a.rel = 'noopener';
-    a.className = 'opt-map-link';
-    a.textContent = '📍';
-    a.title = 'Open in Google Maps';
-    nameEl.appendChild(a);
-  }
+  // Map link — exact via place_id; else search by the option's own text
+  if (matchId) _addMapLink(nameEl, matchId);
+  else _addSearchLink(nameEl, txt);
 
   const item = _itemMap[matchId];
   if (!item || !item.images || !item.images.length) return;
-  if (_shownImg.has(matchId)) return;        // skip duplicate gallery
-  _shownImg.add(matchId);
+  if (!_firstShownInDay(opt, matchId)) return;
 
   const wrap = document.createElement('div');
   wrap.className = 'opt-imgs';
@@ -1865,210 +1901,103 @@ document.querySelectorAll('.block-time').forEach(el => {
 })();
 
 // ── Per-day route maps (Leaflet) ──────────────────────────────
-const DAY_ROUTES = {
-  1: {
-    center:[35.659,139.700], zoom:15, color:'#e63946',
-    stops:[
-      {n:1, name:'The Millennials Shibuya — check-in',   lat:35.6594, lng:139.7005},
-      {n:2, name:'Shibuya Scramble + Parco',              lat:35.6594, lng:139.7004},
-      {n:3, name:'KINKA Sushi Bar Izakaya',               lat:35.6601, lng:139.6993},
-      {n:4, name:'ATOM Shibuya / WOMB',                   lat:35.6574, lng:139.6980},
-    ]
-  },
-  2: {
-    center:[35.678,139.738], zoom:12, color:'#e63946',
-    stops:[
-      {n:1, name:'Senso-ji Temple (Asakusa)',               lat:35.7148, lng:139.7967},
-      {n:2, name:'teamLab Borderless (Azabudai)',         lat:35.6616, lng:139.7433},
-      {n:3, name:'Shinjuku / Omoide Yokocho',             lat:35.6928, lng:139.7001},
-      {n:4, name:'A5 Wagyu PANGA (Ueno)',                 lat:35.7071, lng:139.7741},
-      {n:5, name:'Shibuya Sky (night slot)',              lat:35.6580, lng:139.7018},
-      {n:6, name:'WOMB Shibuya',                          lat:35.6567, lng:139.6984},
-    ]
-  },
-  3: {
-    center:[43.062,139.358], zoom:13, color:'#2a5d57',
-    stops:[
-      {n:1, name:'Arrive Sapporo Station — Plat Hostel', lat:43.0686, lng:141.3506},
-      {n:2, name:'Soup Curry — Suage+',                   lat:43.0619, lng:141.3544},
-      {n:3, name:'Sapporo Beer Garden (jingisukan)',      lat:43.0715, lng:141.3691},
-      {n:4, name:'Susukino / Music Bar SIDE:K',          lat:43.0535, lng:141.3570},
-    ]
-  },
-  4: {
-    center:[43.037,141.337], zoom:12, color:'#2a5d57',
-    stops:[
-      {n:1, name:'Takino Suzuran Hillside Park',          lat:42.9881, lng:141.3527},
-      {n:2, name:'Ramen Alley Susukino',                  lat:43.0540, lng:141.3562},
-      {n:3, name:'Mt. Moiwa Ropeway',                     lat:43.0290, lng:141.3182},
-      {n:4, name:'Rock Bar Fxxk Up',                      lat:43.0543, lng:141.3570},
-    ]
-  },
-  5: {
-    center:[37.565,126.970], zoom:13, color:'#9d4edd',
-    stops:[
-      {n:1, name:'Hongdae — Nine Brick check-in',        lat:37.5569, lng:126.9232},
-      {n:2, name:'Myeongdong street food',                lat:37.5609, lng:126.9840},
-      {n:3, name:'Gwangjang Market food crawl',           lat:37.5700, lng:126.9996},
-      {n:4, name:'Hongdae walk + Dae Wang Tong Dak',    lat:37.5558, lng:126.9231},
-      {n:5, name:'Ho Bar III → Club FF',                 lat:37.5570, lng:126.9240},
-    ]
-  },
-  6: {
-    center:[37.544,126.980], zoom:13, color:'#9d4edd',
-    stops:[
-      {n:1, name:'Dragon Hill Spa (Yongsan)',             lat:37.5350, lng:126.9647},
-      {n:2, name:'Hannam-dong lunch',                     lat:37.5360, lng:126.9985},
-      {n:3, name:'N Seoul Tower / Namsan',                lat:37.5512, lng:126.9882},
-      {n:4, name:'Bogwangjung KBBQ (Itaewon)',           lat:37.5333, lng:126.9945},
-      {n:5, name:'Itaewon bars + Cakeshop',               lat:37.5345, lng:126.9945},
-    ]
-  },
-  7: {
-    center:[37.552,126.920], zoom:13, color:'#9d4edd',
-    stops:[
-      {n:1, name:'Personal Color Analysis (Hongdae)',    lat:37.5569, lng:126.9249},
-      {n:2, name:'Sinchon dakgalbi + Hongdae shopping', lat:37.5551, lng:126.9413},
-      {n:3, name:'Mangwon Market',                       lat:37.5498, lng:126.9093},
-      {n:4, name:'Mangwon Hangang Park — chimaek',       lat:37.5488, lng:126.9067},
-      {n:5, name:'Neurin Maeul / Mapo late bars',       lat:37.5480, lng:126.9200},
-    ]
-  },
-  8: {
-    center:[37.556,126.988], zoom:12, color:'#9d4edd',
-    stops:[
-      {n:1, name:'Cafe Onion (Seongsu-dong)',            lat:37.5444, lng:127.0574},
-      {n:2, name:'Seongsu lunch',                        lat:37.5432, lng:127.0558},
-      {n:3, name:'DDP — Dongdaemun Design Plaza',       lat:37.5670, lng:127.0094},
-      {n:4, name:'Sindang Tteokbokki Town',              lat:37.5587, lng:127.0097},
-      {n:5, name:'Dongdaemun Night Market',              lat:37.5673, lng:127.0098},
-      {n:6, name:'FREEBIRD (Hongdae)',                   lat:37.5557, lng:126.9239},
-    ]
-  },
-  9: {
-    center:[37.578,126.986], zoom:15, color:'#9d4edd',
-    stops:[
-      {n:1, name:'Gyeongbokgung Palace (hanbok)',        lat:37.5796, lng:126.9770},
-      {n:2, name:'Bukchon Hanok Village',                lat:37.5815, lng:126.9850},
-      {n:3, name:'Insadong lunch',                       lat:37.5744, lng:126.9881},
-      {n:4, name:'Samcheong-dong shops + Cafe Bora',     lat:37.5824, lng:126.9820},
-      {n:5, name:'Ikseon-dong alley bars',               lat:37.5741, lng:126.9907},
-    ]
-  },
-  10: {
-    center:[37.680,127.220], zoom:10, color:'#9d4edd',
-    stops:[
-      {n:1, name:'Cheongnyangni Station (ITX train)',    lat:37.5800, lng:127.0476},
-      {n:2, name:'Garden of Morning Calm',               lat:37.7430, lng:127.3520},
-      {n:3, name:'Gapyeong town lunch',                  lat:37.8310, lng:127.5090},
-      {n:4, name:'Blacklist Bar (Itaewon)',             lat:37.5339, lng:126.9888},
-    ]
-  },
-  11: {
-    center:[37.534,127.103], zoom:12, color:'#9d4edd',
-    stops:[
-      {n:1, name:'Achasan Station (Line 5)',             lat:37.5550, lng:127.1013},
-      {n:2, name:'Achasan Ridge',                        lat:37.5515, lng:127.0928},
-      {n:3, name:'Post-hike lunch',                      lat:37.5553, lng:127.0974},
-      {n:4, name:'Lotte World Mall + Seoul Sky',         lat:37.5120, lng:127.1010},
-      {n:5, name:'Walkerhill Casino',                    lat:37.5558, lng:127.1110},
-    ]
-  },
-  12: {
-    center:[37.530,127.000], zoom:12, color:'#9d4edd',
-    stops:[
-      {n:1, name:'Anytime Fitness Hongdae',              lat:37.5570, lng:126.9240},
-      {n:2, name:'Hannam-dong brunch',                   lat:37.5365, lng:126.9988},
-      {n:3, name:'Garosu-gil (Sinsa)',                   lat:37.5196, lng:127.0226},
-      {n:4, name:'COEX Starfield Library',              lat:37.5115, lng:127.0592},
-      {n:5, name:'Jindalae Makgeolli → Cheongdam',      lat:37.5190, lng:127.0240},
-      {n:6, name:'Octagon Club',                         lat:37.5148, lng:127.0242},
-    ]
-  },
-  13: {
-    center:[37.531,126.955], zoom:13, color:'#9d4edd',
-    stops:[
-      {n:1, name:'Yeouido Hangang Park — riverside bikes', lat:37.5280, lng:126.9320},
-      {n:2, name:'The Hyundai Seoul (더현대서울)',           lat:37.5278, lng:126.9274},
-      {n:3, name:'Itaewon dinner',                         lat:37.5340, lng:126.9940},
-      {n:4, name:'DUSK TILL DAWN → Venue / Pistil',        lat:37.5350, lng:126.9930},
-    ]
-  },
-  14: {
-    center:[37.552,126.984], zoom:13, color:'#9d4edd',
-    stops:[
-      {n:1, name:'Namdaemun Market',                    lat:37.5594, lng:126.9776},
-      {n:2, name:'Myeongdong K-beauty + lunch',         lat:37.5609, lng:126.9840},
-      {n:3, name:'Insadong gifts (Artbox / Ssamzigil)', lat:37.5717, lng:126.9856},
-      {n:4, name:'Bar Cham (Itaewon)',                  lat:37.5375, lng:126.9913},
-      {n:5, name:'Cakeshop / Venue (Itaewon)',          lat:37.5345, lng:126.9945},
-    ]
-  },
-  15: {
-    center:[37.546,126.922], zoom:13, color:'#9d4edd',
-    stops:[
-      {n:1, name:'Gyeongui Line Forest Park (Yeonnam)',  lat:37.5618, lng:126.9250},
-      {n:2, name:'Whalehouse bookshop (Mangwon)',        lat:37.5502, lng:126.9086},
-      {n:3, name:'Bossam & Jokbal — Mapo farewell',     lat:37.5504, lng:126.9212},
-      {n:4, name:'Soo Karaoke + Hongdae clubs',          lat:37.5558, lng:126.9230},
-    ]
-  },
-};
-
-// Fix Day 3 center (Sapporo)
-DAY_ROUTES[3].center = [43.062, 141.358];
+// ── Per-day route maps: one numbered circle per numbered activity ───────
+// Stops are generated straight from the schedule, so the map's markers
+// 1..N always match the numbered items in that day's plan.
+function _mTxt(el){ return Array.from(el.childNodes).filter(n=>n.nodeType===3).map(n=>n.textContent).join('').trim(); }
+function _mMatch(raw, map){ raw = raw.toLowerCase().replace(/[‘’ʼ]/g,"'"); for (const [kw,id] of Object.entries(map)) if (id && raw.includes(kw)) return id; return null; }
+function _coordOf(id){ const it = _allItems[id]; return (it && it.lat && it.lng) ? [it.lat, it.lng] : null; }
+function _activityPoint(act){
+  if (act.classList.contains('block')){
+    const t = act.querySelector('.block-title');
+    return t ? _coordOf(_mMatch(_mTxt(t), TITLE_MAP)) : null;
+  }
+  for (const nm of act.querySelectorAll('.opt-name')){
+    const c = _coordOf(_mMatch(_mTxt(nm), OPT_MAP));
+    if (c) return c;               // a cluster sits at its first locatable option
+  }
+  return null;
+}
+function _buildStops(dayEl){
+  const acts = [...dayEl.querySelectorAll('.schedule > .block, .schedule > .options-cluster')];
+  const stops = acts.map((act,i) => {
+    const isBlock = act.classList.contains('block');
+    const head = act.querySelector(isBlock ? '.block-title' : '.options-head');
+    return { n:i+1, isBlock, name: head ? _mTxt(head) : ('Stop '+(i+1)), own: _activityPoint(act), p:null };
+  });
+  // Blocks anchor to their own venue; option clusters stay in the day's current
+  // area (carry forward) instead of jumping to a generic dish-keyword match,
+  // which keeps the map tight and every marker framed.
+  let last = null;
+  stops.forEach(s => { s.p = s.isBlock ? (s.own || last) : (last || s.own); if (s.p) last = s.p; });
+  const firstP = (stops.find(s=>s.p)||{}).p;
+  stops.forEach(s => { if (!s.p && firstP) s.p = firstP; });
+  const out = stops.filter(s => s.p);
+  // spread markers that land on the same point so every number is visible
+  const placed = [];
+  out.forEach(s => {
+    let la = s.p[0], ln = s.p[1], k = 0;
+    while (placed.some(q => Math.abs(q[0]-la) < 0.00045 && Math.abs(q[1]-ln) < 0.00045)){
+      k++; const ang = k*2.4, rad = 0.0007*Math.ceil(k/6);
+      la = s.p[0] + rad*Math.cos(ang); ln = s.p[1] + rad*Math.sin(ang);
+    }
+    placed.push([la,ln]); s.lat = la; s.lng = ln;
+  });
+  return out;
+}
+const DAY_ROUTES = {};
+document.querySelectorAll('.day').forEach(day => {
+  const numEl = day.querySelector('.day-num'); if (!numEl) return;
+  const dayNum = parseInt(numEl.textContent, 10);
+  const stops = _buildStops(day);
+  if (stops.length) DAY_ROUTES[dayNum] = { color:'#9d4edd', stops };
+});
 
 const _initedMaps = new Set();
-
-function _initMap(dayNum) {
+const _maps = {};
+function _initMap(dayNum){
   if (_initedMaps.has(dayNum) || !window.L) return;
   const el = document.getElementById('day-map-' + dayNum);
-  if (!el || !DAY_ROUTES[dayNum] || el.offsetWidth === 0 || el.offsetHeight === 0) return;
-  _initedMaps.add(dayNum);
   const d = DAY_ROUTES[dayNum];
-  const map = L.map(el, {
-    zoomControl: false, scrollWheelZoom: false,
-    dragging: true, touchZoom: false, doubleClickZoom: false,
-    attributionControl: false,
-    center: d.center, zoom: d.zoom,
-  });
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', { subdomains: 'abcd', maxZoom: 19, opacity: 0.95 }).addTo(map);
-  L.polyline(d.stops.map(s => [s.lat, s.lng]), {
-    color: d.color, weight: 2.5, dashArray: '6,5', opacity: 0.9,
-  }).addTo(map);
+  if (!el || !d || !d.stops.length || el.offsetWidth < 40 || el.offsetHeight === 0) return;
+  _initedMaps.add(dayNum);
+  const _la = d.stops.map(s=>s.lat), _ln = d.stops.map(s=>s.lng);
+  const _center = [ (Math.min(..._la)+Math.max(..._la))/2, (Math.min(..._ln)+Math.max(..._ln))/2 ];
+  const map = L.map(el, { zoomControl:false, scrollWheelZoom:false, dragging:true, touchZoom:false, doubleClickZoom:false, attributionControl:false, center:_center, zoom:13 });
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', { subdomains:'abcd', maxZoom:19, opacity:0.95 }).addTo(map);
+  L.polyline(d.stops.map(s=>[s.lat,s.lng]), { color:d.color, weight:2.5, dashArray:'6,5', opacity:0.9 }).addTo(map);
   d.stops.forEach(s => {
-    const icon = L.divIcon({
-      html: '<div style="background:' + d.color + ';color:#fff;border-radius:50%;width:22px;height:22px;display:flex;align-items:center;justify-content:center;font-family:JetBrains Mono,monospace;font-size:10px;font-weight:700;border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.3)">' + s.n + '</div>',
-      className: '', iconSize: [22, 22], iconAnchor: [11, 11],
-    });
-    L.marker([s.lat, s.lng], {icon})
-      .addTo(map)
-      .bindTooltip(s.name, {direction: 'top', offset: [0, -13]});
+    const icon = L.divIcon({ html:'<div style="background:'+d.color+';color:#fff;border-radius:50%;width:22px;height:22px;display:flex;align-items:center;justify-content:center;font-family:JetBrains Mono,monospace;font-size:10px;font-weight:700;border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.3)">'+s.n+'</div>', className:'', iconSize:[22,22], iconAnchor:[11,11] });
+    L.marker([s.lat,s.lng], {icon}).addTo(map).bindTooltip(s.n + '. ' + s.name, {direction:'top', offset:[0,-13]});
   });
+  const bounds = L.latLngBounds(d.stops.map(s=>[s.lat,s.lng]));
+  _maps[dayNum] = { map, bounds };
   map.invalidateSize(false);
-  map.fitBounds(L.latLngBounds(d.stops.map(s => [s.lat, s.lng])), { padding: [36, 36], maxZoom: 14 });
+  map.fitBounds(bounds, { padding:[34,34], maxZoom:15 });
 }
+function _initVisibleMaps(){ for (const k of Object.keys(DAY_ROUTES)) _initMap(+k); }
+function _refit(dayNum){ const m = _maps[dayNum]; if (m){ m.map.invalidateSize(false); m.map.fitBounds(m.bounds, { padding:[34,34], maxZoom:15 }); } }
 
-function _initVisibleMaps() {
-  for (const k of Object.keys(DAY_ROUTES)) _initMap(+k);
-}
-
-// Inject .day-map div after each .day-head (keyed by actual day number, not DOM index)
-document.querySelectorAll('.day').forEach((day) => {
-  const numEl = day.querySelector('.day-num');
-  if (!numEl) return;
+// Inject a .day-map container after each day header (keyed by real day number).
+// A ResizeObserver inits/re-fits each map whenever its container gets a real
+// width — so the markers are always framed correctly, even after a resize.
+const _ro = window.ResizeObserver ? new ResizeObserver(entries => {
+  for (const e of entries){
+    if (e.contentRect.width < 40) continue;
+    const dn = parseInt(e.target.id.replace('day-map-',''), 10);
+    if (!_initedMaps.has(dn)) _initMap(dn); else _refit(dn);
+  }
+}) : null;
+document.querySelectorAll('.day').forEach(day => {
+  const numEl = day.querySelector('.day-num'); if (!numEl) return;
   const dayNum = parseInt(numEl.textContent, 10);
-  const div = document.createElement('div');
-  div.className = 'day-map';
-  div.id = 'day-map-' + dayNum;
+  const div = document.createElement('div'); div.className='day-map'; div.id='day-map-'+dayNum;
   day.querySelector('.day-head').after(div);
+  if (_ro) _ro.observe(div);
 });
-
-// Init maps for the initially visible tab, then again on tab switch
-setTimeout(_initVisibleMaps, 200);
-document.querySelectorAll('.city-tab').forEach(tab => {
-  tab.addEventListener('click', () => setTimeout(_initVisibleMaps, 200));
-});
+setTimeout(_initVisibleMaps, 250);
+document.querySelectorAll('.city-tab').forEach(tab => tab.addEventListener('click', () => setTimeout(_initVisibleMaps, 250)));
+window.addEventListener('resize', () => { clearTimeout(window._rt); window._rt = setTimeout(_initVisibleMaps, 200); });
 </script>
 </body>
 </html>
