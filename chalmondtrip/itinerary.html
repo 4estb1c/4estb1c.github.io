@@ -1991,7 +1991,8 @@ function _initMap(dayNum){
   L.polyline(d.stops.map(s=>[s.lat,s.lng]), { color:d.color, weight:2.5, dashArray:'6,5', opacity:0.9 }).addTo(map);
   d.stops.forEach(s => {
     const icon = L.divIcon({ html:'<div style="background:'+s.color+';color:#fff;border-radius:50%;width:22px;height:22px;display:flex;align-items:center;justify-content:center;font-family:JetBrains Mono,monospace;font-size:10px;font-weight:700;border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.3)">'+s.n+'</div>', className:'', iconSize:[22,22], iconAnchor:[11,11] });
-    L.marker([s.lat,s.lng], {icon}).addTo(map).bindTooltip(s.n + '. ' + s.name, {direction:'top', offset:[0,-13]});
+    // Lower numbers stack on top: marker 1 gets the highest zIndexOffset.
+    L.marker([s.lat,s.lng], {icon, zIndexOffset:(d.stops.length - s.n) * 10000, riseOnHover:true}).addTo(map).bindTooltip(s.n + '. ' + s.name, {direction:'top', offset:[0,-13]});
   });
   const bounds = L.latLngBounds(d.stops.map(s=>[s.lat,s.lng]));
   _maps[dayNum] = { map, bounds };
