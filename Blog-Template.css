@@ -1,4 +1,9 @@
- .u-section-1 {
+.u-body {
+  min-height: 100vh;
+  background-color: #f0ebdf;
+}
+
+.u-section-1 {
   background-image: none;
 }
 
