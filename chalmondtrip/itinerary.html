@@ -384,6 +384,10 @@ body {
 .legend-list li { display:flex; align-items:flex-start; gap:8px; font-size:12.5px; color:var(--ink-soft); line-height:1.4; }
 .legend-list .lg-n { flex:0 0 auto; width:18px; height:18px; border-radius:50%; color:#fff; font-family:'JetBrains Mono',monospace; font-size:10px; font-weight:700; display:flex; align-items:center; justify-content:center; margin-top:1px; }
 .legend-list .lg-t { min-width:0; }
+.legend-key .lg-home { text-transform:none; letter-spacing:0; }
+/* Commute-from-home note under each map */
+.home-note { font-family:'JetBrains Mono',monospace; font-size:11px; line-height:1.55; letter-spacing:.01em; color:var(--ink-soft); background:var(--paper); border:1px solid var(--rule); border-left:3px solid var(--seoul); border-radius:6px; padding:8px 12px; margin:0 0 22px 0; }
+.home-note strong { color:var(--ink); font-weight:600; }
 /* Activity numbering — standalone blocks and option groups share one per-day sequence */
 .schedule { counter-reset: act; }
 .block, .options-cluster { counter-increment: act; }
@@ -411,7 +415,8 @@ body {
 <!-- Lodging Selection -->
 <div class="lodging-banner" style="border-color: var(--ink);">
   <h4>Lodging Selection</h4>
-  <div class="lodging-row"><span class="city-label" style="color:var(--seoul)">Seoul</span><span>Nine Brick Boutique Hotel, Hongdae — mid-range, great neighborhood base for 10 nights</span><span class="price">~$100/night · 10 nights</span></div>
+  <div class="lodging-row"><span class="city-label" style="color:var(--seoul)">Seoul</span><span>Myeongdong New Stay Inn — main base, central Myeongdong</span><span class="price">9 nights</span></div>
+  <div class="lodging-row"><span class="city-label" style="color:var(--seoul)">Hongdae</span><span>Nine Brick Hotel — one night (Mon Aug 3 → Tue Aug 4)</span><span class="price">1 night</span></div>
 </div>
 
 <!-- City tabs -->
@@ -447,7 +452,7 @@ body {
       <div class="day-title">Korea begins. Market crawl.</div>
       <div class="day-tagline">Fly in, eat your way through Gwangjang.</div>
       <div class="day-spend">
-        <span class="spend-item">Sleep: <strong>Nine Brick Hongdae</strong></span>
+        <span class="spend-item">Sleep: <strong>Myeongdong New Stay Inn</strong></span>
         <span class="spend-item">Est. spend: <strong>~$240/pp</strong> (flight inc.)</span>
       </div>
     </div>
@@ -466,7 +471,7 @@ body {
     <div class="block">
       <div class="block-time">13:00</div>
       <div class="block-title">Arrive ICN — AREX + Line 2 to Hongdae <span class="cost">~$6</span></div>
-      <div class="block-desc">AREX direct to Seoul Station (~43 min, ₩9,500), transfer to Line 2 to Hongdae Univ. Station (~10 min). Drop bags at Nine Brick. You’re here.</div>
+      <div class="block-desc">AREX direct to Seoul Station (~43 min, ₩9,500), transfer to Line 4 to Myeongdong Station (~5 min). Drop bags at Myeongdong New Stay Inn. You’re here.</div>
     </div>
     <div class="area-label first">Hongdae — your base for 11 nights</div>
     <div class="options-cluster">
@@ -542,7 +547,7 @@ body {
       <div class="day-title">Color theory, chicken, river.</div>
       <div class="day-tagline">Personal color in Hongdae, dakgalbi in Sinchon, chimaek by the Han — all walkable from base.</div>
       <div class="day-spend">
-        <span class="spend-item">Sleep: <strong>Nine Brick Hongdae</strong></span>
+        <span class="spend-item">Sleep: <strong>Myeongdong New Stay Inn</strong></span>
         <span class="spend-item">Est. spend: <strong>~$80/pp</strong></span>
       </div>
     </div>
@@ -552,7 +557,7 @@ body {
     <div class="block highlight">
       <div class="block-time">12:00</div>
       <div class="block-title">Personal Color Analysis <span class="cost">~$35</span></div>
-      <div class="block-desc">Book ahead on Instagram or Naver (search: personal color Hongdae). An analyst drapes fabric swatches against your skin under natural light and identifies your seasonal tone: spring / summer / autumn / winter and sub-variants. Takes ~1 hour. Several studios are within 10 min of Nine Brick.</div>
+      <div class="block-desc">Book ahead on Instagram or Naver (search: personal color Hongdae). An analyst drapes fabric swatches against your skin under natural light and identifies your seasonal tone: spring / summer / autumn / winter and sub-variants. Takes ~1 hour. Several studios cluster around Hongdae and Hapjeong.</div>
       <div class="block-tip">Most studios accommodate English. Book 2—3 days ahead.</div>
     </div>
     <div class="options-cluster">
@@ -566,7 +571,7 @@ body {
         <div class="opt-desc">Industrial-style specialty coffee roaster in Hongdae. Serious espresso, slightly quieter than the chain cafes.</div>
       </div>
       <div class="opt">
-        <div class="opt-name">Any Hollys / Ediya near Nine Brick <span class="cost">~$5</span></div>
+        <div class="opt-name">Any Hollys / Ediya in Hongdae <span class="cost">~$5</span></div>
         <div class="opt-desc">Korean chains with good drip coffee and a seat. Zero pressure, fast, cheap.</div>
       </div>
     </div>
@@ -660,7 +665,7 @@ body {
       <div class="day-title">Garden of Morning Calm.</div>
       <div class="day-tagline">ITX train to Gapyeong, 100 themed gardens, back to Hongdae to go out.</div>
       <div class="day-spend">
-        <span class="spend-item">Sleep: <strong>Nine Brick Hongdae</strong></span>
+        <span class="spend-item">Sleep: <strong>Myeongdong New Stay Inn</strong></span>
         <span class="spend-item">Est. spend: <strong>~$65/pp</strong></span>
       </div>
     </div>
@@ -704,13 +709,13 @@ body {
     <div class="block highlight">
       <div class="block-time">22:00</div>
       <div class="block-title">Ho Bar III warm-up <span class="cost">~$5</span></div>
-      <div class="block-desc">You're back on home turf and well-rested from the gardens — time to go big. Start at the classic Hongdae dive: outdoor plastic-cup Cass at the loudest corner in the neighbourhood, then walk two minutes to the clubs.</div>
+      <div class="block-desc">You're back in lively Hongdae and well-rested from the gardens — time to go big. Start at the classic Hongdae dive: outdoor plastic-cup Cass at the loudest corner in the neighbourhood, then walk two minutes to the clubs.</div>
     </div>
     <div class="options-cluster">
-      <div class="options-head">clubs — Hongdae (all a 2-min walk; you're sleeping nearby)</div>
+      <div class="options-head">clubs — Hongdae (all a 2-min walk from each other)</div>
       <div class="opt">
         <div class="opt-name">Club FF <span class="cost">~$10 cover</span></div>
-        <div class="opt-desc">Hongdae's biggest dancefloor. Hip-hop, EDM, K-pop. Cover includes one drink. Peak energy after 1am — and you're sleeping 2 min away.</div>
+        <div class="opt-desc">Hongdae's biggest dancefloor. Hip-hop, EDM, K-pop. Cover includes one drink. Peak energy after 1am.</div>
       </div>
       <div class="opt">
         <div class="opt-name">Club SOAP <span class="cost">~$15 cover</span></div>
@@ -718,7 +723,7 @@ body {
       </div>
       <div class="opt">
         <div class="opt-name">NB2 Hongdae <span class="cost">~$8 cover</span></div>
-        <div class="opt-desc">YG-affiliated hip-hop club. Young crowd, cheap entry, both floors packed by 1am. Walking distance from Nine Brick.</div>
+        <div class="opt-desc">YG-affiliated hip-hop club. Young crowd, cheap entry, both floors packed by 1am. On the Hongdae club strip.</div>
       </div>
     </div>
     </div>
@@ -736,7 +741,7 @@ body {
       <div class="day-title">Old Seoul in a day.</div>
       <div class="day-tagline">Hanbok palace, hanok village, cocktails in 1930s alleyways.</div>
       <div class="day-spend">
-        <span class="spend-item">Sleep: <strong>Nine Brick Hongdae</strong></span>
+        <span class="spend-item">Sleep: <strong>Myeongdong New Stay Inn</strong></span>
         <span class="spend-item">Est. spend: <strong>~$55/pp</strong></span>
       </div>
     </div>
@@ -853,7 +858,7 @@ body {
       <div class="day-title">Spa, tower, pork belly.</div>
       <div class="day-tagline">Everything within 2km: Dragon Hill → Hannam lunch → Namsan → Itaewon KBBQ.</div>
       <div class="day-spend">
-        <span class="spend-item">Sleep: <strong>Nine Brick Hongdae</strong></span>
+        <span class="spend-item">Sleep: <strong>Myeongdong New Stay Inn</strong></span>
         <span class="spend-item">Est. spend: <strong>~$80/pp</strong></span>
       </div>
     </div>
@@ -950,7 +955,7 @@ body {
       <div class="day-title">Coffee, concrete, and couture.</div>
       <div class="day-tagline">Seongsu by day — Seoul's trendiest block. Dongdaemun fashion market after dark.</div>
       <div class="day-spend">
-        <span class="spend-item">Sleep: <strong>Nine Brick Hongdae</strong></span>
+        <span class="spend-item">Sleep: <strong>Nine Brick (Hongdae)</strong></span>
         <span class="spend-item">Est. spend: <strong>~$55/pp</strong></span>
       </div>
     </div>
@@ -1061,7 +1066,7 @@ body {
       <div class="day-title">Summit the ridge. Then go all in.</div>
       <div class="day-tagline">Achasan hike above the Han River — then the casino 15 minutes downhill.</div>
       <div class="day-spend">
-        <span class="spend-item">Sleep: <strong>Nine Brick Hongdae</strong></span>
+        <span class="spend-item">Sleep: <strong>Myeongdong New Stay Inn</strong></span>
         <span class="spend-item">Est. spend: <strong>~$60/pp</strong> (excl. gambling)</span>
       </div>
     </div>
@@ -1101,8 +1106,8 @@ body {
         <div class="opt-desc">10 min metro. Riverside lie-down, GS25 cold beer, bike rental if you have energy. The best afternoon recovery in Seoul.</div>
       </div>
       <div class="opt">
-        <div class="opt-name">Return to Hongdae, rest, prep <span class="cost">Free</span></div>
-        <div class="opt-desc">Back to Nine Brick. Long shower. The casino does not require a specific look, but smart casual is more comfortable.</div>
+        <div class="opt-name">Return to the hotel, rest, prep <span class="cost">Free</span></div>
+        <div class="opt-desc">Back for a long shower and reset. The casino does not require a specific look, but smart casual is more comfortable.</div>
       </div>
     </div>
     <div class="block highlight">
@@ -1126,7 +1131,7 @@ body {
       <div class="day-title">Markets, beauty, easy night.</div>
       <div class="day-tagline">Namdaemun + Myeongdong haul, then a low-key Itaewon nightcap.</div>
       <div class="day-spend">
-        <span class="spend-item">Sleep: <strong>Nine Brick Hongdae</strong></span>
+        <span class="spend-item">Sleep: <strong>Myeongdong New Stay Inn</strong></span>
         <span class="spend-item">Est. spend: <strong>~$80/pp</strong> (night out)</span>
       </div>
     </div>
@@ -1247,7 +1252,7 @@ body {
       <div class="day-title">River, mall, Itaewon.</div>
       <div class="day-tagline">Yeouido riverside cycling, The Hyundai Seoul, Itaewon night.</div>
       <div class="day-spend">
-        <span class="spend-item">Sleep: <strong>Nine Brick Hongdae</strong></span>
+        <span class="spend-item">Sleep: <strong>Myeongdong New Stay Inn</strong></span>
         <span class="spend-item">Est. spend: <strong>~$65/pp</strong></span>
       </div>
     </div>
@@ -1333,7 +1338,7 @@ body {
       <div class="day-title">Gym, world-class art, the library in the mall.</div>
       <div class="day-tagline">Garosu-gil boutiques, COEX Starfield Library — then Octagon till late.</div>
       <div class="day-spend">
-        <span class="spend-item">Sleep: <strong>Nine Brick Hongdae</strong></span>
+        <span class="spend-item">Sleep: <strong>Myeongdong New Stay Inn</strong></span>
         <span class="spend-item">Est. spend: <strong>~$60/pp</strong></span>
       </div>
     </div>
@@ -1344,7 +1349,7 @@ body {
       <div class="options-head">morning gym (optional)</div>
       <div class="opt">
         <div class="opt-name">Anytime Fitness Hongdae <span class="cost">₩15,000 day pass</span></div>
-        <div class="opt-desc">5-min walk from Nine Brick, 24h, English signage. Walk in and pay at the front desk.</div>
+        <div class="opt-desc">By Hongik Univ Station, 24h, English signage. Walk in and pay at the front desk.</div>
       </div>
       <div class="opt">
         <div class="opt-name">T5 Fitness Itaewon <span class="cost">₩15,000 day pass</span></div>
@@ -1486,7 +1491,7 @@ body {
     <div class="block highlight">
       <div class="block-time">09:30</div>
       <div class="block-title">Gyeongui Line Forest Park (Yeonnam-dong) <span class="cost">Free</span></div>
-      <div class="block-desc">Locals call the Yeonnam stretch “Yeontral Park” — a green ribbon built over the old Gyeongui rail line, 5 min from Nine Brick. Grab a coffee and a pastry, sit on the grass, and watch the neighbourhood wake up. The quietest, most local last morning you can have without leaving Hongdae.</div>
+      <div class="block-desc">Locals call the Yeonnam stretch “Yeontral Park” — a green ribbon built over the old Gyeongui rail line, 5 min from Hongik Univ Station. Grab a coffee and a pastry, sit on the grass, and watch the neighbourhood wake up. The quietest, most local last morning you can have without leaving Hongdae.</div>
     </div>
     <div class="area-label">Mangwon / Hongdae — midday</div>
     <div class="block">
@@ -1512,7 +1517,7 @@ body {
     <div class="block">
       <div class="block-time">14:00</div>
       <div class="block-title">Afternoon downtime — pack + rest</div>
-      <div class="block-desc">Nine Brick holds luggage after checkout. Come back, drop bags, rest. Optional: Thanks Nature Cafe (two live sheep at the entrance, Hongdae, 10-min walk) for a final quirky 90-min stop.</div>
+      <div class="block-desc">Your hotel can hold luggage after checkout. Come back, drop bags, rest. Optional: Thanks Nature Cafe (two live sheep at the entrance, Hongdae, 10-min walk) for a final quirky 90-min stop.</div>
       <div class="block-tip">First subway from Hongik Univ. is 5:27am — perfect timing from a Hongdae club. ICN check-in opens at 3am.</div>
     </div>
     <div class="block highlight">
@@ -1529,7 +1534,7 @@ body {
       <div class="options-head">final clubs — Hongdae (stay till subway opens at 5:27am)</div>
       <div class="opt">
         <div class="opt-name">NB2 Hongdae <span class="cost">~$15</span></div>
-        <div class="opt-desc">YG-affiliated hip-hop club. Last Saturday night in Seoul. Both floors packed by 1am. Walking distance from Nine Brick.</div>
+        <div class="opt-desc">YG-affiliated hip-hop club. Last Saturday night in Seoul. Both floors packed by 1am. On the Hongdae club strip.</div>
       </div>
       <div class="opt">
         <div class="opt-name">Club FF <span class="cost">~$10</span></div>
@@ -1577,6 +1582,8 @@ for (const city of Object.values(TRIP_DATA.cities)) {
 
 // keyword in block title → data.js id
 const TITLE_MAP = {
+  'mangwon market':         'seo-mm1',
+  'nami island':            'seo-nami',
   // already mapped
   'gwangjang market':       'seo-m1',
   'bogwangjung':            'seo-b3',
@@ -1592,7 +1599,7 @@ const TITLE_MAP = {
   'achasan ridge':          'seo-hk3',
   'walkerhill casino':      'seo-ca3',
   'leeum':                  'seo-mu2',
-  'mangwon hangang park':   null,
+  'mangwon hangang park':   'seo-mm2',
   'gyeongui':               'seo-e5',
   'bossam':                 'seo-bj1',
   'cakeshop':               'seo-nc2',
@@ -1737,6 +1744,19 @@ document.querySelectorAll('.block').forEach(block => {
 // ── 24h → 12h AM/PM ──────────────────────────────────────────
 // ---- Option images -------------------------------------------------------
 const OPT_MAP = {
+  'ssamzigil (craft':           'seo-ssz',
+  'gapyeong riverside dakgalbi':'seo-gp1',
+  'baekban':                    'seo-gp2',
+  'galbitang':                  'seo-gbt',
+  'doenjang jjigae':            'seo-dj1',
+  'naengmyeon':                 'seo-nmy',
+  'seongsu-dong local gimbap':  'seo-ssg',
+  'local gimbap':               'seo-gmb',
+  'grill5taco':                 'seo-g5t',
+  'seongsu cafe cluster':       'seo-scc',
+  'joayo':                      'seo-cer',
+  'itaewon pojangmacha':        'seo-pjm',
+  'namsan park walk':           'seo-nsw',
   'soseoul hannam':              'seo-ir3',
   'soseoul':                     'seo-ir3',
   "o'kitchen": 'seo-ir4',
@@ -1780,7 +1800,7 @@ const OPT_MAP = {
   'ddp food':                   'seo-sf6',
   'bukchon hanok':              'seo-s1',
   'bukchon':                    'seo-s1',
-  'national folk museum':       'seo-s4',
+  'national folk museum':       'seo-folk',
   'n seoul tower':              'seo-s2',
   'namsan park':                'seo-s2',
   'namsan':                     'seo-s2',
@@ -1902,9 +1922,9 @@ document.querySelectorAll('.block-time').forEach(el => {
 (function addUSD() {
   document.querySelectorAll('.block-title, .block-desc, .block-tip, .cost, .cost-table td').forEach(el => {
     let h = el.innerHTML;
-    h = h.replace(/₩(\d+(?:,\d+)*)(?!\s*[\(~\$])/g, (_, n) =>
+    h = h.replace(/₩(\d+(?:,\d+)*)(?![\d,])(?!\s*[\(~\$])/g, (_, n) =>
       '₩' + n + ' (~$' + Math.round(parseInt(n.replace(/,/g, '')) / 1370) + ')');
-    h = h.replace(/¥(\d+(?:,\d+)*)(?!\s*[\(~\$])/g, (_, n) =>
+    h = h.replace(/¥(\d+(?:,\d+)*)(?![\d,])(?!\s*[\(~\$])/g, (_, n) =>
       '¥' + n + ' (~$' + Math.round(parseInt(n.replace(/,/g, '')) / 150) + ')');
     el.innerHTML = h;
   });
@@ -1972,6 +1992,25 @@ document.querySelectorAll('.day').forEach(day => {
   if (stops.length) DAY_ROUTES[dayNum] = { color:'#9d4edd', stops };
 });
 
+// ── Lodging: home base per day → house dot on map + commute note ──
+const HOMES = {
+  myeongdong: { name:'Myeongdong New Stay Inn', lat:37.5609, lng:126.9857 },
+  ninebrick:  { name:'Nine Brick Hotel (Hongdae)', lat:37.5547, lng:126.9235 }
+};
+const DAY_HOME = {5:'myeongdong',6:'myeongdong',7:'myeongdong',8:'myeongdong',9:'myeongdong',10:'ninebrick',11:'ninebrick',12:'myeongdong',13:'myeongdong',14:'myeongdong',15:'myeongdong'};
+const COMMUTE = {
+  5:  '🏠 Arrive ICN → <strong>Myeongdong New Stay Inn</strong> (AREX to Seoul Station + Line 4, ~70 min). First afternoon stops sit 0–10 min away in Myeongdong / Gwangjang.',
+  6:  '🏠 <strong>Myeongdong New Stay Inn</strong> → first stop: Personal Color Analysis (Hongdae) · <strong>~30 min</strong> by metro',
+  7:  '🏠 <strong>Myeongdong New Stay Inn</strong> → first stop: Cheongnyangni Station for the Gapyeong ITX · <strong>~20 min</strong> by metro',
+  8:  '🏠 <strong>Myeongdong New Stay Inn</strong> → first stop: Gyeongbokgung Palace · <strong>~15 min</strong> by metro',
+  9:  '🏠 <strong>Myeongdong New Stay Inn</strong> → first stop: Dragon Hill Spa (Yongsan) · <strong>~15 min</strong> by metro',
+  10: '🏠 <strong>Myeongdong New Stay Inn</strong> → first stop: Cafe Onion (Seongsu) · <strong>~20 min</strong> by metro &nbsp;·&nbsp; 🧳 check in to Nine Brick (Hongdae) tonight',
+  11: '🏠 <strong>Nine Brick (Hongdae)</strong> → first stop: Achasan Station · <strong>~50 min</strong> by metro &nbsp;·&nbsp; 🧳 check out this morning, back to Myeongdong tonight',
+  12: '🏠 <strong>Myeongdong New Stay Inn</strong> → first stop: Namdaemun Market · <strong>~8 min</strong> (short walk + one stop)',
+  13: '🏠 <strong>Myeongdong New Stay Inn</strong> → first stop: Yeouido Hangang Park · <strong>~20 min</strong> by metro',
+  14: '🏠 <strong>Myeongdong New Stay Inn</strong> → first stop: Garosu-gil / Sinsa · <strong>~20 min</strong> by metro',
+  15: '🏠 <strong>Myeongdong New Stay Inn</strong> → first stop: Gyeongui Line Forest Park (Yeonnam) · <strong>~30 min</strong> by metro'
+};
 const _initedMaps = new Set();
 const _maps = {};
 function _initMap(dayNum){
@@ -1998,6 +2037,13 @@ function _initMap(dayNum){
   _maps[dayNum] = { map, bounds };
   map.invalidateSize(false);
   map.fitBounds(bounds, { padding:[34,34], maxZoom:15 });
+  // House dot for the day's home base — added AFTER fitBounds so it never affects
+  // the zoom (home can sit far outside the day's activity cluster, by design).
+  const _hk = DAY_HOME[dayNum], _home = _hk && HOMES[_hk];
+  if (_home){
+    const hIcon = L.divIcon({ html:'<div style="font-size:14px;line-height:24px;width:28px;height:28px;text-align:center;background:#fff;border:2px solid #1a1612;border-radius:50%;box-shadow:0 1px 5px rgba(0,0,0,.4)">🏠</div>', className:'', iconSize:[28,28], iconAnchor:[14,14] });
+    L.marker([_home.lat,_home.lng], { icon:hIcon, zIndexOffset:10000000 }).addTo(map).bindTooltip('🏠 Home — ' + _home.name, {direction:'top', offset:[0,-14]});
+  }
 }
 function _initVisibleMaps(){ for (const k of Object.keys(DAY_ROUTES)) _initMap(+k); }
 function _refit(dayNum){ const m = _maps[dayNum]; if (m){ m.map.invalidateSize(false); m.map.fitBounds(m.bounds, { padding:[34,34], maxZoom:15 }); } }
@@ -2027,15 +2073,23 @@ document.querySelectorAll('.day').forEach(day => {
   const route = DAY_ROUTES[dayNum];
   if (route){
     const lg = document.createElement('div'); lg.className='day-legend';
+    const hk = DAY_HOME[dayNum];
+    const homeKey = hk ? '<span class="lg-home">🏠 Home — '+HOMES[hk].name+'</span>' : '';
     const key = '<div class="legend-key">'
       + '<span><i style="background:'+_COL.food +'"></i>Food &amp; drink</span>'
       + '<span><i style="background:'+_COL.night+'"></i>Nightlife</span>'
-      + '<span><i style="background:'+_COL.other+'"></i>Sights &amp; more</span></div>';
+      + '<span><i style="background:'+_COL.other+'"></i>Sights &amp; more</span>'
+      + homeKey + '</div>';
     const items = route.stops.map(s =>
       '<li><span class="lg-n" style="background:'+s.color+'">'+s.n+'</span>'
       + '<span class="lg-t">'+_legendName(s.name)+'</span></li>').join('');
     lg.innerHTML = key + '<ol class="legend-list">' + items + '</ol>';
     div.after(lg);
+    if (COMMUTE[dayNum]){
+      const note = document.createElement('div'); note.className='home-note';
+      note.innerHTML = COMMUTE[dayNum];
+      lg.after(note);
+    }
   }
 });
 setTimeout(_initVisibleMaps, 250);

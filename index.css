@@ -1,6 +1,9 @@
+ .u-body {
+   background-color: #f0ebdf;
+ }
+
  .u-section-1 {
    background-image: none;
-   flex-grow: 1;
  }
 
  .u-section-1 .u-sheet-1 {
@@ -13,7 +16,7 @@
  }
 
  .u-section-1 .u-image-1 {
-   min-height: 317px;
+   min-height: 389px;
    background-image: url("assets/tunnel.webp");
    --radius: 10px;
    background-position: 50% 50%;
@@ -24,7 +27,7 @@
  }
 
  .u-section-1 .u-layout-cell-2 {
-   min-height: 317px;
+   min-height: 389px;
  }
 
  .u-section-1 .u-container-layout-2 {
@@ -36,7 +39,7 @@
    height: auto;
    --radius: 5px;
    min-height: 0;
-   margin: 0 auto;
+   margin: 64px auto 0;
  }
 
  .u-section-1 .u-container-layout-3 {
@@ -115,11 +118,11 @@
    }
 
    .u-section-1 .u-image-1 {
-     min-height: 300px;
+     min-height: 313px;
    }
 
    .u-section-1 .u-layout-cell-2 {
-     min-height: 300px;
+     min-height: 334px;
    }
 
    .u-section-1 .u-group-1 {
@@ -179,16 +182,16 @@
    }
 
    .u-section-1 .u-image-1 {
-     min-height: 300px;
+     min-height: 364px;
    }
 
    .u-section-1 .u-layout-cell-2 {
-     min-height: 300px;
+     min-height: 364px;
    }
 
    .u-section-1 .u-group-1 {
      width: 308px;
-     margin-top: 15px;
+     margin-top: 64px;
      margin-right: 0;
    }
 
