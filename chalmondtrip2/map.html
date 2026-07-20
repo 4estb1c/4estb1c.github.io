@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chalmond Trip · Interactive Map</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700;9..144,900&family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+<style>
+:root {
+  --bg: #f7f3ec;
+  --ink: #1a1612;
+  --ink-soft: #4a4036;
+  --rule: #d4c9b7;
+  --paper: #fcfaf5;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  overflow: hidden;
+}
+
+/* Top bar */
+.topbar {
+  background: var(--bg);
+  border-bottom: 1px solid var(--ink);
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.brand {
+  font-family: 'Fraunces', serif;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  padding-right: 16px;
+  border-right: 1px solid var(--rule);
+}
+.brand em { font-style: italic; font-weight: 400; color: var(--ink-soft); }
+.tabs {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.tab {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: transparent;
+  border: 1px solid var(--rule);
+  padding: 8px 14px;
+  cursor: pointer;
+  color: var(--ink-soft);
+  border-radius: 999px;
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+.tab:hover { background: var(--paper); border-color: var(--ink); color: var(--ink); }
+.tab.active { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.tab .dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  margin-right: 6px;
+  vertical-align: 1px;
+}
+.spacer { flex: 1; }
+.stats {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: var(--ink-soft);
+  letter-spacing: 0.05em;
+}
+
+/* Main grid */
+.main { display: grid; grid-template-columns: 280px 1fr; height: 100%; min-height: 0; }
+.sidebar {
+  background: var(--bg);
+  border-right: 1px solid var(--ink);
+  overflow-y: auto;
+  padding: 20px 18px;
+}
+.sidebar h3 {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--rule);
+}
+.cat-toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 10px;
+  cursor: pointer;
+  border-radius: 6px;
+  user-select: none;
+  transition: background 0.1s;
+  font-size: 13px;
+}
+.cat-toggle:hover { background: var(--paper); }
+.cat-toggle.off { opacity: 0.35; }
+.cat-toggle.solo {
+  outline: 2px solid var(--ink);
+  outline-offset: 2px;
+  opacity: 1;
+}
+.cat-toggle .swatch {
+  width: 14px; height: 14px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  border: 2px solid white;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.2);
+}
+.cat-toggle .count {
+  margin-left: auto;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: var(--ink-soft);
+}
+
+.section-divider { margin: 24px 0 0; }
+
+.search-box {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--rule);
+  background: var(--paper);
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  border-radius: 6px;
+  margin-bottom: 18px;
+}
+.search-box:focus { outline: none; border-color: var(--ink); }
+
+.result-list { max-height: 100%; overflow-y: auto; }
+.result-item {
+  padding: 10px 12px;
+  border-bottom: 1px dashed var(--rule);
+  cursor: pointer;
+  font-size: 13px;
+  transition: background 0.1s;
+}
+.result-item:hover { background: var(--paper); }
+.result-item .name { font-weight: 600; }
+.result-item .meta {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: var(--ink-soft);
+  margin-top: 2px;
+  letter-spacing: 0.05em;
+}
+
+#map { width: 100%; height: 100%; background: #e8e4dc; }
+
+/* Neutralize Leaflet default divIcon box */
+.leaflet-div-icon { background: transparent !important; border: none !important; }
+
+/* Custom marker style */
+.marker-pin {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+.marker-pin:hover { transform: scale(1.2); z-index: 1000; }
+
+/* Itinerary day-number markers */
+.day-marker {
+  background: #1a1612;
+  color: #f7f3ec;
+  border-radius: 11px;
+  min-width: 26px;
+  height: 22px;
+  padding: 0 6px;
+  border: 2px solid white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  letter-spacing: -0.02em;
+}
+.day-marker:hover { transform: scale(1.18); }
+
+/* Popup */
+.leaflet-popup-content-wrapper {
+  border-radius: 8px;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+.leaflet-popup-content { margin: 0; min-width: 260px; max-width: 320px; }
+.popup-body { padding: 14px 16px; }
+.popup-cat {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #777;
+  margin-bottom: 4px;
+}
+.popup-name {
+  font-family: 'Fraunces', serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 8px;
+}
+.popup-meta {
+  display: flex;
+  gap: 10px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: #555;
+  margin-bottom: 10px;
+}
+.popup-blurb { font-size: 13px; line-height: 1.45; color: #333; margin-bottom: 10px; }
+.popup-why {
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-size: 12.5px;
+  color: #555;
+  border-left: 2px solid currentColor;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+.popup-link {
+  display: inline-block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #1a1612;
+  text-decoration: none;
+  border-bottom: 1px solid #1a1612;
+  padding-bottom: 1px;
+}
+
+/* Popup image carousel */
+.popup-imgs {
+  position: relative;
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+  background: #222;
+  border-radius: 8px 8px 0 0;
+}
+.popup-imgs img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.popup-img-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.45);
+  color: white;
+  border: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  font-size: 14px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  transition: background 0.15s;
+  z-index: 10;
+}
+.popup-img-nav:hover { background: rgba(0,0,0,0.7); }
+.popup-img-prev { left: 6px; }
+.popup-img-next { right: 6px; }
+.popup-img-dots {
+  position: absolute;
+  bottom: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 5px;
+}
+.popup-img-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.5);
+  transition: background 0.15s;
+}
+.popup-img-dot.active { background: white; }
+
+@media (max-width: 720px) {
+  .main { grid-template-columns: 1fr; grid-template-rows: auto 1fr; }
+  .sidebar { max-height: 240px; }
+  .brand { font-size: 16px; }
+}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">Chalmond <em>Map</em></div>
+  <div class="tabs" id="city-tabs">
+    <button class="tab active" data-city="all">All Cities</button>
+    <button class="tab" data-city="tokyo"><span class="dot" style="background:#e63946"></span>Tokyo</button>
+    <button class="tab" data-city="sapporo"><span class="dot" style="background:#2a5d57"></span>Sapporo</button>
+    <button class="tab" data-city="seoul"><span class="dot" style="background:#9d4edd"></span>Seoul</button>
+  </div>
+  <div class="spacer"></div>
+  <button class="tab" id="iti-btn">Itinerary Days</button>
+  <div class="stats" id="stats"></div>
+</header>
+
+<div class="main">
+  <aside class="sidebar">
+    <input type="text" class="search-box" id="search" placeholder="Search names, e.g. 'wagyu' or 'temple'">
+
+    <h3>Filter by category <span style="font-weight:400;font-style:italic;opacity:0.55;font-size:10px;letter-spacing:0.02em;text-transform:none;">double-click to solo</span></h3>
+    <div id="cat-toggles"></div>
+
+    <h3 class="section-divider">Results <span id="result-count" style="float:right;font-family:'JetBrains Mono',monospace;font-size:10px;"></span></h3>
+    <div class="result-list" id="results"></div>
+  </aside>
+  <div id="map"></div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="data.js"></script>
+<script>
+// Category colors (semantic, not city-bound)
+const CAT_COLORS = {
+  lodging: "#5b6b7e",  // slate blue
+  wagyu:   "#b03a48",  // wine red
+  club:    "#7b2cbf",  // purple
+  market:  "#e09f3e",  // gold
+  izakaya: "#9d6b5c",  // brown
+  ramen:   "#c46b3d",  // rust orange
+  sight:   "#2a5d57",  // forest green
+  beer:         "#d4a017",  // amber
+  craft_beer:    "#c88a30",  // copper gold
+  nature:  "#4a7c4e",  // sage green
+  seafood: "#3a7ca5",  // ocean blue
+  bbq:     "#cc2936",  // hot red
+  cafe:    "#e878a5",  // pink
+  clinic:  "#a8c4e0",  // light blue
+  chicken: "#e8a83c",  // chicken gold
+  show:    "#6c5ce7",  // violet
+  noodle:  "#bb8b5e",  // tan
+  beach:   "#48cae4",  // cyan
+  tonkatsu:      "#c98a3c",
+  yakitori:      "#9c4f2e",
+  karaoke:       "#e05299",
+  cocktail_bar:  "#2a9d8f",
+  onsen:         "#5fa8d3",
+  arcade:        "#3d348b",
+  dessert:       "#f4a6c0",
+  soup_curry:    "#bc6c25",
+  experience:    "#06a77d",
+  korean_food:   "#c1121f",
+  street_food:   "#e85d04",
+  fine_dining:   "#6d2e46",
+  museum:        "#457b9d",
+  temple:        "#6a994e",
+  garden:        "#7cb518",
+  walk:          "#8d99ae",
+  hike:          "#606c38",
+  korean_culture:"#9b5de5",
+  color:         "#ff6392",
+  skincare:      "#06d6a0",
+  casino:        "#9d0208",
+  dwaeji_gukbap: "#a26769",
+  milmyeon:      "#468faf",
+  stationery:    "#c9a227",
+  gifts:         "#e85d04",
+  fashion:       "#a855f7",
+  makgeolli:     "#9b7e52",
+};
+const CAT_LABELS = {
+  lodging:"Lodging", wagyu:"Wagyu/Steak", club:"Clubs", market:"Markets",
+  izakaya:"Izakaya", ramen:"Ramen", sight:"Sights", beer:"Beer/Jingisukan", craft_beer:"Craft Beer",
+  nature:"Nature", seafood:"Seafood", bbq:"Korean BBQ", cafe:"Cafés",
+  clinic:"K-Beauty", chicken:"Fried Chicken", show:"Shows", noodle:"Noodles", beach:"Beaches",
+  tonkatsu:"Tonkatsu", yakitori:"Yakitori", karaoke:"Karaoke", cocktail_bar:"Cocktail Bars",
+  onsen:"Onsen/Sento", arcade:"Arcades", dessert:"Desserts", soup_curry:"Soup Curry",
+  experience:"Experiences", korean_food:"Korean Classics", street_food:"Street Food",
+  fine_dining:"Fine Dining", museum:"Museums", temple:"Temples", garden:"Gardens/Parks",
+  walk:"Walks", hike:"Hikes", korean_culture:"Korean Experiences", color:"Personal Color",
+  skincare:"Skincare/Spa", casino:"Casinos", dwaeji_gukbap:"Dwaeji Gukbap", milmyeon:"Milmyeon",
+  stationery:"Stationery", gifts:"Gifts", fashion:"Fashion", makgeolli:"Makgeolli"
+};
+
+const META_CATS = {
+  eat:        { label: "Eat",            color: "#c46b3d", cats: new Set(["wagyu","ramen","seafood","bbq","chicken","noodle","tonkatsu","yakitori","soup_curry","korean_food","street_food","fine_dining","dwaeji_gukbap","milmyeon"]) },
+  sweets:     { label: "Sweets & Cafés", color: "#e878a5", cats: new Set(["cafe","dessert"]) },
+  drink:      { label: "Drink",          color: "#d4a017", cats: new Set(["izakaya","beer","craft_beer","cocktail_bar","makgeolli"]) },
+  nightlife:  { label: "Night Out",      color: "#7b2cbf", cats: new Set(["club","karaoke","casino","show"]) },
+  shop:       { label: "Shop",           color: "#e09f3e", cats: new Set(["market","clinic","skincare","stationery","gifts","fashion"]) },
+  outdoors:   { label: "Outdoors",       color: "#4a7c4e", cats: new Set(["nature","beach","garden","walk","hike"]) },
+  sights:     { label: "Sights",         color: "#457b9d", cats: new Set(["sight","museum","temple"]) },
+  experience: { label: "Experiences",    color: "#06a77d", cats: new Set(["experience","arcade","color","onsen","korean_culture"]) },
+  stay:       { label: "Stay",           color: "#5b6b7e", cats: new Set(["lodging"]) },
+};
+
+// Build reverse lookup: cat key → meta key
+const CAT_TO_META = {};
+for (const [mk, mc] of Object.entries(META_CATS)) {
+  for (const cat of mc.cats) CAT_TO_META[cat] = mk;
+}
+
+// Flatten all items
+const ALL_ITEMS = [];
+for (const [cityKey, city] of Object.entries(TRIP_DATA.cities)) {
+  for (const [catKey, items] of Object.entries(city.categories)) {
+    items.forEach(it => ALL_ITEMS.push({...it, city: cityKey, cat: catKey, cityName: city.name}));
+  }
+}
+
+// City center/zoom config
+const CITY_VIEWS = {
+  all:     {center: [37.5, 135], zoom: 4},
+  tokyo:   {center: [35.685, 139.74], zoom: 12},
+  sapporo: {center: [43.062, 141.355], zoom: 12},
+  seoul:   {center: [37.555, 126.97], zoom: 12}
+};
+
+// Initialize map
+const map = L.map('map', { zoomControl: true }).setView(CITY_VIEWS.all.center, CITY_VIEWS.all.zoom);
+
+// Use a clean tile layer
+L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
+  subdomains: 'abcd',
+  maxZoom: 19
+}).addTo(map);
+
+// Build marker
+function buildMarker(item) {
+  const color = CAT_COLORS[item.cat] || "#888";
+  const icon = L.divIcon({
+    className: '',
+    html: `<div class="marker-pin" style="background:${color}">●</div>`,
+    iconSize: [28, 28],
+    iconAnchor: [14, 14]
+  });
+  const marker = L.marker([item.lat, item.lng], { icon });
+
+  const priceText = (item.price_low === 0 && item.price_high === 0) ? "Free" :
+    item.price_low === item.price_high ? `$${item.price_low}` : `$${item.price_low}–$${item.price_high}`;
+  const ratingText = item.rating ? `★ ${item.rating}` : "";
+  const gmaps = item.place_id ?
+    `https://www.google.com/maps/place/?q=place_id:${item.place_id}` :
+    `https://www.google.com/maps/search/?api=1&query=${item.lat},${item.lng}`;
+
+  const imgs = item.images && item.images.length ? item.images : null;
+  const uid = item.id;
+  const imgSection = imgs ? `
+    <div class="popup-imgs" id="pimgs-${uid}">
+      <img id="pimg-${uid}" src="${imgs[0]}" alt="${item.name}">
+      ${imgs.length > 1 ? `
+        <button class="popup-img-nav popup-img-prev" onclick="switchMapImg('${uid}', -1)">&#8249;</button>
+        <button class="popup-img-nav popup-img-next" onclick="switchMapImg('${uid}', 1)">&#8250;</button>
+        <div class="popup-img-dots">
+          ${imgs.map((_, i) => `<div class="popup-img-dot${i === 0 ? ' active' : ''}" id="pdot-${uid}-${i}"></div>`).join('')}
+        </div>
+      ` : ''}
+    </div>
+  ` : '';
+
+  const popupHTML = `
+    ${imgSection}
+    <div class="popup-body" style="color:${color}">
+      <div class="popup-cat">${CAT_LABELS[item.cat] || item.cat} · ${item.cityName}</div>
+      <div class="popup-name" style="color:#1a1612">${item.name}</div>
+      <div class="popup-meta">
+        <span>${priceText}</span>
+        ${ratingText ? `<span>·</span><span>${ratingText}</span>` : ''}
+      </div>
+      <p class="popup-blurb">${item.blurb}</p>
+      <p class="popup-why">${item.why}</p>
+      <a class="popup-link" href="${gmaps}" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+    </div>
+  `;
+  marker.bindPopup(popupHTML, { maxWidth: 320 });
+  return marker;
+}
+
+// Build all markers, store with metadata
+const MARKER_ENTRIES = ALL_ITEMS.map(item => ({
+  item,
+  marker: buildMarker(item)
+}));
+
+const markerLayer = L.layerGroup().addTo(map);
+
+// State
+let activeCity = "all";
+let activeMetas = new Set(Object.keys(META_CATS));
+let soloMetaKey = null;
+let searchQuery = "";
+
+function applyFilters() {
+  markerLayer.clearLayers();
+  let visible = [];
+  for (const {item, marker} of MARKER_ENTRIES) {
+    if (activeCity !== "all" && item.city !== activeCity) continue;
+    const mk = CAT_TO_META[item.cat];
+    if (mk && !activeMetas.has(mk)) continue;
+    if (searchQuery && !(item.name.toLowerCase().includes(searchQuery) || item.blurb.toLowerCase().includes(searchQuery) || (CAT_LABELS[item.cat] || '').toLowerCase().includes(searchQuery))) continue;
+    markerLayer.addLayer(marker);
+    visible.push({item, marker});
+  }
+  updateResults(visible);
+  document.getElementById("stats").textContent = `${visible.length} of ${ALL_ITEMS.length} places shown`;
+  return visible;
+}
+
+function updateResults(visible) {
+  const list = document.getElementById("results");
+  const count = document.getElementById("result-count");
+  count.textContent = `(${visible.length})`;
+  list.innerHTML = visible.slice(0, 100).map(({item, marker}) => `
+    <div class="result-item" data-lat="${item.lat}" data-lng="${item.lng}">
+      <div class="name">${item.name}</div>
+      <div class="meta">${item.cityName.toUpperCase()} · ${CAT_LABELS[item.cat] || item.cat} · ${(item.price_low === 0 && item.price_high === 0) ? "FREE" : "$" + item.price_low + "–$" + item.price_high}</div>
+    </div>
+  `).join("");
+  // Click result → fly to marker + open popup
+  list.querySelectorAll(".result-item").forEach((el, i) => {
+    el.addEventListener("click", () => {
+      const {marker, item} = visible[i];
+      map.setView([item.lat, item.lng], 15);
+      marker.openPopup();
+    });
+  });
+}
+
+// Build meta-category toggles
+const togWrap = document.getElementById("cat-toggles");
+const catCounts = {};
+ALL_ITEMS.forEach(it => { catCounts[it.cat] = (catCounts[it.cat] || 0) + 1; });
+const metaDivs = {};
+
+function updateToggleUI() {
+  for (const [mk, div] of Object.entries(metaDivs)) {
+    div.classList.toggle("off", !activeMetas.has(mk));
+    div.classList.toggle("solo", soloMetaKey === mk);
+  }
+}
+
+Object.entries(META_CATS).forEach(([mk, meta]) => {
+  const count = [...meta.cats].reduce((s, c) => s + (catCounts[c] || 0), 0);
+  if (!count) return;
+  const div = document.createElement("div");
+  div.className = "cat-toggle";
+  div.dataset.meta = mk;
+  div.innerHTML = `<div class="swatch" style="background:${meta.color}"></div><span>${meta.label}</span><span class="count">${count}</span>`;
+  metaDivs[mk] = div;
+
+  let clickTimer = null;
+  div.addEventListener("click", () => {
+    clearTimeout(clickTimer);
+    clickTimer = setTimeout(() => {
+      clickTimer = null;
+      if (soloMetaKey) {
+        soloMetaKey = null;
+        activeMetas = new Set(Object.keys(META_CATS));
+      } else {
+        if (activeMetas.has(mk)) activeMetas.delete(mk);
+        else activeMetas.add(mk);
+      }
+      updateToggleUI();
+      applyFilters();
+    }, 220);
+  });
+  div.addEventListener("dblclick", () => {
+    clearTimeout(clickTimer);
+    clickTimer = null;
+    if (soloMetaKey === mk) {
+      soloMetaKey = null;
+      activeMetas = new Set(Object.keys(META_CATS));
+    } else {
+      soloMetaKey = mk;
+      activeMetas = new Set([mk]);
+    }
+    updateToggleUI();
+    applyFilters();
+  });
+  togWrap.appendChild(div);
+});
+
+// City tab clicks
+document.querySelectorAll("#city-tabs .tab").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll("#city-tabs .tab").forEach(b => b.classList.toggle("active", b === btn));
+    activeCity = btn.dataset.city;
+    const view = CITY_VIEWS[activeCity];
+    map.flyTo(view.center, view.zoom, { duration: 0.8 });
+    applyFilters();
+  });
+});
+
+// Search
+document.getElementById("search").addEventListener("input", (e) => {
+  searchQuery = e.target.value.trim().toLowerCase();
+  applyFilters();
+});
+
+// Image carousel navigation (called from popup inline onclick)
+const _imgIdx = {};
+window.switchMapImg = function(uid, dir) {
+  const item = ALL_ITEMS.find(it => it.id === uid);
+  if (!item || !item.images) return;
+  const imgs = item.images;
+  _imgIdx[uid] = ((_imgIdx[uid] || 0) + dir + imgs.length) % imgs.length;
+  const idx = _imgIdx[uid];
+  const el = document.getElementById('pimg-' + uid);
+  if (el) el.src = imgs[idx];
+  imgs.forEach((_, i) => {
+    const dot = document.getElementById('pdot-' + uid + '-' + i);
+    if (dot) dot.classList.toggle('active', i === idx);
+  });
+};
+
+// ── Itinerary overlay ─────────────────────────────────────────────────────
+const ITINERARY_DAYS = {
+  5:  ['seo-m1','seo-m2','seo-nc4','seo-kf8','seo-ch1','seo-kf10','seo-hb1','seo-sf5','seo-hb2','seo-nc3'],
+  6:  ['seo-no1','seo-ir4','seo-ir5','seo-sf3','seo-mu2','seo-s2','seo-b3','seo-ir1','seo-ir2','seo-ir3','seo-cb3','seo-cb2','seo-cb6','seo-cb7','seo-nc2','seo-nc5','seo-hb4'],
+  7:  ['seo-cf6','seo-ant1','seo-cf8','seo-kf8','seo-ch3','seo-kf7','seo-kf3','seo-fa2','seo-gi1','seo-fa5','seo-st3','seo-mk2','seo-st4'],
+  8:  ['seo-sc1','seo-sc2','seo-sc3','seo-ga1','seo-sc4','seo-fa4','seo-sf4','seo-ch2','seo-sf6','seo-kf8','seo-s6','seo-nc3','seo-hb3'],
+  9:  ['seo-s1','seo-s4','seo-kf1','seo-ins1','seo-kf6','seo-kf9','seo-sf1','seo-ins2','seo-mu4','seo-wk2','seo-st1','seo-mk1','seo-hb5','seo-hb6','seo-hb7','seo-hb8'],
+  10: ['seo-ga4','seo-kf3','seo-cb2','seo-cb3','seo-cb7'],
+  11: ['seo-kf4','seo-kf9','seo-m1','seo-hng1'],
+  12: ['seo-ir4','seo-ir5','seo-no1','seo-cf8','seo-fa4','seo-wk5','seo-fa3','seo-mu2','seo-s8','seo-chm2','seo-fd1','seo-chm1','seo-cb4'],
+  13: ['seo-st4','seo-e2','seo-kf3','seo-ir1','seo-ir2','seo-ir3','seo-b3','seo-sf5','seo-cb6','seo-cb2','seo-cb7'],
+  14: ['seo-gi2','seo-oy1','seo-oy2','seo-no1','seo-m2','seo-sf7','seo-st1','seo-wk2','seo-gi3','seo-ir1','seo-b3','seo-ir2','seo-ir3','seo-sf5','seo-nc5','seo-hb4'],
+  15: ['seo-kf8','seo-mp1','seo-m2','seo-sf3','seo-nc4','seo-hb2','seo-nc3'],
+};
+
+// Build id -> item lookup
+const _iMap = {};
+ALL_ITEMS.forEach(it => { _iMap[it.id] = it; });
+
+// Aggregate: item id -> sorted list of days it appears on
+const idToDays = {};
+for (const [day, ids] of Object.entries(ITINERARY_DAYS)) {
+  const d = Number(day);
+  for (const id of ids) {
+    if (!idToDays[id]) idToDays[id] = [];
+    if (!idToDays[id].includes(d)) idToDays[id].push(d);
+  }
+}
+
+// Build one marker per item (label = all days it appears on)
+const itiMarkerList = [];
+for (const [id, days] of Object.entries(idToDays)) {
+  const item = _iMap[id];
+  if (!item || !item.lat || !item.lng) continue;
+  days.sort((a, b) => a - b);
+  const label = days.join('/');
+  const w = label.length <= 2 ? 28 : label.length <= 5 ? 40 : 54;
+  const icon = L.divIcon({
+    className: '',
+    html: `<div class="day-marker">${label}</div>`,
+    iconSize: [w, 22],
+    iconAnchor: [w / 2, 11]
+  });
+  const m = L.marker([item.lat, item.lng], { icon, zIndexOffset: 500 });
+  const gmaps = item.place_id
+    ? `https://www.google.com/maps/place/?q=place_id:${item.place_id}`
+    : `https://www.google.com/maps/search/?api=1&query=${item.lat},${item.lng}`;
+  const price = (item.price_low === 0 && item.price_high === 0) ? 'Free'
+    : item.price_low === item.price_high ? `~$${item.price_low}`
+    : `$${item.price_low}–$${item.price_high}`;
+  m.bindPopup(`
+    <div class="popup-body">
+      <div class="popup-cat" style="color:#9d4edd">Day${days.length > 1 ? 's' : ''} ${days.join(', ')}</div>
+      <div class="popup-name" style="color:#1a1612">${item.name}</div>
+      <div class="popup-meta"><span>${price}</span>${item.rating ? ` <span>· ★ ${item.rating}</span>` : ''}</div>
+      <a class="popup-link" href="${gmaps}" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+    </div>
+  `, { maxWidth: 240 });
+  itiMarkerList.push(m);
+}
+
+const itiLayer = L.layerGroup();
+let itiActive = false;
+
+document.getElementById('iti-btn').addEventListener('click', function () {
+  itiActive = !itiActive;
+  this.classList.toggle('active', itiActive);
+  if (itiActive) {
+    itiMarkerList.forEach(m => itiLayer.addLayer(m));
+    itiLayer.addTo(map);
+    // Switch to Seoul view if not already there
+    if (activeCity !== 'seoul') {
+      document.querySelectorAll('#city-tabs .tab').forEach(b => b.classList.toggle('active', b.dataset.city === 'seoul'));
+      activeCity = 'seoul';
+      map.flyTo(CITY_VIEWS.seoul.center, CITY_VIEWS.seoul.zoom, { duration: 0.8 });
+      applyFilters();
+    }
+  } else {
+    itiLayer.clearLayers();
+    itiLayer.remove();
+  }
+});
+
+// Initial
+applyFilters();
+</script>
+</body>
+</html>
