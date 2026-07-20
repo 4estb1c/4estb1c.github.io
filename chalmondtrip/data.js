@@ -236,6 +236,8 @@ const TRIP_DATA = {
           {id:"seo-no4",name:"Woo Rae Ok (naengmyeon, since 1946)",lat:37.5557,lng:126.9975,rating:4.5,price_low:14,price_high:22,blurb:"One of Seoul's oldest restaurants (est. 1946), famous for Pyongyang-style mul-naengmyeon — buckwheat noodles in ice-cold beef broth, topped with radish kimchi and a hard-boiled egg. Also serves excellent galbi.",why:"The definitive naengmyeon experience in its most classic form.",images:["images/seoul/seo-no4-1.jpg","images/seoul/seo-no4-2.jpg","images/seoul/seo-no4-3.jpg"]}
         ],
         experience: [{id:"seo-bp1",name:"Banpo Bridge Moonlight Rainbow Fountain",lat:37.5128,lng:126.9968,images:["images/seoul/seo-bp1-1.jpg"]},
+          {id:"seo-hbs",name:"Hanbok Photo Shoot (booked) — near Gyeongbokgung",lat:37.5779,lng:126.9740,images:[]},
+          {id:"seo-cru",name:"Eland Hangang River Cruise (booked) — Yeouido pier",lat:37.5270,lng:126.9335,images:[]},
           {id:"seo-e1",name:"Dragon Hill Spa (Jjimjilbang, Yongsan)",lat:37.5349662,lng:126.9646767,rating:4.1,price_low:12,price_high:25,blurb:"7-floor 24h Korean spa: hot pools, themed sauna rooms (jade, salt, charcoal), outdoor deck, food court, sleeping halls. Pay once, stay all day. Rent a 'jjimjilbang' outfit at the door.",why:"The quintessential Korean spa day; great jet-lag reset.",place_id:"",images:["images/seoul/seo-e1-1.jpg","images/seoul/seo-e1-2.jpg","images/seoul/seo-e1-3.jpg"]},
           {id:"seo-e2",name:"Yeouido Hangang Park (Han River)",lat:37.5285145,lng:126.9337764,rating:4.5,price_low:0,price_high:0,blurb:"Riverside park that is Seoul's living room: rent tandem bikes, order fried chicken and ramyeon to the lawn, watch the Banpo Bridge rainbow fountain at night. Free to enter.",why:"Free, very local, perfect warm-evening hangout.",place_id:"",images:["images/seoul/seo-e2-1.jpg","images/seoul/seo-e2-2.jpg","images/seoul/seo-e2-3.jpg"]},
           {id:"seo-e3",name:"Trick Eye Museum (Hongdae)",lat:37.5503938,lng:126.9217733,rating:4.3,price_low:12,price_high:18,blurb:"Interactive 3D optical-illusion museum — pose inside painted scenes via the AR app. Ice museum and love museum included. Pure silly-photo fun.",why:"Rainy-day backup; great photos with zero effort.",place_id:"",images:["images/seoul/seo-e3-1.jpg","images/seoul/seo-e3-2.jpg","images/seoul/seo-e3-3.jpg"]},
@@ -323,7 +325,8 @@ const TRIP_DATA = {
         color: [
           {id:"seo-co1",name:"Color Doodle Personal Color (Myeongdong)",lat:37.5637,lng:126.9852,rating:4.7,price_low:60,price_high:110,blurb:"Personal-color studio popular with visitors: a consultant drapes fabrics to find your 'season' and sends you off with a palette card. English service; book ahead.",why:"Most foreigner-friendly color session.",place_id:"",images:[]},
           {id:"seo-co2",name:"OWHITE Personal Color (Hongdae)",lat:37.5556,lng:126.9230,rating:4.8,price_low:70,price_high:130,blurb:"Detailed warm/cool diagnosis plus makeup-shade and jewelry-metal advice; some packages add face-shape analysis.",why:"Most thorough analysis with a full report.",place_id:"",images:[]},
-          {id:"seo-co3",name:"Bidam Personal Color (Gangnam)",lat:37.5045,lng:127.0240,rating:4.7,price_low:60,price_high:120,blurb:"Sleek Gangnam studio offering personal color plus face and style consulting; popular right before a shopping day.",why:"Pair it with Gangnam/Myeongdong shopping.",place_id:"",images:[]}
+          {id:"seo-co3",name:"Bidam Personal Color (Gangnam)",lat:37.5045,lng:127.0240,rating:4.7,price_low:60,price_high:120,blurb:"Sleek Gangnam studio offering personal color plus face and style consulting; popular right before a shopping day.",why:"Pair it with Gangnam/Myeongdong shopping.",place_id:"",images:[]},
+          {id:"seo-co4",name:"Vic's Lab Korea — Signature Color Analysis (Mapo) — BOOKED",lat:37.5566,lng:126.9055,rating:4.9,price_low:100,price_high:200,blurb:"Your booked studio: [1:2] Signature Color Analysis for 2, in Mapo near Mangwon. Detailed seasonal diagnosis with drape testing and a full palette report.",why:"The one you booked — Thu Jul 30, 9:30am.",place_id:"",images:["images/seoul/seo-co-generic-1.jpg","images/seoul/seo-co-generic-2.jpg","images/seoul/seo-co-generic-3.jpg"]}
         ],
         skincare: [
           {id:"seo-sk1",name:"Shangpree Spa (Gangnam)",lat:37.5223,lng:127.0290,rating:4.7,price_low:90,price_high:200,blurb:"Award-winning Korean facial spa (the brand behind the cult sheet masks). Signature gold and lifting facials in a serene Gangnam townhouse.",why:"Best dedicated facial experience in Seoul.",place_id:"",images:["images/seoul/seo-sk1-1.jpg","images/seoul/seo-sk1-2.jpg","images/seoul/seo-sk1-3.jpg"]},
@@ -399,6 +402,128 @@ const TRIP_DATA = {
           {id:"seo-ml2",name:"Uniqlo Myeongdong Flagship (유니클로)",lat:37.5638,lng:126.9833,rating:4.4,price_low:10,price_high:120,blurb:"Largest Uniqlo in Korea across multiple floors — the full LifeWear range plus Korea-exclusive colorways and collaborations not sold in the US. Easy to combine with the Myeongdong K-beauty run on the same block.",why:"Korean Uniqlo carries exclusives not on US racks; the flagship has everything in one place.",images:["images/seoul/seo-ml2-1.jpg"]},
           {id:"seo-ml3",name:"Lotte World Mall (롯데월드몰)",lat:37.5114,lng:127.0982,rating:4.4,price_low:0,price_high:500,blurb:"Korea's largest shopping complex connected directly to Lotte World theme park at Jamsil. Eight above-ground floors with international and Korean brands, a food hall, aquarium, and CGV cinema. The adjacent Lotte World Tower houses Seoul Sky (555m observation deck).",why:"Best paired with Seoul Sky or the nearby Walkerhill Casino on Day 11 — all in the same east Seoul cluster.",images:["images/seoul/seo-ml3-1.jpg","images/seoul/seo-ml3-2.jpg"]},
           {id:"seo-ml4",name:"IFC Mall Yeouido (IFC몰)",lat:37.5251,lng:126.9255,rating:4.2,price_low:0,price_high:300,blurb:"Underground mall connected to the IFC office towers in Yeouido, 5-min walk from The Hyundai Seoul. Good food court, CGV cinema, and a solid range of shops. Less crowded and less design-forward than The Hyundai Seoul but a useful complement.",why:"Pair with The Hyundai Seoul on Day 13 — both are in Yeouido and walkable from the Han River park.",images:["images/seoul/seo-ml4-1.jpg","images/seoul/seo-ml4-2.jpg","images/seoul/seo-ml4-3.jpg"]}
+        ]
+      }
+    },
+    hongkong: {
+      name:"Hong Kong", nights:7, dates:"Aug 8-15",
+      hero_lat:22.2988, hero_lng:114.1722,
+      categories: {
+        lodging: [
+          {id:"hk-fs",name:"Four Seasons Hotel Hong Kong (Central / IFC)",lat:22.2866,lng:114.1578,images:[]},
+          {id:"hk-l1",name:"The Salisbury — YMCA of Hong Kong (Tsim Sha Tsui)",lat:22.2942,lng:114.1719,images:[]},
+          {id:"hk-l2",name:"Eaton HK (Jordan / Nathan Road)",lat:22.3057,lng:114.1706,images:[]}
+        ],
+        dim_sum: [
+          {id:"hk-ds1",name:"Tim Ho Wan (original, Sham Shui Po)",lat:22.3305,lng:114.1626,images:["images/hongkong/hk-ds1-1.jpg"]},
+          {id:"hk-ds2",name:"Lin Heung Kui (Sheung Wan trolley dim sum)",lat:22.2867,lng:114.1512,images:[]},
+          {id:"hk-ds3",name:"Maxim's Palace, City Hall (Central)",lat:22.2817,lng:114.1618,images:[]},
+          {id:"hk-ds4",name:"One Dim Sum (Prince Edward)",lat:22.3247,lng:114.1690,images:[]},
+          {id:"hk-ds5",name:"Din Tai Fung (Tsim Sha Tsui)",lat:22.3006,lng:114.1720,images:["images/hongkong/hk-ds5-1.jpg"]}
+        ],
+        roast_meat: [
+          {id:"hk-rg1",name:"Yat Lok Roast Goose (Central)",lat:22.2828,lng:114.1548,images:["images/hongkong/hk-rg1-1.jpg"]},
+          {id:"hk-rg2",name:"Kam's Roast Goose (Wan Chai)",lat:22.2775,lng:114.1720,images:[]},
+          {id:"hk-rg3",name:"Joy Hing Roasted Meat (Wan Chai)",lat:22.2772,lng:114.1725,images:[]}
+        ],
+        cha_chaan_teng: [
+          {id:"hk-cc1",name:"Australia Dairy Company (Jordan)",lat:22.3047,lng:114.1712,images:["images/hongkong/hk-cc1-1.jpg"]},
+          {id:"hk-cc2",name:"Mido Cafe (Yau Ma Tei)",lat:22.3079,lng:114.1710,images:[]},
+          {id:"hk-cc3",name:"Kam Wah Cafe (Prince Edward — polo bun)",lat:22.3244,lng:114.1685,images:[]},
+          {id:"hk-cc4",name:"Lan Fong Yuen (Central — milk tea)",lat:22.2820,lng:114.1553,images:[]}
+        ],
+        dessert: [
+          {id:"hk-de1",name:"Tai Cheong Bakery (Central — egg tarts)",lat:22.2817,lng:114.1547,images:["images/hongkong/hk-de1-1.jpg"]},
+          {id:"hk-de2",name:"Mammy Pancake (egg waffles, Tsim Sha Tsui)",lat:22.2988,lng:114.1724,images:["images/hongkong/hk-de2-1.jpg"]},
+          {id:"hk-de3",name:"Yee Shun Milk Company (steamed milk pudding, Causeway Bay)",lat:22.2795,lng:114.1850,images:[]}
+        ],
+        noodle: [
+          {id:"hk-no1",name:"Kau Kee Restaurant (beef brisket noodles, Central)",lat:22.2846,lng:114.1530,images:[]},
+          {id:"hk-no2",name:"Sister Wah (beef brisket noodles, Tin Hau)",lat:22.2905,lng:114.1918,images:[]},
+          {id:"hk-no3",name:"Mak's Noodle (Central)",lat:22.2823,lng:114.1549,images:[]}
+        ],
+        street_food: [
+          {id:"hk-sf1",name:"Temple Street Night Market (Yau Ma Tei)",lat:22.3068,lng:114.1701,images:["images/hongkong/hk-sf1-1.jpg"]},
+          {id:"hk-sf2",name:"Sham Shui Po street food (Pei Ho / Fuk Wing)",lat:22.3306,lng:114.1622,images:["images/hongkong/hk-sf2-1.jpg"]},
+          {id:"hk-sf3",name:"Mong Kok street eats (Dundas Street)",lat:22.3186,lng:114.1690,images:[]}
+        ],
+        sight: [
+          {id:"hk-si1",name:"Victoria Peak — Sky Terrace 428",lat:22.2759,lng:114.1455,images:["images/hongkong/hk-si1-1.jpg"]},
+          {id:"hk-si2",name:"Tian Tan Big Buddha (Lantau)",lat:22.2540,lng:113.9050,images:["images/hongkong/hk-si2-1.jpg"]},
+          {id:"hk-si3",name:"Symphony of Lights (TST waterfront)",lat:22.2938,lng:114.1720,images:["images/hongkong/hk-si3-1.jpg"]},
+          {id:"hk-si4",name:"Sky100 Observation Deck (ICC)",lat:22.3036,lng:114.1601,images:["images/hongkong/hk-si4-1.jpg"]},
+          {id:"hk-si5",name:"Choi Hung Estate (rainbow court)",lat:22.3350,lng:114.2090,images:["images/hongkong/hk-si5-1.jpg"]}
+        ],
+        experience: [
+          {id:"hk-ex1",name:"Star Ferry (Tsim Sha Tsui ↔ Central)",lat:22.2936,lng:114.1685,images:["images/hongkong/hk-ex1-1.jpg"]},
+          {id:"hk-ex2",name:"Ngong Ping 360 cable car (Tung Chung)",lat:22.2896,lng:113.9412,images:["images/hongkong/hk-ex2-1.jpg"]},
+          {id:"hk-ex3",name:"Peak Tram (Garden Road terminus)",lat:22.2777,lng:114.1601,images:[]},
+          {id:"hk-ex4",name:"HK Tramways 'Ding Ding' (Central)",lat:22.2846,lng:114.1550,images:["images/hongkong/hk-ex4-1.jpg"]},
+          {id:"hk-ex5",name:"Macau day trip (Senado Square)",lat:22.1937,lng:113.5400,images:[]},
+          {id:"hk-ex6",name:"Hong Kong Disneyland",lat:22.3130,lng:114.0413,images:[]},
+          {id:"hk-ex7",name:"Ocean Park Hong Kong",lat:22.2460,lng:114.1750,images:[]}
+        ],
+        temple: [
+          {id:"hk-te1",name:"Man Mo Temple (Sheung Wan)",lat:22.2837,lng:114.1503,images:["images/hongkong/hk-te1-1.jpg"]},
+          {id:"hk-te2",name:"Wong Tai Sin Temple",lat:22.3423,lng:114.1935,images:["images/hongkong/hk-te2-1.jpg"]},
+          {id:"hk-te3",name:"Chi Lin Nunnery (Diamond Hill)",lat:22.3390,lng:114.2050,images:["images/hongkong/hk-te3-1.jpg"]},
+          {id:"hk-te4",name:"Po Lin Monastery (Lantau)",lat:22.2545,lng:113.9042,images:["images/hongkong/hk-te4-1.jpg"]},
+          {id:"hk-te5",name:"Ten Thousand Buddhas Monastery (Sha Tin)",lat:22.3830,lng:114.1890,images:["images/hongkong/hk-te5-1.jpg"]}
+        ],
+        garden: [
+          {id:"hk-ga1",name:"Nan Lian Garden (Diamond Hill)",lat:22.3382,lng:114.2038,images:["images/hongkong/hk-ga1-1.jpg"]},
+          {id:"hk-ga2",name:"Kowloon Walled City Park",lat:22.3320,lng:114.1900,images:[]},
+          {id:"hk-ga3",name:"Hong Kong Park (Central)",lat:22.2775,lng:114.1615,images:[]}
+        ],
+        walk: [
+          {id:"hk-wa1",name:"Central–Mid-Levels Escalator & SoHo",lat:22.2823,lng:114.1546,images:["images/hongkong/hk-wa1-1.jpg"]},
+          {id:"hk-wa2",name:"PMQ (former Police Married Quarters)",lat:22.2833,lng:114.1516,images:["images/hongkong/hk-wa2-1.jpg"]},
+          {id:"hk-wa3",name:"Tai Kwun (Centre for Heritage & Arts)",lat:22.2809,lng:114.1547,images:["images/hongkong/hk-wa3-1.jpg"]},
+          {id:"hk-wa4",name:"Tai O fishing village (Lantau)",lat:22.2530,lng:113.8590,images:["images/hongkong/hk-wa4-1.jpg"]},
+          {id:"hk-wa5",name:"Avenue of Stars & TST Promenade",lat:22.2937,lng:114.1722,images:["images/hongkong/hk-wa5-1.jpg"]},
+          {id:"hk-wa6",name:"Goldfish, Flower & Bird markets (Mong Kok)",lat:22.3236,lng:114.1690,images:["images/hongkong/hk-wa6-1.jpg"]}
+        ],
+        hike: [
+          {id:"hk-hi1",name:"Dragon's Back ridge trail",lat:22.2440,lng:114.2430,images:["images/hongkong/hk-hi1-1.jpg"]}
+        ],
+        beach: [
+          {id:"hk-be1",name:"Shek O & Big Wave Bay",lat:22.2330,lng:114.2510,images:["images/hongkong/hk-be1-1.jpg"]},
+          {id:"hk-be2",name:"Repulse Bay",lat:22.2360,lng:114.1960,images:["images/hongkong/hk-be2-1.jpg"]}
+        ],
+        shopping: [
+          {id:"hk-sh1",name:"Ladies' Market (Mong Kok)",lat:22.3196,lng:114.1704,images:["images/hongkong/hk-sh1-1.jpg"]},
+          {id:"hk-sh2",name:"Stanley Market & waterfront",lat:22.2188,lng:114.2130,images:["images/hongkong/hk-sh2-1.jpg"]},
+          {id:"hk-sh3",name:"Causeway Bay (Times Square, SOGO)",lat:22.2800,lng:114.1830,images:["images/hongkong/hk-sh3-1.jpg"]},
+          {id:"hk-sh4",name:"Apliu Street electronics (Sham Shui Po)",lat:22.3306,lng:114.1622,images:[]}
+        ],
+        malls: [
+          {id:"hk-ma1",name:"K11 Musea (Victoria Dockside, TST)",lat:22.2954,lng:114.1720,images:["images/hongkong/hk-ma1-1.jpg"]},
+          {id:"hk-ma2",name:"Citygate Outlets (Tung Chung)",lat:22.2893,lng:113.9414,images:[]}
+        ],
+        museum: [
+          {id:"hk-mu1",name:"M+ Museum (West Kowloon Cultural District)",lat:22.3040,lng:114.1585,images:["images/hongkong/hk-mu1-1.jpg"]}
+        ],
+        work: [
+          {id:"hk-wk1",name:"Tamar Park (Admiralty — harbourfront lawn)",lat:22.2808,lng:114.1653,images:[]},
+          {id:"hk-wk2",name:"Hong Kong Central Library (Causeway Bay)",lat:22.2795,lng:114.1905,images:[]},
+          {id:"hk-wk3",name:"The Cupping Room (Sheung Wan)",lat:22.2862,lng:114.1497,images:[]},
+          {id:"hk-wk4",name:"Elephant Grounds (Central)",lat:22.2812,lng:114.1553,images:[]},
+          {id:"hk-wk5",name:"West Kowloon Art Park (harbourfront lawn)",lat:22.3025,lng:114.1580,images:[]},
+          {id:"hk-wk6",name:"IFC Mall cafés & the Four Seasons lounge (Central)",lat:22.2866,lng:114.1578,images:[]},
+          {id:"hk-wk7",name:"The Hive — co-working day pass (Sheung Wan)",lat:22.2868,lng:114.1470,images:[]},
+          {id:"hk-wk8",name:"NOC Coffee Co (Sheung Wan)",lat:22.2872,lng:114.1492,images:[]},
+          {id:"hk-wk9",name:"The Coffee Academics (Causeway Bay)",lat:22.2795,lng:114.1835,images:[]},
+          {id:"hk-wk10",name:"Blue Bottle Coffee (Central)",lat:22.2823,lng:114.1562,images:[]},
+          {id:"hk-wk11",name:"Kowloon Park (Tsim Sha Tsui)",lat:22.3000,lng:114.1700,images:[]}
+        ],
+        cocktail_bar: [
+          {id:"hk-cb1",name:"Ozone at The Ritz-Carlton (ICC — world's highest bar)",lat:22.3036,lng:114.1601,images:[]},
+          {id:"hk-cb2",name:"Aqua Spirit rooftop (Tsim Sha Tsui)",lat:22.2977,lng:114.1725,images:[]},
+          {id:"hk-cb3",name:"The Old Man (Central — cocktails, counter seating)",lat:22.2830,lng:114.1512,images:[]},
+          {id:"hk-cb4",name:"Second Draft (Tai Hang — craft beer)",lat:22.2793,lng:114.1913,images:[]}
+        ],
+        club: [
+          {id:"hk-cl1",name:"Lan Kwai Fong (Central nightlife)",lat:22.2809,lng:114.1560,images:["images/hongkong/hk-cl1-1.jpg"]}
         ]
       }
     }
