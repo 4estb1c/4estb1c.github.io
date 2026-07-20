@@ -19,7 +19,7 @@ const strip=h=>h.replace(/<[^>]+>/g,"").replace(/\s+/g," ").trim();
 
 // split into days
 const days=[];
-const dre=/<!-- DAY (\d+) -->([\s\S]*?)(?=<!-- DAY \d+ -->|<\/div><!-- \/tab-seoul -->)/g;
+const dre=/<!-- DAY (\d+) -->([\s\S]*?)(?=<!-- DAY \d+ -->|<\/div><!-- \/tab-)/g;
 let dm;
 while((dm=dre.exec(html))) days.push({num:+dm[1], html:dm[2]});
 
