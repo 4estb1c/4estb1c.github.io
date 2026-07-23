@@ -736,7 +736,7 @@ body {
     </div>
     <div>
       <div class="day-title">Colour, cut, Hongdae.</div>
-      <div class="day-tagline">Booked colour analysis in Mapo, then Garosu-gil and a haircut in Apgujeong — then drop the bags and take the night in Hongdae: the shopping street, walls of hair clips, buskers at the playground.</div>
+      <div class="day-tagline">Booked colour analysis in Mapo, then Garosu-gil and a haircut in Apgujeong — then drop the bags and take the night in Hongdae: the shopping street, walls of hair clips, buskers at the playground, karaoke to finish.</div>
       <div class="day-spend">
         <span class="spend-item">Sleep: <strong>Myeongdong New Stay Inn</strong></span>
         <span class="spend-item">Est. spend: <strong>~$160/pp</strong></span>
@@ -949,7 +949,13 @@ body {
         <div class="opt-desc">₩2,000 draft on three rowdy floors, going since the 1990s. The cheap, unserious option if the night wants to keep going.</div>
       </div>
     </div>
-    <div class="transit">→ Hongik Univ → Line 2 → Euljiro 1-ga → walk to Myeongdong · ~30 min, or a ~₩14,000 taxi. Line 2 runs until about 00:30.</div>
+    <div class="block highlight">
+      <div class="block-time">22:30</div>
+      <div class="block-title">Soo Karaoke Club Hongdae <span class="cost">~$25</span></div>
+      <div class="block-desc">The luxury branch, and the right way to end a night you're already spending here: the famous two-storey suite with floor-to-ceiling windows looking straight down onto the Hongdae street, which at 11pm is the best free show in Seoul. Big English catalogue, and the sound system is the best in the neighbourhood. Two minutes' walk from the playground.</div>
+      <div class="block-tip">Ask for the two-floor room specifically (2층 룸) when you arrive — it's the one worth coming for, and it goes early. Rooms are charged by the hour, so an hour and a half is plenty. Thursday is quieter than the weekend, which is exactly why the good room is gettable.</div>
+    </div>
+    <div class="transit">→ Hongik Univ → Line 2 → Euljiro 1-ga → walk to Myeongdong · ~30 min, or a ~₩14,000 taxi. Line 2 runs until about 00:30 — after that it's a taxi, about ₩16,000.</div>
     </div>
 </div>
 
@@ -963,7 +969,7 @@ body {
     </div>
     <div>
       <div class="day-title">Hanbok, palace, river.</div>
-      <div class="day-tagline">Booked photo shoot at 9, palaces in costume, a facial, The Hyundai, and the booked Hangang cruise at 7.</div>
+      <div class="day-tagline">Booked photo shoot at 9, palaces in costume, a facial, The Hyundai, the booked Hangang cruise at 7 — then Ikseon-dong for dinner and a nightcap.</div>
       <div class="day-spend">
         <span class="spend-item">Sleep: <strong>Myeongdong New Stay Inn</strong></span>
         <span class="spend-item">Est. spend: <strong>~$185/pp</strong></span>
@@ -1120,20 +1126,14 @@ body {
       </div>
       <div class="opt">
         <div class="opt-name">Hang Out (craft beer) <span class="cost">~$14</span></div>
-        <div class="opt-desc">Tiny rotating-tap bar down one of the narrowest alleys. Ten seats, a blackboard list, no ceremony. The correct last stop before karaoke.</div>
+        <div class="opt-desc">Tiny rotating-tap bar down one of the narrowest alleys. Ten seats, a blackboard list, no ceremony. The correct last stop of the night.</div>
       </div>
       <div class="opt">
         <div class="opt-name">Seosulla-gil (hanok alley by Jongmyo) <span class="cost">~$20</span></div>
         <div class="opt-desc">Five minutes from Ikseon and a world quieter: a hanok alley running along the stone wall of Jongmyo Shrine, its houses turned into minimalist wine bars, jewellery studios and craft shops, with the shrine wall on one side the whole way. The grown-up alternative if the Ikseon crush is too much. Jongno 3-ga Exit 7.</div>
       </div>
     </div>
-    <div class="transit">→ 20-min taxi to Hongdae (~₩12,000) — or stay in Ikseon and skip the karaoke, no shame in it</div>
-    <div class="block highlight">
-      <div class="block-time">22:45</div>
-      <div class="block-title">Soo Karaoke Club Hongdae <span class="cost">~$25</span></div>
-      <div class="block-desc">The luxury branch, and a completely different animal to last night's Gangnam room: the famous two-storey suite with floor-to-ceiling windows looking straight down onto the Hongdae street, which at 11pm on a Friday is the best free show in Seoul. Big English catalogue, and the sound system is the best in the neighbourhood.</div>
-      <div class="block-tip">Ask for the two-floor room specifically (2층 룸) when you arrive — it's the one worth coming across town for, and it goes early on Fridays. If you're still going afterwards, the Hongdae street outside runs until dawn — but you know this neighbourhood by now, you had Thursday night here.</div>
-    </div>
+    <div class="transit">→ Jongno 3-ga → Line 1 → Line 4 → Myeongdong · ~15 min, or a ~₩8,000 taxi. A short walk home after a very long day in costume.</div>
     </div>
 </div>
 
@@ -2076,6 +2076,8 @@ const TITLE_MAP = {
   'hongdae playground':     'seo-hpg',
   'alice cheongdam':        'seo-cb4',
   'nine brick':             'seo-lg2',
+  'drop the haul':          'seo-lg1',   // the hotel run-back pins at the hotel, not at the salon
+  'myeongdong new stay inn':'seo-lg1',
   'olive young hongdae':    'seo-gi2h',  // else 'olive young' → the Myeongdong flagship wins
   'haircut':                'seo-hr1',   // else 'garosu' in the title wins
   'seven luck':             'seo-ca2',   // else 'coex' wins
@@ -2721,8 +2723,8 @@ const HOMES = {
 const DAY_HOME = {5:'myeongdong',6:'myeongdong',7:'myeongdong',8:'myeongdong',9:'myeongdong',10:'ninebrick',11:'ninebrick',12:'fourseasons',13:'fourseasons',14:'fourseasons',15:'fourseasons',16:'fourseasons',17:'fourseasons'};
 const COMMUTE = {
   5:  '🏠 Arrive ICN → <strong>Myeongdong New Stay Inn</strong> (AREX to Seoul Station + Line 4, ~70 min). Everything this afternoon is 0–12 min away: Myeongdong on foot, Namsan by cable car, DDP one metro hop.',
-  6:  '🏠 <strong>Myeongdong New Stay Inn</strong> → 🎟️ 9:30am Colour Analysis @ <strong>Vic\'s Lab</strong> (Mapo, near Mangwon) · <strong>~30 min</strong> by metro, so leave by 08:50. &nbsp;Then Mapo → Sinsa (~40 min) for Garosu-gil and the haircut, back to the hotel 16:45–17:45 to drop the haul, and out to <strong>Hongdae</strong> (~30 min on Line 2) for the evening.',
-  7:  '🏠 <strong>Myeongdong New Stay Inn</strong> → 🎟️ 9:00am Hanbok shoot → Gyeongbokgung · <strong>~15 min</strong> by metro; the palace, Bukchon and the spa are all on foot from there. &nbsp;Afternoon: Anguk → Yeouido (~35 min) for The Hyundai, then 🎟️ 7:00pm Eland cruise (conf EWZ727421) — the pier is a 12-min walk from the shops.',
+  6:  '🏠 <strong>Myeongdong New Stay Inn</strong> → 🎟️ 9:30am Colour Analysis @ <strong>Vic\'s Lab</strong> (Mapo, near Mangwon) · <strong>~30 min</strong> by metro, so leave by 08:50. &nbsp;Then Mapo → Sinsa (~40 min) for Garosu-gil and the haircut, back to the hotel 16:45–17:45 to drop the haul, and out to <strong>Hongdae</strong> (~30 min on Line 2) for the evening — street, dinner, buskers, karaoke.',
+  7:  '🏠 <strong>Myeongdong New Stay Inn</strong> → 🎟️ 9:00am Hanbok shoot → Gyeongbokgung · <strong>~15 min</strong> by metro; the palace, Bukchon and the spa are all on foot from there. &nbsp;Afternoon: Anguk → Yeouido (~35 min) for The Hyundai, then 🎟️ 7:00pm Eland cruise (conf EWZ727421) — the pier is a 12-min walk from the shops. Finish in <strong>Ikseon-dong</strong>, 15 min from home.',
   8:  '🏠 <strong>Myeongdong New Stay Inn</strong> → sisters day is held open — no fixed plan. Just meet at <strong>Seoul Forest</strong> for the 8pm night walk.',
   9:  '🏠 <strong>Myeongdong New Stay Inn</strong> → Cheongnyangni → ITX-Cheongchun → Cheongpyeong → <strong>Garden of Morning Calm</strong> · <strong>~1h45 each way</strong>, so leave by 07:45. &nbsp;Back at COEX around 16:30 for the library and casino, then a 10-min taxi to <strong>Apgujeong/Cheongdam</strong> for dinner and Alice.',
   10: '🧳 <strong>Hotel-change day.</strong> Check out of Myeongdong 07:15 → Line 2 → <strong>Nine Brick Hotel (Hongdae)</strong> (~30 min), leave the bags with reception → Hongik Univ <strong>AREX</strong> → ICN T1 → bus/taxi to <strong>Eurwangni Beach</strong> (~1h15). &nbsp;The bag move is free — AREX runs from Hongik Univ, so Hongdae is on the way out and the way back.',

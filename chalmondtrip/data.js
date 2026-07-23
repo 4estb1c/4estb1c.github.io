@@ -155,6 +155,7 @@ const TRIP_DATA = {
         //  seo-ff4 bulgogi burger, seo-ff5 ShackBurger, seo-fr4 buncheong ceramics, seo-ir1 Thai curry, seo-ir3 hanjeongsik,
         //  seo-chm1 gin & tonic, seo-chm2/hb8 makgeolli, seo-hb4 G&T, seo-hb5 somaek, seo-hb6/hb7 old-fashioned.
         lodging: [
+          {id:"seo-lg1",name:"Myeongdong New Stay Inn",lat:37.5609,lng:126.9857,rating:4.3,price_low:70,price_high:150,blurb:"The main Seoul base for the first five nights, in the middle of Myeongdong — Namsan cable car, Namdaemun, Cheonggyecheon and the K-beauty street are all on foot, and Line 4 is at the door.",why:"Central enough that half the week's plans are walkable from it.",place_id:"",images:[]},
           {id:"seo-lg2",name:"Nine Brick Hotel (Hongdae)",lat:37.5551,lng:126.9231,rating:4.3,price_low:90,price_high:190,blurb:"Industrial-chic boutique hotel in the middle of Hongdae — 32 Hongik-ro 5-gil, Mapo-gu, about a 6-minute walk from Hongik University Station Exit 9 (Line 2, AREX and Gyeongui-Jungang). The last night's bed, and the reason the airport morning is easy: AREX runs from that station straight to ICN.",why:"Last night in Seoul; puts the shopping street, the buskers and the airport line all within ten minutes.",place_id:"",images:[]}
         ],
         bbq: [
