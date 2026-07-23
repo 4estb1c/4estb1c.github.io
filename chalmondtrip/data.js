@@ -154,9 +154,17 @@ const TRIP_DATA = {
         //  Representative (dish/drink/category, Wikimedia Commons CC): seo-ff1 gilgeori toast, seo-ff2 Lotteria burger, seo-ff3 KFC sandwich,
         //  seo-ff4 bulgogi burger, seo-ff5 ShackBurger, seo-fr4 buncheong ceramics, seo-ir1 Thai curry, seo-ir3 hanjeongsik,
         //  seo-chm1 gin & tonic, seo-chm2/hb8 makgeolli, seo-hb4 G&T, seo-hb5 somaek, seo-hb6/hb7 old-fashioned.
+        // Photos added Jul 2026 — Wikimedia Commons unless noted: hk-cc2 Mido Cafe, hk-rg2 Kam's Roast Goose, hk-rg3 Joy Hing,
+        //   hk-cc4 Lan Fong Yuen, hk-ds3 Maxim's Palace, hk-de3 Yee Shun, hk-ds2 Lin Heung Kui (interior + trolley scrum),
+        //   hk-ex3 Peak Tram Garden Rd terminus, hk-ga2 Kowloon Walled City Park, hk-sh4 Apliu St, hk-wk11 Kowloon Park,
+        //   seo-dgm Dongmyo, seo-sff Seoul Folk Flea Market, seo-hss Hongdae street, seo-dsp Dosan Park.
+        //   Representative (dish/category, not the specific branch): hk-no1 beef brisket noodles, hk-no3 wonton noodle soup,
+        //   hk-cc3 pineapple bun + milk tea, seo-kkw kkwabaegi, seo-pcb a Korean PC bang interior.
+        //   From the venue's own pages: seo-mml Mimiline (theseoulstop.com), seo-sgg Sigonggan (thearchive.itszoelie.com),
+        //   seo-lg2 Nine Brick (9brickhotel.com).
         lodging: [
           {id:"seo-lg1",name:"Myeongdong New Stay Inn",lat:37.5609,lng:126.9857,rating:4.3,price_low:70,price_high:150,blurb:"The main Seoul base for the first five nights, in the middle of Myeongdong — Namsan cable car, Namdaemun, Cheonggyecheon and the K-beauty street are all on foot, and Line 4 is at the door.",why:"Central enough that half the week's plans are walkable from it.",place_id:"",images:[]},
-          {id:"seo-lg2",name:"Nine Brick Hotel (Hongdae)",lat:37.5551,lng:126.9231,rating:4.3,price_low:90,price_high:190,blurb:"Industrial-chic boutique hotel in the middle of Hongdae — 32 Hongik-ro 5-gil, Mapo-gu, about a 6-minute walk from Hongik University Station Exit 9 (Line 2, AREX and Gyeongui-Jungang). The last night's bed, and the reason the airport morning is easy: AREX runs from that station straight to ICN.",why:"Last night in Seoul; puts the shopping street, the buskers and the airport line all within ten minutes.",place_id:"",images:[]}
+          {id:"seo-lg2",name:"Nine Brick Hotel (Hongdae)",lat:37.5551,lng:126.9231,rating:4.3,price_low:90,price_high:190,blurb:"Industrial-chic boutique hotel in the middle of Hongdae — 32 Hongik-ro 5-gil, Mapo-gu, about a 6-minute walk from Hongik University Station Exit 9 (Line 2, AREX and Gyeongui-Jungang). The last night's bed, and the reason the airport morning is easy: AREX runs from that station straight to ICN.",why:"Last night in Seoul; puts the shopping street, the buskers and the airport line all within ten minutes.",place_id:"",images:["images/seoul/seo-lg2-1.jpg"]}
         ],
         bbq: [
           {id:"seo-b1",name:"Mongvely KBBQ Myeongdong (AYCE)",lat:37.561357,lng:126.9844162,rating:4.9,price_low:22,price_high:35,blurb:"All-you-can-eat BBQ about 29000 KRW per person plus 2500 KRW unlimited drinks. Self-service grill. 4.9 stars in Myeongdong.",why:"Best KBBQ value in the city.",place_id:"ChIJgcs2nlujfDURZe-3Vni6FcE",images:["images/seoul/seo-b1-1.jpg","images/seoul/seo-b1-2.jpg","images/seoul/seo-b1-3.jpg"]},
@@ -306,7 +314,7 @@ const TRIP_DATA = {
           {id:"seo-sf5",name:"Pojangmacha (Tent Street Bars)",lat:37.5250,lng:126.9310,rating:4.3,price_low:6,price_high:18,blurb:"Orange-tented roadside stalls serving odeng (fish cake soup skewers), twigim (fried snacks), tteokbokki and soju by the roadside. The Korean working person's outdoor pub. Clusters near Han River parks, Dongdaemun and Hongdae after dark.",why:"Most authentically local, tourist-free way to eat and drink in Seoul.",images:["images/seoul/seo-sf5-1.jpg","images/seoul/seo-sf5-2.jpg","images/seoul/seo-sf5-3.jpg"]},
           {id:"seo-sf6",name:"Dongdaemun 24h Night Snacks",lat:37.5678,lng:127.0098,rating:4.2,price_low:4,price_high:12,blurb:"The streets around Dongdaemun run all night — vendors sell hotteok (brown-sugar pancakes), gyeran-ppang (egg bread), corn dogs and tteokbokki through to dawn. Best between midnight and 4am when the fashion malls are also open.",why:"Only place in Seoul to eat street food at 3am surrounded by people shopping for clothes.",images:["images/seoul/seo-sf6-1.jpg","images/seoul/seo-sf6-2.jpg","images/seoul/seo-sf6-3.jpg"]},
           {id:"seo-sf7",name:"Egg Drop (Hongdae sandwich chain)",lat:37.5558,lng:126.9228,rating:4.4,price_low:7,price_high:12,blurb:"Seoul viral brioche-egg sandwich chain: butter-braised eggs with avocado, bacon or short-rib on pillowy bread. Constantly long queues in Hongdae from 10am; go early or mid-afternoon.",why:"The most talked-about casual breakfast in Seoul; worth one visit.",images:["images/seoul/seo-sf7-1.jpg","images/seoul/seo-sf7-2.jpg","images/seoul/seo-sf7-3.jpg"]},
-          {id:"seo-kkw",name:"Euljiro Kkwabaegi Stand (296-24 Euljiro 3-ga)",lat:37.5662,lng:126.9918,rating:4.5,price_low:2,price_high:6,blurb:"Twisted glutinous-rice doughnuts (kkwabaegi) fried all day and tossed in sugar — always a line, the line always moves. Two minutes from Nogari Alley.",why:"The perfect ₩2,000 hand-snack while you wander the Euljiro bar streets.",place_id:"",images:[]},
+          {id:"seo-kkw",name:"Euljiro Kkwabaegi Stand (296-24 Euljiro 3-ga)",lat:37.5662,lng:126.9918,rating:4.5,price_low:2,price_high:6,blurb:"Twisted glutinous-rice doughnuts (kkwabaegi) fried all day and tossed in sugar — always a line, the line always moves. Two minutes from Nogari Alley.",why:"The perfect ₩2,000 hand-snack while you wander the Euljiro bar streets.",place_id:"",images:["images/seoul/seo-kkw-1.jpg"]},
           {id:"seo-hrr",name:"Han River Convenience-store Ramen (Ttukseom)",lat:37.5305,lng:127.0660,rating:4.6,price_low:3,price_high:6,blurb:"A 7-Eleven inside Hangang Park with an automatic ramen machine — ₩4,000, four minutes, eaten riverside. Add banana milk and crack a raw egg in at the two-minute mark. The cheapest genuinely-Korean thing you can do on the river.",why:"You're already at Ttukseom for the swan boats; this is the ritual to do while you're there.",place_id:"",images:["images/seoul/seo-hrr-1.jpg"]}
         ],
         fine_dining: [
@@ -425,8 +433,8 @@ const TRIP_DATA = {
           {id:"seo-fa5",name:"Hongdae Vintage Strip",lat:37.5560,lng:126.9240,rating:4.3,price_low:10,price_high:80,blurb:"A cluster of vintage, deadstock and indie clothing shops concentrated around Hongdae Station — Y2K pieces, 90s sports gear, military surplus, Japanese brands and Korean indie designers. Best on weekend afternoons.",why:"Most concentrated and fun vintage shopping in Seoul.",images:["images/seoul/seo-fa5-1.jpg","images/seoul/seo-fa5-2.jpg","images/seoul/seo-fa5-3.jpg"]},
           // seo-hss photos: Wikimedia Commons "Street hongdae Seoul" + "Hongdae 1" (CC BY-SA 4.0) — the pedestrian strip by day and by night.
           {id:"seo-hss",name:"Hongdae Shopping Street (Walking Street / Eoulmadang-ro)",lat:37.5538,lng:126.9237,rating:4.5,price_low:5,price_high:60,blurb:"The pedestrianised strip running from Hongik Univ Stn Exits 8/9 down to Hongdae Playground: accessory megastores, K-beauty, streetwear, cheap jewellery and photo booths, shoulder to shoulder for about a kilometre. Shops run to roughly 22:00–23:00 and buskers take the street from around 19:00.",why:"The one shopping street in Seoul that is genuinely fun to walk at night, and the home of the accessory stores.",place_id:"",images:["images/seoul/seo-hss-1.jpg","images/seoul/seo-hss-2.jpg"]},
-          {id:"seo-sgg",name:"Sigonggan (시공간) — Hongdae",lat:37.5509,lng:126.9251,rating:4.4,price_low:5,price_high:40,blurb:"Glass-fronted accessory store built as wall-to-wall cabinets: earrings by the hundred, then rings, necklaces, and a serious wall of hair clips and head ornaments. Four Hongdae branches — the big ones are 93 Wausan-ro (in front of the Hongik Univ main gate) and 7 Yanghwa-ro 18-gil (Exit 8, Yeonnam side). Not the cheapest, but constant bundle promos.",why:"The rack-of-hair-clips shop, done properly and calmly rather than as a bargain-bin scrum.",place_id:"",images:[]},
-          {id:"seo-mml",name:"Mimiline (미미라인) — Myeongdong",lat:37.5604,lng:126.9856,rating:4.4,price_low:3,price_high:50,blurb:"Korea's largest accessory specialist — about 5,000 m² over floors 2–4 of the Hi Harriet building: rows of necklaces, hair clips, rings, earrings and phone cases on 2F, clothes and perfume on 3F, cosmetics above. Open 09:00–23:00, immediate tax refund at the till. Myeongdong Stn Exit 6 or 7, basically at the door.",why:"The biggest wall of cheap accessories in Seoul, and it's a two-minute walk from the hotel.",place_id:"",images:[]},
+          {id:"seo-sgg",name:"Sigonggan (시공간) — Hongdae",lat:37.5509,lng:126.9251,rating:4.4,price_low:5,price_high:40,blurb:"Glass-fronted accessory store built as wall-to-wall cabinets: earrings by the hundred, then rings, necklaces, and a serious wall of hair clips and head ornaments. Four Hongdae branches — the big ones are 93 Wausan-ro (in front of the Hongik Univ main gate) and 7 Yanghwa-ro 18-gil (Exit 8, Yeonnam side). Not the cheapest, but constant bundle promos.",why:"The rack-of-hair-clips shop, done properly and calmly rather than as a bargain-bin scrum.",place_id:"",images:["images/seoul/seo-sgg-1.jpg","images/seoul/seo-sgg-2.jpg"]},
+          {id:"seo-mml",name:"Mimiline (미미라인) — Myeongdong",lat:37.5604,lng:126.9856,rating:4.4,price_low:3,price_high:50,blurb:"Korea's largest accessory specialist — about 5,000 m² over floors 2–4 of the Hi Harriet building: rows of necklaces, hair clips, rings, earrings and phone cases on 2F, clothes and perfume on 3F, cosmetics above. Open 09:00–23:00, immediate tax refund at the till. Myeongdong Stn Exit 6 or 7, basically at the door.",why:"The biggest wall of cheap accessories in Seoul, and it's a two-minute walk from the hotel.",place_id:"",images:["images/seoul/seo-mml-1.jpg","images/seoul/seo-mml-2.jpg","images/seoul/seo-mml-3.jpg"]},
           {id:"seo-sc2",name:"LCDC Seoul (Seongsu concept complex)",lat:37.5443,lng:127.0548,rating:4.5,price_low:0,price_high:20,blurb:"A six-building converted factory complex in Seongsu housing fashion concept stores, galleries, food brands and pop-up spaces. Seoul answer to Brooklyn cultural-industrial districts.",why:"Best destination for concept-store browsing and gallery-hopping in Seongsu.",images:["images/seoul/seo-sc2-1.jpg","images/seoul/seo-sc2-2.jpg","images/seoul/seo-sc2-3.jpg"]}
         ],
         makgeolli: [
@@ -471,13 +479,13 @@ const TRIP_DATA = {
           {id:"seo-clq",name:"Clique Records (Euljiro)",lat:37.5668,lng:126.9915,rating:4.5,price_low:15,price_high:60,blurb:"Jazz, psych-rock and reggae vinyl by day; in the evening the same room becomes a vinyl listening lounge called The Edge. In the thick of the Euljiro hidden-bar streets.",why:"Slots straight into an Euljiro night — dig records, then stay for a drink.",place_id:"",images:["images/seoul/seo-clq-1.jpg"]},
           {id:"seo-mul",name:"Mullae Creative Village (문래창작촌)",lat:37.5147,lng:126.8968,rating:4.4,price_low:0,price_high:20,blurb:"Time Out's 6th-coolest neighbourhood in the world (2025): 1,700 old metal workshops that ~200 artists colonised for cheap rent, so a welder throws sparks on one side of a wall and a barista pulls single-origin on the other. Galleries, rooftop cafes, hidden bars and iron sculpture in every alley. Line 2, Mullae Stn Exit 7. Most workshops close weekends — you lose the sparks but gain the painted shutters.",why:"The most genuinely 'undiscovered' neighbourhood you could add, and a real fourth route for Saturday.",place_id:"",images:["images/seoul/seo-mul-1.jpg"]},
           {id:"seo-kbo",name:"KBO Baseball — Jamsil Stadium",lat:37.5122,lng:127.0719,rating:4.7,price_low:8,price_high:18,blurb:"LG Twins / Doosan Bears at Jamsil — ~25,000 capacity, outfield bleachers from ₩9,000. The orange 'cheering zone' means standing, clapping and singing for three hours behind official cheerleaders; the navy seats above let you sit and drink. Order grilled pork-belly sets to your seat. Book Klook/Trazy 3–7 days ahead. No games Mondays; Sun starts 2pm or 5pm.",why:"Jamsil is slated for demolition after the 2026 season — this is the last year to see it, and it's a short hop to Gangnam for the club after.",place_id:"",images:["images/seoul/seo-kbo-1.jpg","images/seoul/seo-kbo-2.jpg"]},
-          {id:"seo-dgm",name:"Dongmyo Flea Market",lat:37.5726,lng:127.0164,rating:4.3,price_low:1,price_high:30,blurb:"Where locals actually thrift: clothes piled on the ground at ₩1,000 a piece, secondhand cameras, mechanical watches and antiques. SSENSE wrote it up for the ajeossi style alone — hanbok with cowboy hats, bootcut jeans with mechanical watches. Best right at opening; one stop from Dongdaemun.",why:"The rawest, cheapest vintage dig in Seoul.",place_id:"",images:[]},
-          {id:"seo-sff",name:"Seoul Folk Flea Market",lat:37.5715,lng:127.0300,rating:4.2,price_low:3,price_high:50,blurb:"Ten minutes from Dongmyo, two indoor floors with goods on racks instead of in piles — the Green section on 2F is the vintage clothing. Strong on leather and military surplus; a genuine leather bomber runs ₩30,000–50,000.",why:"The organised, all-weather counterpart to the Dongmyo pile-dig.",place_id:"",images:[]},
+          {id:"seo-dgm",name:"Dongmyo Flea Market",lat:37.5726,lng:127.0164,rating:4.3,price_low:1,price_high:30,blurb:"Where locals actually thrift: clothes piled on the ground at ₩1,000 a piece, secondhand cameras, mechanical watches and antiques. SSENSE wrote it up for the ajeossi style alone — hanbok with cowboy hats, bootcut jeans with mechanical watches. Best right at opening; one stop from Dongdaemun.",why:"The rawest, cheapest vintage dig in Seoul.",place_id:"",images:["images/seoul/seo-dgm-1.jpg"]},
+          {id:"seo-sff",name:"Seoul Folk Flea Market",lat:37.5715,lng:127.0300,rating:4.2,price_low:3,price_high:50,blurb:"Ten minutes from Dongmyo, two indoor floors with goods on racks instead of in piles — the Green section on 2F is the vintage clothing. Strong on leather and military surplus; a genuine leather bomber runs ₩30,000–50,000.",why:"The organised, all-weather counterpart to the Dongmyo pile-dig.",place_id:"",images:["images/seoul/seo-sff-1.jpg","images/seoul/seo-sff-2.jpg"]},
           {id:"seo-jun",name:"Junction Records (Sindang)",lat:37.5657,lng:127.0189,rating:4.6,price_low:15,price_high:60,blurb:"Dance music only — house, electro, techno, trance — with three turntables at the listening stations. Where Seoul's working DJs actually shop, in Sindang-dong just east of the Euljiro/Dongdaemun cluster.",why:"The dance-vinyl digger's stop, a short hop from the Euljiro night.",place_id:"",images:[]},
           {id:"seo-svl",name:"Seoul Vinyl (Haebangchon)",lat:37.5402,lng:126.9868,rating:4.5,price_low:15,price_high:60,blurb:"3,000 vintage international LPs heavy on hip-hop, R&B, soul, disco and funk, up in Haebangchon under Namsan. DJs spin through the week; on weekdays you can request songs. Noksapyeong Stn Exit 2, roughly 7pm–2am, closed Mondays.",why:"The best soul/funk crate-dig in the city, with a bar-like evening vibe.",place_id:"",images:[]},
           {id:"seo-vnp",name:"Vinyl & Plastic (Hannam)",lat:37.5346,lng:127.0018,rating:4.4,price_low:15,price_high:80,blurb:"Hyundai Card's multi-storey record store in Hannam — a normal shop anyone can walk into (unlike the members-only Hyundai libraries), with a deep, well-curated wall of vinyl, CDs and audio gear.",why:"A proper record megastore near the Leeum/Hannam galleries.",place_id:"",images:[]},
           {id:"seo-swp",name:"Sewoon Sangga / Seun Plaza (Euljiro)",lat:37.5675,lng:126.9915,rating:4.2,price_low:0,price_high:20,blurb:"Korea's first mixed-use megastructure — a half-decaying electronics complex now colonised by design studios and rooftop cafes, with an elevated walkway cutting straight through the old city. Walk it by day, drink above it by night.",why:"The architectural spine of the Euljiro district; a great daytime wander.",place_id:"",images:[]},
-          {id:"seo-pcb",name:"PC Bang (24h gaming café)",lat:37.5560,lng:126.9240,rating:4.3,price_low:1,price_high:5,blurb:"₩1,000–1,500 an hour for a high-end gaming PC, energy drinks and ramyeon delivered to your seat. Worth stepping into for the atmosphere alone even if you don't play — a genuinely Korean everyday space. Hongdae and Gangnam have the biggest, flashiest ones.",why:"A ₩1,000 only-in-Korea half-hour; the most local way to kill spare time.",place_id:"",images:[]}
+          {id:"seo-pcb",name:"PC Bang (24h gaming café)",lat:37.5560,lng:126.9240,rating:4.3,price_low:1,price_high:5,blurb:"₩1,000–1,500 an hour for a high-end gaming PC, energy drinks and ramyeon delivered to your seat. Worth stepping into for the atmosphere alone even if you don't play — a genuinely Korean everyday space. Hongdae and Gangnam have the biggest, flashiest ones.",why:"A ₩1,000 only-in-Korea half-hour; the most local way to kill spare time.",place_id:"",images:["images/seoul/seo-pcb-1.jpg"]}
         ]
       }
     },
@@ -492,31 +500,31 @@ const TRIP_DATA = {
         ],
         dim_sum: [
           {id:"hk-ds1",name:"Tim Ho Wan (original, Sham Shui Po)",lat:22.3305,lng:114.1626,images:["images/hongkong/hk-ds1-1.jpg"]},
-          {id:"hk-ds2",name:"Lin Heung Kui (Sheung Wan trolley dim sum)",lat:22.2867,lng:114.1512,images:[]},
-          {id:"hk-ds3",name:"Maxim's Palace, City Hall (Central)",lat:22.2817,lng:114.1618,images:[]},
+          {id:"hk-ds2",name:"Lin Heung Kui (Sheung Wan trolley dim sum)",lat:22.2867,lng:114.1512,images:["images/hongkong/hk-ds2-1.jpg","images/hongkong/hk-ds2-2.jpg"]},
+          {id:"hk-ds3",name:"Maxim's Palace, City Hall (Central)",lat:22.2817,lng:114.1618,images:["images/hongkong/hk-ds3-1.jpg"]},
           {id:"hk-ds4",name:"One Dim Sum (Prince Edward)",lat:22.3247,lng:114.1690,images:[]},
           {id:"hk-ds5",name:"Din Tai Fung (Tsim Sha Tsui)",lat:22.3006,lng:114.1720,images:["images/hongkong/hk-ds5-1.jpg"]}
         ],
         roast_meat: [
           {id:"hk-rg1",name:"Yat Lok Roast Goose (Central)",lat:22.2828,lng:114.1548,images:["images/hongkong/hk-rg1-1.jpg"]},
-          {id:"hk-rg2",name:"Kam's Roast Goose (Wan Chai)",lat:22.2775,lng:114.1720,images:[]},
-          {id:"hk-rg3",name:"Joy Hing Roasted Meat (Wan Chai)",lat:22.2772,lng:114.1725,images:[]}
+          {id:"hk-rg2",name:"Kam's Roast Goose (Wan Chai)",lat:22.2775,lng:114.1720,images:["images/hongkong/hk-rg2-1.jpg"]},
+          {id:"hk-rg3",name:"Joy Hing Roasted Meat (Wan Chai)",lat:22.2772,lng:114.1725,images:["images/hongkong/hk-rg3-1.jpg"]}
         ],
         cha_chaan_teng: [
           {id:"hk-cc1",name:"Australia Dairy Company (Jordan)",lat:22.3047,lng:114.1712,images:["images/hongkong/hk-cc1-1.jpg"]},
-          {id:"hk-cc2",name:"Mido Cafe (Yau Ma Tei)",lat:22.3079,lng:114.1710,images:[]},
-          {id:"hk-cc3",name:"Kam Wah Cafe (Prince Edward — polo bun)",lat:22.3244,lng:114.1685,images:[]},
-          {id:"hk-cc4",name:"Lan Fong Yuen (Central — milk tea)",lat:22.2820,lng:114.1553,images:[]}
+          {id:"hk-cc2",name:"Mido Cafe (Yau Ma Tei)",lat:22.3079,lng:114.1710,images:["images/hongkong/hk-cc2-1.jpg"]},
+          {id:"hk-cc3",name:"Kam Wah Cafe (Prince Edward — polo bun)",lat:22.3244,lng:114.1685,images:["images/hongkong/hk-cc3-1.jpg","images/hongkong/hk-cc3-2.jpg"]},
+          {id:"hk-cc4",name:"Lan Fong Yuen (Central — milk tea)",lat:22.2820,lng:114.1553,images:["images/hongkong/hk-cc4-1.jpg"]}
         ],
         dessert: [
           {id:"hk-de1",name:"Tai Cheong Bakery (Central — egg tarts)",lat:22.2817,lng:114.1547,images:["images/hongkong/hk-de1-1.jpg"]},
           {id:"hk-de2",name:"Mammy Pancake (egg waffles, Tsim Sha Tsui)",lat:22.2988,lng:114.1724,images:["images/hongkong/hk-de2-1.jpg"]},
-          {id:"hk-de3",name:"Yee Shun Milk Company (steamed milk pudding, Causeway Bay)",lat:22.2795,lng:114.1850,images:[]}
+          {id:"hk-de3",name:"Yee Shun Milk Company (steamed milk pudding, Causeway Bay)",lat:22.2795,lng:114.1850,images:["images/hongkong/hk-de3-1.jpg"]}
         ],
         noodle: [
-          {id:"hk-no1",name:"Kau Kee Restaurant (beef brisket noodles, Central)",lat:22.2846,lng:114.1530,images:[]},
+          {id:"hk-no1",name:"Kau Kee Restaurant (beef brisket noodles, Central)",lat:22.2846,lng:114.1530,images:["images/hongkong/hk-no1-1.jpg"]},
           {id:"hk-no2",name:"Sister Wah (beef brisket noodles, Tin Hau)",lat:22.2905,lng:114.1918,images:[]},
-          {id:"hk-no3",name:"Mak's Noodle (Central)",lat:22.2823,lng:114.1549,images:[]}
+          {id:"hk-no3",name:"Mak's Noodle (Central)",lat:22.2823,lng:114.1549,images:["images/hongkong/hk-no3-1.jpg"]}
         ],
         street_food: [
           {id:"hk-sf1",name:"Temple Street Night Market (Yau Ma Tei)",lat:22.3068,lng:114.1701,images:["images/hongkong/hk-sf1-1.jpg"]},
@@ -533,7 +541,7 @@ const TRIP_DATA = {
         experience: [
           {id:"hk-ex1",name:"Star Ferry (Tsim Sha Tsui ↔ Central)",lat:22.2936,lng:114.1685,images:["images/hongkong/hk-ex1-1.jpg"]},
           {id:"hk-ex2",name:"Ngong Ping 360 cable car (Tung Chung)",lat:22.2896,lng:113.9412,images:["images/hongkong/hk-ex2-1.jpg"]},
-          {id:"hk-ex3",name:"Peak Tram (Garden Road terminus)",lat:22.2777,lng:114.1601,images:[]},
+          {id:"hk-ex3",name:"Peak Tram (Garden Road terminus)",lat:22.2777,lng:114.1601,images:["images/hongkong/hk-ex3-1.jpg"]},
           {id:"hk-ex4",name:"HK Tramways 'Ding Ding' (Central)",lat:22.2846,lng:114.1550,images:["images/hongkong/hk-ex4-1.jpg"]},
           {id:"hk-ex5",name:"Macau day trip (Senado Square)",lat:22.1937,lng:113.5400,images:[]},
           {id:"hk-ex6",name:"Hong Kong Disneyland",lat:22.3130,lng:114.0413,images:[]},
@@ -548,7 +556,7 @@ const TRIP_DATA = {
         ],
         garden: [
           {id:"hk-ga1",name:"Nan Lian Garden (Diamond Hill)",lat:22.3382,lng:114.2038,images:["images/hongkong/hk-ga1-1.jpg"]},
-          {id:"hk-ga2",name:"Kowloon Walled City Park",lat:22.3320,lng:114.1900,images:[]},
+          {id:"hk-ga2",name:"Kowloon Walled City Park",lat:22.3320,lng:114.1900,images:["images/hongkong/hk-ga2-1.jpg","images/hongkong/hk-ga2-2.jpg"]},
           {id:"hk-ga3",name:"Hong Kong Park (Central)",lat:22.2775,lng:114.1615,images:["images/hongkong/hk-ga3-1.jpg","images/hongkong/hk-ga3-2.jpg","images/hongkong/hk-ga3-3.jpg"]}
         ],
         walk: [
@@ -570,7 +578,7 @@ const TRIP_DATA = {
           {id:"hk-sh1",name:"Ladies' Market (Mong Kok)",lat:22.3196,lng:114.1704,images:["images/hongkong/hk-sh1-1.jpg"]},
           {id:"hk-sh2",name:"Stanley Market & waterfront",lat:22.2188,lng:114.2130,images:["images/hongkong/hk-sh2-1.jpg"]},
           {id:"hk-sh3",name:"Causeway Bay (Times Square, SOGO)",lat:22.2800,lng:114.1830,images:["images/hongkong/hk-sh3-1.jpg"]},
-          {id:"hk-sh4",name:"Apliu Street electronics (Sham Shui Po)",lat:22.3306,lng:114.1622,images:[]}
+          {id:"hk-sh4",name:"Apliu Street electronics (Sham Shui Po)",lat:22.3306,lng:114.1622,images:["images/hongkong/hk-sh4-1.jpg","images/hongkong/hk-sh4-2.jpg"]}
         ],
         malls: [
           {id:"hk-ma1",name:"K11 Musea (Victoria Dockside, TST)",lat:22.2954,lng:114.1720,images:["images/hongkong/hk-ma1-1.jpg"]},
@@ -590,7 +598,7 @@ const TRIP_DATA = {
           {id:"hk-wk8",name:"NOC Coffee Co (Sheung Wan)",lat:22.2872,lng:114.1492,images:[]},
           {id:"hk-wk9",name:"The Coffee Academics (Causeway Bay)",lat:22.2795,lng:114.1835,images:[]},
           {id:"hk-wk10",name:"Blue Bottle Coffee (Central)",lat:22.2823,lng:114.1562,images:[]},
-          {id:"hk-wk11",name:"Kowloon Park (Tsim Sha Tsui)",lat:22.3000,lng:114.1700,images:[]}
+          {id:"hk-wk11",name:"Kowloon Park (Tsim Sha Tsui)",lat:22.3000,lng:114.1700,images:["images/hongkong/hk-wk11-1.jpg","images/hongkong/hk-wk11-2.jpg"]}
         ],
         cocktail_bar: [
           // hk-cb1 photos: Wikimedia Commons "International Commerce Centre 201006 / 201008" and
