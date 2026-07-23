@@ -443,6 +443,7 @@ body {
 .options-cluster { padding:2px 0 4px; }
 .options-head { font-family:'Fraunces',serif; font-size:18px; font-weight:700; color:var(--ink); margin:18px 0 6px; }
 .opt { padding:5px 0 3px; border-top:1px dashed var(--rule); }
+.opt.dim { opacity:.5; }   /* de-emphasised backup options */
 .options-head + .opt { border-top:none; }
 
 /* Collapsed option clusters -------------------------------------------
@@ -521,7 +522,8 @@ body {
 <!-- Lodging Selection -->
 <div class="lodging-banner" style="border-color: var(--ink);">
   <h4>Lodging Selection</h4>
-  <div class="lodging-row"><span class="city-label" style="color:var(--seoul)">Seoul</span><span>Myeongdong New Stay Inn — single base for the whole Seoul leg (Wed Jul 29 → Tue Aug 4)</span><span class="price">6 nights</span></div>
+  <div class="lodging-row"><span class="city-label" style="color:var(--seoul)">Seoul</span><span>Myeongdong New Stay Inn — the main base (Wed Jul 29 → Mon Aug 3)</span><span class="price">5 nights</span></div>
+  <div class="lodging-row"><span class="city-label" style="color:var(--seoul)">Seoul</span><span>Nine Brick Hotel (Hongdae) — last night, straight onto the airport line (Mon Aug 3 → Tue Aug 4)</span><span class="price">1 night</span></div>
   <div class="lodging-row"><span class="city-label" style="color:var(--hongkong)">Hong Kong</span><span>Four Seasons Hong Kong — Central, atop the Airport Express · with Milo (Tue Aug 4 → Sun Aug 9)</span><span class="price">5 nights</span></div>
 </div>
 
@@ -595,7 +597,7 @@ body {
     <div class="block">
       <div class="block-time">14:10</div>
       <div class="block-title">Arrive ICN — AREX + Line 4 to Myeongdong <span class="cost">~$8</span></div>
-      <div class="block-desc">AREX All-Stop or Express to Seoul Station (~43–60 min), then Line 4 one stop to Myeongdong (~5 min). Drop bags at Myeongdong New Stay Inn — your base for all six nights. You're in the middle of everything now.</div>
+      <div class="block-desc">AREX All-Stop or Express to Seoul Station (~43–60 min), then Line 4 one stop to Myeongdong (~5 min). Drop bags at Myeongdong New Stay Inn — your base for the first five nights (the last one is Nine Brick in Hongdae). You're in the middle of everything now.</div>
     </div>
     <div class="area-label">Myeongdong — the bustling first afternoon</div>
     <div class="options-cluster">
@@ -616,8 +618,19 @@ body {
     <div class="block highlight">
       <div class="block-time">15:00</div>
       <div class="block-title">Myeongdong street stalls + K-beauty crawl <span class="cost">~$25</span></div>
-      <div class="block-desc">The stalls set up along the main pedestrian streets through the afternoon and go full carnival by dusk: cheese corn dogs, tornado potato, grilled scallop-shell cheese, egg bread, tteokbokki, fresh strawberry-mochi. Between the food, the whole street is skincare flagships — Olive Young, Innisfree, Tony Moly, Dr.Jart+ — most doing tourist tax-refund at the till. In this heat, duck into a Sulbing or any 빙수 sign for a fruit bingsu — a mountain of shaved milk-ice under mango or Shine Muscat, the correct Myeongdong dessert in August.</div>
+      <div class="block-desc">The stalls set up along the main pedestrian streets through the afternoon and go full carnival by dusk: cheese corn dogs, tornado potato, grilled cheese-and-corn cups, egg bread, tteokbokki, fresh strawberry-mochi. Between the food, the whole street is skincare flagships — Olive Young, Innisfree, Tony Moly, Dr.Jart+ — most doing tourist tax-refund at the till. In this heat, duck into a Sulbing or any 빙수 sign for a fruit bingsu — a mountain of shaved milk-ice under mango or Shine Muscat, the correct Myeongdong dessert in August.</div>
       <div class="block-tip">Buy K-beauty here on day one, not day six: you'll want the tax refund processed with time to spare, and Olive Young's Myeongdong flagship has the deepest stock in the country. Bring your passport for the refund.</div>
+    </div>
+    <div class="options-cluster">
+      <div class="options-head">accessories — the big one is right at your station exit</div>
+      <div class="opt">
+        <div class="opt-name">Mimiline (미미라인) Myeongdong <span class="cost">~$3–50</span></div>
+        <div class="opt-desc">Korea's largest accessory store — about 5,000 m² across floors 2–4 of the Hi Harriet building, and the reason people talk about Seoul accessory shopping: rows and rows of hair clips, claw clips, ribbons, earrings, rings and phone cases on 2F, clothes and perfume on 3F, cosmetics above. Cheap enough that buying twenty things is normal. Open 09:00–23:00, immediate tax refund at the till. 123 Toegye-ro — Myeongdong Stn Exit 6 or 7, essentially at your door, so it's easy to come back to on any evening this week.</div>
+      </div>
+      <div class="opt">
+        <div class="opt-name">Stylenanda / 3CE Myeongdong flagship <span class="cost">~$25–120</span></div>
+        <div class="opt-desc">Seven floors of Korea's cult streetwear-and-makeup brand — clothing low, 3CE cosmetics up top, rooftop café above the street. The building is the attraction as much as the stock.</div>
+      </div>
     </div>
     <div class="options-cluster alt">
       <div class="options-head">or swap it — other bustling first afternoons</div>
@@ -635,29 +648,14 @@ body {
       </div>
     </div>
     <div class="options-cluster">
-      <div class="options-head">dinner — Myeongdong, before the cable car</div>
+      <div class="options-head">dinner — Myeongdong, before the cable car · ⚠️ both walk-in only, no reservations</div>
       <div class="opt">
         <div class="opt-name">Mongvely KBBQ Myeongdong (AYCE) <span class="cost">~$25</span></div>
-        <div class="opt-desc">All-you-can-eat Korean BBQ, ~₩29,000pp plus ₩2,500 for unlimited drinks. Self-grill, endless banchan, 4.9 stars. The best protein-per-dollar meal in the city and a hell of a first Korean dinner.</div>
+        <div class="opt-desc">All-you-can-eat Korean BBQ, ~₩29,000pp plus ₩2,500 for unlimited drinks. Self-grill, endless banchan, 4.9 stars. The best protein-per-dollar meal in the city and a hell of a first Korean dinner. <strong>Note: there are two Mongvely locations in Myeongdong</strong> — if one has a queue, the other branch is a few minutes' walk, so check both before waiting.</div>
       </div>
       <div class="opt">
         <div class="opt-name">Wangbijip Myeongdong (premium) <span class="cost">~$45</span></div>
-        <div class="opt-desc">Staff grill for you, better cuts, smaller portions, English menus. The move if you'd rather eat well than eat a lot on night one.</div>
-      </div>
-      <div class="opt">
-        <div class="opt-name">Kkanbu Chicken (Myeongdong) <span class="cost">~$20</span></div>
-        <div class="opt-desc">Korean fried chicken and cold beer — half soy-garlic, half spicy, pickled radish on the side. Fast, cheap, and doesn't need a reservation.</div>
-      </div>
-      <div class="opt">
-        <div class="opt-name">Just graze the stalls <span class="cost">~$15</span></div>
-        <div class="opt-desc">Honestly a legitimate plan on arrival day. Six or seven small things across the street, no sitting down, no waiting. Save the sit-down dinner for tomorrow.</div>
-      </div>
-    </div>
-    <div class="options-cluster">
-      <div class="options-head">on the way up — a Hoehyeon detour, right by the cable-car base</div>
-      <div class="opt">
-        <div class="opt-name">Hoehyeon Underground Arcade — secondhand LP alley <span class="cost">browse</span></div>
-        <div class="opt-desc">An underground warren of nine record shops barely changed since the 1980s, in the basement centre under Shinsegae. Livingsa is the oldest (~60 years) — classical up front, a rare-groove room you ask to be let into, a flat-₩7,000 12-inch crate, vintage cameras throughout. Hoehyeon Stn Exit 7, directly on the walk to the cable car — do it ~17:00 and ride up at 19:30.</div>
+        <div class="opt-desc">Staff grill for you, better cuts, smaller portions, English menus. The move if you'd rather eat well than eat a lot on night one. Walk-in only, like Mongvely — go before ~18:00 to beat the queue.</div>
       </div>
     </div>
     <div class="transit">→ 10-min walk to the Namsan cable car base station (Hoehyeon side), or 5 min by taxi</div>
@@ -667,6 +665,17 @@ body {
       <div class="block-title">N Seoul Tower (Namsan) — cable car + sunset <span class="cost">~$15</span></div>
       <div class="block-desc">Cable car up the mountain (~₩14,000 return), then the observation deck or just the free terrace at the base of the tower. Sunset on Jul 29 is around 19:47, so you'll ride up in gold light and come down to the city lit. The love-locks fence and the terrace views are free; the deck ticket is optional.</div>
       <div class="block-tip">Skip the deck ticket unless it's a very clear evening — the free terrace has 80% of the view. Queue for the cable car is worst 19:00–20:00; going up slightly early and lingering beats arriving at 19:45.</div>
+    </div>
+    <div class="options-cluster">
+      <div class="options-head">dessert — coming down from the cable car</div>
+      <div class="opt">
+        <div class="opt-name">Bingsu — shaved ice off the main street <span class="cost">~$14</span></div>
+        <div class="opt-desc">The correct thing after a hot climb up Namsan: a mountain of impossibly fine shaved milk-ice under mango, Shine Muscat, strawberry, or the classic injeolmi (toasted rice cake + red bean). Look for any 빙수 sign — Myeongdong has several and they run late.</div>
+      </div>
+      <div class="opt">
+        <div class="opt-name">Myeongdong night market — sweet stalls <span class="cost">~$6</span></div>
+        <div class="opt-desc">Back down on the main drag the sweet stalls go till late: fresh strawberry-mochi, gyeran-ppang (egg bread), hotteok, ten-won bread, tornado potato. Grazing dessert, no sitting down, and it's on your way home.</div>
+      </div>
     </div>
     <div class="transit">→ Myeongdong stn → Line 4 → Dongdaemun History &amp; Culture Park · ~12 min</div>
     <div class="area-label">Dongdaemun — night one</div>
@@ -678,10 +687,6 @@ body {
     </div>
     <div class="options-cluster">
       <div class="options-head">late snack — Dongdaemun, all open past midnight</div>
-      <div class="opt">
-        <div class="opt-name">Jinokhwa Halmae Dakhanmari <span class="cost">~$18</span></div>
-        <div class="opt-desc">A whole chicken poached at your table in clear broth with potato and rice cake; you cut it up with scissors and dip it in a soy-mustard-vinegar sauce, then finish by cooking noodles in the broth. Deeply comforting and enormous.</div>
-      </div>
       <div class="opt">
         <div class="opt-name">Kyochon Chicken Dongdaemun (24h) <span class="cost">~$20</span></div>
         <div class="opt-desc">The gold standard of Korean fried chicken, open around the clock. Honey series if you want sweet, red series if you want heat.</div>
@@ -730,33 +735,33 @@ body {
       <div class="day-num">06</div>
     </div>
     <div>
-      <div class="day-title">Colour, cut, Cheongdam.</div>
-      <div class="day-tagline">Booked colour analysis in Mapo, then the whole day is Sinsa → Apgujeong: best shopping street, haircut, black pork, classy bars, karaoke.</div>
+      <div class="day-title">Colour, cut, Hongdae.</div>
+      <div class="day-tagline">Booked colour analysis in Mapo, then Garosu-gil and a haircut in Apgujeong — then drop the bags and take the night in Hongdae: the shopping street, walls of hair clips, buskers at the playground.</div>
       <div class="day-spend">
         <span class="spend-item">Sleep: <strong>Myeongdong New Stay Inn</strong></span>
-        <span class="spend-item">Est. spend: <strong>~$210/pp</strong></span>
+        <span class="spend-item">Est. spend: <strong>~$160/pp</strong></span>
       </div>
     </div>
   </div>
   <div class="schedule">
     <div class="area-label first">Myeongdong → Mapo — early</div>
     <div class="options-cluster">
-      <div class="options-head">breakfast — fast and high-protein, you have a 9:30 booking</div>
+      <div class="options-head">breakfast — ⭐ LUCKY SEOUL is the pick; you have a 9:30 booking</div>
       <div class="opt">
-        <div class="opt-name">Hadongkwan gomtang (opens 07:00) <span class="cost">~$13</span></div>
-        <div class="opt-desc">Beef-bone broth and a pile of brisket at seven in the morning is a completely normal Korean breakfast and one of the best 40g-protein meals you'll find anywhere. Two minutes from the hotel, in and out in 25.</div>
+        <div class="opt-name">⭐ LUCKY SEOUL <span class="cost">breakfast</span></div>
+        <div class="opt-desc">Your pick for this morning, in place of Hadongkwan (which reviews poorly). <a href="https://maps.app.goo.gl/725kjRSwawXiDFec7" target="_blank" rel="noopener">Open in Google Maps →</a> Eat early — you want to be moving by ~08:50 to make the 9:30 colour-analysis booking.</div>
       </div>
-      <div class="opt">
+      <div class="opt dim">
         <div class="opt-name">Namdaemun Market kalguksu alley <span class="cost">~$7</span></div>
-        <div class="opt-desc">10-min walk. The alley of grandmothers ladling hand-cut noodle soup, open from dawn. Add a plate of mandu (dumplings) for the protein — the noodles alone won't hold you.</div>
+        <div class="opt-desc">Backup. 10-min walk — the alley of grandmothers ladling hand-cut noodle soup, open from dawn. Add a plate of mandu for the protein.</div>
       </div>
-      <div class="opt">
+      <div class="opt dim">
         <div class="opt-name">Isaac Toast (nearest branch) <span class="cost">~$5</span></div>
-        <div class="opt-desc">Korea's great griddled sandwich: thick buttered bread, egg, ham, cabbage, sweet-salty sauce. Order it with extra egg and extra ham and it's a genuinely solid ~28g breakfast for five dollars. Grab-and-go.</div>
+        <div class="opt-desc">Backup. Korea's griddled sandwich — thick buttered bread, egg, ham, cabbage, sweet-salty sauce. With extra egg and ham it's a solid ~28g breakfast for five dollars. Grab-and-go.</div>
       </div>
-      <div class="opt">
+      <div class="opt dim">
         <div class="opt-name">GS25 / CU protein top-up <span class="cost">~$5</span></div>
-        <div class="opt-desc">Korean convenience stores stock a serious protein aisle: 단백질 우유 (protein milk, 20g), pre-cooked 닭가슴살 chicken breast, boiled-egg packs, Greek yoghurt. Worth doing on top of any of the above on days you're moving all day — which is most of them.</div>
+        <div class="opt-desc">Backup / add-on. Protein milk (20g), pre-cooked chicken breast, boiled-egg packs, Greek yoghurt — worth stacking on top on a day you're moving from 9am.</div>
       </div>
     </div>
     <div class="transit">→ Myeongdong → Line 4 → Samgakji → Line 6 → Mangwon · ~30 min. Leave by 08:50.</div>
@@ -849,39 +854,102 @@ body {
       </div>
     </div>
     <div class="block">
-      <div class="block-time">16:45</div>
-      <div class="block-title">Drop the haul <span class="cost">~$8</span></div>
-      <div class="block-desc">Two ways to do this. Either taxi back to Myeongdong, dump the bags and come out again (~50 min round trip, ~₩20,000), or — better — use the coin lockers at Sinsa or Apgujeong Rodeo station (₩2,000–4,000) and collect them on the way home tonight. Several Garosu-gil shops will also courier purchases to your hotel same-day for about ₩5,000.</div>
-      <div class="block-tip">The locker option buys you back the best part of an hour. Dinner and the bars tonight are all within 15 minutes of these stations, so there's no reason to be carrying shopping bags around Cheongdam.</div>
+      <div class="block-time">16:45 → 17:45</div>
+      <div class="block-title">Back to the hotel — drop the haul <span class="cost">~$8</span></div>
+      <div class="block-desc">Go back physically rather than messing with lockers: taxi or Line 3 to Myeongdong, dump the shopping in the room, and change for the evening. <strong>A full hour is budgeted</strong> door-to-door (~₩20,000 by taxi, a little slower by metro).</div>
+      <div class="block-tip">This is the hour that stops you hauling shopping bags around all night. Dump everything, change, and be back out by ~17:45 — Hongdae is 30 min from the door.</div>
     </div>
-    <div class="area-label">Apgujeong / Cheongdam — evening</div>
+    <div class="transit">→ Myeongdong → walk to Euljiro 1-ga → Line 2 straight through to Hongik Univ · ~30 min (or ~₩14,000 taxi in 25). In Hongdae by ~18:15.</div>
+    <div class="area-label">Hongdae — the night</div>
     <div class="block highlight">
-      <div class="block-time">18:00</div>
-      <div class="block-title">Dinner — Jeju Rooftop Black BBQ (제주옥탑 블랙BBQ) 🎟️ REBOOK <span class="cost">~$40</span></div>
-      <div class="block-desc">Jeju black pork — heukdwaeji, the island's prized indigenous breed, fattier and far more flavourful than standard samgyeopsal — grilled over charcoal in a cave-styled room off Apgujeong Rodeo. Staff grill, cut and time everything for you, so it's a sit-back meal rather than a work-at-it one. Signature black pork set runs about ₩32,000pp; free kimchi-jjigae comes with it, and free ice cream ends it.</div>
-      <div class="block-tip">⚠️ <strong>Your table was cancelled — needs rebooking.</strong> Thursday 6pm is still the clean slot (this whole evening is built around Apgujeong/Cheongdam). Rebook on the <strong>Catch Table Global</strong> app — the 2-day lead is real, so do it early; flex to 17:30/18:30 if 18:00 is gone. Address: 34 Eonju-ro 170-gil, Gangnam-gu — 5 min from Apgujeong Rodeo and the same to tonight's bars. Only fallback night is Sun Aug 2 in Gangnam (~21:00, before the club).</div>
+      <div class="block-time">18:15</div>
+      <div class="block-title">Hongdae shopping street <span class="cost">Free</span></div>
+      <div class="block-desc">The pedestrianised strip out of Hongik Univ Station Exits 8 and 9, running down Eoulmadang-ro to Hongdae Playground — about a kilometre of accessory megastores, K-beauty, streetwear, photo booths and cheap jewellery, packed shoulder to shoulder. This is the shopping street you'd heard about: the accessory shops here are the ones with entire walls of hair clips, claw clips, ribbons and earrings, priced so low that buying twenty is a normal thing to do.</div>
+      <div class="block-tip">Shops run to about 22:00–23:00, so there's no rush — but do the shops first and the street later, because the buskers take over from around 19:00 and the crowd makes browsing slower. Exit 9 is the better start; work downhill toward the playground.</div>
     </div>
     <div class="options-cluster">
-      <div class="options-head">classy bar hop — pick 2 or 3, all inside a 10-min radius</div>
+      <div class="options-head">the accessory stores — walls of hair clips, this is the point</div>
       <div class="opt">
-        <div class="opt-name">Le Chamber (Cheongdam speakeasy) <span class="cost">~$30</span></div>
-        <div class="opt-desc">Behind a bookcase door, down a staircase, into a dark leather-and-brass room that has been on Asia's 50 Best Bars for years. Impeccable classics, jacket-optional but everyone's dressed. The most serious cocktail bar in Seoul — start here while your palate's fresh.</div>
+        <div class="opt-name">Sigonggan (시공간) — Hongdae <span class="cost">~$5–40</span></div>
+        <div class="opt-desc">Glass-fronted from the street so you can see the scale before you go in: cabinets floor to ceiling, hundreds of earrings, then rings and necklaces, and a proper wall of hair clips and head ornaments. Calm and neatly organised rather than a bargain-bin scrum. Four Hongdae branches — the two worth walking to are <strong>93 Wausan-ro</strong> (facing the Hongik Univ main gate) and <strong>7 Yanghwa-ro 18-gil</strong> (Exit 8, Yeonnam side). Not dirt cheap, but there are almost always bundle deals.</div>
       </div>
       <div class="opt">
-        <div class="opt-name">Alice Cheongdam (Speakeasy) <span class="cost">~$35</span></div>
-        <div class="opt-desc">Entered through a flower shop into a Wonderland-themed room where the drinks arrive as small theatrical events — smoke, sculpture, dry ice. Louder and more fun than Le Chamber, and the obvious second stop. Also an Asia's-50-Best regular.</div>
+        <div class="opt-name">Mimiline (미미라인) — note: nearest branch is Myeongdong <span class="cost">~$3–50</span></div>
+        <div class="opt-desc">Korea's largest accessory store — ~5,000 m² over three floors — but the confirmed Seoul branches are <strong>Myeongdong</strong> (123 Toegye-ro, 2–4F, 09:00–23:00, right at your station exit) and Dongdaemun, not Hongdae. Do it from the hotel on a spare evening rather than hunting for it here; it's on Day 5's list.</div>
       </div>
       <div class="opt">
-        <div class="opt-name">Bar Cham (Korean spirits) <span class="cost">~$25</span></div>
-        <div class="opt-desc">If you'd rather one great bar than three: intimate room doing creative cocktails built on soju, makgeolli, goryangju and Korean whisky, with pairing plates. Mostly local crowd. It's in Itaewon, so treat it as an alternative evening rather than an add-on.</div>
+        <div class="opt-name">Hongdae vintage strip <span class="cost">~$10–80</span></div>
+        <div class="opt-desc">The vintage, deadstock and indie-label shops clustered around the station — Y2K pieces, 90s sports gear, military surplus, Japanese brands. Thinner on a Thursday than at the weekend, but still the best vintage in Seoul.</div>
+      </div>
+    </div>
+    <div class="options-cluster">
+      <div class="options-head">the rest of the strip — all within 5 minutes of each other</div>
+      <div class="opt">
+        <div class="opt-name">Artbox Hongdae Flagship <span class="cost">~$3–30</span></div>
+        <div class="opt-desc">Five floors of Korea's biggest stationery-and-lifestyle chain: notebooks, sticker sets, phone cases, mugs, seasonal character collabs. Easily an hour if you let it be.</div>
+      </div>
+      <div class="opt">
+        <div class="opt-name">Kakao Friends Flagship (Hongdae) <span class="cost">~$5–60</span></div>
+        <div class="opt-desc">Four floors of Ryan, Apeach and the rest — plush, stationery, cosmetics, phone cases, photo zones on every level. The definitive Korean character-goods stop and the easiest gift-buying in the city.</div>
+      </div>
+      <div class="opt">
+        <div class="opt-name">Object (Seogyo flagship) <span class="cost">~$5–60</span></div>
+        <div class="opt-desc">Four floors of independent Korean artists' goods — prints, ceramics, notebooks, small useful things. Better and less generic than the chain stationery shops. 13 Wausan-ro 35-gil.</div>
+      </div>
+      <div class="opt">
+        <div class="opt-name">10x10 (Hongdae) <span class="cost">~$3–30</span></div>
+        <div class="opt-desc">The grown-up version of Artbox: design-brand notebooks, desk objects and quirky gifts with a bit more taste and a bit less plastic.</div>
+      </div>
+      <div class="opt">
+        <div class="opt-name">Gimbab Records <span class="cost">~$15–60</span></div>
+        <div class="opt-desc">Meticulously curated LPs, CDs and merch — heavy on soul, disco and indie. Hongik Univ Exit 3, roughly 2–9pm, so catch it early in the evening.</div>
+      </div>
+    </div>
+    <div class="options-cluster">
+      <div class="options-head">dinner — Hongdae, ~19:45</div>
+      <div class="opt">
+        <div class="opt-name">Mukshidonna Tteokbokki (Hongdae) <span class="cost">~$12</span></div>
+        <div class="opt-desc">Cook-at-your-table jeukseok tteokbokki loaded with ramen, dumplings and cheese, then fry rice in what's left of the sauce. Spicy, gooey, student-beloved, and the most Hongdae meal there is.</div>
+      </div>
+      <div class="opt">
+        <div class="opt-name">Hongdae fried chicken + beer <span class="cost">~$20</span></div>
+        <div class="opt-desc">Half soy-garlic, half spicy, pickled radish, cold draft. No reservation needed, no ceremony, and it survives being eaten at 8pm after two hours of shopping.</div>
+      </div>
+      <div class="opt">
+        <div class="opt-name">Hongdae gopchang (grilled beef intestine) <span class="cost">~$25</span></div>
+        <div class="opt-desc">The local late-night order: rich, chewy, charred over coals with garlic and perilla, and finished with fried rice in the pan. Not for everyone, extremely Korean if you're in.</div>
+      </div>
+      <div class="opt">
+        <div class="opt-name">Egg Drop (Hongdae) <span class="cost">~$8</span></div>
+        <div class="opt-desc">If you'd rather keep shopping — butter-braised egg on brioche with bacon or short rib, eaten walking. Queues are shortest mid-evening.</div>
       </div>
     </div>
     <div class="block highlight">
-      <div class="block-time">22:00</div>
-      <div class="block-title">Su Noraebang Gangnam — karaoke <span class="cost">~$30</span></div>
-      <div class="block-desc">The upscale branch of Korea's best-known noraebang chain: private rooms on an upper floor overlooking the Gangnam strip, proper speakers and microphones rather than the usual tinny setup, and a catalogue with real English, K-pop, Spanish and Japanese sections. Free ice cream. Rooms run ₩60,000–120,000/hr for a large suite, less for a small one.</div>
-      <div class="block-tip">Noraebang is per-room per-hour, not per-person, and they almost always throw in extra time (서비스) at the end if you're having a good night. Buy drinks downstairs at a CU first — most rooms let you bring them in, and bar prices inside are steep.</div>
+      <div class="block-time">21:00</div>
+      <div class="block-title">Hongdae Playground — buskers <span class="cost">Free</span></div>
+      <div class="block-desc">The small park at the bottom of the walking street where the street performers set up: dance crews, acoustic acts, the occasional full band with a generator. It runs most nights and peaks around 21:00–23:00. No ticket, no plan — just stand in whichever ring of people looks best and move on when you're bored.</div>
+      <div class="block-tip">The good crews rotate through a few pitches along the street, so walk the length of it once rather than committing to the first one. Keep a hand on your bag in the crush.</div>
     </div>
+    <div class="options-cluster">
+      <div class="options-head">something sweet, then a drink — all within 5 min</div>
+      <div class="opt">
+        <div class="opt-name">Sulbing (설빙) Hongdae — fruit bingsu <span class="cost">~$16</span></div>
+        <div class="opt-desc">A mountain of impossibly fine shaved milk-ice under mango, Shine Muscat or strawberry. Open late, air-conditioned, and the correct thing to eat outdoors in Seoul in August.</div>
+      </div>
+      <div class="opt">
+        <div class="opt-name">Craftbros Hongdae (craft beer) <span class="cost">~$12</span></div>
+        <div class="opt-desc">Twelve rotating taps of Korean and international beer, decent bar food, a garden terrace and no dress code whatsoever. The relaxed, sit-down end to the night.</div>
+      </div>
+      <div class="opt">
+        <div class="opt-name">Craft makgeolli bar (Mapo / Hongdae) <span class="cost">~$18</span></div>
+        <div class="opt-desc">Small-batch artisan makgeolli flights — sweet, dry, carbonated, grain-forward — from local breweries, a different drink entirely from the supermarket bottle. English-friendly.</div>
+      </div>
+      <div class="opt">
+        <div class="opt-name">Ho Bar III (Hongdae dive) <span class="cost">~$8</span></div>
+        <div class="opt-desc">₩2,000 draft on three rowdy floors, going since the 1990s. The cheap, unserious option if the night wants to keep going.</div>
+      </div>
+    </div>
+    <div class="transit">→ Hongik Univ → Line 2 → Euljiro 1-ga → walk to Myeongdong · ~30 min, or a ~₩14,000 taxi. Line 2 runs until about 00:30.</div>
     </div>
 </div>
 
@@ -1064,7 +1132,7 @@ body {
       <div class="block-time">22:45</div>
       <div class="block-title">Soo Karaoke Club Hongdae <span class="cost">~$25</span></div>
       <div class="block-desc">The luxury branch, and a completely different animal to last night's Gangnam room: the famous two-storey suite with floor-to-ceiling windows looking straight down onto the Hongdae street, which at 11pm on a Friday is the best free show in Seoul. Big English catalogue, and the sound system is the best in the neighbourhood.</div>
-      <div class="block-tip">Ask for the two-floor room specifically (2층 룸) when you arrive — it's the one worth coming across town for, and it goes early on Fridays. Hongdae is also where you'd continue if you're not done: Club FF and NB2 are both a five-minute walk.</div>
+      <div class="block-tip">Ask for the two-floor room specifically (2층 룸) when you arrive — it's the one worth coming across town for, and it goes early on Fridays. If you're still going afterwards, the Hongdae street outside runs until dawn — but you know this neighbourhood by now, you had Thursday night here.</div>
     </div>
     </div>
 </div>
@@ -1112,11 +1180,11 @@ body {
       <div class="day-num">09</div>
     </div>
     <div>
-      <div class="day-title">Gapyeong day trip, then a Gangnam night.</div>
-      <div class="day-tagline">The big one: leave early for the Garden of Morning Calm in the mountains, back by late afternoon for the COEX night — library, casino, club. Or keep it easy and local with Seoul Grand Park instead (and keep the swan boats).</div>
+      <div class="day-title">Mountain garden, then the good bars.</div>
+      <div class="day-tagline">The big one: out by 07:45 for the Garden of Morning Calm in the Gapyeong mountains, back around 16:30 for Starfield, the casino, Jeju black pork in Apgujeong and Alice Cheongdam. A long day — the evening is elective if the garden was enough.</div>
       <div class="day-spend">
         <span class="spend-item">Sleep: <strong>Myeongdong New Stay Inn</strong></span>
-        <span class="spend-item">Est. spend: <strong>~$135/pp</strong></span>
+        <span class="spend-item">Est. spend: <strong>~$205/pp</strong></span>
       </div>
     </div>
   </div>
@@ -1130,7 +1198,7 @@ body {
       </div>
       <div class="opt">
         <div class="opt-name">Isaac Toast, extra egg and ham <span class="cost">~$6</span></div>
-        <div class="opt-desc">Eat it on the train. Line 4 to Seoul Grand Park is 40 minutes, which is precisely one Isaac Toast and one protein milk.</div>
+        <div class="opt-desc">Eat it on the train. The ITX-Cheongchun out to Gapyeong is about an hour with a seat, which is precisely one Isaac Toast and one protein milk.</div>
       </div>
       <div class="opt">
         <div class="opt-name">GS25 picnic build <span class="cost">~$10</span></div>
@@ -1143,102 +1211,90 @@ body {
       <div class="block-time">07:45 →</div>
       <div class="block-title">Garden of Morning Calm (Gapyeong) <span class="cost">~$12</span></div>
       <div class="block-desc">Korea's oldest private garden, high in the Gapyeong mountains and genuinely spectacular — far better planted than any city park. About 1h45 each way: ITX-Cheongchun from Cheongnyangni to Cheongpyeong (~1hr, no transfers), then the Gapyeong City Tour Bus or a ~20-min taxi. Open year-round (₩11,000); early August is deep green with hydrangea and summer beds.</div>
-      <div class="block-tip">Leave the hotel ~07:45, spend 3–4 hours, and you're back in the city by ~4–5pm — so tonight's COEX / casino / club still stands. <strong>This replaces Seoul Grand Park and the swan boats</strong> — you can't do the day trip plus both of those and still make the Gangnam night. Buy the ITX ticket the day before (Korail or Klook); going early also beats the ~2-hour Gapyeong tour-bus gaps. You could add Nami Island on the same line, but only if you skip tonight's evening.</div>
-    </div>
-    <div class="options-cluster alt">
-      <div class="options-head">or keep it easy and local — Seoul Grand Park (Gwacheon), no day trip</div>
-      <div class="opt">
-        <div class="opt-name">Seoul Grand Park — Theme Garden + Rose Garden <span class="cost">~$2</span></div>
-        <div class="opt-desc">The low-effort alternative, 40 min south on Line 4: 38,000 roses across 179 varieties, floor fountains, shaded trails and lakeside benches, ₩2,000, open 09:00–19:00. Early August is a thinner second flush than the May peak, but the shade and water carry it — and if you stay local you keep the afternoon free for the swan boats.</div>
-      </div>
-      <div class="opt">
-        <div class="opt-name">Seoul Zoo + Sky Lift <span class="cost">~$6</span></div>
-        <div class="opt-desc">Enormous hillside zoo, and the chairlift over it is the actual attraction — you ride above the whole park with the mountains behind. Take the lift up and walk down through the gardens.</div>
-      </div>
-      <div class="opt">
-        <div class="opt-name">Seoul Land (amusement park) <span class="cost">~$30</span></div>
-        <div class="opt-desc">Korea's first theme park, sharing the same gate plaza: coasters, a big wheel, and a lot of shaded 1980s charm. Buy the all-ride passport or just pay for two or three. A fun 90-minute detour rather than a day.</div>
-      </div>
-      <div class="opt">
-        <div class="opt-name">Gwacheon National Museum of Modern Art <span class="cost">~$2</span></div>
-        <div class="opt-desc">The National Museum of Modern and Contemporary Art's original building, sitting in the hills with a sculpture park around it. Air-conditioned, uncrowded, and a proper collection. The right call if the heat wins.</div>
-      </div>
-      <div class="opt">
-        <div class="opt-name">Gwacheon National Science Museum <span class="cost">~$4</span></div>
-        <div class="opt-desc">Large, hands-on, and has a planetarium. Also entirely indoors, which by 2pm in a Seoul August is a feature.</div>
-      </div>
+      <div class="block-tip">Leave the hotel ~07:45, spend 3–4 hours in the garden, and you're back at COEX by about 16:30 — which is what makes tonight's Cheongdam evening possible at all. Buy the ITX ticket the day before (Korail or Klook); going early also beats the ~2-hour gaps in the Gapyeong tour-bus timetable. Nami Island is on the same line and could be added, but only by giving up the evening entirely.</div>
     </div>
     <div class="options-cluster">
       <div class="options-head">lunch — thin on the ground up here, so plan it</div>
       <div class="opt">
         <div class="opt-name">Picnic from the GS25 haul <span class="cost">~$8</span></div>
-        <div class="opt-desc">The honest best option. Lakeside benches, shade, no queue. This is why you shopped this morning.</div>
+        <div class="opt-desc">The honest best option. The garden has shaded benches and lawn all through it, no queue, and you eat wherever you happen to like the view. Buy it at the convenience store by Cheongnyangni before you get on the train.</div>
       </div>
       <div class="opt">
-        <div class="opt-name">Park gate restaurants <span class="cost">~$12</span></div>
-        <div class="opt-desc">A row of standard Korean restaurants outside the main plaza — kalguksu, bibimbap, pork cutlet, jjajangmyeon. Nothing special, entirely fine, and air-conditioned.</div>
+        <div class="opt-name">Garden cafeteria + cafe <span class="cost">~$10</span></div>
+        <div class="opt-desc">There's a simple restaurant and a cafe inside the grounds — bibimbap, noodles, dwaeji-gukbap, plus coffee and shaved ice. Not a destination meal, but it's air-conditioned and it's right there, which on an August afternoon is the whole argument.</div>
       </div>
       <div class="opt">
-        <div class="opt-name">Hold out for Seongsu-style cafes back in town <span class="cost">~$10</span></div>
-        <div class="opt-desc">Eat light at the park and have a proper late lunch when you're back on the river at 4. Works if breakfast was substantial.</div>
+        <div class="opt-name">Eat properly back in town instead <span class="cost">~$15</span></div>
+        <div class="opt-desc">Snack at the garden and hold out for a real late lunch/early dinner around COEX at 5. Works if breakfast was substantial and you'd rather spend the time in the garden than in a queue.</div>
       </div>
     </div>
-    <div class="transit">→ back into town → Ttukseom Station (Line 2). From Gapyeong ~1h45; from Grand Park ~55 min via Sadang.</div>
-    <div class="area-label">Ttukseom — on the water (skip if you did the Gapyeong day trip)</div>
+    <div class="transit">→ Gapyeong → ITX-Cheongchun → Cheongnyangni → Line 2 → Samseong (COEX) · ~1h45. Back in the city around 16:30.</div>
+    <div class="area-label">COEX / Gangnam — the night</div>
     <div class="event">
       <div class="event-ico">🎆</div>
       <div class="event-body">
         <div class="event-title"><span>Hangang River Festival · Summer</span><span class="event-when">Aug 1–16 · free</span></div>
-        <div class="event-desc">You're here during Seoul's free summer river festival, and it runs across exactly the parks you're standing in — Ttukseom, Yeouido, Banpo, Jamsil. Open-air films projected under the bridges, riverside concerts, circus and water-sport pop-ups. No ticket, just walk into whatever's on. Check the day's lineup at festival.seoul.go.kr/hangang before you head down.</div>
+        <div class="event-desc">Seoul's free summer river festival runs right through your stay, across the riverside parks — Ttukseom, Yeouido, Banpo, Jamsil. Open-air films projected under the bridges, riverside concerts, circus and water-sport pop-ups. No ticket, just walk into whatever's on. If any evening opens up, check the lineup at festival.seoul.go.kr/hangang and go sit by the water.</div>
       </div>
     </div>
     <div class="block highlight">
       <div class="block-time">17:00</div>
-      <div class="block-title">Ttukseom Hangang Park — swan boats <span class="cost">~$22/boat</span></div>
-      <div class="block-desc">The largest duck-boat fleet on the Han, and the one with the view: you pedal out with Lotte World Tower standing over the far bank. ₩30,000 for a pedal boat for up to three people for 30 minutes, ₩50,000 if you want the motor and no work. The current here is calm and the water's the cleanest stretch in the city.</div>
-      <div class="block-tip">Only if you stayed local today — if you did the Garden of Morning Calm you'll head straight to COEX instead; the swan boats are the day trip's trade-off. Otherwise: pedal boat over motor, and go late enough that the sun's off the water — 5pm in August is still fierce, with no shade out there.</div>
-    </div>
-    <div class="options-cluster">
-      <div class="options-head">while you're on the water — the Ttukseom ritual</div>
-      <div class="opt">
-        <div class="opt-name">Han River convenience-store ramen <span class="cost">~$4</span></div>
-        <div class="opt-desc">The 7-Eleven inside Hangang Park has an automatic ramen machine — ₩4,000, four minutes, eaten riverside. Add a banana milk and crack a raw egg in at the two-minute mark. Cheapest genuinely-Korean thing you can do all day, and it's right where the swan boats are.</div>
-      </div>
-    </div>
-    <div class="transit">→ Ttukseom → Line 2 → Samseong (COEX) · ~20 min</div>
-    <div class="area-label">COEX / Gangnam — the night</div>
-    <div class="block highlight">
-      <div class="block-time">18:15</div>
       <div class="block-title">Starfield Library (COEX Mall) <span class="cost">Free</span></div>
-      <div class="block-desc">Thirteen-metre bookshelves rising through the atrium of Asia's largest underground mall, with 50,000 books you can actually pull down and sit with. Free, always open with the mall, and genuinely impressive rather than just photogenic. It's also directly connected to tonight's casino, which is the reason it slots in here.</div>
-      <div class="block-tip">The upper reading level on the north side is where actual people sit and read; the south atrium is where everyone photographs. Half an hour is plenty unless you want to sit.</div>
+      <div class="block-desc">Thirteen-metre bookshelves rising through the atrium of Asia's largest underground mall, with 50,000 books you can actually pull down and sit with. Free, always open with the mall, and genuinely impressive rather than just photogenic. It's also two minutes from the casino, which is why it slots in here.</div>
+      <div class="block-tip">The upper reading level on the north side is where actual people sit and read; the south atrium is where everyone photographs. Half an hour is plenty unless you want to sit — and after a mountain day, sitting is allowed.</div>
     </div>
     <div class="block highlight">
-      <div class="block-time">18:45</div>
+      <div class="block-time">17:40</div>
       <div class="block-title">Seven Luck Casino (COEX, Gangnam) <span class="cost">bring ~$50</span></div>
       <div class="block-desc">Korea's casinos are foreigners-only — locals are legally barred — which makes them a strange, quiet, slightly unreal experience. Seven Luck at COEX is the most convenient: open 24 hours, tables and slots, blackjack and baccarat with English-speaking dealers, and it's a two-minute walk from the library through the mall.</div>
-      <div class="block-tip">⚠️ Bring your passport — it's a hard entry requirement, no passport no entry, and a photo won't do. Entry itself is free. Set a number before you go in; the minimums at the tables are higher than they look.</div>
+      <div class="block-tip">⚠️ Bring your passport — hard entry requirement, no passport no entry, and a photo won't do. Entry itself is free. Give it an hour, not a night: you've got a table at 19:00 and a bar at 20:30. Set a number before you walk in; the table minimums are higher than they look.</div>
     </div>
     <div class="options-cluster">
-      <div class="options-head">dinner + a drink — COEX / Gangnam, 21:00</div>
+      <div class="options-head">or skip the casino — the quiet version, both right here</div>
       <div class="opt">
         <div class="opt-name">Bongeunsa Temple — a quiet hour across the road <span class="cost">Free</span></div>
-        <div class="opt-desc">Before the noise: a 1,200-year-old temple directly across from COEX, its stone Maitreya and lantern-hung halls glowing against the office towers — one of Seoul's best old-meets-new views. A five-minute walk and a complete tonal reset before the casino and the club. Open into the evening; free.</div>
-      </div>
-      <div class="opt">
-        <div class="opt-name">Bongeunsa-side Korean restaurants <span class="cost">~$25</span></div>
-        <div class="opt-desc">The blocks across from COEX, under the temple, are full of proper Korean sit-downs that serve the office crowd — galbi, jjigae, jeongsik sets. Better food and half the price of anything inside the mall.</div>
+        <div class="opt-desc">A 1,200-year-old temple directly across from COEX, its stone Maitreya and lantern-hung halls glowing against the office towers — one of Seoul's best old-meets-new views. Five minutes on foot, free, open into the evening, and a complete tonal reset if the garden already gave you the day you wanted.</div>
       </div>
       <div class="opt">
         <div class="opt-name">Shake Shack COEX <span class="cost">~$16</span></div>
-        <div class="opt-desc">No apology offered. It's inside the mall, it's fast, and on the sixth night of a trip a burger before a club is a perfectly reasonable decision.</div>
+        <div class="opt-desc">If you'd rather not sit down for a long dinner later: it's inside the mall, it's fast, and after a 1h45 train back a burger is a perfectly reasonable decision.</div>
       </div>
     </div>
+    <div class="transit">→ COEX → Apgujeong Rodeo · ~10 min by taxi (₩7,000), or Line 2 → Seolleung → Suin-Bundang Line, ~15 min. Leave by 18:50.</div>
+    <div class="area-label">Apgujeong / Cheongdam — dinner and the good bars</div>
     <div class="block highlight">
-      <div class="block-time">22:15</div>
-      <div class="block-title">Gangnam club night — Face Club <span class="cost">~$30</span></div>
-      <div class="block-desc">A big-room Gangnam mega-club near Sinnonhyeon — a main EDM stage plus a hip-hop room, heavy sound, and the full dress-code-and-queue Gangnam night. Sunday is quieter than Saturday, which makes it easier to get in and move. Gangnam's top clubs turn over fast, so check current events/listings (Face, Sound and LOCAL are the current heavyweights) the week you go.</div>
-      <div class="block-tip">Dress properly — Gangnam clubs actually turn people away, and sandals or shorts will do it. Passport for ID. Entry runs ₩20,000–40,000 depending on the night and usually includes a drink. A 10-min taxi from COEX.</div>
+      <div class="block-time">19:00</div>
+      <div class="block-title">Dinner — Jeju Rooftop Black BBQ (제주옥탑 블랙BBQ) 🎟️ REBOOK <span class="cost">~$40</span></div>
+      <div class="block-desc">Jeju black pork — heukdwaeji, the island's prized indigenous breed, fattier and far more flavourful than standard samgyeopsal — grilled over charcoal in a cave-styled room off Apgujeong Rodeo. Staff grill, cut and time everything for you, so it's a sit-back meal rather than a work-at-it one. The signature black pork set is about ₩32,000pp; free kimchi-jjigae comes with it and free ice cream ends it.</div>
+      <div class="block-tip">⚠️ <strong>Your Thursday table was cancelled — rebook it for tonight instead.</strong> Use the <strong>Catch Table Global</strong> app and ask for 19:00 Sunday; the 2-day lead time is real, so do it early in the week. Address: 34 Eonju-ro 170-gil, Gangnam-gu — 5 min from Apgujeong Rodeo and the same short walk on to Alice. If you can't get a table, anything along Apgujeong Rodeo works; you only need an hour and a bit before the bar.</div>
+    </div>
+    <div class="block highlight">
+      <div class="block-time">20:30</div>
+      <div class="block-title">Alice Cheongdam 🎟️ MOVE BOOKING <span class="cost">~$35</span></div>
+      <div class="block-desc">The best bar in the city and the anchor of tonight: a flower-shop door opening into a Wonderland-themed room where the drinks arrive as small theatrical events — smoke, sculpture, dry ice. An Asia's-50-Best regular, and far more fun than it has any right to be.</div>
+      <div class="block-tip">🎟️ <strong>Your table is currently booked for Thursday 8pm — move it to tonight.</strong> Speakeasies hold tables tightly, so change it rather than just not showing. It's a 5-min walk from dinner. Smart-casual; no shorts or sandals.</div>
+    </div>
+    <div class="options-cluster">
+      <div class="options-head">one more drink, if you want one</div>
+      <div class="opt">
+        <div class="opt-name">Le Chamber (Cheongdam speakeasy) <span class="cost">~$30</span></div>
+        <div class="opt-desc">Behind a bookcase door, down a staircase, into a dark leather-and-brass room that's been on Asia's 50 Best Bars for years. Impeccable classics — the serious one, and a few minutes from Alice.</div>
+      </div>
+      <div class="opt">
+        <div class="opt-name">Bar Cham (Korean spirits) <span class="cost">~$25</span></div>
+        <div class="opt-desc">Creative cocktails built on soju, makgeolli, goryangju and Korean whisky, with pairing plates and a mostly local crowd. It's over in Itaewon though — only worth it if you feel like moving across town.</div>
+      </div>
+    </div>
+    <div class="options-cluster">
+      <div class="options-head">then just wander — somewhere nice nearby, not another bar</div>
+      <div class="opt">
+        <div class="opt-name">Dosan Park (도산공원) <span class="cost">Free</span></div>
+        <div class="opt-desc">A small, quiet, tree-filled park a few minutes from the bars — the right place to walk off dinner and a couple of drinks. Lit and calm after dark, and ringed by the nicest streets in Apgujeong.</div>
+      </div>
+      <div class="opt">
+        <div class="opt-name">Apgujeong back-streets walk <span class="cost">Free</span></div>
+        <div class="opt-desc">The blocks between Dosan Park and Apgujeong Rodeo are low-rise designer flagships, florists and quiet cafés — genuinely pleasant to wander at night with nowhere to be. Grab a convenience-store drink and stroll it home.</div>
+      </div>
     </div>
     </div>
 </div>
@@ -1252,32 +1308,45 @@ body {
       <div class="day-num">10</div>
     </div>
     <div>
-      <div class="day-title">Beach, boardwalk, black-bean noodles.</div>
-      <div class="day-tagline">Swim at Eurwangni, ride the retro pier at Wolmido, eat jjajangmyeon where it was invented, club in Hongdae.</div>
+      <div class="day-title">Move hotels, then the beach.</div>
+      <div class="day-tagline">Check out of Myeongdong and drop the bags at Nine Brick in Hongdae on the way out — then swim at Eurwangni, ride the retro pier at Wolmido, eat jjajangmyeon where it was invented, and come back to a Hongdae bed.</div>
       <div class="day-spend">
-        <span class="spend-item">Sleep: <strong>Myeongdong New Stay Inn</strong></span>
+        <span class="spend-item">Sleep: <strong>Nine Brick Hotel (Hongdae)</strong></span>
         <span class="spend-item">Est. spend: <strong>~$120/pp</strong></span>
       </div>
     </div>
   </div>
   <div class="schedule">
-    <div class="area-label first">Myeongdong — out early, it's an hour and a half</div>
+    <div class="area-label first">🧳 Hotel change — Myeongdong → Hongdae, first thing</div>
+    <div class="block">
+      <div class="block-time">07:15</div>
+      <div class="block-title">Check out — Myeongdong New Stay Inn <span class="cost">Free</span></div>
+      <div class="block-desc">Last morning at the Myeongdong hotel. Pack the night before, settle anything outstanding, and be out the door by about 07:15 — everything today runs west, so there's no coming back for anything you leave behind.</div>
+      <div class="block-tip">Do a proper sweep: chargers, the bathroom shelf, the safe. Also strip out what you need for the beach — swimwear, towel, sunscreen — into a day bag <em>before</em> you seal the suitcases, because the big bags are going into storage at 07:50 and you won't see them until tonight.</div>
+    </div>
+    <div class="transit">→ Myeongdong → walk to Euljiro 1-ga → Line 2 → Hongik Univ · ~30 min. Exit 9, then about 6 min on foot.</div>
+    <div class="block highlight">
+      <div class="block-time">07:50</div>
+      <div class="block-title">Drop the bags — Nine Brick Hotel (Hongdae) <span class="cost">Free</span></div>
+      <div class="block-desc">Tonight's hotel, and it's directly on the way to the airport line — 32 Hongik-ro 5-gil, about 6 minutes' walk from Hongik Univ Station Exit 9. Check-in won't be until the afternoon, so ask reception to hold the luggage for the day (짐 좀 맡길 수 있을까요? / "Can you keep our bags?"). Hotels here do this as a matter of course and it's free.</div>
+      <div class="block-tip">This is why the day starts west instead of at Seoul Station: <strong>AREX runs directly from Hongik Univ to Incheon Airport</strong>, so dropping the bags costs you almost nothing and saves you a cross-city haul tonight. Take a photo of the luggage tag, and keep passports and the beach bag with you.</div>
+    </div>
     <div class="options-cluster">
-      <div class="options-head">breakfast — eat before you go, the beach food is thin</div>
+      <div class="options-head">breakfast — grab it in Hongdae, the beach food is thin</div>
       <div class="opt">
-        <div class="opt-name">Egg Drop (egg sandwich chain) <span class="cost">~$7</span></div>
-        <div class="opt-desc">Soft-scrambled eggs in griddled brioche; the bacon or ham versions land around 25g of protein and take four minutes. Branches all over Myeongdong, and it travels well if you'd rather eat it on the AREX.</div>
+        <div class="opt-name">Egg Drop (Hongdae) <span class="cost">~$7</span></div>
+        <div class="opt-desc">Soft-scrambled eggs in griddled brioche; the bacon or ham versions land around 25g of protein and take four minutes. There's a branch right by the station, and it travels well if you'd rather eat it on the AREX.</div>
       </div>
       <div class="opt">
         <div class="opt-name">Isaac Toast + protein milk, on the train <span class="cost">~$8</span></div>
-        <div class="opt-desc">The AREX to Incheon is 50 minutes with a seat. Extra egg, extra ham, and a 단백질 우유 from the platform GS25.</div>
+        <div class="opt-desc">The AREX to Incheon is about 50 minutes with a seat. Extra egg, extra ham, and a 단백질 우유 from the platform GS25.</div>
       </div>
       <div class="opt">
         <div class="opt-name">Beach-bag build at GS25 <span class="cost">~$14</span></div>
         <div class="opt-desc">Do this properly today: gimbap, chicken breast packs, boiled eggs, bananas, and a lot of water and cold barley tea. Eurwangni's beachfront is almost entirely seafood grills, so bringing your own lunch isn't just cheaper — it's the difference between eating well and not eating.</div>
       </div>
     </div>
-    <div class="transit">→ Seoul Station → AREX → Incheon Airport T1 → local bus 306 / taxi to Eurwangni · ~1h20 total</div>
+    <div class="transit">→ Hongik Univ → AREX (all-stop) → Incheon Airport T1 → local bus 306 / taxi to Eurwangni · ~1h15 total. On the 08:15 train you're on the sand by ~09:30.</div>
     <div class="area-label">Eurwangni — swimming</div>
     <div class="block highlight">
       <div class="block-time">09:30</div>
@@ -1321,7 +1390,13 @@ body {
       <div class="block-desc">Korea's only official Chinatown, ten minutes from the pier: red gates, mural staircases climbing to Jayu Park, and the street where jjajangmyeon was actually invented in 1905 — the original restaurant is now a small museum about it. Dozens of Korean-Chinese houses along the main run serving black-bean noodles, tangsuyuk and jjamppong.</div>
       <div class="block-tip">Order jjajangmyeon plus tangsuyuk (sweet-crisp fried pork) to share — that's the full set and it's the correct way to eat here. Skip jjamppong, it's the seafood one. Gonghwachun is the historic name to look for, but honestly the queue length is a decent guide.</div>
     </div>
-    <div class="transit">→ Incheon → Line 1 / AREX back to Myeongdong · ~70 min. Call it here — a long, good day on the water. Head home and crash.</div>
+    <div class="transit">→ Incheon → Line 1 → Seoul Station → AREX back to Hongik Univ · ~60 min. Or AREX the whole way from the airport if you're passing it.</div>
+    <div class="block">
+      <div class="block-time">21:15</div>
+      <div class="block-title">Check in — Nine Brick Hotel (Hongdae) <span class="cost">Free</span></div>
+      <div class="block-desc">Collect the bags from reception and check in properly. Six minutes on foot from Hongik Univ Exit 9, so you walk in off the train. Call it here — a long, good day on the water.</div>
+      <div class="block-tip">If anyone still has legs, the Hongdae street is five minutes away and runs late; otherwise there's a GS25 on the corner and that's a completely respectable end to a beach day. Tomorrow's flight leaves from the AREX platform you just walked off, so the last morning is genuinely easy.</div>
+    </div>
     </div>
 </div>
 
@@ -1334,8 +1409,8 @@ body {
       <div class="day-num">11</div>
     </div>
     <div>
-      <div class="day-title">Slow morning, then out.</div>
-      <div class="day-tagline">Three hours within walking distance of the hotel, a last lunch, and the 3:15 to Hong Kong.</div>
+      <div class="day-title">One last Hongdae morning, then out.</div>
+      <div class="day-tagline">Everything on foot from Nine Brick — the Yeonnam park walk, the last of the shopping street, a final lunch — then AREX straight from Hongik Univ to the 3:15 to Hong Kong.</div>
       <div class="day-spend">
         <span class="spend-item">Sleep: <strong>Four Seasons Hong Kong</strong></span>
         <span class="spend-item">Est. spend: <strong>~$260/pp</strong> (flight inc.)</span>
@@ -1343,73 +1418,79 @@ body {
     </div>
   </div>
   <div class="schedule">
-    <div class="area-label first">Myeongdong — the last morning</div>
+    <div class="area-label first">Hongdae — the last morning, all on foot</div>
     <div class="options-cluster">
       <div class="options-head">breakfast — last one, make it count</div>
       <div class="opt">
-        <div class="opt-name">Hadongkwan gomtang <span class="cost">~$13</span></div>
-        <div class="opt-desc">If you've had it three times this week, have it a fourth. It's ninety years old, it's two minutes from the door, and there's nothing like it waiting in Hong Kong.</div>
+        <div class="opt-name">Egg Drop (Hongdae) <span class="cost">~$7</span></div>
+        <div class="opt-desc">Butter-braised egg on brioche, four minutes, and the queue is nothing at 8am. Two minutes from the hotel door.</div>
       </div>
       <div class="opt">
-        <div class="opt-name">Myeongdong Kyoja mandu + noodles <span class="cost">~$10</span></div>
-        <div class="opt-desc">Opens 10:30, so it's a late-breakfast-as-brunch move. Steamed dumplings and hand-cut noodles, Michelin Bib, and a proper last Korean meal before an airport day.</div>
+        <div class="opt-name">Anthracite Hongdae (specialty coffee) <span class="cost">~$8</span></div>
+        <div class="opt-desc">A converted shoe factory with 7-metre ceilings and the best pour-over in the neighbourhood — the shop that more or less started Seoul's specialty-coffee scene. Not a big breakfast, but the right last coffee.</div>
       </div>
       <div class="opt">
-        <div class="opt-name">Namdaemun kalguksu alley <span class="cost">~$7</span></div>
-        <div class="opt-desc">Combine it with the walk — the alley is inside the market, so breakfast and the last wander are the same activity.</div>
+        <div class="opt-name">Isaac Toast + protein milk <span class="cost">~$6</span></div>
+        <div class="opt-desc">The yellow sign, one last time. Extra egg, extra ham, eaten walking to the park.</div>
       </div>
     </div>
     <div class="block highlight">
       <div class="block-time">09:00</div>
-      <div class="block-title">Cheonggyecheon Stream — last slow walk <span class="cost">Free</span></div>
-      <div class="block-desc">The restored stream running eleven kilometres through the middle of the city, sunk below street level with stepping stones, waterfalls and shade. Ten minutes from the hotel, several degrees cooler than the streets above, and the most pleasant unhurried hour in central Seoul. Walk it west from Gwanggyo toward Gwanghwamun and come up whenever you feel like it.</div>
-      <div class="block-tip">Start at the Cheonggye Plaza end (the big spiral sculpture near City Hall) and walk east — that direction has the stepping stones, the mural wall and the shade, and it puts you back toward Myeongdong at the end.</div>
+      <div class="block-title">Gyeongui Line Forest Park (Yeonnam) — last slow walk <span class="cost">Free</span></div>
+      <div class="block-desc">A green ribbon built over the old Gyeongui railway line, threading north out of Hongdae through Yeonnam-dong — locals call this stretch "Yeontral Park". Grassy lawns, the old rails left in place, cafés down both edges, and people sprawled on picnic mats from mid-morning. Free, shaded, and the most relaxed hour you can have ten minutes from your bed.</div>
+      <div class="block-tip">Start at the Hongik Univ Exit 3 end and walk north — the Yeonnam stretch is the pretty one, and it loops you back within twenty minutes of the hotel. Coolest before 10:30.</div>
     </div>
     <div class="options-cluster alt">
       <div class="options-head">chill alternatives — all within 15 min of the hotel</div>
       <div class="opt">
-        <div class="opt-name">Seoullo 7017 Sky Garden <span class="cost">Free</span></div>
-        <div class="opt-desc">A disused highway overpass turned elevated garden walk, planted with 24,000 plants in concrete pots and running right over Seoul Station. Twenty minutes end to end, odd and rather charming, and it drops you at the AREX.</div>
+        <div class="opt-name">Hongdae shopping street, one more pass <span class="cost">~$20</span></div>
+        <div class="opt-desc">Quiet and completely walkable before noon, which is the opposite of Thursday night. If you saw something on the accessory racks and didn't buy it, this is the moment.</div>
       </div>
       <div class="opt">
-        <div class="opt-name">Namdaemun Market <span class="cost">~$15</span></div>
-        <div class="opt-desc">The last-minute-souvenir answer: 10,000 stalls of everything, ten minutes on foot, and far cheaper than the airport for ginseng, seaweed, socks and kitchenware.</div>
+        <div class="opt-name">Object (Seogyo flagship) <span class="cost">~$20</span></div>
+        <div class="opt-desc">Four floors of independent Korean design — prints, ceramics, notebooks. The best last-minute gift shopping in the city and far better than anything at the airport.</div>
       </div>
       <div class="opt">
-        <div class="opt-name">Deoksugung Palace + SeMA <span class="cost">~$1</span></div>
-        <div class="opt-desc">The small palace in the middle of downtown, with a stone-wall walk alongside it and the Seoul Museum of Art immediately behind. ₩1,000 entry, quiet, and the least strenuous palace in the city.</div>
+        <div class="opt-name">Roof Cat Me (Hongdae cat cafe) <span class="cost">~$12</span></div>
+        <div class="opt-desc">The biggest and best-kept cat cafe in Hongdae — spacious, a fountain, drinks included, cats that are calm and well looked after. A daft and genuinely lovely last hour.</div>
       </div>
       <div class="opt">
         <div class="opt-name">Nothing at all <span class="cost">Free</span></div>
-        <div class="opt-desc">You've had six days of it and Hong Kong starts tonight with dinner. A late checkout and a long coffee is a legitimate final morning.</div>
+        <div class="opt-desc">You've had six days of it and Hong Kong starts tonight with dinner. A slow checkout and a long coffee is a legitimate final morning.</div>
       </div>
+    </div>
+    <div class="block">
+      <div class="block-time">10:30</div>
+      <div class="block-title">Olive Young Hongdae — last K-beauty run <span class="cost">~$60</span></div>
+      <div class="block-desc">Korea's dominant beauty chain, and the Hongdae branches are large and well stocked — sunscreens, sheet masks, cushion compacts, the lot. Immediate tax-free processing at the till for foreigners over ₩30,000 with a passport, so bring it.</div>
+      <div class="block-tip">Buy sunscreen here even if you buy nothing else — Korean UV filters are years ahead of what's sold in the US, and Hong Kong in August will test them. If you want the very deepest stock, the Myeongdong flagship has it, but it isn't worth a cross-city trip today.</div>
     </div>
     <div class="block">
       <div class="block-time">11:00</div>
-      <div class="block-title">Olive Young Myeongdong — last K-beauty run <span class="cost">~$60</span></div>
-      <div class="block-desc">The flagship of Korea's dominant beauty chain, and the deepest stock in the country — sunscreens, sheet masks, cushion compacts, the lot. Immediate tax-free processing at the till for foreigners over ₩30,000 with a passport. Uniqlo's Myeongdong flagship is two minutes away if you need anything practical for Hong Kong's humidity.</div>
-      <div class="block-tip">Buy sunscreen here even if you buy nothing else — Korean UV filters are years ahead of what's sold in the US, and Hong Kong in August will test them.</div>
+      <div class="block-title">🧳 Check out — Nine Brick, bags to reception <span class="cost">Free</span></div>
+      <div class="block-desc">Check-out is 11:00. Settle up, then leave the bags with reception again for the last ninety minutes so lunch isn't done standing over a suitcase.</div>
+      <div class="block-tip">Repack the carry-on now rather than at the airport: liquids, the tax-refund receipts, and anything fragile you bought this week. Then come back for the bags at about 12:20.</div>
     </div>
     <div class="options-cluster">
-      <div class="options-head">last lunch — Myeongdong, before the train</div>
+      <div class="options-head">last lunch — Hongdae, before the train</div>
       <div class="opt">
-        <div class="opt-name">Mongvely KBBQ Myeongdong <span class="cost">~$25</span></div>
-        <div class="opt-desc">All-you-can-eat KBBQ at noon is an aggressive choice and also a correct one. It's a four-hour flight and airline food.</div>
+        <div class="opt-name">Mukshidonna Tteokbokki (Hongdae) <span class="cost">~$12</span></div>
+        <div class="opt-desc">Cook-at-your-table tteokbokki with ramen and cheese, then fried rice in the pan. Loud, spicy and about as Korean a last meal as exists. Five minutes from the hotel.</div>
       </div>
       <div class="opt">
-        <div class="opt-name">Gogung Myeongdong (bibimbap) <span class="cost">~$12</span></div>
-        <div class="opt-desc">Lighter and faster — brass-bowl Jeonju bibimbap, in and out in half an hour, and it won't sit badly on the plane.</div>
+        <div class="opt-name">Hongdae KBBQ lunch set <span class="cost">~$18</span></div>
+        <div class="opt-desc">Grilled pork, rice, soup and banchan for around ₩18,000 at lunch. It's a four-hour flight and airline food — eating properly now is the correct call.</div>
       </div>
       <div class="opt">
-        <div class="opt-name">Kalguksu at Namdaemun <span class="cost">~$7</span></div>
-        <div class="opt-desc">Hand-cut noodle soup from the market alley, then walk straight on to Seoul Station with your bags. The most efficient possible last meal.</div>
+        <div class="opt-name">Budae jjigae near the station <span class="cost">~$14</span></div>
+        <div class="opt-desc">Army stew — kimchi, tofu, ramen noodles, spam and a slice of cheese bubbling at the table. Shareable, fast, and you'll miss it by Thursday.</div>
       </div>
     </div>
     <div class="block">
-      <div class="block-time">13:00</div>
-      <div class="block-title">Check out → AREX to Incheon <span class="cost">~$8</span></div>
-      <div class="block-desc">Myeongdong → Seoul Station on Line 4 (5 min), then AREX Express to ICN Terminal 1 (43 min). Aim to be at the airport by 13:15 for a 15:15 departure — Incheon is efficient but it's a big airport and the international check-in queues at T1 move slowly in August.</div>
-      <div class="block-tip">Process any outstanding VAT refunds at the ICN refund kiosks before security — you'll need the receipts, the forms and the goods technically available. Allow 20 minutes for it.</div>
+      <div class="block-time">12:30</div>
+      <div class="block-title">Hongik Univ → AREX to Incheon <span class="cost">~$4</span></div>
+      <div class="block-desc">Grab the bags and walk the six minutes back to Hongik Univ Station. The all-stop AREX runs from here straight through to ICN Terminal 1 in about 55 minutes with no changes — that's the whole reason tonight's hotel was worth the move. Aim to be at the airport by 13:30 for a 15:15 departure.</div>
+      <div class="block-tip">The Express AREX doesn't stop at Hongik Univ, so take the all-stop (일반) — it's cheaper anyway, about ₩4,750. Process any outstanding VAT refunds at the ICN kiosks before security: you'll need the receipts, the forms and the goods technically available. Allow 20 minutes for it.</div>
     </div>
     <div class="block highlight">
       <div class="block-time">15:15 →</div>
@@ -1991,6 +2072,11 @@ for (const city of Object.values(TRIP_DATA.cities)) {
 // keyword in block title → data.js id
 const TITLE_MAP = {
   // Checked first: these contain other keywords as substrings, so they must win.
+  'hongdae shopping street': 'seo-hss',  // else 'hongdae shopping' → the vintage strip wins
+  'hongdae playground':     'seo-hpg',
+  'alice cheongdam':        'seo-cb4',
+  'nine brick':             'seo-lg2',
+  'olive young hongdae':    'seo-gi2h',  // else 'olive young' → the Myeongdong flagship wins
   'haircut':                'seo-hr1',   // else 'garosu' in the title wins
   'seven luck':             'seo-ca2',   // else 'coex' wins
   'k-beauty hour':          'seo-nl1',
@@ -2173,7 +2259,7 @@ function _addMapLink(headingEl, id) {
 
 // Fallback 📍 for real activities with no data match: search Maps by title text.
 // Skips pure logistics / non-place lines (check-out, transit arrows, downtime…).
-const _NOPLACE = /check[\s-]?out|downtime|arrive icn|cts\s*→\s*icn|icn\s*→\s*hkg|\bitx\b|→\s*metro|explore your neighbo|return to hongdae|baemin delivery|just hongdae|pack \+ rest|drop the haul|sisters activit|sisters day|nothing at all|straight home|your own beach bag|hotel breakfast/i;
+const _NOPLACE = /check[\s-]?out|downtime|arrive icn|cts\s*→\s*icn|icn\s*→\s*hkg|\bitx\b|→\s*metro|explore your neighbo|return to hongdae|baemin delivery|just hongdae|pack \+ rest|drop the haul|sisters activit|sisters day|nothing at all|straight home|your own beach bag|hotel breakfast|arex to incheon/i;
 function _addSearchLink(headingEl, text) {
   if (!text || headingEl.querySelector('.opt-map-link') || _NOPLACE.test(text)) return;
   let q = text.split('→').pop()
@@ -2230,6 +2316,17 @@ document.querySelectorAll('.block').forEach(block => {
 // ---- Option images -------------------------------------------------------
 const OPT_MAP = {
   // ── enrichment options (added Jul 2026) — specific keys first so they win the substring match ──
+  'hongdae shopping street':    'seo-hss',   // else 'hongdae shopping' → the vintage strip
+  'sigonggan':                  'seo-sgg',
+  'mimiline':                   'seo-mml',
+  'lucky seoul':                'seo-lck',
+  'dosan park':                 'seo-dsp',
+  'ho bar':                     'seo-hb9',
+  'stylenanda':                 'seo-fa2',
+  'pojangmacha':                'seo-sf5',
+  '10x10':                      'seo-st3',
+  'craft makgeolli':            'seo-mk2',
+  'hongdae playground':         'seo-hpg',
   'gwangjang market 2f':        'seo-gj2',   // else 'gwangjang' → the food market
   'nogari alley':               'seo-nog',
   'the ranch brewing':          'seo-ran',
@@ -2618,17 +2715,18 @@ document.querySelectorAll('.day').forEach(day => {
 // ── Lodging: home base per day → house dot on map + commute note ──
 const HOMES = {
   myeongdong: { name:'Myeongdong New Stay Inn', lat:37.5609, lng:126.9857 },
+  ninebrick:  { name:'Nine Brick Hotel (Hongdae)', lat:37.5551, lng:126.9231 },
   fourseasons:{ name:'Four Seasons Hong Kong (Central)', lat:22.2866, lng:114.1578 }
 };
-const DAY_HOME = {5:'myeongdong',6:'myeongdong',7:'myeongdong',8:'myeongdong',9:'myeongdong',10:'myeongdong',11:'myeongdong',12:'fourseasons',13:'fourseasons',14:'fourseasons',15:'fourseasons',16:'fourseasons',17:'fourseasons'};
+const DAY_HOME = {5:'myeongdong',6:'myeongdong',7:'myeongdong',8:'myeongdong',9:'myeongdong',10:'ninebrick',11:'ninebrick',12:'fourseasons',13:'fourseasons',14:'fourseasons',15:'fourseasons',16:'fourseasons',17:'fourseasons'};
 const COMMUTE = {
   5:  '🏠 Arrive ICN → <strong>Myeongdong New Stay Inn</strong> (AREX to Seoul Station + Line 4, ~70 min). Everything this afternoon is 0–12 min away: Myeongdong on foot, Namsan by cable car, DDP one metro hop.',
-  6:  '🏠 <strong>Myeongdong New Stay Inn</strong> → 🎟️ 9:30am Colour Analysis @ <strong>Vic\'s Lab</strong> (Mapo, near Mangwon) · <strong>~30 min</strong> by metro, so leave by 08:50. &nbsp;Then Mapo → Sinsa (~40 min) and the rest of the day — shopping, haircut, black pork, bars, karaoke — is all inside Sinsa/Apgujeong/Cheongdam.',
+  6:  '🏠 <strong>Myeongdong New Stay Inn</strong> → 🎟️ 9:30am Colour Analysis @ <strong>Vic\'s Lab</strong> (Mapo, near Mangwon) · <strong>~30 min</strong> by metro, so leave by 08:50. &nbsp;Then Mapo → Sinsa (~40 min) for Garosu-gil and the haircut, back to the hotel 16:45–17:45 to drop the haul, and out to <strong>Hongdae</strong> (~30 min on Line 2) for the evening.',
   7:  '🏠 <strong>Myeongdong New Stay Inn</strong> → 🎟️ 9:00am Hanbok shoot → Gyeongbokgung · <strong>~15 min</strong> by metro; the palace, Bukchon and the spa are all on foot from there. &nbsp;Afternoon: Anguk → Yeouido (~35 min) for The Hyundai, then 🎟️ 7:00pm Eland cruise (conf EWZ727421) — the pier is a 12-min walk from the shops.',
   8:  '🏠 <strong>Myeongdong New Stay Inn</strong> → sisters day is held open — no fixed plan. Just meet at <strong>Seoul Forest</strong> for the 8pm night walk.',
-  9:  '🏠 <strong>Myeongdong New Stay Inn</strong> → Line 4 straight to <strong>Seoul Grand Park</strong> (Gwacheon) · <strong>~40 min, no changes</strong>. &nbsp;Back at 16:00 → Ttukseom for the swan boats (~55 min), then COEX is 20 min on Line 2 — library, casino and club are all within a 10-min radius.',
-  10: '🏠 <strong>Myeongdong New Stay Inn</strong> → Seoul Station → AREX → ICN T1 → bus/taxi to <strong>Eurwangni Beach</strong> · <strong>~1h20</strong>. &nbsp;Then Eurwangni → Wolmido (~45 min over the bridge) → Chinatown (10 min) → AREX back to Hongik Univ (~50 min). Long day, one clean line.',
-  11: '🏠 <strong>Myeongdong New Stay Inn</strong> → the whole morning is within 15 min on foot (Cheonggyecheon, Namdaemun, Olive Young). 🧳 Check out 13:00 → Line 4 → Seoul Station → AREX → ICN for the <strong>15:15 flight to Hong Kong</strong>.',
+  9:  '🏠 <strong>Myeongdong New Stay Inn</strong> → Cheongnyangni → ITX-Cheongchun → Cheongpyeong → <strong>Garden of Morning Calm</strong> · <strong>~1h45 each way</strong>, so leave by 07:45. &nbsp;Back at COEX around 16:30 for the library and casino, then a 10-min taxi to <strong>Apgujeong/Cheongdam</strong> for dinner and Alice.',
+  10: '🧳 <strong>Hotel-change day.</strong> Check out of Myeongdong 07:15 → Line 2 → <strong>Nine Brick Hotel (Hongdae)</strong> (~30 min), leave the bags with reception → Hongik Univ <strong>AREX</strong> → ICN T1 → bus/taxi to <strong>Eurwangni Beach</strong> (~1h15). &nbsp;The bag move is free — AREX runs from Hongik Univ, so Hongdae is on the way out and the way back.',
+  11: '🏠 <strong>Nine Brick Hotel (Hongdae)</strong> → the whole morning is on foot (Yeonnam park walk, the Hongdae street, Olive Young). 🧳 Check out 11:00, leave bags at reception → <strong>AREX from Hongik Univ straight to ICN</strong> (~55 min, no changes) for the <strong>15:15 flight to Hong Kong</strong>. Leave by 12:30.',
   12: '✈ ICN 15:15 → HKG <strong>17:55</strong> → <strong>Four Seasons (Central)</strong> — the Airport Express runs right into Hong Kong Station beneath the hotel (~24 min). Bags down by 18:45, Star Ferry at 19:15, light show at 20:00, dinner with Milo after.',
   13: '🏠 <strong>Four Seasons (Central)</strong> → the Peak Tram terminus is a <strong>~10-min walk</strong>. Up early, back by lunch — then 💻 Tamar Park is ~10 min the other way. Dinner with Milo in Central.',
   14: '🏠 <strong>Four Seasons (Central)</strong> → Wong Tai Sin Temple · <strong>~20 min</strong> by MTR (Kwun Tong line), Chi Lin one stop on. 💻 Central Library (Causeway Bay) is on the way back. Dinner with Milo after.',
@@ -2685,8 +2783,15 @@ const _ro = window.ResizeObserver ? new ResizeObserver(entries => {
 }) : null;
 // Clean a stop heading down to a short legend label.
 function _legendName(t){
-  t = t.replace(/\s*\([^)]*\)/g,'').replace(/\s+/g,' ').trim();
-  if (t.length > 50) t = t.slice(0,48).trim() + '…';
+  t = t.replace(/\s*\([^)]*\)/g,'')                                    // drop parentheticals
+       .replace(/[\u{1F300}-\u{1FAFF}\u{2600}-\u{27BF}\u{FE0F}]/gu,'') // drop emoji
+       .replace(/\b(BOOKED|REBOOK|MOVE BOOKING)\b/gi,'')
+       .replace(/\s+/g,' ').trim();
+  t = t.split(/\s+[—–]\s+/)[0].trim();   // keep only what's before an em/en dash
+  t = t.split(/[,:]/)[0].trim();         // …and before a comma/colon
+  const w = t.split(/\s+/).filter(Boolean);
+  if (w.length > 4) t = w.slice(0,4).join(' ') + '…';
+  if (t.length > 28) t = t.slice(0,27).trim() + '…';
   return t.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
 }
 document.querySelectorAll('.day').forEach(day => {
