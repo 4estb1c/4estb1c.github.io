@@ -1132,7 +1132,7 @@ body {
     </div>
     <div>
       <div class="day-title">Sisters day.</div>
-      <div class="day-tagline">Held open, the day is theirs. Converge on Seongsu for galbi at dusk, then a night walk through Seoul Forest.</div>
+      <div class="day-tagline">Held open, the day is theirs. Converge on Seongsu for galbi and a rooftop cocktail at dusk, then a night walk through Seoul Forest.</div>
       <div class="day-spend">
         <span class="spend-item">Sleep: <strong>Myeongdong New Stay Inn</strong></span>
         <span class="spend-item">Est. spend: <strong>~$120/pp</strong></span>
@@ -1152,6 +1152,21 @@ body {
       <div class="block-title">Dinner: Daesung Galbi (대성갈비), Seongsu galbi alley <span class="cost">~$30</span></div>
       <div class="block-desc">The place to meet for the evening: the original grill house that started Seongsu's galbi alley, charcoal-grilled marinated pork short rib, packed with regulars and a short walk from Seoul Forest. Order the galbi, get a bowl of doenjang-jjigae alongside, and finish with rice fried in the pan.</div>
       <div class="block-tip">The alley between Ttukseom and Seoul Forest stations is lined with grill houses if Daesung has a queue, any of them will do. Then it's a 10-minute walk down to the park for the night walk.</div>
+    </div>
+    <div class="options-cluster">
+      <div class="options-head">a cocktail before the walk, all in Seongsu</div>
+      <div class="opt">
+        <div class="opt-name">Seongsu Rooftop Maestro <span class="cost">~$18</span></div>
+        <div class="opt-desc">A rooftop looking straight out over Seoul Forest, with live jazz on Saturday nights (~8:30–10:30pm) and the awning drawn back in summer. The natural pairing for tonight: a drink up here with the forest in front of you, and easily worth coming back to after the walk for the jazz.</div>
+      </div>
+      <div class="opt">
+        <div class="opt-name">Cinderella Bar <span class="cost">~$16</span></div>
+        <div class="opt-desc">A speakeasy down a Seongsu alley behind a door done up as a shoemaker's shop, a nod to the district's old leather workshops. The signature cocktails come served in little glass heels; genuinely inventive, and a young room.</div>
+      </div>
+      <div class="opt">
+        <div class="opt-name">The Storage Room <span class="cost">~$16</span></div>
+        <div class="opt-desc">A Prohibition-styled hidden bar in the basement of a cheese shop: walk through the shop and push past the unlatched door. Newspaper menu, 1920s classics, dim and low-lit. A few doors from Cinderella, so it's easy to do both.</div>
+      </div>
     </div>
     <div class="area-label">Seoul Forest: evening</div>
     <div class="block highlight">
@@ -1267,16 +1282,21 @@ body {
       </div>
     </div>
     <div class="options-cluster">
-      <div class="options-head">then just wander: somewhere nice nearby, not another bar</div>
+      <div class="options-head">then wander somewhere with people around</div>
       <div class="opt">
-        <div class="opt-name">Dosan Park (도산공원) <span class="cost">Free</span></div>
-        <div class="opt-desc">A small, quiet, tree-filled park a few minutes from the bars, the right place to walk off dinner and a couple of drinks. Lit and calm after dark, and ringed by the nicest streets in Apgujeong.</div>
+        <div class="opt-name">Apgujeong Rodeo Street <span class="cost">Free</span></div>
+        <div class="opt-desc">The young strip around Apgujeong Rodeo Station: boutiques, late-night dessert cafés and casual bars, and a lot of people still out. Livelier than Cheongdam and only a 10–15 minute walk from Alice, so it's the easy first move if you want a bit of life rather than a quiet park.</div>
       </div>
       <div class="opt">
-        <div class="opt-name">Apgujeong back-streets walk <span class="cost">Free</span></div>
-        <div class="opt-desc">The blocks between Dosan Park and Apgujeong Rodeo are low-rise designer flagships, florists and quiet cafés, pleasant to wander at night with nowhere to be. Grab a convenience-store drink and stroll it home.</div>
+        <div class="opt-name">Garosu-gil + Serosu-gil after dark <span class="cost">Free</span></div>
+        <div class="opt-desc">The tree-lined Sinsa cafe-and-shop streets stay busy late with a young crowd. A short taxi west (or a 25-min walk), and it points you back toward Sinsa Station for the ride home.</div>
+      </div>
+      <div class="opt">
+        <div class="opt-name">Han River after dark: Jamwon Hangang Park <span class="cost">~$8</span></div>
+        <div class="opt-desc">In August the riverside south of Apgujeong is where young Seoul spends the night: picnic mats, delivery fried chicken, ramyeon and beer from the convenience store, buskers along the water. It's part of the free Hangang Summer Festival while you're here. A 10-min taxi south, and the most alive scene in the city.</div>
       </div>
     </div>
+    <div class="transit">→ home is Myeongdong tonight, so it's a taxi or Line 3 / Bundang Line back from wherever you end up · ~25–35 min</div>
     </div>
 </div>
 
@@ -2304,6 +2324,11 @@ document.querySelectorAll('.block').forEach(block => {
 // ---- Option images -------------------------------------------------------
 const OPT_MAP = {
   // ── enrichment options (added Jul 2026) — specific keys first so they win the substring match ──
+  'apgujeong rodeo street':     'seo-rodeo', // else 'apgujeong rodeo' → Gentle Monster
+  'jamwon hangang':             'seo-jhp',   // else 'hangang' → Yeouido
+  'seongsu rooftop maestro':    'seo-maestro',
+  'cinderella':                 'seo-cinderella',
+  'storage room':               'seo-storage',
   'hongdae shopping street':    'seo-hss',   // else 'hongdae shopping' → the vintage strip
   'sigonggan':                  'seo-sgg',
   'mimiline':                   'seo-mml',
@@ -2711,7 +2736,7 @@ const COMMUTE = {
   5:  '🏠 Arrive ICN → <strong>Myeongdong New Stay Inn</strong> (AREX to Seoul Station + Line 4, ~70 min). Everything this afternoon is 0–12 min away: Myeongdong on foot, Namsan by cable car, DDP one metro hop.',
   6:  '🏠 <strong>Myeongdong New Stay Inn</strong> → 🎟️ 9:30am Colour Analysis @ <strong>Vic\'s Lab</strong> (Mapo, near Mangwon) · <strong>~30 min</strong> by metro, so leave by 08:50. &nbsp;Then Mapo → Sinsa (~40 min) for Garosu-gil and the haircut, back to the hotel 16:45–17:45 to drop the haul, and out to <strong>Hongdae</strong> (~30 min on Line 2) for the evening: shopping street, a hanwoo dinner at Yookmian in Yeonnam, buskers, karaoke.',
   7:  '🏠 <strong>Myeongdong New Stay Inn</strong> → 🎟️ 9:00am Hanbok shoot → Gyeongbokgung · <strong>~15 min</strong> by metro; the palace, Bukchon and the spa are all on foot from there. &nbsp;Afternoon: Anguk → Yeouido (~35 min) for The Hyundai, then 🎟️ 7:00pm Eland cruise (conf EWZ727421); the pier is a 12-min walk from the shops. Finish in <strong>Ikseon-dong</strong>, 15 min from home.',
-  8:  '🏠 <strong>Myeongdong New Stay Inn</strong> → sisters day is held open, no fixed plan. Meet in <strong>Seongsu</strong> for galbi at ~18:45, then walk down to <strong>Seoul Forest</strong> for the 8pm night walk.',
+  8:  '🏠 <strong>Myeongdong New Stay Inn</strong> → sisters day is held open, no fixed plan. Meet in <strong>Seongsu</strong> for galbi at ~18:45 and a cocktail nearby, then walk down to <strong>Seoul Forest</strong> for the night walk.',
   9:  '🏠 <strong>Myeongdong New Stay Inn</strong> → Cheongnyangni → ITX-Cheongchun → Cheongpyeong → <strong>Garden of Morning Calm</strong> · <strong>~1h45 each way</strong>, so leave by 07:45. &nbsp;Back at COEX around 16:30 for the library and casino, then a 10-min taxi to <strong>Apgujeong/Cheongdam</strong> for dinner and the 🎟️ 8:30pm table at <strong>Alice Cheongdam</strong>.',
   10: '🧳 <strong>Hotel-change day.</strong> Check out of Myeongdong 07:15 → Line 2 → <strong>Nine Brick Hotel (Hongdae)</strong> (~30 min), leave the bags with reception → Hongik Univ <strong>AREX</strong> → ICN T1 → bus/taxi to <strong>Eurwangni Beach</strong> (~1h15). &nbsp;The bag move is free: AREX runs from Hongik Univ, so Hongdae is on the way out and the way back.',
   11: '🏠 <strong>Nine Brick Hotel (Hongdae)</strong> → the whole morning is on foot (Yeonnam park walk, the Hongdae street, Olive Young). 🧳 Check out 11:00, leave bags at reception → <strong>AREX from Hongik Univ straight to ICN</strong> (~55 min, no changes) for the <strong>15:15 flight to Hong Kong</strong>. Leave by 12:30.',
