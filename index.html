@@ -17,83 +17,6 @@
   <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
   <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
   <meta name="author">
-  <script> let RESOLUTION = 17000;
-    function f(theta, n) {
-      return Math.cos(Math.asin(1) * 3 / n) / Math.cos(Math.asin(Math.sin(n * theta / 4)) * 3 / n)
-    }
-    function buildLogo(n, ctx, WIDTH) {
-      let data = [];
-      var gradient = ctx.createRadialGradient(WIDTH / 2, WIDTH / 2, 10, WIDTH / 2, WIDTH / 2, WIDTH / 2);
-      gradient.addColorStop(0.5, '#542f27');
-      gradient.addColorStop(1, '#95A671');
-      // Fill with gradient
-      ctx.fillStyle = gradient;
-      ctx.strokeStyle = ctx.beginPath();
-      ctx.arc(WIDTH / 2, WIDTH / 2, WIDTH / 2, 0, 2 * Math.PI);
-      ctx.fill();
-      // create RESOLUTIONxRESOLUTION grid
-      for (var i = 0; i < WIDTH; i++) {
-        let row = [];
-        for (var j = 0; j < WIDTH; j++) {
-          row.push(0);
-        }
-        data.push(row);
-      }
-      ctx.strokeStyle = `rgba(0, 0, 0, 1)`;
-      ctx.fillStyle = `rgba(0, 0, 0, 0.15)`;
-      ctx.beginPath();
-      ctx.moveTo(WIDTH / 2, WIDTH / 2);
-      for (let i = 0; i <= RESOLUTION; i++) {
-        let theta = (i / RESOLUTION) * 16 * Math.PI - 8 * Math.PI;
-        let r = f(theta, n);
-        let [x, y] = polarToPara(r, theta, WIDTH);
-        ctx.lineTo(x, y);
-        if (i % 1700 == 0) {
-          ctx.closePath()
-          ctx.fill()
-          ctx.beginPath();
-          ctx.moveTo(WIDTH / 2, WIDTH / 2);
-          ctx.lineTo(x, y);
-        }
-      }
-    }
-    function polarToPara(r, theta, WIDTH) {
-      let x = (r * Math.cos(theta) * RESOLUTION / 2 + RESOLUTION / 2);
-      x = (x / (RESOLUTION / WIDTH));
-      let y = (r * Math.sin(theta) * RESOLUTION / 2 + RESOLUTION / 2);
-      y = (y / (RESOLUTION / WIDTH));
-      return [x, y];
-    }
-    function setupLogos() {
-      i = 0
-      nMax = 6;
-      nMin = 4.25;
-      let WIDTH = 128;
-      iconElem = document.getElementsByClassName('u-icon-1')[0];
-      iconParentElem = iconElem.parentElement;
-      iconParentElem.insertBefore(document.createElement('canvas'), iconElem);
-      iconParentElem.removeChild(iconElem);
-      // set width="128px" height="128px"
-      dynamicCanvas = iconParentElem.childNodes[0];
-      dynamicCanvas.setAttribute('width', '128px');
-      dynamicCanvas.setAttribute('height', '128px');
-      if (dynamicCanvas.getContext) {
-        var dynamicCtx = dynamicCanvas.getContext('2d');
-      }
-      setInterval(function () {
-        dynamicCtx.clearRect(0, 0, WIDTH, WIDTH);
-        if (nMin + i <= nMax) {
-          buildLogo(nMin + i, dynamicCtx, WIDTH);
-        } else {
-          buildLogo(2 * nMax - nMin - i, dynamicCtx, WIDTH);
-        }
-        i += 0.125 / 32;
-        if (2 * nMax - nMin - i <= nMin) {
-          i = 0;
-        }
-      }, 60);
-    }
-    document.addEventListener("DOMContentLoaded", setupLogos); </script>
 
   <link rel="canonical" href="https://forrestbicker.com">
   <link rel="icon" href="assets/favicon.ico">
@@ -201,13 +124,8 @@
               <div class="u-container-layout u-valign-bottom-sm u-valign-middle-lg u-valign-middle-md u-valign-middle-xl u-container-layout-2">
                 <div class="u-container-style u-custom-color-6 u-expanded-width-xs u-group u-radius u-shape-round u-group-1">
                   <div class="u-container-layout u-container-layout-3">
-                    <div class="u-align-center u-container-align-center u-container-style u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-group u-shape-rectangle u-group-2">
-                      <div class="u-container-layout u-container-layout-4"><span class="u-file-icon u-icon u-icon-1"><img src="assets/favicon.ico" alt=""></span>
-                      </div>
-                    </div>
-                    <h1 class="double-shadow u-align-center u-custom-font u-font-open-sans u-text u-text-palette-3-light-3 u-text-1">Forrest ​B​​​icker</h1>
                     <div class="fr-view u-clearfix u-rich-text u-text u-text-2">
-                      <p style="text-align: center;"><span class="u-text-body-color" style="font-weight: 500;">QR | Math + CS @ Harvey Mudd</span>
+                      <p style="text-align: left;"><span class="u-text-body-color" style="font-weight: 400;">Hi, I'm Forrest Bicker.<br><br>I do quant research at Arrowstreet Capital.<br><br>Before that, I studied Math and Computer Science at Harvey Mudd College and grew up in NYC.</span>
                       </p>
                     </div>
                   </div>
