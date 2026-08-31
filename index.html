@@ -14,6 +14,36 @@
   <link rel="icon" href="/assets/favicon.ico">
   <link rel="stylesheet" href="nicepage.css" media="screen">
   <link rel="stylesheet" href="index.css" media="screen">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,700;1,6..72,400&display=swap">
+  <style>
+    /* Minimal home hero */
+    .fb-home {
+      max-width: 620px;
+      min-height: 72vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 40px 8px 64px;
+      font-family: 'Newsreader', Georgia, 'Times New Roman', serif;
+      color: #2c1e17;
+    }
+    .fb-hello { font-weight: 700; font-size: 1.7rem; line-height: 1.3; margin: 0 0 1.15rem; }
+    .fb-blurb { font-size: 1.55rem; line-height: 1.6; margin: 0 0 2.1rem; }
+    .fb-blurb em { font-style: normal; color: #8a7968; }
+    .fb-links { list-style: none; margin: 0; padding: 0; max-width: 24rem; border-top: 1px solid rgba(44, 30, 23, .18); }
+    .fb-links li { border-bottom: 1px solid rgba(44, 30, 23, .18); }
+    .fb-links a { display: flex; justify-content: space-between; align-items: center; padding: .8rem 2px; font-size: 1.4rem; text-decoration: none; color: #2c1e17; }
+    .fb-links a span { color: #8a7968; transition: transform .18s ease; }
+    .fb-links a:hover span { transform: translateX(4px); color: #2c1e17; }
+    .u-header .u-sheet-1 { display: flex; align-items: center; flex-wrap: wrap; gap: 2px 16px; }
+    .u-header .u-sheet-1::before, .u-header .u-sheet-1::after { display: none; }
+    .u-header .u-logo { position: static !important; margin: 0 !important; }
+    .u-header .u-text-1 { position: static !important; margin: 0 !important; }
+    .fb-nav { margin-left: auto; display: flex; gap: 1.5rem; font-family: 'Newsreader', Georgia, serif; font-size: 1.15rem; }
+    .fb-nav a { color: #eae1d0; text-decoration: none; opacity: .92; }
+    .fb-nav a:hover { opacity: 1; text-decoration: underline; text-underline-offset: 4px; }
+    @media (max-width: 575px) { .fb-nav { margin-left: 0; width: 100%; gap: 1.4rem; } .fb-hello { font-size: 1.55rem; } .fb-blurb { font-size: 1.4rem; } }
+  </style>
   <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
   <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
   <meta name="author">
@@ -57,53 +87,19 @@
   <meta data-intl-tel-input-cdn-path="intlTelInput/">
 </head>
 
-<body data-home-page="" data-home-page-title="Forrest Bicker" data-path-to-root="./" data-include-products="false" class="u-body u-overlap u-overlap-contrast u-overlap-transparent u-stick-footer u-xl-mode" data-lang="en">
+<body data-home-page="" data-home-page-title="Forrest Bicker" data-path-to-root="./" data-include-products="false" class="u-body u-stick-footer u-xl-mode" data-lang="en">
   <header class="u-clearfix u-custom-color-10 u-header u-sticky u-sticky-3292 u-header" id="sec-929d" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">
     <div class="u-clearfix u-sheet u-sheet-1">
       <a href="./" data-page-id="2011114386" class="u-image u-logo u-image-1" data-image-width="64" data-image-height="64" title="Forrest Bicker">
         <img src="assets/favicon.ico" class="u-logo-image u-logo-image-1">
       </a>
-      <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1" role="navigation" aria-label="Menu navigation">
-        <div class="menu-collapse" style="font-size: 1.25rem; letter-spacing: 0px; font-weight: 800;">
-          <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-hamburger-link u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#" tabindex="-1" aria-label="Open menu" aria-controls="c881">
-            <svg class="u-svg-link" viewBox="0 0 24 24">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use>
-            </svg>
-            <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
-              <g>
-                <rect y="1" width="16" height="2"></rect>
-                <rect y="7" width="16" height="2"></rect>
-                <rect y="13" width="16" height="2"></rect>
-              </g>
-            </svg>
-          </a>
-        </div>
-        <div class="u-custom-menu u-nav-container">
-          <ul class="u-nav u-unstyled u-nav-1" role="menubar">
-            <li role="none" class="u-nav-item"><a tabindex="-1" role="menuitem" class="u-button-style u-nav-link u-text-active-custom-color-12 u-text-custom-color-6 u-text-hover-palette-2-dark-1" href="https://www.linkedin.com/in/forrestbicker/" target="_blank" aria-haspopup="true" style="padding: 10px 20px;">Resume</a>
-            </li>
-            <li role="none" class="u-nav-item"><a role="menuitem" class="u-button-style u-nav-link u-text-active-custom-color-12 u-text-custom-color-6 u-text-hover-palette-2-dark-1" href="blog" style="padding: 10px 20px;">Projects</a>
-            </li>
-          </ul>
-        </div>
-        <div class="u-custom-menu u-nav-container-collapse" id="c881" role="region" aria-label="Menu panel">
-          <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
-            <div class="u-inner-container-layout u-sidenav-overflow">
-              <div class="u-menu-close" tabindex="-1" aria-label="Close menu"></div>
-              <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2" role="menubar">
-                <li role="none" class="u-nav-item"><a tabindex="-1" role="menuitem" class="u-button-style u-nav-link" href="https://www.linkedin.com/in/forrestbicker/" target="_blank" aria-haspopup="true">Resume</a>
-                </li>
-                <li role="none" class="u-nav-item"><a role="menuitem" class="u-button-style u-nav-link" href="blog">Projects</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
-        </div>
-      </nav>
       <p class="operator-mono u-custom-font u-font-open-sans u-text u-text-custom-color-10 u-text-1">
         <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-custom-color-6 u-btn-1" data-href="./" data-page-id="2011114386" href="./">Forrest Bicker</a>
       </p>
+      <nav class="fb-nav" aria-label="Primary">
+        <a href="https://forrestbicker.com/resume" target="_blank" rel="noopener">CV</a>
+        <a href="blog">Projects</a>
+      </nav>
     </div>
     <style class="u-sticky-style" data-style-id="3292">
       .u-sticky-fixed.u-sticky-3292,
@@ -112,39 +108,19 @@
       }
     </style>
   </header>
-  <section class="u-clearfix u-custom-color-10 u-section-1" id="sec-4609">
+  <section class="u-clearfix u-section-1" id="sec-4609">
     <div class="u-clearfix u-sheet u-sheet-1">
-      <div class="data-layout-selected u-clearfix u-expanded-width u-gutter-10 u-layout-wrap u-layout-wrap-1">
-        <div class="u-layout">
-          <div class="u-layout-row">
-            <div class="u-container-style u-image u-image-round u-layout-cell u-radius u-size-30 u-image-1" data-image-width="1833" data-image-height="1218">
-              <div class="u-container-layout u-container-layout-1"></div>
-            </div>
-            <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-2">
-              <div class="u-container-layout u-valign-bottom-sm u-valign-middle-lg u-valign-middle-md u-valign-middle-xl u-container-layout-2">
-                <div class="u-container-style u-custom-color-6 u-expanded-width-xs u-group u-radius u-shape-round u-group-1">
-                  <div class="u-container-layout u-container-layout-3">
-                    <div class="fr-view u-clearfix u-rich-text u-text u-text-2">
-                      <p style="text-align: left;"><span class="u-text-body-color" style="font-weight: 400;">Hi, I'm Forrest Bicker.<br><br>I do quant research at Arrowstreet Capital.<br><br>Before that, I studied Math and Computer Science at Harvey Mudd College and grew up in NYC.</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="fb-home">
+        <p class="fb-hello">Hi, I'm Forrest.</p>
+        <p class="fb-blurb">I do quant research at <em>Arrowstreet Capital</em>. Before that, I studied Math and Computer Science at <em>Harvey Mudd College</em> and grew up in NYC.</p>
+        <ul class="fb-links" aria-label="Links">
+          <li><a href="https://forrestbicker.com/resume" target="_blank" rel="noopener">CV <span aria-hidden="true">&rarr;</span></a></li>
+          <li><a href="blog">Projects <span aria-hidden="true">&rarr;</span></a></li>
+          <li><a href="contact">Contact <span aria-hidden="true">&rarr;</span></a></li>
+        </ul>
       </div>
     </div>
-
-
-
   </section>
-  <style class="u-overlap-style">
-    .u-overlap:not(.u-sticky-scroll) .u-header {
-      transparency: 55 !important
-    }
-  </style>
 
 
 
@@ -155,12 +131,12 @@
           <div class="u-layout-row">
             <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-1">
               <div class="u-container-layout u-valign-middle u-container-layout-1">
+                <p class="quote u-align-left u-small-text u-text u-text-variant u-text-1">A world​ to win.<br>
+                </p>
               </div>
             </div>
             <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-2">
               <div class="u-container-layout u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-container-layout-2">
-                <p class="quote u-align-right u-small-text u-text u-text-variant u-text-1">A world​ to win.<br>
-                </p>
                 <p class="u-align-right u-small-text u-text u-text-variant u-text-2"><span style="font-style: normal;">Forrest&nbsp;</span><span style="font-style: normal;">평화&nbsp;</span><span style="font-style: normal;">Bicker </span>
                 </p>
               </div>
@@ -170,7 +146,6 @@
       </div>
     </div>
   </footer>
-  </section>
 
 </body>
 
