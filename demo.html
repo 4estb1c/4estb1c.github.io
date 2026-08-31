@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Eight minimal homepage directions for forrestbicker.com.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="assets/favicon.ico">
+<title>Eight Homepage Directions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Hanken+Grotesk:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=Libre+Franklin:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap">
+
+<style>
+  *,*::before,*::after{box-sizing:border-box;}
+
+  :root{
+    /* &mdash;&mdash;&mdash; gallery chrome (theme-aware) &mdash;&mdash;&mdash; */
+    --bg:#F3EFE6;
+    --panel:#FBF8F2;
+    --fg:#2B1D16;
+    --muted:#7a6b5b;
+    --hair:rgba(43,29,22,.14);
+    --shadow:0 1px 1px rgba(43,29,22,.05), 0 14px 34px -14px rgba(43,29,22,.22);
+    --focus:#8a5a3f;
+
+    /* &mdash;&mdash;&mdash; the site palette being previewed &mdash; FIXED across themes on purpose &mdash;&mdash;&mdash; */
+    --paper:#EFE9DC;   /* beige page            */
+    --bark:#382019;    /* dark-brown nav/footer  */
+    --ink:#2C1E17;     /* text on beige          */
+    --cream:#EAE1D0;   /* text on brown          */
+    --sub:#6E5D4F;     /* muted text on beige    */
+    --line:rgba(56,32,25,.16);
+    --barkline:rgba(234,225,208,.18);
+
+    --sans:'Libre Franklin',system-ui,-apple-system,sans-serif;
+    --grot:'Hanken Grotesk',system-ui,sans-serif;
+    --serif:'Newsreader',Georgia,'Times New Roman',serif;
+    --disp:'Fraunces','Newsreader',Georgia,serif;
+    --inst:'Instrument Serif','Newsreader',Georgia,serif;
+    --mono:'IBM Plex Mono',ui-monospace,'SFMono-Regular',monospace;
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --bg:#191010; --panel:#241611; --fg:#ECE3D3; --muted:#a4917c;
+      --hair:rgba(236,227,211,.13);
+      --shadow:0 1px 1px rgba(0,0,0,.4), 0 18px 40px -16px rgba(0,0,0,.6);
+      --focus:#d59d76;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#191010; --panel:#241611; --fg:#ECE3D3; --muted:#a4917c;
+    --hair:rgba(236,227,211,.13);
+    --shadow:0 1px 1px rgba(0,0,0,.4), 0 18px 40px -16px rgba(0,0,0,.6);
+    --focus:#d59d76;
+  }
+
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--fg);
+    font-family:var(--sans);
+    -webkit-font-smoothing:antialiased;
+    line-height:1.5;
+  }
+  a{color:inherit;}
+  :focus-visible{outline:2px solid var(--focus);outline-offset:3px;border-radius:2px;}
+
+  .wrap{max-width:1220px;margin:0 auto;padding:clamp(28px,5vw,72px) clamp(20px,4vw,48px) 96px;}
+
+  /* &mdash;&mdash;&mdash; page header &mdash;&mdash;&mdash; */
+  .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 18px;}
+  .lede h1{
+    font-family:var(--disp);font-optical-sizing:auto;font-weight:500;
+    font-size:clamp(2.1rem,5.2vw,3.4rem);line-height:1.04;letter-spacing:-.015em;
+    text-wrap:balance;margin:0 0 20px;max-width:16ch;
+  }
+  .lede p{font-size:clamp(1rem,1.4vw,1.12rem);color:var(--fg);max-width:60ch;margin:0 0 14px;}
+  .lede .refs{font-size:.95rem;color:var(--muted);max-width:60ch;}
+  .lede .refs a{text-underline-offset:3px;text-decoration-color:var(--hair);}
+  .lede .refs a:hover{text-decoration-color:currentColor;}
+
+  .palette{display:flex;flex-wrap:wrap;gap:10px;margin:30px 0 6px;}
+  .sw{display:flex;align-items:center;gap:9px;font-family:var(--mono);font-size:11.5px;color:var(--muted);
+      border:1px solid var(--hair);border-radius:999px;padding:6px 12px 6px 6px;}
+  .sw i{width:16px;height:16px;border-radius:50%;border:1px solid rgba(0,0,0,.12);}
+
+  .rule{height:1px;background:var(--hair);border:0;margin:40px 0 4px;}
+
+  /* &mdash;&mdash;&mdash; concept grid &mdash;&mdash;&mdash; */
+  .grid{display:grid;grid-template-columns:1fr;gap:clamp(30px,4vw,52px);margin-top:40px;}
+  @media(min-width:920px){.grid{grid-template-columns:1fr 1fr;}}
+
+  .concept__meta{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin:0 2px 16px;}
+  .concept__meta .idx{font-family:var(--mono);font-size:13px;color:var(--muted);}
+  .concept__meta h2{font-family:var(--disp);font-weight:500;font-size:1.5rem;letter-spacing:-.01em;margin:0;}
+  .concept__meta .type{margin-left:auto;font-family:var(--mono);font-size:11px;letter-spacing:.03em;
+      color:var(--muted);border:1px solid var(--hair);border-radius:999px;padding:3px 9px;white-space:nowrap;}
+  .concept__idea{margin:0 2px 16px;color:var(--muted);font-size:.96rem;max-width:52ch;}
+
+  /* &mdash;&mdash;&mdash; browser frame &mdash;&mdash;&mdash; */
+  .frame{border:1px solid var(--hair);border-radius:12px;overflow:hidden;background:var(--panel);box-shadow:var(--shadow);}
+  .bar{height:34px;display:flex;align-items:center;gap:7px;padding:0 14px;border-bottom:1px solid var(--hair);background:var(--panel);}
+  .bar i{width:9px;height:9px;border-radius:50%;background:var(--hair);}
+  .bar span{margin-left:8px;font-family:var(--mono);font-size:11px;color:var(--muted);}
+
+  /* &mdash;&mdash;&mdash; shared mock shell &mdash;&mdash;&mdash; */
+  .mock{display:flex;flex-direction:column;min-height:452px;background:var(--paper);color:var(--ink);}
+  .mock__nav{flex:none;background:var(--bark);color:var(--cream);display:flex;align-items:center;
+      justify-content:space-between;gap:16px;padding:0 26px;height:56px;}
+  .mock__nav .brand{font-weight:600;font-size:15px;letter-spacing:.01em;}
+  .mock__nav .links{display:flex;gap:20px;font-size:12.5px;}
+  .mock__nav .links a{color:var(--cream);opacity:.82;text-decoration:none;}
+  .mock__nav .links a:hover{opacity:1;}
+  .mock__body{flex:1;padding:38px;display:flex;flex-direction:column;min-height:0;}
+  .mock__foot{flex:none;background:var(--bark);color:var(--cream);display:flex;align-items:center;
+      justify-content:space-between;gap:14px;padding:0 26px;height:48px;font-size:12px;}
+  .mock__foot .q{opacity:.9;}
+  .mock__foot .sig{opacity:.72;letter-spacing:.02em;}
+
+  .lead{color:var(--ink);}
+  .meas{max-width:46ch;}
+  .sub{color:var(--sub);}
+
+  /* pill / text links inside mocks */
+  .tlinks{display:flex;flex-wrap:wrap;gap:18px;font-size:13.5px;}
+  .tlinks a{color:var(--ink);text-decoration:none;text-underline-offset:4px;
+      border-bottom:1px solid var(--line);padding-bottom:2px;}
+  .tlinks a:hover{border-color:var(--ink);}
+
+  /* &mdash;&mdash;&mdash; 01 Directory (Newsreader) &mdash;&mdash;&mdash; */
+  .m1 .brand{font-family:var(--serif);font-weight:500;}
+  .m1 .mock__body{font-family:var(--serif);justify-content:center;gap:22px;padding:40px;}
+  .m1 .bio{font-size:19px;line-height:1.5;color:var(--ink);max-width:40ch;}
+  .m1 .dir{list-style:none;margin:0;padding:0;border-top:1px solid var(--line);max-width:34ch;}
+  .m1 .dir li{border-bottom:1px solid var(--line);}
+  .m1 .dir a{display:flex;justify-content:space-between;align-items:center;padding:12px 2px;
+      font-size:17px;text-decoration:none;color:var(--ink);}
+  .m1 .dir a span{color:var(--sub);transition:transform .18s ease;}
+  .m1 .dir a:hover span{transform:translateX(4px);color:var(--ink);}
+
+  /* &mdash;&mdash;&mdash; 02 Essay (Fraunces + Newsreader) &mdash;&mdash;&mdash; */
+  .m2 .brand{font-family:var(--disp);font-weight:500;}
+  .m2 .mock__body{justify-content:center;padding:44px 46px;}
+  .m2 .kicker{font-family:var(--disp);font-weight:500;font-size:30px;line-height:1.12;letter-spacing:-.015em;
+      margin:0 0 18px;max-width:18ch;}
+  .m2 .prose{font-family:var(--serif);font-size:17.5px;line-height:1.62;color:var(--ink);max-width:48ch;margin:0 0 22px;}
+  .m2 .prose em{font-style:italic;color:var(--sub);}
+
+  /* &mdash;&mdash;&mdash; 03 Split portrait (Libre Franklin) &mdash;&mdash;&mdash; */
+  .m3 .mock__body{display:grid;grid-template-columns:0.9fr 1.1fr;gap:30px;align-items:center;padding:32px;}
+  .m3 .photo{align-self:stretch;min-height:200px;border-radius:8px;
+      background:linear-gradient(150deg,#8a8f6f 0%,#6f6a58 42%,#413528 100%);
+      position:relative;overflow:hidden;}
+  .m3 .photo::after{content:"";position:absolute;inset:0;
+      background:radial-gradient(120% 80% at 30% 20%,rgba(255,255,255,.14),transparent 60%);}
+  .m3 h3{font-size:15px;font-weight:600;letter-spacing:.01em;margin:0 0 12px;}
+  .m3 p{font-size:15.5px;line-height:1.6;color:var(--ink);margin:0 0 20px;max-width:34ch;}
+
+  /* &mdash;&mdash;&mdash; 04 Centered (Instrument Serif + Hanken) &mdash;&mdash;&mdash; */
+  .m4 .brand{font-family:var(--inst);font-size:18px;font-weight:400;letter-spacing:.01em;}
+  .m4 .mock__body{align-items:center;justify-content:center;text-align:center;gap:20px;font-family:var(--grot);}
+  .m4 .hello{font-family:var(--inst);font-size:44px;line-height:1;letter-spacing:.01em;margin:0;}
+  .m4 .hello em{font-style:italic;}
+  .m4 .blurb{font-size:15.5px;line-height:1.62;color:var(--sub);max-width:42ch;margin:0;}
+  .m4 .tlinks{justify-content:center;}
+
+  /* &mdash;&mdash;&mdash; 05 Mono index card (IBM Plex Mono + Hanken) &mdash;&mdash;&mdash; */
+  .m5 .brand{font-family:var(--mono);font-weight:600;font-size:14px;letter-spacing:.02em;}
+  .m5 .mock__body{justify-content:center;gap:18px;padding:40px 44px;}
+  .m5 .name{font-family:var(--mono);font-size:22px;font-weight:600;letter-spacing:.01em;margin:0;}
+  .m5 .role{font-family:var(--mono);font-size:12.5px;letter-spacing:.02em;color:var(--sub);margin:6px 0 0;}
+  .m5 .div{font-family:var(--mono);color:var(--line);letter-spacing:.3em;font-size:12px;}
+  .m5 .blurb{font-family:var(--grot);font-size:15.5px;line-height:1.6;color:var(--ink);max-width:46ch;margin:0;}
+  .m5 .tlinks{font-family:var(--mono);font-size:12.5px;gap:14px;}
+  .m5 .tlinks a{border:1px solid var(--line);border-radius:5px;padding:6px 12px;}
+  .m5 .tlinks a:hover{border-color:var(--ink);background:rgba(56,32,25,.04);}
+
+  /* &mdash;&mdash;&mdash; 06 Card (Newsreader + Libre Franklin label) &mdash;&mdash;&mdash; */
+  .m6 .mock__body{justify-content:center;padding:40px;}
+  .m6 .label{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--sub);margin:0 0 14px;}
+  .m6 .card{border:1px solid var(--line);border-radius:10px;padding:28px 30px;background:rgba(255,255,255,.28);max-width:50ch;}
+  .m6 .card p{font-family:var(--serif);font-size:18px;line-height:1.6;color:var(--ink);margin:0 0 18px;}
+  .m6 .card .tlinks a{border-color:var(--line);}
+
+  /* &mdash;&mdash;&mdash; 07 Big type (Hanken Grotesk) &mdash;&mdash;&mdash; */
+  .m7 .brand{font-family:var(--grot);font-weight:700;}
+  .m7 .mock__body{justify-content:center;gap:20px;font-family:var(--grot);padding:40px 44px;}
+  .m7 .statement{font-weight:800;font-size:clamp(26px,4vw,38px);line-height:1.04;letter-spacing:-.02em;
+      margin:0;max-width:15ch;text-wrap:balance;}
+  .m7 .statement .fade{color:var(--sub);}
+  .m7 .sub2{font-size:15px;color:var(--sub);max-width:40ch;margin:0;}
+
+  /* &mdash;&mdash;&mdash; 08 Sidebar (brown rail = nav) &mdash;&mdash;&mdash; */
+  .m8{flex-direction:row;min-height:452px;}
+  .m8 .rail{flex:none;width:190px;background:var(--bark);color:var(--cream);display:flex;flex-direction:column;
+      padding:30px 24px;gap:26px;}
+  .m8 .rail .brand{font-family:var(--serif);font-weight:500;font-size:19px;line-height:1.15;}
+  .m8 .rail nav{display:flex;flex-direction:column;gap:12px;font-size:14px;}
+  .m8 .rail nav a{color:var(--cream);opacity:.82;text-decoration:none;}
+  .m8 .rail nav a:hover{opacity:1;}
+  .m8 .rail .sig{margin-top:auto;font-size:11.5px;opacity:.62;line-height:1.5;}
+  .m8 .main{flex:1;background:var(--paper);display:flex;flex-direction:column;justify-content:center;padding:44px 42px;}
+  .m8 .main p{font-family:var(--serif);font-size:18px;line-height:1.62;color:var(--ink);max-width:42ch;margin:0 0 8px;}
+  .m8 .main .now{margin-top:22px;font-size:13px;color:var(--sub);}
+
+  @media(max-width:520px){
+    .mock__body{padding:26px;}
+    .m3 .mock__body{grid-template-columns:1fr;}
+    .m3 .photo{min-height:120px;}
+    .m8 .rail{width:150px;padding:22px 18px;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="eyebrow">forrestbicker.com &middot; homepage study</p>
+  <div class="lede">
+    <h1>Eight ways to say the same thing, quietly.</h1>
+    <p>One set of words, one palette &mdash; a beige page with a dark-brown nav and footer &mdash; worked through eight minimal layouts. Each keeps the chrome light and lets the type do the work, in the spirit of your references.</p>
+    <p class="refs">Drawing from
+      <a href="https://www.cs.toronto.edu/~ilya/" target="_blank" rel="noopener">Ilya Sutskever</a>,
+      <a href="https://darioamodei.com/" target="_blank" rel="noopener">Dario Amodei</a>, and
+      <a href="https://www.forourposterity.com/" target="_blank" rel="noopener">For Our Posterity</a>.
+      Pick one &mdash; or mix a nav from one with a body from another &mdash; and I'll build it for real.</p>
+
+    <div class="palette" aria-label="Shared palette">
+      <span class="sw"><i style="background:#EFE9DC"></i>Paper &middot; #EFE9DC</span>
+      <span class="sw"><i style="background:#382019"></i>Bark &middot; #382019</span>
+      <span class="sw"><i style="background:#2C1E17"></i>Ink &middot; #2C1E17</span>
+      <span class="sw"><i style="background:#EAE1D0"></i>Cream &middot; #EAE1D0</span>
+    </div>
+  </div>
+
+  <hr class="rule">
+
+  <div class="grid">
+
+    <!-- 01 -->
+    <article class="concept">
+      <div class="concept__meta"><span class="idx">01</span><h2>Directory</h2><span class="type">Newsreader</span></div>
+      <p class="concept__idea">A short bio, then a clean list of places to go &mdash; as spare as Ilya's page. The list is the interface.</p>
+      <div class="frame"><div class="bar"><i></i><i></i><i></i><span>forrestbicker.com</span></div>
+        <div class="mock m1">
+          <div class="mock__nav"><span class="brand">Forrest Bicker</span><span class="links"><a href="#">R&eacute;sum&eacute;</a><a href="#">Projects</a></span></div>
+          <div class="mock__body">
+            <p class="bio">Quant researcher at Arrowstreet Capital. Math&nbsp;+&nbsp;CS at Harvey Mudd. Grew up in NYC.</p>
+            <ul class="dir">
+              <li><a href="#">Projects <span>&rarr;</span></a></li>
+              <li><a href="#">Writing <span>&rarr;</span></a></li>
+              <li><a href="#">R&eacute;sum&eacute; <span>&rarr;</span></a></li>
+              <li><a href="#">Contact <span>&rarr;</span></a></li>
+            </ul>
+          </div>
+          <div class="mock__foot"><span class="q">A world to win.</span><span class="sig">Forrest &#54217;&#54868; Bicker</span></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- 02 -->
+    <article class="concept">
+      <div class="concept__meta"><span class="idx">02</span><h2>Essay</h2><span class="type">Fraunces &middot; Newsreader</span></div>
+      <p class="concept__idea">The intro set like the opening of an essay: one narrow serif column, roomy leading, nothing else.</p>
+      <div class="frame"><div class="bar"><i></i><i></i><i></i><span>forrestbicker.com</span></div>
+        <div class="mock m2">
+          <div class="mock__nav"><span class="brand">Forrest Bicker</span><span class="links"><a href="#">R&eacute;sum&eacute;</a><a href="#">Projects</a></span></div>
+          <div class="mock__body">
+            <p class="kicker">Hi, I'm Forrest.</p>
+            <p class="prose">I do quant research at Arrowstreet Capital. Before that, I studied Math and Computer Science at Harvey Mudd College &mdash; and I grew up in New York City. <em>Occasionally I write things down.</em></p>
+            <div class="tlinks"><a href="#">R&eacute;sum&eacute;</a><a href="#">Projects</a><a href="#">Contact</a></div>
+          </div>
+          <div class="mock__foot"><span class="q">A world to win.</span><span class="sig">Forrest &#54217;&#54868; Bicker</span></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- 03 -->
+    <article class="concept">
+      <div class="concept__meta"><span class="idx">03</span><h2>Split portrait</h2><span class="type">Libre Franklin</span></div>
+      <p class="concept__idea">Your photo on the left, the intro and links on the right. Calm, modern, sans-serif &mdash; keeps the portrait you have.</p>
+      <div class="frame"><div class="bar"><i></i><i></i><i></i><span>forrestbicker.com</span></div>
+        <div class="mock m3">
+          <div class="mock__nav"><span class="brand">Forrest Bicker</span><span class="links"><a href="#">R&eacute;sum&eacute;</a><a href="#">Projects</a></span></div>
+          <div class="mock__body">
+            <div class="photo" role="img" aria-label="Portrait"></div>
+            <div>
+              <h3>Hi, I'm Forrest Bicker.</h3>
+              <p>I do quant research at Arrowstreet Capital. Before that, Math + CS at Harvey Mudd &mdash; and I grew up in NYC.</p>
+              <div class="tlinks"><a href="#">R&eacute;sum&eacute;</a><a href="#">Projects</a></div>
+            </div>
+          </div>
+          <div class="mock__foot"><span class="q">A world to win.</span><span class="sig">Forrest &#54217;&#54868; Bicker</span></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- 04 -->
+    <article class="concept">
+      <div class="concept__meta"><span class="idx">04</span><h2>Centered</h2><span class="type">Instrument Serif &middot; Hanken</span></div>
+      <p class="concept__idea">Everything centered in a tight measure, anchored by one elegant serif greeting. Confident and still.</p>
+      <div class="frame"><div class="bar"><i></i><i></i><i></i><span>forrestbicker.com</span></div>
+        <div class="mock m4">
+          <div class="mock__nav"><span class="brand">Forrest Bicker</span><span class="links"><a href="#">R&eacute;sum&eacute;</a><a href="#">Projects</a></span></div>
+          <div class="mock__body">
+            <p class="hello"><em>Hi, I'm Forrest.</em></p>
+            <p class="blurb">I do quant research at Arrowstreet Capital. Before that, I studied Math and Computer Science at Harvey Mudd College and grew up in NYC.</p>
+            <div class="tlinks"><a href="#">R&eacute;sum&eacute;</a><a href="#">Projects</a><a href="#">Contact</a></div>
+          </div>
+          <div class="mock__foot"><span class="q">A world to win.</span><span class="sig">Forrest &#54217;&#54868; Bicker</span></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- 05 -->
+    <article class="concept">
+      <div class="concept__meta"><span class="idx">05</span><h2>Mono index card</h2><span class="type">IBM Plex Mono &middot; Hanken</span></div>
+      <p class="concept__idea">A monospace nameplate &mdash; a nod to your current type, tuned for a quant. Structured, technical, legible.</p>
+      <div class="frame"><div class="bar"><i></i><i></i><i></i><span>forrestbicker.com</span></div>
+        <div class="mock m5">
+          <div class="mock__nav"><span class="brand">forrest_bicker</span><span class="links"><a href="#">r&eacute;sum&eacute;</a><a href="#">projects</a></span></div>
+          <div class="mock__body">
+            <div>
+              <p class="name">Forrest Bicker</p>
+              <p class="role">Quant Researcher &middot; Arrowstreet Capital</p>
+            </div>
+            <p class="div">&mdash; &mdash; &mdash;</p>
+            <p class="blurb">I do quant research at Arrowstreet Capital. Before that, Math + CS at Harvey Mudd &mdash; and I grew up in NYC.</p>
+            <div class="tlinks"><a href="#">r&eacute;sum&eacute;</a><a href="#">projects</a><a href="#">contact</a></div>
+          </div>
+          <div class="mock__foot"><span class="q">A world to win.</span><span class="sig">Forrest &#54217;&#54868; Bicker</span></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- 06 -->
+    <article class="concept">
+      <div class="concept__meta"><span class="idx">06</span><h2>Framed card</h2><span class="type">Newsreader &middot; Libre Franklin</span></div>
+      <p class="concept__idea">Your current card, refined: the intro inside a hairline frame on the beige &mdash; no shadow, no fuss.</p>
+      <div class="frame"><div class="bar"><i></i><i></i><i></i><span>forrestbicker.com</span></div>
+        <div class="mock m6">
+          <div class="mock__nav"><span class="brand">Forrest Bicker</span><span class="links"><a href="#">R&eacute;sum&eacute;</a><a href="#">Projects</a></span></div>
+          <div class="mock__body">
+            <p class="label">About</p>
+            <div class="card">
+              <p>Hi, I'm Forrest Bicker. I do quant research at Arrowstreet Capital. Before that, I studied Math and Computer Science at Harvey Mudd College and grew up in NYC.</p>
+              <div class="tlinks"><a href="#">R&eacute;sum&eacute;</a><a href="#">Projects</a></div>
+            </div>
+          </div>
+          <div class="mock__foot"><span class="q">A world to win.</span><span class="sig">Forrest &#54217;&#54868; Bicker</span></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- 07 -->
+    <article class="concept">
+      <div class="concept__meta"><span class="idx">07</span><h2>Big statement</h2><span class="type">Hanken Grotesk</span></div>
+      <p class="concept__idea">One bold line does the talking; everything else stays small. Editorial and direct &mdash; no portrait, no card.</p>
+      <div class="frame"><div class="bar"><i></i><i></i><i></i><span>forrestbicker.com</span></div>
+        <div class="mock m7">
+          <div class="mock__nav"><span class="brand">Forrest Bicker</span><span class="links"><a href="#">R&eacute;sum&eacute;</a><a href="#">Projects</a></span></div>
+          <div class="mock__body">
+            <p class="statement">Quant researcher at Arrowstreet Capital. <span class="fade">Math + CS, Harvey Mudd. From NYC.</span></p>
+            <p class="sub2">I build models for a living and write about it now and then.</p>
+            <div class="tlinks"><a href="#">R&eacute;sum&eacute;</a><a href="#">Projects</a><a href="#">Contact</a></div>
+          </div>
+          <div class="mock__foot"><span class="q">A world to win.</span><span class="sig">Forrest &#54217;&#54868; Bicker</span></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- 08 -->
+    <article class="concept">
+      <div class="concept__meta"><span class="idx">08</span><h2>Sidebar</h2><span class="type">Libre Franklin &middot; Newsreader</span></div>
+      <p class="concept__idea">A slim brown rail holds the nav and name; the beige field holds the words. The rail <em>is</em> the nav.</p>
+      <div class="frame"><div class="bar"><i></i><i></i><i></i><span>forrestbicker.com</span></div>
+        <div class="mock m8">
+          <aside class="rail">
+            <div class="brand">Forrest<br>Bicker</div>
+            <nav><a href="#">About</a><a href="#">Projects</a><a href="#">R&eacute;sum&eacute;</a><a href="#">Contact</a></nav>
+            <div class="sig">A world to win.<br>Forrest &#54217;&#54868; Bicker</div>
+          </aside>
+          <div class="main">
+            <p>Hi, I'm Forrest Bicker. I do quant research at Arrowstreet Capital. Before that, I studied Math and Computer Science at Harvey Mudd College and grew up in NYC.</p>
+            <p class="now">Now &mdash; building systematic strategies in New York.</p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</div>
+</body>
+</html>
