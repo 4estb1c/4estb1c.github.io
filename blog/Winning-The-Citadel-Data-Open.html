@@ -11,8 +11,17 @@
   <link rel="stylesheet" href="../Post-Template.css" media="screen">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap">
   <style>
-    .u-section-1 .u-text-1 { font-family: 'Newsreader', Georgia, 'Times New Roman', serif !important; }
     .u-post-content, .u-post-content p, .u-post-content li, .u-post-content span, .u-post-content a { font-family: 'Newsreader', Georgia, 'Times New Roman', serif !important; }
+    .fb-post { display: flex; align-items: flex-start; text-align: left; }
+    .fb-rail { flex: none; width: 220px; padding: 48px 26px; }
+    .fb-back { display: block; font-family: ui-monospace, 'IBM Plex Mono', monospace; font-size: .78rem; color: #8a7968; text-decoration: none; margin: 0 0 26px; }
+    .fb-back:hover { color: #2c1e17; }
+    .fb-title { font-family: 'Newsreader', Georgia, 'Times New Roman', serif !important; font-size: 1.35rem !important; font-weight: 600 !important; line-height: 1.25 !important; margin: 0 0 22px !important; color: #2c1e17 !important; }
+    .fb-main { flex: 1; min-width: 0; padding: 48px clamp(28px, 4vw, 60px) 90px; max-width: 760px; }
+    .fb-main .u-post-content { margin: 0 !important; }
+    .fb-lede { font-size: 1.1rem !important; }
+    .fb-sec { font-family: 'Newsreader', Georgia, 'Times New Roman', serif !important; font-weight: 600 !important; font-size: 1.4rem !important; margin: 1.8rem 0 .7rem !important; color: #2c1e17; }
+    @media (max-width: 800px) { .fb-post { flex-direction: column; } .fb-rail { width: auto; box-sizing: border-box; border-bottom: 1px solid rgba(44, 30, 23, .16); padding: 28px 22px; } .fb-main { padding: 28px 22px 70px; max-width: none; } }
     .u-header .u-sheet-1 { display: flex; align-items: center; flex-wrap: wrap; gap: 2px 16px; }
     .u-header .u-sheet-1::before, .u-header .u-sheet-1::after { display: none; }
     .u-header .u-logo { position: static !important; margin: 0 !important; }
@@ -23,7 +32,7 @@
     .fb-nav a { color: #eae1d0; text-decoration: none; opacity: .92; }
     .fb-nav a:hover { opacity: 1; text-decoration: underline; text-underline-offset: 4px; }
     .u-footer .u-text-2 { font-family: 'Newsreader', Georgia, serif !important; }
-    @media (max-width: 575px) { .fb-nav { margin-left: 0; width: 100%; gap: 1.4rem; } }
+    @media (max-width: 575px) { .fb-nav { margin-left: 0; width: 100%; gap: 1.4rem; justify-content: flex-end; } }
   </style>
   <script class="u-script" type="text/javascript" src="../jquery.js" defer=""></script>
   <script class="u-script" type="text/javascript" src="../nicepage.js" defer=""></script>
@@ -89,21 +98,16 @@
   </header>
   <section class="u-align-center u-clearfix u-custom-color-6 u-section-1" id="sec-2271">
     <div class="u-clearfix u-sheet u-sheet-1"><!--post_details--><!--post_details_options_json--><!--{"source":""}--><!--/post_details_options_json--><!--blog_post-->
-      <div class="u-container-style u-expanded-width u-post-details u-post-details-1">
-        <div class="u-container-layout u-container-layout-1">
-          <div class="blog-title u-container-style u-expanded-width-xs u-group u-shape-rectangle u-group-1">
-            <div class="u-container-layout u-container-layout-2">
-              <div class="u-border-4 u-border-black u-expanded-width u-line u-line-horizontal u-line-1"></div><!--blog_post_header-->
-              <h2 class="operator-mono u-blog-control u-custom-font u-font-open-sans u-text u-text-1">The Citadel Data Open Championship</h2><!--/blog_post_header-->
-              <div class="u-border-4 u-border-black u-expanded-width u-line u-line-horizontal u-line-2"></div><!--blog_post_content-->
-              <div class="u-align-justify u-blog-control u-post-content u-text u-text-2 fr-view"></span></p><img class="u-image fb-image fb-maxwidth-80" src="../assets/dataopenlogos.webp" alt="">
-                <p id="isPasted"><span style="font-size: 0.875rem;">Last week three friends and I competed in the 2022 Citadel Data Open Championship, the "largest and most prestigious university-level data science competition in the world". Yesterday, our team was excited to be named the competition's champions.</span></p><img class="u-image fb-image fb-maxwidth-50" src="../images/dataopenchampions.webp" alt="Forrest Bicker Eszter Morvay">
-                <!--blog_post_deleted_content-->
-                <h1 class="operator-mono u-blog-control u-custom-font u-font-open-sans u-text u-text-1" style="height: 0px; overflow: hidden;">I am greatful to Eszter Morvay for the support she provided. Eszter Morvay.</h1><!--/blog_post_deleted_content-->
-                <p id="isPasted"><span style="font-size: 1.5rem;">Acknowledgements</span></p>
+      <div class="fb-post">
+        <aside class="fb-rail">
+          <a target="_self" class="fb-back" href="../blog">&larr; Projects</a>
+          <h1 class="fb-title">The Citadel Data Open Championship</h1>
+        </aside>
+        <div class="fb-main">
+          <div class="u-post-content u-text fr-view"><img class="u-image fb-image fb-maxwidth-80" src="../assets/dataopenlogos.webp" alt="">
+                <p class="fb-lede"><span style="font-size: 0.875rem;">Last week three friends and I competed in the 2022 Citadel Data Open Championship, the "largest and most prestigious university-level data science competition in the world". Yesterday, our team was excited to be named the competition's champions.</span></p><img class="u-image fb-image fb-maxwidth-50" src="../images/dataopenchampions.webp" alt="Forrest Bicker Eszter Morvay">
+                <h3 class="fb-sec">Acknowledgements</h3>
                 <p><span style="font-size: 0.875rem;">Thanks to my teammates David Chen, Milo Knell, and Alan Wu for making the grind a fun experience, along with our friend Sahil Rane who managed to snag the runner up title. Special thanks to Professor Linus Yamane who taught us many of the techniques we used in our investigation and inspired our appreciation for traditional statistical modeling. We also appreciate our research PI Professor Lucas Bang for hosting us in his lab during the competition. Thanks to Citadel and Correlation One for organizing the events! We had fun and are excited for what lies ahead.</span></p>
-              </div><!--/blog_post_content-->
-            </div>
           </div>
         </div>
       </div><!--/blog_post--><!--/post_details-->

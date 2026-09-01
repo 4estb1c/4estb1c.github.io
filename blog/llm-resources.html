@@ -17,7 +17,7 @@
     .fb-rail { flex: none; width: 220px; padding: 48px 26px; }
     .fb-back { display: block; font-family: ui-monospace, 'IBM Plex Mono', monospace; font-size: .78rem; color: #8a7968; text-decoration: none; margin: 0 0 26px; }
     .fb-back:hover { color: #2c1e17; }
-    .fb-title { font-family: 'Newsreader', Georgia, 'Times New Roman', serif !important; font-size: 1.35rem; font-weight: 600; line-height: 1.25; margin: 0 0 22px; color: #2c1e17; }
+    .fb-title { font-family: 'Newsreader', Georgia, 'Times New Roman', serif !important; font-size: 1.35rem !important; font-weight: 600 !important; line-height: 1.25 !important; margin: 0 0 22px !important; color: #2c1e17 !important; }
     .fb-jump { list-style: none; margin: 0; padding: 0; font-size: .92rem; }
     .fb-jump li { margin-bottom: 9px; }
     .fb-jump a { color: #8a7968; text-decoration: none; }
@@ -28,6 +28,7 @@
     .fb-sec { font-family: 'Newsreader', Georgia, 'Times New Roman', serif !important; font-weight: 600 !important; font-size: 1.4rem !important; margin: 1.8rem 0 .7rem !important; color: #2c1e17; }
     .fb-main .fb-sec:first-of-type { margin-top: 0 !important; }
     .fb-subhead { display: block; font-family: ui-monospace, 'IBM Plex Mono', monospace; font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; color: #8a7968; margin: 1.3rem 0 .5rem; }
+    .fb-main li.fb-sub { list-style: none; margin-left: -12px; }
     @media (max-width: 800px) { .fb-post { flex-direction: column; } .fb-rail { width: auto; box-sizing: border-box; border-bottom: 1px solid rgba(44, 30, 23, .16); padding: 28px 22px; } .fb-main { padding: 28px 22px 70px; max-width: none; } }
     .u-header .u-sheet-1 { display: flex; align-items: center; flex-wrap: wrap; gap: 2px 16px; }
     .u-header .u-sheet-1::before, .u-header .u-sheet-1::after { display: none; }
@@ -39,7 +40,7 @@
     .fb-nav a { color: #eae1d0; text-decoration: none; opacity: .92; }
     .fb-nav a:hover { opacity: 1; text-decoration: underline; text-underline-offset: 4px; }
     .u-footer .u-text-2 { font-family: 'Newsreader', Georgia, serif !important; }
-    @media (max-width: 575px) { .fb-nav { margin-left: 0; width: 100%; gap: 1.4rem; } }
+    @media (max-width: 575px) { .fb-nav { margin-left: 0; width: 100%; gap: 1.4rem; justify-content: flex-end; } }
   </style>
   <style>
     /* Resource list: styles factored out of repeated per-element inline attributes */
@@ -162,10 +163,10 @@
                   <li>RoBERTa (Liu 2019, FAIR) - <a href="https://arxiv.org/abs/1907.11692">RoBERTa: A Robustly Optimized BERT Pretraining Approach</a>&nbsp;</li>
                   <li>ALBERT (Lan 2019, Google) - <a href="https://arxiv.org/abs/1909.11942">ALBERT: A Lite BERT for Self-supervised Learning of Language Representation</a>&nbsp;</li>
                   <li>DistilBERT (Sanh 2019, Hugging Face) - <a href="https://arxiv.org/abs/1910.01108">DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter</a>&nbsp;</li>
-                  <li>| Distilation (Hinton 2015, Google) - <a href="https://arxiv.org/abs/1503.02531">Distilling the Knowledge in a Neural Network</a>&nbsp;</li>
+                  <li class="fb-sub">| Distilation (Hinton 2015, Google) - <a href="https://arxiv.org/abs/1503.02531">Distilling the Knowledge in a Neural Network</a>&nbsp;</li>
                   <li>Sparse models (Gupta 2017, Google) - <a href="https://arxiv.org/abs/1710.01878">To prune, or not to prune: exploring the efficacy of pruning for model compression</a>&nbsp;</li>
-                  <li>| Optimal Brain Damage (Le Cun 1989, AT&T Bell Labs) - <a href="https://proceedings.neurips.cc/paper/1989/hash/6c9882bbac1c7093bd25041881277658-Abstract.html">Optimal Brain Damage</a>&nbsp;</li>
-                  <li>| Magnitude Pruning (Han 2015, Stanford, NVIDIA) - <a href="https://arxiv.org/abs/1506.02626">Learning both Weights and Connections for Efficient Neural Networks</a>&nbsp;</li>
+                  <li class="fb-sub">| Optimal Brain Damage (Le Cun 1989, AT&T Bell Labs) - <a href="https://proceedings.neurips.cc/paper/1989/hash/6c9882bbac1c7093bd25041881277658-Abstract.html">Optimal Brain Damage</a>&nbsp;</li>
+                  <li class="fb-sub">| Magnitude Pruning (Han 2015, Stanford, NVIDIA) - <a href="https://arxiv.org/abs/1506.02626">Learning both Weights and Connections for Efficient Neural Networks</a>&nbsp;</li>
                 </ul>
 
                 <h3 class="fb-sec" id="s3">3. Scaling</h3>
@@ -176,8 +177,8 @@
                   <li>Groking (Power 2022, OpenAI) - <a href="https://arxiv.org/pdf/2201.02177">Grokking: Generalization Beyond Overfitting On Small Algorithmic Datasets</a>&nbsp;</li>
                   <li>Scaling Laws (Kaplan 2020, OpenAI) - <a href="https://arxiv.org/abs/2001.08361">Scaling Laws for Neural Language Models</a>&nbsp;</li>
                   <li>mu-p (Yang 2022, Microsoft) - <a href="https://arxiv.org/abs/2203.03466">Tensor Programs V: Tuning Large Neural Networks via Zero-Shot Hyperparameter Transfer</a>&nbsp;</li>
-                  <li><a href="https://blog.eleuther.ai/mutransfer/">| The Practitioner's Guide to the Maximal Update Parameterization</a>&nbsp;</li>
-                  <li><a href="https://lilianweng.github.io/posts/2022-09-08-ntk/">| Some Math behind Neural Tangent Kernel</a>&nbsp;</li>
+                  <li class="fb-sub"><a href="https://blog.eleuther.ai/mutransfer/">| The Practitioner's Guide to the Maximal Update Parameterization</a>&nbsp;</li>
+                  <li class="fb-sub"><a href="https://lilianweng.github.io/posts/2022-09-08-ntk/">| Some Math behind Neural Tangent Kernel</a>&nbsp;</li>
                   <li>Chinchilla (Hoffmann 2022, DeepMind) - <a href="https://arxiv.org/abs/2203.15556">Training Compute-Optimal Large Language Model</a>&nbsp;</li>
                   <li><a href="https://howtoscalenn.github.io/">How to Scale</a>&nbsp;</li>
                 </ul>
@@ -185,15 +186,15 @@
                 <ul>
                   <li>T5 (Raffel 2019, Google) - <a href="https://arxiv.org/abs/1910.10683">Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer</a>&nbsp;</li>
                   <li>GPT3 (Brown 2020, OpenAI) - <a href="https://arxiv.org/abs/2005.14165">Language Models are Few-Shot Learners</a>&nbsp;</li>
-                  <li>| Locally Banded Sparse Attention (Child 2019, OpenAI) - <a href="https://arxiv.org/abs/1904.10509">Generating Long Sequences with Sparse Transformers</a>&nbsp;</li>
-                  <li>| Gradient Noise Scale (McCandlish 2018, OpenAI) - <a href="https://arxiv.org/abs/1812.06162">An Empirical Model of Large-Batch Training</a>&nbsp;</li>
+                  <li class="fb-sub">| Locally Banded Sparse Attention (Child 2019, OpenAI) - <a href="https://arxiv.org/abs/1904.10509">Generating Long Sequences with Sparse Transformers</a>&nbsp;</li>
+                  <li class="fb-sub">| Gradient Noise Scale (McCandlish 2018, OpenAI) - <a href="https://arxiv.org/abs/1812.06162">An Empirical Model of Large-Batch Training</a>&nbsp;</li>
                   <li>Codex (Chen 2019, OpenAI) - <a href="https://arxiv.org/abs/2107.03374">Evaluating Large Language Models Trained on Code</a>&nbsp;</li>
                 </ul>
                 <span class="fb-subhead">3.2 Approximate Attention Graveyard</span>
                 <ul>
                   <li>Transformer-XL (Dai 2019) - <a href="https://arxiv.org/abs/1901.02860">Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context</a>&nbsp;</li>
-                  <li><a href="">| Effective Receptive Field</a> (Khandelwal 2018)&nbsp;</li>
-                  <li><a href="">| Character-Level Transformers</a> (Al-Rfou 2018)&nbsp;</li>
+                  <li class="fb-sub"><a href="">| Effective Receptive Field</a> (Khandelwal 2018)&nbsp;</li>
+                  <li class="fb-sub"><a href="">| Character-Level Transformers</a> (Al-Rfou 2018)&nbsp;</li>
                   <li>Longformer (Beltagy 2020, AI2) - <a href="https://arxiv.org/abs/2004.05150">Longformer: The Long-Document Transformer</a>&nbsp;</li>
                   <li>Reformer (Kitaev 2020, Google) - <a href="https://arxiv.org/abs/2001.04451">Reformer: The Efficient Transformer</a>&nbsp;</li>
                   <li>BigBird (Zaheer 2020, Google) - <a href="https://arxiv.org/abs/2007.14062">Big Bird: Transformers for Longer Sequences</a>&nbsp;</li>
@@ -262,21 +263,21 @@
                 <ul>
                   <li>Engram (Cheng 2025, Deepseek) - <a href="https://arxiv.org/pdf/2601.07372">Conditional Memory via Scalable Lookup: A New Axis of Sparsity for Large Language Models</a>&nbsp;</li>
                   <li>Attention Residuals (Chen 2026, Moonshot AI) - <a href="https://arxiv.org/abs/2603.15031">Attention Residuals</a>&nbsp;</li>
-                  <li>| mHC: Manifold-Constrained Hyper-Connections (Xie 2025, Deepseek) - <a href="https://arxiv.org/abs/2512.24880">mHC: Manifold-Constrained Hyper-Connections</a>&nbsp;</li>
+                  <li class="fb-sub">| mHC: Manifold-Constrained Hyper-Connections (Xie 2025, Deepseek) - <a href="https://arxiv.org/abs/2512.24880">mHC: Manifold-Constrained Hyper-Connections</a>&nbsp;</li>
                 </ul>
 
                 <h3 class="fb-sec" id="s7">ML Systems</h3>
                 <ul>
                   <li>FlashAttention (Dao 2022, Stanford) - <a href="https://arxiv.org/abs/2205.14135">FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness</a>&nbsp;</li>
-                  <li>| <a href="https://docs.nvidia.com/cuda/cuda-programming-guide/01-introduction/programming-model.html">CUDA Programming Guide</a> (NVIDIA)&nbsp;</li>
-                  <li>| <a href="https://maharshi.bearblog.dev/optimizing-softmax-cuda/">Learning CUDA by optimizing softmax</a> (Pandya 2025)&nbsp;</li>
-                  <li>| <a href="https://damek.github.io/random/basic-idea-behind-flash-attention/">Basic idea behind flash attention</a>&nbsp;</li>
-                  <li>| <a href="https://horace.io/brrr_intro.html">Making Deep Learning Go Brrrr From First Principles</a> (He 2022)&nbsp;</li>
-                  <li>| <a href="https://www.thonking.ai/p/what-shapes-do-matrix-multiplications">What Shapes Do Matrix Multiplications Like?</a> (He 2024)&nbsp;</li>
-                  <li>| <a href="https://docs.nvidia.com/deeplearning/performance/index.html">NVIDIA Deep Learning Performance</a> (NVIDIA)&nbsp;</li>
-                  <li>| <a href="https://www.youtube.com/watch?v=139UPjoq7Kw">Building Machine Learning Systems for a Trillion Trillion FLOPs</a> (He 2024)&nbsp;</li>
-                  <li>| <a href="https://damek.github.io/random/basic-facts-about-gpus/">Basic facts about GPUs</a>&nbsp;</li>
-                  <li>| <a href="https://docs.nvidia.com/deeplearning/performance/dl-performance-matrix-multiplication/index.html#tile-quant">Tips for Optimizing GPU Performance Using Tensor Cores</a> (NVIDIA)&nbsp;</li>
+                  <li class="fb-sub">| <a href="https://docs.nvidia.com/cuda/cuda-programming-guide/01-introduction/programming-model.html">CUDA Programming Guide</a> (NVIDIA)&nbsp;</li>
+                  <li class="fb-sub">| <a href="https://maharshi.bearblog.dev/optimizing-softmax-cuda/">Learning CUDA by optimizing softmax</a> (Pandya 2025)&nbsp;</li>
+                  <li class="fb-sub">| <a href="https://damek.github.io/random/basic-idea-behind-flash-attention/">Basic idea behind flash attention</a>&nbsp;</li>
+                  <li class="fb-sub">| <a href="https://horace.io/brrr_intro.html">Making Deep Learning Go Brrrr From First Principles</a> (He 2022)&nbsp;</li>
+                  <li class="fb-sub">| <a href="https://www.thonking.ai/p/what-shapes-do-matrix-multiplications">What Shapes Do Matrix Multiplications Like?</a> (He 2024)&nbsp;</li>
+                  <li class="fb-sub">| <a href="https://docs.nvidia.com/deeplearning/performance/index.html">NVIDIA Deep Learning Performance</a> (NVIDIA)&nbsp;</li>
+                  <li class="fb-sub">| <a href="https://www.youtube.com/watch?v=139UPjoq7Kw">Building Machine Learning Systems for a Trillion Trillion FLOPs</a> (He 2024)&nbsp;</li>
+                  <li class="fb-sub">| <a href="https://damek.github.io/random/basic-facts-about-gpus/">Basic facts about GPUs</a>&nbsp;</li>
+                  <li class="fb-sub">| <a href="https://docs.nvidia.com/deeplearning/performance/dl-performance-matrix-multiplication/index.html#tile-quant">Tips for Optimizing GPU Performance Using Tensor Cores</a> (NVIDIA)&nbsp;</li>
                   <li>FlashAttention2 (Dao 2023, Stanford) - <a href="https://arxiv.org/abs/2307.08691">FlashAttention-2: Faster Attention with Better Parallelism and Work Partitioning</a>&nbsp;</li>
                   <li>FlashAttention3 (Shah 2024, Stanford) - <a href="https://arxiv.org/abs/2407.08608">FlashAttention-3: Fast and Accurate Attention with Asynchrony and Low-precision</a>&nbsp;</li>
                 </ul>
@@ -301,8 +302,8 @@
                 <ul>
                   <li>Paged Attention / vLLM (Kwon 2023, Berkeley et al.) - <a href="https://arxiv.org/abs/2309.06180">Efficient Memory Management for Large Language Model Serving with PagedAttention</a>&nbsp;</li>
                   <li>Deepseek-V2: Multi-Head Latent Attention (Liu 2024, DeepSeek) - <a href="https://arxiv.org/abs/2405.04434">DeepSeek-V2: A Strong, Economical, and Efficient Mixture-of-Experts Language Model</a>&nbsp;</li>
-                  <li>| <a href="https://youtu.be/Y-o545eYjXM">How Attention Got So Efficient</a>&nbsp;</li>
-                  <li>| <a href="https://planetbanatt.net/articles/mla.html">Understanding Multi-Head Latent Attention</a>&nbsp;</li>
+                  <li class="fb-sub">| <a href="https://youtu.be/Y-o545eYjXM">How Attention Got So Efficient</a>&nbsp;</li>
+                  <li class="fb-sub">| <a href="https://planetbanatt.net/articles/mla.html">Understanding Multi-Head Latent Attention</a>&nbsp;</li>
                   <li>DeepSeek-V3.2: DSA Lightning Indexer (Liu 2025, DeepSeek) - <a href="https://arxiv.org/abs/2512.02556">DeepSeek-V3.2: Pushing the Frontier of Open Large Language Models</a>&nbsp;</li>
                 </ul>
                 <span class="fb-subhead">Deployment</span>
@@ -310,7 +311,7 @@
                   <li>Orca (Yu) - <a href="https://www.usenix.org/system/files/osdi22-yu.pdf">Orca: A Distributed Serving System for Transformer-Based Generative Models</a>&nbsp;</li>
                   <li><a href="https://arxiv.org/abs/2404.14294">Survey of efficient inference for LLMs</a> (Zhou 2024)&nbsp;</li>
                   <li>Speculative Decoding (Leviathan 2022, Google) - <a href="https://arxiv.org/abs/2211.17192">Fast Inference from Transformers via Speculative Decoding</a>&nbsp;</li>
-                  <li>| Looking back on speculative decoding (Google) - <a href="https://research.google/blog/looking-back-at-speculative-decoding//">Looking back on speculative decoding</a>&nbsp;</li>
+                  <li class="fb-sub">| Looking back on speculative decoding (Google) - <a href="https://research.google/blog/looking-back-at-speculative-decoding//">Looking back on speculative decoding</a>&nbsp;</li>
                   <li>Speculative speculative decoding (Kumar 2026, Google) - <a href="https://arxiv.org/abs/2603.03251">Speculative Speculative Decoding</a>&nbsp;</li>
                 </ul>
 
@@ -332,10 +333,10 @@
                   <li>Shampoo (Gupta 2018, Google) - <a href="https://arxiv.org/abs/1802.09568">Shampoo: Preconditioned Stochastic Tensor Optimization</a>&nbsp;</li>
                   <li>Lion (Chen 2023, Google) - <a href="https://arxiv.org/abs/2302.06675">Symbolic Discovery of Optimization Algorithms</a>&nbsp;</li>
                   <li>Muon (Jordan 2024) - <a href="https://kellerjordan.github.io/posts/muon/">Muon: An Optimizer for Hidden Layers in Neural Networks</a>&nbsp;</li>
-                  <li><a href="https://arxiv.org/abs/2502.16982">| Muon is Scalable for LLM Training</a>&nbsp;</li>
-                  <li>| Newton-Schulz - <a href="https://www.emergentmind.com/topics/iterative-newton-schulz-orthogonalization">Iterative Newton-Schulz Orthogonalization</a>&nbsp;</li>
-                  <li>| Deriving Muon (Bernstein 2025) - <a href="https://jeremybernste.in/writing/deriving-muon">Deriving Muon</a>&nbsp;</li>
-                  <li>| Whitening optimizer (Frans 2025, BAIR) - <a href="https://kvfrans.com/matrix-whitening/">What really matters in matrix-whitening optimizers?</a>&nbsp;</li>
+                  <li class="fb-sub"><a href="https://arxiv.org/abs/2502.16982">| Muon is Scalable for LLM Training</a>&nbsp;</li>
+                  <li class="fb-sub">| Newton-Schulz - <a href="https://www.emergentmind.com/topics/iterative-newton-schulz-orthogonalization">Iterative Newton-Schulz Orthogonalization</a>&nbsp;</li>
+                  <li class="fb-sub">| Deriving Muon (Bernstein 2025) - <a href="https://jeremybernste.in/writing/deriving-muon">Deriving Muon</a>&nbsp;</li>
+                  <li class="fb-sub">| Whitening optimizer (Frans 2025, BAIR) - <a href="https://kvfrans.com/matrix-whitening/">What really matters in matrix-whitening optimizers?</a>&nbsp;</li>
                   <li>MuonClip (Kimi K2) (Bai 2025, Moonshot AI) - <a href="https://arxiv.org/abs/2507.20534">Kimi K2: Open Agentic Intelligence</a>&nbsp;</li>
                 </ul>
 
@@ -345,7 +346,7 @@
                   <li>Unembedding Tying (Inan 2016, Stanford NLP) - <a href="https://arxiv.org/abs/1611.01462">Tying Word Vectors and Word Classifiers: A Loss Framework for Language Modeling</a>&nbsp;</li>
                   <li>Unembedding Tying (Press 2016, UTel-Aviv) - <a href="https://arxiv.org/abs/1608.05859">Using the Output Embedding to Improve Language Models</a>&nbsp;</li>
                   <li>RoPE (Su 2021) - <a href="https://arxiv.org/abs/2104.09864">RoFormer: Enhanced Transformer with Rotary Position Embedding</a>&nbsp;</li>
-                  <li><a href="https://huggingface.co/blog/designing-positional-encoding">| You could have designed state of the art positional encoding</a>&nbsp;</li>
+                  <li class="fb-sub"><a href="https://huggingface.co/blog/designing-positional-encoding">| You could have designed state of the art positional encoding</a>&nbsp;</li>
                   <li>Reasoning is fake (Pfau 2024, NYU) - <a href="https://arxiv.org/abs/2404.15758">Let's Think Dot by Dot: Hidden Computation in Transformer Language Models</a>&nbsp;</li>
                   <li>Model Nondeterminism - <a href="https://thinkingmachines.ai/blog/defeating-nondeterminism-in-llm-inference/">Defeating Nondeterminism in LLM Inference</a>&nbsp;</li>
                   <li>Streaming LLM Attention Sinks - <a href="">Efficient Streaming Language Models with Attention Sinks</a>&nbsp;</li>

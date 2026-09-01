@@ -13,14 +13,15 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap">
   <style>
     .fb-contact { min-height: 60vh; display: flex; align-items: center; justify-content: center; padding: 40px 24px 64px; font-family: 'Newsreader', Georgia, 'Times New Roman', serif; color: #2c1e17; }
-    .fb-card { border: 1px solid rgba(44, 30, 23, .2); border-radius: 12px; padding: clamp(34px, 5vw, 56px); background: rgba(255, 255, 255, .32); max-width: 30rem; width: 100%; }
-    .fb-card h1 { font-weight: 600; font-size: 1.9rem !important; line-height: 1.3; margin: 0 0 1.4rem; }
+    .fb-card { border: 1px solid rgba(44, 30, 23, .2); border-radius: 12px; background: rgba(255, 255, 255, .32); width: 380px; max-width: 100%; aspect-ratio: 1.75; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; padding: 0 30px; }
+    .fb-card h1 { font-weight: 600; font-size: 1.5rem !important; line-height: 1.2; margin: 0 0 .9rem; }
     .fb-rows { list-style: none; margin: 0; padding: 0; }
-    .fb-rows li { border-top: 1px solid rgba(44, 30, 23, .14); padding: .9rem 0; display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; }
+    .fb-rows li { border-top: 1px solid rgba(44, 30, 23, .14); padding: .55rem 0; display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; }
     .fb-rows li:last-child { border-bottom: 1px solid rgba(44, 30, 23, .14); }
-    .fb-rows .label { font-family: ui-monospace, 'IBM Plex Mono', monospace; font-size: .82rem; letter-spacing: .04em; text-transform: uppercase; color: #8a7968; }
-    .fb-rows a { color: #2c1e17; text-decoration: none; font-size: 1.1rem !important; border-bottom: 1px solid rgba(44, 30, 23, .28); padding-bottom: 2px; }
+    .fb-rows .label { font-family: ui-monospace, 'IBM Plex Mono', monospace; font-size: .78rem; letter-spacing: .04em; text-transform: uppercase; color: #8a7968; }
+    .fb-rows a { color: #2c1e17; text-decoration: none; font-size: 1rem !important; border-bottom: 1px solid rgba(44, 30, 23, .28); padding-bottom: 2px; }
     .fb-rows a:hover { border-color: #2c1e17; }
+    @media (max-width: 420px) { .fb-card { width: 100%; aspect-ratio: auto; padding: 26px 24px; } }
     .u-header .u-sheet-1 { display: flex; align-items: center; flex-wrap: wrap; gap: 2px 16px; }
     .u-header .u-sheet-1::before, .u-header .u-sheet-1::after { display: none; }
     .u-header .u-logo { position: static !important; margin: 0 !important; }
@@ -31,7 +32,7 @@
     .fb-nav a { color: #eae1d0; text-decoration: none; opacity: .92; font-size: 1.3rem !important; }
     .fb-nav a:hover { opacity: 1; text-decoration: underline; text-underline-offset: 4px; }
     .u-footer .u-text-2 { font-family: 'Newsreader', Georgia, serif !important; }
-    @media (max-width: 575px) { .fb-nav { margin-left: 0; width: 100%; gap: 1.4rem; } .fb-rows li { flex-direction: column; align-items: flex-start; gap: .2rem; } }
+    @media (max-width: 575px) { .fb-nav { margin-left: 0; width: 100%; gap: 1.4rem; justify-content: flex-end; } .fb-rows li { flex-direction: column; align-items: flex-start; gap: .2rem; } }
   </style>
   <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
   <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
