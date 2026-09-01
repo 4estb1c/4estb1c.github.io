@@ -12,10 +12,12 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap">
   <style>
     .fb-blog { max-width: 720px; margin: 0 auto; padding: clamp(48px,8vh,110px) 8px 84px; font-family: 'Newsreader', Georgia, 'Times New Roman', serif; color: #2c1e17; }
-    .fb-blog h1 { font-weight: 600; font-size: 2.3rem; letter-spacing: -.01em; margin: 0 0 .35rem; }
+    .fb-blog h1 { font-family: 'Newsreader', Georgia, 'Times New Roman', serif; font-weight: 600; font-size: 2.3rem; letter-spacing: -.01em; margin: 0 0 .35rem; }
     .fb-blog .intro { color: #7d6c5b; font-size: 1.2rem; margin: 0 0 2.2rem; }
     .fb-ledger { list-style: none; margin: 0; padding: 0; }
-    .fb-ledger li { display: grid; grid-template-columns: 76px 1fr; gap: 26px; padding: 22px 0; border-bottom: 1px solid rgba(56,32,25,.16); }
+    .fb-ledger li { display: grid; grid-template-columns: 76px 1fr 148px; gap: 26px; padding: 24px 0; border-bottom: 1px solid rgba(56,32,25,.16); }
+    .fb-ledger .thumb { width: 148px; height: 96px; border-radius: 8px; object-fit: cover; align-self: center; }
+    @media (max-width: 575px) { .fb-ledger li { grid-template-columns: 54px 1fr 100px; gap: 16px; } .fb-ledger .thumb { width: 100px; height: 66px; } }
     .fb-ledger li:first-child { border-top: 1px solid rgba(56,32,25,.16); }
     .fb-ledger .yr { font-family: OperatorMono, monospace; font-size: .92rem; color: #8a7968; padding-top: .5rem; }
     .fb-ledger .t { font-size: 1.4rem; font-weight: 500; line-height: 1.2; }
@@ -29,6 +31,9 @@
     .fb-nav { margin-left: auto; display: flex; gap: 1.5rem; font-family: 'Newsreader', Georgia, serif; font-size: 1.15rem; }
     .fb-nav a { color: #eae1d0; text-decoration: none; opacity: .92; }
     .fb-nav a:hover { opacity: 1; text-decoration: underline; text-underline-offset: 4px; }
+    .u-footer .u-text-2 { font-family: 'Newsreader', Georgia, serif !important; }
+    .u-header .u-text-1, .fb-nav { transform: translateY(-2px); }
+    .u-header { background: linear-gradient(180deg, #42271f 0%, #341f19 100%) !important; }
     @media (max-width: 575px) { .fb-nav { margin-left: 0; width: 100%; gap: 1.4rem; } }
   </style>
   <script class="u-script" type="text/javascript" src="../jquery.js" defer=""></script>
@@ -96,10 +101,10 @@
         <h1>Projects</h1>
         <p class="intro">Writing, competitions, and reading lists.</p>
         <ul class="fb-ledger">
-          <li><div class="yr">2025</div><div><div class="t"><a href="../blog/llm-resources">LLM Resources</a></div><div class="d">Some resouces for getting started with LLMs.</div></div></li>
-          <li><div class="yr">2024</div><div><div class="t"><a href="../blog/Winning-IMC-Prosperity">IMC Prosperity</a></div><div class="d">Recap of the 2024 IMC Prosperity Global Trading Competition, the "world's most elaborate trading challenge."</div></div></li>
-          <li><div class="yr">2024</div><div><div class="t"><a href="../blog/resources">Quant Resources</a></div><div class="d">Some resouces for getting started with data science and quant.</div></div></li>
-          <li><div class="yr">2022</div><div><div class="t"><a href="../blog/Winning-The-Citadel-Data-Open">The Citadel Data Open Championship</a></div><div class="d">Recap of the 2022 Citadel Data Open Championship, the "largest and most prestigious university-level data science competition in the world."</div></div></li>
+          <li><div class="yr">2025</div><div><div class="t"><a href="../blog/llm-resources">LLM Resources</a></div><div class="d">Some resouces for getting started with LLMs.</div></div><img class="thumb" src="../images/llmpapers.webp" alt="" loading="lazy"></li>
+          <li><div class="yr">2024</div><div><div class="t"><a href="../blog/Winning-IMC-Prosperity">IMC Prosperity</a></div><div class="d">Recap of the 2024 IMC Prosperity Global Trading Competition, the "world's most elaborate trading challenge."</div></div><img class="thumb" src="../images/prosperity.webp" alt="" loading="lazy"></li>
+          <li><div class="yr">2024</div><div><div class="t"><a href="../blog/resources">Quant Resources</a></div><div class="d">Some resouces for getting started with quant.</div></div><img class="thumb" src="../images/textbooks.webp" alt="" loading="lazy"></li>
+          <li><div class="yr">2022</div><div><div class="t"><a href="../blog/Winning-The-Citadel-Data-Open">The Citadel Data Open Championship</a></div><div class="d">Recap of the 2022 Citadel Data Open Championship, the "largest and most prestigious university-level data science competition in the world."</div></div><img class="thumb" src="../images/dataopenchampions.webp" alt="" loading="lazy"></li>
         </ul>
       </div>
     </div>
@@ -114,13 +119,13 @@
           <div class="u-layout-row">
             <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-1">
               <div class="u-container-layout u-valign-middle u-container-layout-1">
-                <p class="quote u-align-left u-small-text u-text u-text-variant u-text-1">A world​ to win.<br>
-                </p>
               </div>
             </div>
             <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-2">
               <div class="u-container-layout u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-container-layout-2">
-                <p class="u-align-right u-small-text u-text u-text-variant u-text-2"><span style="font-style: normal;">Forrest&nbsp;</span><span style="font-style: normal;">평화&nbsp;</span><span style="font-style: normal;">Bicker </span>
+                <p class="quote u-align-right u-small-text u-text u-text-variant u-text-1">A world​ to win.<br>
+                </p>
+                <p class="u-align-right u-small-text u-text u-text-variant u-text-2"><span style="font-style: normal;">Forrest&nbsp;</span><span style="font-style: normal;">Bicker </span>
                 </p>
               </div>
             </div>

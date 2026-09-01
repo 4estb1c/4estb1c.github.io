@@ -17,32 +17,36 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,700;1,6..72,400&display=swap">
   <style>
     /* Minimal home hero */
+    .u-section-1 .u-sheet-1 { width: 100% !important; max-width: none !important; padding: 0 !important; margin: 0 !important; min-height: 0 !important; }
     .fb-home {
-      max-width: 620px;
-      min-height: 72vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 40px 8px 64px;
+      display: grid;
+      grid-template-columns: 36% 1fr;
+      min-height: 80vh;
       font-family: 'Newsreader', Georgia, 'Times New Roman', serif;
       color: #2c1e17;
     }
-    .fb-hello { font-weight: 700; font-size: 1.7rem; line-height: 1.3; margin: 0 0 1.15rem; }
-    .fb-blurb { font-size: 1.55rem; line-height: 1.6; margin: 0 0 2.1rem; }
+    .fb-photo { overflow: hidden; background: #2b241c; }
+    .fb-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 22%; display: block; }
+    .fb-text { display: flex; flex-direction: column; justify-content: center; padding: 40px clamp(34px, 6vw, 110px); }
+    .fb-text .fb-blurb, .fb-text .fb-hello { max-width: 42ch; }
+    .fb-hello { font-weight: 700; font-size: 1.6rem !important; line-height: 1.3; margin: 0 0 1.15rem; }
+    .fb-blurb { font-size: 1.2rem !important; line-height: 1.6; margin: 0 0 2.1rem; }
     .fb-blurb em { font-style: normal; color: #8a7968; }
-    .fb-links { list-style: none; margin: 0; padding: 0; max-width: 24rem; border-top: 1px solid rgba(44, 30, 23, .18); }
-    .fb-links li { border-bottom: 1px solid rgba(44, 30, 23, .18); }
-    .fb-links a { display: flex; justify-content: space-between; align-items: center; padding: .8rem 2px; font-size: 1.4rem; text-decoration: none; color: #2c1e17; }
-    .fb-links a span { color: #8a7968; transition: transform .18s ease; }
-    .fb-links a:hover span { transform: translateX(4px); color: #2c1e17; }
+    .fb-links { display: flex; flex-wrap: wrap; gap: 1.5rem; list-style: none; margin: 0; padding: 0; font-size: 1.05rem; }
+    .fb-links a { color: #2c1e17; text-decoration: none; border-bottom: 1px solid rgba(44, 30, 23, .28); padding-bottom: 3px; font-size: 1.05rem !important; }
+    .fb-links a:hover { border-color: #2c1e17; }
     .u-header .u-sheet-1 { display: flex; align-items: center; flex-wrap: wrap; gap: 2px 16px; }
     .u-header .u-sheet-1::before, .u-header .u-sheet-1::after { display: none; }
     .u-header .u-logo { position: static !important; margin: 0 !important; }
     .u-header .u-text-1 { position: static !important; margin: 0 !important; }
-    .fb-nav { margin-left: auto; display: flex; gap: 1.5rem; font-family: 'Newsreader', Georgia, serif; font-size: 1.15rem; }
-    .fb-nav a { color: #eae1d0; text-decoration: none; opacity: .92; }
+    .fb-nav { margin-left: auto; display: flex; gap: 1.5rem; font-family: 'Newsreader', Georgia, serif; font-size: 1.3rem; }
+    .fb-nav a { color: #eae1d0; text-decoration: none; opacity: .92; font-size: 1.3rem !important; }
     .fb-nav a:hover { opacity: 1; text-decoration: underline; text-underline-offset: 4px; }
-    @media (max-width: 575px) { .fb-nav { margin-left: 0; width: 100%; gap: 1.4rem; } .fb-hello { font-size: 1.55rem; } .fb-blurb { font-size: 1.4rem; } }
+    .u-header .u-text-1, .fb-nav { transform: translateY(-2px); }
+    .u-header { background: linear-gradient(180deg, #42271f 0%, #341f19 100%) !important; }
+    .u-footer .u-text-2 { font-family: 'Newsreader', Georgia, serif !important; }
+    @media (max-width: 800px) { .fb-home { grid-template-columns: 1fr; grid-template-rows: 42vh auto; min-height: auto; } .fb-text { padding: 32px 24px 52px; } }
+    @media (max-width: 575px) { .fb-nav { margin-left: 0; width: 100%; gap: 1.4rem; } .fb-hello { font-size: 1.5rem !important; } .fb-blurb { font-size: 1.15rem !important; } }
   </style>
   <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
   <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
@@ -111,13 +115,16 @@
   <section class="u-clearfix u-section-1" id="sec-4609">
     <div class="u-clearfix u-sheet u-sheet-1">
       <div class="fb-home">
-        <p class="fb-hello">Hi, I'm Forrest.</p>
-        <p class="fb-blurb">I do quant research at <em>Arrowstreet Capital</em>. Before that, I studied Math and Computer Science at <em>Harvey Mudd College</em> and grew up in NYC.</p>
-        <ul class="fb-links" aria-label="Links">
-          <li><a href="https://forrestbicker.com/resume" target="_blank" rel="noopener">CV <span aria-hidden="true">&rarr;</span></a></li>
-          <li><a href="blog">Projects <span aria-hidden="true">&rarr;</span></a></li>
-          <li><a href="contact">Contact <span aria-hidden="true">&rarr;</span></a></li>
-        </ul>
+        <div class="fb-photo"><img src="assets/tunnel.webp" alt="Forrest Bicker"></div>
+        <div class="fb-text">
+          <p class="fb-hello">Hi, I'm Forrest.</p>
+          <p class="fb-blurb">I do quant research at <em>Arrowstreet Capital</em>. Before that, I studied Math and Computer Science at <em>Harvey Mudd College</em> and grew up in NYC.<br><br></p>
+          <nav class="fb-links" aria-label="Links">
+            <a href="https://forrestbicker.com/resume" target="_blank" rel="noopener">CV</a>
+            <a href="blog">Projects</a>
+            <a href="contact">Contact</a>
+          </nav>
+        </div>
       </div>
     </div>
   </section>
@@ -131,13 +138,13 @@
           <div class="u-layout-row">
             <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-1">
               <div class="u-container-layout u-valign-middle u-container-layout-1">
-                <p class="quote u-align-left u-small-text u-text u-text-variant u-text-1">A world​ to win.<br>
-                </p>
               </div>
             </div>
             <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-2">
               <div class="u-container-layout u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-container-layout-2">
-                <p class="u-align-right u-small-text u-text u-text-variant u-text-2"><span style="font-style: normal;">Forrest&nbsp;</span><span style="font-style: normal;">평화&nbsp;</span><span style="font-style: normal;">Bicker </span>
+                <p class="quote u-align-right u-small-text u-text u-text-variant u-text-1">A world​ to win.<br>
+                </p>
+                <p class="u-align-right u-small-text u-text u-text-variant u-text-2"><span style="font-style: normal;">Forrest&nbsp;</span><span style="font-style: normal;">Bicker </span>
                 </p>
               </div>
             </div>
