@@ -14,7 +14,7 @@
   <style>
     .u-post-content, .u-post-content p, .u-post-content li, .u-post-content span, .u-post-content a { font-family: 'Newsreader', Georgia, 'Times New Roman', serif !important; }
     .fb-post { display: flex; align-items: flex-start; text-align: left; }
-    .fb-rail { flex: none; width: 220px; padding: 48px 26px; }
+    .fb-rail { flex: none; width: 220px; padding: 48px 26px; position: sticky; top: 90px; align-self: flex-start; max-height: calc(100vh - 90px); overflow-y: auto; }
     .fb-back { display: block; font-family: ui-monospace, 'IBM Plex Mono', monospace; font-size: .78rem; color: #8a7968; text-decoration: none; margin: 0 0 26px; }
     .fb-back:hover { color: #2c1e17; }
     .fb-title { font-family: 'Newsreader', Georgia, 'Times New Roman', serif !important; font-size: 1.35rem !important; font-weight: 600 !important; line-height: 1.25 !important; margin: 0 0 22px !important; color: #2c1e17 !important; }
@@ -28,8 +28,9 @@
     .fb-sec { font-family: 'Newsreader', Georgia, 'Times New Roman', serif !important; font-weight: 600 !important; font-size: 1.4rem !important; margin: 1.8rem 0 .7rem !important; color: #2c1e17; }
     .fb-main .fb-sec:first-of-type { margin-top: 0 !important; }
     .fb-subhead { display: block; font-family: ui-monospace, 'IBM Plex Mono', monospace; font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; color: #8a7968; margin: 1.3rem 0 .5rem; }
-    .fb-main li.fb-sub { list-style: none; margin-left: -12px; }
-    @media (max-width: 800px) { .fb-post { flex-direction: column; } .fb-rail { width: auto; box-sizing: border-box; border-bottom: 1px solid rgba(44, 30, 23, .16); padding: 28px 22px; } .fb-main { padding: 28px 22px 70px; max-width: none; } }
+    .fb-main li.fb-sub { list-style: none; margin-left: calc(-12px + 4ch); }
+    @media (max-width: 800px) { .fb-post { flex-direction: column; } .fb-rail { width: auto; box-sizing: border-box; border-bottom: 1px solid rgba(44, 30, 23, .16); padding: 28px 22px; position: static; max-height: none; overflow-y: visible; } .fb-main { padding: 28px 22px 70px; max-width: none; } }
+    .u-section-1 .u-sheet-1 { min-height: 0 !important; }
     .u-header .u-sheet-1 { display: flex; align-items: center; flex-wrap: wrap; gap: 2px 16px; }
     .u-header .u-sheet-1::before, .u-header .u-sheet-1::after { display: none; }
     .u-header .u-logo { position: static !important; margin: 0 !important; }

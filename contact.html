@@ -13,15 +13,17 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap">
   <style>
     .fb-contact { min-height: 60vh; display: flex; align-items: center; justify-content: center; padding: 40px 24px 64px; font-family: 'Newsreader', Georgia, 'Times New Roman', serif; color: #2c1e17; }
-    .fb-card { border: 1px solid rgba(44, 30, 23, .2); border-radius: 12px; background: rgba(255, 255, 255, .32); width: 380px; max-width: 100%; aspect-ratio: 1.75; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; padding: 0 30px; }
-    .fb-card h1 { font-weight: 600; font-size: 1.5rem !important; line-height: 1.2; margin: 0 0 .9rem; }
-    .fb-rows { list-style: none; margin: 0; padding: 0; }
-    .fb-rows li { border-top: 1px solid rgba(44, 30, 23, .14); padding: .55rem 0; display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; }
-    .fb-rows li:last-child { border-bottom: 1px solid rgba(44, 30, 23, .14); }
-    .fb-rows .label { font-family: ui-monospace, 'IBM Plex Mono', monospace; font-size: .78rem; letter-spacing: .04em; text-transform: uppercase; color: #8a7968; }
+    .fb-card { border: 1px solid rgba(44, 30, 23, .2); border-radius: 12px; background: rgba(255, 255, 255, .32); width: 380px; max-width: 100%; aspect-ratio: 1.75; box-sizing: border-box; display: flex; }
+    .fb-sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+    .fb-stub { flex: 0 0 34%; border-right: 1px solid rgba(44, 30, 23, .14); display: flex; align-items: center; justify-content: center; }
+    .fb-stub img { width: 44px; height: 44px; border-radius: 50%; }
+    .fb-info { flex: 1; min-width: 0; display: flex; flex-direction: column; justify-content: center; gap: 16px; padding: 0 26px; }
+    .fb-rows { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 16px; }
+    .fb-rows .label { display: block; font-family: ui-monospace, 'IBM Plex Mono', monospace; font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; color: #8a7968; margin-bottom: .3rem; }
     .fb-rows a { color: #2c1e17; text-decoration: none; font-size: 1rem !important; border-bottom: 1px solid rgba(44, 30, 23, .28); padding-bottom: 2px; }
     .fb-rows a:hover { border-color: #2c1e17; }
-    @media (max-width: 420px) { .fb-card { width: 100%; aspect-ratio: auto; padding: 26px 24px; } }
+    @media (max-width: 420px) { .fb-card { width: 100%; aspect-ratio: auto; flex-direction: column; padding: 26px 24px; } .fb-stub { flex: none; border-right: none; border-bottom: 1px solid rgba(44, 30, 23, .14); padding: 0 0 18px; } .fb-info { padding: 18px 0 0; } }
+    .u-section-1 .u-sheet-1 { min-height: 0 !important; }
     .u-header .u-sheet-1 { display: flex; align-items: center; flex-wrap: wrap; gap: 2px 16px; }
     .u-header .u-sheet-1::before, .u-header .u-sheet-1::after { display: none; }
     .u-header .u-logo { position: static !important; margin: 0 !important; }
@@ -95,12 +97,15 @@
     <div class="u-clearfix u-sheet u-sheet-1">
       <div class="fb-contact">
         <div class="fb-card">
-          <h1>Contact</h1>
-          <ul class="fb-rows" aria-label="Contact options">
-            <li><span class="label">Email</span><a href="#" id="fb-email-link" rel="nofollow">reveal email</a></li>
-            <li><span class="label">Calendar</span><a href="https://calendly.com/forrestbicker/meet" target="_blank" rel="noopener">Availability</a></li>
-          </ul>
-          <noscript>forrestbicker @ gmail . com</noscript>
+          <h1 class="fb-sr-only">Contact</h1>
+          <div class="fb-stub"><img src="assets/favicon.ico" alt=""></div>
+          <div class="fb-info">
+            <ul class="fb-rows" aria-label="Contact options">
+              <li><span class="label">Email</span><a href="#" id="fb-email-link" rel="nofollow">reveal email</a></li>
+              <li><span class="label">Calendar</span><a href="https://calendly.com/forrestbicker/meet" target="_blank" rel="noopener">Availability</a></li>
+            </ul>
+            <noscript>forrestbicker @ gmail . com</noscript>
+          </div>
         </div>
       </div>
     </div>
