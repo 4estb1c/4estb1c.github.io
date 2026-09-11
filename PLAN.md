@@ -1,0 +1,17 @@
+# Forecasting notes download
+
+## Scope
+
+Publish the requested `Forcasting` notes folder, including the new project specification, and a matching root-level `blf.zip`. Preserve the existing site and `/blog` without redesign or routing changes.
+
+## Plan
+
+1. Integrate the reviewed Markdown specification into the notes folder.
+2. Copy only that folder into this checkout and create its ZIP archive.
+3. Verify file counts, source/archive hashes, and absence of unrelated vault/config files.
+4. Commit and push the scoped changes to the existing GitHub Pages branch.
+5. Verify the published ZIP and existing blog route.
+
+## Ledger
+
+Root agent owns integration and publication. No implementation subagents used for this publication; earlier read-only research findings were incorporated into the specification. No training or model/data downloads are part of this change.
