@@ -15,3 +15,7 @@ Publish the requested `Forcasting` notes folder, including the new project speci
 ## Ledger
 
 Root agent owns integration and publication. No implementation subagents used for this publication; earlier read-only research findings were incorporated into the specification. No training or model/data downloads are part of this change.
+
+## Status
+
+The 24-file notes snapshot and ZIP passed file-by-file SHA-256 validation. Existing pages were unchanged and `/blog/` returned HTTP 200 before publication. The scoped changes are committed locally. Push is blocked by missing usable GitHub credentials; the interactive helper was stopped after waiting, and a noninteractive retry confirmed authentication is required. No successful push or live `/blf.zip` deployment is claimed. After GitHub sign-in, push `main` and verify the served ZIP hash against the local artifact.
