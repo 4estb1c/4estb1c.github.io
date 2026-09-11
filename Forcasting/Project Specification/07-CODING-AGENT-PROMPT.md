@@ -21,6 +21,7 @@ For both, implement causal terminal-only replay, adjacent later-forecast bootstr
 - No network calls in imports, unit tests, config validation, or default execution. Use fakes and local-files-only loading.
 - Do not overwrite user changes or existing forecasting tools. Inspect Git and repository instructions first. Reuse the existing local QLoRA runner and finance/harness modules where appropriate.
 - Never use interim market observations as reward labels. Only later model forecasts of the identical terminal target and eventually terminal outcomes provide supervision.
+- Use volatility-normalized squared error for continuous targets in both output recipes: divide error by the origin-frozen standard deviation of the original-horizon return, then square it. Do not use realized future volatility or group reward-standard-deviation normalization. Implement estimator provenance, a positive floor, and missing-history validation; report normalized RMSE in standard-deviation units.
 - Never replace an originally issued forecast with a regenerated or rescored one in evaluation.
 - Do not claim zero-shot baseline subtraction filters memorization, that MoE must lose, that a calendar clock cures pretrained knowledge, or that clipped token ratios make arbitrary old traces unbiased.
 

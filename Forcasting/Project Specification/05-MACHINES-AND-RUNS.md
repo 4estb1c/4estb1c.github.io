@@ -35,6 +35,8 @@ Profile eight-rollout generation and training separately, including backward act
 
 All substantive configs record task type, target units, evidence mode, model revisions, output recipe, feedback mode, teacher mode, seed, train/validation/test family manifests, and chronology. Config validation must reject incompatible combinations before loading a model.
 
+For continuous tasks set `loss=volatility_normalized_mse` and `reward_group_std_normalization=false`. Require explicit volatility estimator, origin-only lookback, minimum history, horizon conversion, positive floor, and missing-history policy. The actual frozen scales belong in the question manifest. These estimator settings remain validation choices, not established optimal defaults; do not confuse them with numerical model uncertainty.
+
 | Experiment | Starting setup | Required variants |
 |---|---|---|
 | E0 | CPU fixtures; operator smoke 2 steps | Token/scalar; MC/adjacent/all-earlier |

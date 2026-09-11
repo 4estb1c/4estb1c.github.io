@@ -4,7 +4,7 @@ These algorithms share the same causal clock, evidence tools, target definitions
 
 ## Common scoring and storage
 
-For a valid forecast f and an eligible target z, use R = -(f-z)^2/s_e^2. Binary questions use s_e=1. Center scores within the original question/date group: A_i=R_i-mean(R). Do not center across different questions. Do not divide by the group's standard deviation in the initial recipe. Signed errors are not suitable rewards: their group centering cancels the target entirely.
+For a valid forecast f and an eligible target z, use volatility-normalized reward R = -((f-z)/s_e)^2. Here s_e is the positive, origin-frozen estimate of return standard deviation over the original target horizon, shared by every rollout, revisit, and teacher/terminal revision for that question. The scalar forecaster minimizes the identical positive loss. Binary questions use s_e=1. Center scores within the original question/date group: A_i=R_i-mean(R). Do not center across different questions. Do not divide by the group's reward standard deviation: that is a different normalization and would erase this common volatility scaling within each group. Signed errors are not suitable rewards: their group centering cancels the target entirely.
 
 For malformed numeric output, record a failure separately from numerical forecast error. Expose a fixed format penalty as a configuration, never impute the terminal outcome or silently parse a convenient number from the rationale. Such a penalty defines a formatting-plus-forecasting utility, not a proper score over all possible strings. Abort a pilot with substantial invalid output and repair the output protocol before interpreting comparisons; monitor whether malformed output becomes a way to avoid large continuous losses.
 

@@ -14,7 +14,17 @@ Interim market observations are inputs to research and forecasting. They are **n
 
 Use mean squared error as the principal continuous forecasting objective. A return forecast that is accurate in expectation can still lose on one realization. Raw PnL encourages extreme positions without a separate risk/position definition, so evaluate trading utility separately. Binary replication uses Brier loss. Report RMSE if helpful, but optimize squared error rather than the square root of a noisy minibatch loss.
 
-For heterogeneous returns, define a strictly positive scale s_e from information available at the question's origin, then freeze it for every revisit of that target. Scoring (f-Y)^2/s_e^2 changes the cross-event weighting intentionally. Report both normalized and raw-unit results. Never estimate scales on the complete train-plus-test period or refit a target's scale as its outcome approaches.
+**The default is volatility-normalized squared error.** Define s_e as the estimated standard deviation of the specified return over its original forecast horizon, using only information available at the question's origin. Freeze it for every revisit of that target:
+
+$$
+u_e=\frac{f_e-z_e}{s_e},\qquad L_e=u_e^2,\qquad R_e=-L_e.
+$$
+
+The error u_e is measured in standard deviations; the training loss is its square. Report normalized RMSE, sqrt(mean(L_e)), to express aggregate error in standard-deviation units. For example, a two-percentage-point error against four-percent horizon volatility is a 0.5-standard-deviation error and a loss of 0.25. This definition applies to both terminal and teacher targets, and to both token-output rewards and direct scalar-head regression.
+
+Use volatility of the actual target: total-return volatility for total returns, residual-return volatility for factor-residual targets. Match the original horizon, not the shrinking remaining horizon, and do not substitute annualized volatility without conversion. A daily-volatility-times-square-root-of-days estimator is only a configurable approximation; its assumptions and validation must be documented. The estimator, historical lookback, minimum history, and positive floor are explicit configuration choices selected on training/validation data. Missing estimates require a recorded fallback or exclusion, never a silent zero denominator.
+
+This normalization intentionally weights comparable errors by inverse variance across events. Both policies in a comparison use the same frozen s_e. Never estimate it from the eventual forecast-window returns, refit it as resolution approaches, or let the forecasting model learn a larger denominator to reduce its loss. Market volatility is not rollout disagreement, forecast confidence, or GRPO reward standard deviation. Keep group standard-deviation normalization disabled. Report raw-unit error as a secondary diagnostic; binary replication retains ordinary Brier loss.
 
 ## 2. Three independent design axes
 

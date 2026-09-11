@@ -1,6 +1,6 @@
 # Experiment specifications
 
-The principal outcome is terminal forecasting quality on held-out event families. Learning curves against unique events matter more than matching FLOPs. Extra compute is allowed, but its use must be measured. Configuration values below are pilot defaults, not power calculations or claims about available data.
+The principal outcome is terminal volatility-normalized MSE on held-out event families, with normalized RMSE reported in standard-deviation units and raw-return MSE/RMSE as secondary diagnostics. Use the same origin-frozen, horizon-matched volatility estimate for every method and revisit of a question. Learning curves against unique events matter more than matching FLOPs. Extra compute is allowed, but its use must be measured. Configuration values below are pilot defaults, not power calculations or claims about available data.
 
 ## E0. Offline correctness and infrastructure
 

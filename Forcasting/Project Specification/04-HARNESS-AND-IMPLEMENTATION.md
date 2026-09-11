@@ -30,6 +30,8 @@ SQLite plus content-addressed files is sufficient initially. No distributed data
 
 **Question:** question_id, event_family_id, split, asset/entity, task_type, origin_at, target_at, target_definition_version, units, origin-frozen scale, resolution_rule, evidence eligibility.
 
+For continuous returns, the scale is horizon-matched return volatility. Store volatility_estimator_version, history_as_of, lookback, horizon convention, target series (raw/residual), minimum-history rule, floor, fallback status, and the final frozen value. Validate positivity/finiteness and prevent gradients through the denominator. Test that a 0.02 error with s_e=0.04 gives loss 0.25; rescaling both return units and volatility identically leaves loss unchanged; future price changes cannot alter an already frozen scale; and no group reward-standardization step cancels the intended inverse-variance weighting.
+
 **Document:** source_id, source_url, immutable content hash, published_at, first_available_at, ingested_at, revision_id, parent revision if any, license/access note. A later revised page with an old publication date is not earlier evidence.
 
 **Rollout:** group_id, rollout_id, question_id, forecast_at, policy checkpoint hash, readout checkpoint hash, training-information watermark, prompt/template version, tool transcript, cited document hashes, token IDs, action mask, raw/sampler log-probabilities, decoding transforms, forecast or parse failure, RNG seeds, sampler selection probability.
