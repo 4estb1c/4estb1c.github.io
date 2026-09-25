@@ -21,11 +21,31 @@ Root agent owns integration and publication. No implementation subagents used fo
 GitHub device authentication completed. The notes snapshot and ZIP have been refreshed, including the explicit volatility-normalized loss specification, and passed file-by-file SHA-256 validation. Existing pages remain unchanged. Push this validated snapshot and verify the served ZIP hash and existing `/blog/` route after GitHub Pages finishes deploying.
 
 # Inspector — 2026-09-25
-Goal: Publish /Inspector, a reusable article reader with aligned research commentary, original notes, glossary, charts, shared evidence, and offline agent workflows. Preserve existing website.
-Decisions: Static GitHub Pages; standardized semantic article blocks; source/annotation separation; primary-source dated evidence; no hosted inference. Main agent writes final commentary. Full original reproduction depends on source permission/license; otherwise use brief excerpts and source links.
-Next: research/source audit, reader implementation, reusable tooling, editorial integration, adversarial review, browser validation, push and verify.
-Ledger:
-- Root: planner/editor/integrator, main, active.
-- Reader agent: agent/margin-reader, pending.
-- Evidence agent: agent/margin-evidence, pending.
-- Workflow agent: agent/margin-workflow, pending.
+
+## Goal
+
+Publish `/Inspector/` as a reusable, responsive reader with aligned commentary, glossary, original-note styling, figures, a shared evidence corpus, and a Codex authoring/discussion workflow. The first companion covers all nine sections of *Situational Awareness*; preserve the rest of the existing site.
+
+## Decisions
+
+- Static GitHub Pages in this repository, at the user's requested `/Inspector/` route; the site's existing `CNAME` is `forrestbicker.com`.
+- Standardized semantic blocks; source text and commentary are separate. No hosted model or on-page research generation.
+- The source offers no republication licence. Until permission is established, publish independent claim summaries and canonical links, clearly marked as summaries. Keep the template ready for authorized full text.
+- Evidence has dated status, source, and caveat. Charts distinguish reported data, research estimates, and illustrative arithmetic.
+
+## Next steps
+
+1. Integrate the reader polish and evidence-link branches after review.
+2. Validate article JSON, context, links, charts, navigation, glossary, and desktop/mobile layout.
+3. Update the ledger, commit, push `main`, and verify `/Inspector/` and the existing site on GitHub Pages.
+
+## Subagent ledger
+
+| Agent/task | Branch or worktree | Status | Integration |
+| --- | --- | --- | --- |
+| Root: planning, editorial, integration, publication | `main` | Active | Draft commentary and context through `8cba821` |
+| Evidence corpus | `agent/margin-evidence` | Reviewed | `b3f9ae1`, `65e2061`, `8be12b6`, `d7719eb` |
+| Initial reader | `agent/margin-reader` | Reviewed | `e7dd8cd` |
+| Authoring workflow | `agent/margin-workflow` | Reviewed | `c2a1347` |
+| Reader polish | `agent/inspector-reader-polish` | In progress | Pending |
+| Evidence links and independent audit | `agent/inspector-evidence-links` | In progress | Pending |
