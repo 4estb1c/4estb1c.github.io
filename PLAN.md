@@ -35,17 +35,20 @@ Publish `/Inspector/` as a reusable, responsive reader with aligned commentary, 
 
 ## Next steps
 
-1. Integrate the reader polish and evidence-link branches after review.
-2. Validate article JSON, context, links, charts, navigation, glossary, and desktop/mobile layout.
-3. Update the ledger, commit, push `main`, and verify `/Inspector/` and the existing site on GitHub Pages.
+1. Commit the final review fixes; the reader and evidence branches are integrated.
+2. Push `main`, then verify `/Inspector/`, the article, generated context, and existing routes on GitHub Pages.
 
 ## Subagent ledger
 
 | Agent/task | Branch or worktree | Status | Integration |
 | --- | --- | --- | --- |
-| Root: planning, editorial, integration, publication | `main` | Active | Draft commentary and context through `8cba821` |
+| Root: planning, editorial, integration, publication | `main` | Active | Commentary and context through `57d3db9` |
 | Evidence corpus | `agent/margin-evidence` | Reviewed | `b3f9ae1`, `65e2061`, `8be12b6`, `d7719eb` |
 | Initial reader | `agent/margin-reader` | Reviewed | `e7dd8cd` |
 | Authoring workflow | `agent/margin-workflow` | Reviewed | `c2a1347` |
-| Reader polish | `agent/inspector-reader-polish` | In progress | Pending |
-| Evidence links and independent audit | `agent/inspector-evidence-links` | In progress | Pending |
+| Reader polish | `agent/inspector-reader-polish` | Reviewed and integrated | `d2beb96`; root review fixes pending commit |
+| Evidence links and independent audit | `agent/inspector-evidence-links` | Reviewed and integrated | `f690318`, `664aafb`, `5630ed3` |
+
+## Verification so far
+
+All 32 paired passages, nine chapter dividers, seven figures, and provenance labels render without browser errors or literal `undefined` text. Desktop and 390px mobile layouts have no document-wide horizontal overflow; mobile commentary expands inline. JavaScript syntax, article/context validation, sitemap parsing, and Git whitespace checks pass. An independent review identified chart-readability, context-link, accessibility, and glossary-input issues; root addressed them before publication.

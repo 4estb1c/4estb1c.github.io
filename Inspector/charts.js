@@ -28,6 +28,12 @@
   }));
   const extent = (series, key) => niceRange(series.flatMap(item => item.data.map(point => num(point[key]))));
   const linear = (min, max, from, to) => value => from + ((value - min) * (to - from)) / (max - min);
+  function marker(svg, x, y, color, index) {
+    const style = { fill: color, class: 'chart-dot' };
+    if (index % 3 === 1) svg.append(el('rect', { x: x - 3.5, y: y - 3.5, width: 7, height: 7, ...style }));
+    else if (index % 3 === 2) svg.append(el('polygon', { points: `${x},${y - 4.5} ${x + 4.5},${y} ${x},${y + 4.5} ${x - 4.5},${y}`, ...style }));
+    else svg.append(el('circle', { cx: x, cy: y, r: 3.7, ...style }));
+  }
   function axes(svg, xr, yr, xLabel, yLabel) {
     const left = 48, right = 388, top = 16, bottom = 184;
     svg.append(el('line', { x1: left, y1: bottom, x2: right, y2: bottom, class: 'chart-axis' }));
@@ -50,17 +56,14 @@
     series.forEach((item, index) => {
       if (!item.data.length) return;
       const points = item.data.map(point => `${x(num(point.x))},${y(num(point.y))}`).join(' ');
-      svg.append(el('polyline', { points, stroke: safeColor(item.color, palette[index % palette.length]), class: 'chart-line' }));
-      if (item.data.length === 1) svg.append(el('circle', { cx: x(num(item.data[0].x)), cy: y(num(item.data[0].y)), r: 3.7, fill: safeColor(item.color, palette[index % palette.length]), class: 'chart-dot' }));
+      svg.append(el('polyline', { points, stroke: safeColor(item.color, palette[index % palette.length]), 'stroke-dasharray': index % 3 === 1 ? '7 4' : index % 3 === 2 ? '2 3' : 'none', class: 'chart-line' }));
+      if (item.data.length === 1) marker(svg, x(num(item.data[0].x)), y(num(item.data[0].y)), safeColor(item.color, palette[index % palette.length]), index);
     });
     return svg;
   }
   function scatter(figure) {
     const { svg, series, x, y } = cartesian(figure);
-    series.forEach((item, index) => item.data.forEach(point => svg.append(el('circle', {
-      cx: x(num(point.x)), cy: y(num(point.y)), r: 3.7,
-      fill: safeColor(item.color, palette[index % palette.length]), class: 'chart-dot'
-    }))));
+    series.forEach((item, index) => item.data.forEach(point => marker(svg, x(num(point.x)), y(num(point.y)), safeColor(item.color, palette[index % palette.length]), index)));
     return svg;
   }
   function bars(figure) {
@@ -78,6 +81,7 @@
     data.forEach((point, index) => {
       const value = num(point.y), x = 48 + index * step + (step - width) / 2, y = Math.min(scale(value), zero), height = Math.max(1, Math.abs(zero - scale(value)));
       svg.append(el('rect', { x, y, width, height, fill: safeColor(item.color, palette[0]) }));
+      svg.append(el('text', { x: x + width / 2, y: value >= 0 ? Math.max(12, y - 5) : Math.min(196, y + height + 12), class: 'chart-value', 'text-anchor': 'middle' }, nice(value)));
       const label = String(point.x ?? index + 1), maxChars = Math.max(5, Math.floor(step / 5.5));
       const words = label.split(/\s+/), lines = [];
       let line = '';

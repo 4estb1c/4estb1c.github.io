@@ -47,7 +47,7 @@ Use the site's own prompt and article structure as the format contract. Preserve
 
 ## Deliverables
 
-- A valid article JSON file following the repository's article schema.
+- A valid article JSON file following `templates/article.json` and the repository's validator.
 - New or updated shared evidence records when research produced reusable facts. Check for duplicates before adding; use stable IDs and the registry fields above, including scope and uncertainty where relevant. Keep provenance and reference dates clear.
 - A Markdown context file with all page content plus relevant auxiliary evidence and reproducibility details.
 - Any chart data and code required to reproduce figures.

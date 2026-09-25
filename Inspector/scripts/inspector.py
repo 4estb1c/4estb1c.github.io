@@ -91,7 +91,7 @@ def validate_article(article: Any, where: str, evidence_ids: set[str], errors: l
         if block.get("chapter") not in chapter_ids:
             errors.append(f"{loc}: unknown chapter {block.get('chapter')!r}")
         typ = block.get("type")
-        if typ not in {"heading", "paragraph", "image", "equation", "figure", "quote"}:
+        if typ not in {"heading", "paragraph", "image", "equation", "figure", "quote", "footnote"}:
             errors.append(f"{loc}: unsupported block type {typ!r}")
         if typ == "image" and (not block.get("src") or not block.get("alt")):
             errors.append(f"{loc}: image requires src and descriptive alt text")
@@ -99,6 +99,8 @@ def validate_article(article: Any, where: str, evidence_ids: set[str], errors: l
             errors.append(f"{loc}: equation requires mathML or text")
         terms = block.get("glossaryTerms", [])
         glossary = article.get("glossary", {})
+        if not isinstance(terms, list):
+            errors.append(f"{loc}.glossaryTerms: expected array")
         for term in terms if isinstance(terms, list) else []:
             key = term.get("term") if isinstance(term, dict) else term
             if key not in glossary:
