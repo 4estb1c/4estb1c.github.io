@@ -15,6 +15,7 @@ from html import escape
 from html.parser import HTMLParser
 from pathlib import Path
 from typing import Any
+from urllib.parse import urljoin, urlparse
 
 
 SKIP = {"script", "style", "noscript", "nav", "header", "footer", "aside", "svg", "canvas"}
@@ -24,15 +25,23 @@ MATH = {"math", "mrow", "mi", "mn", "mo", "msup", "msub", "mfrac", "msqrt", "mro
 
 
 class ArticleParser(HTMLParser):
-    def __init__(self) -> None:
+    def __init__(self, source_url: str) -> None:
         super().__init__(convert_charrefs=True)
+        self.source_url = source_url
         self.blocks: list[dict[str, Any]] = []
         self.skip_depth = 0
         self.skip_stack: list[str] = []
         self.active: str | None = None
         self.parts: list[str] = []
         self.math_depth = 0
+        self.math_inline = False
         self.math_parts: list[str] = []
+
+    def source_link(self, value: str) -> str:
+        if not value:
+            return ""
+        url = urljoin(self.source_url, value)
+        return url if urlparse(url).scheme in {"http", "https", "mailto"} else ""
 
     def flush(self) -> None:
         value = "".join(self.parts).strip()
@@ -58,7 +67,9 @@ class ArticleParser(HTMLParser):
             self.skip_stack = [tag]
             return
         if tag == "math":
-            self.flush()
+            self.math_inline = self.active is not None
+            if not self.math_inline:
+                self.flush()
             self.math_depth = 1
             self.math_parts = ['<math xmlns="http://www.w3.org/1998/Math/MathML">']
             return
@@ -67,7 +78,7 @@ class ArticleParser(HTMLParser):
                 self.math_depth += 1
                 attr = ""
                 if tag == "mi" and values.get("mathvariant"):
-                    attr = f' mathvariant="{values["mathvariant"]}"'
+                    attr = f' mathvariant="{escape(values["mathvariant"], quote=True)}"'
                 self.math_parts.append(f"<{tag}{attr}>")
             return
         if tag in TEXT_BLOCKS:
@@ -77,12 +88,17 @@ class ArticleParser(HTMLParser):
                 self.parts.append("<blockquote>")
             return
         if tag == "img":
-            self.flush()
-            self.blocks.append({"type": "image", "src": values.get("src", ""), "alt": values.get("alt", "")})
+            src = self.source_link(values.get("src", ""))
+            alt = values.get("alt", "")
+            if self.active:
+                self.parts.append(f'<img src="{escape(src, quote=True)}" alt="{escape(alt, quote=True)}">')
+            else:
+                self.flush()
+                self.blocks.append({"type": "image", "src": src, "alt": alt})
             return
         if self.active and tag in INLINE:
             if tag == "a":
-                href = values.get("href", "")
+                href = self.source_link(values.get("href", ""))
                 self.parts.append(f'<a href="{escape(href, quote=True)}">')
             elif tag != "br":
                 self.parts.append(f"<{tag}>")
@@ -100,8 +116,13 @@ class ArticleParser(HTMLParser):
                 self.math_parts.append(f"</{tag}>")
                 self.math_depth -= 1
                 if not self.math_depth:
-                    self.blocks.append({"type": "equation", "mathML": "".join(self.math_parts)})
+                    markup = "".join(self.math_parts)
+                    if self.math_inline:
+                        self.parts.append(markup)
+                    else:
+                        self.blocks.append({"type": "equation", "mathML": markup})
                     self.math_parts = []
+                    self.math_inline = False
             return
         if self.active == tag:
             if tag == "blockquote":
@@ -136,7 +157,7 @@ def main() -> int:
     parser.add_argument("--source-url", default="https://example.org/source")
     args = parser.parse_args()
     raw = args.html_file.read_text(encoding="utf-8", errors="replace")
-    extractor = ArticleParser()
+    extractor = ArticleParser(args.source_url)
     extractor.feed(raw)
     extractor.flush()
     blocks = []
