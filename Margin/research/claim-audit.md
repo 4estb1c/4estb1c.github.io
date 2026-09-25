@@ -1,6 +1,6 @@
-# Situational Awareness claim audit
+# Situational Awareness claim ledger
 
-Compact independent descriptions only. `SA-*` IDs identify a location/topic in the June 2024 series; they do not reproduce it. The source URLs are the canonical articles. “Update” points to records in `evidence.json`.
+This is a concise ledger of the central forecast and assumption clusters across every chapter, not an exhaustive line-by-line or numeric audit. Compact independent descriptions only: `SA-*` IDs identify a location/topic in the June 2024 series and do not reproduce it. The source URLs are canonical; “Update” points to records in `evidence.json`.
 
 | ID | Chapter / compact claim | Type | 2026 audit direction | Update records |
 | --- | --- | --- | --- | --- |
