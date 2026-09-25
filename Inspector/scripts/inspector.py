@@ -12,9 +12,8 @@ from pathlib import Path
 from typing import Any
 
 
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = Path(__file__).resolve().parents[1]
 CATALOGUE = ROOT / "data" / "articles.json"
-ARTICLES = ROOT / "data" / "articles"
 
 
 def load_json(path: Path) -> Any:
@@ -31,7 +30,7 @@ def check_date(value: Any, where: str, errors: list[str], required: bool = False
         errors.append(f"{where}: expected ISO date YYYY-MM-DD")
         return
     try:
-        date.fromisoformat(value)
+        date.fromisoformat(value + "-01" if re.fullmatch(r"\d{4}-\d{2}", value) else value)
     except ValueError:
         errors.append(f"{where}: invalid ISO date {value!r}")
 
@@ -196,6 +195,8 @@ def render_context(article: dict[str, Any]) -> str:
         lines += [article["dek"], ""]
     if article.get("editionNote"):
         lines += [f"> {article['editionNote']}", ""]
+    if article.get("sourceMode") == "summary":
+        lines += ["Source mode: independently written claim summaries. The original essay is linked, not reproduced here.", ""]
     sources = {source["id"]: source for source in article.get("sources", []) if isinstance(source, dict) and source.get("id")}
     chapter_names = {chapter.get("id"): chapter.get("title") for chapter in article.get("chapters", []) if isinstance(chapter, dict)}
     current_chapter = None
@@ -236,6 +237,18 @@ def render_context(article: dict[str, Any]) -> str:
     lines += ["## Source registry", ""]
     for source in sources.values():
         lines += [f"- **{source.get('id')}:** {source.get('label')} — {source.get('url')} ({source.get('publisher', '')}; {source.get('date', '')})"]
+    evidence_path = ROOT / "research" / "evidence.json"
+    if evidence_path.is_file():
+        evidence = load_json(evidence_path)
+        lines += ["", "## Shared evidence records", "", "The following dated records are reusable across articles; their status and caveats matter.", ""]
+        for record in evidence.get("records", []):
+            lines += [f"- **{record['id']}** ({record['asOf']}; {record['status']}): {record['fact']} Source: {record['sourceURL']}. Caveat: {record['caveat']}"]
+    for relative in article.get("researchPaths", []):
+        path = (ROOT / relative).resolve()
+        if ROOT not in path.parents or not path.is_file():
+            continue
+        lines += ["", f"## Auxiliary research: {relative}", "", path.read_text(encoding="utf-8"), ""]
+    lines += ["", "## Reproducibility", "", "Figure values and series are embedded above. The standard chart renderer is `charts.js`; edit the figure data in the article JSON and rebuild this context after changes.", ""]
     lines += ["", "## Discussion context", "", "This file contains the normalized page content and its cited evidence. Consult the linked research assets and source records before answering detail questions. Distinguish article claims, measured evidence, and interpretation. State dates and uncertainty. Do not invent missing information.", ""]
     return "\n".join(lines)
 

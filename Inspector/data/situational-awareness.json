@@ -7,6 +7,10 @@
   "updated": "2026-09-25",
   "sourceUrl": "https://situational-awareness.ai/",
   "sourceMode": "summary",
+  "researchPaths": [
+    "research/claim-audit.md",
+    "research/research-notes.md"
+  ],
   "editionNote": "A companion across all nine sections, checked through 25 September 2026. The left column contains concise claim summaries, not the original essay text. Read the complete essays at the linked sources. Dates on evidence distinguish measurements from forecasts; missing public evidence is left unresolved.",
   "chapters": [
     {
@@ -365,12 +369,15 @@
           "id": "bottlenecks-note",
           "kind": "context",
           "title": "The remaining work sets the ceiling.",
-          "body": "Illustration: if 90% of a workflow becomes 10× faster and the other 10% is unchanged, total speed rises only 5.26×. Even infinite speed on that 90% caps the gain at 10×. This is arithmetic, not an estimate of how much research is currently automated.",
+          "body": "Illustration: if 90% of a workflow becomes 10× faster and the rest is unchanged, total speed rises only 5.26×. Even infinite speed on that fraction caps the gain at 10.00×. This is arithmetic, not an estimate of how much research is currently automated.",
           "sourceIds": [],
           "figure": {
             "type": "line",
             "title": "Faster parts, slower whole",
-            "description": "Illustrative Amdahl calculation: S = 1 / ((1 − f) + f / s). Assumed automated fraction f = 0.9; not empirical data.",
+            "codePaths": [
+              "scripts/rebuild_figures.py"
+            ],
+            "description": "Illustrative Amdahl calculation: S = 1 / ((1 − f) + f / s). Assumed accelerated fraction f = 0.9; not empirical data.",
             "xLabel": "Speedup of automated work",
             "yLabel": "Whole-workflow speedup",
             "series": [
@@ -378,31 +385,31 @@
                 "label": "90% of work accelerated",
                 "data": [
                   {
-                    "x": 1,
-                    "y": 1
+                    "x": 1.0,
+                    "y": 1.0
                   },
                   {
-                    "x": 2,
+                    "x": 2.0,
                     "y": 1.818
                   },
                   {
-                    "x": 5,
+                    "x": 5.0,
                     "y": 3.571
                   },
                   {
-                    "x": 10,
+                    "x": 10.0,
                     "y": 5.263
                   },
                   {
-                    "x": 20,
+                    "x": 20.0,
                     "y": 6.897
                   },
                   {
-                    "x": 50,
+                    "x": 50.0,
                     "y": 8.475
                   },
                   {
-                    "x": 100,
+                    "x": 100.0,
                     "y": 9.174
                   }
                 ]
