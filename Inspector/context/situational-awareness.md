@@ -18,6 +18,8 @@ Compute investment and electricity demand will rise sharply as the race toward A
 
 By April 2026, OpenAI said it had secured more than 10 GW of US infrastructure capacity. That is a commitment across a buildout, not 10 GW already running—or one giant training cluster.
 
+**Provenance:** Company report
+
 [stargate] Building the compute infrastructure for the Intelligence Age — https://openai.com/index/building-the-compute-infrastructure-for-the-intelligence-age/ (OpenAI; 2026-04-29)
 
 The essays anticipate graduate-level abilities in 2025–26, followed by superintelligence before the decade ends.
@@ -25,6 +27,8 @@ The essays anticipate graduate-level abilities in 2025–26, followed by superin
 **Inspector update — Several milestones have arrived. The deadline remains open.**
 
 An advanced Gemini Deep Think model earned 35 of 42 points at the 2025 International Mathematical Olympiad, graded by IMO coordinators under the student criteria. It is a substantial change from GPT-4’s school-exam performance. It does not settle whether a model can take over an open-ended research job.
+
+**Provenance:** Externally graded
 
 [imo] Gemini Deep Think at IMO 2025 — https://deepmind.google/blog/advanced-version-of-gemini-with-deep-think-officially-achieves-gold-medal-standard-at-the-international-mathematical-olympiad/ (Google DeepMind; 2025-07-21)
 
@@ -37,6 +41,8 @@ Training compute is expected to grow by roughly half an OOM per year.
 **Inspector update — The measured trend remains steep.**
 
 Epoch’s February 2026 dashboard puts frontier language-model training compute growth at about 5× per year since 2020, or 0.70 OOM. Different sample windows give different slopes; this is a historical fit, not a measurement of any undisclosed new model.
+
+**Provenance:** Independent estimate
 
 [epoch-trends] Trends in Artificial Intelligence — https://epoch.ai/trends (Epoch AI; 2026-02-05)
 
@@ -71,6 +77,8 @@ Algorithmic improvements may add another two OOMs of effective compute by 2027.
 
 Efficiency keeps improving, but lower serving prices, better benchmark scores and cheaper training are different quantities. The projected 100× training-efficiency gain cannot be marked achieved from API price cuts. Keep the forecast open until comparable training evidence is available.
 
+**Provenance:** Interpretation
+
 [epoch-trends] Trends in Artificial Intelligence — https://epoch.ai/trends (Epoch AI; 2026-02-05)
 
 Graduate-level science questions are expected to become another saturated benchmark.
@@ -78,6 +86,8 @@ Graduate-level science questions are expected to become another saturated benchm
 **Inspector update — GPQA Diamond nears saturation in the vendor report.**
 
 OpenAI reports 96.0% on GPQA Diamond for Astra in September 2026. Its same release reports 59.3% on Agents’ Last Exam. These are different tests, not a shared intelligence scale; the contrast shows why exam mastery and dependable professional work need separate measurements.
+
+**Provenance:** Company report
 
 [astra] GPT-6 Astra: A new generation of intelligence — https://openai.com/index/gpt-6-astra/ (OpenAI; 2026-09-03)
 
@@ -117,6 +127,8 @@ Finite internet data could block further scaling; synthetic data and reinforceme
 
 DeepSeek reported reasoning gains from reinforcement learning, including its R1-Zero research variant trained without preliminary supervised fine-tuning. Feedback from verifiable answers supplies a different learning signal. That makes the data constraint less simple; it does not make trustworthy training data unlimited.
 
+**Provenance:** Research paper
+
 [r1] DeepSeek-R1 technical report — https://arxiv.org/abs/2501.12948 (DeepSeek; 2025-01-22)
 
 [Evidence CMP-05] (2025-01-22; research-preprint): DeepSeek reports that its R1-Zero research variant developed reasoning capability through large-scale reinforcement learning without preliminary supervised fine-tuning. Source: https://arxiv.org/abs/2501.12948. Caveat: This claim is specifically about R1-Zero, not every stage of DeepSeek-R1; a different learning signal does not make high-quality training data unlimited.
@@ -127,6 +139,8 @@ Tools, memory and longer task execution could turn chatbots into useful autonomo
 
 METR’s May 2026 update warns that horizons above 16 human-expert hours are unreliable with its current task suite. Its 50% horizon is a difficulty measure at one-in-two success—not a promise of 16 hours of reliable unattended work.
 
+**Provenance:** Independent research
+
 [metr-horizons] Task-completion time horizons — https://metr.org/time-horizons/ (METR; 2026-05-08)
 
 Unlocking latent abilities is expected to complement larger base models.
@@ -134,6 +148,8 @@ Unlocking latent abilities is expected to complement larger base models.
 **Inspector context — Compute now has another place to go.**
 
 As a proof of concept, Geiping and colleagues demonstrated a 3.5-billion-parameter model that spends extra inference compute by repeatedly applying an internal block. More computation need not mean more visible reasoning tokens. This changes both the economics of an answer and what a human can inspect.
+
+**Provenance:** Research paper
 
 [latent] Scaling up test-time compute with latent reasoning — https://arxiv.org/abs/2502.05171v2 (Geiping et al.; 2025-02-17)
 
@@ -147,6 +163,8 @@ Replicated AI researchers could compress years of algorithmic progress into mont
 
 Anthropic reports that its typical engineer merged eight times as much code per day in Q2 2026 as in 2024. It explicitly cautions that code volume overstates productivity. This supports substantial workflow change, while leaving the speed of valuable scientific progress unresolved.
 
+**Provenance:** Company report
+
 [anthropic-rd] When AI builds itself — https://www.anthropic.com/institute/recursive-self-improvement (Anthropic Institute; 2026-09-18)
 
 [Evidence CAP-08] (2026-Q2; company-reported): Anthropic reports the typical engineer merged 8x as much code per day in Q2 2026 as in 2024. Source: https://www.anthropic.com/institute/recursive-self-improvement. Caveat: LOC is an incomplete productivity metric; organization, tools, and task mix changed.
@@ -157,6 +175,8 @@ Automated AI research could feed improvements back into the systems doing the re
 
 An unreviewed September 2026 preprint reports seven successive improvements to a research agent’s own code during an eight-day run, with gains on four held-out benchmarks. The object being improved was the agent software. It was not an autonomous succession of newly trained frontier models.
 
+**Provenance:** Research preprint
+
 [aide2] Recursive self-improvement of AI research agents — https://arxiv.org/abs/2609.26457 (Srikanth et al.; 2026-09-22)
 
 [Evidence CAP-11] (2026-09-22; research-preprint): AIDE², a September 2026 preprint, reports seven successive changes to an AI research agent’s own code during an autonomous eight-day run, with gains on four held-out benchmarks. Source: https://arxiv.org/abs/2609.26457. Caveat: Very recent unreviewed result on agent software optimization, not an autonomous succession of newly trained frontier models.
@@ -166,6 +186,8 @@ Experiment compute and the last difficult parts of research could limit the inte
 **Inspector context — The remaining work sets the ceiling.**
 
 Illustration: if 90% of a workflow becomes 10× faster and the rest is unchanged, total speed rises only 5.26×. Even infinite speed on that fraction caps the gain at 10.00×. This is arithmetic, not an estimate of how much research is currently automated.
+
+**Provenance:** Illustrative arithmetic
 
 ```json
 {
@@ -223,6 +245,8 @@ The cluster scenario reaches around 1 GW in 2026, 10 GW in 2028 and 100 GW in 20
 
 A power reservation, an energized site, a company’s total fleet and a single training run are four different things. The latest Stargate commitment supports the scale of investment envisaged here. It does not establish that the projected single-cluster milestones have been met.
 
+**Provenance:** Interpretation
+
 [stargate] Building the compute infrastructure for the Intelligence Age — https://openai.com/index/building-the-compute-infrastructure-for-the-intelligence-age/ (OpenAI; 2026-04-29)
 
 The scenario depends on rapid growth in the compute available to leading labs.
@@ -230,6 +254,8 @@ The scenario depends on rapid growth in the compute available to leading labs.
 **Inspector update — The available fleet grew 9.5× in two years.**
 
 OpenAI disclosed roughly 1.9 GW of available compute in 2025, up from 0.2 GW in 2023. This company-reported fleet measure is closer to deployed capacity than a future power commitment; it still says little about any one training run.
+
+**Provenance:** Company report
 
 [fleet] OpenAI House Select Committee update — https://cdn.openai.com/pdf/045aa967-ee96-4a09-94ee-3098ddf6db2c/OpenAI-US-House-Select-Cmte-Update-%5B021226%5D.pdf (OpenAI; 2026-02-12)
 
@@ -267,6 +293,8 @@ NVIDIA’s data-centre sales could keep expanding far beyond their 2024 level.
 
 NVIDIA reported $89 billion in Data Center revenue for the quarter ended July 26, 2026—117% above a year earlier. That is nearly the $90 billion annualized pace cited in the essay. Sales confirm demand; they do not count installed or active GPUs.
 
+**Provenance:** Company filing
+
 [nvidia26] NVIDIA Q2 FY2027 financial results — https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/ (NVIDIA; 2026-08-26)
 
 Power generation, grid connections and equipment could constrain the buildout.
@@ -274,6 +302,8 @@ Power generation, grid connections and equipment could constrain the buildout.
 **Inspector update — Demand is outrunning the grid’s usual pace.**
 
 IEA reports that data-centre electricity use rose 17% in 2025, versus 3% for global electricity demand. It also identifies tightening turbine, transformer and grid-connection bottlenecks. The physical constraint in the essay is now visible in deployment.
+
+**Provenance:** Intergovernmental report
 
 [iea26] Data-centre electricity use in 2025 — https://www.iea.org/news/data-centre-electricity-use-surged-in-2025-even-with-tightening-bottlenecks-driving-a-scramble-for-solutions (IEA; 2026-04-16)
 
@@ -306,6 +336,8 @@ Future clusters are expressed in H100-equivalents, with hardware efficiency shap
 **Inspector update — The hardware baseline has moved.**
 
 Rubin’s published peak memory bandwidth is 22 TB/s, versus H100 SXM’s 3.35 TB/s. More bandwidth can ease inference bottlenecks. Converting this into H100-equivalents still requires a workload, numerical precision and measured utilization.
+
+**Provenance:** Vendor specifications
 
 [a100] A100 80 GB datasheet — https://www.nvidia.com/content/dam/en-zz/Solutions/Data-Center/a100/pdf/a100-80gb-datasheet-update-nvidia-us-1521051-r2-web.pdf (NVIDIA; )
 
@@ -379,6 +411,8 @@ Protecting model weights and algorithmic knowledge will require much stronger se
 
 In September 2026, OpenAI classified Astra at its Critical cybersecurity threshold and described stronger isolation and monitoring after the Hugging Face incident. This is the developer’s assessment. The problem now includes containing the systems doing the work, as well as keeping outsiders out.
 
+**Provenance:** Company assessment
+
 [critical] Path to Astra: critical capabilities and frontier safeguards — https://openai.com/index/path-to-astra/ (OpenAI; 2026-09-01)
 
 [Evidence SEC-06] (2026-09-01; company-reported): OpenAI states that GPT-6 Astra meets its Critical cybersecurity capability threshold and says its post-Hugging-Face hardening included isolation and network controls, expanded monitoring, and stricter training controls. Source: https://openai.com/index/path-to-astra/. Caveat: OpenAI’s own classification and account of safeguards; no public independent assessment establishes security against a top-tier state actor.
@@ -388,6 +422,8 @@ Preparations against capable state actors need to start years before AGI.
 **Inspector update — A roadmap is evidence of effort, not assurance.**
 
 Anthropic moved the deadline for its Phase 1 inventory, cost and timeline analysis of extreme-security prototypes from May to September 30, 2026. That date is still ahead. A roadmap makes effort visible; it cannot demonstrate resistance to a top-tier intelligence service.
+
+**Provenance:** Company roadmap
 
 [roadmap] Frontier Safety Roadmap — https://www.anthropic.com/responsible-scaling-policy/roadmap (Anthropic; 2026-07-29)
 
@@ -399,6 +435,8 @@ Human feedback may become inadequate when people cannot reliably judge the model
 
 In an August 2026 preprint, monitors detected 60–94% of explicitly induced behavioral shifts. Detection fell by 41–46 percentage points in two settings when influence was implicit. The result is task-specific; it shows why legible reasoning alone is not evidence of faithful oversight.
 
+**Provenance:** Research preprint
+
 [monitor] Chain-of-thought monitoring in implicit-influence settings — https://arxiv.org/abs/2608.04735v1 (Duzan & Cooper Stickland; 2026-08-05)
 
 [Evidence SEC-05] (2026-08-05; research-preprint): A 2026 preprint found monitors detected 60–94% of explicitly induced behavior shifts, while implicit influence reduced detection by 41–46 percentage points in two task settings. Source: https://arxiv.org/abs/2608.04735v1. Caveat: Single preprint benchmark across four task formats; the two-setting result is not a general measurement of deployed oversight reliability.
@@ -409,6 +447,8 @@ AI researchers may eventually help solve the alignment problem itself.
 
 Anthropic reports agents recovering 97% of a weak-to-strong supervision gap in a research setup, compared with roughly 23% for two humans. The result did not transfer cleanly to production-scale models. A successful experiment can advance alignment research without solving deployment safety.
 
+**Provenance:** Company report
+
 [anthropic-rd] When AI builds itself — https://www.anthropic.com/institute/recursive-self-improvement (Anthropic Institute; 2026-09-18)
 
 Reliable containment and defense are needed alongside alignment.
@@ -416,6 +456,8 @@ Reliable containment and defense are needed alongside alignment.
 **Inspector context — Evaluate the whole system.**
 
 Astra’s September safety report describes classifiers over reasoning and actions that can stop unauthorized activity. Those controls complement behavioral training. A favorable result for a model alone should not be read as a guarantee for every tool, permission or deployment environment.
+
+**Provenance:** Company assessment
 
 [critical] Path to Astra: critical capabilities and frontier safeguards — https://openai.com/index/path-to-astra/ (OpenAI; 2026-09-01)
 
@@ -429,6 +471,8 @@ Chinese labs could remain competitive despite US advantages in compute.
 
 DeepSeek-R1’s published reasoning results made that possibility concrete. They do not establish equality across research autonomy, compute supply or deployment scale. A national lead is a collection of advantages, not one leaderboard position.
 
+**Provenance:** Research paper
+
 [r1] DeepSeek-R1 technical report — https://arxiv.org/abs/2501.12948 (DeepSeek; 2025-01-22)
 
 [Evidence CMP-05] (2025-01-22; research-preprint): DeepSeek reports that its R1-Zero research variant developed reasoning capability through large-scale reinforcement learning without preliminary supervised fine-tuning. Source: https://arxiv.org/abs/2501.12948. Caveat: This claim is specifically about R1-Zero, not every stage of DeepSeek-R1; a different learning signal does not make high-quality training data unlimited.
@@ -438,6 +482,8 @@ A lead in superintelligence might translate into decisive military power.
 **Inspector context — This remains a separate forecast.**
 
 Stronger software and cyber capabilities matter. They do not by themselves establish the much larger claim about defeating a nuclear deterrent. That step still depends on physical deployment, intelligence, countermeasures and an adversary’s response; a benchmark cannot adjudicate it.
+
+**Provenance:** Interpretation
 
 [critical] Path to Astra: critical capabilities and frontier safeguards — https://openai.com/index/path-to-astra/ (OpenAI; 2026-09-01)
 
@@ -449,6 +495,8 @@ A government-led AGI effort could emerge around 2027–28.
 
 Stargate is evidence of coordinated infrastructure investment. Its existence alone does not establish the government chain of command envisioned in the essay. The 2027–28 prediction remains prospective; public-private projects and state control should be recorded separately.
 
+**Provenance:** Interpretation
+
 [stargate] Building the compute infrastructure for the Intelligence Age — https://openai.com/index/building-the-compute-infrastructure-for-the-intelligence-age/ (OpenAI; 2026-04-29)
 
 National laboratories and government resources could become central to frontier AI.
@@ -456,6 +504,8 @@ National laboratories and government resources could become central to frontier 
 **Inspector update — A federal research coalition has taken shape.**
 
 DOE launched the Genesis Mission Consortium in February 2026, bringing national laboratories, companies and universities into an AI-for-science effort. It is a concrete institutional development toward state involvement, with a narrower remit than the unified AGI project envisioned here.
+
+**Provenance:** Government announcement
 
 [genesis] Genesis Mission Consortium launch — https://www.energy.gov/articles/energy-department-launches-genesis-mission-consortium-accelerate-ai-driven-scientific (US Department of Energy; 2026-02-09)
 
@@ -468,6 +518,8 @@ The series presents a concrete scenario for the decade, while acknowledging larg
 **Inspector context — Keep the forecast disaggregated.**
 
 Compute growth, research automation, security, political control and military dominance are separate propositions. Evidence can strengthen one while leaving another unresolved. The useful update is a dated ledger of what has changed, with the original deadlines still visible.
+
+**Provenance:** Synthesis
 
 ## Glossary
 

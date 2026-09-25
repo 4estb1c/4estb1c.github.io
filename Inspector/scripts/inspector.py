@@ -114,6 +114,10 @@ def validate_article(article: Any, where: str, evidence_ids: set[str], errors: l
                 continue
             if note["kind"] not in {"update", "context", "original"}:
                 errors.append(f"{nloc}: unsupported kind {note['kind']!r}")
+            if note["kind"] in {"update", "context"} and not isinstance(note.get("status"), str):
+                errors.append(f"{nloc}.status: factual update/context notes require a nonempty provenance label")
+            elif note["kind"] in {"update", "context"} and not note["status"].strip():
+                errors.append(f"{nloc}.status: factual update/context notes require a nonempty provenance label")
             for sid in note.get("sourceIds", []):
                 if sid not in source_ids:
                     errors.append(f"{nloc}: unknown source id {sid!r}")
@@ -270,6 +274,8 @@ def render_context(article: dict[str, Any]) -> str:
             label = {"update": "Inspector update", "context": "Inspector context", "original": "Original footnote"}.get(note.get("kind"), "Note")
             title = f" — {note['title']}" if note.get("title") else ""
             lines += [f"**{label}{title}**", "", md_escape(note.get("body")), ""]
+            if note.get("status"):
+                lines += [f"**Provenance:** {md_escape(note['status'])}", ""]
             for sid in note.get("sourceIds", []):
                 source = sources.get(sid, {})
                 if source:
