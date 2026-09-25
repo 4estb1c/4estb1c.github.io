@@ -68,3 +68,9 @@ Rename the published project and route to `/Margin/` throughout the interface, a
 3. Rebuild context, validate data and JavaScript, check desktop/mobile pages locally, commit and push, then verify GitHub Pages.
 
 Root agent owns this scoped rename and integration on `main`. No subagent needed for a straightforward, coupled path change.
+
+## Completion and live verification
+
+Completed in `36cb002` and published to `/Margin/`. The live library, article, context, prompt, and JavaScript returned HTTP 200. Published HTML, article data, context, JavaScript, and stylesheet match the checkout after normalizing line endings. The live reader renders 32 paired rows, nine chapters, and seven figures with no console errors or document-wide horizontal overflow. Data validation, JavaScript syntax, and Git whitespace checks pass. The edition remains a companion of linked claim summaries, not a full-text republication or an exhaustive audit of every numerical claim.
+
+For subsequent articles use `Margin/prompts/research-and-annotate.md`; shared evidence is in `Margin/research/evidence.json` and discussion context in `Margin/context/`.
