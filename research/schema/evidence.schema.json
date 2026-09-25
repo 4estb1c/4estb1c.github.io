@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Margin evidence record",
+  "type": "object",
+  "required": ["corpus", "asOf", "records"],
+  "properties": {
+    "corpus": {"type": "string"},
+    "asOf": {"type": "string", "format": "date"},
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "topic", "fact", "asOf", "status", "sourceURL", "sourcePublisher", "retrieved", "caveat"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^[A-Z]+-[0-9]+$"},
+          "topic": {"type": "string"},
+          "fact": {"type": "string"},
+          "value": {"type": ["string", "number", "null"]},
+          "unit": {"type": ["string", "null"]},
+          "asOf": {"type": "string"},
+          "status": {"enum": ["observed", "announced", "forecast", "estimate", "policy", "policy-proposal", "company-reported", "vendor-specification", "methodology", "measurement", "observed-and-forecast"]},
+          "sourceURL": {"type": "string", "format": "uri"},
+          "sourcePublisher": {"type": "string"},
+          "retrieved": {"type": "string", "format": "date"},
+          "caveat": {"type": "string"}
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
