@@ -1,0 +1,1073 @@
+{
+  "id": "situational-awareness",
+  "title": "Situational Awareness",
+  "dek": "The Decade Ahead, revisited. A reading companion to Leopold Aschenbrenner’s 2024 essays, with the evidence that has arrived since.",
+  "author": "Leopold Aschenbrenner",
+  "published": "2024-06",
+  "updated": "2026-09-25",
+  "sourceUrl": "https://situational-awareness.ai/",
+  "sourceMode": "summary",
+  "editionNote": "A companion across all nine sections, checked through 25 September 2026. The left column contains concise claim summaries, not the original essay text. Read the complete essays at the linked sources. Dates on evidence distinguish measurements from forecasts; missing public evidence is left unresolved.",
+  "chapters": [
+    {
+      "id": "introduction",
+      "title": "Introduction"
+    },
+    {
+      "id": "counting",
+      "title": "I. Counting the OOMs"
+    },
+    {
+      "id": "explosion",
+      "title": "II. The intelligence explosion"
+    },
+    {
+      "id": "infrastructure",
+      "title": "IIIa. The trillion-dollar cluster"
+    },
+    {
+      "id": "security",
+      "title": "IIIb. Security for AGI"
+    },
+    {
+      "id": "alignment",
+      "title": "IIIc. Superalignment"
+    },
+    {
+      "id": "competition",
+      "title": "IIId. The free world"
+    },
+    {
+      "id": "project",
+      "title": "IV. The Project"
+    },
+    {
+      "id": "parting",
+      "title": "V. Parting thoughts"
+    }
+  ],
+  "glossary": {
+    "AGI": {
+      "definition": "Artificial general intelligence. Here, the economically relevant threshold is a system that can do the full work of an AI researcher—not simply pass an exam."
+    },
+    "OOM": {
+      "definition": "Order of magnitude: a factor of ten. Two OOMs is 100×; half an OOM is about 3.16×."
+    },
+    "compute": {
+      "definition": "Computational work, often counted in floating-point operations (FLOP). A chip’s FLOP/s is a rate; a training run’s FLOP is a total."
+    },
+    "inference": {
+      "definition": "Running a trained model to produce an answer or take an action. More reasoning steps can improve results while increasing cost and latency."
+    },
+    "reinforcement learning": {
+      "definition": "Training through feedback on actions or answers. In verifiable domains, rewards can come from tests or correct solutions rather than human ratings."
+    },
+    "GPQA": {
+      "definition": "A graduate-level science question benchmark. Results depend on the subset, prompting, tools, and inference budget."
+    },
+    "time horizon": {
+      "definition": "In METR’s evaluation, the human-expert duration of a task at which an agent reaches a specified success probability. It is not the length of an unattended AI run."
+    },
+    "model weights": {
+      "definition": "The learned numerical parameters of a model. Access to them permits running the model outside the developer’s hosted safeguards."
+    },
+    "distillation": {
+      "definition": "Training one model on outputs from another. This transfers some capabilities without copying the original model’s weights."
+    },
+    "chain of thought": {
+      "definition": "Intermediate text a model generates while solving a problem. It can help oversight, but may omit factors that influence the answer."
+    },
+    "capex": {
+      "definition": "Capital expenditure: investment in durable assets. A company’s capex can include much more than AI, and a planned budget is not money already spent."
+    },
+    "GW": {
+      "definition": "Gigawatt: one billion watts of power. Running at 1 GW continuously for a non-leap year uses 8.76 TWh of energy."
+    },
+    "HBM": {
+      "definition": "High-bandwidth memory located close to a processor. Capacity and bandwidth can constrain model size, throughput, and serving cost."
+    },
+    "H100-equivalent": {
+      "definition": "A normalization to the performance of NVIDIA’s H100. The conversion depends on numerical precision, sparsity, workload, and utilization; it is not a physical chip count."
+    },
+    "reward hacking": {
+      "definition": "Improving a measured score by exploiting the test or reward rather than accomplishing the intended task."
+    }
+  },
+  "blocks": [
+    {
+      "id": "the-buildout",
+      "chapter": "introduction",
+      "type": "paragraph",
+      "label": "2024 claim · paraphrase",
+      "text": "Compute investment and electricity demand will rise sharply as the race toward AGI gathers pace.",
+      "sourceIds": [
+        "original-introduction"
+      ],
+      "notes": [
+        {
+          "id": "the-buildout-note",
+          "kind": "update",
+          "title": "The scale is becoming concrete.",
+          "body": "By April 2026, OpenAI said it had secured more than 10 GW of US infrastructure capacity. That is a commitment across a buildout, not 10 GW already running—or one giant training cluster.",
+          "sourceIds": [
+            "stargate"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "the-deadline",
+      "chapter": "introduction",
+      "type": "paragraph",
+      "label": "2024 claim · paraphrase",
+      "text": "The essays anticipate graduate-level abilities in 2025–26, followed by superintelligence before the decade ends.",
+      "sourceIds": [
+        "original-introduction"
+      ],
+      "notes": [
+        {
+          "id": "the-deadline-note",
+          "kind": "update",
+          "title": "Several milestones have arrived. The deadline remains open.",
+          "body": "Google’s research system earned 35 of 42 points at the 2025 International Mathematical Olympiad, with official grading. That is a substantial change from GPT-4’s school-exam performance. It does not settle whether a model can take over an open-ended research job.",
+          "sourceIds": [
+            "imo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "compute-trend",
+      "chapter": "counting",
+      "type": "paragraph",
+      "label": "2024 claim · paraphrase",
+      "text": "Training compute is expected to grow by roughly half an OOM per year.",
+      "sourceIds": [
+        "original-counting"
+      ],
+      "notes": [
+        {
+          "id": "compute-trend-note",
+          "kind": "update",
+          "title": "The measured trend remains steep.",
+          "body": "Epoch’s February 2026 dashboard puts frontier language-model training compute growth at about 5× per year since 2020, or 0.70 OOM. Different sample windows give different slopes; this is a historical fit, not a measurement of any undisclosed new model.",
+          "sourceIds": [
+            "epoch-trends"
+          ],
+          "figure": {
+            "type": "bar",
+            "title": "Annual training-compute growth",
+            "description": "Factors per year. Original assumption versus Epoch’s historical estimate; different periods, not a before-and-after measurement.",
+            "xLabel": "Estimate",
+            "yLabel": "Growth factor / year",
+            "series": [
+              {
+                "label": "Annual multiplier",
+                "data": [
+                  {
+                    "x": "2024 assumption",
+                    "y": 3.16
+                  },
+                  {
+                    "x": "Epoch · Feb 2026",
+                    "y": 5
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "efficiency",
+      "chapter": "counting",
+      "type": "paragraph",
+      "label": "2024 claim · paraphrase",
+      "text": "Algorithmic improvements may add another two OOMs of effective compute by 2027.",
+      "sourceIds": [
+        "original-counting"
+      ],
+      "notes": [
+        {
+          "id": "efficiency-note",
+          "kind": "context",
+          "title": "There is no clean public odometer.",
+          "body": "Efficiency keeps improving, but lower serving prices, better benchmark scores and cheaper training are different quantities. The projected 100× training-efficiency gain cannot be marked achieved from API price cuts. Keep the forecast open until comparable training evidence is available.",
+          "sourceIds": [
+            "epoch-trends"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "harder-exams",
+      "chapter": "counting",
+      "type": "paragraph",
+      "label": "2024 claim · paraphrase",
+      "text": "Graduate-level science questions are expected to become another saturated benchmark.",
+      "sourceIds": [
+        "original-counting"
+      ],
+      "notes": [
+        {
+          "id": "harder-exams-note",
+          "kind": "update",
+          "title": "That particular barrier has largely fallen.",
+          "body": "OpenAI reports 96.0% on GPQA Diamond for Astra in September 2026. Its same release reports 59.3% on Agents’ Last Exam. These are different tests, not a shared intelligence scale; the contrast shows why exam mastery and dependable professional work need separate measurements.",
+          "sourceIds": [
+            "astra"
+          ],
+          "figure": {
+            "type": "table",
+            "title": "One model, different tests",
+            "description": "Developer-reported Astra results, September 2026. Scores have different meanings and are not directly comparable.",
+            "columns": [
+              {
+                "key": "benchmark",
+                "label": "Benchmark"
+              },
+              {
+                "key": "score",
+                "label": "Reported score"
+              }
+            ],
+            "rows": [
+              {
+                "benchmark": "GPQA Diamond",
+                "score": "96.0%"
+              },
+              {
+                "benchmark": "Agents’ Last Exam",
+                "score": "59.3%"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "data-wall",
+      "chapter": "counting",
+      "type": "paragraph",
+      "label": "2024 claim · paraphrase",
+      "text": "Finite internet data could block further scaling; synthetic data and reinforcement learning may provide a way through.",
+      "sourceIds": [
+        "original-counting"
+      ],
+      "notes": [
+        {
+          "id": "data-wall-note",
+          "kind": "update",
+          "title": "A real alternative to another pass over the web.",
+          "body": "DeepSeek-R1 demonstrated reasoning gains from reinforcement learning, including a research variant trained without preliminary supervised fine-tuning. Feedback from verifiable answers supplies a different learning signal. That makes the data constraint less simple; it does not make trustworthy training data unlimited.",
+          "sourceIds": [
+            "r1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "agents",
+      "chapter": "counting",
+      "type": "paragraph",
+      "label": "2024 claim · paraphrase",
+      "text": "Tools, memory and longer task execution could turn chatbots into useful autonomous coworkers.",
+      "sourceIds": [
+        "original-counting"
+      ],
+      "notes": [
+        {
+          "id": "agents-note",
+          "kind": "update",
+          "title": "Measure the task, and the reliability.",
+          "body": "METR’s May 2026 update warns that horizons above 16 human-expert hours are unreliable with its current task suite. Its 50% horizon is a difficulty measure at one-in-two success—not a promise of 16 hours of reliable unattended work.",
+          "sourceIds": [
+            "metr-horizons"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reasoning-compute",
+      "chapter": "counting",
+      "type": "paragraph",
+      "label": "2024 claim · paraphrase",
+      "text": "Unlocking latent abilities is expected to complement larger base models.",
+      "sourceIds": [
+        "original-counting"
+      ],
+      "notes": [
+        {
+          "id": "reasoning-compute-note",
+          "kind": "context",
+          "title": "Compute now has another place to go.",
+          "body": "Geiping and colleagues demonstrated a 3.5-billion-parameter model that spends extra inference compute by repeatedly applying an internal block. More computation need not mean more visible reasoning tokens. This changes both the economics of an answer and what a human can inspect.",
+          "sourceIds": [
+            "latent"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "research-labor",
+      "chapter": "explosion",
+      "type": "paragraph",
+      "label": "2024 claim · paraphrase",
+      "text": "Replicated AI researchers could compress years of algorithmic progress into months.",
+      "sourceIds": [
+        "original-explosion"
+      ],
+      "notes": [
+        {
+          "id": "research-labor-note",
+          "kind": "update",
+          "title": "Research assistance is measurable; full substitution is harder.",
+          "body": "Anthropic reports that its typical engineer merged eight times as much code per day in Q2 2026 as in 2024. It explicitly cautions that code volume overstates productivity. This supports substantial workflow change, while leaving the speed of valuable scientific progress unresolved.",
+          "sourceIds": [
+            "anthropic-rd"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "recursive-loop",
+      "chapter": "explosion",
+      "type": "paragraph",
+      "label": "2024 claim · paraphrase",
+      "text": "Automated AI research could feed improvements back into the systems doing the research.",
+      "sourceIds": [
+        "original-explosion"
+      ],
+      "notes": [
+        {
+          "id": "recursive-loop-note",
+          "kind": "update",
+          "title": "A small version of the loop now exists.",
+          "body": "A September 2026 preprint reports seven successive improvements to a research agent’s own code during an eight-day run, with gains on four held-out benchmarks. The object being improved was the agent software. It was not an autonomous succession of newly trained frontier models.",
+          "sourceIds": [
+            "aide2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bottlenecks",
+      "chapter": "explosion",
+      "type": "paragraph",
+      "label": "2024 claim · paraphrase",
+      "text": "Experiment compute and the last difficult parts of research could limit the intelligence explosion.",
+      "sourceIds": [
+        "original-explosion"
+      ],
+      "notes": [
+        {
+          "id": "bottlenecks-note",
+          "kind": "context",
+          "title": "The remaining work sets the ceiling.",
+          "body": "Illustration: if 90% of a workflow becomes 10× faster and the other 10% is unchanged, total speed rises only 5.26×. Even infinite speed on that 90% caps the gain at 10×. This is arithmetic, not an estimate of how much research is currently automated.",
+          "sourceIds": [],
+          "figure": {
+            "type": "line",
+            "title": "Faster parts, slower whole",
+            "description": "Illustrative Amdahl calculation: S = 1 / ((1 − f) + f / s). Assumed automated fraction f = 0.9; not empirical data.",
+            "xLabel": "Speedup of automated work",
+            "yLabel": "Whole-workflow speedup",
+            "series": [
+              {
+                "label": "90% of work accelerated",
+                "data": [
+                  {
+                    "x": 1,
+                    "y": 1
+                  },
+                  {
+                    "x": 2,
+                    "y": 1.818
+                  },
+                  {
+                    "x": 5,
+                    "y": 3.571
+                  },
+                  {
+                    "x": 10,
+                    "y": 5.263
+                  },
+                  {
+                    "x": 20,
+                    "y": 6.897
+                  },
+                  {
+                    "x": 50,
+                    "y": 8.475
+                  },
+                  {
+                    "x": 100,
+                    "y": 9.174
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "cluster-size",
+      "chapter": "infrastructure",
+      "type": "paragraph",
+      "label": "2024 claim · paraphrase",
+      "text": "The cluster scenario reaches around 1 GW in 2026, 10 GW in 2028 and 100 GW in 2030.",
+      "sourceIds": [
+        "original-infrastructure"
+      ],
+      "notes": [
+        {
+          "id": "cluster-size-note",
+          "kind": "context",
+          "title": "Keep the units—and the boundaries—straight.",
+          "body": "A power reservation, an energized site, a company’s total fleet and a single training run are four different things. The latest Stargate commitment supports the scale of investment envisaged here. It does not establish that the projected single-cluster milestones have been met.",
+          "sourceIds": [
+            "stargate"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "real-capacity",
+      "chapter": "infrastructure",
+      "type": "paragraph",
+      "label": "2024 claim · paraphrase",
+      "text": "The scenario depends on rapid growth in the compute available to leading labs.",
+      "sourceIds": [
+        "original-infrastructure"
+      ],
+      "notes": [
+        {
+          "id": "real-capacity-note",
+          "kind": "update",
+          "title": "The available fleet grew 9.5× in two years.",
+          "body": "OpenAI disclosed roughly 1.9 GW of available compute in 2025, up from 0.2 GW in 2023. This company-reported fleet measure is closer to deployed capacity than a future power commitment; it still says little about any one training run.",
+          "sourceIds": [
+            "fleet"
+          ],
+          "figure": {
+            "type": "bar",
+            "title": "OpenAI’s available compute",
+            "description": "Company-reported capacity, GW. The 2025 value is approximate. Available fleet capacity is not a single cluster or measured utilization.",
+            "yLabel": "GW",
+            "series": [
+              {
+                "label": "Available compute",
+                "data": [
+                  {
+                    "x": "2023",
+                    "y": 0.2
+                  },
+                  {
+                    "x": "2024",
+                    "y": 0.6
+                  },
+                  {
+                    "x": "2025",
+                    "y": 1.9
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "nvidia-demand",
+      "chapter": "infrastructure",
+      "type": "paragraph",
+      "label": "2024 claim · paraphrase",
+      "text": "NVIDIA’s data-centre sales could keep expanding far beyond their 2024 level.",
+      "sourceIds": [
+        "original-infrastructure"
+      ],
+      "notes": [
+        {
+          "id": "nvidia-demand-note",
+          "kind": "update",
+          "title": "The old annualized figure is now a quarter.",
+          "body": "NVIDIA reported $89 billion in Data Center revenue for the quarter ended July 26, 2026—117% above a year earlier. That is nearly the $90 billion annualized pace cited in the essay. Sales confirm demand; they do not count installed or active GPUs.",
+          "sourceIds": [
+            "nvidia26"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "electricity",
+      "chapter": "infrastructure",
+      "type": "paragraph",
+      "label": "2024 claim · paraphrase",
+      "text": "Power generation, grid connections and equipment could constrain the buildout.",
+      "sourceIds": [
+        "original-infrastructure"
+      ],
+      "notes": [
+        {
+          "id": "electricity-note",
+          "kind": "update",
+          "title": "Demand is outrunning the grid’s usual pace.",
+          "body": "IEA reports that data-centre electricity use rose 17% in 2025, versus 3% for global electricity demand. It also identifies tightening turbine, transformer and grid-connection bottlenecks. The physical constraint in the essay is now visible in deployment.",
+          "sourceIds": [
+            "iea26"
+          ],
+          "figure": {
+            "type": "bar",
+            "title": "Electricity demand growth · 2025",
+            "description": "Global annual growth, IEA April 2026. Data centres include AI and other workloads.",
+            "yLabel": "Year-on-year growth (%)",
+            "series": [
+              {
+                "label": "Demand growth",
+                "data": [
+                  {
+                    "x": "All electricity",
+                    "y": 3
+                  },
+                  {
+                    "x": "Data centres",
+                    "y": 17
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "gpu-specs",
+      "chapter": "infrastructure",
+      "type": "paragraph",
+      "label": "2024 claim · paraphrase",
+      "text": "Future clusters are expressed in H100-equivalents, with hardware efficiency shaping cost and power.",
+      "sourceIds": [
+        "original-infrastructure"
+      ],
+      "notes": [
+        {
+          "id": "gpu-specs-note",
+          "kind": "update",
+          "title": "The hardware baseline has moved.",
+          "body": "Rubin’s published peak memory bandwidth is 22 TB/s, versus H100 SXM’s 3.35 TB/s. More bandwidth can ease inference bottlenecks. Converting this into H100-equivalents still requires a workload, numerical precision and measured utilization.",
+          "sourceIds": [
+            "a100",
+            "h100",
+            "hgxs",
+            "rubin"
+          ],
+          "figure": {
+            "type": "table",
+            "title": "Memory is a separate axis of progress",
+            "description": "Per-GPU vendor specifications. Capacity in GB; peak bandwidth in TB/s. Rubin values are up to. These are not measured application speedups.",
+            "columns": [
+              {
+                "key": "gpu",
+                "label": "GPU"
+              },
+              {
+                "key": "capacity",
+                "label": "GB"
+              },
+              {
+                "key": "bandwidth",
+                "label": "TB/s"
+              }
+            ],
+            "rows": [
+              {
+                "gpu": "A100 80GB SXM",
+                "capacity": 80,
+                "bandwidth": 2.039
+              },
+              {
+                "gpu": "H100 SXM",
+                "capacity": 80,
+                "bandwidth": 3.35
+              },
+              {
+                "gpu": "H200 SXM",
+                "capacity": 141,
+                "bandwidth": 4.8
+              },
+              {
+                "gpu": "B200 SXM",
+                "capacity": 180,
+                "bandwidth": 8
+              },
+              {
+                "gpu": "B300 SXM",
+                "capacity": 288,
+                "bandwidth": 8
+              },
+              {
+                "gpu": "Rubin",
+                "capacity": 288,
+                "bandwidth": 22
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "new-adversary",
+      "chapter": "security",
+      "type": "paragraph",
+      "label": "2024 claim · paraphrase",
+      "text": "Protecting model weights and algorithmic knowledge will require much stronger security.",
+      "sourceIds": [
+        "original-security"
+      ],
+      "notes": [
+        {
+          "id": "new-adversary-note",
+          "kind": "update",
+          "title": "The model is now part of the threat model.",
+          "body": "In September 2026, OpenAI classified Astra at its Critical cybersecurity threshold and described stronger isolation and monitoring after the Hugging Face incident. This is the developer’s assessment. The problem now includes containing the systems doing the work, as well as keeping outsiders out.",
+          "sourceIds": [
+            "critical"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "security-progress",
+      "chapter": "security",
+      "type": "paragraph",
+      "label": "2024 claim · paraphrase",
+      "text": "Preparations against capable state actors need to start years before AGI.",
+      "sourceIds": [
+        "original-security"
+      ],
+      "notes": [
+        {
+          "id": "security-progress-note",
+          "kind": "update",
+          "title": "A roadmap is evidence of effort, not assurance.",
+          "body": "Anthropic moved the first phase of its extreme-security prototype work from May to September 30, 2026. As of this edition, that deadline is still ahead. Public commitments make progress easier to audit, but cannot demonstrate resistance to a top-tier intelligence service.",
+          "sourceIds": [
+            "roadmap"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "oversight",
+      "chapter": "alignment",
+      "type": "paragraph",
+      "label": "2024 claim · paraphrase",
+      "text": "Human feedback may become inadequate when people cannot reliably judge the model’s work.",
+      "sourceIds": [
+        "original-alignment"
+      ],
+      "notes": [
+        {
+          "id": "oversight-note",
+          "kind": "update",
+          "title": "A readable explanation is only one safety layer.",
+          "body": "An August 2026 study found that monitors detected 60–94% of explicitly induced behavioral shifts, but detection fell by 41–46 percentage points in two settings when influence was implicit. The result is task-specific; it shows why legible reasoning alone is not evidence of faithful oversight.",
+          "sourceIds": [
+            "monitor"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "alignment-research",
+      "chapter": "alignment",
+      "type": "paragraph",
+      "label": "2024 claim · paraphrase",
+      "text": "AI researchers may eventually help solve the alignment problem itself.",
+      "sourceIds": [
+        "original-alignment"
+      ],
+      "notes": [
+        {
+          "id": "alignment-research-note",
+          "kind": "update",
+          "title": "Promising experiments still need to transfer.",
+          "body": "Anthropic reports agents recovering 97% of a weak-to-strong supervision gap in a research setup, compared with roughly 23% for two humans. The result did not transfer cleanly to production-scale models. A successful experiment can advance alignment research without solving deployment safety.",
+          "sourceIds": [
+            "anthropic-rd"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "controls",
+      "chapter": "alignment",
+      "type": "paragraph",
+      "label": "2024 claim · paraphrase",
+      "text": "Reliable containment and defense are needed alongside alignment.",
+      "sourceIds": [
+        "original-alignment"
+      ],
+      "notes": [
+        {
+          "id": "controls-note",
+          "kind": "context",
+          "title": "Evaluate the whole system.",
+          "body": "Astra’s September safety report describes classifiers over reasoning and actions that can stop unauthorized activity. Those controls complement behavioral training. A favorable result for a model alone should not be read as a guarantee for every tool, permission or deployment environment.",
+          "sourceIds": [
+            "critical"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "china-capability",
+      "chapter": "competition",
+      "type": "paragraph",
+      "label": "2024 claim · paraphrase",
+      "text": "Chinese labs could remain competitive despite US advantages in compute.",
+      "sourceIds": [
+        "original-competition"
+      ],
+      "notes": [
+        {
+          "id": "china-capability-note",
+          "kind": "context",
+          "title": "A smaller budget can still produce a strong model.",
+          "body": "DeepSeek-R1’s published reasoning results made that possibility concrete. They do not establish equality across research autonomy, compute supply or deployment scale. A national lead is a collection of advantages, not one leaderboard position.",
+          "sourceIds": [
+            "r1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "military-inference",
+      "chapter": "competition",
+      "type": "paragraph",
+      "label": "2024 claim · paraphrase",
+      "text": "A lead in superintelligence might translate into decisive military power.",
+      "sourceIds": [
+        "original-competition"
+      ],
+      "notes": [
+        {
+          "id": "military-inference-note",
+          "kind": "context",
+          "title": "This remains a separate forecast.",
+          "body": "Stronger software and cyber capabilities matter. They do not by themselves establish the much larger claim about defeating a nuclear deterrent. That step still depends on physical deployment, intelligence, countermeasures and an adversary’s response; a benchmark cannot adjudicate it.",
+          "sourceIds": [
+            "critical"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "national-project",
+      "chapter": "project",
+      "type": "paragraph",
+      "label": "2024 claim · paraphrase",
+      "text": "A government-led AGI effort could emerge around 2027–28.",
+      "sourceIds": [
+        "original-project"
+      ],
+      "notes": [
+        {
+          "id": "national-project-note",
+          "kind": "context",
+          "title": "Track institutions as carefully as chips.",
+          "body": "Stargate is evidence of coordinated infrastructure investment. Its existence alone does not establish the government chain of command envisioned in the essay. The 2027–28 prediction remains prospective; public-private projects and state control should be recorded separately.",
+          "sourceIds": [
+            "stargate"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "public-research",
+      "chapter": "project",
+      "type": "paragraph",
+      "label": "2024 claim · paraphrase",
+      "text": "National laboratories and government resources could become central to frontier AI.",
+      "sourceIds": [
+        "original-project"
+      ],
+      "notes": [
+        {
+          "id": "public-research-note",
+          "kind": "update",
+          "title": "A federal research coalition has taken shape.",
+          "body": "DOE launched the Genesis Mission Consortium in February 2026, bringing national laboratories, companies and universities into an AI-for-science effort. It is a concrete institutional development toward state involvement, with a narrower remit than the unified AGI project envisioned here.",
+          "sourceIds": [
+            "genesis"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "what-would-change",
+      "chapter": "parting",
+      "type": "paragraph",
+      "label": "2024 claim · paraphrase",
+      "text": "The series presents a concrete scenario for the decade, while acknowledging large uncertainty.",
+      "sourceIds": [
+        "original-parting"
+      ],
+      "notes": [
+        {
+          "id": "what-would-change-note",
+          "kind": "context",
+          "title": "Keep the forecast disaggregated.",
+          "body": "Compute growth, research automation, security, political control and military dominance are separate propositions. Evidence can strengthen one while leaving another unresolved. The useful update is a dated ledger of what has changed, with the original deadlines still visible.",
+          "sourceIds": []
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "original-introduction",
+      "label": "Introduction · original essay",
+      "url": "https://situational-awareness.ai/",
+      "publisher": "Leopold Aschenbrenner",
+      "date": "2024-06",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "original-counting",
+      "label": "I. Counting the OOMs · original essay",
+      "url": "https://situational-awareness.ai/from-gpt-4-to-agi/",
+      "publisher": "Leopold Aschenbrenner",
+      "date": "2024-06",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "original-explosion",
+      "label": "II. The intelligence explosion · original essay",
+      "url": "https://situational-awareness.ai/from-agi-to-superintelligence/",
+      "publisher": "Leopold Aschenbrenner",
+      "date": "2024-06",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "original-infrastructure",
+      "label": "IIIa. The trillion-dollar cluster · original essay",
+      "url": "https://situational-awareness.ai/racing-to-the-trillion-dollar-cluster/",
+      "publisher": "Leopold Aschenbrenner",
+      "date": "2024-06",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "original-security",
+      "label": "IIIb. Security for AGI · original essay",
+      "url": "https://situational-awareness.ai/lock-down-the-labs/",
+      "publisher": "Leopold Aschenbrenner",
+      "date": "2024-06",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "original-alignment",
+      "label": "IIIc. Superalignment · original essay",
+      "url": "https://situational-awareness.ai/superalignment/",
+      "publisher": "Leopold Aschenbrenner",
+      "date": "2024-06",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "original-competition",
+      "label": "IIId. The free world · original essay",
+      "url": "https://situational-awareness.ai/the-free-world-must-prevail/",
+      "publisher": "Leopold Aschenbrenner",
+      "date": "2024-06",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "original-project",
+      "label": "IV. The Project · original essay",
+      "url": "https://situational-awareness.ai/the-project/",
+      "publisher": "Leopold Aschenbrenner",
+      "date": "2024-06",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "original-parting",
+      "label": "V. Parting thoughts · original essay",
+      "url": "https://situational-awareness.ai/parting-thoughts/",
+      "publisher": "Leopold Aschenbrenner",
+      "date": "2024-06",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "epoch-trends",
+      "label": "Trends in Artificial Intelligence",
+      "url": "https://epoch.ai/trends",
+      "publisher": "Epoch AI",
+      "date": "2026-02-05",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "metr-horizons",
+      "label": "Task-completion time horizons",
+      "url": "https://metr.org/time-horizons/",
+      "publisher": "METR",
+      "date": "2026-05-08",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "astra",
+      "label": "GPT-6 Astra: A new generation of intelligence",
+      "url": "https://openai.com/index/gpt-6-astra/",
+      "publisher": "OpenAI",
+      "date": "2026-09-03",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "r1",
+      "label": "DeepSeek-R1 technical report",
+      "url": "https://arxiv.org/abs/2501.12948",
+      "publisher": "DeepSeek",
+      "date": "2025-01-22",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "imo",
+      "label": "Gemini Deep Think at IMO 2025",
+      "url": "https://deepmind.google/blog/advanced-version-of-gemini-with-deep-think-officially-achieves-gold-medal-standard-at-the-international-mathematical-olympiad/",
+      "publisher": "Google DeepMind",
+      "date": "2025-07-21",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "anthropic-rd",
+      "label": "When AI builds itself",
+      "url": "https://www.anthropic.com/institute/recursive-self-improvement",
+      "publisher": "Anthropic Institute",
+      "date": "2026-09-18",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "aide2",
+      "label": "Recursive self-improvement of AI research agents",
+      "url": "https://arxiv.org/abs/2609.26457",
+      "publisher": "Srikanth et al.",
+      "date": "2026-09-22",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "latent",
+      "label": "Scaling up test-time compute with latent reasoning",
+      "url": "https://arxiv.org/abs/2502.05171v2",
+      "publisher": "Geiping et al.",
+      "date": "2025-02-17",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "monitor",
+      "label": "Chain-of-thought monitoring in implicit-influence settings",
+      "url": "https://arxiv.org/abs/2608.04735v1",
+      "publisher": "Duzan & Cooper Stickland",
+      "date": "2026-08-05",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "critical",
+      "label": "Path to Astra: critical capabilities and frontier safeguards",
+      "url": "https://openai.com/index/path-to-astra/",
+      "publisher": "OpenAI",
+      "date": "2026-09-01",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "stargate",
+      "label": "Building the compute infrastructure for the Intelligence Age",
+      "url": "https://openai.com/index/building-the-compute-infrastructure-for-the-intelligence-age/",
+      "publisher": "OpenAI",
+      "date": "2026-04-29",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "roadmap",
+      "label": "Frontier Safety Roadmap",
+      "url": "https://www.anthropic.com/responsible-scaling-policy/roadmap",
+      "publisher": "Anthropic",
+      "date": "2026-07-29",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "rd-compute",
+      "label": "Final training runs account for a minority of R&D compute spending",
+      "url": "https://epoch.ai/gradient-updates/r-and-d-vs-training-compute",
+      "publisher": "Epoch AI",
+      "date": "2026-03-23",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "iea26",
+      "label": "Data-centre electricity use in 2025",
+      "url": "https://www.iea.org/news/data-centre-electricity-use-surged-in-2025-even-with-tightening-bottlenecks-driving-a-scramble-for-solutions",
+      "publisher": "IEA",
+      "date": "2026-04-16",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "nvidia26",
+      "label": "NVIDIA Q2 FY2027 financial results",
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/",
+      "publisher": "NVIDIA",
+      "date": "2026-08-26",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "hgxs",
+      "label": "HGX GPU specifications",
+      "url": "https://docs.nvidia.com/enterprise-reference-architectures/hgx-ai-factory/latest/components.html",
+      "publisher": "NVIDIA",
+      "date": "2026-05-18",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "h100",
+      "label": "H100 product specifications",
+      "url": "https://www.nvidia.com/en-us/data-center/h100/",
+      "publisher": "NVIDIA",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "a100",
+      "label": "A100 80 GB datasheet",
+      "url": "https://www.nvidia.com/content/dam/en-zz/Solutions/Data-Center/a100/pdf/a100-80gb-datasheet-update-nvidia-us-1521051-r2-web.pdf",
+      "publisher": "NVIDIA",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "rubin",
+      "label": "Inside NVIDIA Rubin GPU architecture",
+      "url": "https://developer.nvidia.com/blog/inside-nvidia-rubin-gpu-architecture-powering-the-era-of-agentic-ai/",
+      "publisher": "NVIDIA",
+      "date": "2026-07-21",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "fleet",
+      "label": "OpenAI House Select Committee update",
+      "url": "https://cdn.openai.com/pdf/045aa967-ee96-4a09-94ee-3098ddf6db2c/OpenAI-US-House-Select-Cmte-Update-%5B021226%5D.pdf",
+      "publisher": "OpenAI",
+      "date": "2026-02-12",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "genesis",
+      "label": "Genesis Mission Consortium launch",
+      "url": "https://www.energy.gov/articles/energy-department-launches-genesis-mission-consortium-accelerate-ai-driven-scientific",
+      "publisher": "US Department of Energy",
+      "date": "2026-02-09",
+      "retrieved": "2026-09-25"
+    }
+  ],
+  "context": {
+    "downloadUrl": "context/situational-awareness.md",
+    "promptUrl": "prompts/discuss.md"
+  }
+}
