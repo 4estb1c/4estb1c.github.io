@@ -150,7 +150,7 @@
     }
     return bars({ ...figure, type: 'bar', series: [{ color: first?.color, data: bins.map(bin => ({ x: bin.label, y: bin.count })) }] });
   }
-  window.InspectorCharts = { render(figure) {
+  window.MarginCharts = { render(figure) {
     if (!figure || typeof figure !== 'object') return null;
     switch (figure.type) {
       case 'table': return table(figure);

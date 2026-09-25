@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Small standard-library utilities for the static Inspector article collection."""
+"""Small standard-library utilities for the static Margin article collection."""
 
 from __future__ import annotations
 
@@ -221,7 +221,7 @@ def validate() -> int:
         article_ids.add(aid)
         path = ROOT / entry.get("articlePath", "")
         if not path.is_file() or ROOT not in path.resolve().parents:
-            errors.append(f"{loc}: articlePath must point to an existing file inside Inspector")
+            errors.append(f"{loc}: articlePath must point to an existing file inside Margin")
             continue
         article = load_json(path)
         if article.get("id") != aid:
@@ -231,7 +231,7 @@ def validate() -> int:
             if entry.get(prop) and not (ROOT / entry[prop]).is_file():
                 errors.append(f"{loc}: missing {prop} {entry[prop]!r}")
     if errors:
-        print("Inspector validation found issues:")
+        print("Margin validation found issues:")
         print("\n".join(f"- {e}" for e in errors))
         return 1
     print(f"Validated {len(article_ids)} article(s).")
@@ -273,7 +273,7 @@ def render_context(article: dict[str, Any]) -> str:
             body = block.get("text", block.get("html", ""))
             lines += [f"> {body}" if kind == "quote" else md_escape(body), ""]
         for note in block.get("notes", []):
-            label = {"update": "Inspector update", "context": "Inspector context", "original": "Original footnote"}.get(note.get("kind"), "Note")
+            label = {"update": "Margin update", "context": "Margin context", "original": "Original footnote"}.get(note.get("kind"), "Note")
             title = f" — {note['title']}" if note.get("title") else ""
             lines += [f"**{label}{title}**", "", md_escape(note.get("body")), ""]
             if note.get("status"):
@@ -323,7 +323,7 @@ def build_context(article_id: str) -> int:
     relative = entry.get("contextPath") or f"context/{article_id}.md"
     output = ROOT / relative
     if ROOT not in output.resolve().parents:
-        print("contextPath must remain inside Inspector")
+        print("contextPath must remain inside Margin")
         return 1
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(render_context(article), encoding="utf-8")

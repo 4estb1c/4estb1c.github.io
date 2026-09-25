@@ -15,7 +15,7 @@
   }
   function renderCatalogue(catalogue){
     const list=$('#article-list'), input=$('#article-search'), count=$('#catalogue-count'), articles=catalogue.articles||[];
-    document.title=`${catalogue.site?.title||'Inspector'} — a reading room`;
+    document.title=`${catalogue.site?.title||'Margin'} — a reading room`;
     const draw=()=>{const q=input.value.trim().toLowerCase(); const matches=articles.filter(a=>[a.title,a.subtitle,a.author,...(a.tags||[])].join(' ').toLowerCase().includes(q));list.replaceChildren();count.textContent=`${matches.length} document${matches.length===1?'':'s'}`;matches.forEach((a,i)=>{const card=document.createElement('a');card.className='article-card';card.href=`article.html?id=${encodeURIComponent(a.id)}`;const number=text(document.createElement('span'),String(i+1).padStart(2,'0'));number.className='card-index';card.append(number);const copy=document.createElement('div'),h=text(document.createElement('h2'),a.title),p=text(document.createElement('p'),a.subtitle||a.summary||'');copy.append(h,p);card.append(copy);const tags=document.createElement('div');tags.className='tags';(a.tags||[]).slice(0,3).forEach(tag=>{const s=text(document.createElement('span'),tag);s.className='tag';tags.append(s)});card.append(tags);list.append(card)});if(!matches.length)list.append(text(document.createElement('p'),'No documents match that search.'));}; input.addEventListener('input',draw);draw();
   }
   const makeGlossary = (root, glossary, onlyTerms) => {
@@ -26,7 +26,7 @@
   };
   function appendSources(holder, ids, sourceMap){if(!ids?.length)return;const ul=document.createElement('ul');ul.className='note-sources';ids.forEach(id=>{const src=sourceMap.get(id);if(!src)return;const li=document.createElement('li'),a=text(document.createElement('a'),src.label||src.publisher||id),url=safeURL(src.url);if(url){a.href=url;a.target='_blank';a.rel='noopener'}li.append(a);ul.append(li)});holder.append(ul)}
   function renderFigure(figure){
-    const chart=window.InspectorCharts?.render(figure);
+    const chart=window.MarginCharts?.render(figure);
     if(!chart)return null;
     const wrap=document.createElement('figure'),series=Array.isArray(figure.series)?figure.series:[];
     wrap.className='chart';
@@ -62,11 +62,11 @@
     const status=$('#reader-status'),reader=$('#reader');
     try{
       const id=selectArticle(),article=await fetchJSON(`data/${encodeURIComponent(id)}.json`);
-      document.title=`${article.title} — Inspector`;
-      text($('#article-kicker'),article.kicker||'Inspector / Reader');
+      document.title=`${article.title} — Margin`;
+      text($('#article-kicker'),article.kicker||'Margin / Reader');
       text($('#article-title'),article.title);
       text($('#article-dek'),article.dek||article.subtitle||'');
-      text($('#article-meta'),[`Original by ${article.author||'Unknown'}`,`Inspector companion and research notes`,article.published&&`Original published ${article.published}`,article.updated&&`Companion reviewed ${article.updated}`].filter(Boolean).join(' · '));
+      text($('#article-meta'),[`Original by ${article.author||'Unknown'}`,`Margin companion and research notes`,article.published&&`Original published ${article.published}`,article.updated&&`Companion reviewed ${article.updated}`].filter(Boolean).join(' · '));
       const source=$('#source-link');
       if(article.sourceUrl)source.href=safeURL(article.sourceUrl)||'#';else source.hidden=true;
       const contextUrl=localURL(article.context?.downloadUrl||'context/situational-awareness.md');

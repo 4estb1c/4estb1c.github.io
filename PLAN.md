@@ -54,3 +54,17 @@ Publish `/Inspector/` as a reusable, responsive reader with aligned commentary, 
 All 32 paired passages, nine chapter dividers, seven figures, and provenance labels render without browser errors or literal `undefined` text. Desktop and 390px mobile layouts have no document-wide horizontal overflow; mobile commentary expands inline. JavaScript syntax, article/context validation, sitemap parsing, and Git whitespace checks pass. An independent review identified chart-readability, context-link, accessibility, and glossary-input issues; root addressed them before publication.
 
 GitHub Pages deployment of `0dec1b1` completed successfully. The live `/Inspector/` library, article, research context, agent prompt, and existing `/blog/` returned HTTP 200; the live reader rendered all 32 rows, nine chapters, and seven figures without console errors.
+
+# Margin rename — 2026-09-25
+
+## Goal
+
+Rename the published project and route to `/Margin/` throughout the interface, article data, prompts, research workflow, code, and sitemap. Redirect the previously shared `/Inspector/` library and article links to their new locations.
+
+## Plan and ledger
+
+1. Move the tracked project directory and rename its validation CLI; update product-facing names and paths.
+2. Add small legacy redirects for the two published Inspector entry points.
+3. Rebuild context, validate data and JavaScript, check desktop/mobile pages locally, commit and push, then verify GitHub Pages.
+
+Root agent owns this scoped rename and integration on `main`. No subagent needed for a straightforward, coupled path change.

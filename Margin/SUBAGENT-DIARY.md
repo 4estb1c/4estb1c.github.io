@@ -1,4 +1,4 @@
-- Task: reusable Inspector research, import, validation, context workflow; branch `agent/margin-workflow`.
+- Task: reusable Margin research, import, validation, context workflow; branch `agent/margin-workflow`.
 - Added generalized article research/annotation prompt and article starter JSON.
 - Added Python stdlib validator/context exporter and local HTML/MathML structure importer.
 - Added authoring, shared evidence, reproducible charts, discussion, preview, and rights guidance.
