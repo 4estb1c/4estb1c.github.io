@@ -24,7 +24,7 @@ The essays anticipate graduate-level abilities in 2025–26, followed by superin
 
 **Inspector update — Several milestones have arrived. The deadline remains open.**
 
-Google’s research system earned 35 of 42 points at the 2025 International Mathematical Olympiad, with official grading. That is a substantial change from GPT-4’s school-exam performance. It does not settle whether a model can take over an open-ended research job.
+An advanced Gemini Deep Think model earned 35 of 42 points at the 2025 International Mathematical Olympiad, graded by IMO coordinators under the student criteria. It is a substantial change from GPT-4’s school-exam performance. It does not settle whether a model can take over an open-ended research job.
 
 [imo] Gemini Deep Think at IMO 2025 — https://deepmind.google/blog/advanced-version-of-gemini-with-deep-think-officially-achieves-gold-medal-standard-at-the-international-mathematical-olympiad/ (Google DeepMind; 2025-07-21)
 
@@ -73,7 +73,7 @@ Efficiency keeps improving, but lower serving prices, better benchmark scores an
 
 Graduate-level science questions are expected to become another saturated benchmark.
 
-**Inspector update — That particular barrier has largely fallen.**
+**Inspector update — GPQA Diamond nears saturation in the vendor report.**
 
 OpenAI reports 96.0% on GPQA Diamond for Astra in September 2026. Its same release reports 59.3% on Agents’ Last Exam. These are different tests, not a shared intelligence scale; the contrast shows why exam mastery and dependable professional work need separate measurements.
 
@@ -83,7 +83,7 @@ OpenAI reports 96.0% on GPQA Diamond for Astra in September 2026. Its same relea
 {
   "type": "table",
   "title": "One model, different tests",
-  "description": "Developer-reported Astra results, September 2026. Scores have different meanings and are not directly comparable.",
+  "description": "OpenAI-reported Astra results, September 2026, under each benchmark’s stated setup. Scores have different meanings and are not directly comparable.",
   "columns": [
     {
       "key": "benchmark",
@@ -111,7 +111,7 @@ Finite internet data could block further scaling; synthetic data and reinforceme
 
 **Inspector update — A real alternative to another pass over the web.**
 
-DeepSeek-R1 demonstrated reasoning gains from reinforcement learning, including a research variant trained without preliminary supervised fine-tuning. Feedback from verifiable answers supplies a different learning signal. That makes the data constraint less simple; it does not make trustworthy training data unlimited.
+DeepSeek reported reasoning gains from reinforcement learning, including its R1-Zero research variant trained without preliminary supervised fine-tuning. Feedback from verifiable answers supplies a different learning signal. That makes the data constraint less simple; it does not make trustworthy training data unlimited.
 
 [r1] DeepSeek-R1 technical report — https://arxiv.org/abs/2501.12948 (DeepSeek; 2025-01-22)
 
@@ -127,7 +127,7 @@ Unlocking latent abilities is expected to complement larger base models.
 
 **Inspector context — Compute now has another place to go.**
 
-Geiping and colleagues demonstrated a 3.5-billion-parameter model that spends extra inference compute by repeatedly applying an internal block. More computation need not mean more visible reasoning tokens. This changes both the economics of an answer and what a human can inspect.
+As a proof of concept, Geiping and colleagues demonstrated a 3.5-billion-parameter model that spends extra inference compute by repeatedly applying an internal block. More computation need not mean more visible reasoning tokens. This changes both the economics of an answer and what a human can inspect.
 
 [latent] Scaling up test-time compute with latent reasoning — https://arxiv.org/abs/2502.05171v2 (Geiping et al.; 2025-02-17)
 
@@ -145,7 +145,7 @@ Automated AI research could feed improvements back into the systems doing the re
 
 **Inspector update — A small version of the loop now exists.**
 
-A September 2026 preprint reports seven successive improvements to a research agent’s own code during an eight-day run, with gains on four held-out benchmarks. The object being improved was the agent software. It was not an autonomous succession of newly trained frontier models.
+An unreviewed September 2026 preprint reports seven successive improvements to a research agent’s own code during an eight-day run, with gains on four held-out benchmarks. The object being improved was the agent software. It was not an autonomous succession of newly trained frontier models.
 
 [aide2] Recursive self-improvement of AI research agents — https://arxiv.org/abs/2609.26457 (Srikanth et al.; 2026-09-22)
 
@@ -371,7 +371,7 @@ Preparations against capable state actors need to start years before AGI.
 
 **Inspector update — A roadmap is evidence of effort, not assurance.**
 
-Anthropic moved the first phase of its extreme-security prototype work from May to September 30, 2026. As of this edition, that deadline is still ahead. Public commitments make progress easier to audit, but cannot demonstrate resistance to a top-tier intelligence service.
+Anthropic moved the deadline for its Phase 1 inventory, cost and timeline analysis of extreme-security prototypes from May to September 30, 2026. That date is still ahead. A roadmap makes effort visible; it cannot demonstrate resistance to a top-tier intelligence service.
 
 [roadmap] Frontier Safety Roadmap — https://www.anthropic.com/responsible-scaling-policy/roadmap (Anthropic; 2026-07-29)
 
@@ -381,7 +381,7 @@ Human feedback may become inadequate when people cannot reliably judge the model
 
 **Inspector update — A readable explanation is only one safety layer.**
 
-An August 2026 study found that monitors detected 60–94% of explicitly induced behavioral shifts, but detection fell by 41–46 percentage points in two settings when influence was implicit. The result is task-specific; it shows why legible reasoning alone is not evidence of faithful oversight.
+In an August 2026 preprint, monitors detected 60–94% of explicitly induced behavioral shifts. Detection fell by 41–46 percentage points in two settings when influence was implicit. The result is task-specific; it shows why legible reasoning alone is not evidence of faithful oversight.
 
 [monitor] Chain-of-thought monitoring in implicit-influence settings — https://arxiv.org/abs/2608.04735v1 (Duzan & Cooper Stickland; 2026-08-05)
 
@@ -501,42 +501,42 @@ Compute growth, research automation, security, political control and military do
 The following dated records are reusable across articles; their status and caveats matter.
 
 - **CMP-01** (2026-02-05; estimate): Epoch AI estimates frontier AI training compute has grown about 5x/year since 2020. Source: https://epoch.ai/trends. Caveat: Trend estimate; not a promise of future training runs or a direct capability scale.
-- **CMP-02** (2026-02-05; methodology): Epochâ€™s public trend page distinguishes estimated frontier training runs from all AI compute and reports methodological uncertainty. Source: https://epoch.ai/trends. Caveat: Use a sourceâ€™s model definition and confidence bounds before comparing to an inferred private run.
-- **CMP-03** (2025-08-07; company-reported): GPT-5 with thinking used 50â€“80% fewer output tokens than o3 in OpenAIâ€™s stated evaluations across several capability categories. Source: https://openai.com/index/introducing-gpt-5/. Caveat: Output-token efficiency is not training-compute efficiency and comes from the model developer.
+- **CMP-02** (2026-02-05; methodology): Epoch’s public trend page distinguishes estimated frontier training runs from all AI compute and reports methodological uncertainty. Source: https://epoch.ai/trends. Caveat: Use a source’s model definition and confidence bounds before comparing to an inferred private run.
+- **CMP-03** (2025-08-07; company-reported): GPT-5 with thinking used 50–80% fewer output tokens than o3 in OpenAI’s stated evaluations across several capability categories. Source: https://openai.com/index/introducing-gpt-5/. Caveat: Output-token efficiency is not training-compute efficiency and comes from the model developer.
 - **CMP-04** (2025-08-07; company-reported): OpenAI reports GPT-5 was trained on Microsoft Azure AI supercomputers. Source: https://openai.com/index/introducing-gpt-5/. Caveat: The release does not disclose training FLOPs, data mixture, or a general solution to data constraints.
 - **CAP-01** (2025-08-07; company-reported): OpenAI reported GPT-5 scored 74.9% on SWE-bench Verified and 88.0% on Aider Polyglot. Source: https://openai.com/index/introducing-gpt-5-for-developers/. Caveat: SWE-bench Verified uses a fixed 477-task subset; benchmark performance is not an employment-capability measure.
 - **CAP-02** (2025-08-07; company-reported): OpenAI reported GPT-5 pro scored 88.4% on GPQA without tools and GPT-5 scored 94.6% on AIME 2025 without tools. Source: https://openai.com/index/introducing-gpt-5/. Caveat: Narrow evaluations; GPQA/AIME do not measure sustained research autonomy.
-- **CAP-03** (2026-03-05; company-reported): OpenAI reported GPT-5.4 achieved 75.0% on OSWorld-Verified versus a cited human 72.4% under that benchmarkâ€™s conditions. Source: https://openai.com/index/introducing-gpt-5-4/. Caveat: The comparison is benchmark-specific, screenshot-based computer use; it is not general human equivalence.
+- **CAP-03** (2026-03-05; company-reported): OpenAI reported GPT-5.4 achieved 75.0% on OSWorld-Verified versus a cited human 72.4% under that benchmark’s conditions. Source: https://openai.com/index/introducing-gpt-5-4/. Caveat: The comparison is benchmark-specific, screenshot-based computer use; it is not general human equivalence.
 - **CAP-04** (2026-05-08; measurement): METR warns that measurements above 16 human-expert hours are unreliable with its current task suite. Source: https://metr.org/time-horizons/. Caveat: Time horizons depend on task distribution, elicitation, and a 50%-success definition; do not extrapolate beyond displayed reliability.
 - **CAP-05** (2025-07-17; observed): OpenAI introduced Operator in January 2025 and integrated it into ChatGPT agent in July 2025. Source: https://openai.com/index/introducing-operator/. Caveat: Product availability demonstrates an interface, not reliable autonomous completion of arbitrary work.
-- **CAP-06** (2025-08-07; company-reported): OpenAI classified GPT-5-thinking as High capability in biological and chemical domains under its Preparedness Framework. Source: https://openai.com/index/gpt-5-system-card/. Caveat: A developerâ€™s safety classification is not a public demonstration of end-to-end harmful capability.
+- **CAP-06** (2025-08-07; company-reported): OpenAI classified GPT-5-thinking as High capability in biological and chemical domains under its Preparedness Framework. Source: https://openai.com/index/gpt-5-system-card/. Caveat: A developer’s safety classification is not a public demonstration of end-to-end harmful capability.
 - **CAP-07** (2026-05; company-reported): Anthropic reported more than 80% of merged code was written by Claude in May 2026, within its own development context. Source: https://www.anthropic.com/institute/recursive-self-improvement. Caveat: Internal metric; it does not establish causality, quality without review, or general R&D automation.
 - **CAP-08** (2026-Q2; company-reported): Anthropic reports the typical engineer merged 8x as much code per day in Q2 2026 as in 2024. Source: https://www.anthropic.com/institute/recursive-self-improvement. Caveat: LOC is an incomplete productivity metric; organization, tools, and task mix changed.
 - **INF-01** (2026-04-29; announced): OpenAI said it had secured more than 10 GW of compute capacity for the intelligence age. Source: https://openai.com/index/building-the-compute-infrastructure-for-the-intelligence-age/. Caveat: Secured is not necessarily built, energized, operational, or dedicated to training.
-- **INF-02** (2025; company-reported): OpenAIâ€™s House Select Committee update reports available compute of 0.2 GW in 2023, 0.6 GW in 2024, and about 1.9 GW in 2025. Source: https://cdn.openai.com/pdf/045aa967-ee96-4a09-94ee-3098ddf6db2c/OpenAI-US-House-Select-Cmte-Update-%5B021226%5D.pdf. Caveat: Company-provided series; definition and utilization are not independently audited in the document.
+- **INF-02** (2025; company-reported): OpenAI’s House Select Committee update reports available compute of 0.2 GW in 2023, 0.6 GW in 2024, and about 1.9 GW in 2025. Source: https://cdn.openai.com/pdf/045aa967-ee96-4a09-94ee-3098ddf6db2c/OpenAI-US-House-Select-Cmte-Update-%5B021226%5D.pdf. Caveat: Company-provided series; definition and utilization are not independently audited in the document.
 - **INF-03** (2025-04-10; observed-and-forecast): IEA estimated global data centres consumed 415 TWh in 2024, about 1.5% of global electricity, and projects about 945 TWh in 2030 in its Base Case. Source: https://www.iea.org/reports/energy-and-ai/executive-summary. Caveat: All data-centre workloads, not only AI; 2030 is a scenario forecast.
 - **INF-04** (2025-04-10; forecast): The IEA 2025 Base Case endpoints imply approximately 14.7% annual compound growth in data-centre electricity from 2024 to 2030. Source: https://www.iea.org/reports/energy-and-ai/energy-demand-from-ai. Caveat: Scenario estimate sensitive to AI uptake, efficiency, infrastructure, and local bottlenecks.
 - **INF-05** (2026-04-16; observed-and-forecast): IEA reported capital expenditure by five large technology companies exceeded $400bn in 2025 and was set to rise another 75% in 2026. Source: https://www.iea.org/news/data-centre-electricity-use-surged-in-2025-even-with-tightening-bottlenecks-driving-a-scramble-for-solutions. Caveat: Company capex includes more than AI/data centres; 2026 is a forecast at publication.
 - **INF-06** (2026-04-16; observed): IEA reported data-centre electricity use grew 17% in 2025 while global electricity demand grew 3%. Source: https://www.iea.org/news/data-centre-electricity-use-surged-in-2025-even-with-tightening-bottlenecks-driving-a-scramble-for-solutions. Caveat: Data-centre total, not a direct count of AI training energy.
-- **INF-07** (2025-04-10; estimate): IEA characterizes a conventional data centre as about 10â€“25 MW, an AI-focused hyperscale facility as 100 MW or more, and its largest-planned example as 5,000 MW. Source: https://www.iea.org/reports/energy-and-ai/understanding-the-energy-ai-nexus. Caveat: Illustrative facility classes/plans, not a count of operational facilities.
+- **INF-07** (2025-04-10; estimate): IEA characterizes a conventional data centre as about 10–25 MW, an AI-focused hyperscale facility as 100 MW or more, and its largest-planned example as 5,000 MW. Source: https://www.iea.org/reports/energy-and-ai/understanding-the-energy-ai-nexus. Caveat: Illustrative facility classes/plans, not a count of operational facilities.
 - **INF-08** (2026-06-30; company-reported): Microsoft reported $41bn capital expenditures in FY2026 Q4; roughly two-thirds were short-lived assets, primarily CPUs and GPUs. Source: https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4. Caveat: Company-wide capex includes AI and non-AI infrastructure; short-lived asset accounting is not a GPU count.
 - **INF-09** (2026-07-29; company-reported): Microsoft reported adding 31 data centers across five continents in FY2026 Q4, 88 during the fiscal year, and another GW of capacity in the quarter. Source: https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4. Caveat: Company statement without a disclosed capacity-definition or AI-only breakdown.
-- **INF-10** (2026-06-30; observed): Alphabetâ€™s Q2 2026 SEC exhibit reports $44.924bn in purchases of property and equipment, versus $22.446bn in Q2 2025. Source: https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm. Caveat: Company-wide property/equipment spending; does not isolate AI infrastructure.
+- **INF-10** (2026-06-30; observed): Alphabet’s Q2 2026 SEC exhibit reports $44.924bn in purchases of property and equipment, versus $22.446bn in Q2 2025. Source: https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm. Caveat: Company-wide property/equipment spending; does not isolate AI infrastructure.
 - **INF-11** (2026-07-26; company-reported): NVIDIA reported Q2 FY2027 total revenue of $96.221bn and Data Center revenue of $89.0bn, up 106% and 117% year over year respectively. Source: https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/. Caveat: Vendor revenue is demand-side evidence, not an installed-GPU count or a measure of model capability.
-- **GPU-01** (2021-01; vendor-specification): NVIDIAâ€™s A100 80GB datasheet lists 80 GB HBM2e, 2,039 GB/s memory bandwidth, and 400 W maximum TDP for the NVLink model. Source: https://www.nvidia.com/content/dam/en-zz/Solutions/Data-Center/a100/pdf/a100-80gb-datasheet-update-nvidia-us-1521051-r2-web.pdf. Caveat: SKU/precision dependent peak specifications; not delivered training throughput.
+- **GPU-01** (2021-01; vendor-specification): NVIDIA’s A100 80GB datasheet lists 80 GB HBM2e, 2,039 GB/s memory bandwidth, and 400 W maximum TDP for the NVLink model. Source: https://www.nvidia.com/content/dam/en-zz/Solutions/Data-Center/a100/pdf/a100-80gb-datasheet-update-nvidia-us-1521051-r2-web.pdf. Caveat: SKU/precision dependent peak specifications; not delivered training throughput.
 - **GPU-02** (2026-05-18; vendor-specification): NVIDIA documentation lists H100 SXM at 80 GB HBM3 and H200 SXM at 141 GB HBM3e. Source: https://docs.nvidia.com/enterprise-reference-architectures/hgx-ai-factory-h100-h200-b200/latest/components.html. Caveat: SXM values; other form factors and product revisions differ.
 - **GPU-03** (2026-05-18; vendor-specification): NVIDIA documentation lists B200 SXM at 180 GB HBM3e and B300 SXM at 288 GB HBM3e. Source: https://docs.nvidia.com/enterprise-reference-architectures/hgx-ai-factory/latest/components.html. Caveat: Memory capacity alone does not determine cluster throughput or available supply.
 - **GPU-04** (2026-05-18; vendor-specification): NVIDIA lists H200, B200, and B300 memory bandwidth at 4.80, up to 8, and up to 8 TB/s respectively. Source: https://docs.nvidia.com/enterprise-reference-architectures/hgx-ai-factory/latest/components.html. Caveat: Vendor peak bandwidth, with workload-dependent utilization.
-- **GPU-05** (2026-09; vendor-specification): NVIDIAâ€™s GB200 NVL72 contains 72 Blackwell GPUs and 36 Grace CPUs in one liquid-cooled rack-scale system. Source: https://www.nvidia.com/en-us/data-center/technologies/blackwell-architecture/. Caveat: Product architecture, not an assertion of installed fleet count or delivered utilization.
-- **SEC-01** (2026-07-23; company-reported): Anthropicâ€™s July 2026 transparency update says its Responsible Scaling Policy was updated in February 2026 and its Frontier Compliance Framework was published in December 2025. Source: https://www.anthropic.com/transparency/voluntary-commitments. Caveat: Published frameworks describe intent/process; they are not independent verification of implementation.
-- **SEC-02** (2026-07-10; announced): Anthropicâ€™s roadmap lists a September 30, 2026 target for security work and says an isolated-network prototype is being explored at small scale. Source: https://www.anthropic.com/responsible-scaling-policy/roadmap. Caveat: Target/prototype, not completed security assurance; the date is after this corpus cutoff by five days.
+- **GPU-05** (2026-09; vendor-specification): NVIDIA’s GB200 NVL72 contains 72 Blackwell GPUs and 36 Grace CPUs in one liquid-cooled rack-scale system. Source: https://www.nvidia.com/en-us/data-center/technologies/blackwell-architecture/. Caveat: Product architecture, not an assertion of installed fleet count or delivered utilization.
+- **SEC-01** (2026-07-23; company-reported): Anthropic’s July 2026 transparency update says its Responsible Scaling Policy was updated in February 2026 and its Frontier Compliance Framework was published in December 2025. Source: https://www.anthropic.com/transparency/voluntary-commitments. Caveat: Published frameworks describe intent/process; they are not independent verification of implementation.
+- **SEC-02** (2026-07-10; announced): Anthropic’s roadmap lists a September 30, 2026 target for security work and says an isolated-network prototype is being explored at small scale. Source: https://www.anthropic.com/responsible-scaling-policy/roadmap. Caveat: Target/prototype, not completed security assurance; the date is after this corpus cutoff by five days.
 - **SEC-03** (2026-02-22; company-reported): Anthropic says its strongest models as of February 22, 2026 were protected with ASL-3 safeguards for specified high-consequence capability risks. Source: https://www.anthropic.com/responsible-scaling-policy/roadmap. Caveat: Company-defined safeguards for scoped risks; it does not resolve broader alignment or theft risk.
 - **SEC-04** (2026-09-10; company-reported): Anthropic reported September 2026 evaluations found its models useful for some tactical intelligence-targeting and conventional-weapons tasks, and added on-platform classifiers. Source: https://www.anthropic.com/research/intelligence-targeting-conventional-weapons-capabilities. Caveat: Evaluation summary does not quantify operational effectiveness or show deployment outside safeguards.
 - **GEO-01** (2025-01-13; policy): BIS announced the AI Diffusion Rule on January 13, 2025, covering advanced chips, certain closed model weights, and large advanced-compute clusters. Source: https://www.bis.gov/press-release/biden-harris-administration-announces-regulatory-framework-responsible-diffusion-advanced-artificial. Caveat: Announcement text; later policy changes matter.
 - **GEO-02** (2025-05-12; policy): BIS rescinded the Biden-era AI Diffusion Rule in May 2025 before its planned May 15 compliance date and announced additional semiconductor-control actions. Source: https://www.bis.gov/sites/default/files/documents/05.07%20Recission%20of%20AI%20Diffusion%20Press%20Release.pdf. Caveat: Rescission of that rule does not eliminate all pre-existing or subsequent controls.
-- **GEO-03** (2024-12-02; policy): BISâ€™s December 2024 action added controls on high-bandwidth memory and listed 140 entities in connection with advanced semiconductor concerns. Source: https://www.bis.gov/press-release/commerce-strengthens-export-controls-restrict-chinas-capability-produce-advanced-semiconductors-military. Caveat: A legal/policy action; it neither measures compliance nor establishes strategic effects.
-- **GEO-04** (2025-05-13; policy-guidance): BISâ€™s May 2025 counter-diversion guidance identifies 10 MW-or-larger data centers as meriting additional scrutiny in specified advanced-computing transactions. Source: https://www.bis.gov/media/documents/ai-counter-diversion-industry-guidance-may-13-2025.pdf. Caveat: Guidance for transaction scrutiny; it is not a blanket capacity prohibition or a measured strategic outcome.
-- **GOV-02** (2026-06; policy-proposal): Anthropicâ€™s June 2026 Advanced AI Framework advocates rules for models trained with more than 10^25 FLOPs at companies above $500m AI revenue or $1bn AI R&D spend. Source: https://www.anthropic.com/policy-on-the-ai-exponential/aaif. Caveat: Company policy proposal, not enacted law.
+- **GEO-03** (2024-12-02; policy): BIS’s December 2024 action added controls on high-bandwidth memory and listed 140 entities in connection with advanced semiconductor concerns. Source: https://www.bis.gov/press-release/commerce-strengthens-export-controls-restrict-chinas-capability-produce-advanced-semiconductors-military. Caveat: A legal/policy action; it neither measures compliance nor establishes strategic effects.
+- **GEO-04** (2025-05-13; policy-guidance): BIS’s May 2025 counter-diversion guidance identifies 10 MW-or-larger data centers as meriting additional scrutiny in specified advanced-computing transactions. Source: https://www.bis.gov/media/documents/ai-counter-diversion-industry-guidance-may-13-2025.pdf. Caveat: Guidance for transaction scrutiny; it is not a blanket capacity prohibition or a measured strategic outcome.
+- **GOV-02** (2026-06; policy-proposal): Anthropic’s June 2026 Advanced AI Framework advocates rules for models trained with more than 10^25 FLOPs at companies above $500m AI revenue or $1bn AI R&D spend. Source: https://www.anthropic.com/policy-on-the-ai-exponential/aaif. Caveat: Company policy proposal, not enacted law.
 - **GOV-03** (2026-03; estimate): The IEA says data centres accounted for around half of US electricity-demand growth in 2025. Source: https://www.iea.org/reports/global-energy-review-2026/global-trends. Caveat: Energy-sector aggregate, not evidence of any particular procurement programme.
 
 ## Auxiliary research: research/claim-audit.md

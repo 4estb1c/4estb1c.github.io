@@ -19,7 +19,7 @@
     {
       "id": "CMP-02",
       "topic": "frontier training compute",
-      "fact": "Epochâ€™s public trend page distinguishes estimated frontier training runs from all AI compute and reports methodological uncertainty.",
+      "fact": "Epoch’s public trend page distinguishes estimated frontier training runs from all AI compute and reports methodological uncertainty.",
       "value": null,
       "unit": null,
       "asOf": "2026-02-05",
@@ -27,13 +27,13 @@
       "sourceURL": "https://epoch.ai/trends",
       "sourcePublisher": "Epoch AI",
       "retrieved": "2026-09-25",
-      "caveat": "Use a sourceâ€™s model definition and confidence bounds before comparing to an inferred private run."
+      "caveat": "Use a source’s model definition and confidence bounds before comparing to an inferred private run."
     },
     {
       "id": "CMP-03",
       "topic": "algorithmic efficiency",
-      "fact": "GPT-5 with thinking used 50â€“80% fewer output tokens than o3 in OpenAIâ€™s stated evaluations across several capability categories.",
-      "value": "50â€“80%",
+      "fact": "GPT-5 with thinking used 50–80% fewer output tokens than o3 in OpenAI’s stated evaluations across several capability categories.",
+      "value": "50–80%",
       "unit": "fewer output tokens",
       "asOf": "2025-08-07",
       "status": "company-reported",
@@ -84,7 +84,7 @@
     {
       "id": "CAP-03",
       "topic": "computer use",
-      "fact": "OpenAI reported GPT-5.4 achieved 75.0% on OSWorld-Verified versus a cited human 72.4% under that benchmarkâ€™s conditions.",
+      "fact": "OpenAI reported GPT-5.4 achieved 75.0% on OSWorld-Verified versus a cited human 72.4% under that benchmark’s conditions.",
       "value": "75.0%; 72.4%",
       "unit": "success rate",
       "asOf": "2026-03-05",
@@ -131,7 +131,7 @@
       "sourceURL": "https://openai.com/index/gpt-5-system-card/",
       "sourcePublisher": "OpenAI",
       "retrieved": "2026-09-25",
-      "caveat": "A developerâ€™s safety classification is not a public demonstration of end-to-end harmful capability."
+      "caveat": "A developer’s safety classification is not a public demonstration of end-to-end harmful capability."
     },
     {
       "id": "CAP-07",
@@ -175,7 +175,7 @@
     {
       "id": "INF-02",
       "topic": "AI infrastructure",
-      "fact": "OpenAIâ€™s House Select Committee update reports available compute of 0.2 GW in 2023, 0.6 GW in 2024, and about 1.9 GW in 2025.",
+      "fact": "OpenAI’s House Select Committee update reports available compute of 0.2 GW in 2023, 0.6 GW in 2024, and about 1.9 GW in 2025.",
       "value": "0.2; 0.6; ~1.9",
       "unit": "GW available compute",
       "asOf": "2025",
@@ -241,8 +241,8 @@
     {
       "id": "INF-07",
       "topic": "data-centre scale",
-      "fact": "IEA characterizes a conventional data centre as about 10â€“25 MW, an AI-focused hyperscale facility as 100 MW or more, and its largest-planned example as 5,000 MW.",
-      "value": "10â€“25; â‰¥100; 5,000",
+      "fact": "IEA characterizes a conventional data centre as about 10–25 MW, an AI-focused hyperscale facility as 100 MW or more, and its largest-planned example as 5,000 MW.",
+      "value": "10–25; ≥100; 5,000",
       "unit": "MW",
       "asOf": "2025-04-10",
       "status": "estimate",
@@ -282,7 +282,7 @@
     {
       "id": "INF-10",
       "topic": "AI infrastructure finance",
-      "fact": "Alphabetâ€™s Q2 2026 SEC exhibit reports $44.924bn in purchases of property and equipment, versus $22.446bn in Q2 2025.",
+      "fact": "Alphabet’s Q2 2026 SEC exhibit reports $44.924bn in purchases of property and equipment, versus $22.446bn in Q2 2025.",
       "value": "$44.924bn; $22.446bn",
       "unit": "quarterly purchases of property and equipment",
       "asOf": "2026-06-30",
@@ -310,7 +310,7 @@
     {
       "id": "GPU-01",
       "topic": "GPU specifications",
-      "fact": "NVIDIAâ€™s A100 80GB datasheet lists 80 GB HBM2e, 2,039 GB/s memory bandwidth, and 400 W maximum TDP for the NVLink model.",
+      "fact": "NVIDIA’s A100 80GB datasheet lists 80 GB HBM2e, 2,039 GB/s memory bandwidth, and 400 W maximum TDP for the NVLink model.",
       "value": "80; 2,039; 400",
       "unit": "GB; GB/s; W",
       "asOf": "2021-01",
@@ -362,7 +362,7 @@
     {
       "id": "GPU-05",
       "topic": "GPU specifications",
-      "fact": "NVIDIAâ€™s GB200 NVL72 contains 72 Blackwell GPUs and 36 Grace CPUs in one liquid-cooled rack-scale system.",
+      "fact": "NVIDIA’s GB200 NVL72 contains 72 Blackwell GPUs and 36 Grace CPUs in one liquid-cooled rack-scale system.",
       "value": "72; 36",
       "unit": "GPUs; CPUs",
       "asOf": "2026-09",
@@ -375,7 +375,7 @@
     {
       "id": "SEC-01",
       "topic": "frontier security",
-      "fact": "Anthropicâ€™s July 2026 transparency update says its Responsible Scaling Policy was updated in February 2026 and its Frontier Compliance Framework was published in December 2025.",
+      "fact": "Anthropic’s July 2026 transparency update says its Responsible Scaling Policy was updated in February 2026 and its Frontier Compliance Framework was published in December 2025.",
       "value": "2026-02; 2025-12",
       "unit": "publication dates",
       "asOf": "2026-07-23",
@@ -388,7 +388,7 @@
     {
       "id": "SEC-02",
       "topic": "frontier security",
-      "fact": "Anthropicâ€™s roadmap lists a September 30, 2026 target for security work and says an isolated-network prototype is being explored at small scale.",
+      "fact": "Anthropic’s roadmap lists a September 30, 2026 target for security work and says an isolated-network prototype is being explored at small scale.",
       "value": "2026-09-30",
       "unit": "target date",
       "asOf": "2026-07-10",
@@ -453,7 +453,7 @@
     {
       "id": "GEO-03",
       "topic": "export controls",
-      "fact": "BISâ€™s December 2024 action added controls on high-bandwidth memory and listed 140 entities in connection with advanced semiconductor concerns.",
+      "fact": "BIS’s December 2024 action added controls on high-bandwidth memory and listed 140 entities in connection with advanced semiconductor concerns.",
       "value": "140",
       "unit": "entities",
       "asOf": "2024-12-02",
@@ -466,8 +466,8 @@
     {
       "id": "GEO-04",
       "topic": "export controls",
-      "fact": "BISâ€™s May 2025 counter-diversion guidance identifies 10 MW-or-larger data centers as meriting additional scrutiny in specified advanced-computing transactions.",
-      "value": "â‰¥10",
+      "fact": "BIS’s May 2025 counter-diversion guidance identifies 10 MW-or-larger data centers as meriting additional scrutiny in specified advanced-computing transactions.",
+      "value": "≥10",
       "unit": "MW threshold",
       "asOf": "2025-05-13",
       "status": "policy-guidance",
@@ -479,7 +479,7 @@
     {
       "id": "GOV-02",
       "topic": "policy",
-      "fact": "Anthropicâ€™s June 2026 Advanced AI Framework advocates rules for models trained with more than 10^25 FLOPs at companies above $500m AI revenue or $1bn AI R&D spend.",
+      "fact": "Anthropic’s June 2026 Advanced AI Framework advocates rules for models trained with more than 10^25 FLOPs at companies above $500m AI revenue or $1bn AI R&D spend.",
       "value": "10^25 FLOPs; $500m; $1bn",
       "unit": "thresholds",
       "asOf": "2026-06",
