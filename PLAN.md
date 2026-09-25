@@ -35,20 +35,22 @@ Publish `/Inspector/` as a reusable, responsive reader with aligned commentary, 
 
 ## Next steps
 
-1. Commit the final review fixes; the reader and evidence branches are integrated.
-2. Push `main`, then verify `/Inspector/`, the article, generated context, and existing routes on GitHub Pages.
+1. If republication rights are established, replace independent claim summaries with the authorized original text and footnotes using the existing block renderer.
+2. For later articles, start with `Inspector/prompts/research-and-annotate.md` and check the shared evidence registry before new research.
 
 ## Subagent ledger
 
 | Agent/task | Branch or worktree | Status | Integration |
 | --- | --- | --- | --- |
-| Root: planning, editorial, integration, publication | `main` | Active | Commentary and context through `57d3db9` |
+| Root: planning, editorial, integration, publication | `main` | Published | Commentary and context through `57d3db9`; review fixes `0dec1b1` |
 | Evidence corpus | `agent/margin-evidence` | Reviewed | `b3f9ae1`, `65e2061`, `8be12b6`, `d7719eb` |
 | Initial reader | `agent/margin-reader` | Reviewed | `e7dd8cd` |
 | Authoring workflow | `agent/margin-workflow` | Reviewed | `c2a1347` |
-| Reader polish | `agent/inspector-reader-polish` | Reviewed and integrated | `d2beb96`; root review fixes pending commit |
+| Reader polish | `agent/inspector-reader-polish` | Reviewed and integrated | `d2beb96`; root review fixes `0dec1b1` |
 | Evidence links and independent audit | `agent/inspector-evidence-links` | Reviewed and integrated | `f690318`, `664aafb`, `5630ed3` |
 
 ## Verification so far
 
 All 32 paired passages, nine chapter dividers, seven figures, and provenance labels render without browser errors or literal `undefined` text. Desktop and 390px mobile layouts have no document-wide horizontal overflow; mobile commentary expands inline. JavaScript syntax, article/context validation, sitemap parsing, and Git whitespace checks pass. An independent review identified chart-readability, context-link, accessibility, and glossary-input issues; root addressed them before publication.
+
+GitHub Pages deployment of `0dec1b1` completed successfully. The live `/Inspector/` library, article, research context, agent prompt, and existing `/blog/` returned HTTP 200; the live reader rendered all 32 rows, nine chapters, and seven figures without console errors.
