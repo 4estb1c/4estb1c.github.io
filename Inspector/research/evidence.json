@@ -618,6 +618,58 @@
       "sourcePublisher": "NVIDIA",
       "retrieved": "2026-09-25",
       "caveat": "Vendor-announced peak specifications, not measured application throughput or a count of deployed hardware."
+    },
+    {
+      "id": "INF-12",
+      "topic": "individual frontier training power",
+      "fact": "Epoch AI and EPRI forecast the largest individual frontier-model training runs in 2030 at 4–16 GW.",
+      "value": "4–16",
+      "unit": "GW per training run",
+      "asOf": "2025-08-11",
+      "status": "forecast",
+      "sourceURL": "https://epoch.ai/publications/power-demands-of-frontier-ai-training",
+      "sourcePublisher": "Epoch AI / EPRI",
+      "retrieved": "2026-09-25",
+      "caveat": "A modelled training-run range, not observed power or the total capacity of a company or campus."
+    },
+    {
+      "id": "INF-13",
+      "topic": "US data-center electricity",
+      "fact": "LBNL projects all US data centers will consume 11.8% of national electricity in 2030 in its reference case, with scenarios from 9.5% to 15.3%.",
+      "value": "11.8%; 9.5–15.3%",
+      "unit": "share of US electricity use",
+      "asOf": "2026-06-18",
+      "status": "forecast",
+      "sourceURL": "https://www.energy.gov/documents/united-states-data-center-energy-usage-report-2025-update",
+      "sourcePublisher": "Lawrence Berkeley National Laboratory",
+      "retrieved": "2026-09-25",
+      "caveat": "Includes non-AI workloads and models demand; does not directly forecast new generation or a single AI cluster."
+    },
+    {
+      "id": "GEO-05",
+      "topic": "US-China AI investment",
+      "fact": "Stanford AI Index reports US private AI investment of $285.9bn in 2025 and Chinese private AI investment of $12.4bn.",
+      "value": "285.9; 12.4",
+      "unit": "USD billions, 2025",
+      "asOf": "2026-04",
+      "status": "estimate",
+      "sourceURL": "https://hai.stanford.edu/ai-index/2026-ai-index-report/economy",
+      "sourcePublisher": "Stanford HAI",
+      "retrieved": "2026-09-25",
+      "caveat": "Private funding undercounts state-led investment and is not a direct measure of model-training compute."
+    },
+    {
+      "id": "GEO-06",
+      "topic": "US-China frontier model performance",
+      "fact": "Stanford AI Index says the top US model led the top Chinese model by 2.7% in its March 2026 performance comparison.",
+      "value": "2.7%",
+      "unit": "reported performance gap",
+      "asOf": "2026-03",
+      "status": "estimate",
+      "sourceURL": "https://hai.stanford.edu/ai-index/2026-ai-index-report/technical-performance",
+      "sourcePublisher": "Stanford HAI",
+      "retrieved": "2026-09-25",
+      "caveat": "Benchmark aggregation and the reference date limit what this says about broad capability or strategic capacity."
     }
   ]
 }

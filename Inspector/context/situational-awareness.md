@@ -71,6 +71,18 @@ Epoch’s February 2026 dashboard puts frontier language-model training compute 
 }
 ```
 
+The combined effect of bigger training runs, better algorithms and more capable agents could amount to roughly 100,000× effective compute by the end of 2027.
+
+**Inspector context — The multipliers still have to meet.**
+
+At Epoch’s fitted 5× annual training-compute growth, four years would yield about 625×. Reaching 100,000× effective compute would still require roughly 160× from other gains. Those gains have no comparable public odometer; the combined number remains a projection.
+
+**Provenance:** Illustrative arithmetic
+
+[epoch-trends] Trends in Artificial Intelligence — https://epoch.ai/trends (Epoch AI; 2026-02-05)
+
+[Evidence CMP-01] (2026-02-05; estimate): Epoch AI estimates frontier AI training compute has grown about 5x/year since 2020. Source: https://epoch.ai/trends. Caveat: Trend estimate; not a promise of future training runs or a direct capability scale.
+
 Algorithmic improvements may add another two OOMs of effective compute by 2027.
 
 **Inspector context — There is no clean public odometer.**
@@ -249,6 +261,18 @@ A power reservation, an energized site, a company’s total fleet and a single t
 
 [stargate] Building the compute infrastructure for the Intelligence Age — https://openai.com/index/building-the-compute-infrastructure-for-the-intelligence-age/ (OpenAI; 2026-04-29)
 
+The 2030 scenario reaches a single 100 GW training cluster, about one-fifth of current US electricity production.
+
+**Inspector update — Another forecast sits well below 100 GW.**
+
+Epoch and EPRI project 4–16 GW for the largest individual frontier training run in 2030. A run and a cluster are different boundaries, and both figures are forecasts. The comparison locates the 100 GW cluster beyond that modelled range.
+
+**Provenance:** Independent forecast
+
+[epoch-power] How much power will frontier AI training demand in 2030? — https://epoch.ai/publications/power-demands-of-frontier-ai-training (Epoch AI / EPRI; 2025-08-11)
+
+[Evidence INF-12] (2025-08-11; forecast): Epoch AI and EPRI forecast the largest individual frontier-model training runs in 2030 at 4–16 GW. Source: https://epoch.ai/publications/power-demands-of-frontier-ai-training. Caveat: A modelled training-run range, not observed power or the total capacity of a company or campus.
+
 The scenario depends on rapid growth in the compute available to leading labs.
 
 **Inspector update — The available fleet grew 9.5× in two years.**
@@ -297,6 +321,18 @@ NVIDIA reported $89 billion in Data Center revenue for the quarter ended July 26
 
 [nvidia26] NVIDIA Q2 FY2027 financial results — https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/ (NVIDIA; 2026-08-26)
 
+Total annual AI investment could exceed $1 trillion by 2027.
+
+**Inspector update — Capital spending is accelerating.**
+
+Five large technology companies spent more than $400 billion on capital expenditure in 2025, the IEA reports, with another 75% rise forecast for 2026. Their budgets include non-AI assets and omit other investors. The pace is striking; a measured $1 trillion annual AI total is still absent.
+
+**Provenance:** Intergovernmental estimate
+
+[iea26] Data-centre electricity use in 2025 — https://www.iea.org/news/data-centre-electricity-use-surged-in-2025-even-with-tightening-bottlenecks-driving-a-scramble-for-solutions (IEA; 2026-04-16)
+
+[Evidence INF-05] (2026-04-16; observed-and-forecast): IEA reported capital expenditure by five large technology companies exceeded $400bn in 2025 and was set to rise another 75% in 2026. Source: https://www.iea.org/news/data-centre-electricity-use-surged-in-2025-even-with-tightening-bottlenecks-driving-a-scramble-for-solutions. Caveat: Company capex includes more than AI/data centres; 2026 is a forecast at publication.
+
 Power generation, grid connections and equipment could constrain the buildout.
 
 **Inspector update — Demand is outrunning the grid’s usual pace.**
@@ -330,6 +366,18 @@ IEA reports that data-centre electricity use rose 17% in 2025, versus 3% for glo
   ]
 }
 ```
+
+US electricity production may have to grow by tens of percent to supply AI infrastructure.
+
+**Inspector update — A national demand estimate is now available.**
+
+Lawrence Berkeley National Laboratory projects all US data centres at 11.8% of national electricity use in 2030, with scenarios of 9.5–15.3%. It models consumption, including non-AI workloads; it does not establish how much new generation will be built.
+
+**Provenance:** Government laboratory forecast
+
+[lbl-power] United States Data Center Energy Usage Report: 2025 Update — https://www.energy.gov/documents/united-states-data-center-energy-usage-report-2025-update (Lawrence Berkeley National Laboratory; 2026-06-18)
+
+[Evidence INF-13] (2026-06-18; forecast): LBNL projects all US data centers will consume 11.8% of national electricity in 2030 in its reference case, with scenarios from 9.5% to 15.3%. Source: https://www.energy.gov/documents/united-states-data-center-energy-usage-report-2025-update. Caveat: Includes non-AI workloads and models demand; does not directly forecast new generation or a single AI cluster.
 
 Future clusters are expressed in H100-equivalents, with hardware efficiency shaping cost and power.
 
@@ -477,6 +525,58 @@ DeepSeek-R1’s published reasoning results made that possibility concrete. They
 
 [Evidence CMP-05] (2025-01-22; research-preprint): DeepSeek reports that its R1-Zero research variant developed reasoning capability through large-scale reinforcement learning without preliminary supervised fine-tuning. Source: https://arxiv.org/abs/2501.12948. Caveat: This claim is specifically about R1-Zero, not every stage of DeepSeek-R1; a different learning signal does not make high-quality training data unlimited.
 
+A US advantage in capital and compute could preserve a wide lead over Chinese frontier models.
+
+**Inspector context — Money and model performance are diverging.**
+
+Stanford counts $285.9 billion of US private AI investment in 2025 versus $12.4 billion in China. Yet its March 2026 comparison puts the leading models only 2.7% apart. Private funding excludes much state spending, and a model score is not national compute capacity.
+
+**Provenance:** Independent synthesis
+
+[stanford-economy] 2026 AI Index: Economy — https://hai.stanford.edu/ai-index/2026-ai-index-report/economy (Stanford HAI; 2026-04)
+
+[stanford-performance] 2026 AI Index: Technical Performance — https://hai.stanford.edu/ai-index/2026-ai-index-report/technical-performance (Stanford HAI; 2026-04)
+
+[Evidence GEO-05] (2026-04; estimate): Stanford AI Index reports US private AI investment of $285.9bn in 2025 and Chinese private AI investment of $12.4bn. Source: https://hai.stanford.edu/ai-index/2026-ai-index-report/economy. Caveat: Private funding undercounts state-led investment and is not a direct measure of model-training compute.
+
+[Evidence GEO-06] (2026-03; estimate): Stanford AI Index says the top US model led the top Chinese model by 2.7% in its March 2026 performance comparison. Source: https://hai.stanford.edu/ai-index/2026-ai-index-report/technical-performance. Caveat: Benchmark aggregation and the reference date limit what this says about broad capability or strategic capacity.
+
+```json
+{
+  "type": "bar",
+  "title": "Private AI investment · 2025",
+  "description": "USD billions, Stanford AI Index 2026. These totals exclude much public spending and are not model-training budgets.",
+  "yLabel": "USD billions",
+  "series": [
+    {
+      "label": "Private investment",
+      "data": [
+        {
+          "x": "United States",
+          "y": 285.9
+        },
+        {
+          "x": "China",
+          "y": 12.4
+        }
+      ]
+    }
+  ]
+}
+```
+
+Export controls on advanced chips could help preserve the US compute lead.
+
+**Inspector update — The rulebook changed direction.**
+
+BIS withdrew its AI Diffusion Rule in May 2025, before its compliance requirements took effect, while continuing targeted chip controls. The policy exists in revised forms; its effect on actual compute access remains an empirical question.
+
+**Provenance:** Government policy
+
+[bis-rescission] Rescission of the AI Diffusion Rule — https://www.bis.gov/press-release/department-commerce-announces-rescission-biden-era-artificial-intelligence-diffusion-rule-strengthens (US Bureau of Industry and Security; 2025-05-13)
+
+[Evidence GEO-02] (2025-05-12; policy): BIS rescinded the Biden-era AI Diffusion Rule in May 2025 before its planned May 15 compliance date and announced additional semiconductor-control actions. Source: https://www.bis.gov/sites/default/files/documents/05.07%20Recission%20of%20AI%20Diffusion%20Press%20Release.pdf. Caveat: Rescission of that rule does not eliminate all pre-existing or subsequent controls.
+
 A lead in superintelligence might translate into decisive military power.
 
 **Inspector context — This remains a separate forecast.**
@@ -571,6 +671,11 @@ Compute growth, research automation, security, political control and military do
 - **rubin:** Inside NVIDIA Rubin GPU architecture — https://developer.nvidia.com/blog/inside-nvidia-rubin-gpu-architecture-powering-the-era-of-agentic-ai/ (NVIDIA; 2026-07-21)
 - **fleet:** OpenAI House Select Committee update — https://cdn.openai.com/pdf/045aa967-ee96-4a09-94ee-3098ddf6db2c/OpenAI-US-House-Select-Cmte-Update-%5B021226%5D.pdf (OpenAI; 2026-02-12)
 - **genesis:** Genesis Mission Consortium launch — https://www.energy.gov/articles/energy-department-launches-genesis-mission-consortium-accelerate-ai-driven-scientific (US Department of Energy; 2026-02-09)
+- **epoch-power:** How much power will frontier AI training demand in 2030? — https://epoch.ai/publications/power-demands-of-frontier-ai-training (Epoch AI / EPRI; 2025-08-11)
+- **lbl-power:** United States Data Center Energy Usage Report: 2025 Update — https://www.energy.gov/documents/united-states-data-center-energy-usage-report-2025-update (Lawrence Berkeley National Laboratory; 2026-06-18)
+- **stanford-economy:** 2026 AI Index: Economy — https://hai.stanford.edu/ai-index/2026-ai-index-report/economy (Stanford HAI; 2026-04)
+- **stanford-performance:** 2026 AI Index: Technical Performance — https://hai.stanford.edu/ai-index/2026-ai-index-report/technical-performance (Stanford HAI; 2026-04)
+- **bis-rescission:** Rescission of the AI Diffusion Rule — https://www.bis.gov/press-release/department-commerce-announces-rescission-biden-era-artificial-intelligence-diffusion-rule-strengthens (US Bureau of Industry and Security; 2025-05-13)
 
 ## Shared evidence records
 
@@ -623,6 +728,10 @@ The following dated records are reusable across articles; their status and cavea
 - **SEC-06** (2026-09-01; company-reported): OpenAI states that GPT-6 Astra meets its Critical cybersecurity capability threshold and says its post-Hugging-Face hardening included isolation and network controls, expanded monitoring, and stricter training controls. Source: https://openai.com/index/path-to-astra/. Caveat: OpenAI’s own classification and account of safeguards; no public independent assessment establishes security against a top-tier state actor.
 - **GOV-04** (2026-02-09; announced): The US Department of Energy launched the Genesis Mission Consortium, a public-private partnership involving DOE, National Laboratories, private-sector leaders, and academic institutions for AI-enabled scientific discovery. Source: https://www.energy.gov/articles/energy-department-launches-genesis-mission-consortium-accelerate-ai-driven-scientific. Caveat: A government research coalition, not evidence of the unified government-led AGI project forecast in the original essay.
 - **GPU-06** (2026-07-21; vendor-specification): NVIDIA’s Rubin architecture post lists up to 288 GB HBM4 memory and up to 22 TB/s peak memory bandwidth per Rubin GPU. Source: https://developer.nvidia.com/blog/inside-nvidia-rubin-gpu-architecture-powering-the-era-of-agentic-ai/. Caveat: Vendor-announced peak specifications, not measured application throughput or a count of deployed hardware.
+- **INF-12** (2025-08-11; forecast): Epoch AI and EPRI forecast the largest individual frontier-model training runs in 2030 at 4–16 GW. Source: https://epoch.ai/publications/power-demands-of-frontier-ai-training. Caveat: A modelled training-run range, not observed power or the total capacity of a company or campus.
+- **INF-13** (2026-06-18; forecast): LBNL projects all US data centers will consume 11.8% of national electricity in 2030 in its reference case, with scenarios from 9.5% to 15.3%. Source: https://www.energy.gov/documents/united-states-data-center-energy-usage-report-2025-update. Caveat: Includes non-AI workloads and models demand; does not directly forecast new generation or a single AI cluster.
+- **GEO-05** (2026-04; estimate): Stanford AI Index reports US private AI investment of $285.9bn in 2025 and Chinese private AI investment of $12.4bn. Source: https://hai.stanford.edu/ai-index/2026-ai-index-report/economy. Caveat: Private funding undercounts state-led investment and is not a direct measure of model-training compute.
+- **GEO-06** (2026-03; estimate): Stanford AI Index says the top US model led the top Chinese model by 2.7% in its March 2026 performance comparison. Source: https://hai.stanford.edu/ai-index/2026-ai-index-report/technical-performance. Caveat: Benchmark aggregation and the reference date limit what this says about broad capability or strategic capacity.
 
 ## Auxiliary research: research/claim-audit.md
 
@@ -639,13 +748,13 @@ This is a concise ledger of the central forecast and assumption clusters across 
 | SA-I-04 | I: models could become useful AI R&D coworkers around 2027. | projection | Current tools complete meaningful coding/computer tasks under evaluated settings; reliability and task duration remain boundary conditions. | CAP-01, CAP-02, CAP-03, CAP-04 |
 | SA-II-01 | II: automating AI research could compress years of progress into a very short period. | assumption | Bounded agent self-improvement and disclosed internal use now provide evidence of parts of the loop; full frontier-model self-improvement remains unestablished. | CAP-03, CAP-04, CAP-07, CAP-08 |
 | SA-II-02 | II: large populations of AGIs could create an intelligence explosion. | projection | This remains conditional on automation, cost, coordination, and hardware; no public count of AGIs exists. | CAP-03, INF-01, INF-03 |
-| SA-IIIa-01 | IIIa: tens/hundreds of billions of dollars and very large clusters would arrive this decade. | projection | Report capex and secured capacity as announced/committed; do not call either an operational cluster. | INF-01, INF-02, INF-05, INF-08, INF-10, INF-11 |
-| SA-IIIa-02 | IIIa: US electricity output would rise by tens of percent, driven partly by AI infrastructure. | projection | Data-centre demand is rising fast and locally binding; global and US forecasts remain scenario-dependent. | INF-03, INF-04, INF-07 |
+| SA-IIIa-01 | IIIa: tens/hundreds of billions of dollars and very large clusters would arrive this decade. | projection | Report capex and secured capacity as announced/committed; do not call either an operational cluster. A 4–16 GW forecast for individual 2030 training runs is a different boundary from a 100 GW cluster scenario. | INF-01, INF-02, INF-05, INF-08, INF-10, INF-11, INF-12 |
+| SA-IIIa-02 | IIIa: US electricity output would rise by tens of percent, driven partly by AI infrastructure. | projection | Data-centre demand is rising fast and locally binding; the new US 2030 demand forecast does not itself measure new generation. | INF-03, INF-04, INF-07, INF-13 |
 | SA-IIIb-01 | IIIb: frontier labs were far below state-actor-resistant security. | assumption | Labs now publish framework/roadmap material, but public declarations are not independent assurance of weight security. | SEC-01, SEC-02, SEC-03 |
 | SA-IIIb-02 | IIIb: model weights and research secrets would become central targets. | projection | Security controls are now explicitly linked to frontier frameworks; their effectiveness is not publicly measurable. | SEC-01, SEC-02 |
 | SA-IIIc-01 | IIIc: controlling substantially smarter systems was an unsolved technical problem. | assumption | Current frameworks publish evaluations and mitigations, not a demonstrated solution to superhuman alignment. | SEC-02, SEC-04, CAP-06 |
 | SA-IIIc-02 | IIIc: deceptive behavior/situational awareness could defeat naive evaluations. | assumption | Keep capability and behavior evaluation claims bounded to the task and access conditions. | CAP-04, SEC-04 |
-| SA-IIId-01 | IIId: US–China access to advanced compute would shape strategic competition. | projection | Controls expanded and then the 2025 diffusion rule was rescinded; policy status must be dated, not treated as a single monotonic regime. | GEO-01, GEO-02, GEO-03 |
+| SA-IIId-01 | IIId: US–China access to advanced compute would shape strategic competition. | projection | Controls expanded and then the 2025 diffusion rule was rescinded. Private-investment and model-score gaps differ sharply and measure different things. | GEO-01, GEO-02, GEO-03, GEO-05, GEO-06 |
 | SA-IIId-02 | IIId: export controls could preserve a decisive compute lead. | assumption | HBM, manufacturing, and end-use controls exist, but effectiveness, circumvention, and non-US supply remain empirical questions. | GEO-02, GEO-03, GEO-04 |
 | SA-IV-01 | IV: a US government AGI project might arrive in 2027/28. | projection | Government collaboration and policy activity are observable; no public programme verifies the predicted project form or date. | INF-02, GOV-02, GOV-03 |
 | SA-IV-02 | IV: superintelligence would exceed a startup’s governance capacity. | assumption | Public safety frameworks and state policy are developing, but governance adequacy is not established by their existence. | GOV-02, SEC-01, SEC-02 |
