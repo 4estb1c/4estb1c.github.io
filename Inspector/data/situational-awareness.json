@@ -190,6 +190,31 @@
       ]
     },
     {
+      "id": "effective-compute",
+      "chapter": "counting",
+      "type": "paragraph",
+      "label": "2024 claim · paraphrase",
+      "text": "The combined effect of bigger training runs, better algorithms and more capable agents could amount to roughly 100,000× effective compute by the end of 2027.",
+      "sourceIds": [
+        "original-counting"
+      ],
+      "notes": [
+        {
+          "id": "effective-compute-note",
+          "kind": "context",
+          "title": "The multipliers still have to meet.",
+          "body": "At Epoch’s fitted 5× annual training-compute growth, four years would yield about 625×. Reaching 100,000× effective compute would still require roughly 160× from other gains. Those gains have no comparable public odometer; the combined number remains a projection.",
+          "sourceIds": [
+            "epoch-trends"
+          ],
+          "evidenceIds": [
+            "CMP-01"
+          ],
+          "status": "Illustrative arithmetic"
+        }
+      ]
+    },
+    {
       "id": "efficiency",
       "chapter": "counting",
       "type": "paragraph",
@@ -471,6 +496,31 @@
       ]
     },
     {
+      "id": "training-power-2030",
+      "chapter": "infrastructure",
+      "type": "paragraph",
+      "label": "2024 claim · paraphrase",
+      "text": "The 2030 scenario reaches a single 100 GW training cluster, about one-fifth of current US electricity production.",
+      "sourceIds": [
+        "original-infrastructure"
+      ],
+      "notes": [
+        {
+          "id": "training-power-2030-note",
+          "kind": "update",
+          "title": "Another forecast sits well below 100 GW.",
+          "body": "Epoch and EPRI project 4–16 GW for the largest individual frontier training run in 2030. A run and a cluster are different boundaries, and both figures are forecasts. The comparison locates the 100 GW cluster beyond that modelled range.",
+          "sourceIds": [
+            "epoch-power"
+          ],
+          "evidenceIds": [
+            "INF-12"
+          ],
+          "status": "Independent forecast"
+        }
+      ]
+    },
+    {
       "id": "real-capacity",
       "chapter": "infrastructure",
       "type": "paragraph",
@@ -540,6 +590,31 @@
       ]
     },
     {
+      "id": "capital-race",
+      "chapter": "infrastructure",
+      "type": "paragraph",
+      "label": "2024 claim · paraphrase",
+      "text": "Total annual AI investment could exceed $1 trillion by 2027.",
+      "sourceIds": [
+        "original-infrastructure"
+      ],
+      "notes": [
+        {
+          "id": "capital-race-note",
+          "kind": "update",
+          "title": "Capital spending is accelerating.",
+          "body": "Five large technology companies spent more than $400 billion on capital expenditure in 2025, the IEA reports, with another 75% rise forecast for 2026. Their budgets include non-AI assets and omit other investors. The pace is striking; a measured $1 trillion annual AI total is still absent.",
+          "sourceIds": [
+            "iea26"
+          ],
+          "evidenceIds": [
+            "INF-05"
+          ],
+          "status": "Intergovernmental estimate"
+        }
+      ]
+    },
+    {
       "id": "electricity",
       "chapter": "infrastructure",
       "type": "paragraph",
@@ -579,6 +654,31 @@
             ]
           },
           "status": "Intergovernmental report"
+        }
+      ]
+    },
+    {
+      "id": "us-electricity-share",
+      "chapter": "infrastructure",
+      "type": "paragraph",
+      "label": "2024 claim · paraphrase",
+      "text": "US electricity production may have to grow by tens of percent to supply AI infrastructure.",
+      "sourceIds": [
+        "original-infrastructure"
+      ],
+      "notes": [
+        {
+          "id": "us-electricity-share-note",
+          "kind": "update",
+          "title": "A national demand estimate is now available.",
+          "body": "Lawrence Berkeley National Laboratory projects all US data centres at 11.8% of national electricity use in 2030, with scenarios of 9.5–15.3%. It models consumption, including non-AI workloads; it does not establish how much new generation will be built.",
+          "sourceIds": [
+            "lbl-power"
+          ],
+          "evidenceIds": [
+            "INF-13"
+          ],
+          "status": "Government laboratory forecast"
         }
       ]
     },
@@ -802,6 +902,79 @@
             "CMP-05"
           ],
           "status": "Research paper"
+        }
+      ]
+    },
+    {
+      "id": "investment-gap",
+      "chapter": "competition",
+      "type": "paragraph",
+      "label": "2024 claim · paraphrase",
+      "text": "A US advantage in capital and compute could preserve a wide lead over Chinese frontier models.",
+      "sourceIds": [
+        "original-competition"
+      ],
+      "notes": [
+        {
+          "id": "investment-gap-note",
+          "kind": "context",
+          "title": "Money and model performance are diverging.",
+          "body": "Stanford counts $285.9 billion of US private AI investment in 2025 versus $12.4 billion in China. Yet its March 2026 comparison puts the leading models only 2.7% apart. Private funding excludes much state spending, and a model score is not national compute capacity.",
+          "sourceIds": [
+            "stanford-economy",
+            "stanford-performance"
+          ],
+          "evidenceIds": [
+            "GEO-05",
+            "GEO-06"
+          ],
+          "status": "Independent synthesis",
+          "figure": {
+            "type": "bar",
+            "title": "Private AI investment · 2025",
+            "description": "USD billions, Stanford AI Index 2026. These totals exclude much public spending and are not model-training budgets.",
+            "yLabel": "USD billions",
+            "series": [
+              {
+                "label": "Private investment",
+                "data": [
+                  {
+                    "x": "United States",
+                    "y": 285.9
+                  },
+                  {
+                    "x": "China",
+                    "y": 12.4
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "export-controls",
+      "chapter": "competition",
+      "type": "paragraph",
+      "label": "2024 claim · paraphrase",
+      "text": "Export controls on advanced chips could help preserve the US compute lead.",
+      "sourceIds": [
+        "original-competition"
+      ],
+      "notes": [
+        {
+          "id": "export-controls-note",
+          "kind": "update",
+          "title": "The rulebook changed direction.",
+          "body": "BIS withdrew its AI Diffusion Rule in May 2025, before its compliance requirements took effect, while continuing targeted chip controls. The policy exists in revised forms; its effect on actual compute access remains an empirical question.",
+          "sourceIds": [
+            "bis-rescission"
+          ],
+          "evidenceIds": [
+            "GEO-02"
+          ],
+          "status": "Government policy"
         }
       ]
     },
@@ -1132,6 +1305,46 @@
       "url": "https://www.energy.gov/articles/energy-department-launches-genesis-mission-consortium-accelerate-ai-driven-scientific",
       "publisher": "US Department of Energy",
       "date": "2026-02-09",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "epoch-power",
+      "label": "How much power will frontier AI training demand in 2030?",
+      "url": "https://epoch.ai/publications/power-demands-of-frontier-ai-training",
+      "publisher": "Epoch AI / EPRI",
+      "date": "2025-08-11",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "lbl-power",
+      "label": "United States Data Center Energy Usage Report: 2025 Update",
+      "url": "https://www.energy.gov/documents/united-states-data-center-energy-usage-report-2025-update",
+      "publisher": "Lawrence Berkeley National Laboratory",
+      "date": "2026-06-18",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "stanford-economy",
+      "label": "2026 AI Index: Economy",
+      "url": "https://hai.stanford.edu/ai-index/2026-ai-index-report/economy",
+      "publisher": "Stanford HAI",
+      "date": "2026-04",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "stanford-performance",
+      "label": "2026 AI Index: Technical Performance",
+      "url": "https://hai.stanford.edu/ai-index/2026-ai-index-report/technical-performance",
+      "publisher": "Stanford HAI",
+      "date": "2026-04",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "bis-rescission",
+      "label": "Rescission of the AI Diffusion Rule",
+      "url": "https://www.bis.gov/press-release/department-commerce-announces-rescission-biden-era-artificial-intelligence-diffusion-rule-strengthens",
+      "publisher": "US Bureau of Industry and Security",
+      "date": "2025-05-13",
       "retrieved": "2026-09-25"
     }
   ],
