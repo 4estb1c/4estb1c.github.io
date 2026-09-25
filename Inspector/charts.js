@@ -1,15 +1,160 @@
-/* Dependency-free SVG charts. All input remains data, never executable markup. */
-(function(){'use strict';const NS='http://www.w3.org/2000/svg',palette=['#7a392b','#4d6d65','#9a7b4e','#65508b'];
-const el=(tag,attrs={},text)=>{const n=document.createElementNS(NS,tag);Object.entries(attrs).forEach(([k,v])=>n.setAttribute(k,String(v)));if(text!=null)n.textContent=text;return n};
-const val=v=>typeof v==='number'?v:Number(v); const nice=v=>Number.isFinite(v)?(Math.abs(v)>=1000?Math.round(v).toLocaleString():Number(v.toFixed(2)).toString()):'';
-function svgBase(){const svg=el('svg',{viewBox:'0 0 400 220',role:'img'});return svg}
-function extent(series,key){const a=series.flatMap(s=>(s.data||[]).map(d=>val(d[key]))).filter(Number.isFinite);return [Math.min(...a),Math.max(...a)]}
-function linear(min,max,a,b){if(min===max){min-=1;max+=1}return v=>a+(v-min)*(b-a)/(max-min)}
-function axes(svg,xs,ys,xLabel,yLabel){const l=40,t=15;svg.append(el('line',{x1:l,y1:187,x2:390,y2:187,class:'chart-axis'}));svg.append(el('line',{x1:l,y1:t,x2:l,y2:187,class:'chart-axis'}));for(let i=0;i<4;i++){let p=i/3,x=l+p*350,y=187-p*172;svg.append(el('text',{x,y:205,class:'chart-label','text-anchor':'middle'},nice(xs.min+(xs.max-xs.min)*p)));svg.append(el('text',{x:34,y:y+3,class:'chart-label','text-anchor':'end'},nice(ys.min+(ys.max-ys.min)*p)));}if(xLabel)svg.append(el('text',{x:215,y:219,class:'chart-label','text-anchor':'middle'},xLabel));if(yLabel)svg.append(el('text',{x:11,y:102,class:'chart-label',transform:'rotate(-90 11 102)','text-anchor':'middle'},yLabel))}
-function cartesian(f){const s=f.series||[],[xmin,xmax]=extent(s,'x'),[ymin,ymax]=extent(s,'y'),x=linear(xmin,xmax,40,390),y=linear(ymin,ymax,187,15),svg=svgBase();axes(svg,{min:xmin,max:xmax},{min:ymin,max:ymax},f.xLabel,f.yLabel);return{svg,s,x,y}}
-function line(f){const{svg,s,x,y}=cartesian(f);s.forEach((series,i)=>{const points=(series.data||[]).map(d=>`${x(val(d.x))},${y(val(d.y))}`).join(' ');svg.append(el('polyline',{points,stroke:series.color||palette[i%palette.length],class:'chart-line'}));});return svg}
-function scatter(f){const{svg,s,x,y}=cartesian(f);s.forEach((series,i)=>(series.data||[]).forEach(d=>svg.append(el('circle',{cx:x(val(d.x)),cy:y(val(d.y)),r:3.7,fill:series.color||palette[i%palette.length],class:'chart-dot'}))));return svg}
-function bar(f){const s=f.series||[],data=s[0]?.data||[],max=Math.max(0,...data.map(d=>val(d.y))),scale=linear(0,max,187,15),svg=svgBase(),w=Math.min(48,310/Math.max(1,data.length));svg.append(el('line',{x1:40,y1:187,x2:390,y2:187,class:'chart-axis'}));data.forEach((d,i)=>{const x=48+i*(330/data.length),y=scale(val(d.y));svg.append(el('rect',{x,y,width:w,height:187-y,fill:s[0]?.color||palette[0]}));svg.append(el('text',{x:x+w/2,y:204,class:'chart-label','text-anchor':'middle'},String(d.x)));});if(f.yLabel)svg.append(el('text',{x:34,y:18,class:'chart-label','text-anchor':'end'},f.yLabel));return svg}
-function histogram(f){return bar(f)}
-function table(f){const t=document.createElement('table');t.className='chart-table';const h=document.createElement('thead'),hr=document.createElement('tr');(f.columns||[]).forEach(c=>{const th=document.createElement('th');th.textContent=c.label;hr.append(th)});h.append(hr);t.append(h);const b=document.createElement('tbody');(f.rows||[]).forEach(row=>{const tr=document.createElement('tr');(f.columns||[]).forEach(c=>{const td=document.createElement('td'),v=row[c.key];td.textContent=c.format==='number'?nice(val(v)):String(v??'');tr.append(td)});b.append(tr)});t.append(b);return t}
-window.InspectorCharts={render(f){if(!f||!f.type)return null;if(f.type==='table')return table(f);if(f.type==='bar')return bar(f);if(f.type==='scatter')return scatter(f);if(f.type==='histogram')return histogram(f);return line(f)}}})();
+/* Small dependency-free SVG charts. Inputs are plain data, never markup. */
+(function () {
+  'use strict';
+  const NS = 'http://www.w3.org/2000/svg';
+  const palette = ['#7a392b', '#4d6d65', '#9a7b4e', '#65508b'];
+  const el = (tag, attrs = {}, value) => {
+    const node = document.createElementNS(NS, tag);
+    Object.entries(attrs).forEach(([key, val]) => node.setAttribute(key, String(val)));
+    if (value != null) node.textContent = String(value);
+    return node;
+  };
+  const num = value => value === '' || value == null ? NaN : Number(value);
+  const nice = value => Number.isFinite(value)
+    ? (Math.abs(value) >= 1000 ? Math.round(value).toLocaleString() : Number(value.toPrecision(3)).toString())
+    : '';
+  const safeColor = (value, fallback) => typeof value === 'string' && /^(#[\da-f]{3,8}|[a-z]+)$/i.test(value) ? value : fallback;
+  const base = () => el('svg', { viewBox: '0 0 400 245', role: 'img', focusable: 'false' });
+  const niceRange = values => {
+    const finite = values.filter(Number.isFinite);
+    if (!finite.length) return [0, 1];
+    let min = Math.min(...finite), max = Math.max(...finite);
+    if (min === max) { const pad = Math.abs(min) * .08 || 1; min -= pad; max += pad; }
+    return [min, max];
+  };
+  const validData = (series, keys = ['x', 'y']) => (series || []).map(item => ({
+    ...item,
+    data: (Array.isArray(item.data) ? item.data : []).filter(point => point && keys.every(key => Number.isFinite(num(point[key]))))
+  }));
+  const extent = (series, key) => niceRange(series.flatMap(item => item.data.map(point => num(point[key]))));
+  const linear = (min, max, from, to) => value => from + ((value - min) * (to - from)) / (max - min);
+  function axes(svg, xr, yr, xLabel, yLabel) {
+    const left = 48, right = 388, top = 16, bottom = 184;
+    svg.append(el('line', { x1: left, y1: bottom, x2: right, y2: bottom, class: 'chart-axis' }));
+    svg.append(el('line', { x1: left, y1: top, x2: left, y2: bottom, class: 'chart-axis' }));
+    for (let i = 0; i < 4; i++) {
+      const ratio = i / 3, x = left + ratio * (right - left), y = bottom - ratio * (bottom - top);
+      svg.append(el('text', { x, y: 202, class: 'chart-label', 'text-anchor': 'middle' }, nice(xr[0] + (xr[1] - xr[0]) * ratio)));
+      svg.append(el('text', { x: 41, y: y + 3, class: 'chart-label', 'text-anchor': 'end' }, nice(yr[0] + (yr[1] - yr[0]) * ratio)));
+    }
+    if (xLabel) svg.append(el('text', { x: 218, y: 218, class: 'chart-label', 'text-anchor': 'middle' }, xLabel));
+    if (yLabel) svg.append(el('text', { x: 12, y: 100, class: 'chart-label', transform: 'rotate(-90 12 100)', 'text-anchor': 'middle' }, yLabel));
+  }
+  function cartesian(figure) {
+    const series = validData(figure.series), xr = extent(series, 'x'), yr = extent(series, 'y'), svg = base();
+    axes(svg, xr, yr, figure.xLabel, figure.yLabel);
+    return { svg, series, x: linear(xr[0], xr[1], 48, 388), y: linear(yr[0], yr[1], 184, 16) };
+  }
+  function line(figure) {
+    const { svg, series, x, y } = cartesian(figure);
+    series.forEach((item, index) => {
+      if (!item.data.length) return;
+      const points = item.data.map(point => `${x(num(point.x))},${y(num(point.y))}`).join(' ');
+      svg.append(el('polyline', { points, stroke: safeColor(item.color, palette[index % palette.length]), class: 'chart-line' }));
+      if (item.data.length === 1) svg.append(el('circle', { cx: x(num(item.data[0].x)), cy: y(num(item.data[0].y)), r: 3.7, fill: safeColor(item.color, palette[index % palette.length]), class: 'chart-dot' }));
+    });
+    return svg;
+  }
+  function scatter(figure) {
+    const { svg, series, x, y } = cartesian(figure);
+    series.forEach((item, index) => item.data.forEach(point => svg.append(el('circle', {
+      cx: x(num(point.x)), cy: y(num(point.y)), r: 3.7,
+      fill: safeColor(item.color, palette[index % palette.length]), class: 'chart-dot'
+    }))));
+    return svg;
+  }
+  function bars(figure) {
+    const item = Array.isArray(figure.series) ? figure.series[0] : null;
+    const data = (Array.isArray(item?.data) ? item.data : []).filter(point => point && Number.isFinite(num(point.y)));
+    const svg = base();
+    const [min, max] = niceRange([0, ...data.map(point => num(point.y))]);
+    const scale = linear(min, max, 184, 16), zero = scale(0), span = 340;
+    svg.append(el('line', { x1: 48, y1: zero, x2: 388, y2: zero, class: 'chart-axis' }));
+    if (!data.length) {
+      svg.append(el('text', { x: 218, y: 108, class: 'chart-label', 'text-anchor': 'middle' }, 'No numeric data'));
+      return svg;
+    }
+    const step = span / data.length, width = Math.min(48, step * .64);
+    data.forEach((point, index) => {
+      const value = num(point.y), x = 48 + index * step + (step - width) / 2, y = Math.min(scale(value), zero), height = Math.max(1, Math.abs(zero - scale(value)));
+      svg.append(el('rect', { x, y, width, height, fill: safeColor(item.color, palette[0]) }));
+      const label = String(point.x ?? index + 1), maxChars = Math.max(5, Math.floor(step / 5.5));
+      const words = label.split(/\s+/), lines = [];
+      let line = '';
+      words.forEach(word => {
+        while (word.length > maxChars) { if (line) { lines.push(line); line = ''; } lines.push(`${word.slice(0, maxChars - 1)}‐`); word = word.slice(maxChars - 1); }
+        if (line && `${line} ${word}`.length > maxChars) { lines.push(line); line = word; } else line = line ? `${line} ${word}` : word;
+      });
+      if (line) lines.push(line);
+      const labelNode = el('text', { x: x + width / 2, y: 201, class: 'chart-label', 'text-anchor': 'middle' });
+      lines.slice(0, 3).forEach((part, lineIndex) => labelNode.append(el('tspan', { x: x + width / 2, dy: lineIndex ? 11 : 0 }, part)));
+      svg.append(labelNode);
+    });
+    if (figure.yLabel) svg.append(el('text', { x: 48, y: 12, class: 'chart-label' }, figure.yLabel));
+    return svg;
+  }
+  function table(figure) {
+    const columns = Array.isArray(figure.columns) ? figure.columns : [];
+    const table = document.createElement('table'); table.className = 'chart-table';
+    const head = document.createElement('thead'), header = document.createElement('tr');
+    columns.forEach(column => { const cell = document.createElement('th'); cell.scope = 'col'; cell.textContent = String(column.label ?? column.key ?? ''); header.append(cell); });
+    head.append(header); table.append(head);
+    const body = document.createElement('tbody');
+    (Array.isArray(figure.rows) ? figure.rows : []).forEach(row => {
+      const tr = document.createElement('tr');
+      columns.forEach(column => {
+        const cell = document.createElement('td'), value = row?.[column.key];
+        cell.textContent = column.format === 'number' && Number.isFinite(num(value)) ? nice(num(value)) : String(value ?? '');
+        tr.append(cell);
+      });
+      body.append(tr);
+    });
+    table.append(body); return table;
+  }
+  function histogram(figure) {
+    const first = Array.isArray(figure.series) ? figure.series[0] : null;
+    const rawValues = Array.isArray(figure.values) ? figure.values.map(num)
+      : (Array.isArray(first?.data) ? first.data.map(point => num(point?.value ?? point?.y)) : []);
+    const values = rawValues.filter(Number.isFinite);
+    let bins = [];
+    if (Array.isArray(figure.bins) && figure.bins.length) {
+      if (figure.bins.every(bin => Number.isFinite(num(bin)))) {
+        const edges = figure.bins.map(num).sort((a, b) => a - b);
+        bins = edges.slice(0, -1).map((min, index) => {
+          const max = edges[index + 1];
+          return { min, max, count: values.filter(value => value >= min && (value < max || (index === edges.length - 2 && value <= max))).length, label: `${nice(min)}–${nice(max)}` };
+        });
+      } else bins = figure.bins.map(bin => {
+        if (typeof bin === 'number') return { min: bin, max: NaN, count: 0 };
+        return { min: num(bin.min ?? bin.start), max: num(bin.max ?? bin.end), count: Number.isFinite(num(bin.count)) ? num(bin.count) : null, label: bin.label };
+      }).filter(bin => Number.isFinite(bin.min));
+      bins.sort((a, b) => a.min - b.min);
+      bins.forEach((bin, i) => {
+        const next = bins[i + 1];
+        if (!Number.isFinite(bin.max)) bin.max = next?.min ?? bin.min;
+        if (bin.count == null) bin.count = values.filter(value => value >= bin.min && (value < bin.max || (!next && value <= bin.max))).length;
+        if (!bin.label) bin.label = `${nice(bin.min)}–${nice(bin.max)}`;
+      });
+    } else if (values.length) {
+      let min = Math.min(...values), max = Math.max(...values);
+      if (min === max) { min -= .5; max += .5; }
+      const count = Math.max(1, Math.min(20, Math.floor(num(figure.binCount) || Math.ceil(Math.sqrt(values.length)))));
+      const width = (max - min) / count;
+      bins = Array.from({ length: count }, (_, i) => ({ min: min + i * width, max: i === count - 1 ? max : min + (i + 1) * width, count: 0 }));
+      values.forEach(value => { const index = Math.min(count - 1, Math.floor((value - min) / width)); bins[index].count++; });
+      bins.forEach(bin => { bin.label = `${nice(bin.min)}–${nice(bin.max)}`; });
+    }
+    return bars({ ...figure, type: 'bar', series: [{ color: first?.color, data: bins.map(bin => ({ x: bin.label, y: bin.count })) }] });
+  }
+  window.InspectorCharts = { render(figure) {
+    if (!figure || typeof figure !== 'object') return null;
+    switch (figure.type) {
+      case 'table': return table(figure);
+      case 'bar': return bars(figure);
+      case 'histogram': return histogram(figure);
+      case 'scatter': return scatter(figure);
+      case 'line': return line(figure);
+      default: return null;
+    }
+  } };
+})();
