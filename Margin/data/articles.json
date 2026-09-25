@@ -1,0 +1,25 @@
+{
+  "site": {
+    "title": "Margin",
+    "subtitle": "A little more context."
+  },
+  "articles": [
+    {
+      "id": "situational-awareness",
+      "title": "Situational Awareness",
+      "subtitle": "The Decade Ahead, revisited",
+      "author": "Leopold Aschenbrenner",
+      "published": "2024-06",
+      "updated": "2026-09-25",
+      "summary": "A 2026 companion across the complete essay series: compute, research automation, infrastructure, security and the state.",
+      "tags": [
+        "Artificial intelligence",
+        "2024 → 2026",
+        "Reading companion"
+      ],
+      "articlePath": "data/situational-awareness.json",
+      "contextPath": "context/situational-awareness.md",
+      "promptPath": "prompts/discuss.md"
+    }
+  ]
+}
