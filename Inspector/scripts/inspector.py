@@ -14,6 +14,12 @@ from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
 CATALOGUE = ROOT / "data" / "articles.json"
+EVIDENCE_PATH = ROOT / "research" / "evidence.json"
+EVIDENCE_STATUSES = {
+    "observed", "announced", "forecast", "estimate", "policy", "policy-guidance",
+    "policy-proposal", "company-reported", "vendor-specification", "methodology",
+    "measurement", "officially-graded", "research-preprint", "observed-and-forecast",
+}
 
 
 def load_json(path: Path) -> Any:
@@ -27,7 +33,7 @@ def check_date(value: Any, where: str, errors: list[str], required: bool = False
     if value is None and not required:
         return
     if not isinstance(value, str):
-        errors.append(f"{where}: expected ISO date YYYY-MM-DD")
+        errors.append(f"{where}: expected ISO date YYYY-MM or YYYY-MM-DD")
         return
     try:
         date.fromisoformat(value + "-01" if re.fullmatch(r"\d{4}-\d{2}", value) else value)
@@ -35,7 +41,7 @@ def check_date(value: Any, where: str, errors: list[str], required: bool = False
         errors.append(f"{where}: invalid ISO date {value!r}")
 
 
-def validate_article(article: Any, where: str, errors: list[str]) -> None:
+def validate_article(article: Any, where: str, evidence_ids: set[str], errors: list[str]) -> None:
     if not isinstance(article, dict):
         errors.append(f"{where}: expected object")
         return
@@ -111,9 +117,45 @@ def validate_article(article: Any, where: str, errors: list[str]) -> None:
             for sid in note.get("sourceIds", []):
                 if sid not in source_ids:
                     errors.append(f"{nloc}: unknown source id {sid!r}")
+            note_evidence_ids = note.get("evidenceIds", [])
+            if not isinstance(note_evidence_ids, list):
+                errors.append(f"{nloc}.evidenceIds: expected array")
+            else:
+                for evidence_id in note_evidence_ids:
+                    if evidence_id not in evidence_ids:
+                        errors.append(f"{nloc}: unknown evidence id {evidence_id!r}")
             figure = note.get("figure")
             if figure is not None:
                 validate_figure(figure, nloc + ".figure", source_ids, errors)
+
+def validate_evidence(evidence: Any, errors: list[str]) -> set[str]:
+    if not isinstance(evidence, dict):
+        errors.append("research/evidence.json: expected object")
+        return set()
+    check_date(evidence.get("asOf"), "research/evidence.json.asOf", errors, required=True)
+    records = evidence.get("records")
+    if not isinstance(records, list):
+        errors.append("research/evidence.json.records: expected array")
+        return set()
+    ids: set[str] = set()
+    required = ("id", "topic", "fact", "asOf", "status", "sourceURL", "sourcePublisher", "retrieved", "caveat")
+    for i, record in enumerate(records):
+        loc = f"research/evidence.json.records[{i}]"
+        if not isinstance(record, dict) or not all(record.get(field) for field in required):
+            errors.append(f"{loc}: missing required evidence fields")
+            continue
+        record_id = record["id"]
+        if not isinstance(record_id, str) or not re.fullmatch(r"[A-Z]+-[0-9]+", record_id):
+            errors.append(f"{loc}.id: expected PREFIX-NUMBER identifier")
+        elif record_id in ids:
+            errors.append(f"{loc}: duplicate evidence id {record_id!r}")
+        ids.add(record_id)
+        if record["status"] not in EVIDENCE_STATUSES:
+            errors.append(f"{loc}.status: unsupported status {record['status']!r}")
+        if not isinstance(record["sourceURL"], str) or not re.match(r"https?://", record["sourceURL"]):
+            errors.append(f"{loc}.sourceURL: expected http(s) URL")
+        check_date(record["retrieved"], f"{loc}.retrieved", errors, required=True)
+    return ids
 
 
 def validate_figure(figure: Any, where: str, source_ids: set[str], errors: list[str]) -> None:
@@ -149,6 +191,11 @@ def validate_figure(figure: Any, where: str, source_ids: set[str], errors: list[
 
 def validate() -> int:
     errors: list[str] = []
+    if not EVIDENCE_PATH.is_file():
+        errors.append("Missing research/evidence.json")
+        evidence_ids: set[str] = set()
+    else:
+        evidence_ids = validate_evidence(load_json(EVIDENCE_PATH), errors)
     if not CATALOGUE.exists():
         print(f"Missing {CATALOGUE.relative_to(ROOT)}")
         return 1
@@ -173,7 +220,7 @@ def validate() -> int:
         article = load_json(path)
         if article.get("id") != aid:
             errors.append(f"{loc}: article file id does not match catalogue id {aid!r}")
-        validate_article(article, str(path.relative_to(ROOT)).replace("\\", "/"), errors)
+        validate_article(article, str(path.relative_to(ROOT)).replace("\\", "/"), evidence_ids, errors)
         for prop in ("contextPath", "promptPath"):
             if entry.get(prop) and not (ROOT / entry[prop]).is_file():
                 errors.append(f"{loc}: missing {prop} {entry[prop]!r}")
@@ -198,6 +245,8 @@ def render_context(article: dict[str, Any]) -> str:
     if article.get("sourceMode") == "summary":
         lines += ["Source mode: independently written claim summaries. The original essay is linked, not reproduced here.", ""]
     sources = {source["id"]: source for source in article.get("sources", []) if isinstance(source, dict) and source.get("id")}
+    evidence = load_json(EVIDENCE_PATH) if EVIDENCE_PATH.is_file() else {}
+    evidence_by_id = {record["id"]: record for record in evidence.get("records", []) if isinstance(record, dict) and record.get("id")}
     chapter_names = {chapter.get("id"): chapter.get("title") for chapter in article.get("chapters", []) if isinstance(chapter, dict)}
     current_chapter = None
     for block in article.get("blocks", []):
@@ -225,6 +274,10 @@ def render_context(article: dict[str, Any]) -> str:
                 source = sources.get(sid, {})
                 if source:
                     lines += [f"[{sid}] {source.get('label', '')} — {source.get('url', '')} ({source.get('publisher', '')}; {source.get('date', '')})", ""]
+            for evidence_id in note.get("evidenceIds", []):
+                record = evidence_by_id.get(evidence_id)
+                if record:
+                    lines += [f"[Evidence {evidence_id}] ({record['asOf']}; {record['status']}): {record['fact']} Source: {record['sourceURL']}. Caveat: {record['caveat']}", ""]
             if note.get("figure"):
                 lines += ["```json", json.dumps(note["figure"], ensure_ascii=False, indent=2), "```", ""]
     glossary = article.get("glossary", {})
@@ -237,9 +290,7 @@ def render_context(article: dict[str, Any]) -> str:
     lines += ["## Source registry", ""]
     for source in sources.values():
         lines += [f"- **{source.get('id')}:** {source.get('label')} — {source.get('url')} ({source.get('publisher', '')}; {source.get('date', '')})"]
-    evidence_path = ROOT / "research" / "evidence.json"
-    if evidence_path.is_file():
-        evidence = load_json(evidence_path)
+    if evidence:
         lines += ["", "## Shared evidence records", "", "The following dated records are reusable across articles; their status and caveats matter.", ""]
         for record in evidence.get("records", []):
             lines += [f"- **{record['id']}** ({record['asOf']}; {record['status']}): {record['fact']} Source: {record['sourceURL']}. Caveat: {record['caveat']}"]

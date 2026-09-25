@@ -28,6 +28,8 @@ An advanced Gemini Deep Think model earned 35 of 42 points at the 2025 Internati
 
 [imo] Gemini Deep Think at IMO 2025 — https://deepmind.google/blog/advanced-version-of-gemini-with-deep-think-officially-achieves-gold-medal-standard-at-the-international-mathematical-olympiad/ (Google DeepMind; 2025-07-21)
 
+[Evidence CAP-09] (2025-07-21; officially-graded): An advanced Gemini Deep Think model solved five of six IMO 2025 problems for 35 of 42 points; IMO coordinators graded and certified the result under the student criteria. Source: https://deepmind.google/blog/advanced-version-of-gemini-with-deep-think-officially-achieves-gold-medal-standard-at-the-international-mathematical-olympiad/. Caveat: Google reports the model setup; the external grading validates the submitted solutions, not broad research autonomy.
+
 ## I. Counting the OOMs
 
 Training compute is expected to grow by roughly half an OOM per year.
@@ -79,6 +81,8 @@ OpenAI reports 96.0% on GPQA Diamond for Astra in September 2026. Its same relea
 
 [astra] GPT-6 Astra: A new generation of intelligence — https://openai.com/index/gpt-6-astra/ (OpenAI; 2026-09-03)
 
+[Evidence CAP-10] (2026-09-03; company-reported): OpenAI reported GPT-6 Astra scored 96.0% on GPQA Diamond and 59.3% on Agents’ Last Exam in its September 2026 release results. Source: https://openai.com/index/gpt-6-astra/. Caveat: The release places GPQA Diamond in its academic results and Agents’ Last Exam in computer-use results; scores and test setups are not a common intelligence scale.
+
 ```json
 {
   "type": "table",
@@ -115,6 +119,8 @@ DeepSeek reported reasoning gains from reinforcement learning, including its R1-
 
 [r1] DeepSeek-R1 technical report — https://arxiv.org/abs/2501.12948 (DeepSeek; 2025-01-22)
 
+[Evidence CMP-05] (2025-01-22; research-preprint): DeepSeek reports that its R1-Zero research variant developed reasoning capability through large-scale reinforcement learning without preliminary supervised fine-tuning. Source: https://arxiv.org/abs/2501.12948. Caveat: This claim is specifically about R1-Zero, not every stage of DeepSeek-R1; a different learning signal does not make high-quality training data unlimited.
+
 Tools, memory and longer task execution could turn chatbots into useful autonomous coworkers.
 
 **Inspector update — Measure the task, and the reliability.**
@@ -131,6 +137,8 @@ As a proof of concept, Geiping and colleagues demonstrated a 3.5-billion-paramet
 
 [latent] Scaling up test-time compute with latent reasoning — https://arxiv.org/abs/2502.05171v2 (Geiping et al.; 2025-02-17)
 
+[Evidence CMP-06] (2025-02-17; research-preprint): A 2025 preprint demonstrated a 3.5-billion-parameter recurrent-depth model that iterates an internal block at test time and reported reasoning gains at a compute load equivalent to 50 billion parameters. Source: https://arxiv.org/abs/2502.05171v2. Caveat: Proof-of-concept research architecture; it is not evidence that deployed frontier models use latent recurrent reasoning.
+
 ## II. The intelligence explosion
 
 Replicated AI researchers could compress years of algorithmic progress into months.
@@ -141,6 +149,8 @@ Anthropic reports that its typical engineer merged eight times as much code per 
 
 [anthropic-rd] When AI builds itself — https://www.anthropic.com/institute/recursive-self-improvement (Anthropic Institute; 2026-09-18)
 
+[Evidence CAP-08] (2026-Q2; company-reported): Anthropic reports the typical engineer merged 8x as much code per day in Q2 2026 as in 2024. Source: https://www.anthropic.com/institute/recursive-self-improvement. Caveat: LOC is an incomplete productivity metric; organization, tools, and task mix changed.
+
 Automated AI research could feed improvements back into the systems doing the research.
 
 **Inspector update — A small version of the loop now exists.**
@@ -148,6 +158,8 @@ Automated AI research could feed improvements back into the systems doing the re
 An unreviewed September 2026 preprint reports seven successive improvements to a research agent’s own code during an eight-day run, with gains on four held-out benchmarks. The object being improved was the agent software. It was not an autonomous succession of newly trained frontier models.
 
 [aide2] Recursive self-improvement of AI research agents — https://arxiv.org/abs/2609.26457 (Srikanth et al.; 2026-09-22)
+
+[Evidence CAP-11] (2026-09-22; research-preprint): AIDE², a September 2026 preprint, reports seven successive changes to an AI research agent’s own code during an autonomous eight-day run, with gains on four held-out benchmarks. Source: https://arxiv.org/abs/2609.26457. Caveat: Very recent unreviewed result on agent software optimization, not an autonomous succession of newly trained frontier models.
 
 Experiment compute and the last difficult parts of research could limit the intelligence explosion.
 
@@ -303,6 +315,8 @@ Rubin’s published peak memory bandwidth is 22 TB/s, versus H100 SXM’s 3.35 T
 
 [rubin] Inside NVIDIA Rubin GPU architecture — https://developer.nvidia.com/blog/inside-nvidia-rubin-gpu-architecture-powering-the-era-of-agentic-ai/ (NVIDIA; 2026-07-21)
 
+[Evidence GPU-06] (2026-07-21; vendor-specification): NVIDIA’s Rubin architecture post lists up to 288 GB HBM4 memory and up to 22 TB/s peak memory bandwidth per Rubin GPU. Source: https://developer.nvidia.com/blog/inside-nvidia-rubin-gpu-architecture-powering-the-era-of-agentic-ai/. Caveat: Vendor-announced peak specifications, not measured application throughput or a count of deployed hardware.
+
 ```json
 {
   "type": "table",
@@ -367,6 +381,8 @@ In September 2026, OpenAI classified Astra at its Critical cybersecurity thresho
 
 [critical] Path to Astra: critical capabilities and frontier safeguards — https://openai.com/index/path-to-astra/ (OpenAI; 2026-09-01)
 
+[Evidence SEC-06] (2026-09-01; company-reported): OpenAI states that GPT-6 Astra meets its Critical cybersecurity capability threshold and says its post-Hugging-Face hardening included isolation and network controls, expanded monitoring, and stricter training controls. Source: https://openai.com/index/path-to-astra/. Caveat: OpenAI’s own classification and account of safeguards; no public independent assessment establishes security against a top-tier state actor.
+
 Preparations against capable state actors need to start years before AGI.
 
 **Inspector update — A roadmap is evidence of effort, not assurance.**
@@ -385,6 +401,8 @@ In an August 2026 preprint, monitors detected 60–94% of explicitly induced beh
 
 [monitor] Chain-of-thought monitoring in implicit-influence settings — https://arxiv.org/abs/2608.04735v1 (Duzan & Cooper Stickland; 2026-08-05)
 
+[Evidence SEC-05] (2026-08-05; research-preprint): A 2026 preprint found monitors detected 60–94% of explicitly induced behavior shifts, while implicit influence reduced detection by 41–46 percentage points in two task settings. Source: https://arxiv.org/abs/2608.04735v1. Caveat: Single preprint benchmark across four task formats; the two-setting result is not a general measurement of deployed oversight reliability.
+
 AI researchers may eventually help solve the alignment problem itself.
 
 **Inspector update — Promising experiments still need to transfer.**
@@ -401,6 +419,8 @@ Astra’s September safety report describes classifiers over reasoning and actio
 
 [critical] Path to Astra: critical capabilities and frontier safeguards — https://openai.com/index/path-to-astra/ (OpenAI; 2026-09-01)
 
+[Evidence SEC-06] (2026-09-01; company-reported): OpenAI states that GPT-6 Astra meets its Critical cybersecurity capability threshold and says its post-Hugging-Face hardening included isolation and network controls, expanded monitoring, and stricter training controls. Source: https://openai.com/index/path-to-astra/. Caveat: OpenAI’s own classification and account of safeguards; no public independent assessment establishes security against a top-tier state actor.
+
 ## IIId. The free world
 
 Chinese labs could remain competitive despite US advantages in compute.
@@ -410,6 +430,8 @@ Chinese labs could remain competitive despite US advantages in compute.
 DeepSeek-R1’s published reasoning results made that possibility concrete. They do not establish equality across research autonomy, compute supply or deployment scale. A national lead is a collection of advantages, not one leaderboard position.
 
 [r1] DeepSeek-R1 technical report — https://arxiv.org/abs/2501.12948 (DeepSeek; 2025-01-22)
+
+[Evidence CMP-05] (2025-01-22; research-preprint): DeepSeek reports that its R1-Zero research variant developed reasoning capability through large-scale reinforcement learning without preliminary supervised fine-tuning. Source: https://arxiv.org/abs/2501.12948. Caveat: This claim is specifically about R1-Zero, not every stage of DeepSeek-R1; a different learning signal does not make high-quality training data unlimited.
 
 A lead in superintelligence might translate into decisive military power.
 
@@ -436,6 +458,8 @@ National laboratories and government resources could become central to frontier 
 DOE launched the Genesis Mission Consortium in February 2026, bringing national laboratories, companies and universities into an AI-for-science effort. It is a concrete institutional development toward state involvement, with a narrower remit than the unified AGI project envisioned here.
 
 [genesis] Genesis Mission Consortium launch — https://www.energy.gov/articles/energy-department-launches-genesis-mission-consortium-accelerate-ai-driven-scientific (US Department of Energy; 2026-02-09)
+
+[Evidence GOV-04] (2026-02-09; announced): The US Department of Energy launched the Genesis Mission Consortium, a public-private partnership involving DOE, National Laboratories, private-sector leaders, and academic institutions for AI-enabled scientific discovery. Source: https://www.energy.gov/articles/energy-department-launches-genesis-mission-consortium-accelerate-ai-driven-scientific. Caveat: A government research coalition, not evidence of the unified government-led AGI project forecast in the original essay.
 
 ## V. Parting thoughts
 
@@ -538,6 +562,15 @@ The following dated records are reusable across articles; their status and cavea
 - **GEO-04** (2025-05-13; policy-guidance): BIS’s May 2025 counter-diversion guidance identifies 10 MW-or-larger data centers as meriting additional scrutiny in specified advanced-computing transactions. Source: https://www.bis.gov/media/documents/ai-counter-diversion-industry-guidance-may-13-2025.pdf. Caveat: Guidance for transaction scrutiny; it is not a blanket capacity prohibition or a measured strategic outcome.
 - **GOV-02** (2026-06; policy-proposal): Anthropic’s June 2026 Advanced AI Framework advocates rules for models trained with more than 10^25 FLOPs at companies above $500m AI revenue or $1bn AI R&D spend. Source: https://www.anthropic.com/policy-on-the-ai-exponential/aaif. Caveat: Company policy proposal, not enacted law.
 - **GOV-03** (2026-03; estimate): The IEA says data centres accounted for around half of US electricity-demand growth in 2025. Source: https://www.iea.org/reports/global-energy-review-2026/global-trends. Caveat: Energy-sector aggregate, not evidence of any particular procurement programme.
+- **CAP-09** (2025-07-21; officially-graded): An advanced Gemini Deep Think model solved five of six IMO 2025 problems for 35 of 42 points; IMO coordinators graded and certified the result under the student criteria. Source: https://deepmind.google/blog/advanced-version-of-gemini-with-deep-think-officially-achieves-gold-medal-standard-at-the-international-mathematical-olympiad/. Caveat: Google reports the model setup; the external grading validates the submitted solutions, not broad research autonomy.
+- **CAP-10** (2026-09-03; company-reported): OpenAI reported GPT-6 Astra scored 96.0% on GPQA Diamond and 59.3% on Agents’ Last Exam in its September 2026 release results. Source: https://openai.com/index/gpt-6-astra/. Caveat: The release places GPQA Diamond in its academic results and Agents’ Last Exam in computer-use results; scores and test setups are not a common intelligence scale.
+- **CMP-05** (2025-01-22; research-preprint): DeepSeek reports that its R1-Zero research variant developed reasoning capability through large-scale reinforcement learning without preliminary supervised fine-tuning. Source: https://arxiv.org/abs/2501.12948. Caveat: This claim is specifically about R1-Zero, not every stage of DeepSeek-R1; a different learning signal does not make high-quality training data unlimited.
+- **CMP-06** (2025-02-17; research-preprint): A 2025 preprint demonstrated a 3.5-billion-parameter recurrent-depth model that iterates an internal block at test time and reported reasoning gains at a compute load equivalent to 50 billion parameters. Source: https://arxiv.org/abs/2502.05171v2. Caveat: Proof-of-concept research architecture; it is not evidence that deployed frontier models use latent recurrent reasoning.
+- **CAP-11** (2026-09-22; research-preprint): AIDE², a September 2026 preprint, reports seven successive changes to an AI research agent’s own code during an autonomous eight-day run, with gains on four held-out benchmarks. Source: https://arxiv.org/abs/2609.26457. Caveat: Very recent unreviewed result on agent software optimization, not an autonomous succession of newly trained frontier models.
+- **SEC-05** (2026-08-05; research-preprint): A 2026 preprint found monitors detected 60–94% of explicitly induced behavior shifts, while implicit influence reduced detection by 41–46 percentage points in two task settings. Source: https://arxiv.org/abs/2608.04735v1. Caveat: Single preprint benchmark across four task formats; the two-setting result is not a general measurement of deployed oversight reliability.
+- **SEC-06** (2026-09-01; company-reported): OpenAI states that GPT-6 Astra meets its Critical cybersecurity capability threshold and says its post-Hugging-Face hardening included isolation and network controls, expanded monitoring, and stricter training controls. Source: https://openai.com/index/path-to-astra/. Caveat: OpenAI’s own classification and account of safeguards; no public independent assessment establishes security against a top-tier state actor.
+- **GOV-04** (2026-02-09; announced): The US Department of Energy launched the Genesis Mission Consortium, a public-private partnership involving DOE, National Laboratories, private-sector leaders, and academic institutions for AI-enabled scientific discovery. Source: https://www.energy.gov/articles/energy-department-launches-genesis-mission-consortium-accelerate-ai-driven-scientific. Caveat: A government research coalition, not evidence of the unified government-led AGI project forecast in the original essay.
+- **GPU-06** (2026-07-21; vendor-specification): NVIDIA’s Rubin architecture post lists up to 288 GB HBM4 memory and up to 22 TB/s peak memory bandwidth per Rubin GPU. Source: https://developer.nvidia.com/blog/inside-nvidia-rubin-gpu-architecture-powering-the-era-of-agentic-ai/. Caveat: Vendor-announced peak specifications, not measured application throughput or a count of deployed hardware.
 
 ## Auxiliary research: research/claim-audit.md
 
