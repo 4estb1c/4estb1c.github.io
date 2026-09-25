@@ -1,0 +1,7 @@
+- Task: reusable Margin research, import, validation, context workflow; branch `agent/margin-workflow`.
+- Added generalized article research/annotation prompt and article starter JSON.
+- Added Python stdlib validator/context exporter and local HTML/MathML structure importer.
+- Added authoring, shared evidence, reproducible charts, discussion, preview, and rights guidance.
+- Schema follows integrator message: catalogue entries, chapter blocks, note kinds, source IDs, figures on notes.
+- Validation: both scripts `--help`, Python byte-compile, and `git diff --check` pass.
+- Handoff commit: pending.

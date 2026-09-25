@@ -1,0 +1,71 @@
+{
+  "id": "replace-with-kebab-case-id",
+  "title": "Article title",
+  "dek": "A short description of the article.",
+  "author": "Author name",
+  "published": "YYYY-MM-DD",
+  "updated": "YYYY-MM-DD",
+  "sourceUrl": "https://example.org/article",
+  "editionNote": "Source status, rights note, and any normalization details.",
+  "chapters": [
+    { "id": "opening", "title": "Opening" }
+  ],
+  "glossary": {},
+  "blocks": [
+    {
+      "id": "opening-p1",
+      "chapter": "opening",
+      "type": "paragraph",
+      "text": "Article text or a short authorized excerpt.",
+      "glossaryTerms": [],
+      "notes": [
+        {
+          "id": "opening-p1-update",
+          "kind": "update",
+          "title": "Current evidence",
+          "body": "Briefly explain what subsequent evidence changes, with its scope and date.",
+          "sourceIds": ["source-id"]
+        }
+      ]
+    },
+    {
+      "id": "market-figure-note",
+      "chapter": "opening",
+      "type": "paragraph",
+      "text": "A short passage adjacent to the chart.",
+      "notes": [
+        {
+          "id": "market-figure",
+          "kind": "context",
+          "title": "A reproducible comparison",
+          "body": "One sentence stating what to notice.",
+          "sourceIds": ["source-id"],
+          "figure": {
+            "type": "line",
+            "title": "A dated series",
+            "description": "Observed values, in the stated units.",
+            "xLabel": "Year",
+            "yLabel": "Value (unit)",
+            "series": [
+              { "label": "Observed", "data": [{ "x": 2024, "y": 1 }] }
+            ],
+            "source": "source-id"
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "source-id",
+      "label": "Source title",
+      "url": "https://example.org/source",
+      "publisher": "Publisher",
+      "date": "YYYY-MM-DD"
+    }
+  ],
+  "context": {
+    "downloadUrl": "context/replace-with-kebab-case-id.md",
+    "promptUrl": "prompts/research-and-annotate.md"
+  }
+}
