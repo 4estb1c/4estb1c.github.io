@@ -1,6 +1,6 @@
-# Margin authoring workflow
+# Inspector authoring workflow
 
-Margin is a static article reader with a source text, aligned commentary, original footnotes, glossary tooltips, and reproducible figures. Deep research happens in a Codex session using [the research prompt](prompts/research-and-annotate.md); the website does not run an AI model. Keep article data, research evidence, chart data, and analysis code in the repository so later articles and discussions can reuse them.
+Inspector is a static article reader with a source text, aligned commentary, original footnotes, glossary tooltips, and reproducible figures. Deep research happens in a Codex session using [the research prompt](prompts/research-and-annotate.md); the website does not run an AI model. Keep article data, research evidence, chart data, and analysis code in the repository so later articles and discussions can reuse them.
 
 ## Add or update an article
 
@@ -15,7 +15,7 @@ Margin is a static article reader with a source text, aligned commentary, origin
 The optional local HTML importer can help start from a saved article page, including arXiv's HTML view:
 
 ```powershell
-python Margin/scripts/import_html.py .\paper.html --output Margin\data\draft.json --article-id paper-draft --title "Paper title" --author "Author" --source-url "https://arxiv.org/html/..."
+python Inspector/scripts/import_html.py .\paper.html --output Inspector\data\draft.json --article-id paper-draft --title "Paper title" --author "Author" --source-url "https://arxiv.org/html/..."
 ```
 
 It emits a draft of headings, paragraphs, images, and MathML. It does not fetch a URL. Review the extraction, strip navigation or other page chrome that remains, repair image paths, and confirm that the source's license or terms permit the text and images you plan to publish. For sources without permission to republish, use metadata and links with only brief excerpts where allowed.
@@ -25,12 +25,12 @@ It emits a draft of headings, paragraphs, images, and MathML. It does not fetch 
 Run from the website repository root:
 
 ```powershell
-python Margin/scripts/margin.py validate
-python Margin/scripts/margin.py build-context situational-awareness
+python Inspector/scripts/inspector.py validate
+python Inspector/scripts/inspector.py build-context situational-awareness
 python -m http.server 8000
 ```
 
-Then open `http://localhost:8000/Margin/`. The context builder writes the page content, notes, source registry, glossary, and figure JSON to the catalogue's `contextPath`; include relevant auxiliary research and reproducibility paths there when preparing discussion context.
+Then open `http://localhost:8000/Inspector/`. The context builder writes the page content, notes, source registry, glossary, and figure JSON to the catalogue's `contextPath`; include relevant auxiliary research and reproducibility paths there when preparing discussion context.
 
 ## Codex discussion
 
