@@ -1,5 +1,5 @@
 {
-  "$schema": "../schema/evidence.schema.json",
+  "$schema": "./schema/evidence.schema.json",
   "corpus": "Margin reusable research",
   "asOf": "2026-09-25",
   "records": [

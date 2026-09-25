@@ -20,4 +20,4 @@ Useful annotation posture:
 
 IEA is the strongest common source for power context because it publishes scope and scenarios. NVIDIA values are product specifications, useful for a factual component/table but insufficient evidence of training progress. US BIS releases are dated policy snapshots: the January 2025 diffusion announcement and May rescission demonstrate why an annotation must name the date and current legal status.
 
-The commentary should avoid a scorecard declaring the essays “right” or “wrong.” Several central predictions are still future-dated. The appropriate update is a ledger of what has occurred, what has been announced, and which causal links are still unobserved.
+The commentary should avoid a scorecard declaring the essays “right” or “wrong.” Several central predictions are still future-dated. The appropriate update is a concise full-series claim ledger of what has occurred, what has been announced, and which causal links are still unobserved; it should not imply exhaustive numerical coverage.
