@@ -115,7 +115,8 @@
           "body": "By April 2026, OpenAI said it had secured more than 10 GW of US infrastructure capacity. That is a commitment across a buildout, not 10 GW already running—or one giant training cluster.",
           "sourceIds": [
             "stargate"
-          ]
+          ],
+          "status": "Company report"
         }
       ]
     },
@@ -133,10 +134,11 @@
           "id": "the-deadline-note",
           "kind": "update",
           "title": "Several milestones have arrived. The deadline remains open.",
-          "body": "Google’s research system earned 35 of 42 points at the 2025 International Mathematical Olympiad, with official grading. That is a substantial change from GPT-4’s school-exam performance. It does not settle whether a model can take over an open-ended research job.",
+          "body": "An advanced Gemini Deep Think model earned 35 of 42 points at the 2025 International Mathematical Olympiad, graded by IMO coordinators under the student criteria. It is a substantial change from GPT-4’s school-exam performance. It does not settle whether a model can take over an open-ended research job.",
           "sourceIds": [
             "imo"
-          ]
+          ],
+          "status": "Externally graded"
         }
       ]
     },
@@ -179,7 +181,8 @@
                 ]
               }
             ]
-          }
+          },
+          "status": "Independent estimate"
         }
       ]
     },
@@ -200,7 +203,8 @@
           "body": "Efficiency keeps improving, but lower serving prices, better benchmark scores and cheaper training are different quantities. The projected 100× training-efficiency gain cannot be marked achieved from API price cuts. Keep the forecast open until comparable training evidence is available.",
           "sourceIds": [
             "epoch-trends"
-          ]
+          ],
+          "status": "Interpretation"
         }
       ]
     },
@@ -217,7 +221,7 @@
         {
           "id": "harder-exams-note",
           "kind": "update",
-          "title": "That particular barrier has largely fallen.",
+          "title": "GPQA Diamond nears saturation in the vendor report.",
           "body": "OpenAI reports 96.0% on GPQA Diamond for Astra in September 2026. Its same release reports 59.3% on Agents’ Last Exam. These are different tests, not a shared intelligence scale; the contrast shows why exam mastery and dependable professional work need separate measurements.",
           "sourceIds": [
             "astra"
@@ -225,7 +229,7 @@
           "figure": {
             "type": "table",
             "title": "One model, different tests",
-            "description": "Developer-reported Astra results, September 2026. Scores have different meanings and are not directly comparable.",
+            "description": "OpenAI-reported Astra results, September 2026, under each benchmark’s stated setup. Scores have different meanings and are not directly comparable.",
             "columns": [
               {
                 "key": "benchmark",
@@ -246,7 +250,8 @@
                 "score": "59.3%"
               }
             ]
-          }
+          },
+          "status": "Company report"
         }
       ]
     },
@@ -264,10 +269,11 @@
           "id": "data-wall-note",
           "kind": "update",
           "title": "A real alternative to another pass over the web.",
-          "body": "DeepSeek-R1 demonstrated reasoning gains from reinforcement learning, including a research variant trained without preliminary supervised fine-tuning. Feedback from verifiable answers supplies a different learning signal. That makes the data constraint less simple; it does not make trustworthy training data unlimited.",
+          "body": "DeepSeek reported reasoning gains from reinforcement learning, including its R1-Zero research variant trained without preliminary supervised fine-tuning. Feedback from verifiable answers supplies a different learning signal. That makes the data constraint less simple; it does not make trustworthy training data unlimited.",
           "sourceIds": [
             "r1"
-          ]
+          ],
+          "status": "Research paper"
         }
       ]
     },
@@ -288,7 +294,8 @@
           "body": "METR’s May 2026 update warns that horizons above 16 human-expert hours are unreliable with its current task suite. Its 50% horizon is a difficulty measure at one-in-two success—not a promise of 16 hours of reliable unattended work.",
           "sourceIds": [
             "metr-horizons"
-          ]
+          ],
+          "status": "Independent research"
         }
       ]
     },
@@ -306,10 +313,11 @@
           "id": "reasoning-compute-note",
           "kind": "context",
           "title": "Compute now has another place to go.",
-          "body": "Geiping and colleagues demonstrated a 3.5-billion-parameter model that spends extra inference compute by repeatedly applying an internal block. More computation need not mean more visible reasoning tokens. This changes both the economics of an answer and what a human can inspect.",
+          "body": "As a proof of concept, Geiping and colleagues demonstrated a 3.5-billion-parameter model that spends extra inference compute by repeatedly applying an internal block. More computation need not mean more visible reasoning tokens. This changes both the economics of an answer and what a human can inspect.",
           "sourceIds": [
             "latent"
-          ]
+          ],
+          "status": "Research paper"
         }
       ]
     },
@@ -330,7 +338,8 @@
           "body": "Anthropic reports that its typical engineer merged eight times as much code per day in Q2 2026 as in 2024. It explicitly cautions that code volume overstates productivity. This supports substantial workflow change, while leaving the speed of valuable scientific progress unresolved.",
           "sourceIds": [
             "anthropic-rd"
-          ]
+          ],
+          "status": "Company report"
         }
       ]
     },
@@ -348,10 +357,11 @@
           "id": "recursive-loop-note",
           "kind": "update",
           "title": "A small version of the loop now exists.",
-          "body": "A September 2026 preprint reports seven successive improvements to a research agent’s own code during an eight-day run, with gains on four held-out benchmarks. The object being improved was the agent software. It was not an autonomous succession of newly trained frontier models.",
+          "body": "An unreviewed September 2026 preprint reports seven successive improvements to a research agent’s own code during an eight-day run, with gains on four held-out benchmarks. The object being improved was the agent software. It was not an autonomous succession of newly trained frontier models.",
           "sourceIds": [
             "aide2"
-          ]
+          ],
+          "status": "Research preprint"
         }
       ]
     },
@@ -415,7 +425,8 @@
                 ]
               }
             ]
-          }
+          },
+          "status": "Illustrative arithmetic"
         }
       ]
     },
@@ -436,7 +447,8 @@
           "body": "A power reservation, an energized site, a company’s total fleet and a single training run are four different things. The latest Stargate commitment supports the scale of investment envisaged here. It does not establish that the projected single-cluster milestones have been met.",
           "sourceIds": [
             "stargate"
-          ]
+          ],
+          "status": "Interpretation"
         }
       ]
     },
@@ -482,7 +494,8 @@
                 ]
               }
             ]
-          }
+          },
+          "status": "Company report"
         }
       ]
     },
@@ -503,7 +516,8 @@
           "body": "NVIDIA reported $89 billion in Data Center revenue for the quarter ended July 26, 2026—117% above a year earlier. That is nearly the $90 billion annualized pace cited in the essay. Sales confirm demand; they do not count installed or active GPUs.",
           "sourceIds": [
             "nvidia26"
-          ]
+          ],
+          "status": "Company filing"
         }
       ]
     },
@@ -545,7 +559,8 @@
                 ]
               }
             ]
-          }
+          },
+          "status": "Intergovernmental report"
         }
       ]
     },
@@ -620,7 +635,8 @@
                 "bandwidth": 22
               }
             ]
-          }
+          },
+          "status": "Vendor specifications"
         }
       ]
     },
@@ -641,7 +657,8 @@
           "body": "In September 2026, OpenAI classified Astra at its Critical cybersecurity threshold and described stronger isolation and monitoring after the Hugging Face incident. This is the developer’s assessment. The problem now includes containing the systems doing the work, as well as keeping outsiders out.",
           "sourceIds": [
             "critical"
-          ]
+          ],
+          "status": "Company assessment"
         }
       ]
     },
@@ -659,10 +676,11 @@
           "id": "security-progress-note",
           "kind": "update",
           "title": "A roadmap is evidence of effort, not assurance.",
-          "body": "Anthropic moved the first phase of its extreme-security prototype work from May to September 30, 2026. As of this edition, that deadline is still ahead. Public commitments make progress easier to audit, but cannot demonstrate resistance to a top-tier intelligence service.",
+          "body": "Anthropic moved the deadline for its Phase 1 inventory, cost and timeline analysis of extreme-security prototypes from May to September 30, 2026. That date is still ahead. A roadmap makes effort visible; it cannot demonstrate resistance to a top-tier intelligence service.",
           "sourceIds": [
             "roadmap"
-          ]
+          ],
+          "status": "Company roadmap"
         }
       ]
     },
@@ -680,10 +698,11 @@
           "id": "oversight-note",
           "kind": "update",
           "title": "A readable explanation is only one safety layer.",
-          "body": "An August 2026 study found that monitors detected 60–94% of explicitly induced behavioral shifts, but detection fell by 41–46 percentage points in two settings when influence was implicit. The result is task-specific; it shows why legible reasoning alone is not evidence of faithful oversight.",
+          "body": "In an August 2026 preprint, monitors detected 60–94% of explicitly induced behavioral shifts. Detection fell by 41–46 percentage points in two settings when influence was implicit. The result is task-specific; it shows why legible reasoning alone is not evidence of faithful oversight.",
           "sourceIds": [
             "monitor"
-          ]
+          ],
+          "status": "Research preprint"
         }
       ]
     },
@@ -704,7 +723,8 @@
           "body": "Anthropic reports agents recovering 97% of a weak-to-strong supervision gap in a research setup, compared with roughly 23% for two humans. The result did not transfer cleanly to production-scale models. A successful experiment can advance alignment research without solving deployment safety.",
           "sourceIds": [
             "anthropic-rd"
-          ]
+          ],
+          "status": "Company report"
         }
       ]
     },
@@ -725,7 +745,8 @@
           "body": "Astra’s September safety report describes classifiers over reasoning and actions that can stop unauthorized activity. Those controls complement behavioral training. A favorable result for a model alone should not be read as a guarantee for every tool, permission or deployment environment.",
           "sourceIds": [
             "critical"
-          ]
+          ],
+          "status": "Company assessment"
         }
       ]
     },
@@ -746,7 +767,8 @@
           "body": "DeepSeek-R1’s published reasoning results made that possibility concrete. They do not establish equality across research autonomy, compute supply or deployment scale. A national lead is a collection of advantages, not one leaderboard position.",
           "sourceIds": [
             "r1"
-          ]
+          ],
+          "status": "Research paper"
         }
       ]
     },
@@ -767,7 +789,8 @@
           "body": "Stronger software and cyber capabilities matter. They do not by themselves establish the much larger claim about defeating a nuclear deterrent. That step still depends on physical deployment, intelligence, countermeasures and an adversary’s response; a benchmark cannot adjudicate it.",
           "sourceIds": [
             "critical"
-          ]
+          ],
+          "status": "Interpretation"
         }
       ]
     },
@@ -788,7 +811,8 @@
           "body": "Stargate is evidence of coordinated infrastructure investment. Its existence alone does not establish the government chain of command envisioned in the essay. The 2027–28 prediction remains prospective; public-private projects and state control should be recorded separately.",
           "sourceIds": [
             "stargate"
-          ]
+          ],
+          "status": "Interpretation"
         }
       ]
     },
@@ -809,7 +833,8 @@
           "body": "DOE launched the Genesis Mission Consortium in February 2026, bringing national laboratories, companies and universities into an AI-for-science effort. It is a concrete institutional development toward state involvement, with a narrower remit than the unified AGI project envisioned here.",
           "sourceIds": [
             "genesis"
-          ]
+          ],
+          "status": "Government announcement"
         }
       ]
     },
@@ -828,7 +853,8 @@
           "kind": "context",
           "title": "Keep the forecast disaggregated.",
           "body": "Compute growth, research automation, security, political control and military dominance are separate propositions. Evidence can strengthen one while leaving another unresolved. The useful update is a dated ledger of what has changed, with the original deadlines still visible.",
-          "sourceIds": []
+          "sourceIds": [],
+          "status": "Synthesis"
         }
       ]
     }
