@@ -1,10 +1,10 @@
-# Margin research and annotation agent
+# Inspector research and annotation agent
 
-Use this prompt in a separate Codex session when preparing an article for Margin. The user supplies an article URL, file, or existing Margin article. Read this whole prompt, then read the article and any existing Margin research before writing.
+Use this prompt in a separate Codex session when preparing an article for Inspector. The user supplies an article URL, file, or existing Inspector article. Read this whole prompt, then read the article and any existing Inspector research before writing.
 
 ## Assignment
 
-Build an evidence-rich, concise set of right-hand-side annotations for the supplied article, following its argument paragraph by paragraph. The project is called Margin. It presents a source article in a standardized, readable format on the left and updated commentary on the right. Treat the article and its evidence as reusable research assets, not disposable chat context.
+Build an evidence-rich, concise set of right-hand-side annotations for the supplied article, following its argument paragraph by paragraph. The project is called Inspector. It presents a source article in a standardized, readable format on the left and updated commentary on the right. Treat the article and its evidence as reusable research assets, not disposable chat context.
 
 The user’s desired approach, in their words, is:
 
@@ -25,7 +25,7 @@ Use the site's own prompt and article structure as the format contract. Do not i
 5. Do not infer unsupported values, silently change definitions, or present a forecast as an observed outcome. If a number cannot be checked, explain what is missing and leave it unresolved. Use “as of” dates for fast-changing figures. Make comparisons like-for-like and make units and denominators clear.
 6. Annotate assumptions with a concrete development that tests or reframes them. Explain the connection to the passage in a sentence or two. Separate evidence from interpretation. Include a note only when it adds meaningful information.
 7. Produce concise, polished annotations. Prefer a chart or compact table when a comparison is clearer visually. Keep charts reproducible: retain the underlying values, units, dates, source IDs, and enough information to recreate them. Include code used to derive or plot values in the article's research assets, not only an image. Do not make a figure the only place where a key caveat appears.
-8. Carry original author footnotes into notes with `kind: "original"`, preserving their text and links accurately. These are visibly styled apart from Margin commentary. Never silently merge an original note with your own analysis.
+8. Carry original author footnotes into notes with `kind: "original"`, preserving their text and links accurately. These are visibly styled apart from Inspector commentary. Never silently merge an original note with your own analysis.
 9. Add useful glossary entries for terms that a broadly technical reader might not know. Keep definitions short and grounded in reliable sources when nontrivial.
 10. Save the article data, any reusable evidence, and a generated discussion context file. The context file must include the full normalized article, all annotations, source registry, glossary, figure data, and relevant auxiliary research that informed the annotations but did not fit in the page. Include reproducible analysis code or its path. This material will prime a later, fast Codex conversation about the article; do not include private chain-of-thought. Provide concise research rationale, evidence, caveats, and methods instead.
 
@@ -37,4 +37,4 @@ Use the site's own prompt and article structure as the format contract. Do not i
 - Any chart data and code required to reproduce figures.
 - A short completion note listing the article, evidence reused or added, unresolved claims, and validation command/result.
 
-Run `python Margin/scripts/margin.py validate` after saving. Then run `python Margin/scripts/margin.py build-context <article-id>` to refresh the discussion context. Do not publish or modify the live site as part of research unless explicitly asked.
+Run `python Inspector/scripts/inspector.py validate` after saving. Then run `python Inspector/scripts/inspector.py build-context <article-id>` to refresh the discussion context. Do not publish or modify the live site as part of research unless explicitly asked.

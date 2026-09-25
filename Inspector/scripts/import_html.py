@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Turn a locally saved article HTML page into a reviewable Margin block draft.
+"""Turn a locally saved article HTML page into a reviewable Inspector block draft.
 
 This is a text/structure aid, not a web scraper or a republication license. Check
 the source's terms and rights, remove site chrome, verify equations and images,
