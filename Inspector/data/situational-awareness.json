@@ -138,6 +138,9 @@
           "sourceIds": [
             "imo"
           ],
+          "evidenceIds": [
+            "CAP-09"
+          ],
           "status": "Externally graded"
         }
       ]
@@ -226,6 +229,9 @@
           "sourceIds": [
             "astra"
           ],
+          "evidenceIds": [
+            "CAP-10"
+          ],
           "figure": {
             "type": "table",
             "title": "One model, different tests",
@@ -273,6 +279,9 @@
           "sourceIds": [
             "r1"
           ],
+          "evidenceIds": [
+            "CMP-05"
+          ],
           "status": "Research paper"
         }
       ]
@@ -317,6 +326,9 @@
           "sourceIds": [
             "latent"
           ],
+          "evidenceIds": [
+            "CMP-06"
+          ],
           "status": "Research paper"
         }
       ]
@@ -339,6 +351,9 @@
           "sourceIds": [
             "anthropic-rd"
           ],
+          "evidenceIds": [
+            "CAP-08"
+          ],
           "status": "Company report"
         }
       ]
@@ -360,6 +375,9 @@
           "body": "An unreviewed September 2026 preprint reports seven successive improvements to a research agent’s own code during an eight-day run, with gains on four held-out benchmarks. The object being improved was the agent software. It was not an autonomous succession of newly trained frontier models.",
           "sourceIds": [
             "aide2"
+          ],
+          "evidenceIds": [
+            "CAP-11"
           ],
           "status": "Research preprint"
         }
@@ -585,6 +603,9 @@
             "hgxs",
             "rubin"
           ],
+          "evidenceIds": [
+            "GPU-06"
+          ],
           "figure": {
             "type": "table",
             "title": "Memory is a separate axis of progress",
@@ -658,6 +679,9 @@
           "sourceIds": [
             "critical"
           ],
+          "evidenceIds": [
+            "SEC-06"
+          ],
           "status": "Company assessment"
         }
       ]
@@ -701,6 +725,9 @@
           "body": "In an August 2026 preprint, monitors detected 60–94% of explicitly induced behavioral shifts. Detection fell by 41–46 percentage points in two settings when influence was implicit. The result is task-specific; it shows why legible reasoning alone is not evidence of faithful oversight.",
           "sourceIds": [
             "monitor"
+          ],
+          "evidenceIds": [
+            "SEC-05"
           ],
           "status": "Research preprint"
         }
@@ -746,6 +773,9 @@
           "sourceIds": [
             "critical"
           ],
+          "evidenceIds": [
+            "SEC-06"
+          ],
           "status": "Company assessment"
         }
       ]
@@ -767,6 +797,9 @@
           "body": "DeepSeek-R1’s published reasoning results made that possibility concrete. They do not establish equality across research autonomy, compute supply or deployment scale. A national lead is a collection of advantages, not one leaderboard position.",
           "sourceIds": [
             "r1"
+          ],
+          "evidenceIds": [
+            "CMP-05"
           ],
           "status": "Research paper"
         }
@@ -833,6 +866,9 @@
           "body": "DOE launched the Genesis Mission Consortium in February 2026, bringing national laboratories, companies and universities into an AI-for-science effort. It is a concrete institutional development toward state involvement, with a narrower remit than the unified AGI project envisioned here.",
           "sourceIds": [
             "genesis"
+          ],
+          "evidenceIds": [
+            "GOV-04"
           ],
           "status": "Government announcement"
         }
