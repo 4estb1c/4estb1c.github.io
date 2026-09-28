@@ -323,10 +323,17 @@ def render_context(article: dict[str, Any]) -> str:
     lines += ["## Source registry", ""]
     for source in sources.values():
         lines += [f"- **{source.get('id')}:** {source.get('label')} — {source.get('url')} ({source.get('publisher', '')}; {source.get('date', '')})"]
-    if evidence:
-        lines += ["", "## Shared evidence records", "", "The following dated records are reusable across articles; their status and caveats matter.", ""]
+    used_evidence_ids = {
+        evidence_id
+        for block in article.get("blocks", [])
+        for note in block.get("notes", [])
+        for evidence_id in note.get("evidenceIds", [])
+    }
+    if used_evidence_ids:
+        lines += ["", "## Shared evidence records used by this article", "", "The full reusable registry remains in research/evidence.json.", ""]
         for record in evidence.get("records", []):
-            lines += [f"- **{record['id']}** ({record['asOf']}; {record['status']}): {record['fact']} Source: {record['sourceURL']}. Caveat: {record['caveat']}"]
+            if record["id"] in used_evidence_ids:
+                lines += [f"- **{record['id']}** ({record['asOf']}; {record['status']}): {record['fact']} Source: {record['sourceURL']}. Caveat: {record['caveat']}"]
     for relative in article.get("researchPaths", []):
         path = (ROOT / relative).resolve()
         if ROOT not in path.parents or not path.is_file():
