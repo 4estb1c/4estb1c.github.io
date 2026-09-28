@@ -6,15 +6,15 @@ not authorize or prepare the extracted source text for publication.
 
 Canonical source: <https://situational-awareness.ai/from-gpt-4-to-agi/>
 
-| Existing Margin annotation | Extracted passage(s) | Why it maps |
+| Existing Margin annotation | Exact extracted block ID(s) and identifying words | Why it maps |
 | --- | --- | --- |
-| `compute-trend-note` | `counting-0053` — [Compute](https://situational-awareness.ai/from-gpt-4-to-agi/#Compute) | The original calls frontier training-compute growth “roughly ~0.5 OOMs/year”; the annotation updates that slope with Epoch's later historical fit. |
-| `effective-compute-note` | `counting-0012`; `counting-0129`; `counting-0140` — [The next four years](https://situational-awareness.ai/from-gpt-4-to-agi/#The_next_four_years) | These passages state the roughly 100,000× / roughly five-OOM four-year projection and the implied agent-worker jump. |
-| `efficiency-note` | `counting-0067`, `counting-0073`, `counting-0074` — [Algorithmic efficiencies](https://situational-awareness.ai/from-gpt-4-to-agi/#Algorithmic_efficiencies) | The source distinguishes sparse public evidence from its 1–3 OOM, best-guess two-OOM forecast; the annotation keeps that forecast unresolved. |
-| `harder-exams-note` | `counting-0038` — [The trends in deep learning](https://situational-awareness.ai/from-gpt-4-to-agi/#The_trends_in_deep_learning) | This is the original GPQA claim: about 60% for Claude 3 Opus versus about 80% for in-domain PhDs, plus the forecast that the test would fall soon. |
-| `data-wall-note` | `counting-0075`, `counting-0085`, `counting-0087` — [The data wall](https://situational-awareness.ai/from-gpt-4-to-agi/#The_data_wall) | These passages describe finite data, the proposed route through it, and the possibility that different labs diverge. |
-| `agents-note` | `counting-0100`, `counting-0121` — [From chatbot to agent-coworker](https://situational-awareness.ai/from-gpt-4-to-agi/#From_chatbot_to_agent-coworker) | The original's agent-worker vision includes longer-horizon loops and using workplace tools. The present annotation narrows this to measured reliability and task horizons. |
-| `reasoning-compute-note` | `counting-0107`, `counting-0112`, `counting-0116`, `counting-0118` — [From chatbot to agent-coworker](https://situational-awareness.ai/from-gpt-4-to-agi/#From_chatbot_to_agent-coworker) | These make the test-time-compute/latent-ability argument that the annotation updates with recurrent-depth work. |
+| `compute-trend-note` | `counting-0053` — “training compute … ~0.5 OOMs/year” ([Compute](https://situational-awareness.ai/from-gpt-4-to-agi/#Compute)) | The annotation updates that slope with Epoch's later historical fit. |
+| `effective-compute-note` | `counting-0012` — “~100,000x effective compute scaleup”; `counting-0129` — “best guess of ~5 OOMs” ([The next four years](https://situational-awareness.ai/from-gpt-4-to-agi/#The_next_four_years)) | These passages state the four-year projection and implied agent-worker jump. |
+| `efficiency-note` | `counting-0067` — “harder to measure”; `counting-0074` — “1-3 OOMs … best guess of ~2” ([Algorithmic efficiencies](https://situational-awareness.ai/from-gpt-4-to-agi/#Algorithmic_efficiencies)) | The source distinguishes sparse public evidence from its forecast; the annotation keeps that forecast unresolved. |
+| `harder-exams-note` | `counting-0038` — “tests like GPQA” ([The trends in deep learning](https://situational-awareness.ai/from-gpt-4-to-agi/#The_trends_in_deep_learning)) | This is the original GPQA claim and forecast that the test would fall soon. |
+| `data-wall-note` | `counting-0085` — “overcoming the data wall”; `counting-0087` — “lab … get stuck” ([The data wall](https://situational-awareness.ai/from-gpt-4-to-agi/#The_data_wall)) | These passages describe finite data, the proposed route through it, and divergent lab outcomes. |
+| `agents-note` | `counting-0120` — “isolated box”; `counting-0121` — “Zoom calls … dev tooling” ([From chatbot to agent-coworker](https://situational-awareness.ai/from-gpt-4-to-agi/#From_chatbot_to_agent-coworker)) | The original's agent-worker vision includes longer-horizon loops and workplace tools. The present annotation narrows this to measured reliability and task horizons. |
+| `reasoning-compute-note` | `counting-0107` — “test-time compute overhang”; `counting-0112` — “error correct”; `counting-0116` — “substitute for training compute” ([From chatbot to agent-coworker](https://situational-awareness.ai/from-gpt-4-to-agi/#From_chatbot_to_agent-coworker)) | These make the latent-ability argument that the annotation updates with recurrent-depth work. |
 
 ## One selective H100 tooltip
 
