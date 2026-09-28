@@ -227,8 +227,8 @@
         {
           "id": "efficiency-note",
           "kind": "context",
-          "title": "There is no clean public odometer.",
-          "body": "Efficiency keeps improving, but lower serving prices, better benchmark scores and cheaper training are different quantities. The projected 100× training-efficiency gain cannot be marked achieved from API price cuts. Keep the forecast open until comparable training evidence is available.",
+          "title": "The measured rate is substantial, but the forecast is still open.",
+          "body": "Epoch estimates pre-training compute efficiency improved about 3× per year since 2020, or 0.5 OOM annually. That is a historical fit for comparable model performance; it does not by itself establish the essay’s projected 100× gain by 2027.",
           "sourceIds": [
             "epoch-trends"
           ],
