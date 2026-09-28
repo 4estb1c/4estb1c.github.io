@@ -121,7 +121,8 @@ class FullTextExtractor(HTMLParser):
 
     def handle_starttag(self, tag: str, raw_attrs: list[tuple[str, str | None]]) -> None:
         attrs = {key.lower(): value or "" for key, value in raw_attrs}
-        self.stack.append((tag, attrs))
+        if tag not in VOID:
+            self.stack.append((tag, attrs))
         if self.capture_depth is None:
             if tag == "h1" and "entry-title" in classes(attrs):
                 self.title_depth = 1
@@ -149,7 +150,7 @@ class FullTextExtractor(HTMLParser):
                 self.append(f'<sup><a href="#{escape(identifier, quote=True)}">{escape(number)}</a></sup>')
             self.skip_depth = 1
             return
-        if tag in SKIP_TAGS or "ez-toc-container" in node_classes:
+        if tag in SKIP_TAGS or attrs.get("id") == "ez-toc-container" or "ez-toc-container" in node_classes:
             self.skip_depth = 1
             return
         if "footnotes" in node_classes:
