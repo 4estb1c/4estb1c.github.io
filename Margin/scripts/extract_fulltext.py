@@ -39,7 +39,7 @@ def clean_text(markup: str) -> str:
 class FullTextExtractor(HTMLParser):
     """Capture semantic blocks inside one named content container."""
 
-    def __init__(self, source_url: str, content_class: str = "entry-content") -> None:
+    def __init__(self, source_url: str, content_class: str = "entry-content", asset_map: dict[str, str] | None = None) -> None:
         super().__init__(convert_charrefs=True)
         self.source_url = source_url
         self.content_class = content_class
@@ -60,12 +60,41 @@ class FullTextExtractor(HTMLParser):
         self.title = ""
         self.title_depth = 0
         self.title_parts: list[str] = []
+        self.asset_map = asset_map or {}
+        self.unresolved_local_assets: set[str] = set()
 
     def absolute_url(self, value: str) -> str:
         if not value:
             return ""
         result = urljoin(self.source_url, value)
         return result if urlparse(result).scheme in {"http", "https", "mailto"} else ""
+
+    def image_source(self, value: str) -> dict[str, str | None]:
+        """Return a canonical image URL or explicitly preserve a local saved asset.
+
+        Browser "save page" output rewrites some image sources into a sibling
+        ``*_files`` directory. Joining those paths to the canonical page creates
+        a plausible-looking but false remote URL, so keep them unresolved unless
+        a reviewer supplies an explicit canonical mapping.
+        """
+        normalized = value.replace("\\", "/")
+        parsed = urlparse(normalized)
+        is_saved_asset = not parsed.scheme and "_files/" in normalized
+        if is_saved_asset:
+            mapped = self.asset_map.get(value) or self.asset_map.get(normalized)
+            if mapped and urlparse(mapped).scheme in {"http", "https"}:
+                return {
+                    "src": mapped,
+                    "sourceLocalAsset": value,
+                    "assetStatus": "mapped-canonical-source",
+                }
+            self.unresolved_local_assets.add(value)
+            return {
+                "src": None,
+                "sourceLocalAsset": value,
+                "assetStatus": "unresolved-local-saved-asset",
+            }
+        return {"src": self.absolute_url(value)}
 
     def current_url(self) -> str:
         return f"{self.source_url}#{self.section_fragment}" if self.section_fragment else self.source_url
@@ -175,7 +204,11 @@ class FullTextExtractor(HTMLParser):
             number = attrs.get("data-footnote-number", "")
             identifier = attrs.get("id", "")
             if number and (self.current is not None or self._active_list_item() is not None):
-                self.append(f'<sup><a href="#{escape(identifier, quote=True)}">{escape(number)}</a></sup>')
+                # Bigfoot uses note-N-* for the button and footnote-N-* for its
+                # source body. Point at the extracted body ID so the private
+                # reader has a real, stable anchor target.
+                target = f"footnote-{identifier[5:]}" if identifier.startswith("note-") else identifier
+                self.append(f'<sup><a href="#{escape(target, quote=True)}">{escape(number)}</a></sup>')
             self.skip_depth = 1
             return
         if tag in SKIP_TAGS or attrs.get("id") == "ez-toc-container" or "ez-toc-container" in node_classes:
@@ -234,7 +267,7 @@ class FullTextExtractor(HTMLParser):
             return
         if tag == "img":
             image = {
-                "src": self.absolute_url(attrs.get("data-orig-file") or attrs.get("src", "")),
+                **self.image_source(attrs.get("data-orig-file") or attrs.get("src", "")),
                 "alt": attrs.get("alt", ""),
                 "width": attrs.get("width", ""),
                 "height": attrs.get("height", ""),
@@ -375,10 +408,28 @@ def main() -> int:
     parser.add_argument("--source-url", required=True, help="canonical URL for the saved page")
     parser.add_argument("--content-class", default="entry-content", help="class on the article body container")
     parser.add_argument("--id-prefix", default="source", help="stable ID prefix for extracted blocks")
+    parser.add_argument(
+        "--asset-map",
+        type=Path,
+        help="optional JSON object mapping local saved asset paths to reviewed canonical https URLs",
+    )
     args = parser.parse_args()
 
+    asset_map: dict[str, str] = {}
+    if args.asset_map:
+        try:
+            loaded = json.loads(args.asset_map.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError) as error:
+            raise SystemExit(f"Could not read --asset-map: {error}") from error
+        if not isinstance(loaded, dict) or not all(isinstance(key, str) and isinstance(value, str) for key, value in loaded.items()):
+            raise SystemExit("--asset-map must be a JSON object of local path strings to canonical URL strings.")
+        invalid = [url for url in loaded.values() if urlparse(url).scheme not in {"http", "https"}]
+        if invalid:
+            raise SystemExit("--asset-map values must be canonical http(s) URLs.")
+        asset_map = loaded
+
     raw = args.html_file.read_text(encoding="utf-8", errors="replace")
-    extractor = FullTextExtractor(args.source_url, args.content_class)
+    extractor = FullTextExtractor(args.source_url, args.content_class, asset_map)
     extractor.feed(raw)
     extractor.close()
     blocks = finalize(extractor.blocks, extractor.footnotes, args.id_prefix)
@@ -392,10 +443,12 @@ def main() -> int:
         "contentSelector": f".{args.content_class}",
         "title": extractor.title,
         "blocks": blocks,
+        "unresolvedLocalAssets": sorted(extractor.unresolved_local_assets),
         "extractionNotes": [
             "Parsed locally with Python html.parser; no document scripts, styles, network requests, navigation, advertisements, or site footer are evaluated or retained.",
             "sourceAnchor is a stable extractor ID for editorial mapping. sourceUrl is the canonical page URL, including the nearest source heading fragment when available.",
             "Text and meaningful inline markup, links, figures, captions, lists, and footnotes are retained for review. Source CSS, layout wrappers, responsive image sets, and interactive footnote buttons are intentionally excluded.",
+            "Saved-page image paths in a sibling *_files directory are never joined to the canonical page URL. They remain unresolved until supplied through --asset-map with a reviewed canonical https URL.",
         ],
     }
     args.output.parent.mkdir(parents=True, exist_ok=True)

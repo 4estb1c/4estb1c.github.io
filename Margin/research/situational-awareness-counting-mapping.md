@@ -36,6 +36,26 @@ root block and every item also retain rendered source markup in `html`; this
 keeps nested `<ul>` and `<ol>` distinctions available for a future private
 reader without changing the public article schema.
 
+## Saved image asset repair
+
+The private draft deliberately marks saved-page `*_files` image paths as
+`unresolved-local-saved-asset` with `src: null`; it never turns those paths into
+invented URLs on the canonical page. The current Chapter I draft has three:
+
+- `counting-0022` — `gpt3_examples-1.png`. The reviewed canonical original is
+  `https://situational-awareness.ai/wp-content/uploads/2024/06/gpt3_examples-1.png`.
+- `counting-0025` — `gpt4_examples-3.png`. The reviewed canonical original is
+  `https://situational-awareness.ai/wp-content/uploads/2024/06/gpt4_examples-3.png`.
+- `counting-0151` — `unnamed.png`. Keep unresolved pending a reviewed original;
+  its source page's Google-hosted URL was not a reliable canonical replacement.
+
+[`situational-awareness-counting.asset-map.example.json`](../drafts/situational-awareness-counting.asset-map.example.json)
+contains the two reviewed mappings. To create a review-only repaired derivative,
+copy it to a local map, add a verified mapping for any remaining asset, and run
+`py Margin/scripts/extract_fulltext.py <saved-html> --source-url <canonical-page>
+--output <private-draft> --asset-map <local-map>`. Do not point a public reader
+at the saved local files or this private draft.
+
 `counting-0001` through `counting-0183` are deterministic ordered source
 anchors. Every block records its canonical source URL; blocks after a source
 heading also include that heading's original URL fragment. The synthetic ID is
