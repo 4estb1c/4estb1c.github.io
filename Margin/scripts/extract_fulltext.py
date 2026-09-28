@@ -50,7 +50,7 @@ class FullTextExtractor(HTMLParser):
         self.current: dict[str, Any] | None = None
         self.figure: dict[str, Any] | None = None
         self.list_block: dict[str, Any] | None = None
-        self.list_depth = 0
+        self.list_stack: list[dict[str, Any]] = []
         self.table_depth = 0
         self.table_parts: list[str] = []
         self.footnotes: list[dict[str, Any]] = []
@@ -75,8 +75,8 @@ class FullTextExtractor(HTMLParser):
             self.footnote_current["html"] += value
         elif self.current is not None:
             self.current["html"] += value
-        elif self.list_block is not None and self.list_block.get("active_item") is not None:
-            self.list_block["active_item"] += value
+        elif self.list_stack and self.list_stack[-1].get("active_item") is not None:
+            self.list_stack[-1]["active_item"]["html"] += value
 
     def finish_current(self) -> None:
         if self.current is None:
@@ -98,10 +98,38 @@ class FullTextExtractor(HTMLParser):
             return
         block = self.list_block
         self.list_block = None
+        # Close any unfinished levels defensively. Well-formed source closes every
+        # list before this point, but this keeps a malformed or interrupted list
+        # from silently dropping its final item.
+        while self.list_stack:
+            level = self.list_stack.pop()
+            if level.get("active_item") is not None:
+                self._finish_list_item(level)
         block.pop("active_item", None)
         if block["items"]:
-            block["text"] = "\n".join(item["text"] for item in block["items"])
+            block["html"] = self._list_html(block)
+            block["text"] = "\n".join(self._list_text(item) for item in block["items"])
             self.blocks.append(block)
+
+    def _list_text(self, item: dict[str, Any]) -> str:
+        nested = "\n".join(
+            "\n".join(self._list_text(child) for child in group["items"])
+            for group in item.get("children", [])
+        )
+        return "\n".join(part for part in (item["text"], nested) if part)
+
+    def _list_html(self, group: dict[str, Any]) -> str:
+        tag = "ol" if group["ordered"] else "ul"
+        items = "".join(
+            f"<li>{item['html']}{''.join(self._list_html(child) for child in item.get('children', []))}</li>"
+            for item in group["items"]
+        )
+        return f"<{tag}>{items}</{tag}>"
+
+    def _active_list_item(self) -> dict[str, Any] | None:
+        if not self.list_stack:
+            return None
+        return self.list_stack[-1].get("active_item")
 
     def make_block(self, kind: str, **extra: Any) -> dict[str, Any]:
         return {"type": kind, "sourceUrl": self.current_url(), "sourceAnchor": "", **extra}
@@ -146,7 +174,7 @@ class FullTextExtractor(HTMLParser):
         if tag == "button" and "bigfoot-footnote__button" in node_classes:
             number = attrs.get("data-footnote-number", "")
             identifier = attrs.get("id", "")
-            if number and (self.current is not None or (self.list_block is not None and self.list_block.get("active_item") is not None)):
+            if number and (self.current is not None or self._active_list_item() is not None):
                 self.append(f'<sup><a href="#{escape(identifier, quote=True)}">{escape(number)}</a></sup>')
             self.skip_depth = 1
             return
@@ -169,6 +197,10 @@ class FullTextExtractor(HTMLParser):
         if tag == "a" and "footnote-print-only" in node_classes:
             self.skip_depth = 1
             return
+        if tag == "p" and self._active_list_item() is not None:
+            if self._active_list_item()["html"]:
+                self.append("<br>")
+            return
         if tag in BLOCK_TAGS:
             self.start_block(tag, attrs)
             return
@@ -176,12 +208,20 @@ class FullTextExtractor(HTMLParser):
             self.finish_current()
             if self.list_block is None:
                 self.list_block = self.make_block("list", ordered=tag == "ol", items=[], active_item=None)
-            self.list_depth += 1
+                self.list_stack = [self.list_block]
+            else:
+                parent = self._active_list_item()
+                if parent is None:
+                    return
+                nested = {"ordered": tag == "ol", "items": [], "active_item": None}
+                parent.setdefault("children", []).append(nested)
+                self.list_stack.append(nested)
             return
         if tag == "li" and self.list_block is not None:
-            if self.list_block.get("active_item") is not None:
-                self._finish_list_item()
-            self.list_block["active_item"] = ""
+            level = self.list_stack[-1]
+            if level.get("active_item") is not None:
+                self._finish_list_item(level)
+            level["active_item"] = {"html": "", "children": []}
             return
         if tag == "figure":
             self.finish_current()
@@ -275,13 +315,14 @@ class FullTextExtractor(HTMLParser):
                     self.current["sourceUrl"] = self.current_url()
             self.finish_current()
         elif tag in {"ul", "ol"} and self.list_block is not None:
-            self.list_depth -= 1
-            if self.list_depth == 0:
-                if self.list_block.get("active_item") is not None:
-                    self._finish_list_item()
+            level = self.list_stack[-1]
+            if level.get("active_item") is not None:
+                self._finish_list_item(level)
+            self.list_stack.pop()
+            if not self.list_stack:
                 self.finish_list()
-        elif tag == "li" and self.list_block is not None and self.list_block.get("active_item") is not None:
-            self._finish_list_item()
+        elif tag == "li" and self.list_block is not None and self._active_list_item() is not None:
+            self._finish_list_item(self.list_stack[-1])
         elif tag == "figcaption" and self.current is not None and self.current.get("type") == "caption":
             caption = self.current
             self.current = None
@@ -301,10 +342,13 @@ class FullTextExtractor(HTMLParser):
             self.finish_list()
             self.capture_depth = None
 
-    def _finish_list_item(self) -> None:
-        assert self.list_block is not None
-        html = self.list_block.pop("active_item")
-        self.list_block["items"].append({"html": html.strip(), "text": clean_text(html)})
+    def _finish_list_item(self, level: dict[str, Any]) -> None:
+        item = level.pop("active_item")
+        item["html"] = item["html"].strip()
+        item["text"] = clean_text(item["html"])
+        if not item["children"]:
+            item.pop("children")
+        level["items"].append(item)
 
     def handle_data(self, data: str) -> None:
         if self.title_depth:
