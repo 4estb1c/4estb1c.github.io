@@ -6,3 +6,4 @@
 - inspector-evidence-links | added 9 verified reusable evidence records and note links; validator/context resolve evidence IDs and note provenance; validation passed; handoff af1cce8, eece876.
 - inspector-reader-polish | paired rows, mobile toggle, glossary, chart library, Codex context copy; browser desktop/mobile checks and JS syntax passed; handoff 1aabcd5, integrated d2beb96.
 - inspector-evidence-links review | read-only adversarial audit of reader identified chart, URL, accessibility, and validator issues; root fixed before publication.
+- margin-fulltext | inert, reusable local-HTML chapter extractor; private Chapter I draft, source mapping, canonical image URLs, and H100 tooltip recommendation; validation passed; handoff pending.
