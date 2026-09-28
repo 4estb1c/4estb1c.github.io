@@ -20,6 +20,14 @@ python Margin/scripts/import_html.py .\paper.html --output Margin\data\draft.jso
 
 It emits a draft of headings, paragraphs, images, and MathML. It does not fetch a URL. Review the extraction, strip navigation or other page chrome that remains, repair image paths, and confirm that the source's license or terms permit the text and images you plan to publish. For sources without permission to republish, use metadata and links with only brief excerpts where allowed.
 
+For a saved page with a distinct article-body container, use the fuller extractor. It retains ordered paragraphs, headings, lists, figures, tables, links, and source footnotes in an ignored private draft for review:
+
+```powershell
+python Margin/scripts/extract_fulltext.py .\saved-article.html --output Margin/drafts/article.fulltext.json --source-url "https://example.org/article" --content-class entry-content --id-prefix article
+```
+
+The extractor never fetches the source URL or evaluates page scripts. Check its blocks against the original page before assembling an article. Keep unpublished full-text drafts in `Margin/drafts/`; this directory is ignored by Git and must not be copied into the public site without reuse rights.
+
 The public *Situational Awareness* companion currently uses independent claim summaries because the source site provides no identified permission to republish its full text and figures. `sourceMode: "summary"` makes this visible in the reader. The full-text edition is prepared separately; publish it only when reuse rights are established. The authoring template's `sourceMode: "full"` is for authorized source content.
 
 ## Rebuild and validate
