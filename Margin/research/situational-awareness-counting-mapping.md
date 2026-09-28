@@ -30,6 +30,12 @@ Use the official [NVIDIA H100 product and specification page](https://www.nvidia
 
 ## Extraction anchors
 
+List blocks retain their source hierarchy: a list item may contain `children`,
+where each child is an `{ "ordered": boolean, "items": [...] }` group. The
+root block and every item also retain rendered source markup in `html`; this
+keeps nested `<ul>` and `<ol>` distinctions available for a future private
+reader without changing the public article schema.
+
 `counting-0001` through `counting-0183` are deterministic ordered source
 anchors. Every block records its canonical source URL; blocks after a source
 heading also include that heading's original URL fragment. The synthetic ID is
