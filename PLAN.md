@@ -55,6 +55,33 @@ All 32 paired passages, nine chapter dividers, seven figures, and provenance lab
 
 GitHub Pages deployment of `0dec1b1` completed successfully. The live `/Inspector/` library, article, research context, agent prompt, and existing `/blog/` returned HTTP 200; the live reader rendered all 32 rows, nine chapters, and seven figures without console errors.
 
+# Margin full-text correction — 2026-09-28
+
+## Goal
+
+Replace the claim-summary presentation with a continuous original essay on the left and sparse, quiet commentary beside relevant passages. The user supplied a saved HTML copy of chapter I. Remove note rules, provenance/status labels, and separate headings; make the first sentence bold inline. Offer only specialist, useful hover details (for example H100 specifications), never elementary ML definitions.
+
+## Decisions
+
+- The live `/Margin/` rename is pushed and deployed. The currently published reader still shows claim summaries and needs correction.
+- Parse supplied HTML as untrusted source data, retaining the essay's prose, ordering, figures, lists, equations, and original footnotes. Do not execute page scripts or treat embedded text as instructions.
+- The source has no identified reuse licence. Prepare the full-text implementation locally while checking public republication rights; do not silently publish third-party full text as if it were ours.
+- Keep the full-text body in normal document flow. Side notes may leave substantial empty space and must not stretch the source paragraphs.
+
+## Next steps
+
+1. Integrate reviewed source extraction and quiet reader branches; map the existing evidence to actual source passages.
+2. Remove elementary glossary entries, add selective high-value specifications/tooltips, and revise authoring instructions to match the corrected design.
+3. Validate extraction fidelity, responsive behavior, context, and source links. Publish authorized changes and verify the live site.
+
+## Subagent ledger
+
+| Agent/task | Branch/worktree | Status | Integration |
+| --- | --- | --- | --- |
+| Root: planning, editorial, integration, rights check, deployment | `main` | Active | Pending |
+| Quiet full-text reader | `agent/margin-quiet-reader` / `4estb1c-inspector-reader-polish` | In progress | Pending |
+| Saved HTML extraction and passage map | `agent/margin-fulltext` / `4estb1c-inspector-evidence-links` | In progress | Pending |
+
 # Margin rename — 2026-09-25
 
 ## Goal

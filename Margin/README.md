@@ -1,15 +1,15 @@
 # Margin authoring workflow
 
-Margin is a static article reader with a source text, aligned commentary, original footnotes, glossary tooltips, and reproducible figures. Deep research happens in a Codex session using [the research prompt](prompts/research-and-annotate.md); the website does not run an AI model. Keep article data, research evidence, chart data, and analysis code in the repository so later articles and discussions can reuse them.
+Margin is a static article reader with continuous source text, sparse commentary beside relevant passages, original footnotes, selective tooltips, and reproducible figures. Deep research happens in a Codex session using [the research prompt](prompts/research-and-annotate.md); the website does not run an AI model. Keep article data, research evidence, chart data, and analysis code in the repository so later articles and discussions can reuse them.
 
 ## Add or update an article
 
 1. Read `prompts/research-and-annotate.md` in a Codex session and give it the article URL or local source, plus the desired scope. The prompt instructs the agent to inspect existing research first, read the full article, research each material number and assumption, and save its work in the site's schema.
 2. Before collecting facts, inspect `research/evidence.json` and prior article context files for reusable research. Reuse stable evidence IDs and check time-sensitive facts against their latest primary source. Add general facts and sources to the shared registry so future articles can use them. Do not duplicate a fact just because another article uses it.
-3. Create the article JSON in `data/` using [`templates/article.json`](templates/article.json) as a starter and add its metadata to `data/articles.json`. Use stable IDs. Put commentary in each block's `notes`: `update` for changed numbers or outcomes, `context` for an assumption or new development, and `original` for the source author's footnote. Original notes retain their attribution and links.
+3. Create the article JSON in `data/` using [`templates/article.json`](templates/article.json) as a starter and add its metadata to `data/articles.json`. Use stable IDs and preserve the source's full text and order in the left-hand blocks. Attach commentary only to passages where later evidence or context matters: `update` for changed numbers or outcomes, `context` for an assumption or new development. The author's own footnotes remain in the left-hand source, with their attribution and links.
 4. Cite each factual annotation with source IDs that resolve in the article's `sources` list. Keep the source's publication date separate from the evidence reference period. Include an “as of” date, unit, denominator, and uncertainty when they affect the claim.
 5. Add a `figure` object to a note for line, bar, scatter, histogram, or table data. Store values in the article JSON, with source IDs, dates, units, and caveats. Keep any code that transforms source data into chart values alongside the research assets so it is easy to rerun. A chart is a presentation of the evidence, not a substitute for the source or methods.
-6. Add concise glossary definitions under `glossary`, and reference them in block `glossaryTerms`. Images use an `image` block with a descriptive `alt`; equations can use MathML in `mathML` or readable text in `text`.
+6. Add tooltips only for specific, useful facts a technically literate ML reader may want at hand, such as an H100's memory, bandwidth, and power specifications. Reference selected terms in a block's `glossaryTerms`; do not automatically underline basic terms. Images use an `image` block with a descriptive `alt`; equations can use MathML in `mathML` or readable text in `text`.
 7. Regenerate the discussion context after edits, validate, preview locally, and inspect every link, annotation alignment, figure, image, equation, and glossary tooltip.
 
 The optional local HTML importer can help start from a saved article page, including arXiv's HTML view:
@@ -20,7 +20,7 @@ python Margin/scripts/import_html.py .\paper.html --output Margin\data\draft.jso
 
 It emits a draft of headings, paragraphs, images, and MathML. It does not fetch a URL. Review the extraction, strip navigation or other page chrome that remains, repair image paths, and confirm that the source's license or terms permit the text and images you plan to publish. For sources without permission to republish, use metadata and links with only brief excerpts where allowed.
 
-The initial *Situational Awareness* companion uses independent claim summaries because the source site does not grant republication of the full text and figures. `sourceMode: "summary"` makes this visible in the reader. If permission is obtained, an authorized transcription can replace the summaries in stable block IDs while retaining the aligned notes.
+The public *Situational Awareness* companion currently uses independent claim summaries because the source site provides no identified permission to republish its full text and figures. `sourceMode: "summary"` makes this visible in the reader. The full-text edition is prepared separately; publish it only when reuse rights are established. The authoring template's `sourceMode: "full"` is for authorized source content.
 
 ## Rebuild and validate
 

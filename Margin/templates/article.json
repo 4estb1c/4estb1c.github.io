@@ -6,6 +6,7 @@
   "published": "YYYY-MM-DD",
   "updated": "YYYY-MM-DD",
   "sourceUrl": "https://example.org/article",
+  "sourceMode": "full",
   "editionNote": "Source status, rights note, and any normalization details.",
   "chapters": [
     { "id": "opening", "title": "Opening" }
@@ -16,29 +17,38 @@
       "id": "opening-p1",
       "chapter": "opening",
       "type": "paragraph",
-      "text": "Article text or a short authorized excerpt.",
+      "text": "The article's exact first paragraph, with formatting retained in html when needed.",
       "glossaryTerms": [],
       "notes": [
         {
           "id": "opening-p1-update",
           "kind": "update",
-          "title": "Current evidence",
+          "title": "A precise, short opening sentence.",
           "body": "Briefly explain what subsequent evidence changes, with its scope and date.",
+          "status": "research paper",
           "sourceIds": ["source-id"]
         }
       ]
     },
     {
-      "id": "market-figure-note",
+      "id": "opening-p2",
       "chapter": "opening",
       "type": "paragraph",
-      "text": "A short passage adjacent to the chart.",
+      "text": "The article's exact second paragraph. Most passages should have no commentary.",
+      "notes": []
+    },
+    {
+      "id": "opening-p3",
+      "chapter": "opening",
+      "type": "paragraph",
+      "text": "The article's exact third paragraph, where a small figure is useful.",
       "notes": [
         {
-          "id": "market-figure",
+          "id": "opening-p3-figure",
           "kind": "context",
-          "title": "A reproducible comparison",
+          "title": "A reproducible comparison clarifies the change.",
           "body": "One sentence stating what to notice.",
+          "status": "observed",
           "sourceIds": ["source-id"],
           "figure": {
             "type": "line",
@@ -66,6 +76,6 @@
   ],
   "context": {
     "downloadUrl": "context/replace-with-kebab-case-id.md",
-    "promptUrl": "prompts/research-and-annotate.md"
+    "promptUrl": "prompts/discuss.md"
   }
 }
