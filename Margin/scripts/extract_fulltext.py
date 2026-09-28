@@ -145,7 +145,7 @@ class FullTextExtractor(HTMLParser):
         if tag == "button" and "bigfoot-footnote__button" in node_classes:
             number = attrs.get("data-footnote-number", "")
             identifier = attrs.get("id", "")
-            if number and self.current is not None:
+            if number and (self.current is not None or (self.list_block is not None and self.list_block.get("active_item") is not None)):
                 self.append(f'<sup><a href="#{escape(identifier, quote=True)}">{escape(number)}</a></sup>')
             self.skip_depth = 1
             return
