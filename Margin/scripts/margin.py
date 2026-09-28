@@ -91,12 +91,16 @@ def validate_article(article: Any, where: str, evidence_ids: set[str], errors: l
         if block.get("chapter") not in chapter_ids:
             errors.append(f"{loc}: unknown chapter {block.get('chapter')!r}")
         typ = block.get("type")
-        if typ not in {"heading", "paragraph", "image", "equation", "figure", "quote", "footnote"}:
+        if typ not in {"heading", "paragraph", "image", "equation", "figure", "quote", "footnote", "list", "separator"}:
             errors.append(f"{loc}: unsupported block type {typ!r}")
         if typ == "image" and (not block.get("src") or not block.get("alt")):
             errors.append(f"{loc}: image requires src and descriptive alt text")
         if typ == "equation" and not (block.get("mathML") or block.get("text")):
             errors.append(f"{loc}: equation requires mathML or text")
+        if typ == "list" and (not isinstance(block.get("items"), list) or not block["items"]):
+            errors.append(f"{loc}: list requires a nonempty items array")
+        if typ == "figure" and not (block.get("images") or block.get("tableHtml") or block.get("figure")):
+            errors.append(f"{loc}: figure requires images, tableHtml, or figure data")
         terms = block.get("glossaryTerms", [])
         glossary = article.get("glossary", {})
         if not isinstance(terms, list):
@@ -250,6 +254,8 @@ def render_context(article: dict[str, Any]) -> str:
         lines += [f"> {article['editionNote']}", ""]
     if article.get("sourceMode") == "summary":
         lines += ["Source mode: independently written claim summaries. The original essay is linked, not reproduced here.", ""]
+    elif article.get("sourceMode") == "full":
+        lines += ["Source mode: full original article text in reading order, with the author's footnotes kept in the source column.", ""]
     sources = {source["id"]: source for source in article.get("sources", []) if isinstance(source, dict) and source.get("id")}
     evidence = load_json(EVIDENCE_PATH) if EVIDENCE_PATH.is_file() else {}
     evidence_by_id = {record["id"]: record for record in evidence.get("records", []) if isinstance(record, dict) and record.get("id")}
@@ -262,13 +268,32 @@ def render_context(article: dict[str, Any]) -> str:
             lines += [f"## {md_escape(chapter_names.get(chapter, chapter))}", ""]
         kind = block.get("type", "paragraph")
         if kind == "heading":
-            lines += [f"### {md_escape(block.get('text', block.get('html')))}", ""]
+            level = block.get("level", 3)
+            if not isinstance(level, int) or level < 1 or level > 6:
+                level = 3
+            lines += [f"{'#' * level} {md_escape(block.get('text', block.get('html')))}", ""]
         elif kind == "image":
             lines += [f"![{md_escape(block.get('alt'))}]({md_escape(block.get('src'))})", ""]
         elif kind == "equation":
             lines += ["$$", md_escape(block.get("text", block.get("mathML"))), "$$", ""]
         elif kind == "figure":
-            lines += [f"[Figure block: {md_escape(block.get('label', block.get('id')))}]", ""]
+            if block.get("images"):
+                for image in block["images"]:
+                    lines += [f"![{md_escape(image.get('alt'))}]({md_escape(image.get('src'))})", ""]
+            if block.get("tableHtml"):
+                lines += [md_escape(block["tableHtml"]), ""]
+            if block.get("captionText"):
+                lines += [md_escape(block["captionText"]), ""]
+            if block.get("figure"):
+                lines += ["```json", json.dumps(block["figure"], ensure_ascii=False, indent=2), "```", ""]
+        elif kind == "list":
+            marker = (lambda n: f"{n}. ") if block.get("ordered") else (lambda n: "- ")
+            for n, item in enumerate(block.get("items", []), 1):
+                body = item.get("html", item.get("text", "")) if isinstance(item, dict) else item
+                lines += [marker(n) + md_escape(body)]
+            lines += [""]
+        elif kind == "separator":
+            lines += ["---", ""]
         else:
             body = block.get("text", block.get("html", ""))
             lines += [f"> {body}" if kind == "quote" else md_escape(body), ""]
