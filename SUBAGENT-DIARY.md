@@ -8,3 +8,4 @@
 - inspector-evidence-links review | read-only adversarial audit of reader identified chart, URL, accessibility, and validator issues; root fixed before publication.
 - margin-fulltext | inert, reusable local-HTML chapter extractor; private Chapter I draft, exact seven-note source mapping, canonical image URLs, H100 tooltip recommendation, complete footnote references, and source TOC exclusion; validation passed; handoff 4aba18e, 4e9ff41, 03f04c8, 6a8ca0f.
 - margin-fulltext | nested `<ul>`/`<ol>` source hierarchy and item markup retained with all 183 source IDs stable; deterministic regeneration, normalized 32/32 footnote check, mapping check, Python/JSON validation; handoff 56fc93c.
+- margin-fulltext | saved `*_files` images now remain explicit unresolved private assets; optional reviewed asset-map repairs two known originals; Bigfoot links target extracted footnote IDs; validation passed; handoff c7692a6.
