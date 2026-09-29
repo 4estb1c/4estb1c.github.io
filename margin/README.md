@@ -15,7 +15,7 @@ Margin is a static article reader with continuous source text, sparse commentary
 The optional local HTML importer can help start from a saved article page, including arXiv's HTML view:
 
 ```powershell
-python Margin/scripts/import_html.py .\paper.html --output Margin\data\draft.json --article-id paper-draft --title "Paper title" --author "Author" --source-url "https://arxiv.org/html/..."
+python margin/scripts/import_html.py .\paper.html --output margin\data\draft.json --article-id paper-draft --title "Paper title" --author "Author" --source-url "https://arxiv.org/html/..."
 ```
 
 It emits a draft of headings, paragraphs, images, and MathML. It does not fetch a URL. Review the extraction, strip navigation or other page chrome that remains, repair image paths, and confirm that the source's license or terms permit the text and images you plan to publish. For sources without permission to republish, use metadata and links with only brief excerpts where allowed.
@@ -23,10 +23,10 @@ It emits a draft of headings, paragraphs, images, and MathML. It does not fetch 
 For a saved page with a distinct article-body container, use the fuller extractor. It retains ordered paragraphs, headings, lists, figures, tables, links, and source footnotes in an ignored private draft for review:
 
 ```powershell
-python Margin/scripts/extract_fulltext.py .\saved-article.html --output Margin/drafts/article.fulltext.json --source-url "https://example.org/article" --content-class entry-content --id-prefix article
+python margin/scripts/extract_fulltext.py .\saved-article.html --output margin/drafts/article.fulltext.json --source-url "https://example.org/article" --content-class entry-content --id-prefix article
 ```
 
-The extractor never fetches the source URL or evaluates page scripts. Check its blocks against the original page before assembling an article. Keep unpublished full-text drafts in `Margin/drafts/`; this directory is ignored by Git and must not be copied into the public site without reuse rights.
+The extractor never fetches the source URL or evaluates page scripts. Check its blocks against the original page before assembling an article. Keep unpublished full-text drafts in `margin/drafts/`; this directory is ignored by Git and must not be copied into the public site without reuse rights.
 
 Saved pages sometimes rewrite image URLs into a local `*_files` folder. The extractor flags these in `unresolvedLocalAssets` instead of inventing a remote URL. Confirm each image's canonical URL from the source page, then pass a reviewed JSON path map with `--asset-map`; leave assets unresolved when the original is unavailable. Footnote links should resolve to the extracted original footnote IDs before publication.
 
@@ -37,13 +37,13 @@ The public *Situational Awareness* companion currently uses independent claim su
 Run from the website repository root:
 
 ```powershell
-python Margin/scripts/rebuild_figures.py --automated-share 0.9 --speedups 1 2 5 10 20 50 100
-python Margin/scripts/margin.py build-context situational-awareness
-python Margin/scripts/margin.py validate
+python margin/scripts/rebuild_figures.py --automated-share 0.9 --speedups 1 2 5 10 20 50 100
+python margin/scripts/margin.py build-context situational-awareness
+python margin/scripts/margin.py validate
 python -m http.server 8000
 ```
 
-Then open `http://localhost:8000/Margin/`. The context builder writes the page content, notes, source registry, glossary, and figure JSON to the catalogue's `contextPath`; include relevant auxiliary research and reproducibility paths there when preparing discussion context.
+Then open `http://localhost:8000/margin/`. The context builder writes the page content, notes, source registry, glossary, and figure JSON to the catalogue's `contextPath`; include relevant auxiliary research and reproducibility paths there when preparing discussion context.
 
 ## Codex discussion
 

@@ -102,3 +102,15 @@ Root agent owns this scoped rename and integration on `main`. No subagent needed
 Completed in `36cb002` and published to `/Margin/`. The live library, article, context, prompt, and JavaScript returned HTTP 200. Published HTML, article data, context, JavaScript, and stylesheet match the checkout after normalizing line endings. The live reader renders 32 paired rows, nine chapters, and seven figures with no console errors or document-wide horizontal overflow. Data validation, JavaScript syntax, and Git whitespace checks pass. The edition remains a companion of linked claim summaries, not a full-text republication or an exhaustive audit of every numerical claim.
 
 For subsequent articles use `Margin/prompts/research-and-annotate.md`; shared evidence is in `Margin/research/evidence.json` and discussion context in `Margin/context/`.
+
+# Lowercase margin and original-text edition — 2026-09-29
+
+## Goal and status
+
+Use the newly supplied `margin/references/situational-awareness/` saved pages as source material. The reader must show the continuous original article on the left, with only sparse evidence updates on the right. Rename the project and public route to lowercase `/margin/`. Root owns integration, verification, and publication. A read-only reference audit found eight saved part pages, 183 Chapter I blocks, and no explicit reuse licence; a second read-only audit is checking the remaining pages.
+
+## Next steps
+
+1. Change the case of the project directory, references, URLs, sitemap, documentation, and legacy redirects without losing ignored local files.
+2. Turn the reviewed Chapter I full-text preview into the catalogue's sole article, verify text/figures/footnotes and narrow-screen behavior, and remove claim-summary presentation.
+3. Confirm republication permission for the full essays and figures before pushing source text to the public site. Then deploy and verify the live lowercase route.
