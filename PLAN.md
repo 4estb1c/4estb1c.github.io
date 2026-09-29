@@ -107,10 +107,18 @@ For subsequent articles use `Margin/prompts/research-and-annotate.md`; shared ev
 
 ## Goal and status
 
-Use the newly supplied `margin/references/situational-awareness/` saved pages as source material. The reader must show the continuous original article on the left, with only sparse evidence updates on the right. Rename the project and public route to lowercase `/margin/`. Root owns integration, verification, and publication. A read-only reference audit found eight saved part pages, 183 Chapter I blocks, and no explicit reuse licence; a second read-only audit is checking the remaining pages.
+Use the newly supplied `margin/references/situational-awareness/` saved pages as source material. The reader must show the continuous original article on the left, with only sparse evidence updates on the right. Rename the project and public route to lowercase `/margin/`. Root owns integration, verification, and publication. Read-only audits found eight extractable part pages, 183 Chapter I blocks, two unresolved saved image paths across the series, and no explicit reuse licence. See `margin/research/source-inventory.md`.
 
 ## Next steps
 
 1. Change the case of the project directory, references, URLs, sitemap, documentation, and legacy redirects without losing ignored local files.
 2. Turn the reviewed Chapter I full-text preview into the catalogue's sole article, verify text/figures/footnotes and narrow-screen behavior, and remove claim-summary presentation.
 3. Confirm republication permission for the full essays and figures before pushing source text to the public site. Then deploy and verify the live lowercase route.
+
+## Ledger
+
+| Agent/task | Branch/worktree | Status | Integration |
+| --- | --- | --- | --- |
+| Root: rename, Chapter I integration, QA | `main` | Lowercase route committed; full text candidate local | Rename `6c3db4b`; full text pending publication decision |
+| `/root/reference_audit`: supplied references | Read-only | Complete; eight pages and no reuse licence | Findings recorded here |
+| `/root/series_audit`: seven remaining parts | Read-only; private drafts | Complete; all extractable, IIIc has one unresolved image | Inventory recorded |
