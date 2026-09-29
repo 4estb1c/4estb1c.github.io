@@ -30,7 +30,7 @@ The extractor never fetches the source URL or evaluates page scripts. Check its 
 
 Saved pages sometimes rewrite image URLs into a local `*_files` folder. The extractor flags these in `unresolvedLocalAssets` instead of inventing a remote URL. Confirm each image's canonical URL from the source page, then pass a reviewed JSON path map with `--asset-map`; leave assets unresolved when the original is unavailable. Footnote links should resolve to the extracted original footnote IDs before publication.
 
-The public *Situational Awareness* companion currently uses independent claim summaries because the source site provides no identified permission to republish its full text and figures. `sourceMode: "summary"` makes this visible in the reader. The full-text edition is prepared separately; publish it only when reuse rights are established. The authoring template's `sourceMode: "full"` is for authorized source content.
+The original saved pages supplied for *Situational Awareness* are inventoried in [`research/source-inventory.md`](research/source-inventory.md). A reviewed Chapter I full-text edition is assembled locally with the original prose, figures, and footnotes in reading order and seven sparse evidence notes beside relevant passages. The remaining seven pages are extracted into private drafts and still need editorial work. The source site provides no identified permission to republish its full text and figures, so keep the full-text edition local until reuse rights are established. The authoring template's `sourceMode: "full"` is for authorized source content.
 
 ## Rebuild and validate
 
