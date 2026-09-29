@@ -42,8 +42,8 @@ button, input { font: inherit; }
 .back-link, .mobile-notes { font: 11px var(--sans); text-transform: uppercase; letter-spacing: .08em; color: var(--muted); text-decoration: none; }
 .mobile-notes { display: none; margin-left: auto; border: 1px solid var(--line); padding: 7px 9px; background: var(--paper); color: var(--ink); cursor: pointer; }
 .reader-status { padding: 16vh 5vw; color: var(--muted); font-style: italic; }
-.article-intro { padding: 9vh 7vw 7vh; max-width: 900px; }
-.article-intro h1 { font-size: clamp(48px, 6.4vw, 95px); line-height: .91; letter-spacing: -.055em; font-weight: 500; margin: 0 0 24px; }
+.article-intro { padding: clamp(42px, 6vw, 76px) 7vw clamp(35px, 5vw, 64px); max-width: 1050px; }
+.article-intro h1 { font-size: clamp(42px, 5.2vw, 76px); line-height: .98; letter-spacing: -.045em; font-weight: 500; margin: 0 0 24px; }
 .dek { font-size: clamp(21px, 2.2vw, 29px); line-height: 1.2; color: var(--muted); max-width: 24em; margin: 0 0 26px; }
 .byline, .document-tools { font-size: 15px; color: var(--muted); }
 .document-tools { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 24px; }
