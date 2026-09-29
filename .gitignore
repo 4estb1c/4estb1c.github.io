@@ -3,5 +3,6 @@
 __pycache__/
 *.pyc
 Margin/drafts/
+Margin/references/
 Margin/data/*.preview.json
 Margin/context/*.preview.md
