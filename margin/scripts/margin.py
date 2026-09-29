@@ -341,7 +341,7 @@ def render_context(article: dict[str, Any]) -> str:
         lines += ["", f"## Auxiliary research: {relative}", "", path.read_text(encoding="utf-8"), ""]
     lines += ["", "## Reproducibility", "", "Figure values and series are embedded above. The standard chart renderer is `charts.js`; edit the figure data in the article JSON and rebuild this context after changes.", ""]
     lines += ["", "## Discussion context", "", "This file contains the normalized page content and its cited evidence. Consult the linked research assets and source records before answering detail questions. Distinguish article claims, measured evidence, and interpretation. State dates and uncertainty. Do not invent missing information.", ""]
-    return "\n".join(lines)
+    return "\n".join(line.rstrip() for line in "\n".join(lines).split("\n"))
 
 
 def build_context(article_id: str) -> int:

@@ -112,13 +112,13 @@ Use the newly supplied `margin/references/situational-awareness/` saved pages as
 ## Next steps
 
 1. Change the case of the project directory, references, URLs, sitemap, documentation, and legacy redirects without losing ignored local files.
-2. Turn the reviewed Chapter I full-text preview into the catalogue's sole article, verify text/figures/footnotes and narrow-screen behavior, and remove claim-summary presentation.
+2. Assemble all eight original part pages into local reader previews, place sparse updates at source passages, verify text/figures/footnotes and narrow-screen behavior, and remove claim-summary presentation. Chapter I has deeper QA; the later seven need further line-by-line editorial review.
 3. Confirm republication permission for the full essays and figures before pushing source text to the public site. Then deploy and verify the live lowercase route.
 
 ## Ledger
 
 | Agent/task | Branch/worktree | Status | Integration |
 | --- | --- | --- | --- |
-| Root: rename, Chapter I integration, QA | `main` | Lowercase route committed; full text candidate local | Rename `6c3db4b`; full text pending publication decision |
+| Root: rename, full-text integration, QA | `main` | Lowercase route committed; eight local reader previews, 30 notes; full text pending publication decision | Rename `6c3db4b`; inventory `64def5c` |
 | `/root/reference_audit`: supplied references | Read-only | Complete; eight pages and no reuse licence | Findings recorded here |
 | `/root/series_audit`: seven remaining parts | Read-only; private drafts | Complete; all extractable, IIIc has one unresolved image | Inventory recorded |
