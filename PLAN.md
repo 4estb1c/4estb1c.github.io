@@ -70,17 +70,18 @@ Replace the claim-summary presentation with a continuous original essay on the l
 
 ## Next steps
 
-1. Integrate reviewed source extraction and quiet reader branches; map the existing evidence to actual source passages.
-2. Remove elementary glossary entries, add selective high-value specifications/tooltips, and revise authoring instructions to match the corrected design.
-3. Validate extraction fidelity, responsive behavior, context, and source links. Publish authorized changes and verify the live site.
+1. Complete the private Chapter I full-text preview and verify every original figure, footnote link, and responsive interaction.
+2. Confirm republication rights for the full essay and its figures before replacing the public claim-summary edition. The local preview remains outside tracked `Margin/data` in the meantime.
+3. When authorized, assemble the reviewed source blocks and seven anchored notes into the public article JSON, rebuild context, validate, push, and verify the live route.
 
 ## Subagent ledger
 
 | Agent/task | Branch/worktree | Status | Integration |
 | --- | --- | --- | --- |
-| Root: planning, editorial, integration, rights check, deployment | `main` | Active | Pending |
-| Quiet full-text reader | `agent/margin-quiet-reader` / `4estb1c-inspector-reader-polish` | In progress | Pending |
-| Saved HTML extraction and passage map | `agent/margin-fulltext` / `4estb1c-inspector-evidence-links` | In progress | Pending |
+| Root: planning, editorial, integration, rights check, deployment | `main` | Local preview and QA active | UI `3cdda02`; extractor `c141117`, `7f41fe3`, `207d12a` |
+| Quiet full-text reader | `agent/margin-quiet-reader` / `4estb1c-inspector-reader-polish` | Reviewed and integrated | `db58cf1` → `3cdda02` |
+| Saved HTML extraction and passage map | `agent/margin-fulltext` / `4estb1c-inspector-evidence-links` | Reviewed; script integrated, full text held private | `56fc93c`, `c7692a6` → `7f41fe3`, `207d12a` |
+| Independent extractor review | Read-only | Found and resolved nested-list fidelity issue | Root checked regenerated draft |
 
 # Margin rename — 2026-09-25
 
