@@ -2,7 +2,7 @@
 *.DS_Store
 __pycache__/
 *.pyc
-Margin/drafts/
-Margin/references/
-Margin/data/*.preview.json
-Margin/context/*.preview.md
+margin/drafts/
+margin/references/
+margin/data/*.preview.json
+margin/context/*.preview.md

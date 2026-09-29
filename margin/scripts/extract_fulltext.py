@@ -4,7 +4,7 @@
 The extractor never fetches a URL or evaluates document content.  It uses the
 standard library's inert HTML parser, selects a site's main article container,
 and writes ordered source blocks for editorial review.  Output is deliberately
-kept outside ``Margin/data``: it is not reader input or publication-ready copy.
+kept outside ``margin/data``: it is not reader input or publication-ready copy.
 """
 
 from __future__ import annotations
