@@ -140,3 +140,19 @@ Remove commentary charts that add little beyond the adjacent sentence. Give ever
 | Root: design, implementation, integration, QA | `main` | Reader and extractor QA complete; full source data remains local pending reuse rights | `28ff0ab` |
 | `/root/diagram_audit`: all commentary figures | Read-only | Complete; recommendations reviewed | Integrated in local data |
 | `/root/footnote_audit`: reference/link design | Read-only | Complete; findings reviewed | Integrated in reader code |
+
+# Original source footnotes in the margin — 2026-09-30
+
+## Goal
+
+Place the author's original footnote bodies beside their inline numbered references in the right column, alongside the distinct `mN` research notes. Keep original essay prose, reference numbering, links, and the local-only full-text previews intact.
+
+## Plan and ledger
+
+1. Rendered source footnote blocks as right-column notes anchored to their first inline reference, interleaved with research notes in passage order.
+2. Preserved the original numeric reference and backlink; `mN` remains exclusive to added commentary. Both kinds of links open the mobile note drawer at the correct note and return to the passage.
+3. Validated all eight local articles and checked the dense Chapter I benchmark passage and IIIa table on desktop/mobile. Source text remains local while reuse rights are unconfirmed.
+
+| Agent/task | Branch/worktree | Status | Integration |
+| --- | --- | --- | --- |
+| Root: implementation and QA | `main` | QA complete; code commit pending | Pending |

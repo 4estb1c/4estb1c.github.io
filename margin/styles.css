@@ -74,10 +74,9 @@ button, input { font: inherit; }
 .article-block blockquote { margin: .5em 0; padding: 0 0 0 1em; border: 0; font-size: 1.15em; line-height: 1.35; font-style: italic; }
 .article-block blockquote p { font-size: 1em; line-height: 1.35; margin: 0; }
 .article-block blockquote cite { display: block; margin-top: .5em; font-size: .78em; line-height: 1.35; font-style: normal; color: var(--muted); }
-.original-footnote { margin: .7em 0; padding: 0; border: 0; color: var(--muted); font-size: .88em; font-style: normal; scroll-margin-top: 92px; }
 .source-footnote-ref { color: var(--accent); }
 .original-footnote-number { font: 500 12px var(--sans); color: var(--accent); text-decoration: none; }
-.original-footnote:target, .annotation:target { background: color-mix(in srgb, var(--paper-deep) 50%, transparent); }
+.annotation:target { background: color-mix(in srgb, var(--paper-deep) 50%, transparent); }
 .article-separator { border: 0; border-top: 1px solid var(--line); margin: 2em 0; }
 .article-image { display: block; max-width: 100%; width: auto; height: auto; object-fit: contain; margin: .8em 0; }
 .source-figure { margin: 1.5em 0; }
@@ -90,6 +89,7 @@ button, input { font: inherit; }
 .annotation { position: absolute; left: 0; right: 0; margin: 0; padding: 0; border: 0; scroll-margin-top: 112px; }
 .annotation-body { margin: 0; font-size: 17px; line-height: 1.42; }
 .annotation-body strong { font-weight: 600; }
+.original-annotation .annotation-body { font-size: 15px; line-height: 1.43; }
 .margin-ref { margin-left: .12em; font: 500 .56em var(--sans); vertical-align: super; }
 .margin-ref a { color: var(--accent); text-decoration: none; }
 .margin-ref a:hover, .margin-ref a:focus-visible, .annotation-number:hover, .annotation-number:focus-visible, .original-footnote-number:hover, .original-footnote-number:focus-visible { text-decoration: underline; }

@@ -255,7 +255,7 @@ def render_context(article: dict[str, Any]) -> str:
     if article.get("sourceMode") == "summary":
         lines += ["Source mode: independently written claim summaries. The original essay is linked, not reproduced here.", ""]
     elif article.get("sourceMode") == "full":
-        lines += ["Source mode: full original article text in reading order, with the author's footnotes kept in the source column.", ""]
+        lines += ["Source mode: full original article text in reading order. The author's numbered footnote markers stay inline; their bodies appear beside the corresponding passages in the right margin, distinct from Margin's m-numbered updates.", ""]
     sources = {source["id"]: source for source in article.get("sources", []) if isinstance(source, dict) and source.get("id")}
     evidence = load_json(EVIDENCE_PATH) if EVIDENCE_PATH.is_file() else {}
     evidence_by_id = {record["id"]: record for record in evidence.get("records", []) if isinstance(record, dict) and record.get("id")}
