@@ -191,4 +191,4 @@ Keep Margin only in the standalone `C:\Users\bicke\Documents\Github\margin` chec
 
 | Agent/task | Branch/worktree | Status | Integration |
 | --- | --- | --- | --- |
-| Root: verify copies, remove Pages deployments, push | `main` | Files removed locally; push and remote verification pending | This cleanup commit |
+| Root: verify copies, remove Pages deployments, push | `main` | Complete; GitHub Pages deployed the removal and `/margin/`, `/Inspector/`, and `/margin/article.html` returned 404 | `9ac09ae` |
