@@ -137,6 +137,6 @@ Remove commentary charts that add little beyond the adjacent sentence. Give ever
 
 | Agent/task | Branch/worktree | Status | Integration |
 | --- | --- | --- | --- |
-| Root: design, implementation, integration, QA | `main` | QA complete; code commit pending | Pending |
+| Root: design, implementation, integration, QA | `main` | Reader and extractor QA complete; full source data remains local pending reuse rights | `28ff0ab` |
 | `/root/diagram_audit`: all commentary figures | Read-only | Complete; recommendations reviewed | Integrated in local data |
 | `/root/footnote_audit`: reference/link design | Read-only | Complete; findings reviewed | Integrated in reader code |
