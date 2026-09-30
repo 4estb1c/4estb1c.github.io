@@ -166,3 +166,29 @@ Highlight an inline source or `mN` marker and its corresponding right-hand note 
 | Agent/task | Branch/worktree | Status | Integration |
 | --- | --- | --- | --- |
 | Root: implementation and QA | `main` | Complete locally; pointer and keyboard checks passed in essays I and II | `e2f7e17` |
+
+# Standalone Margin repository — 2026-09-30
+
+## Goal
+
+Move the working Margin project to `C:\Users\bicke\Documents\Github\margin` and give it its own GitHub repository. Preserve local reference files, drafts, and the full-text preview without accidentally publishing material whose reuse rights remain unconfirmed.
+
+## Plan and ledger
+
+1. Audit tracked versus private Margin files, the target path, GitHub access, and the effect on the existing Pages route.
+2. Create the standalone checkout with a project-root plan and ignore rules, migrate the working files, and verify local rendering and data validation.
+3. Connected and pushed the redistributable repository to its private GitHub remote. The later request supersedes the Pages-deployment retention; remove that deployment in the cleanup below.
+
+| Agent/task | Branch/worktree | Status | Integration |
+| --- | --- | --- | --- |
+| Root: migration, GitHub setup, QA | `main` | Complete in standalone repository | `d2cadc9`, `47fd164`, `cae6ee8` in `4estb1c/margin` |
+
+# Remove old Margin and Inspector deployments — 2026-09-30
+
+## Goal and verification
+
+Keep Margin only in the standalone `C:\Users\bicke\Documents\Github\margin` checkout and its private `4estb1c/margin` GitHub repository. Remove `/margin/` and the older `/Inspector/` from the personal-site repository and sitemap. The standalone repository is pushed through `cae6ee8`; all 241 files from the old Margin folder have corresponding files there. The 180 reference files, 15 private drafts, one saved asset, and three locally modified full-text data/context files match byte for byte. The older Inspector files remain recoverable from this repository's Git history.
+
+| Agent/task | Branch/worktree | Status | Integration |
+| --- | --- | --- | --- |
+| Root: verify copies, remove Pages deployments, push | `main` | Files removed locally; push and remote verification pending | This cleanup commit |
