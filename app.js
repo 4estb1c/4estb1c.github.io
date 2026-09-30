@@ -2,14 +2,14 @@
   const $ = (s, root=document) => root.querySelector(s);
   const path = location.pathname.replace(/\\/g,'/');
   const isReader = path.endsWith('/article.html');
-  const fetchJSON = async url => { const r=await fetch(url); if(!r.ok) throw Error(`${r.status} ${url}`); return r.json(); };
+  const fetchJSON = async url => { const r=await fetch(url,{cache:'no-cache'}); if(!r.ok) throw Error(`${r.status} ${url}`); return r.json(); };
   const text = (node, value) => { node.textContent=value ?? ''; return node; };
   const safeURL = value => { try { const u=new URL(value, location.href); return ['http:','https:','mailto:'].includes(u.protocol) ? u.href : null; } catch { return null; } };
   const localURL = value => {const url=safeURL(value);return url&&new URL(url).origin===location.origin?url:null};
   /* A small allow-list for article body markup. Data authors cannot introduce scripts, handlers, embeds, or unsafe URLs. */
   function safeFragment(html){
     const template=document.createElement('template'); template.innerHTML=String(html||'');
-    const allowed=new Set(['EM','STRONG','I','B','A','SUP','SUB','CODE','SPAN','BR','CITE','IMG','UL','OL','LI','TABLE','THEAD','TBODY','TFOOT','TR','TH','TD','CAPTION','MATH','MROW','MI','MN','MO','MSUP','MSUB','MFRAC','MSQRT','MROOT','MTEXT','MSTYLE','MUNDER','MOVER','MUNDEROVER','MTABLE','MTR','MTD','MSPACE','MFENCED','MENCLOSE','MPADDED']);
+    const allowed=new Set(['P','EM','STRONG','I','B','A','SUP','SUB','CODE','SPAN','BR','CITE','IMG','UL','OL','LI','TABLE','THEAD','TBODY','TFOOT','TR','TH','TD','CAPTION','MATH','MROW','MI','MN','MO','MSUP','MSUB','MFRAC','MSQRT','MROOT','MTEXT','MSTYLE','MUNDER','MOVER','MUNDEROVER','MTABLE','MTR','MTD','MSPACE','MFENCED','MENCLOSE','MPADDED']);
     const drop=new Set(['SCRIPT','STYLE','IFRAME','OBJECT','EMBED','FORM','INPUT','BUTTON','TEMPLATE','SVG','LINK','META']);
     const setNumeric=(element,attribute,value,max)=>{
       if(!/^[1-9]\d{0,3}$/.test(value)||Number(value)>max)element.removeAttribute(attribute);
@@ -110,16 +110,49 @@
     if(figure.source&&String(figure.source)!=='undefined')wrap.append(text(document.createElement('figcaption'),figure.source));
     return wrap;
   }
-  function renderNote(note, sourceMap, anchorId){
+  function renderNote(note, sourceMap, anchorId, number, index){
     const section=document.createElement('div');section.className='annotation';section.setAttribute('role','note');
-    section.id=note.id?`note-${note.id}`:`note-${anchorId}`;section.dataset.anchor=anchorId;
-    section.setAttribute('aria-label',`Commentary${note.title?`: ${note.title}`:''}`);
+    section.id=note.id?`note-${note.id}`:`note-${anchorId}-${index+1}`;section.dataset.anchor=anchorId;
+    section.setAttribute('aria-label',`Margin note ${number}${note.title?`: ${note.title}`:''}`);
     const paragraph=document.createElement('p');paragraph.className='annotation-body';
+    const back=text(document.createElement('a'),`m${number}`);back.className='annotation-number';back.href=`#ref-${section.id}`;back.setAttribute('aria-label',`Back to passage for margin note ${number}`);paragraph.append(back,document.createTextNode(' '));
     if(note.title){const title=document.createElement('strong');title.append(safeFragment(note.title));paragraph.append(title);if(note.body)paragraph.append(document.createTextNode(' '))}
     if(note.body)paragraph.append(safeFragment(note.body));
     if(paragraph.childNodes.length)section.append(paragraph);
     const figure=renderFigure(note.figure);if(figure)section.append(figure);
     appendSources(section,note.sourceIds,sourceMap);return section;
+  }
+  function addMarginReference(sourceNode, annotation, number){
+    const candidates=sourceNode.querySelectorAll('p, li, figcaption, blockquote, h2, h3, h4, h5, h6, td, th');
+    const target=candidates[candidates.length-1]||sourceNode;
+    const marker=document.createElement('sup'),link=text(document.createElement('a'),`m${number}`);
+    marker.className='margin-ref';link.id=`ref-${annotation.id}`;link.href=`#${annotation.id}`;
+    link.setAttribute('aria-label',`Read margin note ${number}`);
+    marker.append(link);target.append(marker);
+  }
+  function linkOriginalFootnotes(sourceBlocks){
+    const references=new Map();
+    sourceBlocks.querySelectorAll('a[href^="#footnote-"]').forEach(link=>{
+      const target=link.getAttribute('href').slice(1);
+      if(!/^[\w:.-]+$/.test(target))return;
+      link.classList.add('source-footnote-ref');
+      link.setAttribute('aria-label',`Read original footnote ${link.textContent.trim()}`);
+      if(!references.has(target)){
+        link.id=`ref-${target}`;
+        references.set(target,link.id);
+      }
+    });
+    sourceBlocks.querySelectorAll('.original-footnote').forEach((footnote,index)=>{
+      const match=/^footnote-(\d+)(?:-|$)/.exec(footnote.id);
+      const number=match?match[1]:String(index+1);
+      const back=document.createElement(references.has(footnote.id)?'a':'span');
+      back.className='original-footnote-number';text(back,`${number}.`);
+      if(back.tagName==='A'){
+        back.href=`#${references.get(footnote.id)}`;
+        back.setAttribute('aria-label',`Back to original footnote reference ${number}`);
+      }
+      footnote.prepend(back,document.createTextNode(' '));
+    });
   }
   function renderBlock(block, article, sourceMap){
     const section=document.createElement('section');section.className='article-block';
@@ -204,12 +237,13 @@
       blocks.forEach(block=>{
         const sourceNode=renderBlock(block,article,sources);sourceBlocks.append(sourceNode);
         (block.notes||[]).forEach((note,index)=>{
-          const annotation=renderNote(note,sources,block.id);
-          if(!note.id)annotation.id=`note-${block.id}-${index+1}`;
+          const annotation=renderNote(note,sources,block.id,noteCount+1,index);
           annotation.dataset.anchor=`block-${block.id}`;marginNotes.append(annotation);noteNodes.push(annotation);noteCount++;
+          addMarginReference(sourceNode,annotation,noteCount);
           sourceNode.setAttribute('aria-describedby',[sourceNode.getAttribute('aria-describedby'),annotation.id].filter(Boolean).join(' '));
         });
       });
+      linkOriginalFootnotes(sourceBlocks);
       text($('#note-total'),`(${noteCount})`);
       const toggle=$('#mobile-notes'),mobile=matchMedia('(max-width: 800px)');
       let layoutQueued=false;
@@ -233,6 +267,13 @@
         toggle.firstChild.textContent=mobile.matches&&visible?'Hide commentary ':'Show commentary ';
         if(!mobile.matches)scheduleNoteLayout();
       };
+      sourceBlocks.addEventListener('click',event=>{
+        const link=event.target.closest('.margin-ref a');
+        if(!link||!mobile.matches)return;
+        event.preventDefault();setNotesVisible(true);
+        location.hash=link.hash;
+        requestAnimationFrame(()=>document.getElementById(link.hash.slice(1))?.scrollIntoView({block:'start'}));
+      });
       toggle.addEventListener('click',()=>{
         const show=toggle.getAttribute('aria-expanded')!=='true';setNotesVisible(show);
         if(show&&mobile.matches)marginColumn.scrollIntoView({behavior:'smooth',block:'start'});
