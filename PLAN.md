@@ -156,3 +156,13 @@ Place the author's original footnote bodies beside their inline numbered referen
 | Agent/task | Branch/worktree | Status | Integration |
 | --- | --- | --- | --- |
 | Root: implementation and QA | `main` | Complete locally; full source data remains unpublished pending reuse rights | `b70507a` |
+
+# Paired footnote hover — 2026-09-30
+
+## Goal and plan
+
+Highlight an inline source or `mN` marker and its corresponding right-hand note together on hover or keyboard focus. Keep the effect restrained, with no added line or persistent ornament. Verify both directions in the local reader, then commit reader-only changes without publishing the unlicensed source text.
+
+| Agent/task | Branch/worktree | Status | Integration |
+| --- | --- | --- | --- |
+| Root: implementation and QA | `main` | Local pointer and keyboard checks passed in essays I and II; code commit pending | Pending |
