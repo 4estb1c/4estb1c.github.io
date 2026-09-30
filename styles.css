@@ -87,11 +87,13 @@ button, input { font: inherit; }
 .math { max-width: 100%; overflow: auto; padding: .6em 0; font-size: 1.1em; }
 .math math[display="block"] { display: block; min-width: max-content; text-align: center; }
 .annotation { position: absolute; left: 0; right: 0; margin: 0; padding: 0; border: 0; scroll-margin-top: 112px; }
+.annotation.is-linked-highlight { background: color-mix(in srgb, var(--accent) 7%, var(--paper)); box-shadow: 0 0 0 8px color-mix(in srgb, var(--accent) 7%, var(--paper)); border-radius: 2px; }
 .annotation-body { margin: 0; font-size: 17px; line-height: 1.42; }
 .annotation-body strong { font-weight: 600; }
 .original-annotation .annotation-body { font-size: 15px; line-height: 1.43; }
 .margin-ref { margin-left: .12em; font: 500 .56em var(--sans); vertical-align: super; }
 .margin-ref a { color: var(--accent); text-decoration: none; }
+.margin-ref a.is-linked-highlight, .source-footnote-ref.is-linked-highlight { background: var(--paper-deep); box-shadow: 0 0 0 3px var(--paper-deep); border-radius: 2px; }
 .margin-ref a:hover, .margin-ref a:focus-visible, .annotation-number:hover, .annotation-number:focus-visible, .original-footnote-number:hover, .original-footnote-number:focus-visible { text-decoration: underline; }
 .annotation-number { font: 500 11px var(--sans); color: var(--accent); text-decoration: none; }
 .note-sources { display: flex; flex-wrap: wrap; gap: .35em .9em; list-style: none; margin: 8px 0 0; padding: 0; font: 10px var(--sans); color: var(--quiet); }
