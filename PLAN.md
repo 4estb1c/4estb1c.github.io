@@ -155,4 +155,4 @@ Place the author's original footnote bodies beside their inline numbered referen
 
 | Agent/task | Branch/worktree | Status | Integration |
 | --- | --- | --- | --- |
-| Root: implementation and QA | `main` | QA complete; code commit pending | Pending |
+| Root: implementation and QA | `main` | Complete locally; full source data remains unpublished pending reuse rights | `b70507a` |
