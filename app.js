@@ -142,17 +142,22 @@
         references.set(target,link.id);
       }
     });
-    sourceBlocks.querySelectorAll('.original-footnote').forEach((footnote,index)=>{
-      const match=/^footnote-(\d+)(?:-|$)/.exec(footnote.id);
-      const number=match?match[1]:String(index+1);
-      const back=document.createElement(references.has(footnote.id)?'a':'span');
-      back.className='original-footnote-number';text(back,`${number}.`);
-      if(back.tagName==='A'){
-        back.href=`#${references.get(footnote.id)}`;
-        back.setAttribute('aria-label',`Back to original footnote reference ${number}`);
-      }
-      footnote.prepend(back,document.createTextNode(' '));
-    });
+    return references;
+  }
+  function renderOriginalFootnote(block,index,references){
+    const section=document.createElement('div');section.className='annotation original-annotation';section.setAttribute('role','note');
+    section.id=typeof block.footnoteId==='string'&&/^[\w:.-]+$/.test(block.footnoteId)?block.footnoteId:`footnote-${block.id}`;
+    const match=/^footnote-(\d+)(?:-|$)/.exec(section.id),number=match?match[1]:String(index+1);
+    section.setAttribute('aria-label',`Original footnote ${number}`);
+    section.dataset.anchor=references.get(section.id)||'';
+    const paragraph=document.createElement('p');paragraph.className='annotation-body';
+    const back=document.createElement(section.dataset.anchor?'a':'span');back.className='original-footnote-number';text(back,`${number}.`);
+    if(back.tagName==='A'){
+      back.href=`#${section.dataset.anchor}`;
+      back.setAttribute('aria-label',`Back to original footnote reference ${number}`);
+    }
+    paragraph.append(back,document.createTextNode(' '),safeFragment(block.html||block.text));section.append(paragraph);
+    return section;
   }
   function renderBlock(block, article, sourceMap){
     const section=document.createElement('section');section.className='article-block';
@@ -178,11 +183,6 @@
         break;
       }
       case 'quote': content=document.createElement('blockquote');content.append(safeFragment(block.html||block.text));break;
-      case 'footnote': {
-        content=document.createElement('aside');content.className='original-footnote';
-        if(typeof block.footnoteId==='string'&&/^[\w:.-]+$/.test(block.footnoteId))content.id=block.footnoteId;
-        content.append(safeFragment(block.html||block.text));break;
-      }
       case 'list': {
         if(block.html)content=safeFragment(block.html);
         else{
@@ -228,23 +228,34 @@
       const sourceBlocks=$('#source-blocks'),marginNotes=$('#margin-notes'),marginColumn=$('#margin-column'),chapterNav=$('.chapter-nav'),chapterList=$('#chapter-list'),blocks=article.blocks||[];
       const chapters=Array.isArray(article.chapters)?article.chapters:[];
       if(chapters.length===1&&chapters[0].showHeading===false)chapterNav.hidden=true;
-      const noteNodes=[];let noteCount=0;
+      const noteNodes=[],originalFootnotes=[];let noteCount=0;
       chapters.forEach(chapter=>{
         const first=blocks.find(block=>block.chapter===chapter.id),item=document.createElement('li');
         const link=text(document.createElement('a'),chapter.title||chapter.id);
         link.href=first?`#block-${first.id}`:'#original-column';item.append(link);chapterList.append(item);
       });
       blocks.forEach(block=>{
+        if(block.type==='footnote'){originalFootnotes.push(block);return}
         const sourceNode=renderBlock(block,article,sources);sourceBlocks.append(sourceNode);
         (block.notes||[]).forEach((note,index)=>{
           const annotation=renderNote(note,sources,block.id,noteCount+1,index);
-          annotation.dataset.anchor=`block-${block.id}`;marginNotes.append(annotation);noteNodes.push(annotation);noteCount++;
+          annotation.dataset.anchor=`ref-${annotation.id}`;marginNotes.append(annotation);noteNodes.push(annotation);noteCount++;
           addMarginReference(sourceNode,annotation,noteCount);
           sourceNode.setAttribute('aria-describedby',[sourceNode.getAttribute('aria-describedby'),annotation.id].filter(Boolean).join(' '));
         });
       });
-      linkOriginalFootnotes(sourceBlocks);
-      text($('#note-total'),`(${noteCount})`);
+      const references=linkOriginalFootnotes(sourceBlocks);
+      originalFootnotes.forEach((block,index)=>{
+        const footnote=renderOriginalFootnote(block,index,references);
+        marginNotes.append(footnote);noteNodes.push(footnote);
+      });
+      noteNodes.sort((a,b)=>{
+        const first=document.getElementById(a.dataset.anchor),second=document.getElementById(b.dataset.anchor);
+        if(!first||!second)return first?-1:second?1:0;
+        return first.compareDocumentPosition(second)&Node.DOCUMENT_POSITION_FOLLOWING?-1:1;
+      });
+      marginNotes.replaceChildren(...noteNodes);
+      text($('#note-total'),`(${noteNodes.length})`);
       const toggle=$('#mobile-notes'),mobile=matchMedia('(max-width: 800px)');
       let layoutQueued=false;
       const scheduleNoteLayout=()=>{
@@ -254,8 +265,9 @@
       function layoutNotes(){
         if(mobile.matches){marginNotes.style.minHeight='';noteNodes.forEach(note=>{note.style.top=''});return}
         let previousBottom=0;
+        const sourceTop=sourceBlocks.getBoundingClientRect().top;
         noteNodes.forEach(note=>{
-          const anchor=document.getElementById(note.dataset.anchor),requested=anchor?anchor.offsetTop:previousBottom;
+          const anchor=document.getElementById(note.dataset.anchor),requested=anchor?anchor.getBoundingClientRect().top-sourceTop:previousBottom;
           const top=Math.max(requested,previousBottom?previousBottom+28:0);
           note.style.top=`${top}px`;previousBottom=top+note.offsetHeight;
         });
@@ -264,19 +276,26 @@
       const setNotesVisible=visible=>{
         marginColumn.hidden=mobile.matches&&!visible;
         toggle.setAttribute('aria-expanded',String(mobile.matches&&visible));
-        toggle.firstChild.textContent=mobile.matches&&visible?'Hide commentary ':'Show commentary ';
+        toggle.firstChild.textContent=mobile.matches&&visible?'Hide notes ':'Show notes ';
         if(!mobile.matches)scheduleNoteLayout();
       };
       sourceBlocks.addEventListener('click',event=>{
-        const link=event.target.closest('.margin-ref a');
+        const link=event.target.closest('.margin-ref a, .source-footnote-ref');
         if(!link||!mobile.matches)return;
         event.preventDefault();setNotesVisible(true);
         location.hash=link.hash;
         requestAnimationFrame(()=>document.getElementById(link.hash.slice(1))?.scrollIntoView({block:'start'}));
       });
+      marginColumn.addEventListener('click',event=>{
+        const link=event.target.closest('.annotation-number, .original-footnote-number');
+        if(!link||!mobile.matches||link.tagName!=='A')return;
+        event.preventDefault();setNotesVisible(false);
+        location.hash=link.hash;
+        requestAnimationFrame(()=>document.getElementById(link.hash.slice(1))?.scrollIntoView({block:'center'}));
+      });
       toggle.addEventListener('click',()=>{
         const show=toggle.getAttribute('aria-expanded')!=='true';setNotesVisible(show);
-        if(show&&mobile.matches)marginColumn.scrollIntoView({behavior:'smooth',block:'start'});
+        if(show&&mobile.matches)marginColumn.scrollTop=0;
       });
       mobile.addEventListener('change',()=>setNotesVisible(!mobile.matches));
       if('ResizeObserver'in window){
