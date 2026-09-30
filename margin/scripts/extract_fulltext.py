@@ -32,6 +32,7 @@ def classes(attrs: dict[str, str]) -> set[str]:
 def clean_text(markup: str) -> str:
     """Produce a searchable text rendition while retaining source HTML separately."""
     text = re.sub(r"<br\s*/?>", "\n", markup, flags=re.I)
+    text = re.sub(r"</(?:p|cite)>", "\n", text, flags=re.I)
     text = re.sub(r"<[^>]+>", "", text)
     return re.sub(r"[ \t\r\f\v]+", " ", unescape(text)).replace("\n ", "\n").strip()
 
@@ -165,6 +166,7 @@ class FullTextExtractor(HTMLParser):
 
     def start_block(self, tag: str, attrs: dict[str, str]) -> None:
         if tag == "p" and self.current is not None and self.current.get("type") == "quote":
+            self.append("<p>")
             return
         self.finish_current()
         kind = "heading" if tag.startswith("h") else "quote" if tag == "blockquote" else "paragraph"
@@ -194,10 +196,24 @@ class FullTextExtractor(HTMLParser):
                 self.skip_depth += 1
             return
         if self.table_depth:
+            node_classes = classes(attrs)
+            if tag == "button" and "bigfoot-footnote__button" in node_classes:
+                number = attrs.get("data-footnote-number", "")
+                identifier = attrs.get("id", "")
+                if number and identifier.startswith("note-"):
+                    target = f"footnote-{identifier[5:]}"
+                    self.table_parts.append(f'<sup><a href="#{escape(target, quote=True)}">{escape(number)}</a></sup>')
+                self.skip_depth = 1
+                return
+            if tag == "a" and "footnote-print-only" in node_classes:
+                self.skip_depth = 1
+                return
             if tag not in VOID:
                 self.table_depth += 1
             if tag in {"caption", "colgroup", "tbody", "td", "tfoot", "th", "thead", "tr"}:
                 self.table_parts.append(f"<{tag}>")
+            elif tag == "br":
+                self.table_parts.append("<br>")
             return
         node_classes = classes(attrs)
         if tag == "button" and "bigfoot-footnote__button" in node_classes:
@@ -340,7 +356,9 @@ class FullTextExtractor(HTMLParser):
             elif tag == "div" and "footnotes" in classes(attrs):
                 self.in_footnotes = 0
             return
-        if tag in BLOCK_TAGS and self.current is not None:
+        if tag == "p" and self.current is not None and self.current.get("type") == "quote":
+            self.append("</p>")
+        elif tag in BLOCK_TAGS and self.current is not None:
             if self.current.get("type") == "heading":
                 fragment = self.current.pop("headingFragment", "")
                 if fragment:

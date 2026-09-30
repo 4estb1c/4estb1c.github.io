@@ -122,3 +122,21 @@ Use the newly supplied `margin/references/situational-awareness/` saved pages as
 | Root: rename, full-text integration, QA | `main` | Lowercase route committed; eight local reader previews, 30 notes; full text pending publication decision | Rename `6c3db4b`; inventory `64def5c` |
 | `/root/reference_audit`: supplied references | Read-only | Complete; eight pages and no reuse licence | Findings recorded here |
 | `/root/series_audit`: seven remaining parts | Read-only; private drafts | Complete; all extractable, IIIc has one unresolved image | Inventory recorded |
+
+# Margin diagram and footnote review — 2026-09-30
+
+## Goal
+
+Remove commentary charts that add little beyond the adjacent sentence. Give every author's footnote a visible number at its reference and note body, and give each margin update an explicit passage link without changing the original wording. Keep the full-text previews local while public reuse rights remain unconfirmed.
+
+## Plan and ledger
+
+1. Audited all eight distinct commentary figures; retained the GPU specification table and the capacity trend, and removed six that repeated adjacent prose or offered only illustrative numbers. Original essay figures remain intact.
+2. Added paired inline `mN` passage links for margin notes and numbered backlinks on the author's footnote bodies. Fixed extraction of quote citations and footnote links within source tables. All nine source quote citations are preserved in the eight local previews.
+3. Regenerated local context and validated all eight articles. Desktop and mobile reader checks passed, including a mobile commentary drawer that opens at the linked note. Commit reviewed code and documentation without publishing full source text while reuse rights remain unconfirmed.
+
+| Agent/task | Branch/worktree | Status | Integration |
+| --- | --- | --- | --- |
+| Root: design, implementation, integration, QA | `main` | QA complete; code commit pending | Pending |
+| `/root/diagram_audit`: all commentary figures | Read-only | Complete; recommendations reviewed | Integrated in local data |
+| `/root/footnote_audit`: reference/link design | Read-only | Complete; findings reviewed | Integrated in reader code |
