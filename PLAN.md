@@ -165,4 +165,4 @@ Highlight an inline source or `mN` marker and its corresponding right-hand note 
 
 | Agent/task | Branch/worktree | Status | Integration |
 | --- | --- | --- | --- |
-| Root: implementation and QA | `main` | Local pointer and keyboard checks passed in essays I and II; code commit pending | Pending |
+| Root: implementation and QA | `main` | Complete locally; pointer and keyboard checks passed in essays I and II | `e2f7e17` |
