@@ -27,6 +27,11 @@ class Itinerary {
         if(place.id==='habitat67') Object.assign(block,{time:'Afternoon · booked tour time',text:'Take a taxi across the river for the 90-minute guided architecture tour. Saturday availability is unconfirmed. Choose a slot that gets you back to the hotel by 5 PM; private walkways require the tour.'});
         else Object.assign(block,{time:'2:30 PM',text:'Visit the basilica interior during Saturday sightseeing hours, currently 9 AM–4 PM. Allow time to sit and take in the space. AURA is a separate evening experience, not included in this route.'});
       }
+      if(block.sundayInterior && this.headline==='notredame') {
+        block.title='A slower hour in Old Montréal';
+        block.text='You already visited the basilica interior on Saturday. Spend this hour browsing Saint-Paul and L’Empreinte, or linger over coffee before heading north.';
+        block.stops=['empreinte'];
+      }
       return block;
     })}));
   }
@@ -74,7 +79,7 @@ class Itinerary {
     const hotel = this.data.hotel;
     $('#trip-content').innerHTML = `
       <section class="hero"><div><p class="eyebrow">${escapeHtml(this.data.dates)} · ${escapeHtml(this.data.travelers)}</p><h1>Montréal.<br><em>A little indulgence.</em></h1><p>${escapeHtml(this.data.intro)}</p><nav class="day-nav" aria-label="Explore the trip"><a href="#plan">The plan</a><a href="#headlines">Main event</a><a href="#nearby">Nearby places</a><a href="#hotels">Hotels</a></nav></div>${this.gallery('notredame',true)}</section>
-      <aside class="base-summary"><p class="eyebrow">Your weekend at a glance</p><p><strong>${escapeHtml(hotel.name)}</strong> · ${escapeHtml(this.place(this.headline).name)} · Monarque brasserie</p><p>Friday arrival. Saturday exploring, an afternoon highlight, and a proper dinner. Sunday old streets and pastries, then leave at 1:30 PM.</p></aside>
+      <aside class="base-summary"><p class="eyebrow">Your weekend at a glance</p><p><strong>${escapeHtml(hotel.name)}</strong> · ${escapeHtml(this.place(this.headline).name)} · Monarque brasserie</p><p>Friday arrival. Saturday exploring, an afternoon highlight, and a proper dinner. Sunday old streets, pastries, and Little Italy, then leave at 6 PM for a late-night Boston arrival.</p></aside>
       <p class="booking">Reserve ${escapeHtml(hotel.name)}, ${escapeHtml(this.place(this.headline).name)}, and Monarque’s brasserie. Nothing is booked. Food allowances are CAD per person, before tax and tip.</p>
       <section id="plan"><header class="section-heading"><p class="eyebrow">One route to follow</p><h2>The weekend, planned.</h2><nav class="day-nav"><a href="#friday">Friday night</a><a href="#saturday">Saturday</a><a href="#sunday">Sunday</a></nav></header>${this.selectedDays().map(day=>this.dayHtml(day)).join('')}</section>
       <section id="headlines" class="options-section"><header class="section-heading"><p class="eyebrow">Choose one, keep the rest of the plan</p><h2>The main event.</h2><p>Bota Bota is the default. These buttons replace only Saturday’s afternoon stop.</p></header><div class="headline-grid">${this.data.headlines.map(item=>`<article class="headline-card">${this.gallery(item.id)}<div class="card-copy"><p class="eyebrow">${escapeHtml(item.label)}</p><h3>${escapeHtml(this.place(item.id).name)}</h3><p>${escapeHtml(item.description)}</p><p class="card-note">${escapeHtml(item.duration)}</p><button data-headline="${item.id}" aria-pressed="${this.headline===item.id}">${this.headline===item.id ? 'In your Saturday plan' : 'Use for Saturday afternoon'}</button><a class="detail-link" href="#place-${item.id}">Details & booking</a></div></article>`).join('')}</div></section>

@@ -199,7 +199,7 @@
       "area": "old",
       "kind": "Headline",
       "description": "The blue-and-gold basilica interior is much more striking than a quick look at the façade.",
-      "note": "Daytime adult entry starts at CAD 16 + tax; AURA starts at CAD 37 + tax. Sunday sightseeing starts 12:30 PM, so use Saturday.",
+      "note": "Daytime adult entry starts at CAD 16 + tax; AURA starts at CAD 37 + tax. Sunday sightseeing is 12:30–4 PM.",
       "price": "From CAD 16 + tax"
     },
     {
@@ -539,8 +539,8 @@
       "id": "sunday",
       "label": "Sunday",
       "date": "Nov 22",
-      "title": "Old Montréal, then home.",
-      "summary": "A compact morning. Leave Montréal at 1:30 PM to protect the 10 PM Boston target.",
+      "title": "Old Montréal, chocolate, and a full afternoon.",
+      "summary": "Keep the car at the hotel after checkout. Explore Old Montréal, then taxi north for chocolate and boutiques. Leave for Boston at 6 PM.",
       "blocks": [
         {
           "time": "9 AM",
@@ -565,7 +565,7 @@
         {
           "time": "11:45 AM",
           "title": "Chez Potier · pastries and a light lunch",
-          "text": "Walk to the Wellington boutique for refined individual pastries, chocolates, and something savory. Olive et Gourmando is the nearby sandwich alternative.",
+          "text": "Walk to the Wellington boutique for refined pastries and a light savory lunch. Pick up something for the drive as well. Olive et Gourmando is the nearby sandwich alternative.",
           "stops": [
             "potier"
           ],
@@ -573,15 +573,35 @@
         },
         {
           "time": "12:45 PM",
+          "title": "Inside Notre-Dame",
+          "text": "Return to Place d’Armes for the basilica interior. Sunday sightseeing opens at 12:30 PM and closes at 4 PM. Book daytime entry; this is separate from the evening AURA show.",
+          "stops": [
+            "notredame"
+          ],
+          "mode": "walking",
+          "sundayInterior": true
+        },
+        {
+          "time": "2:30 PM",
+          "title": "Little Italy · chocolate and independent shops",
+          "text": "Taxi to État de choc for bean-to-bar chocolate, then browse nearby Ex-Voto for design objects and small finds. Take this slowly and stop for coffee along Saint-Laurent. État de choc closes at 5 PM Sunday; Ratafia is closed, so keep its dessert bar as a Saturday alternative.",
+          "stops": [
+            "etatdechoc",
+            "exvoto"
+          ],
+          "mode": "driving"
+        },
+        {
+          "time": "5:15 PM",
           "title": "Collect bags and the car",
-          "text": "Taxi back to Le Germain. Arrange the car retrieval before you sit down to lunch.",
+          "text": "Taxi back to Le Germain, collect your bags, and retrieve the car. Confirm parking and luggage storage after checkout. Pick up a takeaway meal before setting off.",
           "stops": [],
           "returnToHotel": true
         },
         {
-          "time": "1:30 PM",
+          "time": "6 PM",
           "title": "Leave for Boston",
-          "text": "Check live navigation and US-bound border waits that morning. Leave earlier if conditions require it. The 10 PM arrival is a target, not a guarantee.",
+          "text": "Leave Montréal for Boston. Plan on a late-night arrival, around midnight or later with a meal stop, border processing, and traffic. Check live navigation and US-bound border waits before leaving; the earlier 10 PM arrival target no longer applies.",
           "stops": []
         }
       ]
@@ -598,7 +618,7 @@
     },
     {
       "title": "The return drive",
-      "text": "Leave at 1:30 PM Sunday. Check live traffic and the US entry queue at Highgate Springs before lunch.",
+      "text": "Leave at 6 PM Sunday, with a late-night Boston arrival around midnight or later. Confirm live navigation, weather, and the US entry queue at Highgate Springs before departing. The earlier 10 PM arrival target is dropped.",
       "source": "https://bwt.cbp.gov/"
     }
   ],
