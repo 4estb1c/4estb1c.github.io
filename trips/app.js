@@ -57,30 +57,25 @@
   }
 
   function selectDay(day, updateHash = true) {
-    if(day!=='all' && !routes.days[day])day='friday';
+    if(!routes.days[day])day='friday';
     document.querySelectorAll('[data-day]').forEach(button => {
       const active = button.dataset.day===day;
       button.classList.toggle('active',active);
       button.setAttribute('aria-pressed',String(active));
     });
     document.querySelectorAll('[data-pane]').forEach(pane => {
-      pane.classList.toggle('active',day==='all'||pane.dataset.pane===day);
+      pane.classList.toggle('active',pane.dataset.pane===day);
     });
     requestAnimationFrame(()=>{
-      for(const key of Object.keys(routes.days))if(day==='all'||key===day)initMap(key);
+      initMap(day);
     });
     if(updateHash)history.replaceState(null,'',`#${day}`);
   }
 
   function followHash() {
     const target = location.hash.slice(1);
-    if(target==='skating') {
-      selectDay('sunday',false);
-      requestAnimationFrame(()=>document.getElementById('skating').scrollIntoView({block:'start'}));
-      return;
-    }
     const day = target.split('-stop-')[0];
-    if(routes.days[day]||target==='all') {
+    if(routes.days[day]) {
       selectDay(day,false);
       if(target.includes('-stop-'))requestAnimationFrame(()=>document.getElementById(target)?.scrollIntoView({block:'start'}));
     }

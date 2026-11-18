@@ -848,5 +848,105 @@
         "credit": ""
       }
     ]
+  },
+  "atrium": {
+    "photos": [
+      {
+        "src": "images/galleries/atrium/1.jpg",
+        "alt": "The indoor Atrium Le 1000 ice rink beneath its glass dome",
+        "source": "https://le1000.com/fr/patiner/galerie-de-photos/",
+        "image_source": "https://le1000.com/wp-content/uploads/2025/12/20251206_atrium_0630-1-1024x682.png",
+        "credit": "Le 1000 official photo gallery; photographer not identified"
+      },
+      {
+        "src": "images/galleries/atrium/2.jpg",
+        "alt": "Adults skating together on the Atrium Le 1000 ice",
+        "source": "https://le1000.com/fr/patiner/galerie-de-photos/",
+        "image_source": "https://le1000.com/wp-content/uploads/2025/12/20251206_atrium_0617-1-1024x682.png",
+        "credit": "Le 1000 official photo gallery; photographer not identified"
+      },
+      {
+        "src": "images/galleries/atrium/3.jpg",
+        "alt": "Ice skates in action at Atrium Le 1000",
+        "source": "https://le1000.com/fr/patiner/galerie-de-photos/",
+        "image_source": "https://le1000.com/wp-content/uploads/2025/12/20251206_atrium_0567-1-1024x682.png",
+        "credit": "Le 1000 official photo gallery; photographer not identified"
+      }
+    ]
+  },
+  "monokiini": {
+    "photos": [
+      {
+        "src": "images/galleries/monokiini/1.jpg",
+        "alt": "MONOKIINI’s bright boutique and café with a view toward the workshop",
+        "source": "https://monokiini.com/en/pages/atelier-boutique",
+        "image_source": "https://monokiini.com/cdn/shop/files/8_b5425c15-46e0-4975-9ae3-33b8ee0b26b0.png?v=1773682115&width=3200",
+        "credit": "MONOKIINI"
+      },
+      {
+        "src": "images/galleries/monokiini/2.jpg",
+        "alt": "Handmade ceramic cups and vases displayed in the MONOKIINI boutique",
+        "source": "https://monokiini.com/en/pages/atelier-boutique",
+        "image_source": "https://monokiini.com/cdn/shop/files/3_fcc66d91-61d9-49fe-a7ab-1495fe9770c1.png?v=1773682099&width=1000",
+        "credit": "MONOKIINI"
+      },
+      {
+        "src": "images/galleries/monokiini/3.jpg",
+        "alt": "A hands-on ceramics session at MONOKIINI’s workshop table",
+        "source": "https://monokiini.com/en/pages/atelier-boutique",
+        "image_source": "https://monokiini.com/cdn/shop/files/6_7f988af5-c5b2-448d-9843-a029f0bd4e72.png?v=1773682099&width=1000",
+        "credit": "MONOKIINI"
+      }
+    ]
+  },
+  "atelierb": {
+    "photos": [
+      {
+        "src": "images/galleries/atelierb/1.jpg",
+        "alt": "The atelier b storefront in Mile End",
+        "source": "https://atelier-b.ca/en/pages/latelier-boutique",
+        "image_source": "https://cdn.shopify.com/s/files/1/0224/1334/4832/files/Webp.net-resizeimage_37_480x480.jpg?v=1594323210",
+        "credit": "atelier b; source page credits Kevin Mackinnon, Laurence Poirier, and Hamie Robitaille"
+      },
+      {
+        "src": "images/galleries/atelierb/2.jpg",
+        "alt": "Clothing rails and the boutique interior at atelier b",
+        "source": "https://atelier-b.ca/en/pages/latelier-boutique",
+        "image_source": "https://cdn.shopify.com/s/files/1/0224/1334/4832/files/DSCF3380low_8e194125-6d8b-446a-b09f-46b90a9ae57e.jpg?v=1649354585",
+        "credit": "atelier b; source page credits Kevin Mackinnon, Laurence Poirier, and Hamie Robitaille"
+      },
+      {
+        "src": "images/galleries/atelierb/3.jpg",
+        "alt": "Art, accessories, and clothing displayed in atelier b’s workshop-boutique",
+        "source": "https://atelier-b.ca/en/pages/latelier-boutique",
+        "image_source": "https://cdn.shopify.com/s/files/1/0224/1334/4832/files/DSCF3698_480x480.jpg?v=1666813152",
+        "credit": "atelier b; source page credits Kevin Mackinnon, Laurence Poirier, and Hamie Robitaille"
+      }
+    ]
+  },
+  "wachiya": {
+    "photos": [
+      {
+        "src": "images/galleries/wachiya/1.jpg",
+        "alt": "Artisan objects displayed inside WACHIYA’s Old Montréal boutique",
+        "source": "https://www.mtl.org/en/what-to-do/shopping/wachiya",
+        "image_source": "https://api.mtl.org/files/default/styles/square_600_600/public/2026-09/webimage-64375__77315976-B230-4187-9AD6A8B4FA29A007.jpg.webp?h=c16165f9&itok=YgJ3oImy",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/wachiya/2.jpg",
+        "alt": "Detailed beadwork and moosehide pieces in WACHIYA’s artisan selection",
+        "source": "https://www.mtl.org/en/what-to-do/shopping/wachiya",
+        "image_source": "https://api.mtl.org/files/default/styles/square_600_600/public/2026-09/webimage-64372__B3B81317-39E7-4B5A-A185AB212D4B1BFF.jpg.webp?h=e7860d40&itok=dE3w_gUX",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/wachiya/3.jpg",
+        "alt": "An antler eagle sculpture displayed at WACHIYA",
+        "source": "https://www.mtl.org/en/what-to-do/shopping/wachiya",
+        "image_source": "https://api.mtl.org/files/default/styles/square_600_600/public/2026-09/webimage-64371__F6E95474-072E-469F-AEF25F0FC7DD8C1B.jpg.webp?h=5a0c66e7&itok=6soJZLhz",
+        "credit": ""
+      }
+    ]
   }
 }

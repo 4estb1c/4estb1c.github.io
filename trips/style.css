@@ -502,3 +502,5 @@ html{scroll-behavior:smooth;scroll-padding-top:90px}body{font-size:16px}.page{ma
 @media print{.city-tabs,.trip-links,.block-imgs,.photo-caption,.day-map,.map-fallback,.nearby-panel,.skating-note,.photo-credits,.footer,.photo-viewer{display:none!important}.tab-pane{display:block!important}.page{max-width:none;padding:0}.day{break-before:page}.day:first-of-type{break-before:auto}.day-head{padding-top:15px}.block{break-inside:avoid;padding:10px 0}.block-desc{font-size:12px}.block-title{font-size:20px}.block-time,.home-note,.stop-links{font-size:11px}.masthead h1{font-size:40px}.hotel-info{font-size:12px}.checklist{break-before:page}body{background:white}.lodging-banner{margin-bottom:15px}}
 
 .city-tabs{overflow-y:hidden}.city-tab{margin-bottom:0}
+
+.day-highlights{display:flex;gap:10px 22px;flex-wrap:wrap;margin:0 0 20px;font-size:15px}.day-highlights a{font-weight:600}.star-label{font:600 12px/1.5 Inter,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#2a5d57;margin-bottom:9px}.photo-subtitle{font:600 19px/1.5 Fraunces,serif;margin-top:20px}

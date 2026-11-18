@@ -21,8 +21,8 @@
     "beds": "Deluxe Two Queen Room · request two actual queen beds",
     "source": "https://www.lemountstephen.com/rooms-and-suites.htm"
   },
-  "booking": "Le Mount Stephen is the selected hotel, not a confirmed booking. Reserve the Deluxe Two Queen Room, Leméac for Saturday lunch, and Monarque’s brasserie for Saturday dinner.",
-  "assumptions": "Assumes driving from Boston and sharing one room with two beds. All times are Eastern. Recheck hours before leaving.",
+  "booking": "Selected hotel: Le Mount Stephen, Deluxe Two Queen Room. Reserve Leméac Saturday 12:30 PM, skating Saturday around 5 PM, and Monarque Saturday 7 PM. Sunday return choices: AC736 to LaGuardia and AC8612 to Boston, both departing YUL at 8 PM. Nothing is booked.",
+  "assumptions": "Flying via YUL. Friday arrival around midnight. Sunday: Milo lands in New York by 10 PM; Forrest can get home to Boston later. Selected flight options land at LGA 9:30 PM and BOS 9:28 PM. All times Eastern. Nothing is booked.",
   "places": [
     {
       "id": "banquise",
@@ -425,6 +425,58 @@
       "price": "CAD 10–30",
       "lat": 45.5303409,
       "lng": -73.6091991
+    },
+    {
+      "id": "atrium",
+      "name": "Atrium Le 1000 · indoor skating",
+      "lat": 45.4982045,
+      "lng": -73.5662359,
+      "source": "https://le1000.com/fr/patiner/horaire-et-tarifs/",
+      "mapQuery": "Atrium Le 1000, 1000 Rue De La Gauchetière Ouest",
+      "area": "downtown",
+      "kind": "Activity",
+      "price": "CAD 12 entry + CAD 10 skate rental",
+      "description": "A year-round indoor rink beneath a glass atrium, downtown between Old Montréal and your hotel.",
+      "note": "Official Sunday hours 11:30 AM–6 PM. Timed-arrival tickets are recommended; availability is not guaranteed."
+    },
+    {
+      "id": "monokiini",
+      "name": "MONOKIINI · ceramics & café",
+      "lat": 45.5335247,
+      "lng": -73.6162204,
+      "source": "https://monokiini.com/en/pages/a-propos",
+      "mapQuery": "MONOKIINI, 7048 Boulevard Saint-Laurent",
+      "area": "littleitaly",
+      "kind": "Boutique & café",
+      "price": "Browse free · café purchases extra",
+      "description": "Handmade ceramics, a café, and makers working in the studio.",
+      "note": "Boutique visit and coffee, not a booked workshop."
+    },
+    {
+      "id": "atelierb",
+      "name": "atelier b · workshop boutique",
+      "lat": 45.5268613,
+      "lng": -73.6015982,
+      "source": "https://atelier-b.ca/en/pages/latelier-boutique",
+      "mapQuery": "atelier b, 5758 Boulevard Saint-Laurent",
+      "area": "mileend",
+      "kind": "Boutique",
+      "price": "Browse free",
+      "description": "Locally made natural-fiber clothing plus jewelry, ceramics, and other makers’ work, with the workshop behind the shop.",
+      "note": "Saturday 11 AM–5 PM."
+    },
+    {
+      "id": "wachiya",
+      "name": "WACHIYA · Cree artisan objects",
+      "lat": 45.5061,
+      "lng": -73.5532,
+      "source": "https://wachiya.com/",
+      "mapQuery": "Wachiya, 79 Rue Saint-Paul Est",
+      "area": "old",
+      "kind": "Artisan boutique",
+      "price": "Browse free",
+      "description": "Authentic Cree beadwork, jewelry, sculpture, and handmade objects from Eeyou Istchee.",
+      "note": "79 Saint-Paul East, opposite L’Empreinte. Published listings show Wednesday–Sunday 10 AM–6 PM."
     }
   ],
   "days": [
@@ -432,33 +484,17 @@
       "id": "friday",
       "label": "Friday night",
       "date": "Nov 20",
-      "title": "Check in. A drink in the mansion.",
-      "summary": "Le Mount Stephen is the base. Keep the arrival night close to home.",
+      "title": "Late flight. Straight to the hotel.",
+      "summary": "Leave work around 7 PM and expect arrival around midnight. Tonight is just arrival and sleep.",
       "blocks": [
         {
-          "time": "On arrival",
-          "title": "Le Mount Stephen · settle in",
-          "text": "Check into the Deluxe Two Queen Room, leave the car, and drop your bags. Let reception know you will arrive at night.",
+          "time": "Around midnight · flight-dependent",
+          "title": "Le Mount Stephen · late check-in",
+          "text": "After landing, take a taxi to Le Mount Stephen and settle into the Deluxe Two Queen Room. Tell reception you expect a late arrival. Book the room from Friday November 20 even if check-in happens after midnight. Eat before the flight.",
           "stops": [
             "mountstephen"
           ],
           "mode": "driving"
-        },
-        {
-          "time": "After check-in",
-          "title": "Bar George · first drink, something good to eat",
-          "text": "Walk downstairs into the historic mansion for a cocktail and a proper first-night bite. Bar bites run until 10 PM; if you arrive later, eat on the way and keep this to a drink.",
-          "stops": [
-            "bargeorge"
-          ],
-          "mode": "walking",
-          "note": "Friday bar service runs late. Dining room reservations do not reserve bar seats.",
-          "nearby": [
-            {
-              "id": "express",
-              "text": "If you need a later dinner: this classic French bistro lists service until 1 AM. Taxi there and check last kitchen orders."
-            }
-          ]
         }
       ]
     },
@@ -466,8 +502,8 @@
       "id": "saturday",
       "label": "Saturday",
       "date": "Nov 21",
-      "title": "Perfume, ceramics, a long lunch.",
-      "summary": "Mile End and Outremont for independent shops and a polished lunch. Chocolate on Duluth, then a proper dinner and a cocktail.",
+      "title": "Northern makers, then skating and a proper dinner.",
+      "summary": "One trip north for Bref, perfume, lunch, chocolate, and MONOKIINI. Back downtown once for skating, Monarque, and an optional cocktail.",
       "blocks": [
         {
           "time": "10 AM",
@@ -526,31 +562,60 @@
             "lvnea"
           ],
           "mode": "walking",
-          "note": "Entrance on Casgrain. Published weekend hours 11 AM–6 PM."
-        },
-        {
-          "time": "3:15 PM",
-          "title": "Chloé · handmade chocolates and a Duluth stroll",
-          "text": "Take a taxi down to Duluth, or walk if you feel like a longer stretch. Pick out handmade chocolates, then wander Duluth and Saint-Denis at your own pace.",
-          "stops": [
-            "chloe"
-          ],
-          "mode": "driving",
+          "note": "Entrance on Casgrain. Published weekend hours 11 AM–6 PM.",
           "nearby": [
             {
-              "id": "kouign",
-              "text": "For another distinctly Montréal pastry: the buttery kouign-amann. This is a detour toward Mont-Royal, not right next door."
+              "id": "atelierb",
+              "text": "A nearby workshop-boutique for locally made clothing, ceramics, jewelry, and other makers’ work. Browse on the way toward Saint-Laurent."
             }
           ]
         },
         {
-          "time": "4:30 PM",
+          "time": "2:45 PM",
+          "title": "État de choc · chocolate worth taking home",
+          "text": "Walk north along Saint-Laurent to the chocolate specialist. Browse the bean-to-bar selection and pick out unusual bars or bonbons. This stays in Saturday’s northern shopping loop.",
+          "stops": [
+            "etatdechoc"
+          ],
+          "mode": "walking",
+          "note": "Published Saturday hours 10 AM–5 PM."
+        },
+        {
+          "time": "3:15 PM",
+          "title": "MONOKIINI · handmade ceramics and coffee",
+          "text": "Continue north to the ceramics studio and café. Browse sculptural handmade cups and objects, see the making space, and sit with a coffee. This is the signature boutique stop in the northern loop.",
+          "stops": [
+            "monokiini"
+          ],
+          "mode": "walking",
+          "star": true,
+          "note": "A browse-and-coffee visit. Sip & Clay classes require separate booking and weeks of firing, so we are not building the day around a class.",
+          "nearby": [
+            {
+              "id": "chloe",
+              "text": "The extra chocolate option if you shorten the northern browse: stop on Duluth on the trip south. It is a detour, so skip it rather than rushing the skate."
+            }
+          ]
+        },
+        {
+          "time": "4:15 PM",
           "title": "Hotel break · leave room for dinner",
-          "text": "Taxi back to Le Mount Stephen, put down your purchases, and have a real break. No need to fill every spare hour.",
+          "text": "Taxi back downtown once, drop your purchases, and take a short break before skating. The remaining evening stays downtown and in Old Montréal.",
           "stops": [
             "mountstephen"
           ],
           "mode": "driving"
+        },
+        {
+          "time": "5–6 PM",
+          "title": "Atrium Le 1000 · the skating anchor",
+          "text": "Head to the indoor rink beneath the glass atrium. Select Saturday November 21, the 4:30–5:30 PM arrival window, and arrive around 5 PM. Skate for about an hour before dinner. The rink stays open until 9 PM.",
+          "stops": [
+            "atrium"
+          ],
+          "mode": "walking",
+          "star": true,
+          "note": "The live calendar was checked November 18 and showed places in that arrival window. Nothing is booked. CAD 12 entry + CAD 10 skate rental + CAD 1 required helmet rental if needed. Rentals are on site. Outdoor Esplanade Tranquille opens November 25, after this trip."
         },
         {
           "time": "7 PM",
@@ -559,11 +624,11 @@
           "stops": [
             "monarque"
           ],
-          "mode": "driving",
+          "mode": "walking",
           "nearby": [
             {
-              "id": "ratafia",
-              "text": "The dessert-focused alternative: plated desserts and wine in Little Italy. Choose this instead of the dinner/cocktail sequence, not as another cross-city stop. Open Saturday evening; closed Sunday."
+              "id": "bargeorge",
+              "text": "The hotel’s mansion bar is the easy cocktail backup. Its café gourmand offers five small desserts. Use this as the relaxed hotel alternative."
             }
           ]
         },
@@ -583,51 +648,53 @@
       "id": "sunday",
       "label": "Sunday",
       "date": "Nov 22",
-      "title": "Old streets, a grand café, and very good pastry.",
-      "summary": "Old Montréal, Place d’Armes, Notre-Dame, and the river. Then an easy afternoon of chocolate and shops. Leave at 6 PM.",
+      "title": "Old Montréal at leisure. Fly home at 8 PM.",
+      "summary": "A long café breakfast, artisan boutiques, the waterfront, Notre-Dame, and beautiful pastries. Collect bags at 3:45 PM and leave the hotel at 4 PM for your 8 PM flights.",
       "blocks": [
         {
-          "time": "9:30 AM",
-          "title": "Check out, then Crew · breakfast under the bank ceiling",
-          "text": "Leave your bags and car with the hotel, then taxi to Crew Collective & Café. Take a table for breakfast and coffee in the former Royal Bank hall. Stay awhile.",
+          "time": "10 AM",
+          "title": "Crew Collective & Café · breakfast under the bank ceiling",
+          "text": "Check out, leave your bags with Le Mount Stephen, and taxi to Crew. Take a table for breakfast and coffee in the former Royal Bank hall. This is the morning’s long sit-down stop.",
           "stops": [
             "crew"
           ],
-          "mode": "driving",
-          "note": "Confirm after-checkout parking and luggage storage with Le Mount Stephen."
+          "mode": "driving"
         },
         {
           "time": "11 AM",
-          "title": "L’Empreinte · Québec-made craft on Saint-Paul",
-          "text": "Walk the old streets and browse the cooperative for locally made ceramics, jewelry, and objects. This is the Old Montréal boutique stop worth prioritizing.",
+          "title": "Saint-Paul craft shops · L’Empreinte & WACHIYA",
+          "text": "Walk the old streets to two artisan shops opposite one another: Québec ceramics, glass and jewelry at L’Empreinte, and Cree beadwork and handmade objects at WACHIYA.",
           "stops": [
-            "empreinte"
+            "empreinte",
+            "wachiya"
           ],
           "mode": "walking",
-          "note": "Seasonal Sunday opening needs confirmation. If it opens later, return after Notre-Dame."
+          "note": "Two independent craft boutiques on Saint-Paul East, across from one another. Take your time rather than treating them as quick stops."
         },
         {
-          "time": "11:45 AM",
-          "title": "Old Port · a short river walk",
-          "text": "Walk down to the waterfront for the change of scale and river views. Keep it short if the wind is unpleasant, and spend longer on the sheltered old streets instead.",
+          "time": "Noon",
+          "title": "Old Port · walk by the river",
+          "text": "Stroll from Saint-Paul toward the waterfront and along the quays. Keep this as unstructured walking-and-talking time, then head back toward Place d’Armes. If it is cold or wet, spend longer in the shops and café instead.",
           "stops": [
             "oldport"
           ],
           "mode": "walking"
         },
         {
-          "time": "12:30 PM",
-          "title": "Place d’Armes & Notre-Dame · the main sight",
-          "text": "Return to the square, then go inside the basilica. This is the dramatic interior that earns its place in the plan. Sunday sightseeing is 12:30–4 PM. Daytime entry starts at CAD 16 plus tax; AURA is a separate evening ticket.",
+          "time": "1–2 PM",
+          "title": "Place d’Armes & Notre-Dame · the star sight",
+          "text": "Walk through Place d’Armes and go inside Notre-Dame for the blue-and-gold interior. Allow a full hour to look around rather than squeezing it in before an airport run. Daytime admission starts at CAD 16 plus tax.",
           "stops": [
             "notredame"
           ],
-          "mode": "walking"
+          "mode": "walking",
+          "star": true,
+          "note": "Sunday sightseeing is published as 12:30–4 PM. Choose a daytime ticket, separate from the evening AURA show."
         },
         {
-          "time": "1:45 PM",
-          "title": "Chez Potier · a proper pastry stop",
-          "text": "Walk to Wellington for refined individual pastries, chocolates, and a light savory lunch. Choose what looks best in the case, plus something for the drive. A few seats only, so this is not the long café hangout.",
+          "time": "2:15 PM",
+          "title": "Chez Potier · a proper pastry afternoon",
+          "text": "Walk west through the old streets to Wellington for refined pastries and something savory for a late light lunch. Choose the desserts that look best that day. There is time to enjoy them before heading back for your bags.",
           "stops": [
             "potier"
           ],
@@ -635,45 +702,34 @@
           "nearby": [
             {
               "id": "olive",
-              "text": "Olive et Gourmando is the sit-down sandwich and lunch alternative, closer to Saint-Paul. Choose it before the pastry stop if you want a bigger meal."
+              "text": "Olive et Gourmando is the nearby sit-down sandwich alternative. Use it instead of the savory part of lunch if seats and timing work."
             }
-          ]
-        },
-        {
-          "time": "3 PM",
-          "title": "État de choc · chocolate worth taking home",
-          "text": "Taxi north to the Saint-Laurent chocolate specialist. Browse the bean-to-bar selection and pick out a few unusual bars or bonbons.",
-          "stops": [
-            "etatdechoc"
           ],
-          "mode": "driving",
-          "note": "Published Sunday hours 11 AM–5 PM."
+          "note": "Seating is limited. Olive et Gourmando is the nearby sit-down lunch option if you want a longer meal before the pastry stop."
         },
         {
-          "time": "3:45 PM",
-          "title": "Ex-Voto · the last browse",
-          "text": "Walk along Saint-Laurent for design objects, jewelry, and small gifts. Leave time to sit for a coffee rather than trying to squeeze in another neighborhood.",
-          "stops": [
-            "exvoto"
-          ],
-          "mode": "walking",
-          "note": "This is the northbound shopping detour. The skating option below replaces this whole afternoon detour, if open."
-        },
-        {
-          "time": "5:15 PM",
-          "title": "Back to Le Mount Stephen · bags and car",
-          "text": "Taxi back, collect the bags and car, and pick up a takeaway meal if needed. Arrange car retrieval before heading back.",
+          "time": "3:45 PM · collect bags",
+          "title": "Le Mount Stephen · collect bags",
+          "text": "Taxi back to Le Mount Stephen, collect your luggage, and have the airport taxi waiting for 4 PM. Arrange the pickup with reception before leaving in the morning.",
           "stops": [
             "mountstephen"
           ],
           "mode": "driving"
         },
         {
-          "time": "6 PM",
-          "title": "Leave for Boston",
-          "text": "Drive home. Expect a late-night arrival around midnight or later with stops and the border. Check live navigation and the US entry queue before leaving.",
+          "time": "4 PM pickup · 5 PM airport target",
+          "title": "Transfer to YUL · a proper airport buffer",
+          "text": "Take a taxi to Montréal–Trudeau together. Allow an hour for the transfer and target YUL at 5 PM, three hours before both 8 PM departures. The hour is a planning allowance; check live traffic before pickup.",
           "stops": [],
           "mode": "driving"
+        },
+        {
+          "time": "8 PM departures · 9:28–9:30 PM landings",
+          "title": "Two nonstop flights · same airport departure time",
+          "text": "Milo: Air Canada AC736, YUL 8 PM → New York LaGuardia 9:30 PM. Forrest: Air Canada Express AC8612, YUL 8 PM → Boston 9:28 PM. Milo’s scheduled landing meets the 10 PM New York constraint. Boston landing at 9:28 PM leaves the trip home afterward, around your requested 10–11 PM window depending on your address and baggage.",
+          "stops": [],
+          "mode": "driving",
+          "note": "Listed on Google Flights November 18 for Sunday November 22, 2026: LGA from USD 335 and BOS from USD 541, one way per person in economy with a carry-on. Fares and seats can change. Nothing is booked; scheduled arrival times are not guarantees."
         }
       ]
     }
@@ -681,20 +737,34 @@
   "practical": [
     {
       "title": "Book the anchors",
-      "text": "Le Mount Stephen: Deluxe Two Queen Room. Leméac: Saturday 12:30 PM. Monarque: Saturday 7 PM, brasserie. These are selections, not confirmed reservations."
+      "text": "Selected hotel: Le Mount Stephen, Deluxe Two Queen Room. Reserve Leméac Saturday 12:30 PM, skating Saturday around 5 PM, and Monarque Saturday 7 PM. Sunday return choices: AC736 to LaGuardia and AC8612 to Boston, both departing YUL at 8 PM. Nothing is booked. Tell the hotel you arrive after midnight."
     },
     {
       "title": "Time to talk",
-      "text": "Treat the times as a relaxed order, except the meal bookings and Sunday departure. Skip extras when a good conversation, shop, or dessert deserves longer."
+      "text": "Saturday covers the northern shops once. Sunday stays in Old Montréal. MONOKIINI and skating are Saturday’s highlights; Notre-Dame is Sunday’s main sight. Nearby extras stay optional."
     },
     {
       "title": "Getting around",
-      "text": "Walk within each neighborhood, taxi between clusters. Prices are planning allowances in CAD before tax and tip. Hotel estimate: USD 300–450 per person for both nights sharing one room, including estimated room taxes, excluding parking; not a live quote."
+      "text": "No car needed. Walk within each neighborhood and taxi between clusters. Prices are CAD before tax and tip. Hotel estimate: USD 300–450 per person for both nights sharing one room, including estimated room taxes; not a live quote."
     },
     {
-      "title": "The return drive",
-      "text": "Leave Sunday at 6 PM. Confirm hotel parking after checkout, check navigation and the Highgate Springs border queue, and expect a late-night Boston arrival.",
-      "source": "https://bwt.cbp.gov/"
+      "title": "Milo · New York return",
+      "text": "Sunday November 22: Air Canada AC736, YUL 8 PM → LGA 9:30 PM, nonstop. Listed from USD 335 one way with a carry-on when checked November 18. This meets the requirement to land in New York by 10 PM. Nothing is booked.",
+      "source": "https://www.google.com/travel/flights?hl=en&q=One%20way%20flights%20from%20Montreal%20YUL%20to%20New%20York%20LGA%20on%20November%2022%202026"
+    },
+    {
+      "title": "Forrest · Boston return",
+      "text": "Sunday November 22: Air Canada Express AC8612, YUL 8 PM → BOS 9:28 PM, nonstop. Listed from USD 541 one way with a carry-on when checked November 18. Get home afterward; no need to cut Montréal short for an earlier Boston arrival. Nothing is booked.",
+      "source": "https://www.google.com/travel/flights?hl=en&q=One%20way%20flights%20from%20Montreal%20YUL%20to%20Boston%20BOS%20on%20November%2022%202026"
+    },
+    {
+      "title": "Sunday pickup",
+      "text": "Collect bags at 3:45 PM, leave Le Mount Stephen at 4 PM, and target YUL at 5 PM for the two 8 PM departures. Saturday remains the only northern shopping loop; skating stays Saturday."
+    },
+    {
+      "title": "Airport recommendation",
+      "text": "YUL recommends arrival at least 3 hours before departure. The transfer hour is a planning allowance, not a traffic prediction. US immigration is handled at YUL before departure.",
+      "source": "https://yulsatisfaction.admtl.com/hc/en-ca/articles/360003671978-What-is-the-recommended-time-to-arrive-at-the-airport"
     }
   ],
   "neighborhoods": [
@@ -710,7 +780,8 @@
         "drawn",
         "hparfums",
         "bernie",
-        "lemeac"
+        "lemeac",
+        "atelierb"
       ]
     },
     {
@@ -740,7 +811,8 @@
         "botabota",
         "habitat67",
         "citememoire",
-        "oldport"
+        "oldport",
+        "wachiya"
       ]
     },
     {
@@ -749,7 +821,8 @@
       "subtitle": "Two polished evening stops near the downtown hotels. A taxi transfer from Old Montréal.",
       "ids": [
         "bargeorge",
-        "cloakroom"
+        "cloakroom",
+        "atrium"
       ]
     },
     {
@@ -759,7 +832,8 @@
       "ids": [
         "ratafia",
         "etatdechoc",
-        "exvoto"
+        "exvoto",
+        "monokiini"
       ]
     }
   ],
@@ -814,13 +888,23 @@
     }
   ],
   "headlines": [],
-  "extras": [
-    {
-      "id": "skating",
-      "label": "Sunday afternoon swap · only if confirmed open",
-      "title": "Esplanade Tranquille · skate under the lights",
-      "text": "A fun shared activity, with a pavilion for warming up. Replace the Little Italy shopping detour with skating; do not add another transfer to the day. The operator still lists the rink as closed with reopening planned for mid-November 2026, so check the live page before committing. Admission is normally free; rentals cost extra.",
-      "source": "https://www.quartierdesspectacles.com/en/place/esplanade-tranquille-skating-rink"
-    }
-  ]
+  "extras": [],
+  "anchors": {
+    "saturday": [
+      {
+        "id": "monokiini",
+        "label": "MONOKIINI · ceramics & café"
+      },
+      {
+        "id": "atrium",
+        "label": "Atrium · skating"
+      }
+    ],
+    "sunday": [
+      {
+        "id": "notredame",
+        "label": "Notre-Dame · the interior"
+      }
+    ]
+  }
 }
