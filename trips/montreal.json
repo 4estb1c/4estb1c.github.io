@@ -8,7 +8,7 @@
     45.515,
     -73.58
   ],
-  "intro": "One route to follow, with better meals, good desserts, and plenty of nearby discoveries. Pick one afternoon highlight; the rest stays easy.",
+  "intro": "A weekend for walking and talking, excellent food, good desserts, and comfortable places to linger. A few small activities break up the day; there is no need to rush through every shop.",
   "hotel": {
     "id": "germain",
     "name": "Le Germain Montréal",
@@ -21,7 +21,7 @@
     "beds": "Signature Two Queen Beds",
     "level": "Upscale"
   },
-  "booking": "Default plan: Le Germain, Bota Bota on Saturday afternoon, and Monarque’s brasserie at 7 PM. Reserve those before going. Nothing is booked.",
+  "booking": "Default plan: Le Germain, a relaxed waterfront-and-café afternoon, and Monarque’s brasserie at 7 PM. Reserve the hotel and dinner. Nothing is booked.",
   "assumptions": "Assumes driving from Boston and sharing one room with two beds. All times are Eastern. Recheck hours before leaving.",
   "places": [
     {
@@ -61,7 +61,7 @@
       "mapQuery": "Café Olimpico, 124 Rue Saint-Viateur Ouest",
       "area": "mileend",
       "kind": "Coffee",
-      "description": "Espresso, an old-school café, and a lively neighborhood crowd.",
+      "description": "Espresso and a lively neighborhood crowd. Pause here together after bagels rather than treating coffee as another quick errand.",
       "note": "Use the original Saint-Viateur location.",
       "price": "CAD 5–12"
     },
@@ -184,8 +184,8 @@
       "source": "https://crewcollectivecafe.com/",
       "area": "old",
       "kind": "Coffee",
-      "description": "Coffee under a spectacular former-bank ceiling. The interior is the attraction.",
-      "note": "Go early to avoid the busiest tables.",
+      "description": "A spectacular former bank turned café. A proper place to sit, have coffee, and talk while enjoying the architecture.",
+      "note": "A public café, not just coworking space. Tables can be busy; seating is not guaranteed.",
       "price": "CAD 10–25"
     },
     {
@@ -296,8 +296,8 @@
       "source": "https://botabota.ca/en/questions/",
       "area": "old",
       "kind": "Headline",
-      "description": "Hot-and-cold baths on a floating spa, with river and city views. The strongest winter splurge.",
-      "note": "Reserve a two-hour slot. Boat silence is required; confirm conversation-permitted areas. Swimsuit needed.",
+      "description": "A floating hot-and-cold spa with river views. Keep this as an optional spa outing if you specifically want a quiet session.",
+      "note": "Silence is required on the boat, so this is a weaker fit for a conversation-focused afternoon. Confirm conversation-permitted areas before booking. Swimsuit needed.",
       "price": "CAD 90–140 allowance"
     },
     {
@@ -379,7 +379,7 @@
       "area": "old",
       "kind": "Dessert",
       "description": "The refined pastry stop: individual cakes, chocolate work, macarons, and beautiful seasonal desserts.",
-      "note": "630 Wellington; Saturday and Sunday 8 AM–5 PM. Limited seating.",
+      "note": "630 Wellington; weekends 8 AM–5 PM. Excellent for pastries, but seating is limited: this is not the main long café break.",
       "price": "CAD 10–25",
       "lat": 45.4979861,
       "lng": -73.5553701
@@ -457,7 +457,7 @@
       "label": "Saturday",
       "date": "Nov 21",
       "title": "Mile End → the river → a proper dinner.",
-      "summary": "Mile End for shops, the Plateau for lunch and dessert, then the river and a better dinner.",
+      "summary": "Bagels, perfume and design shops, smoked meat and chocolate, then a river walk and a long café break. Finish with dinner and an optional drink.",
       "blocks": [
         {
           "time": "9:30 AM",
@@ -492,7 +492,7 @@
         {
           "time": "1 PM",
           "title": "Lunch at Schwartz’s",
-          "text": "Get a medium-fat smoked-meat sandwich, then walk toward Duluth for chocolates at Chloé. The nearby cards give you a pastry and pinball stop as well.",
+          "text": "Get a medium-fat smoked-meat sandwich, then chocolates at Chloé on Duluth. If you feel like a small activity, play a short round of pinball at North Star. Skip it if you would rather keep talking over dessert.",
           "stops": [
             "schwartz"
           ],
@@ -500,10 +500,11 @@
         },
         {
           "time": "2:30 PM",
-          "title": "Bota Bota · the afternoon highlight",
-          "text": "Reserve a two-hour water-circuit slot for hot-and-cold baths with river views. The boat is quiet; confirm where low-voice conversation is allowed. Bring swimwear.",
+          "title": "The river, old streets, and a long coffee",
+          "text": "Taxi to the Old Port for an unhurried waterfront walk. Drift into the old streets, then settle at Crew Collective & Café under the former bank ceiling. Give yourselves a proper sit-down break, not just a takeaway coffee. If it is cold or wet, shorten the river loop and spend longer indoors.",
           "stops": [
-            "botabota"
+            "oldport",
+            "crew"
           ],
           "mode": "driving",
           "headline": true
@@ -544,10 +545,10 @@
       "blocks": [
         {
           "time": "9 AM",
-          "title": "Check out, then coffee at Crew",
-          "text": "Leave bags with the hotel and taxi to Crew Collective & Café. Have coffee and a pastry beneath the old bank ceiling.",
+          "title": "Check out, then breakfast at Olive et Gourmando",
+          "text": "Leave bags with the hotel and taxi to Olive et Gourmando for breakfast and coffee. Take a table and ease into the morning; allow for a weekend wait.",
           "stops": [
-            "crew"
+            "olive"
           ],
           "mode": "driving"
         },
@@ -610,7 +611,7 @@
   "practical": [
     {
       "title": "Book the anchors",
-      "text": "Choose a hotel room with the right beds, reserve the afternoon activity, and book Monarque’s brasserie for Saturday 7 PM. Rates and live availability are not confirmed."
+      "text": "Choose a hotel room with the right beds and book Monarque’s brasserie for Saturday 7 PM. The default afternoon walk and café need no activity ticket. Reserve a tour or basilica entry only if you switch to one. Rates and live availability are not confirmed."
     },
     {
       "title": "Getting around",
@@ -740,15 +741,15 @@
   ],
   "headlines": [
     {
-      "id": "botabota",
-      "label": "My pick for a cold weekend",
-      "description": "A two-hour floating-spa session. Book it, bring swimwear, and make this the afternoon’s one paid activity.",
-      "duration": "Reserve a 2-hour slot"
+      "id": "oldport",
+      "label": "The relaxed default",
+      "description": "A waterfront walk, old streets, then a long coffee at Crew beneath the former bank ceiling. Spend the afternoon together without another timed booking.",
+      "duration": "About 2 hours, at your pace"
     },
     {
       "id": "habitat67",
       "label": "For architecture & design",
-      "description": "Choose the 90-minute guided visit if Saturday tickets work. It replaces the spa, including its travel time.",
+      "description": "Choose the guided architecture visit if Saturday tickets work. More structured than the default walk-and-coffee afternoon; return to the hotel by 5 PM.",
       "duration": "Guided tour: 90 minutes"
     },
     {
