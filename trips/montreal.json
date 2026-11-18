@@ -8,20 +8,20 @@
     45.515,
     -73.58
   ],
-  "intro": "A weekend for walking and talking, excellent food, good desserts, and comfortable places to linger. A few small activities break up the day; there is no need to rush through every shop.",
+  "intro": "Walk and talk, browse beautiful little shops, eat very well, and linger over coffee and dessert. One relaxed route each day, with nearby extras when you feel like it.",
   "hotel": {
-    "id": "germain",
-    "name": "Le Germain Montréal",
-    "lat": 45.5024267,
-    "lng": -73.574419,
-    "image": "germain",
-    "source": "https://www.germainhotels.com/en/le-germain-hotel/montreal",
-    "label": "Easy default",
-    "description": "Refined, comfortable, and central. The cleanest shared-room choice.",
-    "beds": "Signature Two Queen Beds",
-    "level": "Upscale"
+    "id": "mountstephen",
+    "name": "Le Mount Stephen",
+    "lat": 45.4990522,
+    "lng": -73.5757732,
+    "image": "mountstephen",
+    "label": "Your chosen base",
+    "level": "Luxury",
+    "description": "A historic mansion paired with modern rooms, plus Bar George downstairs. The most overtly grand choice.",
+    "beds": "Deluxe Two Queen Room · request two actual queen beds",
+    "source": "https://www.lemountstephen.com/rooms-and-suites.htm"
   },
-  "booking": "Default plan: Le Germain, a relaxed waterfront-and-café afternoon, and Monarque’s brasserie at 7 PM. Reserve the hotel and dinner. Nothing is booked.",
+  "booking": "Le Mount Stephen is the selected hotel, not a confirmed booking. Reserve the Deluxe Two Queen Room, Leméac for Saturday lunch, and Monarque’s brasserie for Saturday dinner.",
   "assumptions": "Assumes driving from Boston and sharing one room with two beds. All times are Eastern. Recheck hours before leaving.",
   "places": [
     {
@@ -432,23 +432,33 @@
       "id": "friday",
       "label": "Friday night",
       "date": "Nov 20",
-      "title": "Arrive, check in, get some poutine.",
-      "summary": "Keep the first night easy. Park at the hotel and leave the car there for the weekend.",
+      "title": "Check in. A drink in the mansion.",
+      "summary": "Le Mount Stephen is the base. Keep the arrival night close to home.",
       "blocks": [
         {
           "time": "On arrival",
-          "title": "Check in at Le Germain",
-          "text": "Drop your bags and settle in. Tell the hotel you will arrive late.",
-          "stops": []
+          "title": "Le Mount Stephen · settle in",
+          "text": "Check into the Deluxe Two Queen Room, leave the car, and drop your bags. Let reception know you will arrive at night.",
+          "stops": [
+            "mountstephen"
+          ],
+          "mode": "driving"
         },
         {
           "time": "After check-in",
-          "title": "La Banquise",
-          "text": "Take a taxi for a classic poutine. Share one if you only want a late snack, then head back to the hotel.",
+          "title": "Bar George · first drink, something good to eat",
+          "text": "Walk downstairs into the historic mansion for a cocktail and a proper first-night bite. Bar bites run until 10 PM; if you arrive later, eat on the way and keep this to a drink.",
           "stops": [
-            "banquise"
+            "bargeorge"
           ],
-          "mode": "driving"
+          "mode": "walking",
+          "note": "Friday bar service runs late. Dining room reservations do not reserve bar seats.",
+          "nearby": [
+            {
+              "id": "express",
+              "text": "If you need a later dinner: this classic French bistro lists service until 1 AM. Taxi there and check last kitchen orders."
+            }
+          ]
         }
       ]
     },
@@ -456,83 +466,116 @@
       "id": "saturday",
       "label": "Saturday",
       "date": "Nov 21",
-      "title": "Mile End → the river → a proper dinner.",
-      "summary": "Bagels, perfume and design shops, smoked meat and chocolate, then a river walk and a long café break. Finish with dinner and an optional drink.",
+      "title": "Perfume, ceramics, a long lunch.",
+      "summary": "Mile End and Outremont for independent shops and a polished lunch. Chocolate on Duluth, then a proper dinner and a cocktail.",
       "blocks": [
         {
-          "time": "9:30 AM",
-          "title": "Bagels and coffee in Mile End",
-          "text": "Taxi to St-Viateur Bagel for a hot sesame bagel, then walk to Café Olimpico for coffee.",
+          "time": "10 AM",
+          "title": "Olimpico · coffee and a slow start",
+          "text": "Taxi to the original Saint-Viateur café. Sit with an espresso and ease into the neighborhood. No need to rush into another activity.",
           "stops": [
-            "stviateur",
             "olimpico"
           ],
-          "mode": "driving"
+          "mode": "driving",
+          "nearby": [
+            {
+              "id": "stviateur",
+              "text": "One worthwhile casual exception: a warm sesame bagel from the original wood-fired shop. A quick cultural taste, not today’s main meal."
+            }
+          ]
         },
         {
           "time": "11 AM",
-          "title": "Browse Bernard, then visit LVNEA",
-          "text": "Start at Bref for ceramics and design objects. Walk east to LVNEA and try a few locally made botanical perfumes.",
+          "title": "Bref · ceramics and independent design",
+          "text": "Walk along Bernard to browse small-run ceramics, prints, and design objects. This is one of the shops to make time for.",
           "stops": [
-            "bref",
-            "lvnea"
+            "bref"
           ],
           "mode": "walking",
           "nearby": [
             {
               "id": "drawn",
-              "text": "Books and graphic novels on Bernard."
-            },
-            {
-              "id": "hparfums",
-              "text": "A wider selection of niche fragrances on Hutchison."
+              "text": "Graphic novels, art books, and independent publishing, a short walk along Bernard."
             }
           ]
         },
         {
-          "time": "1 PM",
-          "title": "Lunch at Schwartz’s",
-          "text": "Get a medium-fat smoked-meat sandwich, then chocolates at Chloé on Duluth. If you feel like a small activity, play a short round of pinball at North Star. Skip it if you would rather keep talking over dessert.",
+          "time": "11:45 AM",
+          "title": "H Parfums · try something unfamiliar",
+          "text": "Walk south toward Laurier and take your time with niche fragrances. Try a few on skin and let them develop while you walk.",
           "stops": [
-            "schwartz"
+            "hparfums"
           ],
           "mode": "walking"
         },
         {
-          "time": "2:30 PM",
-          "title": "The river, old streets, and a long coffee",
-          "text": "Taxi to the Old Port for an unhurried waterfront walk. Drift into the old streets, then settle at Crew Collective & Café under the former bank ceiling. Give yourselves a proper sit-down break, not just a takeaway coffee. If it is cold or wet, shorten the river loop and spend longer indoors.",
+          "time": "12:30 PM",
+          "title": "Leméac · the nice lunch",
+          "text": "Reserve a table for a proper French bistro lunch. Make this a long, seated meal rather than a sandwich eaten in a queue. Allow CAD 55–90 each before tax and tip, depending on drinks.",
           "stops": [
-            "oldport",
-            "crew"
+            "lemeac"
           ],
-          "mode": "driving",
-          "headline": true
+          "mode": "walking",
+          "note": "Weekend brunch/lunch is published as 10 AM–3 PM. Reserve."
         },
         {
-          "time": "5 PM",
-          "title": "Back to the hotel",
-          "text": "Taxi back, warm up, and get ready for dinner.",
-          "stops": [],
-          "returnToHotel": true
+          "time": "2 PM",
+          "title": "LVNEA · botanical perfume",
+          "text": "Head east through the neighborhood to the Saint-Viateur boutique. Woods, resins, and atmospheric botanical scents made locally. Slow browsing is the activity.",
+          "stops": [
+            "lvnea"
+          ],
+          "mode": "walking",
+          "note": "Entrance on Casgrain. Published weekend hours 11 AM–6 PM."
+        },
+        {
+          "time": "3:15 PM",
+          "title": "Chloé · handmade chocolates and a Duluth stroll",
+          "text": "Take a taxi down to Duluth, or walk if you feel like a longer stretch. Pick out handmade chocolates, then wander Duluth and Saint-Denis at your own pace.",
+          "stops": [
+            "chloe"
+          ],
+          "mode": "driving",
+          "nearby": [
+            {
+              "id": "kouign",
+              "text": "For another distinctly Montréal pastry: the buttery kouign-amann. This is a detour toward Mont-Royal, not right next door."
+            }
+          ]
+        },
+        {
+          "time": "4:30 PM",
+          "title": "Hotel break · leave room for dinner",
+          "text": "Taxi back to Le Mount Stephen, put down your purchases, and have a real break. No need to fill every spare hour.",
+          "stops": [
+            "mountstephen"
+          ],
+          "mode": "driving"
         },
         {
           "time": "7 PM",
-          "title": "Dinner at Monarque · Brasserie",
-          "text": "Book the brasserie for a polished dinner with more room to choose your spend than the formal dining room. Save room for dessert. Allow CAD 85–130 each before tax and tip.",
+          "title": "Monarque · brasserie dinner",
+          "text": "Book the brasserie, rather than the formal tasting-menu dining room. A polished dinner with room to choose your spend. Allow CAD 85–130 each before tax and tip. Order dessert if it catches your eye.",
           "stops": [
             "monarque"
           ],
-          "mode": "driving"
+          "mode": "driving",
+          "nearby": [
+            {
+              "id": "ratafia",
+              "text": "The dessert-focused alternative: plated desserts and wine in Little Italy. Choose this instead of the dinner/cocktail sequence, not as another cross-city stop. Open Saturday evening; closed Sunday."
+            }
+          ]
         },
         {
-          "time": "After dinner",
-          "title": "Bar George for a cocktail and mini desserts",
-          "text": "Taxi to the mansion bar. Have one good cocktail and the café gourmand if you still want something sweet. Cloakroom is the nearby alternative.",
+          "time": "After dinner · optional",
+          "title": "Cloakroom · one excellent cocktail",
+          "text": "Taxi back toward the hotel for a small, intimate cocktail bar. Let the bartender build something around flavors you like. Walk home afterward. Skip it if dinner becomes the evening.",
           "stops": [
-            "bargeorge"
+            "cloakroom"
           ],
-          "mode": "driving"
+          "mode": "driving",
+          "note": "Bar George downstairs at the hotel is the easy backup if Cloakroom is full."
         }
       ]
     },
@@ -540,70 +583,97 @@
       "id": "sunday",
       "label": "Sunday",
       "date": "Nov 22",
-      "title": "Old Montréal, chocolate, and a full afternoon.",
-      "summary": "Keep the car at the hotel after checkout. Explore Old Montréal, then taxi north for chocolate and boutiques. Leave for Boston at 6 PM.",
+      "title": "Old streets, a grand café, and very good pastry.",
+      "summary": "Old Montréal, Place d’Armes, Notre-Dame, and the river. Then an easy afternoon of chocolate and shops. Leave at 6 PM.",
       "blocks": [
         {
-          "time": "9 AM",
-          "title": "Check out, then breakfast at Olive et Gourmando",
-          "text": "Leave bags with the hotel and taxi to Olive et Gourmando for breakfast and coffee. Take a table and ease into the morning; allow for a weekend wait.",
+          "time": "9:30 AM",
+          "title": "Check out, then Crew · breakfast under the bank ceiling",
+          "text": "Leave your bags and car with the hotel, then taxi to Crew Collective & Café. Take a table for breakfast and coffee in the former Royal Bank hall. Stay awhile.",
           "stops": [
-            "olive"
+            "crew"
           ],
-          "mode": "driving"
+          "mode": "driving",
+          "note": "Confirm after-checkout parking and luggage storage with Le Mount Stephen."
         },
         {
-          "time": "10 AM",
-          "title": "Place d’Armes and the old streets",
-          "text": "Walk to Notre-Dame’s square, then follow Saint-Paul east to L’Empreinte for Québec-made ceramics and craft. Continue to the waterfront for a short walk.",
+          "time": "11 AM",
+          "title": "L’Empreinte · Québec-made craft on Saint-Paul",
+          "text": "Walk the old streets and browse the cooperative for locally made ceramics, jewelry, and objects. This is the Old Montréal boutique stop worth prioritizing.",
           "stops": [
-            "notredame",
-            "empreinte",
+            "empreinte"
+          ],
+          "mode": "walking",
+          "note": "Seasonal Sunday opening needs confirmation. If it opens later, return after Notre-Dame."
+        },
+        {
+          "time": "11:45 AM",
+          "title": "Old Port · a short river walk",
+          "text": "Walk down to the waterfront for the change of scale and river views. Keep it short if the wind is unpleasant, and spend longer on the sheltered old streets instead.",
+          "stops": [
             "oldport"
           ],
           "mode": "walking"
         },
         {
-          "time": "11:45 AM",
-          "title": "Chez Potier · pastries and a light lunch",
-          "text": "Walk to the Wellington boutique for refined pastries and a light savory lunch. Pick up something for the drive as well. Olive et Gourmando is the nearby sandwich alternative.",
+          "time": "12:30 PM",
+          "title": "Place d’Armes & Notre-Dame · the main sight",
+          "text": "Return to the square, then go inside the basilica. This is the dramatic interior that earns its place in the plan. Sunday sightseeing is 12:30–4 PM. Daytime entry starts at CAD 16 plus tax; AURA is a separate evening ticket.",
           "stops": [
-            "potier"
+            "notredame"
           ],
           "mode": "walking"
         },
         {
-          "time": "12:45 PM",
-          "title": "Inside Notre-Dame",
-          "text": "Return to Place d’Armes for the basilica interior. Sunday sightseeing opens at 12:30 PM and closes at 4 PM. Book daytime entry; this is separate from the evening AURA show.",
+          "time": "1:45 PM",
+          "title": "Chez Potier · a proper pastry stop",
+          "text": "Walk to Wellington for refined individual pastries, chocolates, and a light savory lunch. Choose what looks best in the case, plus something for the drive. A few seats only, so this is not the long café hangout.",
           "stops": [
-            "notredame"
+            "potier"
           ],
           "mode": "walking",
-          "sundayInterior": true
+          "nearby": [
+            {
+              "id": "olive",
+              "text": "Olive et Gourmando is the sit-down sandwich and lunch alternative, closer to Saint-Paul. Choose it before the pastry stop if you want a bigger meal."
+            }
+          ]
         },
         {
-          "time": "2:30 PM",
-          "title": "Little Italy · chocolate and independent shops",
-          "text": "Taxi to État de choc for bean-to-bar chocolate, then browse nearby Ex-Voto for design objects and small finds. Take this slowly and stop for coffee along Saint-Laurent. État de choc closes at 5 PM Sunday; Ratafia is closed, so keep its dessert bar as a Saturday alternative.",
+          "time": "3 PM",
+          "title": "État de choc · chocolate worth taking home",
+          "text": "Taxi north to the Saint-Laurent chocolate specialist. Browse the bean-to-bar selection and pick out a few unusual bars or bonbons.",
           "stops": [
-            "etatdechoc",
+            "etatdechoc"
+          ],
+          "mode": "driving",
+          "note": "Published Sunday hours 11 AM–5 PM."
+        },
+        {
+          "time": "3:45 PM",
+          "title": "Ex-Voto · the last browse",
+          "text": "Walk along Saint-Laurent for design objects, jewelry, and small gifts. Leave time to sit for a coffee rather than trying to squeeze in another neighborhood.",
+          "stops": [
             "exvoto"
+          ],
+          "mode": "walking",
+          "note": "This is the northbound shopping detour. The skating option below replaces this whole afternoon detour, if open."
+        },
+        {
+          "time": "5:15 PM",
+          "title": "Back to Le Mount Stephen · bags and car",
+          "text": "Taxi back, collect the bags and car, and pick up a takeaway meal if needed. Arrange car retrieval before heading back.",
+          "stops": [
+            "mountstephen"
           ],
           "mode": "driving"
         },
         {
-          "time": "5:15 PM",
-          "title": "Collect bags and the car",
-          "text": "Taxi back to Le Germain, collect your bags, and retrieve the car. Confirm parking and luggage storage after checkout. Pick up a takeaway meal before setting off.",
-          "stops": [],
-          "returnToHotel": true
-        },
-        {
           "time": "6 PM",
           "title": "Leave for Boston",
-          "text": "Leave Montréal for Boston. Plan on a late-night arrival, around midnight or later with a meal stop, border processing, and traffic. Check live navigation and US-bound border waits before leaving; the earlier 10 PM arrival target no longer applies.",
-          "stops": []
+          "text": "Drive home. Expect a late-night arrival around midnight or later with stops and the border. Check live navigation and the US entry queue before leaving.",
+          "stops": [],
+          "mode": "driving"
         }
       ]
     }
@@ -611,15 +681,19 @@
   "practical": [
     {
       "title": "Book the anchors",
-      "text": "Choose a hotel room with the right beds and book Monarque’s brasserie for Saturday 7 PM. The default afternoon walk and café need no activity ticket. Reserve a tour or basilica entry only if you switch to one. Rates and live availability are not confirmed."
+      "text": "Le Mount Stephen: Deluxe Two Queen Room. Leméac: Saturday 12:30 PM. Monarque: Saturday 7 PM, brasserie. These are selections, not confirmed reservations."
+    },
+    {
+      "title": "Time to talk",
+      "text": "Treat the times as a relaxed order, except the meal bookings and Sunday departure. Skip extras when a good conversation, shop, or dessert deserves longer."
     },
     {
       "title": "Getting around",
-      "text": "Walk within each cluster. Use taxis between Mile End, the waterfront, and the downtown hotels. All food/activity amounts are planning allowances in CAD, generally before tax and tip; hotel cards link to live booking pages."
+      "text": "Walk within each neighborhood, taxi between clusters. Prices are planning allowances in CAD before tax and tip. Hotel estimate: USD 300–450 per person for both nights sharing one room, including estimated room taxes, excluding parking; not a live quote."
     },
     {
       "title": "The return drive",
-      "text": "Leave at 6 PM Sunday, with a late-night Boston arrival around midnight or later. Confirm live navigation, weather, and the US entry queue at Highgate Springs before departing. The earlier 10 PM arrival target is dropped.",
+      "text": "Leave Sunday at 6 PM. Confirm hotel parking after checkout, check navigation and the Highgate Springs border queue, and expect a late-night Boston arrival.",
       "source": "https://bwt.cbp.gov/"
     }
   ],
@@ -720,10 +794,10 @@
       "lat": 45.4990522,
       "lng": -73.5757732,
       "image": "mountstephen",
-      "label": "The grander option",
+      "label": "Your chosen base",
       "level": "Luxury",
       "description": "A historic mansion paired with modern rooms, plus Bar George downstairs. The most overtly grand choice.",
-      "beds": "Deluxe Two Queen Room is an official category.",
+      "beds": "Deluxe Two Queen Room · request two actual queen beds",
       "source": "https://www.lemountstephen.com/rooms-and-suites.htm"
     },
     {
@@ -739,24 +813,14 @@
       "source": "https://hotelnelligan.com/rooms/"
     }
   ],
-  "headlines": [
+  "headlines": [],
+  "extras": [
     {
-      "id": "oldport",
-      "label": "The relaxed default",
-      "description": "A waterfront walk, old streets, then a long coffee at Crew beneath the former bank ceiling. Spend the afternoon together without another timed booking.",
-      "duration": "About 2 hours, at your pace"
-    },
-    {
-      "id": "habitat67",
-      "label": "For architecture & design",
-      "description": "Choose the guided architecture visit if Saturday tickets work. More structured than the default walk-and-coffee afternoon; return to the hotel by 5 PM.",
-      "duration": "Guided tour: 90 minutes"
-    },
-    {
-      "id": "notredame",
-      "label": "The dramatic interior",
-      "description": "Go inside Saturday while sightseeing is open. AURA is a separate evening ticket if you want a more produced light-and-sound experience.",
-      "duration": "Saturday daytime; AURA separately"
+      "id": "skating",
+      "label": "Sunday afternoon swap · only if confirmed open",
+      "title": "Esplanade Tranquille · skate under the lights",
+      "text": "A fun shared activity, with a pavilion for warming up. Replace the Little Italy shopping detour with skating; do not add another transfer to the day. The operator still lists the rink as closed with reopening planned for mid-November 2026, so check the live page before committing. Admission is normally free; rentals cost extra.",
+      "source": "https://www.quartierdesspectacles.com/en/place/esplanade-tranquille-skating-rink"
     }
   ]
 }

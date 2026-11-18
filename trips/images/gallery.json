@@ -823,5 +823,30 @@
         "credit": ""
       }
     ]
+  },
+  "skating": {
+    "photos": [
+      {
+        "src": "images/galleries/skating/1.jpg",
+        "alt": "Skaters on the Esplanade Tranquille rink under colorful interactive light projections",
+        "source": "https://www.quartierdesspectacles.com/en/place/esplanade-tranquille-skating-rink-surface",
+        "image_source": "https://cms.quartierdesspectacles.com/files/images/lieux/surfaces-vp/surface-de-la-patinoire-de-l-esplanade-tranquille/_2000x1333_crop_center-center_none/22834/Esplanade-Tranquille_PQDS_2022_Projection-interactive-Test-Au-bord-du-lac-Tranquille_%C2%A9Ulysse-Lemerise-OSA_web_6-2.webp",
+        "credit": "Ulysse Lemerise / OSA, identified in official photo filename"
+      },
+      {
+        "src": "images/galleries/skating/2.jpg",
+        "alt": "A busy evening skate under purple lights at Esplanade Tranquille",
+        "source": "https://www.quartierdesspectacles.com/en/activities-and-events/patins-platines",
+        "image_source": "https://lvc-medias.lavitrine.com/19e57b7a-1b68-5cab-86b9-ba73cba5322e.jpg",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/skating/3.jpg",
+        "alt": "The illuminated Esplanade Tranquille pavilion beside the rink during a past winter season",
+        "source": "https://www.quartierdesspectacles.com/en/activities-and-events/can-santa-claus-skate",
+        "image_source": "https://cms.quartierdesspectacles.com/files/images/_2000x1334_crop_center-center_none/644803/yr.webp",
+        "credit": ""
+      }
+    ]
   }
 }
