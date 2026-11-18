@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f3ec">
+  <meta name="description" content="A flexible Montréal weekend: excellent food, independent shops, neighborhood walks, and just enough luxury.">
+  <title>Weekend Atlas · Montréal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="anonymous"></script>
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to trip plan</a>
+  <header class="topbar">
+    <a class="brand" href="?trip=montreal">Weekend <em>Atlas</em><span>FIELD NOTES FOR A GOOD ESCAPE</span></a>
+    <nav class="trip-switch" aria-label="Choose a trip">
+      <button data-trip="montreal" aria-pressed="true">Montréal <span>02 nights</span></button>
+      <button data-trip="chalmond" aria-pressed="false">Chalmond <span>Archive ↗</span></button>
+    </nav>
+  </header>
+  <main id="main">
+    <div id="loading" role="status">Opening your field notes…</div>
+    <div id="trip-content" hidden></div>
+    <section id="archive" hidden aria-label="Chalmond archive">
+      <div class="archive-head"><p class="eyebrow">Recovered from the original trip</p><h1>Chalmond <em>field notes.</em></h1><p>The original itinerary and map, preserved as a historical trip. Its prices and schedules have not been rechecked.</p><nav><a href="chalmondtrip/itinerary.html" target="archive-frame">Itinerary</a><a href="chalmondtrip/options.html" target="archive-frame">All options</a><a href="chalmondtrip/map.html" target="archive-frame">Original map</a><a href="chalmondtrip/itinerary.html" target="_blank" rel="noopener">Open full page ↗</a></nav></div>
+      <iframe name="archive-frame" title="Original Chalmond trip itinerary" loading="lazy"></iframe>
+    </section>
+  </main>
+  <footer>Weekend Atlas <span>Good places. Loose plans. Room to wander.</span><button id="print" type="button">Print / save PDF ↗</button></footer>
+  <noscript>This planner needs JavaScript. <a href="chalmondtrip/itinerary.html">Open the original Chalmond itinerary</a>.</noscript>
+</body>
+</html>

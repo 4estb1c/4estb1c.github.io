@@ -1,0 +1,82 @@
+{
+  "oldmontreal": {
+    "file": "images/oldmontreal.jpg",
+    "page": "https://www.mtl.org/en/experience/re-discover-new-old-montreal",
+    "image": "https://api.mtl.org/files/default/styles/rectangle_600_706/public/2025-09/56648_0.jpg.webp?itok=dQM8449h"
+  },
+  "mileend": {
+    "file": "images/mileend.jpg",
+    "page": "https://www.mtl.org/en/experience/mile-end",
+    "image": "https://api.mtl.org/files/default/styles/rectangle_1200_675/public/2024-04/50603.jpg.webp?itok=xmT896pZ"
+  },
+  "mountroyal": {
+    "file": "images/mountroyal.jpg",
+    "page": "https://www.mtl.org/en/experience/montreal-tour-mount-royal-park",
+    "image": "https://api.mtl.org/files/default/styles/rectangle_1200_675/public/2020-06/45676_0.jpg.webp?itok=izhb85tw"
+  },
+  "market": {
+    "file": "images/market.jpg",
+    "page": "https://www.mtl.org/en/what-to-do/shopping/jean-talon-market-mtl",
+    "image": "https://api.mtl.org/files/default/styles/rectangle_1200_675/public/2025-08/58595_1.jpg.webp?itok=EgL2iUIQ"
+  },
+  "crew": {
+    "file": "images/crew.jpg",
+    "page": "https://www.mtl.org/en/what-to-do/food/crew-collective-cafe",
+    "image": "https://api.mtl.org/files/default/styles/square_600_600/public/2024-06/56645.jpeg.webp?h=449385bc&itok=KMZphWaQ"
+  },
+  "express": {
+    "file": "images/express.jpg",
+    "page": "https://restaurantlexpress.com/en/",
+    "image": "https://restaurantlexpress.com/wp-content/uploads/2021/07/10-montreal-best-restaurant-2-1536x864.jpg"
+  },
+  "hparfums": {
+    "file": "images/hparfums.jpg",
+    "page": "https://hparfums.com/pages/visit-us",
+    "image": "https://hparfums.com/cdn/shop/files/IMG_3916.jpg?v=1748453897&width=1400"
+  },
+  "stoi": {
+    "file": "images/stoi.jpg",
+    "page": "https://maisonstoi.com/en/pages/a-propos",
+    "image": "http://maisonstoi.com/cdn/shop/files/ASMB_4d587a06-5586-4669-9ea8-5cbab6da173d.jpg?v=1737048139"
+  },
+  "bagels": {
+    "file": "images/bagels.jpg",
+    "page": "https://www.stviateurbagel.com/",
+    "image": "http://stviateurbagel.com/cdn/shop/files/st-viateur-bagel-social-share.png?v=1737128349"
+  },
+  "schwartz": {
+    "file": "images/schwartz.jpg",
+    "page": "https://schwartzsdeli.com/",
+    "image": "https://schwartzsdeli.com/cdn/shop/files/banner-2_8ef066d5-ca08-4d5c-a1e1-14f9a5aacafd.jpg?v=1645906369"
+  },
+  "poutine": {
+    "file": "images/poutine.jpg",
+    "page": "https://www.mtl.org/en/experience/best-poutines-montreal",
+    "image": "https://api.mtl.org/files/default/styles/rectangle_1200_675/public/2022-03/37919_0.jpg.webp?itok=cEjM8nu-"
+  },
+  "monlapin": {
+    "file": "images/monlapin.jpg",
+    "page": "https://www.mtl.org/fr/quoi-faire/gastronomie/mon-lapin",
+    "image": "https://api.mtl.org/files/default/styles/rectangle_1200_675/public/2025-12/website_JPG-62037.jpg.webp?itok=FnOqfxkC"
+  },
+  "dauphin": {
+    "file": "images/dauphin.jpg",
+    "page": "https://www.hotelsdauphin.ca",
+    "image": "https://dauphincontent.imgix.net/nfw8sun8l2hw/2BnVYGMb63PGqSSx5DuwnK/f9d32910691e976cbaad07359f1d8820/HOTELDAUPHIN_MONTREAL_011.jpg?auto=format,compress&w=1400"
+  },
+  "germain": {
+    "file": "images/germain.jpg",
+    "page": "https://www.germainhotels.com/en/le-germain-hotel/montreal",
+    "image": "https://ik.imagekit.io/n9qi9vys6//website-assets/55369153542_c9a13a1af4_k.jpg?w=1200&h=900&fit=crop&auto=compress,format"
+  },
+  "williamgray": {
+    "file": "images/williamgray.jpg",
+    "page": "https://hotelwilliamgray.com/",
+    "image": "https://hotelwilliamgray.com/wp-content/uploads/2017/02/WilliamGray.jpg"
+  },
+  "botabota": {
+    "file": "images/botabota.jpg",
+    "page": "https://botabota.ca/en/",
+    "image": "https://botabota.ca/wp-content/uploads/2026/11/Bota_100926-11-2-1536x864.jpg"
+  }
+}

@@ -1,0 +1,778 @@
+{
+  "id": "montreal",
+  "title": "Montréal",
+  "subtitle": "A change of scenery, with very good taste.",
+  "dates": "November 20–22, 2026",
+  "travelers": "Forrest & Milo",
+  "checked": "November 18, 2026",
+  "intro": "Two nights. Bagels still warm from the oven, little shops worth getting lost in, a proper bistro dinner, and a skyline earned on foot. Pick a mood, then leave room to wander.",
+  "areas": [
+    {
+      "id": "mileend",
+      "name": "Mile End & Outremont",
+      "tag": "The best fit",
+      "image": "mileend",
+      "description": "Your main Saturday neighborhood: cafés, books, independent stores, warm bagels, and niche fragrance. Wander Saint-Viateur, Bernard, and Laurier Ouest. Browse first, buy only what you love.",
+      "source": "https://www.mtl.org/en/experience/mile-end"
+    },
+    {
+      "id": "plateau",
+      "name": "The Plateau & Mount Royal",
+      "tag": "Walk, eat, repeat",
+      "image": "mountroyal",
+      "description": "Residential staircases, Saint-Laurent and Saint-Denis, smoked meat, and a classic French bistro. Add the Kondiaronk lookout if paths are comfortable and the skyline is visible.",
+      "source": "https://www.mtl.org/en/experience/montreal-tour-mount-royal-park"
+    },
+    {
+      "id": "old",
+      "name": "Old Montréal & the waterfront",
+      "tag": "Sunday, unhurried",
+      "image": "oldmontreal",
+      "description": "Stone streets, a spectacular former-bank café, a look at Notre-Dame, and a river walk. Start early and stay compact so the drive home never becomes a race.",
+      "source": "https://www.mtl.org/en/experience/re-discover-new-old-montreal"
+    },
+    {
+      "id": "littleitaly",
+      "name": "Little Italy & Petite-Patrie",
+      "tag": "The food detour",
+      "image": "market",
+      "description": "Jean-Talon Market, neighborhood food shops, and an ambitious dinner if you can get a table. Maison Stoï is farther east: take a taxi for that optional Saturday detour.",
+      "source": "https://www.mtl.org/en/what-to-do/shopping/jean-talon-market-mtl"
+    },
+    {
+      "id": "downtown",
+      "name": "Golden Square Mile & downtown",
+      "tag": "The indoor fallback",
+      "image": "germain",
+      "description": "A useful base and a wet-weather shopping zone. Holt Renfrew Ogilvy is the luxury department-store stop; the Underground City is practical shelter between buildings, not a reason to spend the day below ground.",
+      "source": "https://www.mtl.org/en/experience/kilted-tour-scots-montreal"
+    }
+  ],
+  "places": [
+    {
+      "id": "stviateur",
+      "name": "St-Viateur Bagel",
+      "area": "mileend",
+      "kind": "Food",
+      "lat": 45.5226756,
+      "lng": -73.6019466,
+      "image": "mileend",
+      "budget": "CAD 5–15 pp",
+      "detail": "Start with a hot sesame bagel at the original shop, 263 Saint-Viateur Ouest. Treat it as a snack rather than a full sit-down brunch.",
+      "note": "Walk-in. A Montréal essential.",
+      "source": "https://www.stviateurbagel.com/",
+      "coordinate_source": "https://www.openstreetmap.org/node/1751185097"
+    },
+    {
+      "id": "fairmount",
+      "name": "Fairmount Bagel",
+      "area": "mileend",
+      "kind": "Food",
+      "lat": 45.5228918,
+      "lng": -73.5952309,
+      "image": "mileend",
+      "budget": "CAD 5–15 pp",
+      "detail": "The rival bagel institution. Buy one to split and decide which bakery wins; no need for two full breakfasts.",
+      "note": "Optional tasting swap.",
+      "source": "https://fairmountbagel.com/",
+      "coordinate_source": "https://www.openstreetmap.org/node/1607111414"
+    },
+    {
+      "id": "olimpico",
+      "name": "Café Olimpico",
+      "area": "mileend",
+      "kind": "Coffee",
+      "lat": 45.524084,
+      "lng": -73.600261,
+      "image": "mileend",
+      "budget": "CAD 5–10 pp",
+      "detail": "An espresso stop at 124 Saint-Viateur Ouest. Sit with a coffee, watch the neighborhood, and decide what you feel like doing next.",
+      "note": "An easy pause near the bagel shop.",
+      "source": "https://www.mtl.org/en/experience/mile-end",
+      "coordinate_source": "https://www.openstreetmap.org/node/3944641580"
+    },
+    {
+      "id": "hparfums",
+      "name": "H Parfums",
+      "area": "mileend",
+      "kind": "Shop",
+      "lat": 45.518459,
+      "lng": -73.5965511,
+      "image": "hparfums",
+      "budget": "Browsing free",
+      "detail": "Rare scents from independent perfume houses in a beautifully designed shop at 5064 Hutchison. Ask to compare a few unfamiliar houses rather than buying a bottle blind.",
+      "note": "Published hours: Sat 10 AM–5 PM; Sun noon–5 PM.",
+      "source": "https://hparfums.com/pages/visit-us",
+      "coordinate_source": "https://www.openstreetmap.org/node/11972760724"
+    },
+    {
+      "id": "drawn",
+      "name": "Librairie Drawn & Quarterly",
+      "area": "mileend",
+      "kind": "Shop",
+      "lat": 45.525063,
+      "lng": -73.604058,
+      "image": "mileend",
+      "budget": "Browsing free",
+      "detail": "Independent books, graphic novels, and things to pick up and show each other. A good low-pressure stop on Bernard Ouest.",
+      "note": "Check current hours before visiting.",
+      "source": "https://mtl.drawnandquarterly.com/",
+      "coordinate_source": "https://www.openstreetmap.org/node/2704382357"
+    },
+    {
+      "id": "phonopolis",
+      "name": "Phonopolis",
+      "area": "mileend",
+      "kind": "Shop",
+      "lat": 45.5248368,
+      "lng": -73.6046865,
+      "image": "mileend",
+      "budget": "Browsing free",
+      "detail": "Dig through records on Bernard Ouest. Pair this with the bookshop rather than crossing town for it.",
+      "note": "Optional stop in the same cluster.",
+      "source": "https://www.mtl.org/en/experience/mile-end",
+      "coordinate_source": "https://www.openstreetmap.org/node/2434008344"
+    },
+    {
+      "id": "schwartz",
+      "name": "Schwartz’s Deli",
+      "area": "plateau",
+      "kind": "Food",
+      "lat": 45.5163277,
+      "lng": -73.5776499,
+      "image": "schwartz",
+      "budget": "CAD 25–35 pp",
+      "detail": "Order a medium-fat smoked-meat sandwich, mustard, and a pickle. Use takeaway if the line would swallow your afternoon.",
+      "note": "Published hours: Fri/Sat 10 AM–midnight, Sun 10 AM–11 PM.",
+      "source": "https://schwartzsdeli.com/pages/contact",
+      "coordinate_source": "https://www.openstreetmap.org/node/343490371"
+    },
+    {
+      "id": "lookout",
+      "name": "Kondiaronk lookout",
+      "area": "plateau",
+      "kind": "Walk",
+      "lat": 45.5035328,
+      "lng": -73.58705,
+      "image": "mountroyal",
+      "budget": "Free",
+      "detail": "The signature skyline view from Mount Royal. The Olmsted path is a conversation-friendly uphill walk; the stairs are steeper. This is a real hill, not a quick sidewalk detour.",
+      "note": "Weather-dependent. Skip icy paths or a skyline hidden by fog.",
+      "source": "https://www.mtl.org/en/experience/montreal-tour-mount-royal-park",
+      "coordinate_source": "https://www.openstreetmap.org/way/182750657"
+    },
+    {
+      "id": "express",
+      "name": "L’Express",
+      "area": "plateau",
+      "kind": "Dinner",
+      "lat": 45.5203104,
+      "lng": -73.5743828,
+      "image": "express",
+      "budget": "CAD 75–110 pp",
+      "detail": "The default nice dinner: French bistro atmosphere, a serious wine list, and no need for a tasting-menu marathon. Share a starter, choose a main, and set a wine budget.",
+      "note": "Book by phone: +1 514 845-5333. Published service 11:30 AM–1 AM. Arrival-night dinner only if your ETA works.",
+      "source": "https://restaurantlexpress.com/en/",
+      "coordinate_source": "https://www.openstreetmap.org/node/11973009286"
+    },
+    {
+      "id": "banquise",
+      "name": "La Banquise",
+      "area": "plateau",
+      "kind": "Food",
+      "lat": 45.5253345,
+      "lng": -73.5747528,
+      "image": "poutine",
+      "budget": "CAD 15–25 pp",
+      "detail": "Get a classic poutine to split. This is a fun late-arrival fallback or a snack, not a second full dinner.",
+      "note": "Tourisme Montréal lists 24-hour service. Check the operator before a very late arrival.",
+      "source": "https://labanquise.com/",
+      "coordinate_source": "https://www.openstreetmap.org/node/5228808422",
+      "photo_label": "Food reference / Montréal poutine"
+    },
+    {
+      "id": "crew",
+      "name": "Crew Collective & Café",
+      "area": "old",
+      "kind": "Coffee",
+      "lat": 45.5022617,
+      "lng": -73.5590947,
+      "image": "crew",
+      "budget": "CAD 10–25 pp",
+      "detail": "Coffee beneath the ornate ceiling of a former Royal Bank building at 360 Saint-Jacques. The strongest expensive-looking, inexpensive-feeling stop of the weekend.",
+      "note": "Go early Sunday. Tables and café hours are not guaranteed.",
+      "source": "https://www.mtl.org/en/what-to-do/food/crew-collective-cafe",
+      "coordinate_source": "https://www.openstreetmap.org/node/4396828390"
+    },
+    {
+      "id": "notredame",
+      "name": "Place d’Armes & Notre-Dame",
+      "area": "old",
+      "kind": "Sight",
+      "lat": 45.5044365,
+      "lng": -73.5559901,
+      "image": "oldmontreal",
+      "budget": "Square free; interior extra",
+      "detail": "Walk the square and admire the façade. The blue-and-gold basilica interior is an optional paid visit if religious services and admission times allow.",
+      "note": "Sunday services can limit sightseeing. Reserve an eligible visit slot, or just enjoy the exterior.",
+      "source": "https://www.basiliquenotredame.ca/en",
+      "coordinate_source": "https://www.openstreetmap.org/way/4320792"
+    },
+    {
+      "id": "oldport",
+      "name": "Rue Saint-Paul → Old Port",
+      "area": "old",
+      "kind": "Walk",
+      "lat": 45.5062,
+      "lng": -73.5503,
+      "image": "oldmontreal",
+      "budget": "Free",
+      "detail": "Follow Saint-Paul toward Place Jacques-Cartier, then take the waterfront promenade. Pretty buildings and good conversation are the activity.",
+      "note": "Shorten the exposed river section in wind or sleet.",
+      "source": "https://www.mtl.org/en/experience/re-discover-new-old-montreal"
+    },
+    {
+      "id": "ssense",
+      "name": "SSENSE Montréal",
+      "area": "old",
+      "kind": "Shop",
+      "lat": 45.5043887,
+      "lng": -73.5551579,
+      "image": "oldmontreal",
+      "budget": "Browsing free",
+      "detail": "Architectural fashion destination at 418 Saint-Sulpice. Treat this as a deliberate appointment option, rather than assuming the online inventory is sitting on racks.",
+      "note": "Read the store FAQ and book ahead for item try-ons. Sunday access must be confirmed.",
+      "source": "https://www.ssense.com/en-ca/customer-service/ssense-montreal/faq",
+      "coordinate_source": "https://www.openstreetmap.org/node/7022529885"
+    },
+    {
+      "id": "botabota",
+      "name": "Bota Bota",
+      "area": "old",
+      "kind": "Activity",
+      "lat": 45.4976,
+      "lng": -73.5519,
+      "image": "botabota",
+      "budget": "CAD 90–140 pp allowance",
+      "detail": "A thermal circuit on a moored boat is the unusual Montréal splurge. It replaces a substantial walking block; it does not fit as a bonus on top of everything.",
+      "note": "Reserve first. Published quiet-zone descriptions differ across official pages: boat silence is clear; confirm where conversation is permitted. Bring swimwear. No guaranteed weekend slots or quote.",
+      "source": "https://botabota.ca/en/questions/"
+    },
+    {
+      "id": "jeantalon",
+      "name": "Jean-Talon Market",
+      "area": "littleitaly",
+      "kind": "Food",
+      "lat": 45.5359145,
+      "lng": -73.6150625,
+      "image": "market",
+      "budget": "CAD 20–40 pp",
+      "detail": "Browse Québec cheeses, pastries, produce, and specialty groceries. In November, think of food counters and sheltered sections rather than a summer outdoor market scene.",
+      "note": "Merchant hours vary. Eat here instead of a separate large lunch.",
+      "source": "https://www.mtl.org/en/what-to-do/shopping/jean-talon-market-mtl",
+      "coordinate_source": "https://www.openstreetmap.org/way/22876797"
+    },
+    {
+      "id": "monlapin",
+      "name": "Mon Lapin",
+      "area": "littleitaly",
+      "kind": "Dinner",
+      "lat": 45.5330224,
+      "lng": -73.6106593,
+      "image": "monlapin",
+      "budget": "CAD 130–190 pp allowance",
+      "detail": "The food-first splurge: seasonal small plates and natural wine in Little Italy. Choose it if food is the main event and you can actually secure a reservation.",
+      "note": "Book first, then arrange Saturday around it. L’Express is the simpler fallback.",
+      "source": "https://www.vinmonlapin.com/",
+      "coordinate_source": "https://www.openstreetmap.org/node/5745641621"
+    },
+    {
+      "id": "stoi",
+      "name": "Maison Stoï",
+      "area": "littleitaly",
+      "kind": "Shop",
+      "lat": 45.5443639,
+      "lng": -73.5952609,
+      "image": "stoi",
+      "budget": "Browsing free; purchases extra",
+      "detail": "Handmade ceramics and fragrance at 1956 Beaubien Est. This is a strong match for your shopping brief, but it is a separate taxi detour from Mile End.",
+      "note": "Published shop hours: Saturday 11 AM–5 PM; closed Sunday. Workshops have separate schedules and are not assumed available.",
+      "source": "https://maisonstoi.com/en/pages/contact",
+      "coordinate_source": "https://www.openstreetmap.org/node/11973030564"
+    },
+    {
+      "id": "holt",
+      "name": "Holt Renfrew Ogilvy",
+      "area": "downtown",
+      "kind": "Shop",
+      "lat": 45.4979393,
+      "lng": -73.5757778,
+      "image": "germain",
+      "budget": "Browsing free",
+      "detail": "The polished luxury department-store option at 1307 Sainte-Catherine Ouest. A useful short indoor diversion for fashion and fragrance browsing.",
+      "note": "Check store hours. Saturday’s downtown parade can complicate access.",
+      "source": "https://www.holtrenfrew.com/en/stores/montreal",
+      "coordinate_source": "https://www.openstreetmap.org/way/103521761"
+    },
+    {
+      "id": "lumino",
+      "name": "Quartier des spectacles lights",
+      "area": "downtown",
+      "kind": "Walk",
+      "lat": 45.5081,
+      "lng": -73.5667,
+      "image": "oldmontreal",
+      "budget": "Free to wander",
+      "detail": "Optional evening stroll for light installations and the Christmas market if operating. Keep it spontaneous: stop for a hot drink, then move on.",
+      "note": "Check this weekend’s official listing. Not a timed show or a parade commitment.",
+      "source": "https://www.mtl.org/en/experience/things-to-do-this-weekend"
+    }
+  ],
+  "hotels": [
+    {
+      "id": "dauphin",
+      "name": "Le Dauphin Montréal Centre-Ville",
+      "label": "Spend on dinner instead",
+      "image": "dauphin",
+      "target": [
+        180,
+        250
+      ],
+      "lat": 45.5041739,
+      "lng": -73.5623098,
+      "description": "A practical modern base between downtown and Old Montréal, with continental breakfast included. The least theatrical option leaves more room for food.",
+      "beds": "Confirm a two-bed room for your dates; do not assume every category has two beds.",
+      "parking": "Confirm the current parking arrangement, total charge, and Sunday retrieval access directly.",
+      "source": "https://www.hotelsdauphin.ca/hotels/montreal/",
+      "coordinate_source": "https://www.openstreetmap.org/node/2978023721"
+    },
+    {
+      "id": "germain",
+      "name": "Le Germain Montréal",
+      "label": "My first shortlist",
+      "image": "germain",
+      "target": [
+        300,
+        425
+      ],
+      "lat": 45.5024267,
+      "lng": -73.574419,
+      "description": "A refined downtown base with an explicit Signature Two Queen Beds category. The most straightforward fit for a comfortable shared room and a little luxury.",
+      "beds": "Request Signature Two Queen Beds. This category is verified; date-specific availability is not.",
+      "parking": "Official contact page lists indoor parking at CAD 45/day. Confirm taxes and billing periods.",
+      "source": "https://www.germainhotels.com/en/le-germain-hotel/montreal",
+      "coordinate_source": "https://www.openstreetmap.org/way/123213516"
+    },
+    {
+      "id": "williamgray",
+      "name": "Hôtel William Gray",
+      "label": "The atmosphere upgrade",
+      "image": "williamgray",
+      "target": [
+        350,
+        500
+      ],
+      "lat": 45.507444,
+      "lng": -73.5532782,
+      "description": "The strongest Old Montréal setting, with a design-forward hotel and easy access to the old streets. Worth comparing if its all-in premium is modest.",
+      "beds": "Confirm the exact two-bed category before paying; many rooms have one king.",
+      "parking": "Compare the parking package against room-only plus valet. Direct-book spa benefits require advance reservation and are subject to availability.",
+      "source": "https://hotelwilliamgray.com/rooms/",
+      "coordinate_source": "https://www.openstreetmap.org/node/12194843601"
+    }
+  ],
+  "proposals": [
+    {
+      "id": "balanced",
+      "title": "The good weekend",
+      "tag": "Recommended",
+      "description": "Mile End shops, the skyline, a proper bistro, and an easy Old Montréal Sunday. One nice dinner does the heavy lifting.",
+      "food": [
+        200,
+        280
+      ],
+      "hotel": "germain",
+      "days": [
+        {
+          "id": "friday",
+          "label": "Friday night",
+          "date": "Nov 20",
+          "title": "Arrive. Eat something satisfying.",
+          "summary": "Keep the arrival loose. A reservation should follow your real ETA, not force a rushed drive.",
+          "route": [
+            "banquise"
+          ],
+          "blocks": [
+            [
+              "Evening",
+              "Boston → Montréal",
+              "Assuming a car: leave Boston as early as work permits. Typical direct driving is about 5–6 hours before stops and border delays. Hotel check-in and food may be late."
+            ],
+            [
+              "After check-in",
+              "Poutine, then call it",
+              "La Banquise is the flexible late-night option if you are hungry. If you arrive earlier, call L’Express about late service. Confirm kitchen hours before heading over."
+            ],
+            [
+              "Optional",
+              "One short look around",
+              "Only if you have energy: a brief walk near the hotel. The real trip starts tomorrow."
+            ]
+          ]
+        },
+        {
+          "id": "saturday",
+          "label": "Saturday",
+          "date": "Nov 21",
+          "title": "Bagels, boutiques, and a skyline.",
+          "summary": "Mile End first, then head south. These are broad blocks, not a checklist to finish.",
+          "route": [
+            "stviateur",
+            "drawn",
+            "olimpico",
+            "hparfums",
+            "schwartz",
+            "lookout",
+            "express"
+          ],
+          "blocks": [
+            [
+              "9:30 AM",
+              "Warm bagels & coffee",
+              "St-Viateur, then Olimpico. Browse Drawn & Quarterly and Phonopolis as shops open. Fairmount is an optional taste-test detour."
+            ],
+            [
+              "11 AM–1 PM",
+              "Follow your curiosity",
+              "Walk Bernard and Laurier Ouest, with H Parfums as the anchor. Maison Stoï is a taxi detour if ceramics matter more than the mountain; its Saturday shop closes at 5 PM."
+            ],
+            [
+              "1–2 PM",
+              "Smoked meat lunch",
+              "Head south to Schwartz’s. Share sides and keep the meal moderate. Take transit or a taxi between neighborhoods if the weather is unpleasant."
+            ],
+            [
+              "2–4 PM",
+              "Mount Royal, if it is worth it",
+              "Walk up to Kondiaronk while there is daylight. Leave extra time for the climb and descent. If paths are icy or views poor, substitute indoor shops and cafés."
+            ],
+            [
+              "7 PM",
+              "Dinner at L’Express",
+              "Reserve a table. Budget for a main, a shared starter or dessert, and a controlled wine order. Make the evening about dinner and conversation."
+            ],
+            [
+              "After dinner",
+              "Optional city lights",
+              "A short Quartier des spectacles wander if you still want fresh air. Skip it freely."
+            ]
+          ]
+        },
+        {
+          "id": "sunday",
+          "label": "Sunday",
+          "date": "Nov 22",
+          "title": "Old streets, then home comfortably.",
+          "summary": "A compact morning and an early afternoon departure preserve the 10 PM Boston target.",
+          "route": [
+            "crew",
+            "notredame",
+            "oldport"
+          ],
+          "blocks": [
+            [
+              "9 AM",
+              "Check out & coffee at Crew",
+              "Arrange luggage storage and car retrieval with the hotel. Have coffee and a pastry beneath the old bank ceiling."
+            ],
+            [
+              "10–11:30 AM",
+              "Place d’Armes → Saint-Paul → river",
+              "Enjoy Notre-Dame from the square, the old streets, and a short waterfront walk. Only add the basilica interior if Sunday visitor access is confirmed."
+            ],
+            [
+              "11:30 AM–12:30 PM",
+              "One final lunch",
+              "Choose something nearby from current menus. SSENSE is an optional appointment, not something to wait around for on departure day."
+            ],
+            [
+              "1:30 PM target · 2 PM cutoff",
+              "Collect the car and leave Montréal",
+              "Allow the rest of the day for driving, border queues, a stop, and Boston traffic. Recheck live navigation and southbound US border waits before lunch; leave earlier if conditions require it. The 10 PM arrival is a target, not a guarantee."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "food",
+      "title": "Follow the appetite",
+      "tag": "Food first",
+      "description": "Keep Mile End, trade the climb for Jean-Talon, and make Mon Lapin the one ambitious dinner. Book that table before choosing this version.",
+      "food": [
+        270,
+        390
+      ],
+      "hotel": "dauphin",
+      "days": [
+        {
+          "id": "friday",
+          "label": "Friday night",
+          "date": "Nov 20",
+          "title": "A flexible first bite.",
+          "summary": "Dinner depends on your actual arrival. Avoid a prepaid or early reservation.",
+          "route": [
+            "banquise"
+          ],
+          "blocks": [
+            [
+              "Evening",
+              "Drive & check in",
+              "Allow about 5–6 hours direct driving plus stops and the border. A late poutine is enough tonight."
+            ],
+            [
+              "Late",
+              "La Banquise",
+              "Split a classic poutine. Save both appetite and budget for Saturday."
+            ]
+          ]
+        },
+        {
+          "id": "saturday",
+          "label": "Saturday",
+          "date": "Nov 21",
+          "title": "Eat your way north.",
+          "summary": "Mile End → Little Italy. Take a taxi between the two clusters if it is cold; there is no prize for excess walking.",
+          "route": [
+            "fairmount",
+            "olimpico",
+            "drawn",
+            "hparfums",
+            "jeantalon",
+            "monlapin"
+          ],
+          "blocks": [
+            [
+              "9:30 AM",
+              "The bagel comparison",
+              "Fairmount or St-Viateur, coffee, and a few independent shops. Have snacks rather than a heavy brunch."
+            ],
+            [
+              "Late morning",
+              "H Parfums + a bookshop",
+              "Make space between meals. Browse on Bernard and Hutchison before moving north."
+            ],
+            [
+              "1–3 PM",
+              "Jean-Talon Market",
+              "Build a grazing lunch from the vendors. Explore Little Italy and choose food souvenirs with care; check what can cross the border before buying perishables."
+            ],
+            [
+              "Afternoon",
+              "Optional ceramics detour",
+              "Maison Stoï is open 11 AM–5 PM Saturday, closed Sunday. Taxi over if that is your priority; otherwise stay in Little Italy."
+            ],
+            [
+              "Reservation time",
+              "Mon Lapin",
+              "Only use this plan after confirming a table. Budget explicitly for small plates and wine. If unavailable, book L’Express and use the recommended plan’s evening."
+            ]
+          ]
+        },
+        {
+          "id": "sunday",
+          "label": "Sunday",
+          "date": "Nov 22",
+          "title": "A small Old Montréal finish.",
+          "summary": "The same early departure applies. Do not turn brunch into a queue you cannot leave.",
+          "route": [
+            "crew",
+            "notredame",
+            "oldport"
+          ],
+          "blocks": [
+            [
+              "9 AM",
+              "Crew & the old bank ceiling",
+              "Check out, store bags, and head for coffee. Keep breakfast easy."
+            ],
+            [
+              "10–11:30 AM",
+              "The old-city loop",
+              "Place d’Armes, Saint-Paul, and a little waterfront. Skip the exposed section in poor weather."
+            ],
+            [
+              "Noon",
+              "An early lunch nearby",
+              "Choose a quick meal and collect your bags. No long tasting menu today."
+            ],
+            [
+              "1:30 PM target · 2 PM cutoff",
+              "Start the Boston drive",
+              "Check live routing and southbound border waits. Move departure earlier if needed to protect the 10 PM target."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "design",
+      "title": "A little more indulgent",
+      "tag": "Shops & spa",
+      "description": "Trade the mountain for independent shops and an optional floating spa. Keep Saturday’s dinner simpler and protect Sunday’s departure.",
+      "food": [
+        200,
+        280
+      ],
+      "extra": [
+        90,
+        140
+      ],
+      "hotel": "williamgray",
+      "days": [
+        {
+          "id": "friday",
+          "label": "Friday night",
+          "date": "Nov 20",
+          "title": "Check in, settle in.",
+          "summary": "Make the hotel part of the experience without making arrival complicated.",
+          "route": [],
+          "blocks": [
+            [
+              "Evening",
+              "Drive & check in",
+              "Allow about 5–6 hours direct driving plus the border and stops. Ask the hotel about late food before arrival."
+            ],
+            [
+              "After check-in",
+              "Keep it local",
+              "Have a small meal near your hotel if service is still running. No timed activity tonight."
+            ]
+          ]
+        },
+        {
+          "id": "saturday",
+          "label": "Saturday",
+          "date": "Nov 21",
+          "title": "Objects, scents, and warm water.",
+          "summary": "Choose two shopping anchors and a spa, rather than trying every boutique in the city.",
+          "route": [
+            "stviateur",
+            "hparfums",
+            "stoi",
+            "botabota",
+            "express"
+          ],
+          "blocks": [
+            [
+              "9:30 AM",
+              "Bagels in Mile End",
+              "Start with St-Viateur and a coffee. Add a bookshop if you feel like it."
+            ],
+            [
+              "11 AM",
+              "H Parfums",
+              "Compare niche scents and take your time. There is no obligation to turn browsing into a large purchase."
+            ],
+            [
+              "12:30–2 PM",
+              "Maison Stoï or downtown",
+              "Taxi to Stoï for ceramics, then a casual lunch. In rain, Holt Renfrew Ogilvy is an indoor alternative, though the downtown parade may complicate access."
+            ],
+            [
+              "Mid-afternoon · reserve first",
+              "Bota Bota, optionally",
+              "Book an available thermal-circuit slot and allow time to change. The boat is a quiet environment; confirm any conversation-permitted areas directly. If you want uninterrupted conversation, replace this with cafés and a waterfront walk."
+            ],
+            [
+              "Evening",
+              "L’Express",
+              "Take a taxi to dinner. Keep the food order simple if you have already spent on the spa. No rooftop or outdoor summer experience is assumed open."
+            ]
+          ]
+        },
+        {
+          "id": "sunday",
+          "label": "Sunday",
+          "date": "Nov 22",
+          "title": "One beautiful morning.",
+          "summary": "Enjoy the old city near your hotel, then leave while the day is still young.",
+          "route": [
+            "crew",
+            "notredame",
+            "oldport"
+          ],
+          "blocks": [
+            [
+              "9 AM",
+              "Coffee in a former bank",
+              "Crew, then the short old-city loop. Arrange checkout, luggage, and valet retrieval early."
+            ],
+            [
+              "Late morning",
+              "One last look",
+              "Place d’Armes and Saint-Paul. SSENSE only if you already have an appointment that fits, with no departure delay."
+            ],
+            [
+              "Noon",
+              "A nearby lunch",
+              "Keep it easy and settle up before collecting the car."
+            ],
+            [
+              "1:30 PM target · 2 PM cutoff",
+              "Leave for Boston",
+              "Use current route and southbound border estimates, and leave earlier if necessary. Be home around 10 PM as the planning target."
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "logistics": [
+    {
+      "title": "Dates & assumptions",
+      "body": "Friday, November 20 to Sunday, November 22, 2026. Assumes driving from Boston, two travelers, and one shared room with two beds. Nothing is booked. Montréal and Boston share Eastern Time.",
+      "source": "https://www.mtl.org/en/experience/usa-to-montreal-your-guide-to-great-road-trip"
+    },
+    {
+      "title": "Sunday is a morning, not a full day",
+      "body": "Target leaving Montréal at 1:30 PM, with 2 PM as the plan’s latest departure. Typical direct driving is about 5–6 hours, then add stops and variable border/traffic delays. Check live routing and US-bound crossing waits before lunch. Depart earlier in poor conditions.",
+      "source": "https://turo.com/blog/wayfaring/boston-to-montreal-drive/"
+    },
+    {
+      "title": "Check the correct border direction",
+      "body": "Friday: check Canadian entry waits for Saint-Armand/Philipsburg. Sunday: check US entry waits for Highgate Springs. The official US page is the relevant one on the trip home. Have the travel documents appropriate to each traveler and confirm car/rental coverage before leaving.",
+      "source": "https://bwt.cbp.gov/"
+    },
+    {
+      "title": "Park once; walk by neighborhood",
+      "body": "Leave the car at the hotel and use transit or taxis between clusters. The map joins approximate venue pins with guide lines; those are not navigable walking paths. Use the directions buttons for actual routes. Verify the pin and entrance before setting off.",
+      "source": "https://www.mtl.org/en/experience/usa-to-montreal-your-guide-to-great-road-trip"
+    },
+    {
+      "title": "November plan B",
+      "body": "Wear layers and bring shoes suitable for wet or slippery paths. Swap Mount Royal and exposed waterfront stretches for cafés, bookshops, H Parfums, or downtown shopping if conditions are poor. Check the forecast just before leaving; no forecast has been assumed here.",
+      "source": "https://weather.gc.ca/city/pages/qc-147_metric_e.html"
+    },
+    {
+      "title": "A busy Saturday downtown",
+      "body": "The official weekend listing includes the Santa Claus Parade on November 21 along René-Lévesque. It is optional; the main Saturday plans stay in other neighborhoods. Check event-related road restrictions before driving downtown.",
+      "source": "https://www.mtl.org/en/experience/things-to-do-this-weekend"
+    },
+    {
+      "title": "What the budgets mean",
+      "body": "All amounts are CAD. Food, spa, and hotel ranges are planning allowances, not live quotes or confirmed availability. Hotel targets are per room per night before taxes and parking. Food allowances exclude tax and tip. The calculator adds adjustable buffers; shopping and travel costs are separate.",
+      "source": "https://restaurantlexpress.com/en/"
+    },
+    {
+      "title": "Book only the anchors",
+      "body": "Shortlist the hotel’s two-bed category, reserve Saturday dinner, and reserve a spa only if you choose that version. Recheck operator hours on the day. Everything else is designed to be chosen as you wander.",
+      "source": "https://www.germainhotels.com/en/le-germain-hotel/montreal"
+    }
+  ],
+  "location": "Montréal, Québec",
+  "center": [
+    45.518,
+    -73.585
+  ]
+}
