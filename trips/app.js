@@ -54,12 +54,14 @@ class Itinerary {
     const stops = block.stops.map(id => this.place(id));
     const destination = block.returnToHotel ? this.data.hotel : stops[0];
     const nearby = block.nearby || [];
+    const picturedPlaces = stops.length ? stops : [this.data.hotel];
+    const stopPhotos = picturedPlaces.map(place => `<figure class="stop-gallery"><figcaption>${escapeHtml(place.name)}</figcaption>${this.gallery(place.id)}</figure>`).join('');
     return `<article class="stop">
       <div class="stop-copy"><p class="time">${escapeHtml(block.time)}</p><h3>${escapeHtml(block.title)}</h3><p>${escapeHtml(block.text)}</p>
       ${destination ? `<div class="stop-links"><a href="${this.directions(origin,destination,block.mode || 'walking')}" target="_blank" rel="noopener">${block.mode === 'driving' ? 'Taxi directions' : 'Walking directions'}</a><a href="${escapeHtml(destination.source)}" target="_blank" rel="noopener">Place details</a></div>` : ''}
       ${stops.length > 1 ? `<p class="stop-route">Then walk: ${stops.slice(1).map(p=>`<a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${p.mapQuery || p.name}, ${this.data.location}`)}" target="_blank" rel="noopener">${escapeHtml(p.name)}</a>`).join(' → ')}</p>` : ''}
-      ${nearby.length ? `<div class="nearby"><span>Also nearby, if something catches your eye</span>${nearby.map(item=>{const p=this.place(item.id);return `<p><a href="${escapeHtml(p.source)}" target="_blank" rel="noopener">${escapeHtml(p.name)}</a> · ${escapeHtml(item.text)}</p>`;}).join('')}</div>` : ''}</div>
-      ${destination ? `<a class="photo-jump" href="#place-${destination.id}">Photos & nearby options</a>` : ''}
+      ${nearby.length ? `<div class="nearby"><span>Also nearby, if something catches your eye</span>${nearby.map(item=>{const p=this.place(item.id);return `<p><a href="${escapeHtml(p.source)}" target="_blank" rel="noopener">${escapeHtml(p.name)}</a> · ${escapeHtml(item.text)}</p>${this.gallery(p.id)}`;}).join('')}</div>` : ''}</div>
+      ${stopPhotos}
     </article>`;
   }
 
