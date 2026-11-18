@@ -120,5 +120,25 @@
     "file": "images/empreinte.jpg",
     "page": "https://www.lempreintecoop.com/en/pages/boutique-dart-vieux-montreal-lempreinte-cooperative",
     "image": "https://cdn.shopify.com/s/files/1/0464/2622/6844/files/Lempreinte-interieur-2_1024x1024.jpg?v=1600174114"
+  },
+  "habitat67": {
+    "file": "images/habitat67.jpg",
+    "page": "https://www.mtl.org/en/what-to-do/culture-arts-heritage/habitat-67",
+    "image": "https://api.mtl.org/files/default/styles/rectangle_1200_675/public/2017-05/32568H.jpg.webp?itok=HPwrYaXM"
+  },
+  "citememoire": {
+    "file": "images/citememoire.jpg",
+    "page": "https://www.montrealenhistoires.com/en/cite_memoire_montreal/",
+    "image": "https://www.montrealenhistoires.com/wp-content/uploads/2025/01/Cite_memoire_2025.jpg"
+  },
+  "wilensky": {
+    "file": "images/wilensky.jpg",
+    "page": "https://tastet.ca/en/reviews/wilensky-a-timeless-and-successful-classic/",
+    "image": "https://tastet.ca/wp-content/uploads/2017/09/wilensky-mile-end-montreal-7-e1504902126859.jpg"
+  },
+  "satosphere": {
+    "file": "images/satosphere.jpg",
+    "page": "https://sat.qc.ca/fr/evenements/off-domesicle-m-pour-montreal-2026/",
+    "image": "https://ressources.sat.qc.ca/uploads/2026/10/offd_mpm_vignette.jpg"
   }
 }

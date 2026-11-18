@@ -582,17 +582,120 @@
       "coordinate_source": "https://www.openstreetmap.org/way/103521761"
     },
     {
-      "id": "lumino",
-      "name": "Quartier des spectacles lights",
-      "area": "downtown",
+      "id": "habitat67",
+      "name": "Habitat 67",
+      "area": "old",
+      "kind": "Sight",
+      "image": "habitat67",
+      "budget": "Exterior free; tour CAD 50–80 pp allowance, not a quote",
+      "mapQuery": "Habitat 67, 2600 Avenue Pierre-Dupuy",
+      "detail": "Moshe Safdie’s Expo 67 housing experiment: stacked concrete modules designed to combine apartment density with private garden terraces. The interesting part is the housing idea and its physical execution, rather than a conventional skyline viewpoint.",
+      "note": "The English-tour calendar runs through Nov 22, 2026 and describes a 90-minute guided visit. Saturday tickets and price are not verified. Book an actual Saturday slot before rearranging the day. Sunday’s late tour would conflict with the drive home.",
+      "source": "https://www.weezevent.com/widget_multi.php?100765.1.1=&lg_billetterie=46",
+      "fit": "The strongest architecture candidate for your novelty criterion: a real, site-specific experiment with density, privacy, terraces, and prefabrication.",
+      "evidence": [
+        {
+          "label": "Architect: the modular housing idea and construction",
+          "url": "https://www.safdiearchitects.com/projects/habitat-67/"
+        },
+        {
+          "label": "Tour operator: 2026 calendar and 90-minute visit",
+          "url": "https://www.weezevent.com/widget_multi.php?100765.1.1=&lg_billetterie=46"
+        }
+      ],
+      "tradeoff": "It is across the water from Old Montréal, not a casual extension of the waterfront sidewalk. Replace the Mount Royal block rather than adding both. The complex is residential; internal walkways are not a public self-guided route.",
+      "unique": "Best fit / a real design experiment",
+      "unique_reason": "An Expo 67 prototype for a different kind of urban housing. There is substance here to inspect and argue about.",
+      "swap": "Saturday: replace Mount Royal if you secure a tour. Otherwise consider the exterior only if architecture matters enough to justify the separate trip.",
+      "lat": 45.4998779,
+      "lng": -73.5437925,
+      "coordinate_source": "https://www.openstreetmap.org/way/440195613"
+    },
+    {
+      "id": "citememoire",
+      "name": "Cité Mémoire night walk",
+      "area": "old",
       "kind": "Walk",
-      "lat": 45.5081,
-      "lng": -73.5667,
-      "image": "oldmontreal",
-      "budget": "Free to wander",
-      "detail": "Optional evening stroll for light installations and the Christmas market if operating. Keep it spontaneous: stop for a hot drink, then move on.",
-      "note": "Check this weekend’s official listing. Not a timed show or a parade commitment.",
-      "source": "https://www.mtl.org/en/experience/things-to-do-this-weekend"
+      "image": "citememoire",
+      "budget": "Free; phone/app data may apply",
+      "mapQuery": "Champ-de-Mars Montreal",
+      "detail": "Montréal-specific stories projected onto the city’s actual walls and spaces. Choose one or two tableaux on an evening walk; use the free Montréal en Histoires app for synchronized sound and context if you want it.",
+      "note": "The operator announces nine Old Montréal scenes reopening from May 17, 2026, Wednesday–Sunday after nightfall. Its page also retains the old 2024 closure notice. Use the current app/map to confirm which scenes are operating before setting out.",
+      "source": "https://www.montrealenhistoires.com/en/cite_memoire_montreal/",
+      "fit": "A locally grounded nighttime walk is a better fit than buying a generic immersive-exhibition ticket simply because it is marketed as unusual.",
+      "evidence": [
+        {
+          "label": "Operator: current reopening notice, schedule, and tableau locations",
+          "url": "https://www.montrealenhistoires.com/en/cite_memoire_montreal/"
+        },
+        {
+          "label": "Operator FAQ: app, sound, and downloadable content",
+          "url": "https://www.montrealenhistoires.com/en/faq/"
+        }
+      ],
+      "tradeoff": "Weather and operating projectors matter. Full soundtracks require attention, so pause conversation for a scene or simply inspect the visuals. This belongs on Saturday night, not Sunday after you have left.",
+      "unique": "Easy option / the city becomes the setting",
+      "unique_reason": "The locations and stories are Montréal’s. You can try a short section and leave if it does not hold your attention.",
+      "swap": "Saturday evening: choose this instead of pinball or a second bar, after confirming the live app’s active locations.",
+      "lat": 45.5101439,
+      "lng": -73.556487,
+      "coordinate_source": "https://www.openstreetmap.org/node/7052605741"
+    },
+    {
+      "id": "wilensky",
+      "name": "Wilensky’s Light Lunch",
+      "area": "mileend",
+      "kind": "Food",
+      "image": "wilensky",
+      "budget": "CAD 12–22 pp allowance",
+      "mapQuery": "Wilensky's Light Lunch, 34 Avenue Fairmount Ouest",
+      "detail": "A long-running Mile End lunch counter for the pressed salami-and-bologna Special and a fountain drink. This is a small piece of Montréal’s Jewish food culture that is still a working lunch spot, not a staged attraction.",
+      "note": "34 Fairmount Ouest. Current local listings show Saturday 10 AM–4 PM and Sunday closed; confirm before visiting. The Special comes with mustard and is traditionally served uncut.",
+      "source": "https://www.wilenskys.com/",
+      "fit": "A modest, specific food tradition can be a more memorable local experience than another expensive attraction.",
+      "evidence": [
+        {
+          "label": "Cultural context: Montréal’s Jewish food traditions",
+          "url": "https://www.mtl.org/en/experience/jewish-food-and-culture"
+        },
+        {
+          "label": "Local listing: sandwich, address, and Saturday hours",
+          "url": "https://www.restomontreal.ca/resto/wilensky-montreal/830/en/"
+        }
+      ],
+      "tradeoff": "It is deliberately simple. Choose it because the food and history appeal, not because the ordering customs are a novelty act. Swap it for Schwartz’s lunch rather than eating both.",
+      "unique": "Local ritual / small and unmanufactured",
+      "unique_reason": "A particular sandwich, lunch counter, and neighborhood history. Low stakes, inexpensive, and directly on the Mile End route.",
+      "swap": "Saturday lunch swap for Schwartz’s. Keep the bagel tasting small if you choose this.",
+      "lat": 45.5233166,
+      "lng": -73.5948304,
+      "coordinate_source": "https://www.openstreetmap.org/node/1655424856"
+    },
+    {
+      "id": "satosphere",
+      "name": "SAT Satosphère · Off Dômesicle",
+      "area": "downtown",
+      "kind": "Activity",
+      "image": "satosphere",
+      "budget": "Listed ticket tiers CAD 14.29–27.86 + tax/fees; live stock unverified",
+      "mapQuery": "Societe des arts technologiques, 1201 Boulevard Saint-Laurent",
+      "detail": "For this particular weekend, SAT lists Off Dômesicle x M pour Montréal: DJs with 360-degree visuals inside the Satosphère dome. The draw is a working Montréal arts-and-technology venue and a real local event, not a generic room of projected paintings.",
+      "note": "Saturday Nov 21, 10 PM to Sunday Nov 22, 3 AM; 18+. The official page lists ticket tiers, not confirmed remaining inventory. Check the ticket conditions, especially any pre-11 PM entry tier.",
+      "source": "https://sat.qc.ca/fr/evenements/off-domesicle-m-pour-montreal-2026/",
+      "fit": "A credible arts/technology wild card if you are curious enough to trade some conversation for a loud night out.",
+      "evidence": [
+        {
+          "label": "Official event: date, 360° visuals, artists, hours, and ticket tiers",
+          "url": "https://sat.qc.ca/fr/evenements/off-domesicle-m-pour-montreal-2026/"
+        }
+      ],
+      "tradeoff": "This is a club night. It is a poor fit for uninterrupted conversation and a late finish makes Sunday harder. It is not in the default itinerary or food budget.",
+      "unique": "Wild card / only if the tradeoff appeals",
+      "unique_reason": "An actual event during your stay, in Montréal’s Satosphère. More distinctive than a conventional bar, but much less conversation-friendly.",
+      "swap": "Saturday late night instead of the bar/pinball plan. You do not need to stay until closing, and Sunday departure stays fixed.",
+      "lat": 45.5096562,
+      "lng": -73.562583,
+      "coordinate_source": "https://www.openstreetmap.org/way/109752885"
     }
   ],
   "hotels": [
@@ -721,7 +824,7 @@
             [
               "2–4 PM",
               "Mount Royal, if it is worth it",
-              "Walk up to Kondiaronk while there is daylight. Leave extra time for the climb and descent. If paths are icy or views poor, substitute indoor shops and cafés."
+              "Walk up to Kondiaronk while there is daylight. Leave extra time for the climb and descent. If paths are icy or views poor, substitute indoor shops and cafés. If a Saturday Habitat 67 tour is available, it can replace this whole block; allow the operator’s 90-minute tour plus travel and early arrival."
             ],
             [
               "7 PM",
@@ -731,7 +834,7 @@
             [
               "After dinner · optional",
               "A few games or one good drink",
-              "North Star is the easy pinball option near the Saint-Laurent food strip. For a more polished cocktail, taxi to Cloakroom, accepting its walk-in queue. Choose one, or simply walk back; these are not included as mandatory extra spending."
+              "North Star is the easy pinball option near the Saint-Laurent food strip. For a more polished cocktail, taxi to Cloakroom, accepting its walk-in queue. Choose one, or simply walk back; these are not included as mandatory extra spending. A short Cité Mémoire walk in Old Montréal is another alternative, with currently operating scenes checked in the app."
             ]
           ]
         },
@@ -1065,7 +1168,7 @@
         "now": "North Star for pinball, Mount Royal for the skyline, and a compact Old Montréal walk. Skip the mountain in poor conditions."
       }
     ],
-    "method": "I compared local editorial guides, relevant community discussions, Google-linked review summaries, and operators’ pages, then filtered for your interests and neighborhood fit. The eight highlighted additions are alternatives, not eight more obligations. Ratings are a cross-check, not a ranking formula.",
+    "method": "I compared local editorial guides, relevant community discussions, Google-linked review summaries, and operators’ pages, then filtered for your interests and neighborhood fit. The eight highlighted additions are alternatives, not eight more obligations. Ratings are a cross-check, not a ranking formula. A separate Montréal-specific section evaluates architecture, local food traditions, and date-specific events, with explicit tradeoffs.",
     "limits": "Direct Google Maps review pages were inaccessible to the research tool. Google scores below are explicitly attributed to the secondary publisher and its dated snapshot; they were not read live from Maps. Reddit votes refer to the named individual comment and can change. Where scores were not visible, no number is supplied. No inference that all reviewers are locals is made.",
     "sources": [
       {
@@ -1087,6 +1190,29 @@
       {
         "label": "r/MTLFoodLovers: cocktail discussion, including dissent",
         "url": "https://www.reddit.com/r/MTLFoodLovers/comments/1tmz6cs/where_are_the_good_cocktail_places/"
+      }
+    ]
+  },
+  "unique": {
+    "title": "Something you could only do here?",
+    "intro": "I would prioritize a place-specific idea, a living local tradition, or a worthwhile event over novelty branding. These are the few candidates I would seriously consider. They replace a block in the plan rather than making the weekend busier.",
+    "ids": [
+      "habitat67",
+      "citememoire",
+      "wilensky",
+      "satosphere"
+    ],
+    "verdict": "My pick is Habitat 67 if a Saturday tour is available and the architecture interests you. For a lower-commitment addition, try a short Cité Mémoire walk or swap lunch to Wilensky’s. SAT is a deliberately optional wild card.",
+    "excluded": [
+      {
+        "name": "LUMINO",
+        "reason": "The current tourism page dates the next edition January 21–March 7, 2027, outside this trip. Conflicting broad winter roundups are not enough to schedule it.",
+        "source": "https://www.mtl.org/en/experience/lumino"
+      },
+      {
+        "name": "Biosphère museum / a second Expo detour",
+        "reason": "The Expo 67 dome is architecturally interesting, but I would choose one architecture detour. The generic museum visit does not earn extra itinerary time on your stated criteria.",
+        "source": "https://www.parcjeandrapeau.com/en/biosphere-environment-museum-montreal/"
       }
     ]
   }
