@@ -21,6 +21,10 @@ test('untimed optimization preserves endpoints and every stop without mutating t
   assert.deepEqual(ordered.map(p=>p.id).sort(),points.map(p=>p.id).sort());
   assert.ok(TripRoute.length(ordered)<TripRoute.length(points));
   assert.deepEqual(TripRoute.order(points),ordered);
+  for (let seed=1;seed<=20;seed++) {
+    const sample=Array.from({length:7},(_,i)=>({id:i,lat:45+Math.sin(i*seed)/10,lng:-73+Math.cos(i+seed)/10}));
+    assert.ok(TripRoute.length(TripRoute.order(sample)) <= TripRoute.length(sample)+1e-8);
+  }
 });
 
 test('empty, small, and coincident routes terminate and retain all entries', () => {

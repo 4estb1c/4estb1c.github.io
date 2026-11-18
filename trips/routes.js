@@ -49,7 +49,7 @@ export class TripRoute {
         }
       }
     }
-    return route;
+    return this.length(route) <= this.length(stops) ? route : [...stops];
   }
 
   /** Actual street directions are delegated to the map provider, without claiming local street routing.
