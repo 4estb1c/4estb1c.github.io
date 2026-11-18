@@ -61,7 +61,8 @@
       "detail": "Start with a hot sesame bagel at the original shop, 263 Saint-Viateur Ouest. Treat it as a snack rather than a full sit-down brunch.",
       "note": "Walk-in. A Montréal essential.",
       "source": "https://www.stviateurbagel.com/",
-      "coordinate_source": "https://www.openstreetmap.org/node/1751185097"
+      "coordinate_source": "https://www.openstreetmap.org/node/1751185097",
+      "mapQuery": "St-Viateur Bagel, 263 Rue Saint-Viateur Ouest"
     },
     {
       "id": "fairmount",
@@ -75,7 +76,8 @@
       "detail": "The rival bagel institution. Buy one to split and decide which bakery wins; no need for two full breakfasts.",
       "note": "Optional tasting swap.",
       "source": "https://fairmountbagel.com/",
-      "coordinate_source": "https://www.openstreetmap.org/node/1607111414"
+      "coordinate_source": "https://www.openstreetmap.org/node/1607111414",
+      "mapQuery": "Fairmount Bagel, 74 Avenue Fairmount Ouest"
     },
     {
       "id": "olimpico",
@@ -89,7 +91,8 @@
       "detail": "An espresso stop at 124 Saint-Viateur Ouest. Sit with a coffee, watch the neighborhood, and decide what you feel like doing next.",
       "note": "An easy pause near the bagel shop.",
       "source": "https://www.mtl.org/en/experience/mile-end",
-      "coordinate_source": "https://www.openstreetmap.org/node/3944641580"
+      "coordinate_source": "https://www.openstreetmap.org/node/3944641580",
+      "mapQuery": "Café Olimpico, 124 Rue Saint-Viateur Ouest"
     },
     {
       "id": "hparfums",
@@ -103,7 +106,8 @@
       "detail": "Rare scents from independent perfume houses in a beautifully designed shop at 5064 Hutchison. Ask to compare a few unfamiliar houses rather than buying a bottle blind.",
       "note": "Published hours: Sat 10 AM–5 PM; Sun noon–5 PM.",
       "source": "https://hparfums.com/pages/visit-us",
-      "coordinate_source": "https://www.openstreetmap.org/node/11972760724"
+      "coordinate_source": "https://www.openstreetmap.org/node/11972760724",
+      "mapQuery": "H Parfums, 5064 Rue Hutchison"
     },
     {
       "id": "drawn",
@@ -117,7 +121,8 @@
       "detail": "Independent books, graphic novels, and things to pick up and show each other. A good low-pressure stop on Bernard Ouest.",
       "note": "Check current hours before visiting.",
       "source": "https://mtl.drawnandquarterly.com/",
-      "coordinate_source": "https://www.openstreetmap.org/node/2704382357"
+      "coordinate_source": "https://www.openstreetmap.org/node/2704382357",
+      "mapQuery": "Librairie Drawn & Quarterly, 176 Rue Bernard Ouest"
     },
     {
       "id": "phonopolis",
@@ -159,7 +164,8 @@
       "detail": "The signature skyline view from Mount Royal. The Olmsted path is a conversation-friendly uphill walk; the stairs are steeper. This is a real hill, not a quick sidewalk detour.",
       "note": "Weather-dependent. Skip icy paths or a skyline hidden by fog.",
       "source": "https://www.mtl.org/en/experience/montreal-tour-mount-royal-park",
-      "coordinate_source": "https://www.openstreetmap.org/way/182750657"
+      "coordinate_source": "https://www.openstreetmap.org/way/182750657",
+      "mapQuery": "Belvédère Kondiaronk"
     },
     {
       "id": "express",
@@ -216,7 +222,8 @@
       "detail": "Walk the square and admire the façade. The blue-and-gold basilica interior is an optional paid visit if religious services and admission times allow.",
       "note": "Sunday services can limit sightseeing. Reserve an eligible visit slot, or just enjoy the exterior.",
       "source": "https://www.basiliquenotredame.ca/en",
-      "coordinate_source": "https://www.openstreetmap.org/way/4320792"
+      "coordinate_source": "https://www.openstreetmap.org/way/4320792",
+      "mapQuery": "Place d’Armes"
     },
     {
       "id": "oldport",
@@ -229,7 +236,8 @@
       "budget": "Free",
       "detail": "Follow Saint-Paul toward Place Jacques-Cartier, then take the waterfront promenade. Pretty buildings and good conversation are the activity.",
       "note": "Shorten the exposed river section in wind or sleet.",
-      "source": "https://www.mtl.org/en/experience/re-discover-new-old-montreal"
+      "source": "https://www.mtl.org/en/experience/re-discover-new-old-montreal",
+      "mapQuery": "Quai Jacques-Cartier"
     },
     {
       "id": "ssense",
@@ -298,7 +306,8 @@
       "detail": "Handmade ceramics and fragrance at 1956 Beaubien Est. This is a strong match for your shopping brief, but it is a separate taxi detour from Mile End.",
       "note": "Published shop hours: Saturday 11 AM–5 PM; closed Sunday. Workshops have separate schedules and are not assumed available.",
       "source": "https://maisonstoi.com/en/pages/contact",
-      "coordinate_source": "https://www.openstreetmap.org/node/11973030564"
+      "coordinate_source": "https://www.openstreetmap.org/node/11973030564",
+      "mapQuery": "Maison Stoï, 1956 Rue Beaubien Est"
     },
     {
       "id": "holt",

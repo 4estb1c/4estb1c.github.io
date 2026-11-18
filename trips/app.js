@@ -3,7 +3,7 @@ import { TripRoute } from './routes.js';
 const escapeHtml = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const $ = selector => document.querySelector(selector);
 const money = value => Math.round(value).toLocaleString('en-CA');
-const mapsLink = (place, location) => `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${place.name}, ${location}`)}`;
+const mapsLink = (place, location) => `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${place.mapQuery || place.name}, ${location}`)}`;
 
 /** One data record supplies the guide, itinerary, map, and budget for a trip. */
 class TripPlanner {

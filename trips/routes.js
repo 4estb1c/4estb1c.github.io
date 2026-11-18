@@ -57,7 +57,7 @@ export class TripRoute {
    */
   static directions(stops, location = '') {
     if (stops.length < 2) return null;
-    const address = p => [p.name, location].filter(Boolean).join(', ');
+    const address = p => [p.mapQuery || p.name, location].filter(Boolean).join(', ');
     const params = new URLSearchParams({api: '1', origin: address(stops[0]), destination: address(stops.at(-1)), travelmode: 'walking'});
     if (stops.length > 2) params.set('waypoints', stops.slice(1, -1).map(address).join('|'));
     return `https://www.google.com/maps/dir/?${params}`;
