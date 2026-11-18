@@ -12,7 +12,7 @@
       "name": "Mile End & Outremont",
       "tag": "The best fit",
       "image": "mileend",
-      "description": "Your main Saturday neighborhood: cafés, books, independent stores, warm bagels, and niche fragrance. Wander Saint-Viateur, Bernard, and Laurier Ouest. Browse first, buy only what you love.",
+      "description": "The best main Saturday cluster: bagels, coffee, books, records, Bref’s art/design objects, and LVNEA or H Parfums for fragrance. Choose two or three shops and wander between them.",
       "source": "https://www.mtl.org/en/experience/mile-end"
     },
     {
@@ -36,7 +36,7 @@
       "name": "Little Italy & Petite-Patrie",
       "tag": "The food detour",
       "image": "market",
-      "description": "Jean-Talon Market, neighborhood food shops, and an ambitious dinner if you can get a table. Maison Stoï is farther east: take a taxi for that optional Saturday detour.",
+      "description": "Jean-Talon Market, Ex-Voto, and an ambitious dinner if you secure a table. This makes a coherent northbound alternative to the mountain. Maison Stoï is a farther taxi detour, not a necessary stop.",
       "source": "https://www.mtl.org/en/what-to-do/shopping/jean-talon-market-mtl"
     },
     {
@@ -49,6 +49,243 @@
     }
   ],
   "places": [
+    {
+      "id": "lvnea",
+      "name": "LVNEA",
+      "area": "mileend",
+      "kind": "Shop",
+      "image": "lvnea",
+      "budget": "Browsing free; samples/purchases extra",
+      "detail": "Small-batch botanical perfumes made in Montréal. Try the darker woods, resins, and forest-like scents. This is a more distinctive maker-led stop than a general luxury beauty counter.",
+      "note": "160 Saint-Viateur Est, unit 108; entrance on Casgrain. Operator lists Saturday and Sunday 11 AM–6 PM.",
+      "source": "https://www.lvnea.com/en-us/pages/boutique-hours-and-location",
+      "mapQuery": "LVNEA, 160 Rue Saint-Viateur Est",
+      "fit": "The closest match to the earlier trip’s specialist fragrance and beauty browsing, with a local maker behind the objects.",
+      "evidence": [
+        {
+          "label": "Community: recommendation and a second endorsement in the fragrance discussion",
+          "url": "https://www.reddit.com/r/montreal/comments/1npe0dd/ou_sentir_des_parfums/"
+        },
+        {
+          "label": "Operator: Montréal-made scents, address, and weekend hours",
+          "url": "https://www.lvnea.com/"
+        }
+      ],
+      "tradeoff": "Scent is personal. Try a few, let them settle, and avoid treating a full bottle as an obligatory souvenir.",
+      "lng": -73.5969225,
+      "lat": 45.5270553,
+      "coordinate_source": "https://www.openstreetmap.org/way/222716116",
+      "pick": "Strong match"
+    },
+    {
+      "id": "bref",
+      "name": "Bref",
+      "area": "mileend",
+      "kind": "Shop",
+      "image": "bref",
+      "budget": "Browsing free; design objects extra",
+      "detail": "A rotating gallery-shop for ceramics, art prints, and unusual everyday objects. It sits in the same Bernard browsing cluster as the bookshops and record stores, so it adds interest without adding a cross-city detour.",
+      "note": "261 Bernard Ouest. Contact page lists Saturday and Sunday 11 AM–5 PM.",
+      "source": "https://brefmtl.com/pages/contact",
+      "mapQuery": "Bref, 261 Rue Bernard Ouest",
+      "fit": "A compact version of the earlier trip’s PMQ/design-shop browsing: tactile objects, small creators, and things to discuss while wandering.",
+      "evidence": [
+        {
+          "label": "Community: recommended for unusual gifts, with a price caveat",
+          "url": "https://www.reddit.com/r/montreal/comments/1tq4tgg/boutiques_whimsical_et_quirky/"
+        },
+        {
+          "label": "Operator: limited-edition art and design selection",
+          "url": "https://brefmtl.com/pages/a-propos"
+        }
+      ],
+      "tradeoff": "Some pieces are expensive. The community discussion explicitly calls out pricing; treat this as a browse, not a value-shopping stop.",
+      "lng": -73.60518664,
+      "lat": 45.5242592,
+      "coordinate_source": "https://www.openstreetmap.org/way/1291468194",
+      "pick": "Strong match"
+    },
+    {
+      "id": "exvoto",
+      "name": "Ex-Voto",
+      "area": "littleitaly",
+      "kind": "Shop",
+      "image": "exvoto",
+      "budget": "Browsing free; purchases extra",
+      "photo_label": "Selection reference / Ex-Voto home goods",
+      "detail": "Independent clothing, jewelry, stationery, and home objects at 6534 Saint-Laurent. An easy browse between Mile End and Little Italy, with local designers among the selection.",
+      "note": "A useful ceramics/design option without the farther taxi trip to Maison Stoï. Confirm current weekend shop hours.",
+      "source": "https://exvoto.ca/en",
+      "mapQuery": "Ex-Voto, 6534 Boulevard Saint-Laurent",
+      "fit": "Combines the earlier trip’s fashion browsing with the ceramics and independent objects you asked for here.",
+      "evidence": [
+        {
+          "label": "Local editorial: The Main’s boutique guide",
+          "url": "https://www.themain.com/guide/unique-gift-ideas-montreal-local-boutiques"
+        },
+        {
+          "label": "Community: Little Italy shopping recommendation",
+          "url": "https://www.reddit.com/r/montreal/comments/1tq4tgg/boutiques_whimsical_et_quirky/"
+        },
+        {
+          "label": "Operator: local creators and store address",
+          "url": "https://exvoto.ca/en/pages/coups-de-coeur-locaux"
+        }
+      ],
+      "tradeoff": "It is a mixed boutique, not exclusively pottery. Visit if the Little Italy route appeals; no need to cross town solely for it.",
+      "lng": -73.6101539,
+      "lat": 45.5308108,
+      "coordinate_source": "https://www.openstreetmap.org/node/1743940910",
+      "pick": "Strong match"
+    },
+    {
+      "id": "northstar",
+      "name": "North Star Machines à Piastres",
+      "area": "plateau",
+      "kind": "Activity",
+      "image": "northstar",
+      "budget": "CAD 20–40 pp allowance",
+      "detail": "A pinball bar at 3908 Saint-Laurent, opposite the smoked-meat stretch. Play a few machines, compare scores, and have a drink. It offers something to do together without committing to a performance.",
+      "note": "Best as an optional Saturday evening stop. Published third-party hours disagree, so check before heading over. Do not plan on a Sunday-evening deal: you will already be driving home.",
+      "source": "https://boulevardsaintlaurent.com/en/repertoire/north-star",
+      "mapQuery": "North Star Machines à Piastres, 3908 Boulevard Saint-Laurent",
+      "fit": "The clearest translation of the earlier trip’s arcade/night-browsing energy into a short, low-commitment Montréal activity.",
+      "evidence": [
+        {
+          "label": "Community: +72 on one recommending comment, Aug 6, 2025",
+          "url": "https://www.reddit.com/r/montreal/comments/1mitzng/going_out_alone_in_montreal/"
+        },
+        {
+          "label": "Community: +4 on a recommendation in a quiet-bar thread, Sep 18, 2026",
+          "url": "https://www.reddit.com/r/MTLFoodLovers/comments/1wjh3vg/recommendations_for_a_bar_open_late_for_a_quiet/"
+        },
+        {
+          "label": "Local editorial: The Main venue profile",
+          "url": "https://www.themain.com/montreal/bar/north-star-machines-a-piastres"
+        }
+      ],
+      "tradeoff": "There will be machine noise and music. This is social and interactive, not a quiet lounge. Upvotes describe individual comments, not a venue-wide score.",
+      "lng": -73.5782108,
+      "lat": 45.5162603,
+      "coordinate_source": "https://www.openstreetmap.org/node/14094575897",
+      "pick": "Strong match"
+    },
+    {
+      "id": "cloakroom",
+      "name": "Cloakroom Bar",
+      "area": "downtown",
+      "kind": "Drinks",
+      "image": "cloakroom",
+      "budget": "CAD 30–45 pp per drink allowance",
+      "detail": "An intimate, no-menu cocktail bar where you describe the flavors and spirits you like. Ask the price before ordering rare or vintage spirits. One considered drink can supply the fancy moment without an extravagant dinner.",
+      "note": "2175 De la Montagne. Operator lists Fri/Sat 4 PM–3 AM, 25 seats, and no reservations. Try opening time if it fits; never let a queue derail dinner.",
+      "source": "https://www.cloakroombarmtl.com/",
+      "mapQuery": "Cloakroom Bar, 2175 Rue de la Montagne",
+      "fit": "The strongest analogue to the earlier trip’s Alice Cheongdam and The Old Man cocktail stops.",
+      "evidence": [
+        {
+          "label": "Google via RestoMontréal: 4.6/5, 1,700+ reviews; snapshot Nov 15, 2026",
+          "url": "https://www.restomontreal.ca/resto/cloakroom-bar-montreal/12455/en/"
+        },
+        {
+          "label": "Community: both endorsements and price/comfort criticism",
+          "url": "https://www.reddit.com/r/MTLFoodLovers/comments/1tmz6cs/where_are_the_good_cocktail_places/"
+        }
+      ],
+      "tradeoff": "High ratings do not remove the small-room queues, premium pricing, or mixed opinions on seating. Keep it to one drink if the room and quoted price feel right.",
+      "lng": -73.5778501,
+      "lat": 45.4994685,
+      "coordinate_source": "https://www.openstreetmap.org/node/5417632622",
+      "pick": "Strong match"
+    },
+    {
+      "id": "lemeac",
+      "name": "Leméac",
+      "area": "mileend",
+      "kind": "Dinner",
+      "image": "lemeac",
+      "budget": "CAD 85–125 pp allowance",
+      "detail": "A polished French bistro on Laurier Ouest. It is a credible alternative to L’Express if you prefer to linger around Outremont after browsing. Compare the current menu and reservation availability before choosing.",
+      "note": "1045 Laurier Ouest. Operator lists weekends 10 AM–3 PM and 5–11 PM. Book online or call +1 514 270-0999. No old late-night discount is assumed.",
+      "source": "https://www.restaurantlemeac.com/contact",
+      "mapQuery": "Leméac, 1045 Avenue Laurier Ouest",
+      "fit": "A good meal and a lively room supply the occasion; the rest of the day can stay loose and inexpensive.",
+      "evidence": [
+        {
+          "label": "Google via RestoMontréal: 4.6/5, 2,900+ reviews; snapshot Nov 15, 2026",
+          "url": "https://www.restomontreal.ca/resto/lemeac-cafe-bistro-montreal/1263/en/"
+        },
+        {
+          "label": "Community: direct comparison with L’Express, including differing preferences",
+          "url": "https://www.reddit.com/r/MTLFoodLovers/comments/1v16tlu/lexpress_vs_l%C3%A9meac/"
+        }
+      ],
+      "tradeoff": "This can be lively and noisy rather than hushed. It is a dinner alternative, not an extra meal to stack onto the plan.",
+      "lng": -73.5972475,
+      "lat": 45.518284,
+      "coordinate_source": "https://www.openstreetmap.org/node/4248787190",
+      "pick": "Strong match"
+    },
+    {
+      "id": "kouign",
+      "name": "Pâtisserie Au Kouign-Amann",
+      "area": "plateau",
+      "kind": "Food",
+      "image": "kouign",
+      "budget": "CAD 8–18 pp allowance",
+      "detail": "A small Plateau bakery for a slice of caramelized, buttery kouign-amann. Split one so it complements the bagels and lunch rather than competing with them.",
+      "note": "316 Mont-Royal Est. Tastet lists Saturday 7 AM–4:30 PM and Sunday closed; verify before leaving. Keep this a Saturday option.",
+      "source": "https://aukouingamann.com/",
+      "mapQuery": "Pâtisserie Au Kouign-Amann, 316 Avenue du Mont-Royal Est",
+      "fit": "A specific, memorable food stop has more payoff for this weekend than adding another generic attraction.",
+      "evidence": [
+        {
+          "label": "Local editorial: Tastet’s bakery review, updated July 9, 2025",
+          "url": "https://tastet.ca/critiques/kouign-amann-montreal/"
+        },
+        {
+          "label": "Google via Ma Vie à Montréal: 4.8/5, 2,459 reviews; October 2026 article",
+          "url": "https://www.mavieamontreal.ca/actualites/i/98488107/meilleures-patisseries-montreal-avis-google-octobre-2026"
+        },
+        {
+          "label": "Community: returning former resident includes it among favorite stops",
+          "url": "https://www.reddit.com/r/MTLFoodLovers/comments/1rp47o3/returning_to_mtl_after_10_years/"
+        }
+      ],
+      "tradeoff": "Limited seating and possible sell-outs. Buy takeaway rather than spending your morning in a long queue.",
+      "lng": -73.583481,
+      "lat": 45.5231147,
+      "coordinate_source": "https://www.openstreetmap.org/node/2084760375",
+      "pick": "Strong match"
+    },
+    {
+      "id": "empreinte",
+      "name": "L’Empreinte coopérative",
+      "area": "old",
+      "kind": "Shop",
+      "image": "empreinte",
+      "budget": "Browsing free; ceramics and craft extra",
+      "detail": "A Québec artisan cooperative selling ceramics, tableware, jewelry, and handmade objects at 88 Saint-Paul Est. A concrete independent-shopping stop on the old-city loop.",
+      "note": "Ask about the maker behind a piece. The French and English pages show different seasonal hours; confirm November opening times before relying on an early visit.",
+      "source": "https://www.lempreintecoop.com/en/pages/boutique-dart-vieux-montreal-lempreinte-cooperative",
+      "mapQuery": "Empreinte Coop, 88 Rue Saint-Paul Est",
+      "fit": "Brings the earlier trip’s artisan/design browsing into Sunday’s existing walk, without a separate excursion.",
+      "evidence": [
+        {
+          "label": "Tourism guide: Québec artisan and craft shopping",
+          "url": "https://www.mtl.org/en/experience/where-to-buy-art"
+        },
+        {
+          "label": "Operator: cooperative, makers, products, and address",
+          "url": "https://www.lempreintecoop.com/en/pages/boutique-dart-vieux-montreal-lempreinte-cooperative"
+        }
+      ],
+      "tradeoff": "This pick is based on the craft selection and route fit, not a verified star score. Confirm shop hours first.",
+      "lng": -73.5530667,
+      "lat": 45.506343,
+      "coordinate_source": "https://www.openstreetmap.org/node/11973468608",
+      "pick": "Strong match"
+    },
     {
       "id": "stviateur",
       "name": "St-Viateur Bagel",
@@ -107,7 +344,8 @@
       "note": "Published hours: Sat 10 AM–5 PM; Sun noon–5 PM.",
       "source": "https://hparfums.com/pages/visit-us",
       "coordinate_source": "https://www.openstreetmap.org/node/11972760724",
-      "mapQuery": "H Parfums, 5064 Rue Hutchison"
+      "mapQuery": "H Parfums, 5064 Rue Hutchison",
+      "fit": "Choose this for breadth across niche perfume houses; choose LVNEA for the narrower, locally made botanical approach. You do not need to visit both."
     },
     {
       "id": "drawn",
@@ -179,7 +417,15 @@
       "detail": "The default nice dinner: French bistro atmosphere, a serious wine list, and no need for a tasting-menu marathon. Share a starter, choose a main, and set a wine budget.",
       "note": "Book by phone: +1 514 845-5333. Published service 11:30 AM–1 AM. Arrival-night dinner only if your ETA works.",
       "source": "https://restaurantlexpress.com/en/",
-      "coordinate_source": "https://www.openstreetmap.org/node/11973009286"
+      "coordinate_source": "https://www.openstreetmap.org/node/11973009286",
+      "evidence": [
+        {
+          "label": "Community: fans and critics compare it directly with Leméac",
+          "url": "https://www.reddit.com/r/MTLFoodLovers/comments/1v16tlu/lexpress_vs_l%C3%A9meac/"
+        }
+      ],
+      "fit": "A classic, late-serving bistro suits a flexible trip with one proper dinner.",
+      "tradeoff": "Its enduring atmosphere is part of the appeal. Recent community opinions about food value are mixed; compare Leméac rather than assuming universal agreement."
     },
     {
       "id": "banquise",
@@ -263,7 +509,7 @@
       "image": "botabota",
       "budget": "CAD 90–140 pp allowance",
       "detail": "A thermal circuit on a moored boat is the unusual Montréal splurge. It replaces a substantial walking block; it does not fit as a bonus on top of everything.",
-      "note": "Reserve first. Published quiet-zone descriptions differ across official pages: boat silence is clear; confirm where conversation is permitted. Bring swimwear. No guaranteed weekend slots or quote.",
+      "note": "Reserve first. The boat is quiet; official pages differ on conversation-permitted areas. Confirm directly. A weaker fit if uninterrupted conversation is the priority; optional rather than an itinerary anchor.",
       "source": "https://botabota.ca/en/questions/"
     },
     {
@@ -292,7 +538,19 @@
       "detail": "The food-first splurge: seasonal small plates and natural wine in Little Italy. Choose it if food is the main event and you can actually secure a reservation.",
       "note": "Book first, then arrange Saturday around it. L’Express is the simpler fallback.",
       "source": "https://www.vinmonlapin.com/",
-      "coordinate_source": "https://www.openstreetmap.org/node/5745641621"
+      "coordinate_source": "https://www.openstreetmap.org/node/5745641621",
+      "evidence": [
+        {
+          "label": "Google via RestoMontréal: 4.5/5, 1,500+ reviews; snapshot Nov 15, 2026",
+          "url": "https://www.restomontreal.ca/resto/mon-lapin-montreal/12256/en/"
+        },
+        {
+          "label": "Community: an explicit discussion of whether it justifies the hype",
+          "url": "https://www.reddit.com/r/MTLFoodLovers/comments/1vtmapa/mon_lapin_%C3%A7a_vaut_la_hype_%C3%A0_votre_avis/"
+        }
+      ],
+      "fit": "Choose it for an exploratory food-and-wine evening, not simply because it tops a list.",
+      "tradeoff": "Enthusiasm is substantial but not unanimous; small plates, wine costs, expectations, and reservations are the real constraints."
     },
     {
       "id": "stoi",
@@ -437,23 +695,23 @@
           "summary": "Mile End first, then head south. These are broad blocks, not a checklist to finish.",
           "route": [
             "stviateur",
-            "drawn",
-            "olimpico",
-            "hparfums",
+            "bref",
+            "lvnea",
             "schwartz",
             "lookout",
-            "express"
+            "express",
+            "northstar"
           ],
           "blocks": [
             [
               "9:30 AM",
               "Warm bagels & coffee",
-              "St-Viateur, then Olimpico. Browse Drawn & Quarterly and Phonopolis as shops open. Fairmount is an optional taste-test detour."
+              "St-Viateur, then Olimpico. As shops open, choose a couple of stops on Bernard: Bref, Drawn & Quarterly, or Phonopolis. This is a neighborhood browse, not a race through every shop."
             ],
             [
               "11 AM–1 PM",
               "Follow your curiosity",
-              "Walk Bernard and Laurier Ouest, with H Parfums as the anchor. Maison Stoï is a taxi detour if ceramics matter more than the mountain; its Saturday shop closes at 5 PM."
+              "Make LVNEA the local fragrance stop, or swap in H Parfums for a wider niche-house selection. Bref supplies the ceramics/design browse without a taxi detour. Kouign-Amann is an optional pastry stop on the way toward the Plateau; it is closed Sunday."
             ],
             [
               "1–2 PM",
@@ -471,9 +729,9 @@
               "Reserve a table. Budget for a main, a shared starter or dessert, and a controlled wine order. Make the evening about dinner and conversation."
             ],
             [
-              "After dinner",
-              "Optional city lights",
-              "A short Quartier des spectacles wander if you still want fresh air. Skip it freely."
+              "After dinner · optional",
+              "A few games or one good drink",
+              "North Star is the easy pinball option near the Saint-Laurent food strip. For a more polished cocktail, taxi to Cloakroom, accepting its walk-in queue. Choose one, or simply walk back; these are not included as mandatory extra spending."
             ]
           ]
         },
@@ -486,6 +744,7 @@
           "route": [
             "crew",
             "notredame",
+            "empreinte",
             "oldport"
           ],
           "blocks": [
@@ -497,7 +756,7 @@
             [
               "10–11:30 AM",
               "Place d’Armes → Saint-Paul → river",
-              "Enjoy Notre-Dame from the square, the old streets, and a short waterfront walk. Only add the basilica interior if Sunday visitor access is confirmed."
+              "Enjoy Notre-Dame from the square, the old streets, and a short waterfront walk. Only add the basilica interior if Sunday visitor access is confirmed. L’Empreinte is the craft-shopping option on this walk if its November hours work; keep the 1:30 PM departure target."
             ],
             [
               "11:30 AM–12:30 PM",
@@ -555,8 +814,9 @@
           "route": [
             "fairmount",
             "olimpico",
-            "drawn",
-            "hparfums",
+            "bref",
+            "lvnea",
+            "exvoto",
             "jeantalon",
             "monlapin"
           ],
@@ -568,8 +828,8 @@
             ],
             [
               "Late morning",
-              "H Parfums + a bookshop",
-              "Make space between meals. Browse on Bernard and Hutchison before moving north."
+              "A fragrance shop & something handmade",
+              "Choose LVNEA or H Parfums, then Bref on Bernard. For the northbound food route, Ex-Voto is a convenient mixed design and ceramics browse."
             ],
             [
               "1–3 PM",
@@ -578,8 +838,8 @@
             ],
             [
               "Afternoon",
-              "Optional ceramics detour",
-              "Maison Stoï is open 11 AM–5 PM Saturday, closed Sunday. Taxi over if that is your priority; otherwise stay in Little Italy."
+              "Little Italy at your pace",
+              "Ex-Voto and the neighborhood shops are enough. Maison Stoï remains a farther Saturday-only taxi option if its particular pottery appeals. Save your appetite for dinner."
             ],
             [
               "Reservation time",
@@ -597,6 +857,7 @@
           "route": [
             "crew",
             "notredame",
+            "empreinte",
             "oldport"
           ],
           "blocks": [
@@ -608,7 +869,7 @@
             [
               "10–11:30 AM",
               "The old-city loop",
-              "Place d’Armes, Saint-Paul, and a little waterfront. Skip the exposed section in poor weather."
+              "Place d’Armes, Saint-Paul, and a little waterfront. Skip the exposed section in poor weather. L’Empreinte is the craft-shopping option on this walk if its November hours work; keep the 1:30 PM departure target."
             ],
             [
               "Noon",
@@ -626,16 +887,12 @@
     },
     {
       "id": "design",
-      "title": "A little more indulgent",
-      "tag": "Shops & spa",
-      "description": "Trade the mountain for independent shops and an optional floating spa. Keep Saturday’s dinner simpler and protect Sunday’s departure.",
+      "title": "Shops, scents & one good drink",
+      "tag": "Design & cocktails",
+      "description": "The closest match to your earlier shopping-and-cocktail days: independent objects, a locally made perfume, one bespoke drink, and a good bistro. A spa remains an optional swap.",
       "food": [
-        200,
-        280
-      ],
-      "extra": [
-        90,
-        140
+        240,
+        330
       ],
       "hotel": "williamgray",
       "days": [
@@ -663,40 +920,46 @@
           "id": "saturday",
           "label": "Saturday",
           "date": "Nov 21",
-          "title": "Objects, scents, and warm water.",
-          "summary": "Choose two shopping anchors and a spa, rather than trying every boutique in the city.",
+          "title": "Find something you would not find at home.",
+          "summary": "Keep the daytime in Mile End and Outremont. Choose two or three shops, then a cocktail or a relaxed dinner; leave the rest optional.",
           "route": [
             "stviateur",
+            "bref",
+            "lvnea",
             "hparfums",
-            "stoi",
-            "botabota",
-            "express"
+            "cloakroom",
+            "lemeac"
           ],
           "blocks": [
             [
               "9:30 AM",
-              "Bagels in Mile End",
-              "Start with St-Viateur and a coffee. Add a bookshop if you feel like it."
+              "Bagels & coffee",
+              "Start with St-Viateur and Olimpico. Keep the morning loose."
             ],
             [
               "11 AM",
-              "H Parfums",
-              "Compare niche scents and take your time. There is no obligation to turn browsing into a large purchase."
+              "Objects, books, records",
+              "Browse Bref and one of Drawn & Quarterly or Phonopolis. This is the main ceramics/design cluster for this version."
             ],
             [
-              "12:30–2 PM",
-              "Maison Stoï or downtown",
-              "Taxi to Stoï for ceramics, then a casual lunch. In rain, Holt Renfrew Ogilvy is an indoor alternative, though the downtown parade may complicate access."
+              "Noon–2 PM",
+              "Choose a scent, have lunch",
+              "LVNEA is locally made and botanical; H Parfums is broader niche-house discovery. Choose one unless fragrance is the focus of your day. Have a casual lunch nearby."
             ],
             [
-              "Mid-afternoon · reserve first",
-              "Bota Bota, optionally",
-              "Book an available thermal-circuit slot and allow time to change. The boat is a quiet environment; confirm any conversation-permitted areas directly. If you want uninterrupted conversation, replace this with cafés and a waterfront walk."
+              "4 PM opening · optional",
+              "Cloakroom: one tailored cocktail",
+              "Taxi downtown if this is the evening you want. It is walk-in only with 25 seats. Ask the likely price, avoid rare-spirit surprises, and leave if the wait is not worth it."
             ],
             [
-              "Evening",
-              "L’Express",
-              "Take a taxi to dinner. Keep the food order simple if you have already spent on the spa. No rooftop or outdoor summer experience is assumed open."
+              "Dinner reservation",
+              "Leméac or L’Express",
+              "Leméac is the Outremont alternative. Reserve whichever menu and atmosphere appeal more. A cocktail plus dinner uses the higher food allowance for this proposal."
+            ],
+            [
+              "Alternative afternoon",
+              "If you want the floating spa instead",
+              "Bota Bota replaces the cocktail/shopping block and needs a booking. It is a quieter experience with conversation restrictions. It is not included in this version’s budget; add the separate allowance on its card if you choose it."
             ]
           ]
         },
@@ -709,6 +972,7 @@
           "route": [
             "crew",
             "notredame",
+            "empreinte",
             "oldport"
           ],
           "blocks": [
@@ -720,7 +984,7 @@
             [
               "Late morning",
               "One last look",
-              "Place d’Armes and Saint-Paul. SSENSE only if you already have an appointment that fits, with no departure delay."
+              "Place d’Armes and Saint-Paul. SSENSE only if you already have an appointment that fits, with no departure delay. L’Empreinte is the craft-shopping option on this walk if its November hours work; keep the 1:30 PM departure target."
             ],
             [
               "Noon",
@@ -783,5 +1047,47 @@
   "center": [
     45.518,
     -73.585
-  ]
+  ],
+  "research": {
+    "title": "More like your kind of trip.",
+    "intro": "The selected Seoul/Hong Kong itinerary pairs specialist shopping and neighborhood wandering with scenic views, memorable meals, and an occasional arcade or cocktail stop. These Montréal additions follow that pattern; the comparison is an inference from the saved itinerary, not a claim about which past stops you ultimately visited.",
+    "patterns": [
+      {
+        "past": "Garosu-gil, K-beauty, Cat Street & PMQ",
+        "now": "LVNEA, H Parfums, Bref, Ex-Voto, and L’Empreinte: small creators, scents, ceramics, and objects worth inspecting."
+      },
+      {
+        "past": "Alice Cheongdam & The Old Man",
+        "now": "Cloakroom for one tailored cocktail. Go early, accept the possibility of a queue, and ask about premium-spirit prices."
+      },
+      {
+        "past": "Arcades, night browsing & easy scenic time",
+        "now": "North Star for pinball, Mount Royal for the skyline, and a compact Old Montréal walk. Skip the mountain in poor conditions."
+      }
+    ],
+    "method": "I compared local editorial guides, relevant community discussions, Google-linked review summaries, and operators’ pages, then filtered for your interests and neighborhood fit. The eight highlighted additions are alternatives, not eight more obligations. Ratings are a cross-check, not a ranking formula.",
+    "limits": "Direct Google Maps review pages were inaccessible to the research tool. Google scores below are explicitly attributed to the secondary publisher and its dated snapshot; they were not read live from Maps. Reddit votes refer to the named individual comment and can change. Where scores were not visible, no number is supplied. No inference that all reviewers are locals is made.",
+    "sources": [
+      {
+        "label": "Saved Seoul / Hong Kong itinerary",
+        "url": "chalmondtrip/itinerary.html"
+      },
+      {
+        "label": "The Main: independent Montreal boutique guide",
+        "url": "https://www.themain.com/guide/unique-gift-ideas-montreal-local-boutiques"
+      },
+      {
+        "label": "Tastet: local bakery review",
+        "url": "https://tastet.ca/critiques/kouign-amann-montreal/"
+      },
+      {
+        "label": "r/montreal: independent-shop discussion",
+        "url": "https://www.reddit.com/r/montreal/comments/1tq4tgg/boutiques_whimsical_et_quirky/"
+      },
+      {
+        "label": "r/MTLFoodLovers: cocktail discussion, including dissent",
+        "url": "https://www.reddit.com/r/MTLFoodLovers/comments/1tmz6cs/where_are_the_good_cocktail_places/"
+      }
+    ]
+  }
 }
