@@ -47,18 +47,26 @@ test('directions encode names and preserve the intended stop order', () => {
 
 test('the one itinerary references existing stops and photo assets', async () => {
   const data=JSON.parse(await readFile(new URL('../montreal.json',import.meta.url)));
-  const credits=JSON.parse(await readFile(new URL('../images/credits.json',import.meta.url)));
+  const galleries=JSON.parse(await readFile(new URL('../images/gallery.json',import.meta.url)));
   const ids=new Set(data.places.map(p=>p.id));
   assert.equal(ids.size,data.places.length);
   assert.equal(data.proposals,undefined);
   assert.deepEqual(data.days.map(d=>d.id),['friday','saturday','sunday']);
   assert.ok(TripRoute.valid(data.hotel));
-  for(const place of data.places)assert.ok(TripRoute.valid(place));
+  for(const place of [...data.places,...data.hotels]) {
+    assert.ok(TripRoute.valid(place));
+    assert.ok(place.lat>45.48 && place.lat<45.56 && place.lng>-73.65 && place.lng<-73.53,place.id);
+    assert.equal(galleries[place.id].photos.length,3,place.id);
+    for(const photo of galleries[place.id].photos)await access(new URL(`../${photo.src}`,import.meta.url));
+  }
+  assert.equal(data.hotels.length,4);
+  assert.equal(data.headlines.length,3);
+  assert.deepEqual(new Set(data.neighborhoods.flatMap(area=>area.ids)),ids);
   for(const day of data.days){
     for(const block of day.blocks){
       for(const id of block.stops)assert.ok(ids.has(id),id);
       for(const nearby of block.nearby||[])assert.ok(ids.has(nearby.id),nearby.id);
-      if(block.image)await access(new URL(`../${credits[block.image].file}`,import.meta.url));
+
     }
   }
 });

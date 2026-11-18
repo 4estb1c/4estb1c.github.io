@@ -1,0 +1,827 @@
+{
+  "bref": {
+    "photos": [
+      {
+        "src": "images/galleries/bref/1.jpg",
+        "alt": "Bright boutique interior with ceramics and small design objects",
+        "source": "https://brefmtl.com/pages/a-propos",
+        "image_source": "https://brefmtl.com/cdn/shop/files/BrefCeramique2026_02carolineperronphotographies.jpg?v=1793379743&width=1300",
+        "credit": "Caroline Perron, as identified by source filename"
+      },
+      {
+        "src": "images/galleries/bref/2.jpg",
+        "alt": "Illustrated ceramic plate from Bref's selection",
+        "source": "https://brefmtl.com/pages/a-propos",
+        "image_source": "https://brefmtl.com/cdn/shop/files/CatPlate_on_white_cloth.png?v=1794368023&width=1950",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/bref/3.jpg",
+        "alt": "Hand-painted ceramic mug from Bref's selection",
+        "source": "https://brefmtl.com/pages/a-propos",
+        "image_source": "https://brefmtl.com/cdn/shop/files/Photo2026-10-31_35808AM.jpg?v=1794426350&width=3750",
+        "credit": ""
+      }
+    ]
+  },
+  "lvnea": {
+    "photos": [
+      {
+        "src": "images/galleries/lvnea/1.jpg",
+        "alt": "Plants and perfume displays inside LVNEA",
+        "source": "https://www.lvnea.com/en-us/pages/boutique-hours-and-location",
+        "image_source": "https://www.lvnea.com/cdn/shop/files/shop_1.png?v=1778861872&width=2000",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/lvnea/2.jpg",
+        "alt": "Wall of fragrance bottles inside LVNEA",
+        "source": "https://www.lvnea.com/en-us/pages/boutique-hours-and-location",
+        "image_source": "https://www.lvnea.com/cdn/shop/files/shop_2.png?v=1778861871&width=2000",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/lvnea/3.jpg",
+        "alt": "Black Cat Flower perfume in LVNEA's botanical product photography",
+        "source": "https://www.lvnea.com/",
+        "image_source": "https://www.lvnea.com/cdn/shop/files/Blackbatflower_closeup-cropped.jpg?crop=center&height=1000&v=1792099762&width=1000",
+        "credit": ""
+      }
+    ]
+  },
+  "hparfums": {
+    "photos": [
+      {
+        "src": "images/galleries/hparfums/1.jpg",
+        "alt": "Fragrance testing counter inside H Parfums",
+        "source": "https://hparfums.com/pages/visit-us",
+        "image_source": "https://hparfums.com/cdn/shop/files/Capture_d_ecran_le_2025-09-25_a_10.00.46.png?v=1758808937&width=2800",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/hparfums/2.jpg",
+        "alt": "Perfume collection displayed on wooden shelves",
+        "source": "https://hparfums.com/pages/visit-us",
+        "image_source": "https://hparfums.com/cdn/shop/files/IMG_7548_3.heic?v=1758809402&width=3200",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/hparfums/3.jpg",
+        "alt": "Bottles from H Parfums' fragrance selection",
+        "source": "https://hparfums.com/pages/visit-us",
+        "image_source": "https://hparfums.com/cdn/shop/files/IMG_3916.jpg?v=1748453897&width=1400",
+        "credit": ""
+      }
+    ]
+  },
+  "lemeac": {
+    "photos": [
+      {
+        "src": "images/galleries/lemeac/1.jpg",
+        "alt": "Leméac dining room and bar",
+        "source": "https://www.restaurantlemeac.com/",
+        "image_source": "https://images.squarespace-cdn.com/content/v1/5b2bc2a1da02bc3b1c3e2fe9/1758738950432-4FBOKGIRY28VN3SIV3XN/2025-07-24_0938090600_Photo_by_Jimmy_Hamelin.jpg",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/lemeac/2.jpg",
+        "alt": "Seared scallops plated at Leméac",
+        "source": "https://www.restaurantlemeac.com/",
+        "image_source": "https://images.squarespace-cdn.com/content/v1/5b2bc2a1da02bc3b1c3e2fe9/1758739112463-8PC90I3FT0DRVB9ZH75B/2025-07-23_0957207700_Photo_by_Jimmy_Hamelin.jpg",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/lemeac/3.jpg",
+        "alt": "Leméac's French toast dessert with ice cream",
+        "source": "https://www.restaurantlemeac.com/",
+        "image_source": "https://images.squarespace-cdn.com/content/v1/5b2bc2a1da02bc3b1c3e2fe9/1758739083652-QXZE48WV04G3W43PLE79/2025-07-23_1019308300_Photo_by_Jimmy_Hamelin.jpg",
+        "credit": ""
+      }
+    ]
+  },
+  "express": {
+    "photos": [
+      {
+        "src": "images/galleries/express/1.jpg",
+        "alt": "Diners in the classic L'Express bistro interior",
+        "source": "https://restaurantlexpress.com/en/",
+        "image_source": "https://restaurantlexpress.com/wp-content/uploads/2021/07/9-restaurant-montreal-meilleur-service-2-1536x864.jpg",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/express/2.jpg",
+        "alt": "Steak frites on a bistro table at L'Express",
+        "source": "https://www.theinfatuation.com/montreal/reviews/lexpress-1",
+        "image_source": "https://res.cloudinary.com/the-infatuation/image/upload/q_auto%2Cf_auto/images/DSC_1580_bhxr2l",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/express/3.jpg",
+        "alt": "Bistro dishes with fries and cornichons at L'Express",
+        "source": "https://www.bonappetit.com/city-guides/montreal/venue/lexpress",
+        "image_source": "https://assets.bonappetit.com/photos/5b77088d98ecd7195079b486/master/pass/LExpress_1.jpg",
+        "credit": ""
+      }
+    ]
+  },
+  "kouign": {
+    "photos": [
+      {
+        "src": "images/galleries/kouign/1.jpg",
+        "alt": "Flaky cross-section of a kouign-amann pastry",
+        "source": "https://tastet.ca/critiques/kouign-amann-montreal/",
+        "image_source": "https://images.tastet.ca/_/rs:fit:1080:720:false:0/plain/https://sesame.tastet.ca/assets/773bae84-1be7-4b37-a82a-27836d376709.jpg@jpg",
+        "credit": "Alison Slattery / Two Food Photographers, credited by Tastet"
+      },
+      {
+        "src": "images/galleries/kouign/2.jpg",
+        "alt": "Coffee and an assortment of Au Kouign-Amann pastries",
+        "source": "https://tastet.ca/critiques/kouign-amann-montreal/",
+        "image_source": "https://images.tastet.ca/_/rs:fit:1080:720:false:0/plain/https://sesame.tastet.ca/assets/b9d8254d-c5bf-42df-b55d-217de7373f6b.jpg@jpg",
+        "credit": "Alison Slattery / Two Food Photographers, credited by Tastet"
+      },
+      {
+        "src": "images/galleries/kouign/3.jpg",
+        "alt": "Fresh pastries in the bakery display",
+        "source": "https://tastet.ca/critiques/kouign-amann-montreal/",
+        "image_source": "https://images.tastet.ca/_/rs:fit:1080:720:false:0/plain/https://sesame.tastet.ca/assets/c0d2bee9-238c-46f7-bc57-f48ece960015.jpg@jpg",
+        "credit": "Alison Slattery / Two Food Photographers, credited by Tastet"
+      }
+    ]
+  },
+  "olive": {
+    "photos": [
+      {
+        "src": "images/galleries/olive/1.jpg",
+        "alt": "Olive et Gourmando sandwiches, salad and sweets",
+        "source": "https://oliveetgourmando.com/en-us/",
+        "image_source": "https://oliveetgourmando.com/cdn/shop/files/DO01220577.jpg?v=1773931332&width=1500",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/olive/2.jpg",
+        "alt": "Grilled sandwich being pulled apart",
+        "source": "https://oliveetgourmando.com/en-us/",
+        "image_source": "https://oliveetgourmando.com/cdn/shop/files/L1220323.jpg?v=1771855177&width=1500",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/olive/3.jpg",
+        "alt": "Old Montréal storefront of Olive et Gourmando",
+        "source": "https://oliveetgourmando.com/en-us/",
+        "image_source": "https://oliveetgourmando.com/cdn/shop/files/og_168.jpg?v=1729612876&width=1500",
+        "credit": ""
+      }
+    ]
+  },
+  "empreinte": {
+    "photos": [
+      {
+        "src": "images/galleries/empreinte/1.jpg",
+        "alt": "Artisan gifts and objects inside L'Empreinte",
+        "source": "https://www.lempreintecoop.com/en/pages/boutique-dart-vieux-montreal-lempreinte-cooperative",
+        "image_source": "https://cdn.shopify.com/s/files/1/0464/2622/6844/files/Lempreinte-interieur-2_1024x1024.jpg?v=1600174114",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/empreinte/2.jpg",
+        "alt": "Ceramics and tableware from L'Empreinte's selection",
+        "source": "https://www.lempreintecoop.com/en",
+        "image_source": "https://www.lempreintecoop.com/cdn/shop/files/Artdelatableartoisanscoopempreinte_1400x.jpg?v=1753105871",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/empreinte/3.jpg",
+        "alt": "Handmade teapot and ceramic cups in the shop's selection",
+        "source": "https://www.lempreintecoop.com/en",
+        "image_source": "https://www.lempreintecoop.com/cdn/shop/files/2025-L_Empreinte-art-de-vivre_1400x.jpg?v=1751915018",
+        "credit": ""
+      }
+    ]
+  },
+  "potier": {
+    "photos": [
+      {
+        "src": "images/galleries/potier/1.jpg",
+        "alt": "Chez Potier pastry counter and gourmet groceries",
+        "source": "https://www.chezpotier.com/pages/equipe",
+        "image_source": "https://www.chezpotier.com/cdn/shop/files/Boutiquw_2.jpg?height=800&v=1648909981&width=800",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/potier/2.jpg",
+        "alt": "Cream-topped pastry from Chez Potier's selection",
+        "source": "https://www.chezpotier.com/",
+        "image_source": "https://www.chezpotier.com/cdn/shop/files/IMG_8237_bcc128ec-c720-4515-aca8-61150097e77a.jpg?crop=center&height=666&v=1794241525&width=600",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/potier/3.jpg",
+        "alt": "Chocolate pastry from Chez Potier's selection",
+        "source": "https://www.chezpotier.com/",
+        "image_source": "https://www.chezpotier.com/cdn/shop/files/library-A15B2F87-3A05-4090-A324-4161D514B2CB-L0-001.jpg?crop=center&height=666&v=1794241596&width=600",
+        "credit": ""
+      }
+    ]
+  },
+  "notredame": {
+    "photos": [
+      {
+        "src": "images/galleries/notredame/1.jpg",
+        "alt": "Notre-Dame Basilica nave and illuminated altar",
+        "source": "https://www.basiliquenotredame.ca/en",
+        "image_source": "https://assets.fabriquenotredame.ca/production/Basilique/Socality_2022/_2880x2112_crop_center-center_70_none/12689/Notre-Dame-Socality-00013.webp",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/notredame/2.jpg",
+        "alt": "Organ and vaulted ceiling seen from the altar end",
+        "source": "https://www.basiliquenotredame.ca/en",
+        "image_source": "https://assets.fabriquenotredame.ca/production/Basilique/Socality_2022/_2880x2112_crop_center-center_70_none/12694/Notre-Dame-Socality-00018.webp",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/notredame/3.jpg",
+        "alt": "Detail of the ornate blue and gold sanctuary",
+        "source": "https://www.basiliquenotredame.ca/en",
+        "image_source": "https://assets.fabriquenotredame.ca/production/_2880x2111_crop_center-center_70_none/167937/OM_Basilique_MEDIASOCIAUX_1080x1080px_basilique.webp",
+        "credit": ""
+      }
+    ]
+  },
+  "botabota": {
+    "photos": [
+      {
+        "src": "images/galleries/botabota/1.jpg",
+        "alt": "Aerial view of Bota Bota's boat spa and pools",
+        "source": "https://botabota.ca/en/",
+        "image_source": "https://botabota.ca/wp-content/uploads/2026/11/Bota_100926-11-2.jpg",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/botabota/2.jpg",
+        "alt": "Outdoor water circuit and garden pools",
+        "source": "https://botabota.ca/en/",
+        "image_source": "https://botabota.ca/wp-content/uploads/2026/10/bord-jardins.jpg",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/botabota/3.jpg",
+        "alt": "Bota Bota garden pavilion at sunset",
+        "source": "https://botabota.ca/en/",
+        "image_source": "https://botabota.ca/wp-content/uploads/2026/10/bord-bateau-768x432.png",
+        "credit": ""
+      }
+    ]
+  },
+  "habitat67": {
+    "photos": [
+      {
+        "src": "images/galleries/habitat67/1.jpg",
+        "alt": "Habitat 67 beside its landscaped waterfront",
+        "source": "https://www.mtl.org/en/what-to-do/culture-arts-heritage/habitat-67",
+        "image_source": "https://api.mtl.org/files/default/styles/square_600_600/public/2017-05/32568H.jpg.webp?itok=1l8kfD1r",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/habitat67/2.jpg",
+        "alt": "Stacked concrete modules and terraces at Habitat 67",
+        "source": "https://www.mtl.org/en/what-to-do/culture-arts-heritage/habitat-67",
+        "image_source": "https://api.mtl.org/files/default/styles/square_600_600/public/2017-05/08878H.jpg.webp?itok=t8ATv5YQ",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/habitat67/3.jpg",
+        "alt": "Habitat 67 viewed across the water",
+        "source": "https://www.mtl.org/en/what-to-do/culture-arts-heritage/habitat-67",
+        "image_source": "https://api.mtl.org/files/default/styles/square_600_600/public/2017-05/14298H.jpg.webp?itok=TTDhd9cD",
+        "credit": ""
+      }
+    ]
+  },
+  "bargeorge": {
+    "photos": [
+      {
+        "src": "images/galleries/bargeorge/1.jpg",
+        "alt": "Ornate wood-paneled dining room at Bar George",
+        "source": "https://www.bargeorge.ca/",
+        "image_source": "https://cdn.oliverbonacininetwork.com/uploads/sites/38/2026/01/bar-george-montreal-restaurant-dining-room-03.jpg",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/bargeorge/2.jpg",
+        "alt": "Beef Wellington served at Bar George",
+        "source": "https://www.bargeorge.ca/",
+        "image_source": "https://cdn.oliverbonacininetwork.com/uploads/sites/38/2026/01/bar-george-montreal-restaurant-beef-wellington-1000x1000.jpg",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/bargeorge/3.jpg",
+        "alt": "Cocktail served on the bar at Bar George",
+        "source": "https://www.bargeorge.ca/menus/",
+        "image_source": "https://cdn.oliverbonacininetwork.com/uploads/sites/38/2026/01/bar-george-montreal-restaurant-cocktail-01-684x1024.jpg",
+        "credit": ""
+      }
+    ]
+  },
+  "cloakroom": {
+    "photos": [
+      {
+        "src": "images/galleries/cloakroom/1.jpg",
+        "alt": "Intimate counter and leather seating at Cloakroom Bar",
+        "source": "https://www.cloakroombarmtl.com/",
+        "image_source": "https://images.squarespace-cdn.com/content/v1/644e7c85b2ee8b5623ea06c1/a246e1b2-808c-4067-be00-d157d6ed1e8e/Screen+Shot+2023-04-30+at+11.52.30+AM.png?format=2500w",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/cloakroom/2.jpg",
+        "alt": "House cocktail with a large clear ice cube",
+        "source": "https://www.cloakroombarmtl.com/",
+        "image_source": "http://static1.squarespace.com/static/644e7c85b2ee8b5623ea06c1/t/644eb5bda0955b5158950e59/1682879933220/Screen+Shot+2023-04-30+at+11.10.38+AM.png?format=1500w",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/cloakroom/3.jpg",
+        "alt": "Bartender pouring a cocktail at Cloakroom",
+        "source": "https://www.cloakroombarmtl.com/",
+        "image_source": "https://images.squarespace-cdn.com/content/v1/644e7c85b2ee8b5623ea06c1/7bb9ce8d-cf71-48e4-a3a4-08f3e31fd82f/Screen+Shot+2023-04-30+at+11.09.43+AM.png?format=2500w",
+        "credit": ""
+      }
+    ]
+  },
+  "ratafia": {
+    "photos": [
+      {
+        "src": "images/galleries/ratafia/1.jpg",
+        "alt": "Financier and ganache dessert at Ratafia",
+        "source": "https://www.mtl.org/en/what-to-do/food/ratafia-montreal",
+        "image_source": "https://api.mtl.org/files/default/styles/square_600_600/public/2026-05/61805__AFD970ED-6A06-41AA-9AFEDC30C3648A1D.jpg.webp?itok=4e6-99PJ",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/ratafia/2.jpg",
+        "alt": "Buckwheat pizzelle dessert at Ratafia",
+        "source": "https://www.mtl.org/en/what-to-do/food/ratafia-montreal",
+        "image_source": "https://api.mtl.org/files/default/styles/square_600_600/public/2026-05/61804__E1EF7B73-7206-48AC-9598B9DB40D9A477.jpg.webp?itok=g1QryLqH",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/ratafia/3.jpg",
+        "alt": "Grilled octopus plated at Ratafia",
+        "source": "https://www.mtl.org/en/what-to-do/food/ratafia-montreal",
+        "image_source": "https://api.mtl.org/files/default/styles/square_600_600/public/2026-05/61808__9362F2D6-2D95-4ED9-97133E61A01B8CD4.jpg.webp?itok=ejfPDM48",
+        "credit": ""
+      }
+    ]
+  },
+  "etatdechoc": {
+    "photos": [
+      {
+        "src": "images/galleries/etatdechoc/1.jpg",
+        "alt": "Bright interior of État de Choc's chocolate boutique",
+        "source": "https://www.etatdechoc.com/en",
+        "image_source": "https://www.etatdechoc.com/cdn/shop/files/Boutique_EDC.jpg?v=1728598625&width=5760",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/etatdechoc/2.jpg",
+        "alt": "Individual filled chocolates from État de Choc",
+        "source": "https://www.etatdechoc.com/en",
+        "image_source": "https://www.etatdechoc.com/cdn/shop/collections/LES_LIGNES_BOITE_8_1_DIAG2_ETAT_DE_CHOC.jpg?crop=region&crop_height=600&crop_left=150&crop_top=0&crop_width=600&v=1745670922&width=480",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/etatdechoc/3.jpg",
+        "alt": "Colorful wrapped chocolate bars in the shop's selection",
+        "source": "https://www.etatdechoc.com/en",
+        "image_source": "https://www.etatdechoc.com/cdn/shop/collections/NOIR_LAIT_SEL_DU_FLEUVE_ETAT_DE_CHOC.jpg?crop=region&crop_height=3939&crop_left=983&crop_top=0&crop_width=3939&v=1740596410&width=3200",
+        "credit": ""
+      }
+    ]
+  },
+  "exvoto": {
+    "photos": [
+      {
+        "src": "images/galleries/exvoto/1.jpg",
+        "alt": "Sculptural burgundy bookends from Ex-Voto's selection",
+        "source": "https://exvoto.ca/en",
+        "image_source": "https://exvoto.ca/cdn/shop/files/ensemble-de-2-serre-livres-lasso-bourgognes-lexpressionist-6599634.jpg?v=1794673758&width=600",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/exvoto/2.jpg",
+        "alt": "Chrome button-shaped catchall dish from Ex-Voto",
+        "source": "https://exvoto.ca/en",
+        "image_source": "https://exvoto.ca/cdn/shop/files/petite-assiette-bouton-chrome-lexpressionist-9324563.jpg?v=1794673758&width=600",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/exvoto/3.jpg",
+        "alt": "Strawberry candle in Ex-Voto's home-object selection",
+        "source": "https://exvoto.ca/en",
+        "image_source": "https://exvoto.ca/cdn/shop/files/Sans_titre_1054_x_1058_px_1.gif?v=1795020459&width=1200",
+        "credit": ""
+      }
+    ]
+  },
+  "germain": {
+    "photos": [
+      {
+        "src": "images/galleries/germain/1.jpg",
+        "alt": "Twin beds in a Le Germain Montréal guest room",
+        "source": "https://www.germainhotels.com/en/le-germain-hotel/montreal",
+        "image_source": "https://ik.imagekit.io/n9qi9vys6//website-assets/49391143147_bc4ba17340_k_2025-06-25-152902_ywzn.jpg?w=1040&h=1040&fit=crop&auto=compress,format",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/germain/2.jpg",
+        "alt": "Warm contemporary restaurant and bar at Le Germain",
+        "source": "https://www.germainhotels.com/en/le-germain-hotel/montreal",
+        "image_source": "https://ik.imagekit.io/n9qi9vys6//website-assets/49084299213_a170b09bcd_k_OPT_2025-02-18-184420_agwq.jpg?w=1040&h=800&fit=crop&auto=compress,format",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/germain/3.jpg",
+        "alt": "City-view sitting area in a Le Germain suite",
+        "source": "https://www.germainhotels.com/en/le-germain-hotel/montreal",
+        "image_source": "https://ik.imagekit.io/n9qi9vys6//website-assets/55369153542_c9a13a1af4_k.jpg?w=1040&h=1040&fit=crop&auto=compress,format",
+        "credit": ""
+      }
+    ]
+  },
+  "williamgray": {
+    "photos": [
+      {
+        "src": "images/galleries/williamgray/1.jpg",
+        "alt": "William Gray king room with city-view windows",
+        "source": "https://hotelwilliamgray.com/rooms/deluxe/",
+        "image_source": "https://hotelwilliamgray.com/wp-content/uploads/2017/02/Deluxe-King-River-view-banner.jpg",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/williamgray/2.jpg",
+        "alt": "William Gray spa pool in the stone courtyard",
+        "source": "https://hotelwilliamgray.com/",
+        "image_source": "https://hotelwilliamgray.com/wp-content/uploads/2021/06/0003_pool2.jpg",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/williamgray/3.jpg",
+        "alt": "William Gray dining room with green living wall",
+        "source": "https://hotelwilliamgray.com/",
+        "image_source": "https://hotelwilliamgray.com/wp-content/uploads/2021/06/0005_Maggie-Oakes-Mur-de-verdure-1.jpg",
+        "credit": ""
+      }
+    ]
+  },
+  "mountstephen": {
+    "photos": [
+      {
+        "src": "images/galleries/mountstephen/1.jpg",
+        "alt": "Atrium suite sitting room beneath sloping glass windows",
+        "source": "https://www.lemountstephen.com/rooms-and-suites.htm",
+        "image_source": "https://www.lemountstephen.com/files/4124/Le_Mount_Stephen-0167.jpg",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/mountstephen/2.jpg",
+        "alt": "Two-bed guest room at Le Mount Stephen",
+        "source": "https://www.lemountstephen.com/rooms-and-suites.htm",
+        "image_source": "https://www.lemountstephen.com/files/4124/27503966_ImageMediumWidth.jpg",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/mountstephen/3.jpg",
+        "alt": "Marble and green-glass bathroom at Le Mount Stephen",
+        "source": "https://www.lemountstephen.com/rooms-and-suites.htm",
+        "image_source": "https://www.lemountstephen.com/files/4124/5513508_ImageMediumWidth.jpg",
+        "credit": ""
+      }
+    ]
+  },
+  "nelligan": {
+    "photos": [
+      {
+        "src": "images/galleries/nelligan/1.jpg",
+        "alt": "Warm lounge and fireplace at Hôtel Nelligan",
+        "source": "https://hotelnelligan.com/nelligan-reopening/",
+        "image_source": "https://d9hhrg4mnvzow.cloudfront.net/hotelnelligan.com/nelligan-reopening/1150c537-hotel-nelligan-reception-by-atelier-zebulon-perron-photo-copyright-alex-lesage-11_11hc0xv1hc0nt00005001o.jpg",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/nelligan/2.jpg",
+        "alt": "Guest room with upholstered headboard at Hôtel Nelligan",
+        "source": "https://hotelnelligan.com/nelligan-reopening/",
+        "image_source": "https://d9hhrg4mnvzow.cloudfront.net/hotelnelligan.com/nelligan-reopening/19f7d292-cc19_10n50e40n50dm00000801o.jpg",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/nelligan/3.jpg",
+        "alt": "Historic stone façade of Hôtel Nelligan",
+        "source": "https://hotelnelligan.com/nelligan-reopening/",
+        "image_source": "https://d9hhrg4mnvzow.cloudfront.net/hotelnelligan.com/nelligan-reopening/4285926b-00-home-photo-1-copy_10n50fi0n50dm00000y01o.jpg",
+        "credit": ""
+      }
+    ]
+  },
+  "drawn": {
+    "photos": [
+      {
+        "src": "images/galleries/drawn/1.jpg",
+        "alt": "Book tables and shelves inside Librairie Drawn & Quarterly",
+        "source": "https://www.laurierouest.com/en/nouvelles/best-independent-bookstores-mile-end-montreal",
+        "image_source": "https://www.laurierouest.com/_next/image?q=75&url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fgvsvv24r%2Fmain-website%2F82ef85638c7bbb310ba8b141739e8eb2b9617573-2048x1360.jpg%3Fw%3D1200%26auto%3Dformat&w=3840",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/drawn/2.jpg",
+        "alt": "Curated display of graphic novels and illustrated books",
+        "source": "https://sharp-bose-ab73ce.netlify.app/drawn-and-quarterly/",
+        "image_source": "https://sharp-bose-ab73ce.netlify.app/static/dq_4-bf04a8dbd7d397de48aa58b374f74cc1-ed7b7.jpg",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/drawn/3.jpg",
+        "alt": "Rue Bernard storefront of Drawn & Quarterly",
+        "source": "https://magculture.com/blogs/journal/librarie-drawn-quarterly-montreal",
+        "image_source": "https://magculture.com/cdn/shop/articles/IMG_0874_ca8b3608-460b-4ee2-bc5a-3cf1c88e7142_1200x800.jpg?v=1615827495",
+        "credit": ""
+      }
+    ]
+  },
+  "bernie": {
+    "photos": [
+      {
+        "src": "images/galleries/bernie/1.jpg",
+        "alt": "Fresh glazed doughnuts lined up at Bernie Beigne",
+        "source": "https://www.aol.com/articles/donut-shops-glazing-window-hard-213000845.html",
+        "image_source": "https://s.yimg.com/ny/api/res/1.2/Y3tF9hLz6kgUyf0p6PCAlg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD02NzE-/https%3A/media.zenfs.com/en/aol_tasting_table_516/cde20138656f1301be5349ceb8bfc5e7",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/bernie/2.jpg",
+        "alt": "Open boxes filled with assorted Bernie Beigne doughnuts",
+        "source": "https://bernie-beigne.menueat.net/",
+        "image_source": "https://bernie-beigne.menueat.net/storage/albums/bernie-beigne-photo-5.jpg",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/bernie/3.jpg",
+        "alt": "Bernie Beigne storefront on Rue Bernard",
+        "source": "https://www.tripadvisor.com/Restaurant_Review-g155032-d23711434-Reviews-Bernie_Beigne-Montreal_Quebec.html",
+        "image_source": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2d/ba/ed/67/caption.jpg?h=-1&s=1&w=1100",
+        "credit": ""
+      }
+    ]
+  },
+  "northstar": {
+    "photos": [
+      {
+        "src": "images/galleries/northstar/1.jpg",
+        "alt": "Line of pinball machines at North Star",
+        "source": "https://www.timeout.com/montreal/news/the-ultimate-holiday-gift-this-season-in-montreal-renting-a-pinball-machine-photos-112020",
+        "image_source": "https://media.timeout.com/images/105562440/image.jpg",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/northstar/2.jpg",
+        "alt": "Players at the illuminated pinball machines",
+        "source": "https://nightlife.ca/2016/01/25/bieres-pinball-et-shooters-au-nouveau-bar-arcade-north-star-pour-son-ouverture-officielle/",
+        "image_source": "https://nightlife.ca/app/uploads/2016/01/ouverture-du-bar-north-star-343417.jpg",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/northstar/3.jpg",
+        "alt": "Close view of vintage pinball tables at North Star",
+        "source": "https://fr.tripadvisor.be/Attraction_Review-g155032-d9837919-Reviews-North_Star_Machines_a_Piastres-Montreal_Quebec.html",
+        "image_source": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/ac/38/46/north-star-pic-1.jpg?h=-1&s=1&w=1200",
+        "credit": ""
+      }
+    ]
+  },
+  "monarque": {
+    "photos": [
+      {
+        "src": "images/galleries/monarque/1.jpg",
+        "alt": "Monarque dining room with its sweeping bar and glass partitions",
+        "source": "https://tastet.ca/critiques/restaurant-monarque-vieux-montreal/",
+        "image_source": "https://images.tastet.ca/_/rs:fit:1080:720:false:0/plain/https://sesame.tastet.ca/assets/bd8aec89-a592-4367-8089-a4af90ab0a06.jpg@jpg",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/monarque/2.jpg",
+        "alt": "Seasonal dish plated at Monarque",
+        "source": "https://tastet.ca/critiques/restaurant-monarque-vieux-montreal/",
+        "image_source": "https://images.tastet.ca/_/rs:fit:1080:720:false:0/plain/https://sesame.tastet.ca/assets/1c146951-2acd-453a-b7d9-90633d041569.jpg@jpg",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/monarque/3.jpg",
+        "alt": "Steak, fries and wine served at Monarque",
+        "source": "https://tastet.ca/critiques/restaurant-monarque-vieux-montreal/",
+        "image_source": "https://images.tastet.ca/_/rs:fit:1080:720:false:0/plain/https://sesame.tastet.ca/assets/3e36bcd7-4074-4465-ad9f-598fc5132195.jpg@jpg",
+        "credit": ""
+      }
+    ]
+  },
+  "citememoire": {
+    "photos": [
+      {
+        "src": "images/galleries/citememoire/1.jpg",
+        "alt": "Cité Mémoire figure projected onto an Old Montréal building",
+        "source": "https://connect.na.panasonic.ca/resource-centre/montreal-en-histoires",
+        "image_source": "https://connect.na.panasonic.ca/hs-fs/hubfs/PCI%20Connect%20-%20North%20America%20Canada/Audio-Visual/montreal_en_histoires_case_study_hero_image.jpg?height=583&name=montreal_en_histoires_case_study_hero_image.jpg&width=1200",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/citememoire/2.jpg",
+        "alt": "Large illuminated characters in a Cité Mémoire night projection",
+        "source": "https://www.nationalgeographic.com/travel/article/montreal-photo-gallery-urban-parks-historic-modern",
+        "image_source": "https://i.natgeofe.com/n/5a468615-f7a1-44e6-b47d-bc0193b88996/projected-ghosts-cite-memoire-montreal.jpg",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/citememoire/3.jpg",
+        "alt": "Portrait projected over an Old Montréal streetscape",
+        "source": "https://www.pxpdesign.ca/en/project/cite-memoire",
+        "image_source": "https://cdn.prod.website-files.com/65b93e01e94dc4fd565259e2/65c64cbd6283084e3b87aebd_Cite-Memoire-02.jpg",
+        "credit": ""
+      }
+    ]
+  },
+  "oldport": {
+    "photos": [
+      {
+        "src": "images/galleries/oldport/1.jpg",
+        "alt": "Stone streets and buildings of Old Montréal",
+        "source": "https://www.mtl.org/en/experience/re-discover-new-old-montreal",
+        "image_source": "https://api.mtl.org/files/default/styles/rectangle_600_706/public/2026-06/45290__1BB53593-36A6-43D9-86D86413E0528731.jpg.webp?h=bb2d97c0&itok=CNETzaj6",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/oldport/2.jpg",
+        "alt": "Old Port ferris wheel and waterfront at sunset",
+        "source": "https://www.mtl.org/en/experience/re-discover-new-old-montreal",
+        "image_source": "https://api.mtl.org/files/default/styles/square_600_600/public/2025-02/36472.jpg.webp?itok=BFtwKBlB",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/oldport/3.jpg",
+        "alt": "Place d'Armes and Notre-Dame in winter light",
+        "source": "https://www.mtl.org/en/experience/re-discover-new-old-montreal",
+        "image_source": "https://api.mtl.org/files/default/styles/square_600_600/public/2026-02/60043__4560FF3F-98D7-4D98-912BBB521055209F.jpg.webp?h=0a696b0d&itok=S83koLwg",
+        "credit": ""
+      }
+    ]
+  },
+  "schwartz": {
+    "photos": [
+      {
+        "src": "images/galleries/schwartz/1.jpg",
+        "alt": "Schwartz's smoked meat sandwich with pickles and fries",
+        "source": "https://schwartzsdeli.com/",
+        "image_source": "https://schwartzsdeli.com/cdn/shop/files/banner-2_8ef066d5-ca08-4d5c-a1e1-14f9a5aacafd.jpg?v=1645906369",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/schwartz/2.jpg",
+        "alt": "Busy communal tables inside Schwartz's deli",
+        "source": "https://barbecuebros.co/2019/10/14/schwartzs-deli-montreal-quebec/",
+        "image_source": "https://i0.wp.com/barbecuebros.co/wp-content/uploads/2019/10/img_2196.jpg?resize=800%2C533&ssl=1",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/schwartz/3.jpg",
+        "alt": "Smoked meat at the Schwartz's carving counter",
+        "source": "https://dobbernationloves.com/food-drink/review-schwartzs-montreal/",
+        "image_source": "https://dobbernationloves.com/wp-content/uploads/2013/01/img_6298.jpg",
+        "credit": ""
+      }
+    ]
+  },
+  "chloe": {
+    "photos": [
+      {
+        "src": "images/galleries/chloe/1.jpg",
+        "alt": "Bright modern display inside Les Chocolats de Chloé",
+        "source": "https://www.qub.ca/article/cette-chocolaterie-gourmande-du-plateau-a-visiter-pendant-les-fetes-est-la-plus-design-de-lannee-1800159220",
+        "image_source": "https://www.qub.ca/_next/image?q=75&url=https%3A%2F%2Fm1.quebecormedia.com%2Femp%2Femp%2FChocolatsChoe_ADHOCafa6ce77-64d0-4be4-b97b-f425de92b02a_ORIGINAL.jpg%3Fh%3D6720%26impolicy%3Dcrop-resize%26w%3D4480%26width%3D1600%26x%3D0%26y%3D0&w=3840",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/chloe/2.jpg",
+        "alt": "Assorted decorated chocolate bonbons in a gift box",
+        "source": "https://www.restomontreal.ca/article/the-best-chocolate-shops-in-montreal/2560/en/",
+        "image_source": "https://media.restodata.ca/2026-april/30111751-8407-chocolatsdechloe.jpg",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/chloe/3.jpg",
+        "alt": "Chocolate selection displayed at the counter",
+        "source": "https://www.trackpacking.com/v/index/4b75fb66f964a52013342ee3",
+        "image_source": "https://fastly.4sqi.net/img/general/1000x562/1759981_EHiDsgmJjrriwjOSpYx-3yZEJAaqrwZpj_j-YYVXOEI.jpg",
+        "credit": ""
+      }
+    ]
+  },
+  "stviateur": {
+    "photos": [
+      {
+        "src": "images/galleries/stviateur/1.jpg",
+        "alt": "Original St-Viateur Bagel storefront in Mile End",
+        "source": "https://www.mtl.org/en/experience/mile-end",
+        "image_source": "https://api.mtl.org/files/default/styles/rectangle_1200_675/public/2024-04/50603.jpg.webp?itok=xmT896pZ",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/stviateur/2.jpg",
+        "alt": "Baker tending the wood-fired bagel oven",
+        "source": "https://www.projectexpedition.com/tour-activity/montreal/montreal-elite-mile-end-food-tour-bagels-bites-stories/150604/",
+        "image_source": "https://cdn.projectexpedition.com/photos/869001touractivity3d286ef976a44effac87cae6ff7481ad_sized.jpg",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/stviateur/3.jpg",
+        "alt": "Fresh bagels beside the wood-fired oven at St-Viateur",
+        "source": "https://stviateurbagel.com/blogs/news/10-bagels-qu-on-redemandera",
+        "image_source": "https://stviateurbagel.com/cdn/shop/articles/Bagels_Edits-0193.jpg?v=1736367536",
+        "credit": ""
+      }
+    ]
+  },
+  "olimpico": {
+    "photos": [
+      {
+        "src": "images/galleries/olimpico/1.jpg",
+        "alt": "Café Olimpico's original Mile End corner terrace",
+        "source": "https://terrasseseason.com/terraces/cafe-olimpico",
+        "image_source": "https://terrasseseason.com/photos/64/main.webp",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/olimpico/2.jpg",
+        "alt": "Busy counter inside the original Café Olimpico on Saint-Viateur",
+        "source": "https://tiffycooks.com/mile-end-montreal-bagels-and-marche-jean-talon/",
+        "image_source": "https://tiffycooks.com/wp-content/uploads/2024/12/Cafe-Olimpico.webp",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/olimpico/3.jpg",
+        "alt": "Cappuccinos at Café Olimpico's Mile End café",
+        "source": "https://www.yelp.ca/biz/caf%C3%A9-olimpico-montr%C3%A9al-2",
+        "image_source": "https://s3-media0.fl.yelpcdn.com/bphoto/sKTk-YRAjQEfUF9AQ8vEIA/o.jpg",
+        "credit": ""
+      }
+    ]
+  },
+  "crew": {
+    "photos": [
+      {
+        "src": "images/galleries/crew/1.jpg",
+        "alt": "Grand arched windows and historic banking hall at Crew Collective",
+        "source": "https://www.dezjeff.com/blog/crew-collective-and-cafe-coffee-shop-montreal",
+        "image_source": "https://images.squarespace-cdn.com/content/v1/55aab2fbe4b0ee6ed820049b/1462828370177-RP4Z91QA623TXA4QO5WP/image.jpeg",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/crew/2.jpg",
+        "alt": "Coffee counter in Crew Collective's former bank interior",
+        "source": "https://www.dezjeff.com/blog/crew-collective-and-cafe-coffee-shop-montreal",
+        "image_source": "https://images.squarespace-cdn.com/content/v1/55aab2fbe4b0ee6ed820049b/1462828375722-8VZWDKQ0G9943KL75QGI/image.jpeg",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/crew/3.jpg",
+        "alt": "Ornate vaulted ceiling above the café",
+        "source": "https://www.dezjeff.com/blog/crew-collective-and-cafe-coffee-shop-montreal",
+        "image_source": "https://images.squarespace-cdn.com/content/v1/55aab2fbe4b0ee6ed820049b/1462828372128-W7GK8XKFN57VEMJHNO9N/image.jpeg",
+        "credit": ""
+      }
+    ]
+  },
+  "banquise": {
+    "photos": [
+      {
+        "src": "images/galleries/banquise/1.jpg",
+        "alt": "Poutine topped with cheese curds and gravy at La Banquise",
+        "source": "https://www.mtl.org/en/what-to-do/food/la-banquise",
+        "image_source": "https://api.mtl.org/files/default/styles/square_600_600/public/2024-06/36304.jpg.webp?itok=2StsYxpy",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/banquise/2.jpg",
+        "alt": "Poutine outside La Banquise on Rue Rachel",
+        "source": "https://www.mtl.org/en/what-to-do/food/la-banquise",
+        "image_source": "https://api.mtl.org/files/default/styles/square_600_600/public/2025-11/website_JPG-61831.jpg.webp?itok=lyBk4Axi",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/banquise/3.jpg",
+        "alt": "Colorful façade of La Banquise",
+        "source": "https://guia.melhoresdestinos.com.br/la-banquise-187-4973-l.html",
+        "image_source": "https://imgmd.net/images/v1/guia/1688059/la-banquise.jpg",
+        "credit": ""
+      }
+    ]
+  }
+}

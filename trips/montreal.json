@@ -8,16 +8,20 @@
     45.515,
     -73.58
   ],
-  "intro": "Two nights. Good food, independent shops, and a little unusual architecture. Here is the route.",
+  "intro": "One route to follow, with better meals, good desserts, and plenty of nearby discoveries. Pick one afternoon highlight; the rest stays easy.",
   "hotel": {
     "id": "germain",
     "name": "Le Germain Montréal",
     "lat": 45.5024267,
     "lng": -73.574419,
     "image": "germain",
-    "source": "https://www.germainhotels.com/en/le-germain-hotel/montreal"
+    "source": "https://www.germainhotels.com/en/le-germain-hotel/montreal",
+    "label": "Easy default",
+    "description": "Refined, comfortable, and central. The cleanest shared-room choice.",
+    "beds": "Signature Two Queen Beds",
+    "level": "Upscale"
   },
-  "booking": "Book Le Germain’s Signature Two Queen Beds room and L’Express for Saturday at 7 PM. Nothing is reserved yet.",
+  "booking": "Default plan: Le Germain, Bota Bota on Saturday afternoon, and Monarque’s brasserie at 7 PM. Reserve those before going. Nothing is booked.",
   "assumptions": "Assumes driving from Boston and sharing one room with two beds. All times are Eastern. Recheck hours before leaving.",
   "places": [
     {
@@ -26,7 +30,12 @@
       "lat": 45.5253345,
       "lng": -73.5747528,
       "image": "poutine",
-      "source": "https://labanquise.com/"
+      "source": "https://labanquise.com/",
+      "area": "plateau",
+      "kind": "Food",
+      "description": "The flexible late-arrival poutine stop. Keep it casual tonight and save the nice meal for Saturday.",
+      "note": "Check late kitchen hours before leaving the hotel.",
+      "price": "CAD 15–25"
     },
     {
       "id": "stviateur",
@@ -35,7 +44,12 @@
       "lng": -73.6019466,
       "image": "mileend",
       "source": "https://www.stviateurbagel.com/",
-      "mapQuery": "St-Viateur Bagel, 263 Rue Saint-Viateur Ouest"
+      "mapQuery": "St-Viateur Bagel, 263 Rue Saint-Viateur Ouest",
+      "area": "mileend",
+      "kind": "Food",
+      "description": "The original wood-fired bagel shop. Get a hot sesame bagel and watch the baking.",
+      "note": "A quick start, not a sit-down brunch.",
+      "price": "CAD 5–15"
     },
     {
       "id": "olimpico",
@@ -43,8 +57,13 @@
       "lat": 45.524084,
       "lng": -73.600261,
       "image": "mileend",
-      "source": "https://www.mtl.org/en/experience/mile-end",
-      "mapQuery": "Café Olimpico, 124 Rue Saint-Viateur Ouest"
+      "source": "https://cafeolimpico.com/pages/locations",
+      "mapQuery": "Café Olimpico, 124 Rue Saint-Viateur Ouest",
+      "area": "mileend",
+      "kind": "Coffee",
+      "description": "Espresso, an old-school café, and a lively neighborhood crowd.",
+      "note": "Use the original Saint-Viateur location.",
+      "price": "CAD 5–12"
     },
     {
       "id": "bref",
@@ -53,7 +72,12 @@
       "lng": -73.60518664,
       "image": "bref",
       "source": "https://brefmtl.com/pages/contact",
-      "mapQuery": "Bref, 261 Rue Bernard Ouest"
+      "mapQuery": "Bref, 261 Rue Bernard Ouest",
+      "area": "mileend",
+      "kind": "Shop",
+      "description": "A bright gallery-boutique of ceramics, prints, and limited-edition design objects.",
+      "note": "Saturday and Sunday 11 AM–5 PM on the contact page.",
+      "price": "Browse free"
     },
     {
       "id": "lvnea",
@@ -62,7 +86,12 @@
       "lng": -73.5969225,
       "image": "lvnea",
       "source": "https://www.lvnea.com/en-us/pages/boutique-hours-and-location",
-      "mapQuery": "LVNEA, 160 Rue Saint-Viateur Est"
+      "mapQuery": "LVNEA, 160 Rue Saint-Viateur Est",
+      "area": "mileend",
+      "kind": "Shop",
+      "description": "Locally made botanical perfumes: resins, woods, unusual atmospheric scents.",
+      "note": "Entrance on Casgrain; published weekend hours 11 AM–6 PM.",
+      "price": "Browse free"
     },
     {
       "id": "drawn",
@@ -71,7 +100,12 @@
       "lng": -73.604058,
       "image": "mileend",
       "source": "https://mtl.drawnandquarterly.com/",
-      "mapQuery": "Librairie Drawn & Quarterly, 176 Rue Bernard Ouest"
+      "mapQuery": "Librairie Drawn & Quarterly, 176 Rue Bernard Ouest",
+      "area": "mileend",
+      "kind": "Shop",
+      "description": "Art books, graphic novels, and good things to pick up and show each other.",
+      "note": "On Bernard, by Bref and the record shops.",
+      "price": "Browse free"
     },
     {
       "id": "hparfums",
@@ -80,7 +114,12 @@
       "lng": -73.5965511,
       "image": "hparfums",
       "source": "https://hparfums.com/pages/visit-us",
-      "mapQuery": "H Parfums, 5064 Rue Hutchison"
+      "mapQuery": "H Parfums, 5064 Rue Hutchison",
+      "area": "mileend",
+      "kind": "Shop",
+      "description": "A polished niche-perfume boutique with independent houses to compare.",
+      "note": "Saturday 10 AM–5 PM; Sunday noon–5 PM.",
+      "price": "Browse free"
     },
     {
       "id": "schwartz",
@@ -88,7 +127,12 @@
       "lat": 45.5163277,
       "lng": -73.5776499,
       "image": "schwartz",
-      "source": "https://schwartzsdeli.com/pages/contact"
+      "source": "https://schwartzsdeli.com/pages/contact",
+      "area": "plateau",
+      "kind": "Food",
+      "description": "Montréal smoked meat, mustard, and a pickle. Order medium-fat.",
+      "note": "Use takeaway if the sit-down queue is long.",
+      "price": "CAD 25–35"
     },
     {
       "id": "habitat67",
@@ -97,7 +141,12 @@
       "lng": -73.5437925,
       "image": "habitat67",
       "source": "https://www.weezevent.com/widget_multi.php?100765.1.1=&lg_billetterie=46",
-      "mapQuery": "Habitat 67, 2600 Avenue Pierre-Dupuy"
+      "mapQuery": "Habitat 67, 2600 Avenue Pierre-Dupuy",
+      "area": "old",
+      "kind": "Headline",
+      "description": "A genuinely unusual stacked-housing experiment. A guided visit has more substance than a distant glance.",
+      "note": "The 2026 tour calendar reaches Nov 22. Saturday slots are unverified; internal access requires a tour. Separate taxi trip across the water.",
+      "price": "Tour price: check calendar"
     },
     {
       "id": "express",
@@ -105,7 +154,12 @@
       "lat": 45.5203104,
       "lng": -73.5743828,
       "image": "express",
-      "source": "https://restaurantlexpress.com/en/"
+      "source": "https://restaurantlexpress.com/en/",
+      "area": "plateau",
+      "kind": "Dining",
+      "description": "A classic French bistro with a serious cellar and late service.",
+      "note": "A dinner alternative to Monarque. Reserve by phone: +1 514 845-5333.",
+      "price": "CAD 75–110"
     },
     {
       "id": "cloakroom",
@@ -114,7 +168,12 @@
       "lng": -73.5778501,
       "image": "cloakroom",
       "source": "https://www.cloakroombarmtl.com/",
-      "mapQuery": "Cloakroom Bar, 2175 Rue de la Montagne"
+      "mapQuery": "Cloakroom Bar, 2175 Rue de la Montagne",
+      "area": "downtown",
+      "kind": "Drinks",
+      "description": "An intimate, no-menu cocktail bar that builds a drink around the flavors you like.",
+      "note": "25 seats, no reservations. Ask the price before ordering rare spirits.",
+      "price": "CAD 30–45 per drink allowance"
     },
     {
       "id": "crew",
@@ -122,7 +181,12 @@
       "lat": 45.5022617,
       "lng": -73.5590947,
       "image": "crew",
-      "source": "https://www.mtl.org/en/what-to-do/food/crew-collective-cafe"
+      "source": "https://crewcollectivecafe.com/",
+      "area": "old",
+      "kind": "Coffee",
+      "description": "Coffee under a spectacular former-bank ceiling. The interior is the attraction.",
+      "note": "Go early to avoid the busiest tables.",
+      "price": "CAD 10–25"
     },
     {
       "id": "notredame",
@@ -130,8 +194,13 @@
       "lat": 45.5044365,
       "lng": -73.5559901,
       "image": "oldmontreal",
-      "source": "https://www.basiliquenotredame.ca/en",
-      "mapQuery": "Place d’Armes"
+      "source": "https://www.basiliquenotredame.ca/en/hours-and-rates",
+      "mapQuery": "Place d’Armes",
+      "area": "old",
+      "kind": "Headline",
+      "description": "The blue-and-gold basilica interior is much more striking than a quick look at the façade.",
+      "note": "Daytime adult entry starts at CAD 16 + tax; AURA starts at CAD 37 + tax. Sunday sightseeing starts 12:30 PM, so use Saturday.",
+      "price": "From CAD 16 + tax"
     },
     {
       "id": "empreinte",
@@ -140,7 +209,12 @@
       "lng": -73.5530667,
       "image": "empreinte",
       "source": "https://www.lempreintecoop.com/en/pages/boutique-dart-vieux-montreal-lempreinte-cooperative",
-      "mapQuery": "Empreinte Coop, 88 Rue Saint-Paul Est"
+      "mapQuery": "Empreinte Coop, 88 Rue Saint-Paul Est",
+      "area": "old",
+      "kind": "Shop",
+      "description": "Québec-made ceramics, glass, jewelry, and artisan objects in an actual makers’ cooperative.",
+      "note": "88 Saint-Paul Est. Confirm seasonal November opening times.",
+      "price": "Browse free"
     },
     {
       "id": "oldport",
@@ -149,7 +223,12 @@
       "lng": -73.5503,
       "image": "oldmontreal",
       "source": "https://www.mtl.org/en/experience/re-discover-new-old-montreal",
-      "mapQuery": "Quai Jacques-Cartier"
+      "mapQuery": "Quai Jacques-Cartier",
+      "area": "old",
+      "kind": "Walk",
+      "description": "Stone streets, river views, little passages, and a long waterfront promenade.",
+      "note": "The exposed river edge is windy; the streets are an easy shorter loop.",
+      "price": "Free"
     },
     {
       "id": "olive",
@@ -159,7 +238,193 @@
       "image": "oldmontreal",
       "photo_label": "Old Montréal",
       "source": "https://oliveetgourmando.com/en-us/",
-      "mapQuery": "Olive et Gourmando, 351 Rue Saint-Paul Ouest"
+      "mapQuery": "Olive et Gourmando, 351 Rue Saint-Paul Ouest",
+      "area": "old",
+      "kind": "Food",
+      "description": "A cozy old-city café for excellent sandwiches, baked goods, and a proper lunch.",
+      "note": "351 Saint-Paul Ouest; published weekends 8 AM–5 PM. Takeaway avoids a brunch wait.",
+      "price": "CAD 25–40"
+    },
+    {
+      "id": "lemeac",
+      "name": "Leméac",
+      "lat": 45.518284,
+      "lng": -73.5972475,
+      "image": "lemeac",
+      "source": "https://www.restaurantlemeac.com/contact",
+      "mapQuery": "Leméac, 1045 Avenue Laurier Ouest",
+      "area": "mileend",
+      "kind": "Dining",
+      "description": "A more polished Outremont bistro for a long lunch or proper dinner.",
+      "note": "Weekend brunch/lunch 10 AM–3 PM; dinner 5–11 PM. Reserve.",
+      "price": "CAD 45–100"
+    },
+    {
+      "id": "kouign",
+      "name": "Pâtisserie Au Kouign-Amann",
+      "lat": 45.5231147,
+      "lng": -73.583481,
+      "image": "kouign",
+      "source": "https://tastet.ca/critiques/kouign-amann-montreal/",
+      "mapQuery": "Pâtisserie Au Kouign-Amann, 316 Avenue du Mont-Royal Est",
+      "area": "plateau",
+      "kind": "Dessert",
+      "description": "A slice of caramelized, buttery kouign-amann. Split one while it is warm.",
+      "note": "Saturday option. Tastet lists Sunday closed.",
+      "price": "CAD 8–18"
+    },
+    {
+      "id": "northstar",
+      "name": "North Star Machines à Piastres",
+      "lat": 45.5162603,
+      "lng": -73.5782108,
+      "image": "northstar",
+      "source": "https://www.themain.com/montreal/bar/north-star-machines-a-piastres",
+      "mapQuery": "North Star Machines à Piastres, 3908 Boulevard Saint-Laurent",
+      "area": "plateau",
+      "kind": "Activity",
+      "description": "Vintage pinball, a drink, and a little friendly competition.",
+      "note": "Opposite the Schwartz’s stretch; machine noise, not a quiet lounge. Confirm hours.",
+      "price": "CAD 20–40"
+    },
+    {
+      "id": "botabota",
+      "name": "Bota Bota",
+      "lat": 45.4976,
+      "lng": -73.5519,
+      "image": "botabota",
+      "source": "https://botabota.ca/en/questions/",
+      "area": "old",
+      "kind": "Headline",
+      "description": "Hot-and-cold baths on a floating spa, with river and city views. The strongest winter splurge.",
+      "note": "Reserve a two-hour slot. Boat silence is required; confirm conversation-permitted areas. Swimsuit needed.",
+      "price": "CAD 90–140 allowance"
+    },
+    {
+      "id": "citememoire",
+      "name": "Cité Mémoire night walk",
+      "lat": 45.5101439,
+      "lng": -73.556487,
+      "image": "citememoire",
+      "source": "https://www.montrealenhistoires.com/en/cite_memoire_montreal/",
+      "mapQuery": "Champ-de-Mars Montreal",
+      "area": "old",
+      "kind": "Activity",
+      "description": "Local stories projected onto real buildings after dark. Try a couple on an evening walk.",
+      "note": "Operator lists reopened scenes Wednesday–Sunday after nightfall. Check the current app map.",
+      "price": "Free"
+    },
+    {
+      "id": "exvoto",
+      "name": "Ex-Voto",
+      "lat": 45.5308108,
+      "lng": -73.6101539,
+      "image": "exvoto",
+      "source": "https://exvoto.ca/en",
+      "mapQuery": "Ex-Voto, 6534 Boulevard Saint-Laurent",
+      "area": "littleitaly",
+      "kind": "Shop",
+      "description": "A well-curated mix of local clothing, ceramics, stationery, and home objects.",
+      "note": "Pair with État de choc; both sit on the Saint-Laurent approach to Little Italy.",
+      "price": "Browse free"
+    },
+    {
+      "id": "bernie",
+      "name": "Bernie Beigne",
+      "image": "bernie",
+      "source": "https://www.themain.com/montreal/bakery/bernie-beigne",
+      "mapQuery": "Bernie Beigne, 23 Rue Bernard Ouest",
+      "area": "mileend",
+      "kind": "Dessert",
+      "description": "Big, fluffy doughnuts and playful flavors. The fun sweet stop in this cluster.",
+      "note": "Bernard Ouest. Check current hours and go before sell-outs.",
+      "price": "CAD 5–12",
+      "lat": 45.5270368,
+      "lng": -73.602671
+    },
+    {
+      "id": "chloe",
+      "name": "Les chocolats de Chloé",
+      "image": "chloe",
+      "source": "https://leschocolatsdechloe.com/en",
+      "mapQuery": "Les chocolats de Chloé, 546 Avenue Duluth Est",
+      "area": "plateau",
+      "kind": "Dessert",
+      "description": "Handmade chocolates, caramels, and crunchy chocolate-coated sponge toffee.",
+      "note": "546 Duluth Est; Saturday 11 AM–6 PM, Sunday 11 AM–5 PM.",
+      "price": "CAD 5–25",
+      "lat": 45.5222687,
+      "lng": -73.57434
+    },
+    {
+      "id": "monarque",
+      "name": "Monarque · Brasserie",
+      "image": "monarque",
+      "source": "https://restaurantmonarque.ca/en/contact/",
+      "mapQuery": "Monarque, 406 Rue Saint-Jacques",
+      "area": "old",
+      "kind": "Dining",
+      "description": "The upgraded dinner pick: a handsome room, polished service, and ambitious French cooking.",
+      "note": "Book the brasserie, not the separate four-course dining room. Saturday service from 5 PM.",
+      "price": "CAD 85–130",
+      "lat": 45.5017576,
+      "lng": -73.5598561
+    },
+    {
+      "id": "potier",
+      "name": "Chez Potier",
+      "image": "potier",
+      "source": "https://www.chezpotier.com/pages/equipe",
+      "mapQuery": "Chez Potier, 630 Rue Wellington",
+      "area": "old",
+      "kind": "Dessert",
+      "description": "The refined pastry stop: individual cakes, chocolate work, macarons, and beautiful seasonal desserts.",
+      "note": "630 Wellington; Saturday and Sunday 8 AM–5 PM. Limited seating.",
+      "price": "CAD 10–25",
+      "lat": 45.4979861,
+      "lng": -73.5553701
+    },
+    {
+      "id": "bargeorge",
+      "name": "Bar George",
+      "image": "bargeorge",
+      "source": "https://www.bargeorge.ca/menus/",
+      "mapQuery": "Bar George, 1440 Rue Drummond",
+      "area": "downtown",
+      "kind": "Drinks & dessert",
+      "description": "Carved wood, stained glass, cocktails, and a grand mansion setting. Get a drink and the café gourmand.",
+      "note": "The current menu lists five mini desserts for CAD 20. Bar seating is walk-in.",
+      "price": "CAD 25–50",
+      "lat": 45.4990961,
+      "lng": -73.5757695
+    },
+    {
+      "id": "ratafia",
+      "name": "Ratafia",
+      "image": "ratafia",
+      "source": "https://www.ratafia.ca/",
+      "mapQuery": "Ratafia, 6778 Boulevard Saint-Laurent",
+      "area": "littleitaly",
+      "kind": "Dessert & wine",
+      "description": "Inventive plated desserts with wine or cocktails. This is the dessert destination, not just a bakery stop.",
+      "note": "Evening only, Tuesday–Saturday from 5 PM; closed Sunday. It replaces the evening plan, not a quick daytime detour.",
+      "price": "CAD 30–55 dessert + drink",
+      "lat": 45.5323334,
+      "lng": -73.613521
+    },
+    {
+      "id": "etatdechoc",
+      "name": "État de choc",
+      "image": "etatdechoc",
+      "source": "https://www.etatdechoc.com/en/pages/contact",
+      "mapQuery": "État de choc, 6466 Boulevard Saint-Laurent",
+      "area": "littleitaly",
+      "kind": "Dessert",
+      "description": "Bean-to-bar chocolates, tasting bars, and gifts that are actually worth bringing home.",
+      "note": "6466 Saint-Laurent; Saturday 10 AM–5 PM, Sunday 11 AM–5 PM.",
+      "price": "CAD 10–30",
+      "lat": 45.5303409,
+      "lng": -73.6091991
     }
   ],
   "days": [
@@ -174,8 +439,7 @@
           "time": "On arrival",
           "title": "Check in at Le Germain",
           "text": "Drop your bags and settle in. Tell the hotel you will arrive late.",
-          "stops": [],
-          "image": "germain"
+          "stops": []
         },
         {
           "time": "After check-in",
@@ -184,8 +448,7 @@
           "stops": [
             "banquise"
           ],
-          "mode": "driving",
-          "image": "poutine"
+          "mode": "driving"
         }
       ]
     },
@@ -194,7 +457,7 @@
       "label": "Saturday",
       "date": "Nov 21",
       "title": "Mile End → the river → a proper dinner.",
-      "summary": "Walk within each neighborhood. Take taxis for the longer transfers.",
+      "summary": "Mile End for shops, the Plateau for lunch and dessert, then the river and a better dinner.",
       "blocks": [
         {
           "time": "9:30 AM",
@@ -204,8 +467,7 @@
             "stviateur",
             "olimpico"
           ],
-          "mode": "driving",
-          "image": "mileend"
+          "mode": "driving"
         },
         {
           "time": "11 AM",
@@ -216,7 +478,6 @@
             "lvnea"
           ],
           "mode": "walking",
-          "image": "bref",
           "nearby": [
             {
               "id": "drawn",
@@ -231,50 +492,46 @@
         {
           "time": "1 PM",
           "title": "Lunch at Schwartz’s",
-          "text": "Walk south for a medium-fat smoked-meat sandwich, mustard, and a pickle. Use the takeaway counter if the sit-down line is long.",
+          "text": "Get a medium-fat smoked-meat sandwich, then walk toward Duluth for chocolates at Chloé. The nearby cards give you a pastry and pinball stop as well.",
           "stops": [
             "schwartz"
           ],
-          "mode": "walking",
-          "image": "schwartz"
+          "mode": "walking"
         },
         {
           "time": "2:30 PM",
-          "title": "Go see Habitat 67",
-          "text": "Taxi to Avenue Pierre-Dupuy to see Moshe Safdie’s stacked housing experiment from the public street. This is an exterior visit, so no tour booking is needed. Stay out of the private residential walkways.",
+          "title": "Bota Bota · the afternoon highlight",
+          "text": "Reserve a two-hour water-circuit slot for hot-and-cold baths with river views. The boat is quiet; confirm where low-voice conversation is allowed. Bring swimwear.",
           "stops": [
-            "habitat67"
+            "botabota"
           ],
           "mode": "driving",
-          "image": "habitat67"
+          "headline": true
         },
         {
-          "time": "4 PM",
+          "time": "5 PM",
           "title": "Back to the hotel",
-          "text": "Taxi back, warm up, and take a break before dinner. If the weather is miserable, skip the exposed Habitat stop and come back earlier.",
+          "text": "Taxi back, warm up, and get ready for dinner.",
           "stops": [],
-          "image": null,
           "returnToHotel": true
         },
         {
           "time": "7 PM",
-          "title": "Dinner at L’Express",
-          "text": "A proper French bistro evening. Get a main each, share a starter or dessert, and keep the wine order modest. Allow CAD 75–110 each before tax and tip.",
+          "title": "Dinner at Monarque · Brasserie",
+          "text": "Book the brasserie for a polished dinner with more room to choose your spend than the formal dining room. Save room for dessert. Allow CAD 85–130 each before tax and tip.",
           "stops": [
-            "express"
+            "monarque"
           ],
-          "mode": "driving",
-          "image": "express"
+          "mode": "driving"
         },
         {
           "time": "After dinner",
-          "title": "One cocktail at Cloakroom",
-          "text": "Taxi over for one drink tailored to your tastes. Ask the price before ordering rare spirits. It is walk-in only; if there is a long queue, finish the evening at the hotel.",
+          "title": "Bar George for a cocktail and mini desserts",
+          "text": "Taxi to the mansion bar. Have one good cocktail and the café gourmand if you still want something sweet. Cloakroom is the nearby alternative.",
           "stops": [
-            "cloakroom"
+            "bargeorge"
           ],
-          "mode": "driving",
-          "image": "cloakroom"
+          "mode": "driving"
         }
       ]
     },
@@ -292,8 +549,7 @@
           "stops": [
             "crew"
           ],
-          "mode": "driving",
-          "image": "crew"
+          "mode": "driving"
         },
         {
           "time": "10 AM",
@@ -304,50 +560,182 @@
             "empreinte",
             "oldport"
           ],
-          "mode": "walking",
-          "image": "oldmontreal"
+          "mode": "walking"
         },
         {
           "time": "11:45 AM",
-          "title": "An early lunch at Olive et Gourmando",
-          "text": "Walk back along Saint-Paul for a sandwich. Take it to go if there is a queue; do not wait for a brunch table.",
+          "title": "Chez Potier · pastries and a light lunch",
+          "text": "Walk to the Wellington boutique for refined individual pastries, chocolates, and something savory. Olive et Gourmando is the nearby sandwich alternative.",
           "stops": [
-            "olive"
+            "potier"
           ],
-          "mode": "walking",
-          "image": null
+          "mode": "walking"
         },
         {
           "time": "12:45 PM",
           "title": "Collect bags and the car",
           "text": "Taxi back to Le Germain. Arrange the car retrieval before you sit down to lunch.",
           "stops": [],
-          "image": null,
           "returnToHotel": true
         },
         {
           "time": "1:30 PM",
           "title": "Leave for Boston",
           "text": "Check live navigation and US-bound border waits that morning. Leave earlier if conditions require it. The 10 PM arrival is a target, not a guarantee.",
-          "stops": [],
-          "image": null
+          "stops": []
         }
       ]
     }
   ],
   "practical": [
     {
-      "title": "Two things to reserve",
-      "text": "Le Germain, Signature Two Queen Beds. L’Express, Saturday 7 PM: +1 514 845-5333. Everything else is walk-in or an exterior visit."
+      "title": "Book the anchors",
+      "text": "Choose a hotel room with the right beds, reserve the afternoon activity, and book Monarque’s brasserie for Saturday 7 PM. Rates and live availability are not confirmed."
     },
     {
       "title": "Getting around",
-      "text": "Keep the car at the hotel. Walk in Mile End and Old Montréal; use taxis for Habitat 67, hotel breaks, and evening transfers."
+      "text": "Walk within each cluster. Use taxis between Mile End, the waterfront, and the downtown hotels. All food/activity amounts are planning allowances in CAD, generally before tax and tip; hotel cards link to live booking pages."
     },
     {
       "title": "The return drive",
       "text": "Leave at 1:30 PM Sunday. Check live traffic and the US entry queue at Highgate Springs before lunch.",
       "source": "https://bwt.cbp.gov/"
+    }
+  ],
+  "neighborhoods": [
+    {
+      "id": "mileend",
+      "name": "Mile End & Outremont",
+      "subtitle": "Coffee, independent design, perfume, and a polished bistro. Your Saturday morning cluster.",
+      "ids": [
+        "stviateur",
+        "olimpico",
+        "bref",
+        "lvnea",
+        "drawn",
+        "hparfums",
+        "bernie",
+        "lemeac"
+      ]
+    },
+    {
+      "id": "plateau",
+      "name": "The Plateau",
+      "subtitle": "Lunch, handmade chocolates, a great pastry, and a short game of pinball. Walk between these stops.",
+      "ids": [
+        "schwartz",
+        "chloe",
+        "kouign",
+        "northstar",
+        "express",
+        "banquise"
+      ]
+    },
+    {
+      "id": "old",
+      "name": "Old Montréal & the river",
+      "subtitle": "The main afternoon and Sunday cluster. Chez Potier is at the western edge; Habitat 67 needs a taxi across the water.",
+      "ids": [
+        "monarque",
+        "potier",
+        "crew",
+        "olive",
+        "empreinte",
+        "notredame",
+        "botabota",
+        "habitat67",
+        "citememoire",
+        "oldport"
+      ]
+    },
+    {
+      "id": "downtown",
+      "name": "Golden Square Mile",
+      "subtitle": "Two polished evening stops near the downtown hotels. A taxi transfer from Old Montréal.",
+      "ids": [
+        "bargeorge",
+        "cloakroom"
+      ]
+    },
+    {
+      "id": "littleitaly",
+      "name": "Little Italy · the dessert detour",
+      "subtitle": "North of Mile End, so treat this as a separate cluster. Ratafia is an evening destination; chocolate and shopping work in the day.",
+      "ids": [
+        "ratafia",
+        "etatdechoc",
+        "exvoto"
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "id": "germain",
+      "name": "Le Germain Montréal",
+      "lat": 45.5024267,
+      "lng": -73.574419,
+      "image": "germain",
+      "source": "https://www.germainhotels.com/en/le-germain-hotel/montreal",
+      "label": "Easy default",
+      "description": "Refined, comfortable, and central. The cleanest shared-room choice.",
+      "beds": "Signature Two Queen Beds",
+      "level": "Upscale"
+    },
+    {
+      "id": "williamgray",
+      "name": "Hôtel William Gray",
+      "lat": 45.507444,
+      "lng": -73.5532782,
+      "image": "williamgray",
+      "label": "Best old-city atmosphere",
+      "level": "Luxury",
+      "description": "Stone architecture, contemporary rooms, and a real hotel living room. Best if you want the hotel to feel part of the trip.",
+      "beds": "Confirm a two-bed category; many rooms are kings.",
+      "source": "https://hotelwilliamgray.com/rooms/"
+    },
+    {
+      "id": "mountstephen",
+      "name": "Le Mount Stephen",
+      "lat": 45.4990522,
+      "lng": -73.5757732,
+      "image": "mountstephen",
+      "label": "The grander option",
+      "level": "Luxury",
+      "description": "A historic mansion paired with modern rooms, plus Bar George downstairs. The most overtly grand choice.",
+      "beds": "Deluxe Two Queen Room is an official category.",
+      "source": "https://www.lemountstephen.com/rooms-and-suites.htm"
+    },
+    {
+      "id": "nelligan",
+      "name": "Hôtel Nelligan",
+      "lat": 45.504061,
+      "lng": -73.5544559,
+      "image": "nelligan",
+      "label": "Warm, romantic old stone",
+      "level": "Upscale",
+      "description": "Brick, beams, and a cozy Old Montréal base. A good counterpoint to the modern downtown hotels.",
+      "beds": "Confirm the current two-bed room category directly.",
+      "source": "https://hotelnelligan.com/rooms/"
+    }
+  ],
+  "headlines": [
+    {
+      "id": "botabota",
+      "label": "My pick for a cold weekend",
+      "description": "A two-hour floating-spa session. Book it, bring swimwear, and make this the afternoon’s one paid activity.",
+      "duration": "Reserve a 2-hour slot"
+    },
+    {
+      "id": "habitat67",
+      "label": "For architecture & design",
+      "description": "Choose the 90-minute guided visit if Saturday tickets work. It replaces the spa, including its travel time.",
+      "duration": "Guided tour: 90 minutes"
+    },
+    {
+      "id": "notredame",
+      "label": "The dramatic interior",
+      "description": "Go inside Saturday while sightseeing is open. AURA is a separate evening ticket if you want a more produced light-and-sound experience.",
+      "duration": "Saturday daytime; AURA separately"
     }
   ]
 }
