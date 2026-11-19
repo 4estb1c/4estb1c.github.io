@@ -948,5 +948,30 @@
         "credit": ""
       }
     ]
+  },
+  "guyomarch": {
+    "photos": [
+      {
+        "src": "images/galleries/guyomarch/1.jpg",
+        "alt": "Contemporary jewelry exhibited at Galerie Noel Guyomarch (archive photo)",
+        "source": "https://artjewelryforum.org/galleries/galerie-noel-guyomarch/",
+        "image_source": "https://artjewelryforum.org/wp-content/uploads/2017/04/Image3_580x385px.jpg",
+        "credit": "Courtesy of Galerie Noël Guyomarc’h via Art Jewelry Forum (archive photographs)"
+      },
+      {
+        "src": "images/galleries/guyomarch/2.jpg",
+        "alt": "Galerie Noël Guyomarc’h: gallery and contemporary jewelry, archive photo 2",
+        "source": "https://artjewelryforum.org/galleries/galerie-noel-guyomarch/",
+        "image_source": "https://artjewelryforum.org/wp-content/uploads/2017/04/Image-1_580x385px.jpg",
+        "credit": "Courtesy of Galerie Noël Guyomarc’h via Art Jewelry Forum (archive photographs)"
+      },
+      {
+        "src": "images/galleries/guyomarch/3.jpg",
+        "alt": "Galerie Noël Guyomarc’h: gallery and contemporary jewelry, archive photo 3",
+        "source": "https://artjewelryforum.org/galleries/galerie-noel-guyomarch/",
+        "image_source": "https://artjewelryforum.org/wp-content/uploads/2017/04/Image-2_580x385px.jpg",
+        "credit": "Courtesy of Galerie Noël Guyomarc’h via Art Jewelry Forum (archive photographs)"
+      }
+    ]
   }
 }

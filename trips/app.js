@@ -26,10 +26,17 @@
     }
     const plan = routes.days[day];
     const map = L.map(container, {scrollWheelZoom:false,zoomControl:true});
-    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    // OSM's public tile server requires a Referer, which file:// pages cannot send.
+    // This public Esri basemap also works when the portable HTML is opened locally.
+    const tiles = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
       maxZoom:19,
-      attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-    }).addTo(map);
+      referrerPolicy:'no-referrer',
+      attribution:'Tiles &copy; <a href="https://www.arcgis.com/home/item.html?id=3b93337983e9436f8db950e38a8629af">Esri and contributors</a> &middot; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    });
+    tiles.on('tileerror', () => {
+      pane.querySelector('.map-fallback').hidden = false;
+    });
+    tiles.addTo(map);
     const groups = new Map();
     const coordinates = [[routes.hotel.lat,routes.hotel.lng]];
     plan.stops.forEach(stop => {
