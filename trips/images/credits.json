@@ -1,0 +1,144 @@
+{
+  "oldmontreal": {
+    "file": "images/oldmontreal.jpg",
+    "page": "https://www.mtl.org/en/experience/re-discover-new-old-montreal",
+    "image": "https://api.mtl.org/files/default/styles/rectangle_600_706/public/2025-09/56648_0.jpg.webp?itok=dQM8449h"
+  },
+  "mileend": {
+    "file": "images/mileend.jpg",
+    "page": "https://www.mtl.org/en/experience/mile-end",
+    "image": "https://api.mtl.org/files/default/styles/rectangle_1200_675/public/2024-04/50603.jpg.webp?itok=xmT896pZ"
+  },
+  "mountroyal": {
+    "file": "images/mountroyal.jpg",
+    "page": "https://www.mtl.org/en/experience/montreal-tour-mount-royal-park",
+    "image": "https://api.mtl.org/files/default/styles/rectangle_1200_675/public/2020-06/45676_0.jpg.webp?itok=izhb85tw"
+  },
+  "market": {
+    "file": "images/market.jpg",
+    "page": "https://www.mtl.org/en/what-to-do/shopping/jean-talon-market-mtl",
+    "image": "https://api.mtl.org/files/default/styles/rectangle_1200_675/public/2025-08/58595_1.jpg.webp?itok=EgL2iUIQ"
+  },
+  "crew": {
+    "file": "images/crew.jpg",
+    "page": "https://www.mtl.org/en/what-to-do/food/crew-collective-cafe",
+    "image": "https://api.mtl.org/files/default/styles/square_600_600/public/2024-06/56645.jpeg.webp?h=449385bc&itok=KMZphWaQ"
+  },
+  "express": {
+    "file": "images/express.jpg",
+    "page": "https://restaurantlexpress.com/en/",
+    "image": "https://restaurantlexpress.com/wp-content/uploads/2021/07/10-montreal-best-restaurant-2-1536x864.jpg"
+  },
+  "hparfums": {
+    "file": "images/hparfums.jpg",
+    "page": "https://hparfums.com/pages/visit-us",
+    "image": "https://hparfums.com/cdn/shop/files/IMG_3916.jpg?v=1748453897&width=1400"
+  },
+  "stoi": {
+    "file": "images/stoi.jpg",
+    "page": "https://maisonstoi.com/en/pages/a-propos",
+    "image": "http://maisonstoi.com/cdn/shop/files/ASMB_4d587a06-5586-4669-9ea8-5cbab6da173d.jpg?v=1737048139"
+  },
+  "bagels": {
+    "file": "images/bagels.jpg",
+    "page": "https://www.stviateurbagel.com/",
+    "image": "http://stviateurbagel.com/cdn/shop/files/st-viateur-bagel-social-share.png?v=1737128349"
+  },
+  "schwartz": {
+    "file": "images/schwartz.jpg",
+    "page": "https://schwartzsdeli.com/",
+    "image": "https://schwartzsdeli.com/cdn/shop/files/banner-2_8ef066d5-ca08-4d5c-a1e1-14f9a5aacafd.jpg?v=1645906369"
+  },
+  "poutine": {
+    "file": "images/poutine.jpg",
+    "page": "https://www.mtl.org/en/experience/best-poutines-montreal",
+    "image": "https://api.mtl.org/files/default/styles/rectangle_1200_675/public/2022-03/37919_0.jpg.webp?itok=cEjM8nu-"
+  },
+  "monlapin": {
+    "file": "images/monlapin.jpg",
+    "page": "https://www.mtl.org/fr/quoi-faire/gastronomie/mon-lapin",
+    "image": "https://api.mtl.org/files/default/styles/rectangle_1200_675/public/2025-12/website_JPG-62037.jpg.webp?itok=FnOqfxkC"
+  },
+  "dauphin": {
+    "file": "images/dauphin.jpg",
+    "page": "https://www.hotelsdauphin.ca",
+    "image": "https://dauphincontent.imgix.net/nfw8sun8l2hw/2BnVYGMb63PGqSSx5DuwnK/f9d32910691e976cbaad07359f1d8820/HOTELDAUPHIN_MONTREAL_011.jpg?auto=format,compress&w=1400"
+  },
+  "germain": {
+    "file": "images/germain.jpg",
+    "page": "https://www.germainhotels.com/en/le-germain-hotel/montreal",
+    "image": "https://ik.imagekit.io/n9qi9vys6//website-assets/55369153542_c9a13a1af4_k.jpg?w=1200&h=900&fit=crop&auto=compress,format"
+  },
+  "williamgray": {
+    "file": "images/williamgray.jpg",
+    "page": "https://hotelwilliamgray.com/",
+    "image": "https://hotelwilliamgray.com/wp-content/uploads/2017/02/WilliamGray.jpg"
+  },
+  "botabota": {
+    "file": "images/botabota.jpg",
+    "page": "https://botabota.ca/en/",
+    "image": "https://botabota.ca/wp-content/uploads/2026/11/Bota_100926-11-2-1536x864.jpg"
+  },
+  "lvnea": {
+    "file": "images/lvnea.jpg",
+    "page": "https://www.lvnea.com/en-us/pages/boutique-hours-and-location",
+    "image": "https://www.lvnea.com/cdn/shop/files/shop_4.png?v=1778873414&width=1300"
+  },
+  "bref": {
+    "file": "images/bref.jpg",
+    "page": "https://brefmtl.com/pages/a-propos",
+    "image": "https://brefmtl.com/cdn/shop/files/BrefCeramique2026_02carolineperronphotographies.jpg?v=1793379743&width=1300",
+    "photographer": "Caroline Perron, as identified by source filename"
+  },
+  "exvoto": {
+    "file": "images/exvoto.jpg",
+    "page": "https://exvoto.ca/en",
+    "image": "https://exvoto.ca/cdn/shop/files/binkbannerdesk.png?v=1794498103&width=2400"
+  },
+  "northstar": {
+    "file": "images/northstar.jpg",
+    "page": "https://www.themain.com/montreal/bar/north-star-machines-a-piastres",
+    "image": "https://cdn.sanity.io/images/2edxk5v7/production/cebaa8e2e0e0531ac7392c21607093a07c17aae8-800x531.png?w=1200&h=630&fit=crop&fm=jpg&q=80"
+  },
+  "cloakroom": {
+    "file": "images/cloakroom.jpg",
+    "page": "https://www.cloakroombarmtl.com/",
+    "image": "http://static1.squarespace.com/static/644e7c85b2ee8b5623ea06c1/t/644eb5bda0955b5158950e59/1682879933220/Screen+Shot+2023-04-30+at+11.10.38+AM.png?format=1500w"
+  },
+  "lemeac": {
+    "file": "images/lemeac.jpg",
+    "page": "https://www.restaurantlemeac.com/page-des-menus",
+    "image": "https://images.squarespace-cdn.com/content/v1/5b2bc2a1da02bc3b1c3e2fe9/1530125140464-406H3PY8COO1GG4AYDSB/Leme%CC%81acFood-031.jpg"
+  },
+  "kouign": {
+    "file": "images/kouign.jpg",
+    "page": "https://tastet.ca/critiques/kouign-amann-montreal/",
+    "image": "https://images.tastet.ca/_/rs:fit:1080:720:false:0/plain/https://sesame.tastet.ca/assets/773bae84-1be7-4b37-a82a-27836d376709.jpg@jpg",
+    "photographer": "Alison Slattery / Two Food Photographers, credited by Tastet"
+  },
+  "empreinte": {
+    "file": "images/empreinte.jpg",
+    "page": "https://www.lempreintecoop.com/en/pages/boutique-dart-vieux-montreal-lempreinte-cooperative",
+    "image": "https://cdn.shopify.com/s/files/1/0464/2622/6844/files/Lempreinte-interieur-2_1024x1024.jpg?v=1600174114"
+  },
+  "habitat67": {
+    "file": "images/habitat67.jpg",
+    "page": "https://www.mtl.org/en/what-to-do/culture-arts-heritage/habitat-67",
+    "image": "https://api.mtl.org/files/default/styles/rectangle_1200_675/public/2017-05/32568H.jpg.webp?itok=HPwrYaXM"
+  },
+  "citememoire": {
+    "file": "images/citememoire.jpg",
+    "page": "https://www.montrealenhistoires.com/en/cite_memoire_montreal/",
+    "image": "https://www.montrealenhistoires.com/wp-content/uploads/2025/01/Cite_memoire_2025.jpg"
+  },
+  "wilensky": {
+    "file": "images/wilensky.jpg",
+    "page": "https://tastet.ca/en/reviews/wilensky-a-timeless-and-successful-classic/",
+    "image": "https://tastet.ca/wp-content/uploads/2017/09/wilensky-mile-end-montreal-7-e1504902126859.jpg"
+  },
+  "satosphere": {
+    "file": "images/satosphere.jpg",
+    "page": "https://sat.qc.ca/fr/evenements/off-domesicle-m-pour-montreal-2026/",
+    "image": "https://ressources.sat.qc.ca/uploads/2026/10/offd_mpm_vignette.jpg"
+  }
+}
