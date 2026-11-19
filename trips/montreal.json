@@ -246,20 +246,6 @@
       "price": "CAD 25–40"
     },
     {
-      "id": "lemeac",
-      "name": "Leméac",
-      "lat": 45.518284,
-      "lng": -73.5972475,
-      "image": "lemeac",
-      "source": "https://www.restaurantlemeac.com/contact-en",
-      "mapQuery": "Leméac, 1045 Avenue Laurier Ouest",
-      "area": "mileend",
-      "kind": "Dining",
-      "description": "A more polished Outremont bistro for a long lunch or proper dinner.",
-      "note": "Weekend brunch/lunch 10 AM–3 PM; dinner 5–11 PM. Reserve.",
-      "price": "CAD 45–100"
-    },
-    {
       "id": "kouign",
       "name": "Pâtisserie Au Kouign-Amann",
       "lat": 45.5231147,
@@ -479,20 +465,6 @@
       "note": "79 Saint-Paul East, opposite L’Empreinte. Published listings show Wednesday–Sunday 10 AM–6 PM."
     },
     {
-      "id": "guyomarch",
-      "name": "Galerie Noël Guyomarc’h",
-      "lat": 45.5216908,
-      "lng": -73.5902367,
-      "image": "guyomarch",
-      "area": "mileend",
-      "kind": "Shop",
-      "source": "https://galerienoelguyomarch.com/en/contact/",
-      "mapQuery": "Galerie Noël Guyomarc’h, 4836 Boulevard Saint-Laurent",
-      "description": "Contemporary art jewelry and sculptural objects by independent makers. A more unusual browse than a conventional luxury jeweler.",
-      "note": "Published Saturday hours 11 AM–5 PM; closed Sunday. Images are archive gallery photographs, not current inventory.",
-      "price": "Browse free"
-    },
-    {
       "id": "mercantile",
       "name": "Clark Street Mercantile",
       "lat": 45.5232514,
@@ -585,25 +557,6 @@
       "description": "French pastries and Callebaut hot chocolate in an airy café with 35 seats.",
       "note": "Saturday and Sunday 8 AM–6 PM.",
       "price": "À la carte"
-    },
-    {
-      "id": "rooney",
-      "name": "Rooney",
-      "lat": 45.5017618,
-      "lng": -73.5592439,
-      "address": "395 Rue Notre-Dame Ouest, #101, Montréal, QC H2Y 1V2",
-      "mapQuery": "Rooney, 395 Rue Notre-Dame Ouest, Montréal",
-      "source": "https://www.rooneyshop.com/pages/contact",
-      "area": "old",
-      "kind": "Shop",
-      "price": "Browse free",
-      "description": "A polished independent boutique for men’s and women’s designer clothes, fragrance, and carefully chosen accessories. Look for Lemaire, Our Legacy, Comme des Garçons perfumes, and Frama.",
-      "note": "Sunday 11:30 AM–5 PM, confirmed on the shop’s official contact page. Browse after lunch before Chez Potier.",
-      "brand_source": "https://www.rooneyshop.com/",
-      "coordinate_source": "https://www.openstreetmap.org/way/1291471877",
-      "coordinate_verification": "Photon address result for 395 Rue Notre-Dame Ouest in Vieux-Montréal, matching the official street number and street; building-level point.",
-      "photo_note": "Three actual venue photos from the current official About gallery, with late-2025 image update timestamps. Displays and stock may change.",
-      "image": "rooney"
     },
     {
       "id": "granderoue",
@@ -718,40 +671,6 @@
       "price": ""
     },
     {
-      "id": "chezleveque",
-      "name": "Chez Lévêque",
-      "lat": 45.5182108,
-      "lng": -73.5966875,
-      "address": "1030 Avenue Laurier Ouest, Outremont, QC H2V 2K8",
-      "mapQuery": "Chez Lévêque, 1030 Avenue Laurier Ouest, Montréal",
-      "source": "https://en.chezleveque.ca/",
-      "area": "mileend",
-      "kind": "Lunch",
-      "price": "C$38 lunch formula; regular mains C$35–49 before tax/tip",
-      "description": "Classic French brasserie across from Leméac. A useful backup for a proper sit-down lunch: duck confit with fries, steak-frites, or a hearty seasonal stew.",
-      "note": "Saturday noon backup for Leméac. Open 11 AM–11 PM. C$38 appetizer-and-main formula available 11 AM–3 PM, excluding holidays and festive occasions. No reservation made.",
-      "hours_source": "https://en.chezleveque.ca/pages/contact",
-      "reservation_url": "https://en.chezleveque.ca/pages/reservations",
-      "menu_url": "https://en.chezleveque.ca/collections/formule-brasserie",
-      "menu_facts": {
-        "formula_cad": 38,
-        "formula_time": "Daily 11 AM–3 PM and after 9 PM, except holidays/festive occasions",
-        "formula_choices": [
-          "Duck confit leg, Madeira sauce, fries, and green salad",
-          "Beef tournedos with bacon, pepper sauce, and fries",
-          "Seasonal stew"
-        ],
-        "hanger_steak_formula_supplement_cad": 10,
-        "regular_duck_confit_cad": 35,
-        "regular_hanger_steak_cad": 40
-      },
-      "regular_menu_source": "https://en.chezleveque.ca/collections/menu-regulier",
-      "coordinate_source": "https://www.openstreetmap.org/way/365229067",
-      "coordinate_verification": "Photon building address result at 1030 Avenue Laurier Ouest, matching official address.",
-      "photo_note": "Real room and food photos. The braised meat image is not labeled as duck or steak. Bouillabaisse photo is explicitly named by the tourism gallery. Exact presentation may vary.",
-      "image": "chezleveque"
-    },
-    {
       "id": "fairmount",
       "name": "Fairmount Bagel",
       "lat": 45.5228918,
@@ -830,6 +749,50 @@
       "coordinate_note": "Official park’s sculpture marker, not a verified taxi drop-off or walking entrance. Use the Floralies Gardens destination for navigation. No assertion that this point lies on a path.",
       "photo_note": "All three photographs are from the current park’s official gallery. Photo 1 is a winter night photograph credited to Danny Donovan; photos 2 and 3 are summer views credited to Myriam Baril-Tessier. No 2013 Botanical Garden photograph used.",
       "image": "motherearth"
+    },
+    {
+      "id": "gueuleton",
+      "name": "Gueuleton",
+      "lat": 45.5253285,
+      "lng": -73.6037864,
+      "mapQuery": "Gueuleton Montréal, 150 Rue Bernard Ouest",
+      "source": "https://www.gueuleton.ca/en/pages/la-carte",
+      "area": "mileend",
+      "kind": "Dining",
+      "image": "gueuleton",
+      "description": "Charcuterie, Québec cheeses, and hearty French cooking.",
+      "note": "",
+      "price": ""
+    },
+    {
+      "id": "hamel",
+      "name": "Fromagerie Hamel · Jean-Talon",
+      "lat": 45.5361095,
+      "lng": -73.6148902,
+      "mapQuery": "Fromagerie Hamel, 220 Rue Jean-Talon Est",
+      "source": "https://www.fromageriehamel.com/en/stores/jean-talon-market/",
+      "area": "littleitaly",
+      "kind": "Cheese",
+      "description": "Québec cheeses, charcuterie, and bread near Jean-Talon Market.",
+      "coordinate_note": "Approximate area marker from the official store’s Directions link to Jean-Talon Market. Shop navigation uses its verified street address, 220 Jean-Talon East.",
+      "image": "hamel",
+      "note": "",
+      "price": ""
+    },
+    {
+      "id": "guillaume",
+      "name": "Boulangerie Guillaume",
+      "lat": 45.5235046,
+      "lng": -73.5942927,
+      "mapQuery": "Boulangerie Guillaume, 5170 Boulevard Saint-Laurent",
+      "source": "https://guillau.me/",
+      "area": "mileend",
+      "kind": "Bakery",
+      "description": "Artisan bread, ham-and-cheese sandwiches, and pastries.",
+      "coordinate_note": "Google Maps place pin reached via the current official retail address link.",
+      "image": "guillaume",
+      "note": "",
+      "price": ""
     }
   ],
   "days": [
@@ -855,17 +818,7 @@
       "date": "Nov 21",
       "blocks": [
         {
-          "time": "9:15 AM",
-          "title": "Mother Earth",
-          "text": "The giant woman at Parc Jean-Drapeau’s Floralies Gardens. Taxi to the gardens, then walk to the sculpture.",
-          "note": "Free. Foliage fades in November; summer photos show the greener season.",
-          "stops": [
-            "motherearth"
-          ],
-          "mode": "driving"
-        },
-        {
-          "time": "10:30 AM",
+          "time": "10 AM",
           "title": "St-Viateur Bagel",
           "text": "Hot wood-fired sesame bagels from the original bakery.",
           "stops": [
@@ -914,32 +867,26 @@
           "stops": [
             "hparfums"
           ],
-          "mode": "walking",
-          "nearby": [
-            {
-              "id": "guyomarch",
-              "text": "Art jewelry and sculptural objects on Saint-Laurent. Saturday 11 AM–5 PM."
-            }
-          ]
+          "mode": "walking"
         },
         {
           "time": "12:30 PM",
-          "title": "Leméac",
-          "text": "French bistro lunch. CAD 55–90 each before tax and tip.",
+          "title": "Gueuleton",
+          "text": "Share house terrine and charcuterie (CAD 24), plus Québec cheeses (16). Steak and duck are also on the menu.",
           "stops": [
-            "lemeac"
+            "gueuleton"
           ],
           "mode": "walking",
-          "note": "Reserve for two; 12:30 PM was available Nov 18.",
+          "note": "Reserve for two at 12:30 PM; tables listed Nov 18.",
           "nearby": [
             {
-              "id": "chezleveque",
-              "text": "Across Laurier: duck confit, steak frites, and a two-course lunch from CAD 38. Reserve."
+              "id": "guillaume",
+              "text": "A bakery lunch nearby: ham-and-cheese sandwiches, sourdough, olive ciabatta, and pastries. Retail shop at 5170 Saint-Laurent."
             }
           ]
         },
         {
-          "time": "2 PM",
+          "time": "1:45 PM",
           "title": "LVNEA",
           "text": "Locally made botanical perfume: woods, resins, and unusual scents. Entrance on Casgrain.",
           "stops": [
@@ -954,7 +901,7 @@
           ]
         },
         {
-          "time": "2:45 PM",
+          "time": "2:30 PM",
           "title": "État de choc",
           "text": "Bean-to-bar chocolate and bonbons to take home.",
           "stops": [
@@ -969,7 +916,7 @@
           ]
         },
         {
-          "time": "3:15 PM",
+          "time": "3 PM",
           "title": "MONOKIINI",
           "text": "Handmade ceramics, a working studio, and coffee.",
           "stops": [
@@ -985,16 +932,27 @@
           ]
         },
         {
-          "time": "4:15 PM",
-          "title": "Alt Hotel Montréal",
-          "text": "Taxi back, drop shopping, and take a break.",
+          "time": "3:30 PM",
+          "title": "Fromagerie Hamel",
+          "text": "At Jean-Talon Market: ask the cheesemonger for a few Québec cheeses to sample, then choose bread and charcuterie from the counter.",
+          "note": "A shop visit, not a booked tasting. Saturday until 6 PM.",
           "stops": [
-            "altmontreal"
+            "hamel"
+          ],
+          "mode": "walking"
+        },
+        {
+          "time": "Around 4:30 PM",
+          "title": "Mother Earth",
+          "text": "The giant woman at Parc Jean-Drapeau’s Floralies Gardens. Taxi to the gardens, then walk to the sculpture.",
+          "note": "Free. Foliage fades in November; expect an after-dark visit.",
+          "stops": [
+            "motherearth"
           ],
           "mode": "driving"
         },
         {
-          "time": "4:45–5:30 PM",
+          "time": "5:30–7 PM",
           "title": "Montréal Eaton Centre",
           "text": "Downtown’s largest retail centre: UNIQLO, BOSS, Nike, Aritzia, and Time Out Market.",
           "stops": [
@@ -1003,7 +961,7 @@
           "mode": "driving"
         },
         {
-          "time": "5:45–6:45 PM",
+          "time": "7:15–8:15 PM",
           "title": "Atrium Le 1000",
           "text": "Indoor skating beneath a glass atrium. Entry + skates + helmet: about CAD 23.",
           "stops": [
@@ -1011,10 +969,10 @@
           ],
           "mode": "walking",
           "star": true,
-          "note": "Book the 5:30–6:30 PM arrival window; arrive around 5:45 PM."
+          "note": "Book the 6:30–7:30 PM arrival window; arrive around 7:15 PM."
         },
         {
-          "time": "7:30 PM target",
+          "time": "9 PM target",
           "title": "Monarque",
           "text": "French brasserie dinner. CAD 85–130 each before tax and tip.",
           "stops": [
@@ -1031,7 +989,7 @@
               "text": "Nearby French bistro: steak frites CAD 39, duck confit 35, beef cheek 41. Reserve Saturday dinner."
             }
           ],
-          "note": "No brasserie tables listed Nov 18. Formal dining room: 9:30 PM available. Alternatives below."
+          "note": "Brasserie full when checked Nov 18. Formal dining room had 9:30 PM; Holder nearby is another dinner option."
         },
         {
           "time": "After dinner",
@@ -1070,15 +1028,6 @@
               "text": "Panini, pastries, and café breakfast on Saint-Paul West. Walk-in only."
             }
           ]
-        },
-        {
-          "time": "10:30 AM",
-          "title": "Rue Saint-Paul",
-          "text": "Walk the cobbled street past old stone façades, little storefronts, and courtyard entrances.",
-          "stops": [
-            "saintpaulwalk"
-          ],
-          "mode": "walking"
         },
         {
           "time": "11 AM",
@@ -1145,11 +1094,11 @@
           ]
         },
         {
-          "time": "2:35 PM",
-          "title": "Rooney",
-          "text": "Designer clothing, fragrance, and objects: Lemaire, Our Legacy, Comme des Garçons, and Frama.",
+          "time": "2:30 PM",
+          "title": "Rue Saint-Paul",
+          "text": "Walk the cobbled street past old stone façades, little storefronts, and courtyard entrances.",
           "stops": [
-            "rooney"
+            "saintpaulwalk"
           ],
           "mode": "walking"
         },
@@ -1207,7 +1156,7 @@
   "practical": [
     {
       "title": "Getting around",
-      "text": "Walk within each area. Taxi to the northern shops and back Saturday, and to YUL Sunday."
+      "text": "Walk within each area. Saturday: taxi north, then to Mother Earth and Eaton Centre. Sunday: taxi to YUL."
     }
   ],
   "neighborhoods": [
@@ -1223,14 +1172,13 @@
         "drawn",
         "hparfums",
         "bernie",
-        "lemeac",
         "atelierb",
-        "guyomarch",
         "mercantile",
         "maisonsauvage",
         "bernardwalk",
-        "chezleveque",
-        "fairmount"
+        "fairmount",
+        "gueuleton",
+        "guillaume"
       ]
     },
     {
@@ -1265,7 +1213,6 @@
         "leroyer",
         "placecarmin",
         "beteapain",
-        "rooney",
         "granderoue",
         "saintpaulwalk",
         "peelbasin",
@@ -1295,7 +1242,8 @@
         "exvoto",
         "monokiini",
         "faiseurs",
-        "mmmechocolat"
+        "mmmechocolat",
+        "hamel"
       ]
     },
     {
@@ -1364,15 +1312,15 @@
   "extras": [],
   "reservations": [
     {
-      "name": "Leméac",
+      "name": "Gueuleton",
       "when": "Saturday 12:30 PM · two people",
-      "status": "Available Nov 18.",
-      "url": "https://www.tbdine.com/book/restaurant/lemeac?people=2&date=2026-11-21&time=12:30"
+      "status": "Tables listed Nov 18.",
+      "url": "https://widgets.libroreserve.com/WEB/QC01758912703C7E879/book"
     },
     {
       "name": "Saturday dinner",
-      "when": "Monarque 7:30 PM target",
-      "status": "No brasserie tables listed Nov 18. Try Holder nearby, or the 9:30 PM formal dining-room slot.",
+      "when": "Monarque around 9 PM",
+      "status": "Brasserie full Nov 18; formal dining room had 9:30 PM. Holder nearby is an alternative.",
       "url": "https://resy.com/cities/montreal-qc/venues/monarque?date=2026-11-21&seats=2"
     },
     {
@@ -1383,8 +1331,8 @@
     },
     {
       "name": "Atrium skating",
-      "when": "Saturday · 5:30–6:30 PM arrival window",
-      "status": "Arrive around 5:45 PM. Add skate and helmet rentals.",
+      "when": "Saturday · 6:30–7:30 PM arrival window",
+      "status": "Arrive around 7:15 PM. Add skate and helmet rentals.",
       "url": "https://atrium.logikpos.ca/ticketing2.aspx"
     },
     {
