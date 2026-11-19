@@ -1623,5 +1623,83 @@
         "credit": "Elisa N / Blog d’Elisa N, 2016"
       }
     ]
+  },
+  "ancestra": {
+    "photos": [
+      {
+        "src": "images/galleries/ancestra/1.jpg",
+        "alt": "Official Ancestra Lumina promotional rendering: a projected illuminated scene among cemetery trees; not a verified installation photograph",
+        "source": "https://www.mtl.org/en/experience/ancestra-lumina",
+        "image_source": "https://api.mtl.org/files/default/styles/rectangle_600_706/public/2026-10/64506__31C009B9-261D-41F3-A18DBCDE1FE76A0C_0.jpg.webp?itok=nd292IH4",
+        "credit": "© La fabrique de la paroisse Notre-Dame de Montréal / Moment Factory — official promotional rendering",
+        "media_type": "rendering"
+      },
+      {
+        "src": "images/galleries/ancestra/2.jpg",
+        "alt": "Official Ancestra Lumina promotional rendering: a glowing tree and visitors; not a verified installation photograph",
+        "source": "https://www.mtl.org/en/experience/ancestra-lumina",
+        "image_source": "https://api.mtl.org/files/default/styles/square_600_600/public/2026-10/64504__43ADEBBC-8B4D-4127-8D2140278C269B31.jpg.webp?itok=kvQZYVoB",
+        "credit": "© La fabrique de la paroisse Notre-Dame de Montréal / Moment Factory — official promotional rendering",
+        "media_type": "rendering"
+      },
+      {
+        "src": "images/galleries/ancestra/3.jpg",
+        "alt": "Official Ancestra Lumina promotional rendering: a luminous woodland path; not a verified installation photograph",
+        "source": "https://www.mtl.org/en/experience/ancestra-lumina",
+        "image_source": "https://api.mtl.org/files/default/styles/rectangle_680_510/public/2026-10/64503__1FC3B026-7671-4D3A-A6E8827F57451AC2.jpg.webp?itok=_e45KdA_",
+        "credit": "© La fabrique de la paroisse Notre-Dame de Montréal / Moment Factory — official promotional rendering",
+        "media_type": "rendering"
+      }
+    ]
+  },
+  "squarestlouis": {
+    "photos": [
+      {
+        "src": "images/galleries/squarestlouis/1.jpg",
+        "alt": "The colorful Victorian houses facing Square Saint-Louis, photographed in a leafless season",
+        "source": "https://b-illustration.com/le-square-saint-louis-et-ses-mysteres/",
+        "image_source": "https://b-illustration.com/wp-content/uploads/2024/02/IMG_0605-scaled.jpg",
+        "credit": "B. illustration firsthand Montréal article"
+      },
+      {
+        "src": "images/galleries/squarestlouis/2.jpg",
+        "alt": "Benches and a leafy path inside Square Saint-Louis; illustrative summer photograph",
+        "source": "https://walkmontreal.com/walks/le-plateau-square-saint-louis-part-1/",
+        "image_source": "https://walkmontreal.com/wp-content/uploads/2022/06/2-square-st-louis-1024x768.jpg",
+        "credit": "WalkMontréal, 2022"
+      },
+      {
+        "src": "images/galleries/squarestlouis/3.jpg",
+        "alt": "The pedestrian Rue Prince-Arthur approach to Square Saint-Louis; archive warm-season street view",
+        "source": "https://journalmetro.com/local/le-plateau-mont-royal/1199111/la-nouvelle-rue-prince-arthur-enfin-inauguree/",
+        "image_source": "https://journalmetro.com/wp-content/uploads/2017/09/img_0016.jpg",
+        "credit": "Journal Métro, 2017"
+      }
+    ]
+  },
+  "cohenmural": {
+    "photos": [
+      {
+        "src": "images/galleries/cohenmural/1.jpg",
+        "alt": "Tower of Songs, the Leonard Cohen mural on 1420 Rue Crescent, in its downtown streetscape",
+        "source": "https://artpublicmontreal.ca/en/oeuvre/tower-of-songs-hommage-a-leonard-cohen/",
+        "image_source": "https://artpublicmontreal.ca/wp-content/uploads/2018/05/VOLET-1_Rapport-final-PAM-2017_1420Crescent_ElMac_GenePendon_creditsphoto_OlivierBousquet-PA310081-e1527795310924.jpg",
+        "credit": "© Olivier Bousquet, 2017 / Art Public Montréal; mural © El Mac and Gene Pendon"
+      },
+      {
+        "src": "images/galleries/cohenmural/2.jpg",
+        "alt": "The Crescent Street Leonard Cohen mural visible among the downtown towers from Mount Royal; archive 2017 view",
+        "source": "https://artpublicmontreal.ca/en/oeuvre/tower-of-songs-hommage-a-leonard-cohen/",
+        "image_source": "https://artpublicmontreal.ca/wp-content/uploads/2018/05/VOLET-1_Rapport-final-PAM-2017_1420Crescent_ElMac_GenePendon_creditsphoto_OlivierBousquet-PB100075-e1527795428822.jpg",
+        "credit": "© Olivier Bousquet, 2017 / Art Public Montréal; mural © El Mac and Gene Pendon"
+      },
+      {
+        "src": "images/galleries/cohenmural/3.jpg",
+        "alt": "A closer elevated view of Tower of Songs on Rue Crescent; the correct hand-over-heart portrait",
+        "source": "https://artpublicmontreal.ca/en/oeuvre/tower-of-songs-hommage-a-leonard-cohen/",
+        "image_source": "https://artpublicmontreal.ca/wp-content/uploads/2018/05/VOLET-1_Rapport-final-PAM-2017_1420Crescent_ElMac_GenePendon_creditsphoto_OlivierBousquet-PB100082-e1527795523993.jpg",
+        "credit": "© Olivier Bousquet, 2017 / Art Public Montréal; mural © El Mac and Gene Pendon"
+      }
+    ]
   }
 }
