@@ -1548,5 +1548,80 @@
         "credit": "Boulangerie Guillaume"
       }
     ]
+  },
+  "mountroyal": {
+    "photos": [
+      {
+        "src": "images/galleries/mountroyal/1.jpg",
+        "alt": "Montréal skyline at blue hour from Kondiaronk Lookout; archive warm-season view",
+        "source": "https://montreal.ca/en/places/kondiaronk-lookout",
+        "image_source": "https://res.cloudinary.com/villemontreal/image/upload/w_1920,ar_16:9,c_lfill/f_auto,dpr_auto,q_auto/v1/portail/znnryyd7fdr08xcqeciq.jpg",
+        "credit": "Ville de Montréal official venue photography"
+      },
+      {
+        "src": "images/galleries/mountroyal/2.jpg",
+        "alt": "Autumn woodland and a picnic spot in Mount Royal Park; illustrative fall colors",
+        "source": "https://www.lemontroyal.qc.ca/en/home",
+        "image_source": "https://cdn.ca.yapla.com/company/CPY70wuwSkUPSrG8NEPsXPbr/website/videos/automne.jpg",
+        "credit": "Les amis de la montagne official park website"
+      },
+      {
+        "src": "images/galleries/mountroyal/3.jpg",
+        "alt": "Mount Royal Chalet and the Kondiaronk terrace in a leafy warm-season aerial view",
+        "source": "https://www.lemontroyal.qc.ca/en/home",
+        "image_source": "https://cdn.ca.yapla.com/company/CPY70wuwSkUPSrG8NEPsXPbr/website/article/71951/images/chalet_viaig_irvin_coste-1773840240.jpg",
+        "credit": "Irvin Coste / Les amis de la montagne"
+      }
+    ]
+  },
+  "christmasmarket": {
+    "photos": [
+      {
+        "src": "images/galleries/christmasmarket/1.jpg",
+        "alt": "Festive lights and wooden chalets at the Grand Marché de Noël in Quartier des spectacles; archive winter atmosphere",
+        "source": "https://www.quebecvacances.com/en/events/le-grand-marche-de-noel-de-montreal",
+        "image_source": "https://images-proxy.eaq-services.com/image/upload/c_auto%2Cw_1200%2Ch_1200%2Cg_custom/f_auto/q_auto/v1/photos_600_400/le_grand_marche_de_noel_de_montreal_15?_a=BBEAEuzp0",
+        "credit": "Québec Getaways / Grand Marché de Noël venue gallery"
+      },
+      {
+        "src": "images/galleries/christmasmarket/2.jpg",
+        "alt": "La Maison d’Alsace food chalet at Montréal’s Grand Marché de Noël; archive winter photograph",
+        "source": "https://www.quebecvacances.com/en/events/le-grand-marche-de-noel-de-montreal",
+        "image_source": "https://images-proxy.eaq-services.com/image/upload/c_auto%2Cw_1200%2Ch_1200%2Cg_custom/f_auto/q_auto/v1/photos_600_400/le_grand_marche_de_noel_de_montreal_9?_a=BBEAEuzp0",
+        "credit": "Québec Getaways / Grand Marché de Noël venue gallery"
+      },
+      {
+        "src": "images/galleries/christmasmarket/3.jpg",
+        "alt": "Visitors browsing decorated chalets at Grand Marché de Noël; snowy archive image, not a weather forecast",
+        "source": "https://www.quebecvacances.com/en/events/le-grand-marche-de-noel-de-montreal",
+        "image_source": "https://images-proxy.eaq-services.com/image/upload/c_auto%2Cw_1200%2Ch_1200%2Cg_custom/f_auto/q_auto/v1/photos_600_400/le_grand_marche_de_noel_de_montreal_5?_a=BBEAEuzp0",
+        "credit": "Québec Getaways / Grand Marché de Noël venue gallery"
+      }
+    ]
+  },
+  "clocktowerquay": {
+    "photos": [
+      {
+        "src": "images/galleries/clocktowerquay/1.jpg",
+        "alt": "Clock Tower Quay’s riverside promenade and Jacques Cartier Bridge at dusk; archive warm-season photograph",
+        "source": "https://www.expedia.co.nz/Montreal-Ville-Marie.dx6241991",
+        "image_source": "https://a.travel-assets.com/findyours-php/viewfinder/images/res70/508000/508588-old-port-of-montreal.jpg?h=580&impolicy=fcrop&q=mediumHigh&w=1040",
+        "credit": "Expedia destination photography"
+      },
+      {
+        "src": "images/galleries/clocktowerquay/2.jpg",
+        "alt": "Clock face and architectural detail of Montréal’s Old Port Clock Tower; archive warm-season photo",
+        "source": "https://elisaorigami.blogspot.com/2016/04/montreal-tour-et-plage-de-lhorloge.html",
+        "image_source": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3ki1lkp__u7YTZkt3DIJTLc89bYztAof9BwoVb_4imSg2ES1Fxc9xTJnkTP2M1zLL-EXJpQ1OXOUWVjKOKUyt1KzAQzeZCkj234td7Y3rvBhlm6pj9fbhr_JHn0A0KHtOKwNXjOzQpcM/s640/DSCF0250.JPG",
+        "credit": "Elisa N / Blog d’Elisa N, 2016"
+      },
+      {
+        "src": "images/galleries/clocktowerquay/3.jpg",
+        "alt": "The St. Lawrence River and Jacques Cartier Bridge beside Clock Tower Quay; illustrative summer view",
+        "source": "https://elisaorigami.blogspot.com/2016/04/montreal-tour-et-plage-de-lhorloge.html",
+        "image_source": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjPwq3zEmf4Rsl-mIMGZcl3TeeXpXtxiRfh73FZWGOfZeGN-gGhSyJK8QYqnkPPS9zM0M2NdBo42mMq-FZmqUItM0FZWkc6ZN1MfKeD9ZYlYESK_DKQ28IaW7UlmceJniNcUAyngmmg3Iw/s640/DSCF0256.JPG",
+        "credit": "Elisa N / Blog d’Elisa N, 2016"
+      }
+    ]
   }
 }
