@@ -793,6 +793,48 @@
       "image": "guillaume",
       "note": "",
       "price": ""
+    },
+    {
+      "id": "mountroyal",
+      "name": "Mount Royal · Kondiaronk lookout",
+      "lat": 45.5033,
+      "lng": -73.5872,
+      "mapQuery": "Kondiaronk Belvedere, Mount Royal, Montréal",
+      "source": "https://montreal.ca/en/places/kondiaronk-lookout",
+      "area": "plateau",
+      "kind": "Outdoors",
+      "description": "Skyline views and wooded park paths.",
+      "note": "Free. A taxi detour from the northwest shops.",
+      "price": "Free",
+      "image": "mountroyal"
+    },
+    {
+      "id": "christmasmarket",
+      "name": "Grand Marché de Noël",
+      "lat": 45.5083,
+      "lng": -73.5665,
+      "mapQuery": "Grand Marché de Noël, 1499 Rue Jeanne-Mance, Montréal",
+      "source": "https://noelmontreal.ca/grandmarchedenoel/en/the-great-christmas-market/",
+      "area": "downtown",
+      "kind": "Outdoors",
+      "description": "Outdoor artisan chalets, hot chocolate, and mulled wine.",
+      "note": "Saturday 11 AM–10 PM; Sunday 11 AM–8 PM. Open Nov 21–22.",
+      "price": "Free entry",
+      "image": "christmasmarket"
+    },
+    {
+      "id": "clocktowerquay",
+      "name": "Clock Tower Quay",
+      "lat": 45.512,
+      "lng": -73.545,
+      "mapQuery": "Quai de l’Horloge, Vieux-Port de Montréal",
+      "source": "https://www.oldportofmontreal.com/qa-and-site-regulations",
+      "area": "old",
+      "kind": "Outdoors",
+      "description": "Longer Old Port promenade with river and bridge views.",
+      "note": "Waterfront walk.",
+      "price": "Free",
+      "image": "clocktowerquay"
     }
   ],
   "days": [
@@ -867,7 +909,13 @@
           "stops": [
             "hparfums"
           ],
-          "mode": "walking"
+          "mode": "walking",
+          "nearby": [
+            {
+              "id": "mountroyal",
+              "text": "Free skyline lookout and wooded park paths. Taxi detour; swap out some boutique time if you choose this."
+            }
+          ]
         },
         {
           "time": "12:30 PM",
@@ -958,7 +1006,13 @@
           "stops": [
             "eaton"
           ],
-          "mode": "driving"
+          "mode": "driving",
+          "nearby": [
+            {
+              "id": "christmasmarket",
+              "text": "Outdoor artisan chalets, lights, hot chocolate, and mulled wine near Place des Arts. Saturday 11 AM–10 PM; an alternative to some mall time."
+            }
+          ]
         },
         {
           "time": "7:15–8:15 PM",
@@ -1050,6 +1104,10 @@
             {
               "id": "leroyer",
               "text": "Free contemporary art and sculpture browse on Saint-Paul West. Sunday 10 AM–6 PM; exhibitions rotate."
+            },
+            {
+              "id": "clocktowerquay",
+              "text": "Extend the waterfront walk east toward the white Clock Tower for St. Lawrence River and Jacques Cartier Bridge views. Free."
             }
           ]
         },
@@ -1191,7 +1249,8 @@
         "kouign",
         "northstar",
         "express",
-        "banquise"
+        "banquise",
+        "mountroyal"
       ]
     },
     {
@@ -1218,7 +1277,8 @@
         "peelbasin",
         "holder",
         "brasserie701",
-        "stash"
+        "stash",
+        "clocktowerquay"
       ]
     },
     {
@@ -1229,7 +1289,8 @@
         "bargeorge",
         "cloakroom",
         "atrium",
-        "eaton"
+        "eaton",
+        "christmasmarket"
       ]
     },
     {

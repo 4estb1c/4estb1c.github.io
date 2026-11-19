@@ -25,7 +25,7 @@
       return;
     }
     const plan = routes.days[day];
-    const mobile = window.matchMedia?.('(max-width: 640px)').matches ?? false;
+    const mobile = window.matchMedia?.('(max-width: 640px), (pointer: coarse)').matches ?? false;
     const map = L.map(container, {
       scrollWheelZoom:false,
       zoomControl:!mobile,
