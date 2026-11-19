@@ -60,7 +60,7 @@ test('the one itinerary references existing stops and photo assets', async () =>
     for(const photo of galleries[place.id].photos)await access(new URL(`../${photo.src}`,import.meta.url));
   }
   assert.equal(data.hotels.length,4);
-  assert.equal(data.hotel.id,'mountstephen');
+  assert.equal(data.hotel.id,'altmontreal');
   assert.deepEqual(new Set(data.neighborhoods.flatMap(area=>area.ids)),ids);
   for(const day of data.days){
     for(const block of day.blocks){

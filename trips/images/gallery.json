@@ -973,5 +973,30 @@
         "credit": "Courtesy of Galerie Noël Guyomarc’h via Art Jewelry Forum (archive photographs)"
       }
     ]
+  },
+  "altmontreal": {
+    "photos": [
+      {
+        "src": "images/galleries/altmontreal/1.jpg",
+        "alt": "Two-bed guest room example at Alt Hotel Montréal",
+        "source": "https://www.germainhotels.com/en/alt-hotel/montreal",
+        "image_source": "https://ik.imagekit.io/n9qi9vys6//website-assets/Alt-Montreal/Offers/rooms/haltg-2-bed.jpg?tr=w-1000,f-jpg",
+        "credit": "Germain Hotels / Alt Hotel Montréal"
+      },
+      {
+        "src": "images/galleries/altmontreal/2.jpg",
+        "alt": "Dining corner with city views at Alt Hotel Montreal",
+        "source": "https://www.germainhotels.com/en/alt-hotel/montreal",
+        "image_source": "https://ik.imagekit.io/n9qi9vys6//website-assets/50879148107_fdf5cfc516_k_OPT.jpg?tr=w-1000,f-jpg",
+        "credit": "Germain Hotels / Alt Hotel Montréal"
+      },
+      {
+        "src": "images/galleries/altmontreal/3.jpg",
+        "alt": "Fitness room at Alt Hotel Montréal",
+        "source": "https://www.germainhotels.com/en/alt-hotel/montreal",
+        "image_source": "https://ik.imagekit.io/n9qi9vys6//website-assets/53867550178_a4c0310ceb_k_2025-01-16-202955_bptz.jpg?tr=w-1000,f-jpg",
+        "credit": "Germain Hotels / Alt Hotel Montréal"
+      }
+    ]
   }
 }

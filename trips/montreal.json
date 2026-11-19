@@ -10,19 +10,22 @@
   ],
   "intro": "Walk and talk, browse beautiful little shops, eat very well, and linger over coffee and dessert. One relaxed route each day, with nearby extras when you feel like it.",
   "hotel": {
-    "id": "mountstephen",
-    "name": "Le Mount Stephen",
-    "lat": 45.4990522,
-    "lng": -73.5757732,
-    "image": "mountstephen",
-    "label": "Your chosen base",
-    "level": "Luxury",
-    "description": "A historic mansion paired with modern rooms, plus Bar George downstairs. The most overtly grand choice.",
-    "beds": "Deluxe Two Queen Room · request two actual queen beds",
-    "source": "https://www.lemountstephen.com/rooms-and-suites.htm"
+    "id": "altmontreal",
+    "name": "Alt Hotel Montréal",
+    "lat": 45.4930477,
+    "lng": -73.5572582,
+    "image": "altmontreal",
+    "label": "Booked",
+    "level": "Contemporary",
+    "description": "Your booked base in Griffintown, at Peel and Wellington, near Chez Potier and the Lachine Canal.",
+    "beds": "Room category as booked",
+    "address": "120 Rue Peel, Montréal, QC H3C 0L8",
+    "source": "https://www.germainhotels.com/en/alt-hotel/montreal",
+    "mapQuery": "Alt Hotel Montréal, 120 Rue Peel",
+    "booked": true
   },
-  "booking": "Priority reservations for two: Leméac Saturday 12:30 PM (listed available), one Saturday dinner, Atrium Saturday 4:30–5:30 PM arrival window, and Notre-Dame Sunday around 1 PM. Monarque brasserie at 7 PM is the first dinner request, but no brasserie slots were listed. Ratafia 7:45 PM or Monarque Salle à Manger 9:30 PM were listed alternatives. Nothing is booked.",
-  "assumptions": "Flying via YUL. Friday arrival around midnight. Sunday: Milo lands in New York by 10 PM; Forrest can get home to Boston later. Selected flight options land at LGA 9:30 PM and BOS 9:28 PM. All times Eastern. Nothing is booked.",
+  "booking": "Hotel booked: Alt Hotel Montréal, 120 Rue Peel, Griffintown. Restaurant reservations, skating tickets, Notre-Dame admission, and flights remain pending unless booked separately.",
+  "assumptions": "Flying via YUL. Friday arrival around midnight. Sunday: Milo lands in New York by 10 PM; Forrest can get home to Boston later. Selected flight options land at LGA 9:30 PM and BOS 9:28 PM. All times Eastern. Alt Hotel Montréal is booked. Flights and activities remain pending.",
   "places": [
     {
       "id": "banquise",
@@ -436,7 +439,7 @@
       "area": "downtown",
       "kind": "Activity",
       "price": "CAD 12 entry + CAD 10 skate rental",
-      "description": "A year-round indoor rink beneath a glass atrium, downtown between Old Montréal and your hotel.",
+      "description": "A year-round indoor rink beneath a glass atrium, downtown and north of your Griffintown hotel.",
       "note": "Official Sunday hours 11:30 AM–6 PM. Timed-arrival tickets are recommended; availability is not guaranteed."
     },
     {
@@ -503,10 +506,10 @@
       "blocks": [
         {
           "time": "Around midnight · flight-dependent",
-          "title": "Le Mount Stephen · late check-in",
-          "text": "After landing, take a taxi to Le Mount Stephen and settle into the Deluxe Two Queen Room. Tell reception you expect a late arrival. Book the room from Friday November 20 even if check-in happens after midnight. Eat before the flight.",
+          "title": "Alt Hotel Montréal · late check-in",
+          "text": "After landing, take a taxi to your booked Alt Hotel Montréal at 120 Rue Peel in Griffintown. Tell reception you expect arrival after midnight. Eat before the flight. The reservation should include Friday night even if you check in early Saturday.",
           "stops": [
-            "mountstephen"
+            "altmontreal"
           ],
           "mode": "driving"
         }
@@ -649,15 +652,15 @@
         {
           "time": "4:15 PM",
           "title": "Hotel break · leave room for dinner",
-          "text": "Taxi back downtown once, drop your purchases, and take a short break before skating. The remaining evening stays downtown and in Old Montréal.",
+          "text": "Taxi back to Alt Hotel Montréal in Griffintown, drop your purchases, and take a short break before skating. Walk or take a short taxi onward to Atrium Le 1000.",
           "stops": [
-            "mountstephen"
+            "altmontreal"
           ],
           "mode": "driving",
           "nearby": [
             {
-              "id": "bargeorge",
-              "text": "Downstairs in the mansion: a cocktail or a look around the ornate rooms before skating. Bar seats are walk-in; dinner reservations apply only to the dining room."
+              "id": "potier",
+              "text": "Chez Potier is on Wellington near your Griffintown hotel. An easy pastry stop if you want something sweet before skating; Sunday remains the planned longer visit."
             }
           ]
         },
@@ -674,7 +677,7 @@
           "nearby": [
             {
               "id": "bargeorge",
-              "text": "The comfortable post-skating fallback is your own hotel bar: cocktails and a snack, with the option to relax before a later dinner. Walk-in bar seating, subject to space."
+              "text": "A mansion-bar option downtown for cocktails and a snack before a later dinner. This is at Le Mount Stephen, a separate hotel from your Alt booking. Bar seats are walk-in."
             }
           ]
         },
@@ -706,11 +709,11 @@
             "cloakroom"
           ],
           "mode": "driving",
-          "note": "Bar George downstairs at the hotel is the easy backup if Cloakroom is full.",
+          "note": "Bar George is near Cloakroom if it is full. Both are downtown, so take a taxi back to Alt Hotel Montréal in Griffintown afterward.",
           "nearby": [
             {
               "id": "bargeorge",
-              "text": "A very short walk back to the hotel for mansion-bar cocktails if Cloakroom is full. Both cocktail bars are walk-in, so do not count either as a guaranteed seat."
+              "text": "Near Cloakroom: mansion-bar cocktails at Le Mount Stephen. This is a separate stop, not your hotel. Both cocktail bars are walk-in; taxi back to Alt afterward."
             }
           ]
         }
@@ -726,11 +729,11 @@
         {
           "time": "10 AM",
           "title": "Crew Collective & Café · breakfast under the bank ceiling",
-          "text": "Check out, leave your bags with Le Mount Stephen, and taxi to Crew. Take a table for breakfast and coffee in the former Royal Bank hall. This is the morning’s long sit-down stop.",
+          "text": "Check out and leave your bags with Alt Hotel Montréal, then walk or taxi into Old Montréal to Crew. Take a table for breakfast and coffee in the former Royal Bank hall. This is the morning’s long sit-down stop.",
           "stops": [
             "crew"
           ],
-          "mode": "driving",
+          "mode": "walking",
           "nearby": [
             {
               "id": "olive",
@@ -811,22 +814,18 @@
             {
               "id": "olive",
               "text": "Olive et Gourmando is the nearby sit-down sandwich alternative. Use it instead of the savory part of lunch if seats and timing work."
-            },
-            {
-              "id": "bargeorge",
-              "text": "Back at Le Mount Stephen, café gourmand offers five small desserts on the published lunch menu. A hotel-based sweet alternative if you return early; allow time before the 4 PM airport pickup."
             }
           ],
           "note": "Seating is limited. Olive et Gourmando is the nearby sit-down lunch option if you want a longer meal before the pastry stop."
         },
         {
           "time": "3:45 PM · collect bags",
-          "title": "Le Mount Stephen · collect bags",
-          "text": "Taxi back to Le Mount Stephen, collect your luggage, and have the airport taxi waiting for 4 PM. Arrange the pickup with reception before leaving in the morning.",
+          "title": "Alt Hotel Montréal · collect bags",
+          "text": "Return to Alt Hotel Montréal in Griffintown and collect your luggage. Chez Potier is near the hotel, so you can walk back after pastries. Have the airport taxi arranged for 4 PM.",
           "stops": [
-            "mountstephen"
+            "altmontreal"
           ],
-          "mode": "driving"
+          "mode": "walking"
         },
         {
           "time": "4 PM pickup · 5 PM airport target",
@@ -849,7 +848,7 @@
   "practical": [
     {
       "title": "Book the anchors",
-      "text": "Priority reservations for two: Leméac Saturday 12:30 PM (listed available), one Saturday dinner, Atrium Saturday 4:30–5:30 PM arrival window, and Notre-Dame Sunday around 1 PM. Monarque brasserie at 7 PM is the first dinner request, but no brasserie slots were listed. Ratafia 7:45 PM or Monarque Salle à Manger 9:30 PM were listed alternatives. Nothing is booked. Hotel: Le Mount Stephen Deluxe Two Queen, Friday November 20–Sunday November 22; notify reception of the after-midnight arrival."
+      "text": "Hotel booked: Alt Hotel Montréal, 120 Rue Peel, Griffintown. Restaurant reservations, skating tickets, Notre-Dame admission, and flights remain pending unless booked separately. Tell reception you expect arrival after midnight on Friday night."
     },
     {
       "title": "Time to talk",
@@ -857,7 +856,7 @@
     },
     {
       "title": "Getting around",
-      "text": "No car needed. Walk within each neighborhood and taxi between clusters. Prices are CAD before tax and tip. Hotel estimate: USD 300–450 per person for both nights sharing one room, including estimated room taxes; not a live quote."
+      "text": "Walk within each neighborhood and taxi between clusters. Alt Hotel Montréal in Griffintown is your booked base. Sunday pastries at Chez Potier are near the hotel, making luggage collection straightforward. Restaurant prices are CAD before tax and tip."
     },
     {
       "title": "Milo · New York return",
@@ -871,7 +870,7 @@
     },
     {
       "title": "Sunday pickup",
-      "text": "Collect bags at 3:45 PM, leave Le Mount Stephen at 4 PM, and target YUL at 5 PM for the two 8 PM departures. Saturday remains the only northern shopping loop; skating stays Saturday."
+      "text": "Collect bags at 3:45 PM, leave Alt Hotel Montréal at 4 PM, and target YUL at 5 PM for the two 8 PM departures. Saturday remains the only northern shopping loop; skating stays Saturday."
     },
     {
       "title": "Airport recommendation",
@@ -976,16 +975,19 @@
       "source": "https://hotelwilliamgray.com/rooms/"
     },
     {
-      "id": "mountstephen",
-      "name": "Le Mount Stephen",
-      "lat": 45.4990522,
-      "lng": -73.5757732,
-      "image": "mountstephen",
-      "label": "Your chosen base",
-      "level": "Luxury",
-      "description": "A historic mansion paired with modern rooms, plus Bar George downstairs. The most overtly grand choice.",
-      "beds": "Deluxe Two Queen Room · request two actual queen beds",
-      "source": "https://www.lemountstephen.com/rooms-and-suites.htm"
+      "id": "altmontreal",
+      "name": "Alt Hotel Montréal",
+      "lat": 45.4930477,
+      "lng": -73.5572582,
+      "image": "altmontreal",
+      "label": "Booked",
+      "level": "Contemporary",
+      "description": "Your booked base in Griffintown, at Peel and Wellington, near Chez Potier and the Lachine Canal.",
+      "beds": "Room category as booked",
+      "address": "120 Rue Peel, Montréal, QC H3C 0L8",
+      "source": "https://www.germainhotels.com/en/alt-hotel/montreal",
+      "mapQuery": "Alt Hotel Montréal, 120 Rue Peel",
+      "booked": true
     },
     {
       "id": "nelligan",
@@ -1046,10 +1048,10 @@
       "url": "https://www.basiliquenotredame.ca/en/hours-and-rates"
     },
     {
-      "name": "Hotel · two queens",
+      "name": "Hotel · BOOKED",
       "when": "Fri Nov 20–Sun Nov 22 · two nights",
-      "status": "Le Mount Stephen remains selected. Book Friday night even with check-in after midnight; tell the hotel your arrival time.",
-      "url": "https://www.lemountstephen.com/rooms-and-suites.htm"
+      "status": "Alt Hotel Montréal, 120 Rue Peel, Griffintown. Booked by you; room category follows your confirmation. Notify reception of your after-midnight arrival.",
+      "url": "https://www.germainhotels.com/en/alt-hotel/montreal"
     }
   ],
   "dinner_options": [
@@ -1065,7 +1067,7 @@
     },
     {
       "id": "bargeorge",
-      "text": "Best grand-room option, conveniently inside your hotel: British-inspired food, beef Wellington, and elaborate desserts. Target Saturday 7 PM, but the live calendar showed no dining-room availability within three hours of that time. Ask the concierge about cancellations. Cocktail bar seating is walk-in; a dinner booking does not reserve cocktail-only seats.",
+      "text": "Best grand-room option, at Le Mount Stephen downtown, separate from your Alt hotel: British-inspired food, beef Wellington, and elaborate desserts. Target Saturday 7 PM, but the live calendar showed no dining-room availability within three hours of that time. Ask the restaurant about cancellations. Cocktail bar seating is walk-in; a dinner booking does not reserve cocktail-only seats.",
       "booking": "https://app.tablz.com/bar-george/"
     },
     {
@@ -1074,6 +1076,5 @@
       "booking": "https://restaurantlexpress.com/en/"
     }
   ],
-  "cocktails": "No cocktail reservation to make: Cloakroom accepts no reservations. Aim around 9:15 PM after a 7 PM dinner, or around 7 PM before a 9:30 PM Monarque dinner. Bar George’s bar seats are also walk-in. Both are subject to space.",
-  "hotel_comparison": "Le Germain Montréal was the other hotel: modern, 1960s-inspired design. Its Signature room offers a two-queen configuration at 360 sq ft; confirm that exact bedding when booking. Le Mount Stephen’s Deluxe Two Queen is 450 sq ft, with Bar George in the historic mansion downstairs. Both are downtown. Keep Mount Stephen for the grander atmosphere; compare Le Germain if its live total is meaningfully lower. No new live room-rate quote has been checked."
+  "cocktails": "No cocktail reservation to make: Cloakroom accepts no reservations. Aim around 9:15 PM after a 7 PM dinner, or around 7 PM before a 9:30 PM Monarque dinner. Bar George’s bar seats are also walk-in. Both are subject to space."
 }

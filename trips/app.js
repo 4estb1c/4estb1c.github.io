@@ -56,7 +56,7 @@
       L.marker([first.lat,first.lng],{icon,title:first.name}).addTo(map).bindPopup(popup);
     });
     if(!plan.stops.some(stop=>stop.id===routes.hotel.id)) {
-      L.marker([routes.hotel.lat,routes.hotel.lng],{title:routes.hotel.name,icon:L.divIcon({className:'',html:'<span class="map-pin" style="background:#1a1612">H</span>',iconSize:[28,28]})}).addTo(map).bindPopup('<b>Le Mount Stephen</b><br>Your hotel base');
+      L.marker([routes.hotel.lat,routes.hotel.lng],{title:routes.hotel.name,icon:L.divIcon({className:'',html:'<span class="map-pin" style="background:#1a1612">H</span>',iconSize:[28,28]})}).addTo(map).bindPopup(`<b>${escapeHtml(routes.hotel.name)}</b><br>Your booked hotel base`);
     }
     const bounds = L.latLngBounds(coordinates);
     map.fitBounds(bounds,{padding:[35,35],maxZoom:16});
