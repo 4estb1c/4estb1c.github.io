@@ -516,3 +516,17 @@ html{scroll-behavior:smooth;scroll-padding-top:90px}body{font-size:16px}.page{ma
   .day-map{pointer-events:none;touch-action:pan-y}
   .day-map .leaflet-control-zoom{display:none}
 }
+
+/* One continuous itinerary with sticky jump links. */
+.day{display:block;margin-bottom:42px;scroll-margin-top:12px}
+.trip-nav{position:sticky;top:0;z-index:1001;display:flex;align-items:center;gap:16px;background:var(--bg);padding:8px 0;border-bottom:2px solid var(--rule)}
+.trip-nav .city-tabs{position:static;flex:1;min-width:0;padding:0;margin:0;border:0}
+.trip-nav .city-tab{text-decoration:none}
+#toggle-alternatives{flex-shrink:0;border:1px solid var(--rule);border-radius:5px;background:var(--paper);color:var(--ink);font-size:13px;padding:9px 12px}
+@media(max-width:640px){
+  html{scroll-padding-top:110px}
+  .trip-nav{flex-direction:column;align-items:stretch;gap:4px}
+  .trip-nav .city-tabs{justify-content:space-between}
+  .trip-nav .nav-date{display:none}
+  #toggle-alternatives{align-self:flex-end;padding:7px 10px;font-size:12px}
+}

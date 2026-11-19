@@ -72,37 +72,24 @@
     maps.set(day,{map,bounds});
   }
 
-  function selectDay(day, updateHash = true) {
-    if(!routes.days[day])day='friday';
-    document.querySelectorAll('[data-day]').forEach(button => {
-      const active = button.dataset.day===day;
-      button.classList.toggle('active',active);
-      button.setAttribute('aria-pressed',String(active));
-    });
-    document.querySelectorAll('[data-pane]').forEach(pane => {
-      pane.classList.toggle('active',pane.dataset.pane===day);
-    });
-    requestAnimationFrame(()=>{
-      initMap(day);
-    });
-    if(updateHash)history.replaceState(null,'',`#${day}`);
-  }
-
-  function followHash() {
-    const target = location.hash.slice(1);
-    const day = target.split('-stop-')[0];
-    if(routes.days[day]) {
-      selectDay(day,false);
-      if(target.includes('-stop-'))requestAnimationFrame(()=>document.getElementById(target)?.scrollIntoView({block:'start'}));
-    }
-  }
-  document.querySelectorAll('[data-day]').forEach(button=>button.addEventListener('click',()=>selectDay(button.dataset.day)));
-  window.addEventListener('hashchange',followHash);
   window.addEventListener('resize',()=>requestAnimationFrame(()=>{
-    document.querySelectorAll('[data-pane].active').forEach(pane=>initMap(pane.dataset.pane));
+    Object.keys(routes.days).forEach(initMap);
   }));
-  selectDay(routes.days[location.hash.slice(1)] ? location.hash.slice(1) : 'friday',false);
-  followHash();
+  Object.keys(routes.days).forEach(initMap);
+
+  const alternatives = [...document.querySelectorAll('.nearby-panel')];
+  const toggleAlternatives = document.getElementById('toggle-alternatives');
+  function updateAlternativesButton() {
+    const expanded = alternatives.every(panel=>panel.open);
+    toggleAlternatives.textContent = expanded ? 'Collapse all alternatives' : 'Expand all alternatives';
+    toggleAlternatives.setAttribute('aria-expanded',String(expanded));
+  }
+  toggleAlternatives.addEventListener('click',()=>{
+    const expand = !alternatives.every(panel=>panel.open);
+    alternatives.forEach(panel=>{panel.open=expand;});
+    updateAlternativesButton();
+  });
+  alternatives.forEach(panel=>panel.addEventListener('toggle',updateAlternativesButton));
 
   const viewer = document.getElementById('photo-viewer');
   let currentPhoto;
