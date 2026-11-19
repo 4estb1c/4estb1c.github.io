@@ -835,6 +835,48 @@
       "note": "Waterfront walk.",
       "price": "Free",
       "image": "clocktowerquay"
+    },
+    {
+      "id": "ancestra",
+      "name": "Ancestra Lumina · night walk",
+      "lat": 45.5005556,
+      "lng": -73.5994722,
+      "mapQuery": "Ancestra Lumina, Cimetière Notre-Dame-des-Neiges, entrée Remembrance, Montréal",
+      "source": "https://optiontix.ca/en/events/LUMINA-2026",
+      "area": "plateau",
+      "kind": "Outdoors",
+      "description": "A two-kilometre illuminated walk through Notre-Dame-des-Neiges Cemetery.",
+      "note": "Timed ticket required. Saturday evening alternative to skating; taxi detour.",
+      "price": "From CAD 32",
+      "image": "ancestra"
+    },
+    {
+      "id": "squarestlouis",
+      "name": "Square Saint-Louis & Prince-Arthur",
+      "lat": 45.516872646827,
+      "lng": -73.570010662079,
+      "mapQuery": "Square Saint-Louis, Montréal",
+      "source": "https://montreal.ca/lieux/square-saint-louis",
+      "area": "plateau",
+      "kind": "Outdoors",
+      "description": "Colourful Victorian houses, a quiet square, and a stroll along Prince-Arthur.",
+      "note": "Free. A Plateau detour from the northwest shops.",
+      "price": "Free",
+      "image": "squarestlouis"
+    },
+    {
+      "id": "cohenmural",
+      "name": "Leonard Cohen mural · Tower of Songs",
+      "lat": 45.4973573,
+      "lng": -73.5764443,
+      "mapQuery": "Tower of Songs mural, 1420 Rue Crescent, Montréal",
+      "source": "https://artpublicmontreal.ca/en/oeuvre/tower-of-songs-hommage-a-leonard-cohen/",
+      "area": "downtown",
+      "kind": "Outdoors",
+      "description": "A giant portrait of Montréal’s singer-poet above Crescent Street.",
+      "note": "Free outdoor stop near the downtown cocktail bars.",
+      "price": "Free",
+      "image": "cohenmural"
     }
   ],
   "days": [
@@ -900,7 +942,13 @@
           "stops": [
             "bernardwalk"
           ],
-          "mode": "walking"
+          "mode": "walking",
+          "nearby": [
+            {
+              "id": "squarestlouis",
+              "text": "Colourful Victorian rowhouses, park benches, and a stroll along Prince-Arthur. Free; a taxi detour into the Plateau if you want a different architecture walk."
+            }
+          ]
         },
         {
           "time": "11:45 AM",
@@ -1023,7 +1071,13 @@
           ],
           "mode": "walking",
           "star": true,
-          "note": "Book the 6:30–7:30 PM arrival window; arrive around 7:15 PM."
+          "note": "Book the 6:30–7:30 PM arrival window; arrive around 7:15 PM.",
+          "nearby": [
+            {
+              "id": "ancestra",
+              "text": "A 2 km night walk with light art, projections, and music in a historic Mount Royal cemetery. About an hour, from CAD 32. Reserve; replaces skating and needs a taxi. Images are official preview renderings."
+            }
+          ]
         },
         {
           "time": "9 PM target",
@@ -1057,6 +1111,10 @@
             {
               "id": "bargeorge",
               "text": "Ornate mansion bar near Cloakroom. Walk-in cocktails; separate from Alt."
+            },
+            {
+              "id": "cohenmural",
+              "text": "The enormous Tower of Songs portrait above Crescent Street. A free outdoor art stop near the cocktail bars."
             }
           ],
           "note": "Walk-in only. Go before dinner if choosing Monarque at 9:30 PM."
@@ -1250,7 +1308,9 @@
         "northstar",
         "express",
         "banquise",
-        "mountroyal"
+        "mountroyal",
+        "ancestra",
+        "squarestlouis"
       ]
     },
     {
@@ -1290,7 +1350,8 @@
         "cloakroom",
         "atrium",
         "eaton",
-        "christmasmarket"
+        "christmasmarket",
+        "cohenmural"
       ]
     },
     {
@@ -1419,6 +1480,12 @@
       "when": "Sunday Nov 22 · AC736 · YUL 8 PM → LGA 9:30 PM",
       "status": "Not booked.",
       "url": "https://www.google.com/travel/flights?hl=en&q=One+way+flights+Montreal+YUL+to+New+York+LaGuardia+LGA+November+22+2026+AC736"
+    },
+    {
+      "name": "Ancestra Lumina · optional",
+      "when": "Saturday evening, if choosing it instead of skating",
+      "status": "Reserve a timed ticket; allow taxi travel.",
+      "url": "https://optiontix.ca/en/events/LUMINA-2026"
     }
   ],
   "cocktails": "Cloakroom and Bar George: walk-in only."
