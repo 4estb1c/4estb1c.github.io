@@ -585,6 +585,251 @@
       "description": "French pastries and Callebaut hot chocolate in an airy café with 35 seats.",
       "note": "Saturday and Sunday 8 AM–6 PM.",
       "price": "À la carte"
+    },
+    {
+      "id": "rooney",
+      "name": "Rooney",
+      "lat": 45.5017618,
+      "lng": -73.5592439,
+      "address": "395 Rue Notre-Dame Ouest, #101, Montréal, QC H2Y 1V2",
+      "mapQuery": "Rooney, 395 Rue Notre-Dame Ouest, Montréal",
+      "source": "https://www.rooneyshop.com/pages/contact",
+      "area": "old",
+      "kind": "Shop",
+      "price": "Browse free",
+      "description": "A polished independent boutique for men’s and women’s designer clothes, fragrance, and carefully chosen accessories. Look for Lemaire, Our Legacy, Comme des Garçons perfumes, and Frama.",
+      "note": "Sunday 11:30 AM–5 PM, confirmed on the shop’s official contact page. Browse after lunch before Chez Potier.",
+      "brand_source": "https://www.rooneyshop.com/",
+      "coordinate_source": "https://www.openstreetmap.org/way/1291471877",
+      "coordinate_verification": "Photon address result for 395 Rue Notre-Dame Ouest in Vieux-Montréal, matching the official street number and street; building-level point.",
+      "photo_note": "Three actual venue photos from the current official About gallery, with late-2025 image update timestamps. Displays and stock may change.",
+      "image": "rooney"
+    },
+    {
+      "id": "granderoue",
+      "name": "La Grande Roue",
+      "lat": 45.508452,
+      "lng": -73.5473832,
+      "mapQuery": "La Grande Roue de Montréal, 362 Rue de la Commune Est",
+      "source": "https://lagranderouedemontreal.com/faq/",
+      "image": "granderoue",
+      "area": "old",
+      "kind": "Activity",
+      "description": "A 17–20-minute ride in a heated private cabin over the Old Port.",
+      "note": "Sunday 10 AM–10 PM. Standard adult ticket CAD 29.50 before tax.",
+      "price": "CAD 29.50 + tax"
+    },
+    {
+      "id": "bernardwalk",
+      "name": "Bernard → Hutchison",
+      "lat": 45.5242592,
+      "lng": -73.60518664,
+      "mapQuery": "5159 Rue Hutchison, Montréal",
+      "source": "https://www.imtl.org/rue_montreal.php?rue=Hutchison",
+      "area": "mileend",
+      "kind": "Walk",
+      "image": "bernardwalk",
+      "description": "Bernard → Hutchison",
+      "note": "",
+      "price": ""
+    },
+    {
+      "id": "saintpaulwalk",
+      "name": "Rue Saint-Paul",
+      "lat": 45.504784,
+      "lng": -73.554151,
+      "mapQuery": "Rue Saint-Paul Ouest, Montréal",
+      "source": "https://sdcvieuxmontreal.com/en/publications/saint-paul-west-revived-a-street-full-of-art-waiting-to-be-discovered",
+      "area": "old",
+      "kind": "Walk",
+      "image": "saintpaulwalk",
+      "description": "Rue Saint-Paul",
+      "note": "",
+      "price": ""
+    },
+    {
+      "id": "peelbasin",
+      "name": "Peel Basin & Lachine Canal",
+      "lat": 45.4941,
+      "lng": -73.5542,
+      "mapQuery": "Promenade du Bassin Peel, Montréal",
+      "source": "https://parks.canada.ca/lhn-nhs/qc/canallachine/activ/sentiers-trails/parcs-attraits-parks-attractions",
+      "area": "old",
+      "kind": "Walk",
+      "image": "peelbasin",
+      "description": "Peel Basin & Lachine Canal",
+      "note": "",
+      "price": ""
+    },
+    {
+      "id": "holder",
+      "name": "Holder",
+      "lat": 45.500436,
+      "lng": -73.5573927,
+      "mapQuery": "Restaurant Holder, 407 Rue McGill",
+      "source": "https://restaurantholder.com/en/",
+      "area": "old",
+      "kind": "Dining",
+      "image": "holder",
+      "description": "Holder",
+      "note": "",
+      "price": ""
+    },
+    {
+      "id": "brasserie701",
+      "name": "Brasserie 701",
+      "lat": 45.5054457,
+      "lng": -73.5578266,
+      "mapQuery": "Brasserie 701, 701 Côte de la Place-d’Armes",
+      "source": "https://brasserie701.com/en/menu/brunch/",
+      "area": "old",
+      "kind": "Dining",
+      "image": "brasserie701",
+      "description": "Brasserie 701",
+      "note": "",
+      "price": ""
+    },
+    {
+      "id": "stash",
+      "name": "Stash Café",
+      "lat": 45.5026,
+      "lng": -73.55518,
+      "mapQuery": "Stash Café, 200 Rue Saint-Paul Ouest",
+      "source": "https://stashcafe.com/",
+      "area": "old",
+      "kind": "Dining",
+      "image": "stash",
+      "description": "Stash Café",
+      "note": "",
+      "price": ""
+    },
+    {
+      "id": "mmmechocolat",
+      "name": "M. & Mme Chocolat",
+      "lat": 45.5326977,
+      "lng": -73.6063579,
+      "mapQuery": "M. & Mme Chocolat, 273 Rue Beaubien Est",
+      "source": "https://www.mmmechocolat.com/pages/la-faq-de-la-chocolaterie",
+      "area": "littleitaly",
+      "kind": "Chocolate",
+      "image": "mmmechocolat",
+      "description": "M. & Mme Chocolat",
+      "note": "",
+      "price": ""
+    },
+    {
+      "id": "chezleveque",
+      "name": "Chez Lévêque",
+      "lat": 45.5182108,
+      "lng": -73.5966875,
+      "address": "1030 Avenue Laurier Ouest, Outremont, QC H2V 2K8",
+      "mapQuery": "Chez Lévêque, 1030 Avenue Laurier Ouest, Montréal",
+      "source": "https://en.chezleveque.ca/",
+      "area": "mileend",
+      "kind": "Lunch",
+      "price": "C$38 lunch formula; regular mains C$35–49 before tax/tip",
+      "description": "Classic French brasserie across from Leméac. A useful backup for a proper sit-down lunch: duck confit with fries, steak-frites, or a hearty seasonal stew.",
+      "note": "Saturday noon backup for Leméac. Open 11 AM–11 PM. C$38 appetizer-and-main formula available 11 AM–3 PM, excluding holidays and festive occasions. No reservation made.",
+      "hours_source": "https://en.chezleveque.ca/pages/contact",
+      "reservation_url": "https://en.chezleveque.ca/pages/reservations",
+      "menu_url": "https://en.chezleveque.ca/collections/formule-brasserie",
+      "menu_facts": {
+        "formula_cad": 38,
+        "formula_time": "Daily 11 AM–3 PM and after 9 PM, except holidays/festive occasions",
+        "formula_choices": [
+          "Duck confit leg, Madeira sauce, fries, and green salad",
+          "Beef tournedos with bacon, pepper sauce, and fries",
+          "Seasonal stew"
+        ],
+        "hanger_steak_formula_supplement_cad": 10,
+        "regular_duck_confit_cad": 35,
+        "regular_hanger_steak_cad": 40
+      },
+      "regular_menu_source": "https://en.chezleveque.ca/collections/menu-regulier",
+      "coordinate_source": "https://www.openstreetmap.org/way/365229067",
+      "coordinate_verification": "Photon building address result at 1030 Avenue Laurier Ouest, matching official address.",
+      "photo_note": "Real room and food photos. The braised meat image is not labeled as duck or steak. Bouillabaisse photo is explicitly named by the tourism gallery. Exact presentation may vary.",
+      "image": "chezleveque"
+    },
+    {
+      "id": "fairmount",
+      "name": "Fairmount Bagel",
+      "lat": 45.5228918,
+      "lng": -73.5952309,
+      "address": "74 Avenue Fairmount Ouest, Montréal, QC H2T 2M2",
+      "mapQuery": "Fairmount Bagel, 74 Avenue Fairmount Ouest, Montréal",
+      "source": "https://fairmountbagel.com/",
+      "area": "mileend",
+      "kind": "Breakfast",
+      "price": "Inexpensive takeaway",
+      "description": "The other great Mile End bagel institution: hand-rolled bagels baked in a wood-fired oven. Ask for a fresh sesame bagel and watch the bakers work. A cultural quick stop rather than a seated breakfast café.",
+      "note": "Nearby alternative to St-Viateur. Original shop at 74 Fairmount West. Takeaway only; no reservation needed.",
+      "saturday_hours": "Open 24 hours",
+      "hours_note": "24/7 operation confirmed by current RestoMontreal listing and firsthand Infatuation review. Official current website confirms address and active bakery but does not publish opening hours in readable text.",
+      "hours_sources": [
+        "https://www.restomontreal.ca/resto/fairmount-bagel-bakery-montreal/4796/en/",
+        "https://www.theinfatuation.com/montreal/reviews/fairmount-bagel"
+      ],
+      "takeaway_source": "https://thewanderingeater.com/2015/08/12/legendary-montreal-bagels-from-fairmount-bagel-montreal-canada/",
+      "coordinate_source": "https://www.openstreetmap.org/node/1607111414",
+      "coordinate_verification": "Photon named bakery result for Fairmount Bagel at 74 Avenue Fairmount Ouest, matching official address.",
+      "photo_note": "Three genuine venue photos: original storefront with bagel, wood-oven bagel toss, and fresh sesame bagel tray. Oven photograph is from a 2015 firsthand visit.",
+      "image": "fairmount"
+    },
+    {
+      "id": "eaton",
+      "name": "Centre Eaton de Montréal",
+      "lat": 45.5030032,
+      "lng": -73.5712816,
+      "address": "705 Rue Sainte-Catherine Ouest, Montréal, QC H3B 4G5",
+      "mapQuery": "Centre Eaton de Montréal, 705 Rue Sainte-Catherine Ouest",
+      "source": "https://www.centreeatondemontreal.com/",
+      "area": "downtown",
+      "kind": "Shopping",
+      "price": "Browse free",
+      "description": "The easy central mall stop: a large indoor shopping atrium with UNIQLO, Nike, BOSS, Aritzia, and Sephora, plus Time Out Market. Direct access to McGill metro and the underground network.",
+      "note": "Published Saturday hours 10 AM–7 PM. Good downtown stop without a second cross-town outing.",
+      "hours_source": "https://www.centreeatondemontreal.com/visit/",
+      "hours_caveat": "Official site widget retrieved November 18 still labels its displayed Saturday as November 14. These are the published Saturday hours, not confirmed holiday exceptions.",
+      "directory_source": "https://www.centreeatondemontreal.com/directory/",
+      "size_source": "https://www.centreeatondemontreal.com/centre-eaton-de-montreal/",
+      "size_note": "Official site claims downtown’s largest retail offering and around 125 shops/restaurants. Do not claim largest mall in Greater Montréal.",
+      "recommendation": "Best fit for this central itinerary. Royalmount better suits a deliberate luxury-label shopping excursion; Carrefour Laval is a larger suburban shopping trip.",
+      "alternatives": [
+        {
+          "name": "Royalmount",
+          "address": "5050 chemin de la Côte-de-Liesse, Mont-Royal",
+          "saturday_hours": "10 AM–9 PM",
+          "why": "More concentrated luxury labels, including Louis Vuitton, Gucci, and Saint Laurent; separate journey beyond the central route.",
+          "source": "https://www.royalmount.com/en/shopping",
+          "hours_source": "https://www.royalmount.com/en/directory"
+        },
+        {
+          "name": "CF Carrefour Laval",
+          "why": "Larger suburban alternative: owner’s September 2025 factsheet lists 1,195,078 square feet GLA and 266 stores. Does not suit a short central walking itinerary.",
+          "source": "https://assets.cadillacfairview.com/m/146ffd7a613dc456/original/CF_1P_Carrefour_Sept25.pdf"
+        }
+      ],
+      "coordinate_source": "https://www.openstreetmap.org/way/1541016298",
+      "coordinate_verification": "Photon named mall result for Centre Eaton, 705 Rue Sainte-Catherine Ouest, matching the official address.",
+      "photo_note": "Three genuine venue photographs: glass entrance, interior atrium, and Sainte-Catherine frontage. No stock photos.",
+      "image": "eaton"
+    },
+    {
+      "id": "motherearth",
+      "name": "Mother Earth — Floralies Gardens",
+      "lat": 45.508147,
+      "lng": -73.527544,
+      "mapQuery": "Mosaïcultures, Jardins des Floralies, Parc Jean-Drapeau, Montréal",
+      "source": "https://www.parcjeandrapeau.com/en/mosaicultures-experience-floralies-gardens-artworks-sculptures-horticultural-art-flowers-plants-montreal/",
+      "area": "jeandrapeau",
+      "kind": "Landmark",
+      "price": "Free",
+      "description": "The giant woman in the Floralies Gardens at Parc Jean-Drapeau.",
+      "note": "Free. Winter foliage differs from the summer photos.",
+      "coordinate_note": "Official park’s sculpture marker, not a verified taxi drop-off or walking entrance. Use the Floralies Gardens destination for navigation. No assertion that this point lies on a path.",
+      "photo_note": "All three photographs are from the current park’s official gallery. Photo 1 is a winter night photograph credited to Danny Donovan; photos 2 and 3 are summer views credited to Myriam Baril-Tessier. No 2013 Botanical Garden photograph used.",
+      "image": "motherearth"
     }
   ],
   "days": [
@@ -610,7 +855,17 @@
       "date": "Nov 21",
       "blocks": [
         {
-          "time": "10 AM",
+          "time": "9:15 AM",
+          "title": "Mother Earth",
+          "text": "The giant woman at Parc Jean-Drapeau’s Floralies Gardens. Taxi to the gardens, then walk to the sculpture.",
+          "note": "Free. Foliage fades in November; summer photos show the greener season.",
+          "stops": [
+            "motherearth"
+          ],
+          "mode": "driving"
+        },
+        {
+          "time": "10:30 AM",
           "title": "St-Viateur Bagel",
           "text": "Hot wood-fired sesame bagels from the original bakery.",
           "stops": [
@@ -619,8 +874,12 @@
           "mode": "driving",
           "nearby": [
             {
+              "id": "fairmount",
+              "text": "The other original wood-fired bagel bakery. Hot sesame bagels; takeaway."
+            },
+            {
               "id": "maisonsauvage",
-              "text": "Viennese-style dark hot chocolate with vanilla whipped cream, plus elaborate cookies. Upholstered seating; limited space."
+              "text": "Rich Viennese hot chocolate with vanilla whipped cream and elaborate cookies. Seating is limited."
             }
           ]
         },
@@ -638,6 +897,15 @@
               "text": "Independent bookshop on Bernard: art books, graphic novels, and small publishers."
             }
           ]
+        },
+        {
+          "time": "11:30 AM",
+          "title": "Bernard → Hutchison",
+          "text": "Walk south along Hutchison: greystone houses, balconies, outdoor staircases, and quiet residential blocks.",
+          "stops": [
+            "bernardwalk"
+          ],
+          "mode": "walking"
         },
         {
           "time": "11:45 AM",
@@ -662,7 +930,13 @@
             "lemeac"
           ],
           "mode": "walking",
-          "note": "Reserve for two; 12:30 PM was available Nov 18."
+          "note": "Reserve for two; 12:30 PM was available Nov 18.",
+          "nearby": [
+            {
+              "id": "chezleveque",
+              "text": "Across Laurier: duck confit, steak frites, and a two-course lunch from CAD 38. Reserve."
+            }
+          ]
         },
         {
           "time": "2 PM",
@@ -689,8 +963,8 @@
           "mode": "walking",
           "nearby": [
             {
-              "id": "faiseurs",
-              "text": "Québec ceramics, specialty coffee, and pastries. A walk-in browse or café stop on Saint-Laurent."
+              "id": "mmmechocolat",
+              "text": "Artisan bonbons and hot chocolate. Ask for Boréal with Québec spices if available."
             }
           ]
         },
@@ -702,7 +976,13 @@
             "monokiini"
           ],
           "mode": "walking",
-          "star": true
+          "star": true,
+          "nearby": [
+            {
+              "id": "faiseurs",
+              "text": "Handmade Québec ceramics, specialty coffee, and pastries in a bright café."
+            }
+          ]
         },
         {
           "time": "4:15 PM",
@@ -711,16 +991,19 @@
           "stops": [
             "altmontreal"
           ],
-          "mode": "driving",
-          "nearby": [
-            {
-              "id": "beteapain",
-              "text": "Near Alt: French pastries and Callebaut hot chocolate. Bright, airy café with 35 seats."
-            }
-          ]
+          "mode": "driving"
         },
         {
-          "time": "5–6 PM",
+          "time": "4:45–5:30 PM",
+          "title": "Montréal Eaton Centre",
+          "text": "Downtown’s largest retail centre: UNIQLO, BOSS, Nike, Aritzia, and Time Out Market.",
+          "stops": [
+            "eaton"
+          ],
+          "mode": "driving"
+        },
+        {
+          "time": "5:45–6:45 PM",
           "title": "Atrium Le 1000",
           "text": "Indoor skating beneath a glass atrium. Entry + skates + helmet: about CAD 23.",
           "stops": [
@@ -728,10 +1011,10 @@
           ],
           "mode": "walking",
           "star": true,
-          "note": "Book the 4:30–5:30 PM arrival window; arrive around 5 PM."
+          "note": "Book the 5:30–6:30 PM arrival window; arrive around 5:45 PM."
         },
         {
-          "time": "7 PM target",
+          "time": "7:30 PM target",
           "title": "Monarque",
           "text": "French brasserie dinner. CAD 85–130 each before tax and tip.",
           "stops": [
@@ -742,6 +1025,10 @@
             {
               "id": "citememoire",
               "text": "Free projections on Old Montréal’s walls after dark; near Monarque."
+            },
+            {
+              "id": "holder",
+              "text": "Nearby French bistro: steak frites CAD 39, duck confit 35, beef cheek 41. Reserve Saturday dinner."
             }
           ],
           "note": "No brasserie tables listed Nov 18. Formal dining room: 9:30 PM available. Alternatives below."
@@ -770,11 +1057,26 @@
       "date": "Nov 22",
       "blocks": [
         {
-          "time": "10 AM",
+          "time": "9:30 AM",
           "title": "Crew Collective & Café",
           "text": "Breakfast and coffee in a grand former bank. Leave bags at Alt before heading out.",
           "stops": [
             "crew"
+          ],
+          "mode": "walking",
+          "nearby": [
+            {
+              "id": "olive",
+              "text": "Panini, pastries, and café breakfast on Saint-Paul West. Walk-in only."
+            }
+          ]
+        },
+        {
+          "time": "10:30 AM",
+          "title": "Rue Saint-Paul",
+          "text": "Walk the cobbled street past old stone façades, little storefronts, and courtyard entrances.",
+          "stops": [
+            "saintpaulwalk"
           ],
           "mode": "walking"
         },
@@ -788,7 +1090,7 @@
           "mode": "walking"
         },
         {
-          "time": "11:45 AM",
+          "time": "11:15 AM",
           "title": "Old Port",
           "text": "A waterfront walk along the quays and old streets.",
           "stops": [
@@ -803,7 +1105,16 @@
           ]
         },
         {
-          "time": "12:30–1:15 PM",
+          "time": "11:30 AM",
+          "title": "La Grande Roue",
+          "text": "Old Port views from a heated private cabin. The ride lasts 17–20 minutes; standard tickets are CAD 29.50 + tax each.",
+          "stops": [
+            "granderoue"
+          ],
+          "mode": "walking"
+        },
+        {
+          "time": "12:30–1 PM",
           "title": "Place d’Armes & Notre-Dame",
           "text": "The square and the basilica’s blue-and-gold interior. Admission from CAD 16 + tax.",
           "stops": [
@@ -811,21 +1122,34 @@
           ],
           "mode": "walking",
           "star": true,
-          "nearby": [
-            {
-              "id": "olive",
-              "text": "Sandwiches, pastries, and a sit-down lunch. Walk-in; expect a queue."
-            }
-          ],
           "note": "Book daytime admission, separate from AURA."
         },
         {
-          "time": "1:30–2:45 PM",
-          "title": "Place Carmin",
-          "text": "Sunday lunch in a bright, polished French brasserie. Choose from the weekend menu; leave room for pastry afterward.",
-          "note": "Dining-room tables for two at 1:30 PM were available Nov 18. Reserve.",
+          "time": "1:15 PM",
+          "title": "Brasserie 701",
+          "text": "A handsome French brasserie with substantial plates: steak frites, burger and fries, or steak and eggs.",
+          "note": "Sunday brunch menu; tables for two at 1:15 PM were available Nov 18.",
           "stops": [
-            "placecarmin"
+            "brasserie701"
+          ],
+          "mode": "walking",
+          "nearby": [
+            {
+              "id": "placecarmin",
+              "text": "The more contemporary French option: bright room and a seasonal weekend menu. Reserve."
+            },
+            {
+              "id": "stash",
+              "text": "Hearty Polish food: pierogi, schnitzel, and cabbage rolls. Sunday from noon; reservations by phone, 514-845-6611."
+            }
+          ]
+        },
+        {
+          "time": "2:35 PM",
+          "title": "Rooney",
+          "text": "Designer clothing, fragrance, and objects: Lemaire, Our Legacy, Comme des Garçons, and Frama.",
+          "stops": [
+            "rooney"
           ],
           "mode": "walking"
         },
@@ -836,12 +1160,27 @@
           "stops": [
             "potier"
           ],
+          "mode": "walking",
+          "nearby": [
+            {
+              "id": "beteapain",
+              "text": "French pastries and Callebaut hot chocolate near Alt. An airy café with 35 seats."
+            }
+          ]
+        },
+        {
+          "time": "3:25 PM",
+          "title": "Peel Basin & Lachine Canal",
+          "text": "Follow the canal-side promenade for water views, the Five Roses landmark, and the downtown skyline.",
+          "stops": [
+            "peelbasin"
+          ],
           "mode": "walking"
         },
         {
           "time": "3:45 PM",
           "title": "Alt Hotel Montréal",
-          "text": "Walk back from Chez Potier and collect bags.",
+          "text": "Walk back to Alt and collect bags before the 4 PM airport taxi.",
           "stops": [
             "altmontreal"
           ],
@@ -888,7 +1227,10 @@
         "atelierb",
         "guyomarch",
         "mercantile",
-        "maisonsauvage"
+        "maisonsauvage",
+        "bernardwalk",
+        "chezleveque",
+        "fairmount"
       ]
     },
     {
@@ -922,7 +1264,14 @@
         "wachiya",
         "leroyer",
         "placecarmin",
-        "beteapain"
+        "beteapain",
+        "rooney",
+        "granderoue",
+        "saintpaulwalk",
+        "peelbasin",
+        "holder",
+        "brasserie701",
+        "stash"
       ]
     },
     {
@@ -932,7 +1281,8 @@
       "ids": [
         "bargeorge",
         "cloakroom",
-        "atrium"
+        "atrium",
+        "eaton"
       ]
     },
     {
@@ -944,7 +1294,16 @@
         "etatdechoc",
         "exvoto",
         "monokiini",
-        "faiseurs"
+        "faiseurs",
+        "mmmechocolat"
+      ]
+    },
+    {
+      "id": "jeandrapeau",
+      "name": "Parc Jean-Drapeau",
+      "subtitle": "",
+      "ids": [
+        "motherearth"
       ]
     }
   ],
@@ -1012,20 +1371,20 @@
     },
     {
       "name": "Saturday dinner",
-      "when": "Monarque 7 PM target",
-      "status": "No brasserie tables listed Nov 18. Formal dining room: 9:30 PM available. Call +1 514 875-3896 for cancellations.",
+      "when": "Monarque 7:30 PM target",
+      "status": "No brasserie tables listed Nov 18. Try Holder nearby, or the 9:30 PM formal dining-room slot.",
       "url": "https://resy.com/cities/montreal-qc/venues/monarque?date=2026-11-21&seats=2"
     },
     {
-      "name": "Place Carmin",
-      "when": "Sunday 1:30 PM · two people",
-      "status": "Dining-room tables available Nov 18.",
-      "url": "https://resy.com/cities/montreal-qc/venues/place-carmin?date=2026-11-22&seats=2"
+      "name": "Brasserie 701",
+      "when": "Sunday 1:15 PM · two people",
+      "status": "Tables available Nov 18.",
+      "url": "https://www.opentable.ca/r/brasserie-701-reservations-montreal?restref=58015&lang=en-CA&covers=2&dateTime=2026-11-22T13%3A15"
     },
     {
       "name": "Atrium skating",
-      "when": "Saturday · 4:30–5:30 PM arrival window",
-      "status": "Arrive around 5 PM. Add skate and helmet rentals.",
+      "when": "Saturday · 5:30–6:30 PM arrival window",
+      "status": "Arrive around 5:45 PM. Add skate and helmet rentals.",
       "url": "https://atrium.logikpos.ca/ticketing2.aspx"
     },
     {
@@ -1033,6 +1392,12 @@
       "when": "Sunday 12:30 PM",
       "status": "Daytime admission.",
       "url": "https://www.basiliquenotredame.ca/en/hours-and-rates"
+    },
+    {
+      "name": "La Grande Roue",
+      "when": "Sunday around 11:30 AM",
+      "status": "Standard tickets include a private cabin.",
+      "url": "https://feverup.com/m/368259/en?seasonal=p42f8ep"
     }
   ],
   "cocktails": "Cloakroom and Bar George: walk-in only."

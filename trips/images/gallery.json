@@ -1148,5 +1148,330 @@
         "credit": "La Bête à Pain official Griffintown page; Two Food Photographers identified in filename"
       }
     ]
+  },
+  "rooney": {
+    "photos": [
+      {
+        "src": "images/galleries/rooney/1.jpg",
+        "alt": "Rooney boutique storefront in its historic Old Montréal building",
+        "source": "https://www.rooneyshop.com/pages/about",
+        "image_source": "https://cdn.shopify.com/s/files/1/0068/2162/files/A282F94C-95BA-4A5F-B831-1B9A4A35C5CE_-1.jpg?v=1766874533",
+        "credit": "Rooney official About gallery; photographer not specified"
+      },
+      {
+        "src": "images/galleries/rooney/2.jpg",
+        "alt": "Curated clothing and accessories displayed inside Rooney",
+        "source": "https://www.rooneyshop.com/pages/about",
+        "image_source": "https://cdn.shopify.com/s/files/1/0068/2162/files/SMALL_SIZERooney_Shop_Photos_25-9723_copy.png?v=1766873796",
+        "credit": "Rooney official About gallery; photographer not specified"
+      },
+      {
+        "src": "images/galleries/rooney/3.jpg",
+        "alt": "Footwear, handbags, and clothing displays in Rooney boutique",
+        "source": "https://www.rooneyshop.com/pages/about",
+        "image_source": "https://cdn.shopify.com/s/files/1/0068/2162/files/SMALLRooney_Shop_Photos_25-9767_copy.png?v=1766874361",
+        "credit": "Rooney official About gallery; photographer not specified"
+      }
+    ]
+  },
+  "granderoue": {
+    "photos": [
+      {
+        "src": "images/galleries/granderoue/1.jpg",
+        "alt": "La Grande Roue de Montréal above the Old Port at dusk",
+        "source": "https://www.oldportofmontreal.com/activity/montreal-observation-wheel",
+        "image_source": "https://www.oldportofmontreal.com/sites/default/files/styles/teaser/public/2025-04/7_la_grande_roue_de_montreal_crepuscule.jpg?itok=iGkzc1iq",
+        "credit": "Old Port of Montréal official activity gallery; photographer not identified"
+      },
+      {
+        "src": "images/galleries/granderoue/2.jpg",
+        "alt": "Inside a standard Grande Roue gondola with padded bench seating",
+        "source": "https://www.oldportofmontreal.com/activity/montreal-observation-wheel",
+        "image_source": "https://www.oldportofmontreal.com/sites/default/files/styles/teaser/public/2025-04/3_la_grande_roue_de_montreal_gondole_reguliere.jpg?itok=E5maAD2z",
+        "credit": "Old Port of Montréal official activity gallery; photographer not identified"
+      },
+      {
+        "src": "images/galleries/granderoue/3.jpg",
+        "alt": "A winter view over Old Montréal from inside a Grande Roue cabin",
+        "source": "https://www.oldportofmontreal.com/activity/montreal-observation-wheel",
+        "image_source": "https://www.oldportofmontreal.com/sites/default/files/styles/teaser/public/2025-12/grande_roue_3.jpeg.jpg?itok=sBFxgwJ1",
+        "credit": "Old Port of Montréal official activity gallery; photographer not identified"
+      }
+    ]
+  },
+  "bernardwalk": {
+    "photos": [
+      {
+        "src": "images/galleries/bernardwalk/1.jpg",
+        "alt": "Stone-front house and porch at 5159 Rue Hutchison",
+        "source": "https://www.zumper.com/address/5159-rue-hutchison-montreal-qc-h2v-4b2-can",
+        "image_source": "https://img.zumpercdn.com/793447876/1280x960?auto=format",
+        "credit": ""
+      },
+      {
+        "src": "images/galleries/bernardwalk/2.jpg",
+        "alt": "Mile End greystone triplex on Hutchison with paired outdoor stairs",
+        "source": "https://www.imtl.org/image.php?id=5395",
+        "image_source": "https://www.imtl.org/image/big/1_MG_1517.jpg",
+        "credit": "Alexis Hamel"
+      },
+      {
+        "src": "images/galleries/bernardwalk/3.jpg",
+        "alt": "Hutchison at Fairmount: brick façades and a quiet residential streetscape",
+        "source": "https://www.imtl.org/rue_montreal.php?rue=Hutchison",
+        "image_source": "https://www.imtl.org/image/big/2013_IMG_1197.jpg",
+        "credit": "Alexis Hamel"
+      }
+    ]
+  },
+  "saintpaulwalk": {
+    "photos": [
+      {
+        "src": "images/galleries/saintpaulwalk/1.jpg",
+        "alt": "Pedestrian street and stone architecture on Rue Saint-Paul",
+        "source": "https://www.mtl.org/en/what-to-do/food/place-carmin",
+        "image_source": "https://api.mtl.org/files/default/styles/square_600_600/public/2026-10/35736__257D44E4-150C-44FE-A65D9233A33E2E8E.jpg.webp?itok=bXR9uBIL",
+        "credit": "Tourisme Montréal"
+      },
+      {
+        "src": "images/galleries/saintpaulwalk/2.jpg",
+        "alt": "Rue Saint-Paul streetscape and historic stone façades",
+        "source": "https://justinpluslauren.com/montreal-3-day-itinerary/",
+        "image_source": "https://photos.smugmug.com/Canada/Quebec/Montreal-2020/i-s8DhvN9/1/XL/Montreal-OldMontreal13-XL.jpg",
+        "credit": "Justin Plus Lauren"
+      },
+      {
+        "src": "images/galleries/saintpaulwalk/3.jpg",
+        "alt": "Cobbled Rue Saint-Paul with old stone buildings and restaurant terraces",
+        "source": "https://www.vogue.com/article/montreal-food-global-cuisine-guide",
+        "image_source": "https://assets.vogue.com/photos/599f2a2d6b7f9313dd7b9fdc/master/w_2560%2Cc_limit/00-lede-a-guide-to-authentic-food-in-montreal-canada.jpg",
+        "credit": "Vogue"
+      }
+    ]
+  },
+  "peelbasin": {
+    "photos": [
+      {
+        "src": "images/galleries/peelbasin/1.jpg",
+        "alt": "Canal-side promenade overlooking Peel Basin and the Five Roses building",
+        "source": "https://rem.info/en/news/bike-paths-2019",
+        "image_source": "https://rem.info/sites/default/files/hero/hero-pistes-cyclables-2019.jpg",
+        "credit": "REM"
+      },
+      {
+        "src": "images/galleries/peelbasin/2.jpg",
+        "alt": "Modern Griffintown buildings reflected in the water at Peel Basin",
+        "source": "https://forum.agoramtl.com/t/redeveloppement-de-bridge-bonaventure-projet-global/3324?page=10",
+        "image_source": "https://uploads.agoramtl.com/original/3X/8/9/895e00f0d04b32b6feb967a4c75471dcb77d5436.jpeg",
+        "credit": "Agora Montréal contributor"
+      },
+      {
+        "src": "images/galleries/peelbasin/3.jpg",
+        "alt": "Five Roses illuminated above Peel Basin Flour Dock during an evening event",
+        "source": "https://parks.canada.ca/lhn-nhs/qc/canallachine/activ/sentiers-trails/parcs-attraits-parks-attractions",
+        "image_source": "https://pcweb2.azureedge.net/-/media/lhn-nhs/qc/canallachine/WET4/activ/parcs-attraits/parcs-attraits-lachine-bassinpeel-510.jpg",
+        "credit": "Parks Canada"
+      }
+    ]
+  },
+  "holder": {
+    "photos": [
+      {
+        "src": "images/galleries/holder/1.jpg",
+        "alt": "Holder’s high-ceilinged European brasserie dining room",
+        "source": "https://tastet.ca/listes/le-meilleur-du-vieux-montreal-nos-suggestions-dadresses-2/",
+        "image_source": "https://media.tastet.ca/2017/01/restaurant-holder-brasserie-vieux-montreal-2-e1484591113640.jpg",
+        "credit": "Tastet; photographer not identified"
+      },
+      {
+        "src": "images/galleries/holder/2.jpg",
+        "alt": "A main course pictured by Holder on its official homepage",
+        "source": "https://restaurantholder.com/en/",
+        "image_source": "https://restaurantholder.com/wp-content/uploads/2024/07/Accueil_diner-730x1024.jpg",
+        "credit": "Restaurant Holder official website; photographer not identified"
+      },
+      {
+        "src": "images/galleries/holder/3.jpg",
+        "alt": "A starter pictured by Holder on its official homepage",
+        "source": "https://restaurantholder.com/en/",
+        "image_source": "https://restaurantholder.com/wp-content/uploads/2024/07/Accueil_entrees.jpg",
+        "credit": "Restaurant Holder official website; photographer not identified"
+      }
+    ]
+  },
+  "brasserie701": {
+    "photos": [
+      {
+        "src": "images/galleries/brasserie701/1.jpg",
+        "alt": "Brasserie 701 dining room with high ceilings, draped windows and chandeliers",
+        "source": "https://www.opentable.com/r/brasserie-701-montreal",
+        "image_source": "https://resizer.otstatic.com/v2/photos/large/3/93185630.jpg",
+        "credit": "Brasserie 701"
+      },
+      {
+        "src": "images/galleries/brasserie701/2.jpg",
+        "alt": "Burger and French fries at Brasserie 701",
+        "source": "https://www.opentable.ca/r/brasserie-701-montreal",
+        "image_source": "https://resizer.otstatic.com/v2/photos/huge/2/92093175.jpg",
+        "credit": "Brasserie 701"
+      },
+      {
+        "src": "images/galleries/brasserie701/3.jpg",
+        "alt": "Brasserie 701 pancakes and French toast with berries at weekend brunch",
+        "source": "https://brasserie701.com/en/menu/brunch/",
+        "image_source": "https://brasserie701.com/wp-content/uploads/2026/03/groupshot-1-rotated-e1773757221802.jpg",
+        "credit": "Brasserie 701"
+      }
+    ]
+  },
+  "stash": {
+    "photos": [
+      {
+        "src": "images/galleries/stash/1.jpg",
+        "alt": "Stash Café dining room with wooden pew seating and red pendant lamps",
+        "source": "https://www.tripadvisor.com/Restaurant_Review-g155032-d709263-Reviews-Stash_Cafe-Montreal_Quebec.html",
+        "image_source": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/6b/2e/1e/photo2jpg.jpg?h=800&s=1&w=1400",
+        "credit": "Tripadvisor venue gallery"
+      },
+      {
+        "src": "images/galleries/stash/2.jpg",
+        "alt": "Stash Café pierogi with caramelized onions and sauerkraut",
+        "source": "https://www.afar.com/places/stash-cafe-montreal",
+        "image_source": "https://k3-prod-afar-media.s3.us-west-2.amazonaws.com/brightspot/e9/83/e1483ae7f0239e5ab5a9fbceceb1/original-5e175bb6c54d003dfeda27c977bb0cdb.jpg",
+        "credit": "AFAR"
+      },
+      {
+        "src": "images/galleries/stash/3.jpg",
+        "alt": "Stash Café veal schnitzel with fried egg, potatoes and beet salad",
+        "source": "https://roadfood.com/restaurants/stash-cafe/",
+        "image_source": "https://roadfood.com/.image/MTM6MDAwMDAwMDAwMDEwODMw/MTM6MDAwMDAwMDAwMDEwODMw.jpg?profile=w2560",
+        "credit": "Roadfood"
+      }
+    ]
+  },
+  "mmmechocolat": {
+    "photos": [
+      {
+        "src": "images/galleries/mmmechocolat/1.jpg",
+        "alt": "The chocolate counter at M. & Mme Chocolat on Beaubien Street",
+        "source": "https://www.mapquest.com/ca/quebec/mmme-chocolat-456436685",
+        "image_source": "https://ir.4sqi.net/img/general/original/37216550_o3Fr59w4NzCz0oTXQ-gBqV8BuxoD03vaP1FgSzbm0Fg.jpg",
+        "credit": "Foursquare venue photo via MapQuest; photographer not identified"
+      },
+      {
+        "src": "images/galleries/mmmechocolat/2.jpg",
+        "alt": "An assortment of M. & Mme Chocolat artisan chocolates",
+        "source": "https://www.mmmechocolat.com/",
+        "image_source": "https://www.mmmechocolat.com/cdn/shop/files/Boite_de_24_chocolats_artisanaux_1024x.jpg?v=1780682724",
+        "credit": "M. & Mme Chocolat official website; photographer not identified"
+      },
+      {
+        "src": "images/galleries/mmmechocolat/3.jpg",
+        "alt": "M. & Mme Chocolat hot-chocolate selection pictured on its official website",
+        "source": "https://www.mmmechocolat.com/",
+        "image_source": "https://www.mmmechocolat.com/cdn/shop/collections/Chocolat-chaud-cadeau-M-Mme-Chocolat.jpg?v=1772469672",
+        "credit": "M. & Mme Chocolat official website; photographer not identified"
+      }
+    ]
+  },
+  "chezleveque": {
+    "photos": [
+      {
+        "src": "images/galleries/chezleveque/1.jpg",
+        "alt": "The busy classic brasserie dining room at Chez Lévêque, photographed in black and white",
+        "source": "https://en.chezleveque.ca/",
+        "image_source": "https://en.chezleveque.ca/cdn/shop/files/slide1.webp?v=1761577336",
+        "credit": "Chez Lévêque official website"
+      },
+      {
+        "src": "images/galleries/chezleveque/2.jpg",
+        "alt": "A substantial braised meat main with vegetables and sauce at Chez Lévêque",
+        "source": "https://en.chezleveque.ca/",
+        "image_source": "https://en.chezleveque.ca/cdn/shop/files/gal1_980x_crop_center.jpg?v=1614286830",
+        "credit": "Chez Lévêque official website"
+      },
+      {
+        "src": "images/galleries/chezleveque/3.jpg",
+        "alt": "Chez Lévêque bouillabaisse with mussels, fish, and shellfish",
+        "source": "https://www.mtl.org/en/what-to-do/food/chez-leveque",
+        "image_source": "https://api.mtl.org/files/default/styles/square_600_600/public/2026-06/63617__B78279B6-4D2C-4D3A-B9A794D85D86DD1C.jpg.webp?h=011cff2d&itok=irnJxXVv",
+        "credit": "Tourisme Montréal / Chez Lévêque venue gallery"
+      }
+    ]
+  },
+  "fairmount": {
+    "photos": [
+      {
+        "src": "images/galleries/fairmount/1.jpg",
+        "alt": "A fresh sesame bagel held in front of the original Fairmount Bagel storefront",
+        "source": "https://www.timeout.com/fr/montreal/restaurants/meilleurs-bagels-montreal",
+        "image_source": "https://media.timeout.com/images/105391123/image.jpg",
+        "credit": "Time Out venue photograph"
+      },
+      {
+        "src": "images/galleries/fairmount/2.jpg",
+        "alt": "Bagels emerging from the wood-fired oven inside Fairmount Bagel",
+        "source": "https://thewanderingeater.com/2015/08/12/legendary-montreal-bagels-from-fairmount-bagel-montreal-canada/",
+        "image_source": "https://i0.wp.com/farm1.staticflickr.com/454/19609610274_ab31ff9f1a_z.jpg?resize=640%2C427&ssl=1",
+        "credit": "Tina / The Wandering Eater, 2015 firsthand visit"
+      },
+      {
+        "src": "images/galleries/fairmount/3.jpg",
+        "alt": "A tray piled with freshly baked sesame bagels at Fairmount Bagel",
+        "source": "https://www.theinfatuation.com/montreal/reviews/fairmount-bagel",
+        "image_source": "https://res.cloudinary.com/the-infatuation/image/upload/c_scale%2Cw_1200%2Cq_auto%2Cf_auto/images/DSC_1078_ceef6b",
+        "credit": "Alison Slattery / The Infatuation"
+      }
+    ]
+  },
+  "eaton": {
+    "photos": [
+      {
+        "src": "images/galleries/eaton/1.jpg",
+        "alt": "The illuminated glass entrance of Centre Eaton de Montréal",
+        "source": "https://www.centreeatondemontreal.com/centre-eaton-de-montreal/",
+        "image_source": "https://www.centreeatondemontreal.com/media/v1/396/2023/03/CEM_EntreePrincipale-2.jpg",
+        "credit": "Centre Eaton de Montréal official website"
+      },
+      {
+        "src": "images/galleries/eaton/2.jpg",
+        "alt": "The multilevel shopping atrium and escalators inside Centre Eaton de Montréal",
+        "source": "https://www.mtl.org/en/what-to-do/shopping/the-montreal-eaton-centre",
+        "image_source": "https://api.mtl.org/files/default/styles/square_600_600/public/2023-03/51950.png.webp?itok=efWWUBaT",
+        "credit": "Tourisme Montréal / Centre Eaton venue gallery"
+      },
+      {
+        "src": "images/galleries/eaton/3.jpg",
+        "alt": "The Sainte-Catherine shopping frontage of Centre Eaton, with Decathlon and Time Out Market signs",
+        "source": "https://www.mtl.org/en/what-to-do/shopping/the-montreal-eaton-centre",
+        "image_source": "https://api.mtl.org/files/default/styles/square_600_600/public/2023-03/51949.jpg.webp?itok=KEGkuPc8",
+        "credit": "Tourisme Montréal / Centre Eaton venue gallery"
+      }
+    ]
+  },
+  "motherearth": {
+    "photos": [
+      {
+        "src": "images/galleries/motherearth/1.jpg",
+        "alt": "Winter view of the mosaïcultures at Parc Jean-Drapeau; seasonal foliage has faded",
+        "source": "https://www.parcjeandrapeau.com/en/mosaicultures-experience-floralies-gardens-artworks-sculptures-horticultural-art-flowers-plants-montreal/",
+        "image_source": "https://www.parcjeandrapeau.com/files/photos/mosaicultures_experience_jardins_des_floralies_oeuvres_sculptures_art_horticole_fleurs_plantes_parc_jean_drapeau_montreal_2025_hiver_003_2026_1_19_1.jpg",
+        "credit": "© Danny Donovan"
+      },
+      {
+        "src": "images/galleries/motherearth/2.jpg",
+        "alt": "Summer view of the mosaïcultures at their current Floralies Gardens location; illustrative summer foliage",
+        "source": "https://www.parcjeandrapeau.com/en/mosaicultures-experience-floralies-gardens-artworks-sculptures-horticultural-art-flowers-plants-montreal/",
+        "image_source": "https://www.parcjeandrapeau.com/files/photos/mosaicultures_experience_jardins_des_floralies_oeuvres_sculptures_art_horticole_fleurs_plantes_parc_jean_drapeau_montreal_2025_003_1.jpg",
+        "credit": "© Myriam Baril-Tessier"
+      },
+      {
+        "src": "images/galleries/motherearth/3.jpg",
+        "alt": "Summer view of the mosaïcultures at Parc Jean-Drapeau; not current November conditions",
+        "source": "https://www.parcjeandrapeau.com/en/mosaicultures-experience-floralies-gardens-artworks-sculptures-horticultural-art-flowers-plants-montreal/",
+        "image_source": "https://www.parcjeandrapeau.com/files/photos/mosaicultures_experience_jardins_des_floralies_oeuvres_sculptures_art_horticole_fleurs_plantes_parc_jean_drapeau_montreal_2025_001_1.jpg",
+        "credit": "© Myriam Baril-Tessier"
+      }
+    ]
   }
 }
