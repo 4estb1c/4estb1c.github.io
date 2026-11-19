@@ -1473,5 +1473,80 @@
         "credit": "© Myriam Baril-Tessier"
       }
     ]
+  },
+  "gueuleton": {
+    "photos": [
+      {
+        "src": "images/galleries/gueuleton/1.jpg",
+        "alt": "Gueuleton Montréal dining room with leather banquette and white brick walls",
+        "source": "https://www.gueuleton.ca/",
+        "image_source": "https://images.assets-landingi.com/uc/7d2c71d6-2277-416d-a732-fb4f967333f7/GueuletonMontrealsallerestaurant1.png",
+        "credit": "Gueuleton Montréal"
+      },
+      {
+        "src": "images/galleries/gueuleton/2.jpg",
+        "alt": "House-made terrine and assorted charcuterie at Gueuleton Montréal",
+        "source": "https://meet.mtl.org/en/plan/restaurants/gueuleton",
+        "image_source": "https://api-meet.mtl.org/files/as/styles/square_600_600/public/2026-08/63983__41123676-F9AE-4672-AFA6065BE925228C.jpg.webp?h=2e45832f&itok=2TE7RjWl",
+        "credit": "Yuzuha Nakamura / Gueuleton Montréal"
+      },
+      {
+        "src": "images/galleries/gueuleton/3.jpg",
+        "alt": "Generous steak and sharing dishes on a Gueuleton Montréal table",
+        "source": "https://www.gueuleton.ca/en",
+        "image_source": "https://www.gueuleton.ca/cdn/shop/files/repaire-table-vin.jpg?v=1788126721&width=1500",
+        "credit": "Gueuleton Montréal"
+      }
+    ]
+  },
+  "hamel": {
+    "photos": [
+      {
+        "src": "images/galleries/hamel/1.jpg",
+        "alt": "Fromagerie Hamel’s Jean-Talon shop at 220 Rue Jean-Talon Est",
+        "source": "https://www.fromageriehamel.com/boutiques/marche-jean-talon/",
+        "image_source": "https://www.fromageriehamel.com/app/uploads/2025/05/fh-boutique-jeantalon-2560x938.jpg",
+        "credit": "Fromagerie Hamel"
+      },
+      {
+        "src": "images/galleries/hamel/2.jpg",
+        "alt": "Example of a Hamel cheese assortment box from the official selection",
+        "source": "https://www.fromageriehamel.com/produits/boites-de-fromages-et-charcuteries/",
+        "image_source": "https://www.fromageriehamel.com/app/uploads/2025/11/img-2907-low-720x540-acf-cropped.jpg",
+        "credit": "Fromagerie Hamel"
+      },
+      {
+        "src": "images/galleries/hamel/3.jpg",
+        "alt": "Example of a Hamel charcuterie box with cured meats, olives and pickles",
+        "source": "https://www.fromageriehamel.com/produits/boites-de-fromages-et-charcuteries/",
+        "image_source": "https://www.fromageriehamel.com/app/uploads/2025/11/img-2784-low-720x540-acf-cropped.jpg",
+        "credit": "Fromagerie Hamel"
+      }
+    ]
+  },
+  "guillaume": {
+    "photos": [
+      {
+        "src": "images/galleries/guillaume/1.jpg",
+        "alt": "Guillaume’s bread display in official bakery photography",
+        "source": "https://guillau.me/en/pages/notre-vision",
+        "image_source": "https://guillau.me/cdn/shop/files/BGUILLAUME-LIFESTYLE-PHOTOSHOOT--05-2018-MONOLITH-00000077.jpg?v=1746215873&width=640",
+        "credit": "Boulangerie Guillaume"
+      },
+      {
+        "src": "images/galleries/guillaume/2.jpg",
+        "alt": "Guillaume sourdough loaf from the official bread selection",
+        "source": "https://guillau.me/",
+        "image_source": "https://guillau.me/cdn/shop/products/demi-miche1.jpg?v=1746824934&width=840",
+        "credit": "Boulangerie Guillaume"
+      },
+      {
+        "src": "images/galleries/guillaume/3.jpg",
+        "alt": "Flaky pastry from Guillaume’s official selection",
+        "source": "https://guillau.me/",
+        "image_source": "https://guillau.me/cdn/shop/collections/feuilletes.png?v=1746279843&width=860",
+        "credit": "Boulangerie Guillaume"
+      }
+    ]
   }
 }
