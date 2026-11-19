@@ -426,19 +426,6 @@
       "note": "Official Sunday hours 11:30 AM–6 PM. Timed-arrival tickets are recommended; availability is not guaranteed."
     },
     {
-      "id": "monokiini",
-      "name": "MONOKIINI · ceramics & café",
-      "lat": 45.5335247,
-      "lng": -73.6162204,
-      "source": "https://monokiini.com/en/pages/a-propos",
-      "mapQuery": "MONOKIINI, 7048 Boulevard Saint-Laurent",
-      "area": "littleitaly",
-      "kind": "Boutique & café",
-      "price": "Browse free · café purchases extra",
-      "description": "Handmade ceramics, a café, and makers working in the studio.",
-      "note": "Boutique visit and coffee, not a booked workshop."
-    },
-    {
       "id": "atelierb",
       "name": "atelier b · workshop boutique",
       "lat": 45.5268613,
@@ -1019,13 +1006,7 @@
             "faiseurs"
           ],
           "mode": "walking",
-          "star": true,
-          "nearby": [
-            {
-              "id": "monokiini",
-              "text": "Another ceramics boutique and café nearby, with a working pottery studio."
-            }
-          ]
+          "star": true
         },
         {
           "time": "3:30 PM",
@@ -1362,7 +1343,6 @@
         "ratafia",
         "etatdechoc",
         "exvoto",
-        "monokiini",
         "faiseurs",
         "mmmechocolat",
         "hamel"
