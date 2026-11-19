@@ -850,20 +850,6 @@
       "note": "Free. A Plateau detour from the northwest shops.",
       "price": "Free",
       "image": "squarestlouis"
-    },
-    {
-      "id": "cohenmural",
-      "name": "Leonard Cohen mural · Tower of Songs",
-      "lat": 45.4973573,
-      "lng": -73.5764443,
-      "mapQuery": "Tower of Songs mural, 1420 Rue Crescent, Montréal",
-      "source": "https://artpublicmontreal.ca/en/oeuvre/tower-of-songs-hommage-a-leonard-cohen/",
-      "area": "downtown",
-      "kind": "Outdoors",
-      "description": "A giant portrait of Montréal’s singer-poet above Crescent Street.",
-      "note": "Free outdoor stop near the downtown cocktail bars.",
-      "price": "Free",
-      "image": "cohenmural"
     }
   ],
   "days": [
@@ -1092,10 +1078,6 @@
             {
               "id": "bargeorge",
               "text": "Ornate mansion bar near Cloakroom. Walk-in cocktails; separate from Alt."
-            },
-            {
-              "id": "cohenmural",
-              "text": "The enormous Tower of Songs portrait above Crescent Street. A free outdoor art stop near the cocktail bars."
             }
           ],
           "note": "Walk-in only. Go before dinner if choosing Monarque at 9:30 PM."
@@ -1331,8 +1313,7 @@
         "cloakroom",
         "atrium",
         "eaton",
-        "christmasmarket",
-        "cohenmural"
+        "christmasmarket"
       ]
     },
     {
