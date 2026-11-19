@@ -8,7 +8,6 @@
     45.515,
     -73.58
   ],
-  "intro": "Walk and talk, browse beautiful little shops, eat very well, and linger over coffee and dessert. One relaxed route each day, with nearby extras when you feel like it.",
   "hotel": {
     "id": "altmontreal",
     "name": "Alt Hotel Montréal",
@@ -24,8 +23,6 @@
     "mapQuery": "Alt Hotel Montréal, 120 Rue Peel",
     "booked": true
   },
-  "booking": "Hotel booked: Alt Hotel Montréal, 120 Rue Peel, Griffintown. Restaurant reservations, skating tickets, Notre-Dame admission, and flights remain pending unless booked separately.",
-  "assumptions": "Flying via YUL. Friday arrival around midnight. Sunday: Milo lands in New York by 10 PM; Forrest can get home to Boston later. Selected flight options land at LGA 9:30 PM and BOS 9:28 PM. All times Eastern. Alt Hotel Montréal is booked. Flights and activities remain pending.",
   "places": [
     {
       "id": "banquise",
@@ -494,6 +491,100 @@
       "description": "Contemporary art jewelry and sculptural objects by independent makers. A more unusual browse than a conventional luxury jeweler.",
       "note": "Published Saturday hours 11 AM–5 PM; closed Sunday. Images are archive gallery photographs, not current inventory.",
       "price": "Browse free"
+    },
+    {
+      "id": "mercantile",
+      "name": "Clark Street Mercantile",
+      "lat": 45.5232514,
+      "lng": -73.5952577,
+      "mapQuery": "Clark Street Mercantile, 5200 Rue Clark",
+      "source": "https://clarkstreetmercantile.com/pages/contact",
+      "area": "mileend",
+      "kind": "Shop",
+      "price": "Browse free",
+      "description": "Independent menswear, accessories, and useful design objects chosen for craftsmanship. A relaxed, considered shop with its own label and a roster including Portuguese Flannel, orSlow, Universal Works, Kinto, and Snow Peak.",
+      "note": "5200 Clark. Current contact page: Saturday 11 AM–6 PM.",
+      "coordinate_source": "https://www.openstreetmap.org/node/11146503926",
+      "coordinate_verification": "Named OSM shop at street number5200 on Rue Clark, matching official address; coordinates retrieved via Photon.",
+      "image": "mercantile"
+    },
+    {
+      "id": "faiseurs",
+      "name": "Les Faiseurs",
+      "lat": 45.5309715,
+      "lng": -73.6106477,
+      "mapQuery": "Les Faiseurs, 6564 Boulevard Saint-Laurent",
+      "source": "https://lesfaiseurs.ca/pages/cafe-boutique-ceramique",
+      "area": "littleitaly",
+      "kind": "Shop",
+      "image": "faiseurs",
+      "description": "Handmade Québec ceramics, specialty coffee, and pastries.",
+      "note": "Saturday 9 AM–6 PM. Walk-in café and browsing.",
+      "price": "Browse free"
+    },
+    {
+      "id": "leroyer",
+      "name": "Galerie LeRoyer",
+      "lat": 45.504784,
+      "lng": -73.554151,
+      "mapQuery": "Galerie LeRoyer, 60 Rue Saint-Paul Ouest",
+      "source": "https://www.galerieleroyer.com/contact",
+      "area": "old",
+      "kind": "Shop",
+      "image": "leroyer",
+      "description": "Contemporary paintings and sculpture in a Saint-Paul gallery.",
+      "note": "Sunday 10 AM–6 PM. Free browsing; exhibitions rotate.",
+      "price": "Free"
+    },
+    {
+      "id": "placecarmin",
+      "name": "Place Carmin",
+      "lat": 45.498321,
+      "lng": -73.557732,
+      "mapQuery": "Place Carmin, 740 Rue William",
+      "source": "https://www.placecarmin.com/",
+      "area": "old",
+      "kind": "Dining",
+      "image": "placecarmin",
+      "description": "Bright French brasserie with weekend brunch and Sunday lunch.",
+      "note": "Sunday 10 AM–2:30 PM. Reserve a dining-room table.",
+      "price": "À la carte"
+    },
+    {
+      "id": "maisonsauvage",
+      "name": "Maison Sauvage",
+      "address": "162 Rue Bernard O, Montréal, QC H2T 2K2",
+      "lat": 45.52527,
+      "lng": -73.60383,
+      "location_source": "https://www.themain.com/fr/montreal/cafe/maison-sauvage-cafe",
+      "official": "https://www.instagram.com/maisonsauvage.mtl/",
+      "saturday_hours": "9 AM–6:30 PM",
+      "hours_note": "Current RestoMontreal listing corroborated by current local listings; owner Instagram could not be independently read.",
+      "hours_source": "https://www.restomontreal.ca/resto/maison-sauvage-cafe-montreal/17283/en/",
+      "blurb": "Optional hot-chocolate and cookie stop near Bref. Order the rich Viennese Choco Deluxe with homemade vanilla whipped cream. Small room, limited seating; stop in if a seat is free.",
+      "seating_note": "A photographed upholstered bench and window counters exist, but the current venue description explicitly says seating is limited and weekends are busy. Do not frame as a guaranteed long comfortable hangout.",
+      "drink_source": "https://www.mtl.org/en/experience/montreal-best-hot-chocolate",
+      "seating_source": "https://www.themain.com/fr/montreal/cafe/maison-sauvage-cafe",
+      "photo_note": "Three genuine venue photographs: interior, signature meringue drinks with cookies, and an illustrative past lemon-meringue cookie. No photo is mislabeled as hot chocolate; exact cookie flavors vary.",
+      "image": "maisonsauvage",
+      "area": "mileend",
+      "kind": "Café",
+      "source": "https://www.mtl.org/en/experience/montreal-best-hot-chocolate",
+      "mapQuery": "Maison Sauvage, 162 Rue Bernard Ouest"
+    },
+    {
+      "id": "beteapain",
+      "name": "La Bête à Pain · Griffintown",
+      "lat": 45.4931182,
+      "lng": -73.5584191,
+      "mapQuery": "La Bête à Pain Griffintown, 195 Rue Young",
+      "source": "https://www.labeteapain.com/succursales/griffintown",
+      "image": "beteapain",
+      "area": "old",
+      "kind": "Café",
+      "description": "French pastries and Callebaut hot chocolate in an airy café with 35 seats.",
+      "note": "Saturday and Sunday 8 AM–6 PM.",
+      "price": "À la carte"
     }
   ],
   "days": [
@@ -501,13 +592,11 @@
       "id": "friday",
       "label": "Friday night",
       "date": "Nov 20",
-      "title": "Late flight. Straight to the hotel.",
-      "summary": "Leave work around 7 PM and expect arrival around midnight. Tonight is just arrival and sleep.",
       "blocks": [
         {
-          "time": "Around midnight · flight-dependent",
-          "title": "Alt Hotel Montréal · late check-in",
-          "text": "After landing, take a taxi to your booked Alt Hotel Montréal at 120 Rue Peel in Griffintown. Tell reception you expect arrival after midnight. Eat before the flight. The reservation should include Friday night even if you check in early Saturday.",
+          "time": "Around midnight",
+          "title": "Alt Hotel Montréal",
+          "text": "Booked · 120 Rue Peel, Griffintown. Taxi from YUL; notify reception of late arrival.",
           "stops": [
             "altmontreal"
           ],
@@ -519,33 +608,26 @@
       "id": "saturday",
       "label": "Saturday",
       "date": "Nov 21",
-      "title": "Northern makers, then skating and a proper dinner.",
-      "summary": "One trip north for Bref, perfume, lunch, chocolate, and MONOKIINI. Back downtown once for skating, Monarque, and an optional cocktail.",
       "blocks": [
         {
-          "time": "10 AM · bagels, then coffee",
-          "title": "St-Viateur → Olimpico · start strong",
-          "text": "Taxi to the original St-Viateur bakery at 263 Saint-Viateur West. Get warm sesame bagels and watch the wood-fired oven, then walk east to Olimpico for espresso and a proper sit-down. This is the planned start, not an optional detour.",
+          "time": "10 AM",
+          "title": "St-Viateur Bagel",
+          "text": "Hot wood-fired sesame bagels from the original bakery.",
           "stops": [
-            "stviateur",
-            "olimpico"
+            "stviateur"
           ],
           "mode": "driving",
           "nearby": [
             {
-              "id": "bernie",
-              "text": "Bernie Beigne, 23 Bernard West: big, freshly made doughnuts if you want a second breakfast treat. A short neighborhood detour; buy one to share and keep room for lunch."
-            },
-            {
-              "id": "drawn",
-              "text": "The independent bookshop on Bernard is an easy browse as you move toward Bref. Art books and graphic novels rather than souvenirs."
+              "id": "maisonsauvage",
+              "text": "Viennese-style dark hot chocolate with vanilla whipped cream, plus elaborate cookies. Upholstered seating; limited space."
             }
           ]
         },
         {
           "time": "11 AM",
-          "title": "Bref · ceramics and independent design",
-          "text": "Walk along Bernard to browse small-run ceramics, prints, and design objects. This is one of the shops to make time for.",
+          "title": "Bref",
+          "text": "Independent ceramics, prints, and small-run design objects.",
           "stops": [
             "bref"
           ],
@@ -553,18 +635,14 @@
           "nearby": [
             {
               "id": "drawn",
-              "text": "Along Bernard: independent publishing, art books, and graphic novels. A browse-and-show-each-other-things stop with no booking."
-            },
-            {
-              "id": "bernie",
-              "text": "Further east on Bernard: the sweet stop if bagels have worn off. Takeaway doughnuts; no reservation."
+              "text": "Independent bookshop on Bernard: art books, graphic novels, and small publishers."
             }
           ]
         },
         {
           "time": "11:45 AM",
-          "title": "H Parfums · try something unfamiliar",
-          "text": "Walk south toward Laurier and take your time with niche fragrances. Try a few on skin and let them develop while you walk.",
+          "title": "H Parfums",
+          "text": "Niche fragrances from independent perfume houses.",
           "stops": [
             "hparfums"
           ],
@@ -572,119 +650,90 @@
           "nearby": [
             {
               "id": "guyomarch",
-              "text": "On Saint-Laurent, east of the perfume boutique: wearable sculpture, experimental materials, and handmade art jewelry. An optional extra walk before lunch, or use it instead of a second perfume stop. Saturday 11 AM–5 PM."
+              "text": "Art jewelry and sculptural objects on Saint-Laurent. Saturday 11 AM–5 PM."
             }
           ]
         },
         {
           "time": "12:30 PM",
-          "title": "Leméac · the nice lunch",
-          "text": "Reserve a table for a proper French bistro lunch. Make this a long, seated meal rather than a sandwich eaten in a queue. Allow CAD 55–90 each before tax and tip, depending on drinks.",
+          "title": "Leméac",
+          "text": "French bistro lunch. CAD 55–90 each before tax and tip.",
           "stops": [
             "lemeac"
           ],
           "mode": "walking",
-          "note": "Weekend brunch/lunch is published as 10 AM–3 PM. Reserve.",
-          "nearby": [
-            {
-              "id": "hparfums",
-              "text": "If lunch runs long, this is the nearby fragrance browse to keep. Compare a few scents without adding another meal or reservation."
-            }
-          ]
+          "note": "Reserve for two; 12:30 PM was available Nov 18."
         },
         {
           "time": "2 PM",
-          "title": "LVNEA · botanical perfume",
-          "text": "Head east through the neighborhood to the Saint-Viateur boutique. Woods, resins, and atmospheric botanical scents made locally. Slow browsing is the activity.",
+          "title": "LVNEA",
+          "text": "Locally made botanical perfume: woods, resins, and unusual scents. Entrance on Casgrain.",
           "stops": [
             "lvnea"
           ],
           "mode": "walking",
-          "note": "Entrance on Casgrain. Published weekend hours 11 AM–6 PM.",
           "nearby": [
             {
-              "id": "atelierb",
-              "text": "A nearby workshop-boutique for locally made clothing, ceramics, jewelry, and other makers’ work. Browse on the way toward Saint-Laurent."
-            },
-            {
-              "id": "guyomarch",
-              "text": "The art-jewelry option is south on Saint-Laurent, so browse before continuing north if this interests you more than another fragrance stop. Do not double back after chocolate."
+              "id": "mercantile",
+              "text": "Independent menswear, accessories, and design objects chosen for craftsmanship. 5200 Clark; Saturday 11 AM–6 PM."
             }
           ]
         },
         {
           "time": "2:45 PM",
-          "title": "État de choc · chocolate worth taking home",
-          "text": "Walk north along Saint-Laurent to the chocolate specialist. Browse the bean-to-bar selection and pick out unusual bars or bonbons. This stays in Saturday’s northern shopping loop.",
+          "title": "État de choc",
+          "text": "Bean-to-bar chocolate and bonbons to take home.",
           "stops": [
             "etatdechoc"
           ],
           "mode": "walking",
-          "note": "Published Saturday hours 10 AM–5 PM.",
           "nearby": [
             {
-              "id": "atelierb",
-              "text": "The workshop-boutique is along the Saint-Laurent part of today’s loop. Local clothing and makers’ objects, with ceramics and jewelry to browse."
-            },
-            {
-              "id": "ratafia",
-              "text": "A nearby dinner alternative with ambitious plated desserts and wine. It opens at 5 PM. Saturday 7:45 PM was listed for two when checked; using it after skating means a taxi back north. Book it instead of Monarque, not as a second dinner."
+              "id": "faiseurs",
+              "text": "Québec ceramics, specialty coffee, and pastries. A walk-in browse or café stop on Saint-Laurent."
             }
           ]
         },
         {
           "time": "3:15 PM",
-          "title": "MONOKIINI · handmade ceramics and coffee",
-          "text": "Continue north to the ceramics studio and café. Browse sculptural handmade cups and objects, see the making space, and sit with a coffee. This is the signature boutique stop in the northern loop.",
+          "title": "MONOKIINI",
+          "text": "Handmade ceramics, a working studio, and coffee.",
           "stops": [
             "monokiini"
           ],
           "mode": "walking",
-          "star": true,
-          "note": "A browse-and-coffee visit. Sip & Clay classes require separate booking and weeks of firing, so we are not building the day around a class.",
-          "nearby": [
-            {
-              "id": "etatdechoc",
-              "text": "Chocolate to take home on the way to the studio. A compact shopping stop if you want more time seated with coffee at MONOKIINI."
-            }
-          ]
+          "star": true
         },
         {
           "time": "4:15 PM",
-          "title": "Hotel break · leave room for dinner",
-          "text": "Taxi back to Alt Hotel Montréal in Griffintown, drop your purchases, and take a short break before skating. Walk or take a short taxi onward to Atrium Le 1000.",
+          "title": "Alt Hotel Montréal",
+          "text": "Taxi back, drop shopping, and take a break.",
           "stops": [
             "altmontreal"
           ],
           "mode": "driving",
           "nearby": [
             {
-              "id": "potier",
-              "text": "Chez Potier is on Wellington near your Griffintown hotel. An easy pastry stop if you want something sweet before skating; Sunday remains the planned longer visit."
+              "id": "beteapain",
+              "text": "Near Alt: French pastries and Callebaut hot chocolate. Bright, airy café with 35 seats."
             }
           ]
         },
         {
           "time": "5–6 PM",
-          "title": "Atrium Le 1000 · the skating anchor",
-          "text": "Head to the indoor rink beneath the glass atrium. Select Saturday November 21, the 4:30–5:30 PM arrival window, and arrive around 5 PM. Skate for about an hour before dinner. The rink stays open until 9 PM.",
+          "title": "Atrium Le 1000",
+          "text": "Indoor skating beneath a glass atrium. Entry + skates + helmet: about CAD 23.",
           "stops": [
             "atrium"
           ],
           "mode": "walking",
           "star": true,
-          "note": "The live calendar was checked November 18 and showed places in that arrival window. Nothing is booked. CAD 12 entry + CAD 10 skate rental + CAD 1 required helmet rental if needed. Rentals are on site. Outdoor Esplanade Tranquille opens November 25, after this trip.",
-          "nearby": [
-            {
-              "id": "bargeorge",
-              "text": "A mansion-bar option downtown for cocktails and a snack before a later dinner. This is at Le Mount Stephen, a separate hotel from your Alt booking. Bar seats are walk-in."
-            }
-          ]
+          "note": "Book the 4:30–5:30 PM arrival window; arrive around 5 PM."
         },
         {
-          "time": "7 PM target · reservation still needed",
-          "title": "Monarque · brasserie dinner",
-          "text": "Monarque brasserie remains the preferred dinner: polished French food, a lively room, and à la carte ordering. Request a table for two around 7 PM. The live Saturday calendar currently shows no brasserie tables, so this is a target, not a confirmed plan.",
+          "time": "7 PM target",
+          "title": "Monarque",
+          "text": "French brasserie dinner. CAD 85–130 each before tax and tip.",
           "stops": [
             "monarque"
           ],
@@ -692,30 +741,26 @@
           "nearby": [
             {
               "id": "citememoire",
-              "text": "An atmospheric walk before or after dinner: large projections on old-city walls. The operator lists nine reopened tableaux Wednesday–Sunday after dark. The Saint-Nicolas/Récollets area is near Monarque. Free; the optional app adds sound and context."
-            },
-            {
-              "id": "olive",
-              "text": "A nearby daytime café to remember for Sunday lunch, rather than an evening dinner backup. Sandwiches and pastry; check the queue before committing."
+              "text": "Free projections on Old Montréal’s walls after dark; near Monarque."
             }
           ],
-          "note": "Checked November 18: the only displayed Saturday dinner slot was 9:30 PM in Salle à Manger, the more formal room with a different menu. Call +1 514 875-3896 for a brasserie cancellation or use the dinner shortlist below. If choosing 9:30 PM, have cocktails and a snack before dinner."
+          "note": "No brasserie tables listed Nov 18. Formal dining room: 9:30 PM available. Alternatives below."
         },
         {
-          "time": "After dinner, or before a 9:30 PM dinner",
-          "title": "Cloakroom · one excellent cocktail",
-          "text": "Try Cloakroom for one cocktail tailored to the flavors you like. After a 7 PM dinner, aim around 9:15 PM. If you take Monarque’s 9:30 PM formal-room slot, move the cocktail to around 7 PM and taxi to dinner afterward.",
+          "time": "After dinner",
+          "title": "Cloakroom",
+          "text": "Small cocktail bar; drinks tailored to your taste. Taxi back to Alt afterward.",
           "stops": [
             "cloakroom"
           ],
           "mode": "driving",
-          "note": "Bar George is near Cloakroom if it is full. Both are downtown, so take a taxi back to Alt Hotel Montréal in Griffintown afterward.",
           "nearby": [
             {
               "id": "bargeorge",
-              "text": "Near Cloakroom: mansion-bar cocktails at Le Mount Stephen. This is a separate stop, not your hotel. Both cocktail bars are walk-in; taxi back to Alt afterward."
+              "text": "Ornate mansion bar near Cloakroom. Walk-in cocktails; separate from Alt."
             }
-          ]
+          ],
+          "note": "Walk-in only. Go before dinner if choosing Monarque at 9:30 PM."
         }
       ]
     },
@@ -723,159 +768,107 @@
       "id": "sunday",
       "label": "Sunday",
       "date": "Nov 22",
-      "title": "Old Montréal at leisure. Fly home at 8 PM.",
-      "summary": "A long café breakfast, artisan boutiques, the waterfront, Notre-Dame, and beautiful pastries. Collect bags at 3:45 PM and leave the hotel at 4 PM for your 8 PM flights.",
       "blocks": [
         {
           "time": "10 AM",
-          "title": "Crew Collective & Café · breakfast under the bank ceiling",
-          "text": "Check out and leave your bags with Alt Hotel Montréal, then walk or taxi into Old Montréal to Crew. Take a table for breakfast and coffee in the former Royal Bank hall. This is the morning’s long sit-down stop.",
+          "title": "Crew Collective & Café",
+          "text": "Breakfast and coffee in a grand former bank. Leave bags at Alt before heading out.",
           "stops": [
             "crew"
           ],
-          "mode": "walking",
-          "nearby": [
-            {
-              "id": "olive",
-              "text": "A second excellent daytime café toward the western end of Old Montréal. Better as a savory lunch swap later than a second full breakfast; walk-in and sometimes a queue."
-            }
-          ]
+          "mode": "walking"
         },
         {
           "time": "11 AM",
-          "title": "Saint-Paul craft shops · L’Empreinte & WACHIYA",
-          "text": "Walk the old streets to two artisan shops opposite one another: Québec ceramics, glass and jewelry at L’Empreinte, and Cree beadwork and handmade objects at WACHIYA.",
+          "title": "L’Empreinte",
+          "text": "Québec-made ceramics, glass, and jewelry in an artisan cooperative.",
           "stops": [
-            "empreinte",
-            "wachiya"
+            "empreinte"
           ],
-          "mode": "walking",
-          "note": "Two independent craft boutiques on Saint-Paul East, across from one another. Take your time rather than treating them as quick stops.",
-          "nearby": [
-            {
-              "id": "empreinte",
-              "text": "Return to whichever maker’s work caught your eye: Québec ceramics, glass, and jewelry. Ask about the maker rather than rushing through a checklist."
-            },
-            {
-              "id": "wachiya",
-              "text": "Across the street: Cree beadwork and artisan objects from Eeyou Istchee. A different craft tradition from L’Empreinte, worth browsing as a pair."
-            }
-          ]
+          "mode": "walking"
         },
         {
-          "time": "Noon",
-          "title": "Old Port · walk by the river",
-          "text": "Stroll from Saint-Paul toward the waterfront and along the quays. Keep this as unstructured walking-and-talking time, then head back toward Place d’Armes. If it is cold or wet, spend longer in the shops and café instead.",
+          "time": "11:45 AM",
+          "title": "Old Port",
+          "text": "A waterfront walk along the quays and old streets.",
           "stops": [
             "oldport"
           ],
           "mode": "walking",
           "nearby": [
             {
-              "id": "wachiya",
-              "text": "Stay close to Saint-Paul East for a final artisan browse if the waterfront is too windy. No booking or transport needed."
-            },
-            {
-              "id": "crew",
-              "text": "The grand indoor café is the comfortable weather fallback. Go back for a warm drink rather than forcing an exposed waterfront walk."
+              "id": "leroyer",
+              "text": "Free contemporary art and sculpture browse on Saint-Paul West. Sunday 10 AM–6 PM; exhibitions rotate."
             }
           ]
         },
         {
-          "time": "1–2 PM",
-          "title": "Place d’Armes & Notre-Dame · the star sight",
-          "text": "Walk through Place d’Armes and go inside Notre-Dame for the blue-and-gold interior. Allow a full hour to look around rather than squeezing it in before an airport run. Daytime admission starts at CAD 16 plus tax.",
+          "time": "12:30–1:15 PM",
+          "title": "Place d’Armes & Notre-Dame",
+          "text": "The square and the basilica’s blue-and-gold interior. Admission from CAD 16 + tax.",
           "stops": [
             "notredame"
           ],
           "mode": "walking",
           "star": true,
-          "note": "Sunday sightseeing is published as 12:30–4 PM. Choose a daytime ticket, separate from the evening AURA show.",
           "nearby": [
             {
-              "id": "crew",
-              "text": "Nearby on Saint-Jacques if you want another quiet coffee stop after the basilica. The architecture is part of the appeal, and there is no ticket to reserve."
-            },
-            {
               "id": "olive",
-              "text": "Head west afterward for a seated sandwich lunch, then keep Chez Potier as the dessert stop. Choose this if you are hungry for more than pastry and a savory snack."
+              "text": "Sandwiches, pastries, and a sit-down lunch. Walk-in; expect a queue."
             }
-          ]
+          ],
+          "note": "Book daytime admission, separate from AURA."
         },
         {
-          "time": "2:15 PM",
-          "title": "Chez Potier · a proper pastry afternoon",
-          "text": "Walk west through the old streets to Wellington for refined pastries and something savory for a late light lunch. Choose the desserts that look best that day. There is time to enjoy them before heading back for your bags.",
+          "time": "1:30–2:45 PM",
+          "title": "Place Carmin",
+          "text": "Sunday lunch in a bright, polished French brasserie. Choose from the weekend menu; leave room for pastry afterward.",
+          "note": "Dining-room tables for two at 1:30 PM were available Nov 18. Reserve.",
+          "stops": [
+            "placecarmin"
+          ],
+          "mode": "walking"
+        },
+        {
+          "time": "3 PM",
+          "title": "Chez Potier",
+          "text": "French pastry for dessert: try a Paris-Brest, millefeuille, or chocolate éclair. Limited seating.",
           "stops": [
             "potier"
           ],
-          "mode": "walking",
-          "nearby": [
-            {
-              "id": "olive",
-              "text": "Olive et Gourmando is the nearby sit-down sandwich alternative. Use it instead of the savory part of lunch if seats and timing work."
-            }
-          ],
-          "note": "Seating is limited. Olive et Gourmando is the nearby sit-down lunch option if you want a longer meal before the pastry stop."
+          "mode": "walking"
         },
         {
-          "time": "3:45 PM · collect bags",
-          "title": "Alt Hotel Montréal · collect bags",
-          "text": "Return to Alt Hotel Montréal in Griffintown and collect your luggage. Chez Potier is near the hotel, so you can walk back after pastries. Have the airport taxi arranged for 4 PM.",
+          "time": "3:45 PM",
+          "title": "Alt Hotel Montréal",
+          "text": "Walk back from Chez Potier and collect bags.",
           "stops": [
             "altmontreal"
           ],
           "mode": "walking"
         },
         {
-          "time": "4 PM pickup · 5 PM airport target",
-          "title": "Transfer to YUL · a proper airport buffer",
-          "text": "Take a taxi to Montréal–Trudeau together. Allow an hour for the transfer and target YUL at 5 PM, three hours before both 8 PM departures. The hour is a planning allowance; check live traffic before pickup.",
+          "time": "4 PM → 5 PM",
+          "title": "Taxi to YUL",
+          "text": "Leave Alt at 4 PM; target the airport by 5 PM.",
           "stops": [],
           "mode": "driving"
         },
         {
-          "time": "8 PM departures · 9:28–9:30 PM landings",
-          "title": "Two nonstop flights · same airport departure time",
-          "text": "Milo: Air Canada AC736, YUL 8 PM → New York LaGuardia 9:30 PM. Forrest: Air Canada Express AC8612, YUL 8 PM → Boston 9:28 PM. Milo’s scheduled landing meets the 10 PM New York constraint. Boston landing at 9:28 PM leaves the trip home afterward, around your requested 10–11 PM window depending on your address and baggage.",
+          "time": "8 PM",
+          "title": "Flights home",
+          "text": "Milo: AC736 → LaGuardia 9:30 PM. Forrest: AC8612 → Boston 9:28 PM.",
           "stops": [],
           "mode": "driving",
-          "note": "Listed on Google Flights November 18 for Sunday November 22, 2026: LGA from USD 335 and BOS from USD 541, one way per person in economy with a carry-on. Fares and seats can change. Nothing is booked; scheduled arrival times are not guarantees."
+          "note": "Flight options; not booked."
         }
       ]
     }
   ],
   "practical": [
     {
-      "title": "Book the anchors",
-      "text": "Hotel booked: Alt Hotel Montréal, 120 Rue Peel, Griffintown. Restaurant reservations, skating tickets, Notre-Dame admission, and flights remain pending unless booked separately. Tell reception you expect arrival after midnight on Friday night."
-    },
-    {
-      "title": "Time to talk",
-      "text": "Saturday covers the northern shops once. Sunday stays in Old Montréal. MONOKIINI and skating are Saturday’s highlights; Notre-Dame is Sunday’s main sight. Nearby extras stay optional."
-    },
-    {
       "title": "Getting around",
-      "text": "Walk within each neighborhood and taxi between clusters. Alt Hotel Montréal in Griffintown is your booked base. Sunday pastries at Chez Potier are near the hotel, making luggage collection straightforward. Restaurant prices are CAD before tax and tip."
-    },
-    {
-      "title": "Milo · New York return",
-      "text": "Sunday November 22: Air Canada AC736, YUL 8 PM → LGA 9:30 PM, nonstop. Listed from USD 335 one way with a carry-on when checked November 18. This meets the requirement to land in New York by 10 PM. Nothing is booked.",
-      "source": "https://www.google.com/travel/flights?hl=en&q=One%20way%20flights%20from%20Montreal%20YUL%20to%20New%20York%20LGA%20on%20November%2022%202026"
-    },
-    {
-      "title": "Forrest · Boston return",
-      "text": "Sunday November 22: Air Canada Express AC8612, YUL 8 PM → BOS 9:28 PM, nonstop. Listed from USD 541 one way with a carry-on when checked November 18. Get home afterward; no need to cut Montréal short for an earlier Boston arrival. Nothing is booked.",
-      "source": "https://www.google.com/travel/flights?hl=en&q=One%20way%20flights%20from%20Montreal%20YUL%20to%20Boston%20BOS%20on%20November%2022%202026"
-    },
-    {
-      "title": "Sunday pickup",
-      "text": "Collect bags at 3:45 PM, leave Alt Hotel Montréal at 4 PM, and target YUL at 5 PM for the two 8 PM departures. Saturday remains the only northern shopping loop; skating stays Saturday."
-    },
-    {
-      "title": "Airport recommendation",
-      "text": "YUL recommends arrival at least 3 hours before departure. The transfer hour is a planning allowance, not a traffic prediction. US immigration is handled at YUL before departure.",
-      "source": "https://yulsatisfaction.admtl.com/hc/en-ca/articles/360003671978-What-is-the-recommended-time-to-arrive-at-the-airport"
+      "text": "Walk within each area. Taxi to the northern shops and back Saturday, and to YUL Sunday."
     }
   ],
   "neighborhoods": [
@@ -893,7 +886,9 @@
         "bernie",
         "lemeac",
         "atelierb",
-        "guyomarch"
+        "guyomarch",
+        "mercantile",
+        "maisonsauvage"
       ]
     },
     {
@@ -924,7 +919,10 @@
         "habitat67",
         "citememoire",
         "oldport",
-        "wachiya"
+        "wachiya",
+        "leroyer",
+        "placecarmin",
+        "beteapain"
       ]
     },
     {
@@ -945,7 +943,8 @@
         "ratafia",
         "etatdechoc",
         "exvoto",
-        "monokiini"
+        "monokiini",
+        "faiseurs"
       ]
     }
   ],
@@ -1004,77 +1003,37 @@
   ],
   "headlines": [],
   "extras": [],
-  "anchors": {
-    "saturday": [
-      {
-        "id": "monokiini",
-        "label": "MONOKIINI · ceramics & café"
-      },
-      {
-        "id": "atrium",
-        "label": "Atrium · skating"
-      }
-    ],
-    "sunday": [
-      {
-        "id": "notredame",
-        "label": "Notre-Dame · the interior"
-      }
-    ]
-  },
   "reservations": [
     {
-      "name": "Leméac · lunch for two",
-      "when": "Sat Nov 21 · 12:30 PM",
-      "status": "12:30 PM displayed as available, checked Nov 18. Book this.",
-      "url": "https://www.tbdine.com/book/restaurant/lemeac?people=2&minors=0&region=610&date=2026-11-21&time=12:30"
+      "name": "Leméac",
+      "when": "Saturday 12:30 PM · two people",
+      "status": "Available Nov 18.",
+      "url": "https://www.tbdine.com/book/restaurant/lemeac?people=2&date=2026-11-21&time=12:30"
     },
     {
-      "name": "One dinner for two",
-      "when": "Sat Nov 21 · aim 7–8 PM",
-      "status": "Monarque brasserie is the first choice but has no displayed slots. See the checked alternatives below. Reserve only one dinner.",
+      "name": "Saturday dinner",
+      "when": "Monarque 7 PM target",
+      "status": "No brasserie tables listed Nov 18. Formal dining room: 9:30 PM available. Call +1 514 875-3896 for cancellations.",
       "url": "https://resy.com/cities/montreal-qc/venues/monarque?date=2026-11-21&seats=2"
     },
     {
-      "name": "Atrium Le 1000 · skating",
-      "when": "Sat Nov 21 · arrive around 5 PM",
-      "status": "Select the 4:30–5:30 PM arrival window. Live calendar previously checked Nov 18; rent skates and the required helmet if needed.",
+      "name": "Place Carmin",
+      "when": "Sunday 1:30 PM · two people",
+      "status": "Dining-room tables available Nov 18.",
+      "url": "https://resy.com/cities/montreal-qc/venues/place-carmin?date=2026-11-22&seats=2"
+    },
+    {
+      "name": "Atrium skating",
+      "when": "Saturday · 4:30–5:30 PM arrival window",
+      "status": "Arrive around 5 PM. Add skate and helmet rentals.",
       "url": "https://atrium.logikpos.ca/ticketing2.aspx"
     },
     {
-      "name": "Notre-Dame · daytime visit",
-      "when": "Sun Nov 22 · around 1 PM",
-      "status": "Buy daytime admission for Sunday. Published sightseeing hours 12:30–4 PM; exact ticket inventory not checked.",
+      "name": "Notre-Dame",
+      "when": "Sunday 12:30 PM",
+      "status": "Daytime admission.",
       "url": "https://www.basiliquenotredame.ca/en/hours-and-rates"
-    },
-    {
-      "name": "Hotel · BOOKED",
-      "when": "Fri Nov 20–Sun Nov 22 · two nights",
-      "status": "Alt Hotel Montréal, 120 Rue Peel, Griffintown. Booked by you; room category follows your confirmation. Notify reception of your after-midnight arrival.",
-      "url": "https://www.germainhotels.com/en/alt-hotel/montreal"
     }
   ],
-  "dinner_options": [
-    {
-      "id": "monarque",
-      "text": "First choice: the brasserie for à la carte French food and a lively, polished room. Target Saturday 7 PM for two. No brasserie slots displayed on Nov 18; call +1 514 875-3896 for cancellations. Resy showed 9:30 PM in Salle à Manger, the more formal room with a different menu. Choose that only if a late, longer dinner appeals.",
-      "booking": "https://resy.com/cities/montreal-qc/venues/monarque?date=2026-11-21&seats=2"
-    },
-    {
-      "id": "ratafia",
-      "text": "Best dessert-focused alternative: inventive savory plates, plated desserts, wine, and an intimate Art Deco room. Saturday 7:45 PM and 8 PM were listed for two on Nov 18. It is in Little Italy near the afternoon shopping, so using it after skating requires another taxi north. This replaces Monarque.",
-      "booking": "https://www.opentable.ca/r/ratafia-montreal?covers=2&dateTime=2026-11-21T19%3A00"
-    },
-    {
-      "id": "bargeorge",
-      "text": "Best grand-room option, at Le Mount Stephen downtown, separate from your Alt hotel: British-inspired food, beef Wellington, and elaborate desserts. Target Saturday 7 PM, but the live calendar showed no dining-room availability within three hours of that time. Ask the restaurant about cancellations. Cocktail bar seating is walk-in; a dinner booking does not reserve cocktail-only seats.",
-      "booking": "https://app.tablz.com/bar-george/"
-    },
-    {
-      "id": "express",
-      "text": "The classic Montréal bistro option: steak frites, tartare, an extensive cellar, and maple profiteroles. A less decorative, very established room. The Saturday calendar showed only midnight slots for two when checked, so it is a cancellation option rather than a sensible timed backup. Book online or call +1 514 845-5333.",
-      "booking": "https://restaurantlexpress.com/en/"
-    }
-  ],
-  "cocktails": "No cocktail reservation to make: Cloakroom accepts no reservations. Aim around 9:15 PM after a 7 PM dinner, or around 7 PM before a 9:30 PM Monarque dinner. Bar George’s bar seats are also walk-in. Both are subject to space."
+  "cocktails": "Cloakroom and Bar George: walk-in only."
 }

@@ -124,5 +124,4 @@
     if(event.key==='ArrowRight')stepPhoto(1);
     if(event.key==='ArrowLeft')stepPhoto(-1);
   });
-  document.getElementById('print').addEventListener('click',()=>window.print());
 })();

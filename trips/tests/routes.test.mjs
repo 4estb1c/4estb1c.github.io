@@ -62,10 +62,17 @@ test('the one itinerary references existing stops and photo assets', async () =>
   assert.equal(data.hotels.length,4);
   assert.equal(data.hotel.id,'altmontreal');
   assert.deepEqual(new Set(data.neighborhoods.flatMap(area=>area.ids)),ids);
+  const displayed=new Set();
   for(const day of data.days){
     for(const block of day.blocks){
-      for(const id of block.stops)assert.ok(ids.has(id)||id===data.hotel.id,id);
-      for(const nearby of block.nearby||[])assert.ok(ids.has(nearby.id),nearby.id);
+      for(const id of block.stops){
+        assert.ok(ids.has(id)||id===data.hotel.id,id);
+        if(id!==data.hotel.id){assert.ok(!displayed.has(id),`Duplicate venue: ${id}`);displayed.add(id);}
+      }
+      for(const nearby of block.nearby||[]){
+        assert.ok(ids.has(nearby.id),nearby.id);
+        assert.ok(!displayed.has(nearby.id),`Duplicate venue: ${nearby.id}`);displayed.add(nearby.id);
+      }
 
     }
   }

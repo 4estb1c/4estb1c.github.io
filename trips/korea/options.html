@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forrest × Charlotte · East Asia Menu · Jul 25 – Aug 4</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,700;9..144,900&family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f7f3ec;
+      --ink: #1a1612;
+      --ink-soft: #4a4036;
+      --rule: #d4c9b7;
+      --paper: #fcfaf5;
+      --tokyo: #e63946;
+      --tokyo-soft: #fde2e4;
+      --sapporo: #2a5d57;
+      --sapporo-soft: #d8e7e2;
+      --seoul: #9d4edd;
+      --seoul-soft: #ece4f5;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    .wrap {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+
+    /* --- Masthead --- */
+    .masthead {
+      border-bottom: 2px solid var(--ink);
+      padding: 28px 0 18px;
+      margin-bottom: 0;
+    }
+
+    .masthead-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+      margin-bottom: 8px;
+    }
+
+    .masthead h1 {
+      font-family: 'Fraunces', serif;
+      font-weight: 900;
+      font-size: clamp(48px, 8vw, 96px);
+      line-height: 0.92;
+      letter-spacing: -0.03em;
+      margin: 8px 0;
+    }
+
+    .masthead h1 em {
+      font-style: italic;
+      font-weight: 400;
+      color: var(--ink-soft);
+    }
+
+    .masthead .deck {
+      font-family: 'Fraunces', serif;
+      font-size: 19px;
+      line-height: 1.4;
+      max-width: 720px;
+      margin-top: 12px;
+      color: var(--ink-soft);
+    }
+
+    /* --- Sticky tab nav --- */
+    .tabnav {
+      position: sticky;
+      top: 0;
+      background: var(--bg);
+      border-bottom: 1px solid var(--rule);
+      z-index: 100;
+      padding: 14px 0;
+      margin-bottom: 32px;
+    }
+
+    .tabnav-inner {
+      display: flex;
+      gap: 4px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .tab {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      background: transparent;
+      border: 1px solid var(--rule);
+      padding: 10px 18px;
+      cursor: pointer;
+      color: var(--ink-soft);
+      border-radius: 999px;
+      transition: all 0.15s;
+    }
+
+    .tab:hover {
+      background: var(--paper);
+      border-color: var(--ink);
+      color: var(--ink);
+    }
+
+    .tab.active {
+      background: var(--ink);
+      color: var(--bg);
+      border-color: var(--ink);
+    }
+
+    .tab-spacer {
+      flex: 1;
+    }
+
+    .tab-meta {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: var(--ink-soft);
+    }
+
+    /* --- City Section --- */
+    .city {
+      padding: 24px 0 80px;
+      display: none;
+    }
+
+    .city.active {
+      display: block;
+    }
+
+    .city-header {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 24px;
+      align-items: end;
+      padding-bottom: 24px;
+      margin-bottom: 32px;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .city-num {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+      color: var(--ink-soft);
+    }
+
+    .city-title {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(40px, 6vw, 72px);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1;
+    }
+
+    .city-meta {
+      text-align: right;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      line-height: 1.7;
+      color: var(--ink-soft);
+    }
+
+    .city-meta strong {
+      color: var(--ink);
+      font-weight: 500;
+    }
+
+    /* City accent dot on tabs */
+    .tab[data-city="tokyo"]::before {
+      content: '';
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--tokyo);
+      margin-right: 8px;
+      vertical-align: 1px;
+    }
+
+    .tab[data-city="sapporo"]::before {
+      content: '';
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--sapporo);
+      margin-right: 8px;
+      vertical-align: 1px;
+    }
+
+    .tab[data-city="seoul"]::before {
+      content: '';
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--seoul);
+      margin-right: 8px;
+      vertical-align: 1px;
+    }
+
+
+    /* --- Category section --- */
+    .category {
+      margin-bottom: 56px;
+    }
+
+    .category-head {
+      display: flex;
+      align-items: baseline;
+      gap: 16px;
+      padding-bottom: 12px;
+      margin-bottom: 24px;
+      border-bottom: 2px solid var(--ink);
+    }
+
+    .category-name {
+      font-family: 'Fraunces', serif;
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
+
+    .category-count {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+    }
+
+    .category-desc {
+      margin-left: auto;
+      font-family: 'Fraunces', serif;
+      font-style: italic;
+      font-size: 14px;
+      color: var(--ink-soft);
+      max-width: 380px;
+      text-align: right;
+    }
+
+    /* --- Cards --- */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 0;
+      border-top: 1px solid var(--rule);
+      border-left: 1px solid var(--rule);
+    }
+
+    .card {
+      background: var(--paper);
+      border-right: 1px solid var(--rule);
+      border-bottom: 1px solid var(--rule);
+      padding: 24px 22px;
+      display: flex;
+      flex-direction: column;
+      transition: background 0.15s;
+      position: relative;
+    }
+
+    .card:hover {
+      background: #fff;
+    }
+
+    .card-num {
+      position: absolute;
+      top: 18px;
+      right: 22px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      color: var(--ink-soft);
+      letter-spacing: 0.08em;
+    }
+
+    .card-name {
+      font-family: 'Fraunces', serif;
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 4px;
+      padding-right: 40px;
+    }
+
+    .card-meta {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: var(--ink-soft);
+      margin-bottom: 14px;
+      flex-wrap: wrap;
+    }
+
+    .price-tier {
+      font-weight: 500;
+      color: var(--ink);
+    }
+
+    .rating::before {
+      content: '★ ';
+    }
+
+    .dot {
+      width: 3px;
+      height: 3px;
+      border-radius: 50%;
+      background: var(--rule);
+    }
+
+    .card-blurb {
+      font-size: 14px;
+      line-height: 1.55;
+      margin-bottom: 12px;
+      color: var(--ink);
+    }
+
+    .card-why {
+      font-family: 'Fraunces', serif;
+      font-style: italic;
+      font-size: 13.5px;
+      color: var(--ink-soft);
+      line-height: 1.5;
+      margin-bottom: 14px;
+      padding-left: 12px;
+      border-left: 2px solid;
+    }
+
+    .card-foot {
+      margin-top: auto;
+      display: flex;
+      gap: 12px;
+      padding-top: 12px;
+      border-top: 1px dashed var(--rule);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .card-foot a {
+      color: var(--ink-soft);
+      text-decoration: none;
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 1px;
+      transition: all 0.15s;
+    }
+
+    .card-foot a:hover {
+      color: var(--ink);
+      border-color: var(--ink);
+    }
+
+    /* City accents on the card-why bars */
+    .city[data-city="tokyo"] .card-why {
+      border-color: var(--tokyo);
+    }
+
+    .city[data-city="sapporo"] .card-why {
+      border-color: var(--sapporo);
+    }
+
+    .city[data-city="seoul"] .card-why {
+      border-color: var(--seoul);
+    }
+
+
+    /* --- Card gallery (thumbnails) --- */
+    .card-gallery {
+      display: grid;
+      gap: 4px;
+      margin-bottom: 14px;
+    }
+
+    .card-thumb {
+      position: relative;
+      aspect-ratio: 4 / 3;
+      overflow: hidden;
+      cursor: zoom-in;
+      background: var(--bg);
+      border: 1px solid var(--rule);
+    }
+
+    .card-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.35s ease;
+    }
+
+    .card-thumb:hover img {
+      transform: scale(1.07);
+    }
+
+    .card-thumb .more-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(26, 22, 18, 0.6);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 15px;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      pointer-events: none;
+    }
+
+    /* --- Lightbox --- */
+    .lightbox {
+      position: fixed;
+      inset: 0;
+      z-index: 1000;
+      background: rgba(18, 14, 10, 0.94);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 56px 20px 40px;
+    }
+
+    .lightbox.open {
+      display: flex;
+    }
+
+    .lightbox-img {
+      max-width: min(1120px, 92vw);
+      max-height: 78vh;
+      object-fit: contain;
+      box-shadow: 0 24px 70px rgba(0, 0, 0, 0.55);
+      background: #000;
+    }
+
+    .lightbox-cap {
+      color: #f7f3ec;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      margin-top: 18px;
+      text-align: center;
+    }
+
+    .lightbox-cap .lb-name {
+      font-family: 'Fraunces', serif;
+      font-weight: 700;
+      font-size: 19px;
+      display: block;
+      margin-bottom: 5px;
+      letter-spacing: 0;
+    }
+
+    .lb-btn {
+      position: absolute;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      color: #fff;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      font-size: 24px;
+      line-height: 1;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.15s, border-color 0.15s;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .lb-btn:hover {
+      background: rgba(255, 255, 255, 0.22);
+      border-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .lb-prev {
+      left: 24px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .lb-next {
+      right: 24px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .lb-close {
+      top: 22px;
+      right: 22px;
+    }
+
+    @media (max-width: 720px) {
+      .lb-prev { left: 10px; }
+      .lb-next { right: 10px; }
+    }
+
+    /* --- Transit section --- */
+    .transit-block {
+      margin-top: 24px;
+      padding: 24px;
+      background: var(--paper);
+      border: 1px solid var(--rule);
+    }
+
+    .transit-block h3 {
+      font-family: 'Fraunces', serif;
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .transit-block h3::before {
+      content: '→';
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      color: var(--ink-soft);
+    }
+
+    .transit-row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 16px;
+      padding: 12px 0;
+      border-top: 1px dashed var(--rule);
+      font-size: 13.5px;
+    }
+
+    .transit-row:first-of-type {
+      border-top: 0;
+    }
+
+    .transit-row .right {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      color: var(--ink-soft);
+    }
+
+    .transit-row .right strong {
+      color: var(--ink);
+      font-weight: 500;
+    }
+
+    .transit-row .notes {
+      font-family: 'Fraunces', serif;
+      font-style: italic;
+      font-size: 13px;
+      color: var(--ink-soft);
+      margin-top: 4px;
+    }
+
+    /* --- Intro --- */
+    .intro {
+      padding: 32px 0 8px;
+      display: none;
+    }
+
+    .intro.active {
+      display: block;
+    }
+
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr;
+      gap: 56px;
+      padding-bottom: 48px;
+      border-bottom: 1px solid var(--rule);
+      margin-bottom: 12px;
+    }
+
+    .intro h2 {
+      font-family: 'Fraunces', serif;
+      font-size: 36px;
+      line-height: 1.1;
+      font-weight: 700;
+      margin-bottom: 18px;
+      letter-spacing: -0.01em;
+    }
+
+    .intro p {
+      font-family: 'Fraunces', serif;
+      font-size: 17px;
+      line-height: 1.55;
+      color: var(--ink-soft);
+      margin-bottom: 14px;
+    }
+
+    .intro p strong {
+      color: var(--ink);
+      font-weight: 500;
+    }
+
+    .params-box {
+      background: var(--paper);
+      padding: 28px;
+      border: 1px solid var(--ink);
+      align-self: start;
+    }
+
+    .params-box h4 {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .param-row {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 12px;
+      padding: 8px 0;
+      font-size: 13.5px;
+      border-bottom: 1px dashed var(--rule);
+    }
+
+    .param-row:last-child {
+      border-bottom: 0;
+    }
+
+    .param-row .label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--ink-soft);
+      padding-top: 2px;
+    }
+
+    .legend {
+      margin: 8px 0 24px;
+    }
+
+    .legend h4 {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+      color: var(--ink-soft);
+    }
+
+    .legend-items {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      font-size: 13px;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .legend-swatch {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      border: 1px solid rgba(0, 0, 0, 0.15);
+    }
+
+    /* --- Footer --- */
+    .footer {
+      padding: 56px 0 32px;
+      border-top: 2px solid var(--ink);
+      margin-top: 40px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 0.06em;
+      color: var(--ink-soft);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    @media (max-width: 720px) {
+      .intro-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .city-header {
+        grid-template-columns: 1fr;
+      }
+
+      .city-meta {
+        text-align: left;
+      }
+
+      .category-head {
+        flex-wrap: wrap;
+      }
+
+      .category-desc {
+        text-align: left;
+        margin-left: 0;
+      }
+
+      .wrap {
+        padding: 0 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="masthead">
+    <div class="wrap">
+      <div class="masthead-top">
+        <span>Volume 01 · Issue 01</span>
+        <span>Boston → Tokyo → Sapporo → Seoul → Boston</span>
+        <span>Jul 25 – Aug 4 · 2026</span>
+      </div>
+      <h1>The <em>Chalmond</em><br>Field Guide.</h1>
+      <p class="deck">A curated menu of lodgings, meat-feasts, late-night clubs, fish markets, beer halls, beaches and cat cafés — selected for Forrest &amp; Charlotte's loop through four cities. Pick from each section, then build your own days. Pair this with the interactive map and the spreadsheet planner.</p>
+    </div>
+  </header>
+
+  <nav class="tabnav">
+    <div class="wrap tabnav-inner">
+      <button class="tab active" data-target="intro">Intro</button>
+      <button class="tab" data-target="tokyo" data-city="tokyo">Tokyo</button>
+      <button class="tab" data-target="sapporo" data-city="sapporo">Sapporo</button>
+      <button class="tab" data-target="seoul" data-city="seoul">Seoul</button>
+      <button class="tab" data-target="transit">Transit</button>
+      <div class="tab-spacer"></div>
+      <span class="tab-meta">7 nights · 3 cities · 2 people</span>
+    </div>
+  </nav>
+
+  <main class="wrap">
+
+    <!-- INTRO -->
+    <section class="intro active" id="intro">
+      <div class="intro-grid">
+        <div>
+          <h2>How to use this guide.</h2>
+          <p>This is a <strong>menu, not a march</strong>. Each city has 3–8 sections (lodging, wagyu, clubs, markets, etc.) with multiple curated options at different price points. Some are budget anchors, some are splurges.</p>
+          <p>For each card: a description, <em>why this pick</em>, the price band per person (USD), Google rating, and a one-click link to Maps. Open <strong>map.html</strong> alongside this to see geography. Open <strong>planner.xlsx</strong> to slot picks into days and watch the total.</p>
+          <p>A <strong>sample itinerary</strong> using a working selection is in <strong>itinerary.html</strong> — built to come in around $100/day with two splurges baked in.</p>
+        </div>
+        <div class="params-box">
+          <h4>Trip Parameters</h4>
+          <div class="param-row"><span class="label">Crew</span><span>Forrest (quant) + Charlotte (pole vaulter). Close friends, here for experiences.</span></div>
+          <div class="param-row"><span class="label">Dates</span><span>Arrive NRT Jul 25 @ 14:00 → back in Boston by Wed Aug 5</span></div>
+          <div class="param-row"><span class="label">Sequence</span><span>Tokyo 2n → Sapporo 2n → Seoul 3n</span></div>
+          <div class="param-row"><span class="label">Budget</span><span>~$100/day baseline.</span></div>
+          <div class="param-row"><span class="label">Vibe</span><span>Food, novelty, nightlife, nature, "cool stuff," hanging out.</span></div>
+        </div>
+      </div>
+
+      <div class="legend">
+        <h4>Color Code (by city)</h4>
+        <div class="legend-items">
+          <div class="legend-item">
+            <div class="legend-swatch" style="background:#e63946"></div><span>Tokyo</span>
+          </div>
+          <div class="legend-item">
+            <div class="legend-swatch" style="background:#2a5d57"></div><span>Sapporo</span>
+          </div>
+          <div class="legend-item">
+            <div class="legend-swatch" style="background:#9d4edd"></div><span>Seoul</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="legend">
+        <h4>Price Tiers (per person)</h4>
+        <div class="legend-items">
+          <div class="legend-item"><strong>$</strong> &nbsp;under $20</div>
+          <div class="legend-item"><strong>$$</strong> &nbsp;$20–60</div>
+          <div class="legend-item"><strong>$$$</strong> &nbsp;$60–150</div>
+          <div class="legend-item"><strong>$$$$</strong> &nbsp;$150+</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- City sections will be injected here by JS -->
+    <div id="city-mount"></div>
+
+    <!-- TRANSIT -->
+    <section class="city" id="transit">
+      <div class="city-header">
+        <div>
+          <div class="city-num">05 — Between Cities</div>
+          <h2 class="city-title">Transit.</h2>
+        </div>
+        <div class="city-meta">
+          <strong>3 flights + 1 KTX</strong><br>
+          Estimate $1100–1700/person all-in
+        </div>
+      </div>
+      <div class="transit-block" id="transit-mount"></div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="wrap" style="display:flex; justify-content:space-between; width:100%; flex-wrap:wrap; gap:16px;">
+      <span>Built for Forrest &amp; Charlotte · 2026</span>
+      <span>See also: map.html · itinerary.html · planner.xlsx</span>
+    </div>
+  </footer>
+
+  <!-- Lightbox overlay -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Photo viewer">
+    <button class="lb-btn lb-close" id="lbClose" aria-label="Close (Esc)">&#10005;</button>
+    <button class="lb-btn lb-prev" id="lbPrev" aria-label="Previous">&#8249;</button>
+    <img class="lightbox-img" id="lbImg" alt="">
+    <button class="lb-btn lb-next" id="lbNext" aria-label="Next">&#8250;</button>
+    <div class="lightbox-cap"><span class="lb-name" id="lbName"></span><span id="lbCount"></span></div>
+  </div>
+
+  <script src="data.js"></script>
+  <script>
+    // Category labels and descriptions
+    const CAT_META = {
+      lodging: { label: "Lodging", desc: "Where to sleep at night." },
+      wagyu: { label: "A5 Wagyu & Steak", desc: "Where to spend on premium beef." },
+      club: { label: "Clubs & Nightlife", desc: "Late-night dance & bars." },
+      market: { label: "Food Markets", desc: "Walking food experiences." },
+      izakaya: { label: "Izakaya & Sushi", desc: "Casual sit-down dinner." },
+      ramen: { label: "Ramen", desc: "One bowl, fast in & out." },
+      sight: { label: "Sights & Culture", desc: "Daytime activities." },
+      beer: { label: "Beer & Jingisukan", desc: "The Sapporo signature." },
+      nature: { label: "Nature & Hiking", desc: "Mountains, parks, day trips." },
+      seafood: { label: "Seafood", desc: "Hokkaido specialty." },
+      bbq: { label: "Korean BBQ", desc: "The non-negotiable Seoul meal." },
+      cafe: { label: "Themed Cafés", desc: "Cats, maids, Harry Potter, pink." },
+      clinic: { label: "K-Beauty Clinics", desc: "Facials, lasers, botox." },
+      chicken: { label: "Korean Fried Chicken", desc: "Crispy + beer = essential." },
+      show: { label: "Shows", desc: "NANTA and similar." },
+      noodle: { label: "Noodles & Dumplings", desc: "Quick wholesome meal." },
+      beach: { label: "Beaches", desc: "Sand, sea and sunsets." },
+      karaoke: { label: "Karaoke & Noraebang", desc: "Private rooms, all-you-can-sing." },
+      cocktail_bar: { label: "Cocktail Bars", desc: "Sit-down drinks done well." },
+      craft_beer: { label: "Craft Beer", desc: "Taprooms and brew bars." },
+      dessert: { label: "Desserts & Bingsu", desc: "Sweet stops between meals." },
+      experience: { label: "Experiences & Play", desc: "Spas, theme parks, the river." },
+      tonkatsu: { label: "Tonkatsu & Katsu", desc: "Crispy fried cutlets." },
+      yakitori: { label: "Yakitori", desc: "Charcoal-grilled skewers." },
+      onsen: { label: "Onsen & Sento", desc: "Hot-spring bathhouses." },
+      arcade: { label: "Arcades & Retro Games", desc: "Coins, claws, classics." },
+      soup_curry: { label: "Soup Curry", desc: "The Sapporo signature bowl." },
+      street_food: { label: "Street Food", desc: "Stalls and snack crawls." },
+      korean_food: { label: "Korean Classics", desc: "Samgyetang, bibimbap, the staples." },
+      fine_dining: { label: "Fine Dining & Michelin", desc: "Splurge tasting menus." },
+      museum: { label: "Museums & Galleries", desc: "Art, history, design." },
+      temple: { label: "Temples", desc: "Working Buddhist temples." },
+      garden: { label: "Gardens & Parks", desc: "Green space to slow down." },
+      walk: { label: "Walks & Strolls", desc: "Neighborhoods made for wandering." },
+      hike: { label: "Hikes & Mountains", desc: "Peaks and ridges in & near the city." },
+      korean_culture: { label: "Korean Experiences", desc: "Hands-on, only-in-Korea." },
+      color: { label: "Personal Color Analysis", desc: "Find your season." },
+      skincare: { label: "Skincare & Spa", desc: "Facials and glass-skin rituals." },
+      casino: { label: "Casinos", desc: "Foreigner-only gaming floors." },
+      stationery: { label: "Stationery & Books", desc: "Paper, pens, bookshops and lifestyle stores." },
+      gifts: { label: "Gift & Souvenir Shops", desc: "Character stores, K-beauty and traditional crafts." },
+      fashion: { label: "Fashion & Clothes", desc: "K-fashion, vintage, streetwear and designer." },
+      makgeolli: { label: "Makgeolli & Soju Bars", desc: "Traditional Korean drinking culture." },
+    };
+
+    function tierBadge(low, high) {
+      const avg = (low + high) / 2;
+      if (avg === 0) return "FREE";
+      if (avg < 20) return "$";
+      if (avg < 60) return "$$";
+      if (avg < 150) return "$$$";
+      return "$$$$";
+    }
+
+    function priceRange(low, high) {
+      if (low === 0 && high === 0) return "Free";
+      if (low === high) return `~$${low}`;
+      return `$${low}–$${high}`;
+    }
+
+    function gmapsLink(place_id, name, lat, lng) {
+      if (place_id) return `https://www.google.com/maps/place/?q=place_id:${place_id}`;
+      if (name) return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(name)}`;
+      return `https://www.google.com/maps/search/?api=1&query=${lat},${lng}`;
+    }
+
+    function renderGallery(item) {
+      if (!item.images || !item.images.length) return '';
+      const imgs = item.images;
+      const shown = imgs.slice(0, 3);
+      const cols = shown.length;
+      const thumbs = shown.map((src, i) => {
+        const isLast = i === 2 && imgs.length > 3;
+        const overlay = isLast ? `<div class="more-overlay">+${imgs.length - 3}</div>` : '';
+        return `<div class="card-thumb" data-img-id="${item.id}" data-img-idx="${i}">
+          <img src="${src}" alt="${item.name}" loading="lazy" onerror="this.closest('.card-thumb').style.display='none'">
+          ${overlay}
+        </div>`;
+      }).join('');
+      return `<div class="card-gallery" style="grid-template-columns:repeat(${cols},1fr)">${thumbs}</div>`;
+    }
+
+    function renderCard(item, cityKey, idx) {
+      return `
+    <article class="card">
+      <div class="card-num">${String(idx + 1).padStart(2, '0')}</div>
+      <h3 class="card-name">${item.name}</h3>
+      <div class="card-meta">
+        <span class="price-tier">${tierBadge(item.price_low, item.price_high)}</span>
+        <span>${priceRange(item.price_low, item.price_high)}</span>
+        ${item.rating ? `<span class="dot"></span><span class="rating">${item.rating}</span>` : ''}
+      </div>
+      ${renderGallery(item)}
+      <p class="card-blurb">${item.blurb}</p>
+      <p class="card-why">${item.why}</p>
+      <div class="card-foot">
+        <a href="${gmapsLink(item.place_id, item.name, item.lat, item.lng)}" target="_blank" rel="noopener">View on Maps ↗</a>
+      </div>
+    </article>
+  `;
+    }
+
+    function renderCategory(catKey, items, cityKey) {
+      const meta = CAT_META[catKey] || { label: catKey, desc: "" };
+      const cards = items.map((it, i) => renderCard(it, cityKey, i)).join("");
+      return `
+    <section class="category">
+      <div class="category-head">
+        <h2 class="category-name">${meta.label}</h2>
+        <span class="category-count">${items.length} options</span>
+        <span class="category-desc">${meta.desc}</span>
+      </div>
+      <div class="cards">${cards}</div>
+    </section>
+  `;
+    }
+
+    function renderCity(cityKey, city, num) {
+      const cats = Object.entries(city.categories).map(([k, items]) => renderCategory(k, items, cityKey)).join("");
+      return `
+    <section class="city" data-city="${cityKey}" id="${cityKey}">
+      <div class="city-header">
+        <div>
+          <div class="city-num">0${num} — ${city.name}</div>
+          <h2 class="city-title">${city.name}.</h2>
+        </div>
+        <div class="city-meta">
+          <strong>${city.nights} nights</strong> · ${city.dates}<br>
+          ${Object.values(city.categories).reduce((s, arr) => s + arr.length, 0)} options across ${Object.keys(city.categories).length} categories
+        </div>
+      </div>
+      ${cats}
+    </section>
+  `;
+    }
+
+    function renderTransit() {
+      return TRIP_DATA.transit.map((t, i) => `
+    <div class="transit-row">
+      <div>
+        <strong>${t.from} → ${t.to}</strong> (${t.mode})
+        <div class="notes">${t.notes}</div>
+      </div>
+      <div class="right">
+        <strong>${priceRange(t.price_low, t.price_high)}</strong> /person<br>
+        ${t.duration}
+      </div>
+    </div>
+  `).join("");
+    }
+
+    // Mount
+    const mount = document.getElementById("city-mount");
+    let num = 1;
+    for (const [cityKey, city] of Object.entries(TRIP_DATA.cities)) {
+      mount.insertAdjacentHTML("beforeend", renderCity(cityKey, city, num++));
+    }
+    document.getElementById("transit-mount").innerHTML = renderTransit();
+
+    // Tab switching
+    document.querySelectorAll(".tab").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const target = btn.dataset.target;
+        document.querySelectorAll(".tab").forEach(b => b.classList.toggle("active", b === btn));
+        document.querySelectorAll(".intro, .city").forEach(s => s.classList.remove("active"));
+        document.getElementById(target).classList.add("active");
+        window.scrollTo({ top: document.querySelector(".tabnav").offsetTop, behavior: "instant" });
+      });
+    });
+
+    // --- Lightbox ---
+    // Build an id -> {name, images} registry from all activities
+    const imageRegistry = {};
+    for (const city of Object.values(TRIP_DATA.cities)) {
+      for (const items of Object.values(city.categories)) {
+        for (const it of items) {
+          if (it.images && it.images.length) imageRegistry[it.id] = { name: it.name, images: it.images };
+        }
+      }
+    }
+
+    const lb = document.getElementById("lightbox");
+    const lbImg = document.getElementById("lbImg");
+    const lbName = document.getElementById("lbName");
+    const lbCount = document.getElementById("lbCount");
+    const lbPrev = document.getElementById("lbPrev");
+    const lbNext = document.getElementById("lbNext");
+    let lbState = { id: null, idx: 0 };
+
+    function renderLightbox() {
+      const set = imageRegistry[lbState.id];
+      if (!set) return;
+      const n = set.images.length;
+      lbState.idx = (lbState.idx + n) % n;
+      lbImg.src = set.images[lbState.idx];
+      lbName.textContent = set.name;
+      lbCount.textContent = n > 1 ? `${lbState.idx + 1} / ${n}` : "";
+      lbPrev.style.display = n > 1 ? "" : "none";
+      lbNext.style.display = n > 1 ? "" : "none";
+    }
+
+    function openLightbox(id, idx) {
+      if (!imageRegistry[id]) return;
+      lbState = { id, idx: idx || 0 };
+      renderLightbox();
+      lb.classList.add("open");
+      lb.setAttribute("aria-hidden", "false");
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeLightbox() {
+      lb.classList.remove("open");
+      lb.setAttribute("aria-hidden", "true");
+      document.body.style.overflow = "";
+      lbImg.src = "";
+    }
+
+    function lbStep(d) { lbState.idx += d; renderLightbox(); }
+
+    // Open via event delegation so it works for dynamically-mounted cards
+    document.addEventListener("click", (e) => {
+      const thumb = e.target.closest(".card-thumb");
+      if (thumb) openLightbox(thumb.dataset.imgId, parseInt(thumb.dataset.imgIdx, 10));
+    });
+    lbClose.addEventListener("click", closeLightbox);
+    lbPrev.addEventListener("click", () => lbStep(-1));
+    lbNext.addEventListener("click", () => lbStep(1));
+    lb.addEventListener("click", (e) => { if (e.target === lb) closeLightbox(); });
+    document.addEventListener("keydown", (e) => {
+      if (!lb.classList.contains("open")) return;
+      if (e.key === "Escape") closeLightbox();
+      else if (e.key === "ArrowLeft") lbStep(-1);
+      else if (e.key === "ArrowRight") lbStep(1);
+    });
+  </script>
+</body>
+
+</html>

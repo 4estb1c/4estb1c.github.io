@@ -998,5 +998,155 @@
         "credit": "Germain Hotels / Alt Hotel Montréal"
       }
     ]
+  },
+  "mercantile": {
+    "photos": [
+      {
+        "src": "images/galleries/mercantile/1.jpg",
+        "alt": "Clark Street Mercantile’s corner storefront in a winter photograph",
+        "source": "https://clarkstreetmercantile.com/pages/our-story",
+        "image_source": "https://clarkstreetmercantile.com/cdn/shop/files/SHOP_WINTER_1_of_1.jpeg?v=1614730404",
+        "credit": "Clark Street Mercantile source gallery; photographer not specified"
+      },
+      {
+        "src": "images/galleries/mercantile/2.jpg",
+        "alt": "Interior display counter at Clark Street Mercantile",
+        "source": "https://clarkstreetmercantile.com/pages/our-story",
+        "image_source": "https://clarkstreetmercantile.com/cdn/shop/files/highsnob.jpg?v=1614730667",
+        "credit": "Clark Street Mercantile source gallery; photographer not specified"
+      },
+      {
+        "src": "images/galleries/mercantile/3.jpg",
+        "alt": "Clothing and accessories displayed inside Clark Street Mercantile",
+        "source": "https://clarkstreetmercantile.com/pages/our-story",
+        "image_source": "https://clarkstreetmercantile.com/cdn/shop/files/PresshotCSM.jpg?v=1614730671",
+        "credit": "Clark Street Mercantile source gallery; photographer not specified"
+      }
+    ]
+  },
+  "faiseurs": {
+    "photos": [
+      {
+        "src": "images/galleries/faiseurs/1.jpg",
+        "alt": "The bright Les Faiseurs café with ceramics and seating",
+        "source": "https://lesfaiseurs.ca/pages/cafe-boutique-ceramique",
+        "image_source": "https://lesfaiseurs.ca/cdn/shop/files/FaiseursSiteWeb20233199_small_477e02a3-947f-42c6-8c1c-18820ff6b4a6.jpg?v=1695062083&width=1200",
+        "credit": "Les Faiseurs official website; photographer not identified"
+      },
+      {
+        "src": "images/galleries/faiseurs/2.jpg",
+        "alt": "Handmade ceramics from the Les Faiseurs boutique selection",
+        "source": "https://lesfaiseurs.ca/pages/cafe-boutique-ceramique",
+        "image_source": "https://lesfaiseurs.ca/cdn/shop/files/Boutique_fetes_2026-13.jpg?v=1792172294&width=1200",
+        "credit": "Les Faiseurs official website; photographer not identified"
+      },
+      {
+        "src": "images/galleries/faiseurs/3.jpg",
+        "alt": "Food and drink from the Les Faiseurs café",
+        "source": "https://lesfaiseurs.ca/pages/cafe-boutique-ceramique",
+        "image_source": "https://lesfaiseurs.ca/cdn/shop/files/Bouffe_cafe_mars_2025-4.jpg?v=1748015815&width=1200",
+        "credit": "Les Faiseurs official website; photographer not identified"
+      }
+    ]
+  },
+  "leroyer": {
+    "photos": [
+      {
+        "src": "images/galleries/leroyer/1.jpg",
+        "alt": "Jan Kaláb wall sculptures in a past GLR60 exhibition",
+        "source": "https://www.galerieleroyer.com/viewing-room/",
+        "image_source": "https://static-assets.artlogic.net/w_1200%2Cc_limit%2Cf_auto%2Cfl_lossy%2Cq_auto/ws-artlogicwebsite1326/usr/images/viewing_rooms/main_image_override/items/be/bea97f427c0f4351891e2acdfa1ad17a/8-2i.jpg",
+        "credit": "Galerie LeRoyer / Jan Kaláb"
+      },
+      {
+        "src": "images/galleries/leroyer/2.jpg",
+        "alt": "Coderch & Malavia figurative sculptures at GLR60, May 2025 exhibition",
+        "source": "https://www.galerieleroyer.com/exhibitions/197-coderch-malavia-focus-glr60/",
+        "image_source": "https://artlogic-res.cloudinary.com/w_1200%2Ch_630%2Cc_fill%2Cf_auto%2Cfl_lossy%2Cq_auto/ws-artlogicwebsite1326/usr/images/exhibitions/main_image_override/197/pxl_20250516_212431086.raw-01.cover.jpg",
+        "credit": "Galerie LeRoyer / Coderch & Malavia"
+      },
+      {
+        "src": "images/galleries/leroyer/3.jpg",
+        "alt": "Yoann Mérienne, ABEILLE (2024), from the GLR60 collection presentation",
+        "source": "https://www.galerieleroyer.com/viewing-room/82-yoann-merienne-focus-glr60-montreal/",
+        "image_source": "https://static-assets.artlogic.net/w_600,c_limit,f_auto,fl_lossy,q_auto/artlogicstorage/galerieleroyer/images/view/a8420b9edc8a0f787249f8b405daeb30/galerieleroyer-contemporary-modernartgallery-yoann-merienne-abeille-2024.jpg",
+        "credit": "Galerie LeRoyer / Yoann Mérienne"
+      }
+    ]
+  },
+  "placecarmin": {
+    "photos": [
+      {
+        "src": "images/galleries/placecarmin/1.jpg",
+        "alt": "Sunlit Place Carmin dining room with blond wood seating and globe lighting",
+        "source": "https://www.placecarmin.com/",
+        "image_source": "https://cdn.prod.website-files.com/66100ce874a6ce4d9f024760/689cec7e619d8c6da06c86a6_carmin_desktop.JPG",
+        "credit": "Place Carmin"
+      },
+      {
+        "src": "images/galleries/placecarmin/2.jpg",
+        "alt": "Place Carmin's plated duck à l'orange with vegetables",
+        "source": "https://www.mtl.org/en/what-to-do/food/place-carmin",
+        "image_source": "https://api.mtl.org/files/default/styles/square_600_600/public/2026-05/63136__543CD6F2-8E60-4355-BE2EA16611A7926D.jpg.webp?h=f0d2c963&itok=drFEATxD",
+        "credit": "Tourisme Montréal / Place Carmin"
+      },
+      {
+        "src": "images/galleries/placecarmin/3.jpg",
+        "alt": "Weekend brunch spread at Place Carmin",
+        "source": "https://www.mtl.org/en/what-to-do/food/place-carmin",
+        "image_source": "https://api.mtl.org/files/default/styles/square_600_600/public/2026-05/63135__89C6C76C-2B1B-4FE0-86A324DE06DB3B7F.jpg.webp?h=8d7b1f84&itok=uUGREHnY",
+        "credit": "Tourisme Montréal / Place Carmin"
+      }
+    ]
+  },
+  "maisonsauvage": {
+    "photos": [
+      {
+        "src": "images/galleries/maisonsauvage/1.jpg",
+        "alt": "The small upholstered seating corner inside Maison Sauvage Café",
+        "source": "https://foodintravelblog.wordpress.com/2023/08/21/maison-sauvage-cafe-goldilocks-gourmet-cookies/",
+        "image_source": "https://foodintravelblog.wordpress.com/wp-content/uploads/2023/08/b-cafe-interior-photo-jeff-shoer.jpeg?w=715",
+        "credit": "Jeff Shoer / Food in Travel, August 2023"
+      },
+      {
+        "src": "images/galleries/maisonsauvage/2.jpg",
+        "alt": "Meringue-topped signature drinks and decorated cookies at Maison Sauvage Café",
+        "source": "https://www.themain.com/fr/montreal/cafe/maison-sauvage-cafe",
+        "image_source": "https://cdn.sanity.io/images/2edxk5v7/production/34ac57737fc9915030bbf10b184ad2eab2b823ea-1440x1194.jpg?w=1200&h=630&fit=crop&fm=jpg&q=80",
+        "credit": "The Main venue gallery; photographer not specified"
+      },
+      {
+        "src": "images/galleries/maisonsauvage/3.jpg",
+        "alt": "Lemon-meringue cookie photographed at Maison Sauvage Café",
+        "source": "https://foodintravelblog.wordpress.com/2023/08/21/maison-sauvage-cafe-goldilocks-gourmet-cookies/",
+        "image_source": "https://foodintravelblog.wordpress.com/wp-content/uploads/2023/08/e-cookie-of-the-month-photo-jeff-shoer.jpeg?w=607",
+        "credit": "Jeff Shoer / Food in Travel, August 2023; illustrative past flavor"
+      }
+    ]
+  },
+  "beteapain": {
+    "photos": [
+      {
+        "src": "images/galleries/beteapain/1.jpg",
+        "alt": "The bright Griffintown dining room at La Bête à Pain, with wood tables and patterned-tile bakery counter",
+        "source": "https://www.tripadvisor.com/Restaurant_Review-g155032-d10162524-Reviews-La_Bete_a_Pain-Montreal_Quebec.html",
+        "image_source": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/a9/2a/89/bete-a-pain-griffintown.jpg?h=-1&s=1&w=1200",
+        "credit": "La Bête à Pain Griffintown / business photo on Tripadvisor"
+      },
+      {
+        "src": "images/galleries/beteapain/2.jpg",
+        "alt": "La Bête à Pain pastries and coffee pictured on its official Griffintown page",
+        "source": "https://www.labeteapain.com/succursales/griffintown",
+        "image_source": "https://images.squarespace-cdn.com/content/v1/69c1a21a7473e20a448cf83e/46545eb6-a080-4c10-8fd2-d3aff029859e/bete-a-pain-patisseries-cafe-vue-haut.jpg?format=1500w",
+        "credit": "La Bête à Pain official website; photographer not identified"
+      },
+      {
+        "src": "images/galleries/beteapain/3.jpg",
+        "alt": "A ham-and-cheese baguette pictured on La Bête à Pain’s official Griffintown page",
+        "source": "https://www.labeteapain.com/succursales/griffintown",
+        "image_source": "https://images.squarespace-cdn.com/content/v1/69c1a21a7473e20a448cf83e/81601608-ec04-4cbd-b684-8b7ed13973fd/Two+Food+Photographers-41.jpg?format=1000w",
+        "credit": "La Bête à Pain official Griffintown page; Two Food Photographers identified in filename"
+      }
+    ]
   }
 }
