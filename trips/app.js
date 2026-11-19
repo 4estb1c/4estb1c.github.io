@@ -25,7 +25,16 @@
       return;
     }
     const plan = routes.days[day];
-    const map = L.map(container, {scrollWheelZoom:false,zoomControl:true});
+    const mobile = window.matchMedia?.('(max-width: 640px)').matches ?? false;
+    const map = L.map(container, {
+      scrollWheelZoom:false,
+      zoomControl:!mobile,
+      dragging:!mobile,
+      touchZoom:!mobile,
+      doubleClickZoom:!mobile,
+      boxZoom:!mobile,
+      keyboard:!mobile
+    });
     // OSM's public tile server requires a Referer, which file:// pages cannot send.
     // This public Esri basemap also works when the portable HTML is opened locally.
     const tiles = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
