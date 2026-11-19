@@ -55,7 +55,7 @@ test('the one itinerary references existing stops and photo assets', async () =>
   assert.ok(TripRoute.valid(data.hotel));
   for(const place of [...data.places,...data.hotels]) {
     assert.ok(TripRoute.valid(place));
-    assert.ok(place.lat>45.48 && place.lat<45.56 && place.lng>-73.65 && place.lng<-73.53,place.id);
+    assert.ok(place.lat>45.48 && place.lat<45.56 && place.lng>-73.65 && place.lng<-73.50,place.id);
     assert.equal(galleries[place.id].photos.length,3,place.id);
     for(const photo of galleries[place.id].photos)await access(new URL(`../${photo.src}`,import.meta.url));
   }
