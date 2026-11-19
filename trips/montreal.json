@@ -802,7 +802,7 @@
       "date": "Nov 20",
       "blocks": [
         {
-          "time": "Around midnight",
+          "time": "Arrive by Friday night",
           "title": "Alt Hotel Montréal",
           "text": "Booked · 120 Rue Peel, Griffintown. Taxi from YUL; notify reception of late arrival.",
           "stops": [
@@ -917,17 +917,17 @@
         },
         {
           "time": "3 PM",
-          "title": "MONOKIINI",
-          "text": "Handmade ceramics, a working studio, and coffee.",
+          "title": "Les Faiseurs",
+          "text": "Handmade Québec ceramics, pastries, and specialty coffee in a bright café.",
           "stops": [
-            "monokiini"
+            "faiseurs"
           ],
           "mode": "walking",
           "star": true,
           "nearby": [
             {
-              "id": "faiseurs",
-              "text": "Handmade Québec ceramics, specialty coffee, and pastries in a bright café."
+              "id": "monokiini",
+              "text": "Another ceramics boutique and café nearby, with a working pottery studio."
             }
           ]
         },
@@ -1346,6 +1346,18 @@
       "when": "Sunday around 11:30 AM",
       "status": "Standard tickets include a private cabin.",
       "url": "https://feverup.com/m/368259/en?seasonal=p42f8ep"
+    },
+    {
+      "name": "Forrest · return flight",
+      "when": "Sunday Nov 22 · AC8612 · YUL 8 PM → BOS 9:28 PM",
+      "status": "Not booked.",
+      "url": "https://www.google.com/travel/flights?hl=en&q=One+way+flights+Montreal+YUL+to+Boston+BOS+November+22+2026+AC8612"
+    },
+    {
+      "name": "Milo · return flight",
+      "when": "Sunday Nov 22 · AC736 · YUL 8 PM → LGA 9:30 PM",
+      "status": "Not booked.",
+      "url": "https://www.google.com/travel/flights?hl=en&q=One+way+flights+Montreal+YUL+to+New+York+LaGuardia+LGA+November+22+2026+AC736"
     }
   ],
   "cocktails": "Cloakroom and Bar George: walk-in only."
