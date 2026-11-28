@@ -1,0 +1,2418 @@
+{
+ "id": "chalmond",
+ "title": "Seoul & Hong Kong",
+ "dates": "July 29 – August 9, 2026",
+ "intro": "Forrest & Charlotte through Seoul, then Hong Kong, where Milo joins.",
+ "embedPhotos": false,
+ "mapCity": "Seoul",
+ "year": "2026",
+ "hotels": [
+  {
+   "id": "ch-myeongdong",
+   "name": "Myeongdong New Stay Inn",
+   "lat": 37.5609,
+   "lng": 126.9857,
+   "city": "Seoul",
+   "source": "https://en.wikipedia.org/wiki/Myeong-dong",
+   "mapQuery": "Myeongdong New Stay Inn, Myeongdong",
+   "label": "Booked · Jul 29 – Aug 3",
+   "photoQuery": "Myeongdong street Seoul"
+  },
+  {
+   "id": "ch-ninebrick",
+   "name": "Nine Brick Hotel (Hongdae)",
+   "lat": 37.5551,
+   "lng": 126.9231,
+   "city": "Seoul",
+   "source": "https://en.wikipedia.org/wiki/Hongdae_(area)",
+   "mapQuery": "Nine Brick Hotel, 32 Hongik-ro 5-gil, Mapo-gu",
+   "label": "Booked · Aug 3",
+   "photoQuery": "Hongdae street Seoul"
+  },
+  {
+   "id": "ch-fourseasons",
+   "name": "Four Seasons Hong Kong",
+   "lat": 22.2866,
+   "lng": 114.1572,
+   "city": "Hong Kong",
+   "source": "https://www.fourseasons.com/hongkong/",
+   "mapQuery": "Four Seasons Hotel Hong Kong, 8 Finance Street, Central",
+   "label": "Booked · Aug 4 – Aug 9",
+   "photoQuery": "Four Seasons Hotel Hong Kong"
+  }
+ ],
+ "places": [
+  {
+   "id": "ch-hadongkwan",
+   "name": "Hadongkwan",
+   "lat": 37.5648,
+   "lng": 126.9853,
+   "city": "Seoul",
+   "mapQuery": "Hadongkwan, Myeongdong",
+   "photoQuery": "gomtang"
+  },
+  {
+   "id": "ch-kyoja",
+   "name": "Myeongdong Kyoja",
+   "lat": 37.5625,
+   "lng": 126.9856,
+   "city": "Seoul",
+   "mapQuery": "Myeongdong Kyoja main branch",
+   "photoQuery": "Kalguksu"
+  },
+  {
+   "id": "ch-gogung",
+   "name": "Gogung Myeongdong",
+   "lat": 37.563,
+   "lng": 126.9846,
+   "city": "Seoul",
+   "mapQuery": "Gogung Myeongdong",
+   "photoQuery": "Jeonju bibimbap"
+  },
+  {
+   "id": "ch-mdstreet",
+   "name": "Myeongdong street stalls",
+   "lat": 37.5617,
+   "lng": 126.9858,
+   "city": "Seoul",
+   "source": "https://en.wikipedia.org/wiki/Myeong-dong",
+   "mapQuery": "Myeongdong shopping street",
+   "photoQuery": "Myeongdong street food"
+  },
+  {
+   "id": "ch-oliveyoung-md",
+   "name": "Olive Young Myeongdong Flagship",
+   "lat": 37.5623,
+   "lng": 126.984,
+   "city": "Seoul",
+   "source": "https://global.oliveyoung.com/",
+   "mapQuery": "Olive Young Myeongdong Flagship",
+   "photoQuery": "Myeongdong"
+  },
+  {
+   "id": "ch-mimiline",
+   "name": "Mimiline Myeongdong",
+   "lat": 37.5604,
+   "lng": 126.9856,
+   "city": "Seoul",
+   "mapQuery": "Mimiline Myeongdong, 123 Toegye-ro",
+   "photoQuery": "Myeong-dong Seoul street"
+  },
+  {
+   "id": "ch-stylenanda",
+   "name": "Stylenanda Pink Hotel (3CE)",
+   "lat": 37.5633,
+   "lng": 126.9855,
+   "city": "Seoul",
+   "mapQuery": "Stylenanda Pink Hotel Myeongdong",
+   "photoQuery": "Myeongdong shopping street"
+  },
+  {
+   "id": "ch-gwangjang",
+   "name": "Gwangjang Market",
+   "lat": 37.57,
+   "lng": 126.9996,
+   "city": "Seoul",
+   "source": "https://en.wikipedia.org/wiki/Gwangjang_Market",
+   "mapQuery": "Gwangjang Market"
+  },
+  {
+   "id": "ch-namdaemun",
+   "name": "Namdaemun Market",
+   "lat": 37.5594,
+   "lng": 126.9776,
+   "city": "Seoul",
+   "source": "https://en.wikipedia.org/wiki/Namdaemun_Market",
+   "mapQuery": "Namdaemun Market"
+  },
+  {
+   "id": "ch-cheonggye",
+   "name": "Cheonggyecheon Stream",
+   "lat": 37.5694,
+   "lng": 126.977,
+   "city": "Seoul",
+   "source": "https://en.wikipedia.org/wiki/Cheonggyecheon",
+   "mapQuery": "Cheonggyecheon Plaza"
+  },
+  {
+   "id": "ch-mongvely",
+   "name": "Mongvely KBBQ Myeongdong",
+   "lat": 37.5614,
+   "lng": 126.9844,
+   "city": "Seoul",
+   "mapQuery": "Mongvely Myeongdong",
+   "photoQuery": "Korean barbecue samgyeopsal grill"
+  },
+  {
+   "id": "ch-wangbijip",
+   "name": "Wangbijip Myeongdong",
+   "lat": 37.5617,
+   "lng": 126.9864,
+   "city": "Seoul",
+   "mapQuery": "Wangbijip Myeongdong",
+   "photoQuery": "galbi"
+  },
+  {
+   "id": "ch-namsan",
+   "name": "N Seoul Tower (Namsan)",
+   "lat": 37.5512,
+   "lng": 126.9882,
+   "city": "Seoul",
+   "source": "https://en.wikipedia.org/wiki/N_Seoul_Tower",
+   "mapQuery": "N Seoul Tower",
+   "photoQuery": "N Seoul Tower"
+  },
+  {
+   "id": "ch-ddp",
+   "name": "Dongdaemun Design Plaza",
+   "lat": 37.5665,
+   "lng": 127.0092,
+   "city": "Seoul",
+   "source": "https://en.wikipedia.org/wiki/Dongdaemun_Design_Plaza",
+   "mapQuery": "Dongdaemun Design Plaza",
+   "photoQuery": "Dongdaemun Design Plaza night"
+  },
+  {
+   "id": "ch-kyochon",
+   "name": "Kyochon Chicken Dongdaemun",
+   "lat": 37.5713,
+   "lng": 127.0107,
+   "city": "Seoul",
+   "mapQuery": "Kyochon Chicken Dongdaemun",
+   "photoQuery": "Korean fried chicken"
+  },
+  {
+   "id": "ch-ddmsnacks",
+   "name": "Dongdaemun night food stalls",
+   "lat": 37.5678,
+   "lng": 127.0098,
+   "city": "Seoul",
+   "mapQuery": "Dongdaemun night market food stalls",
+   "photoQuery": "Dongdaemun market night"
+  },
+  {
+   "id": "ch-euljiro",
+   "name": "Euljiro 'Hipjiro' backstreets",
+   "lat": 37.566,
+   "lng": 126.9919,
+   "city": "Seoul",
+   "source": "https://en.wikipedia.org/wiki/Euljiro",
+   "mapQuery": "Euljiro 3-ga",
+   "photoQuery": "Euljiro Seoul alley"
+  },
+  {
+   "id": "ch-nogari",
+   "name": "Nogari Alley",
+   "lat": 37.5664,
+   "lng": 126.991,
+   "city": "Seoul",
+   "mapQuery": "Nogari Alley, Euljiro 3-ga",
+   "photoQuery": "Euljiro"
+  },
+  {
+   "id": "ch-ranch",
+   "name": "The Ranch Brewing",
+   "lat": 37.5658,
+   "lng": 126.9914,
+   "city": "Seoul",
+   "mapQuery": "The Ranch Brewing, Euljiro",
+   "photoQuery": "Euljiro 3-ga"
+  },
+  {
+   "id": "ch-eulji-brew",
+   "name": "Eulji Brewing",
+   "lat": 37.5666,
+   "lng": 126.9924,
+   "city": "Seoul",
+   "mapQuery": "Eulji Brewing, Euljiro",
+   "photoQuery": "Euljiro alley night"
+  },
+  {
+   "id": "ch-clique",
+   "name": "Clique Records",
+   "lat": 37.5668,
+   "lng": 126.9915,
+   "city": "Seoul",
+   "mapQuery": "Clique Records, Euljiro",
+   "photoQuery": "vinyl records shop"
+  },
+  {
+   "id": "ch-lucky",
+   "name": "LUCKY SEOUL",
+   "lat": 37.5629,
+   "lng": 126.9977,
+   "city": "Seoul",
+   "mapQuery": "LUCKY SEOUL, Euljiro",
+   "photoQuery": "Euljiro 4-ga Seoul"
+  },
+  {
+   "id": "ch-vicslab",
+   "name": "Vic's Lab Korea",
+   "lat": 37.5566,
+   "lng": 126.9055,
+   "city": "Seoul",
+   "mapQuery": "Vic's Lab Korea, 15 World Cup buk-ro 4-gil, Mapo-gu",
+   "photoQuery": "Mangwon-dong Seoul"
+  },
+  {
+   "id": "ch-garosu",
+   "name": "Garosu-gil",
+   "lat": 37.5196,
+   "lng": 127.0226,
+   "city": "Seoul",
+   "source": "https://en.wikipedia.org/wiki/Garosu-gil",
+   "mapQuery": "Garosu-gil, Sinsa-dong",
+   "photoQuery": "Garosu-gil"
+  },
+  {
+   "id": "ch-gentlemonster",
+   "name": "Gentle Monster Haus Dosan",
+   "lat": 37.5245,
+   "lng": 127.0372,
+   "city": "Seoul",
+   "source": "https://www.gentlemonster.com/",
+   "mapQuery": "Haus Dosan, Gangnam",
+   "photoQuery": "Dosan Park Seoul"
+  },
+  {
+   "id": "ch-nonfiction",
+   "name": "Nonfiction Garosu-gil",
+   "lat": 37.5238,
+   "lng": 127.0204,
+   "city": "Seoul",
+   "mapQuery": "Nonfiction Garosu-gil",
+   "photoQuery": "Garosu-gil Sinsa-dong"
+  },
+  {
+   "id": "ch-tamburins",
+   "name": "Tamburins Flagship",
+   "lat": 37.5264,
+   "lng": 127.0374,
+   "city": "Seoul",
+   "source": "https://www.tamburins.com/",
+   "mapQuery": "Tamburins Flagship Sinsa",
+   "photoQuery": "Sinsa-dong"
+  },
+  {
+   "id": "ch-moma",
+   "name": "MoMA Design Store Seoul",
+   "lat": 37.524,
+   "lng": 127.0378,
+   "city": "Seoul",
+   "mapQuery": "MoMA Design Store Seoul, Dosan Park",
+   "photoQuery": "Dosan Park Seoul"
+  },
+  {
+   "id": "ch-knotted",
+   "name": "Café Knotted Dosan",
+   "lat": 37.5245,
+   "lng": 127.0355,
+   "city": "Seoul",
+   "mapQuery": "Cafe Knotted Dosan",
+   "photoQuery": "doughnuts"
+  },
+  {
+   "id": "ch-juno",
+   "name": "JUNO Hair Garosu-gil",
+   "lat": 37.5213,
+   "lng": 127.0225,
+   "city": "Seoul",
+   "mapQuery": "JUNO Hair Garosu-gil",
+   "photoQuery": "Garosu-gil"
+  },
+  {
+   "id": "ch-yookmian",
+   "name": "Yookmian Yeonnam",
+   "lat": 37.5606,
+   "lng": 126.9241,
+   "city": "Seoul",
+   "mapQuery": "Yookmian Yeonnam, 5 Donggyo-ro 38-gil, Mapo-gu",
+   "photoQuery": "Yeonnam-dong"
+  },
+  {
+   "id": "ch-craftbros",
+   "name": "Craftbros Hongdae",
+   "lat": 37.5556,
+   "lng": 126.925,
+   "city": "Seoul",
+   "mapQuery": "Craftbros Hongdae",
+   "photoQuery": "craft beer taps"
+  },
+  {
+   "id": "ch-hobar",
+   "name": "Ho Bar III",
+   "lat": 37.557,
+   "lng": 126.924,
+   "city": "Seoul",
+   "mapQuery": "Ho Bar 3 Hongdae",
+   "photoQuery": "Hongdae night"
+  },
+  {
+   "id": "ch-sulbing",
+   "name": "Sulbing Hongdae",
+   "lat": 37.5553,
+   "lng": 126.9227,
+   "city": "Seoul",
+   "source": "https://en.wikipedia.org/wiki/Sulbing",
+   "mapQuery": "Sulbing Hongdae",
+   "photoQuery": "Bingsu"
+  },
+  {
+   "id": "ch-hss",
+   "name": "Hongdae shopping street",
+   "lat": 37.5538,
+   "lng": 126.9237,
+   "city": "Seoul",
+   "source": "https://en.wikipedia.org/wiki/Hongdae_(area)",
+   "mapQuery": "Hongdae Walking Street",
+   "photoQuery": "Hongdae street"
+  },
+  {
+   "id": "ch-sigonggan",
+   "name": "Sigonggan Hongdae",
+   "lat": 37.5509,
+   "lng": 126.9251,
+   "city": "Seoul",
+   "mapQuery": "Sigonggan, 93 Wausan-ro",
+   "photoQuery": "Hongik University gate"
+  },
+  {
+   "id": "ch-hdvintage",
+   "name": "Hongdae vintage strip",
+   "lat": 37.556,
+   "lng": 126.924,
+   "city": "Seoul",
+   "mapQuery": "Hongdae vintage shops",
+   "photoQuery": "Hongdae shopping"
+  },
+  {
+   "id": "ch-artbox",
+   "name": "Artbox Hongdae",
+   "lat": 37.557,
+   "lng": 126.9263,
+   "city": "Seoul",
+   "mapQuery": "Artbox Hongdae Flagship",
+   "photoQuery": "Hongdae street"
+  },
+  {
+   "id": "ch-kakao",
+   "name": "Kakao Friends Hongdae",
+   "lat": 37.5574,
+   "lng": 126.9248,
+   "city": "Seoul",
+   "mapQuery": "Kakao Friends Hongdae Flagship",
+   "photoQuery": "Kakao Friends store"
+  },
+  {
+   "id": "ch-object",
+   "name": "Object Seogyo",
+   "lat": 37.5548,
+   "lng": 126.9207,
+   "city": "Seoul",
+   "mapQuery": "Object, 13 Wausan-ro 35-gil",
+   "photoQuery": "Hongdae Seogyo-dong"
+  },
+  {
+   "id": "ch-karaoke",
+   "name": "Soo Karaoke Club Hongdae",
+   "lat": 37.5511,
+   "lng": 126.9211,
+   "city": "Seoul",
+   "mapQuery": "Su Noraebang Hongdae",
+   "photoQuery": "noraebang"
+  },
+  {
+   "id": "ch-sundubu",
+   "name": "Sundubu jjigae, Jongno",
+   "lat": 37.5705,
+   "lng": 126.984,
+   "city": "Seoul",
+   "mapQuery": "Sundubu jjigae, Jongno",
+   "photoQuery": "Sundubu jjigae"
+  },
+  {
+   "id": "ch-onion",
+   "name": "Cafe Onion Anguk",
+   "lat": 37.5766,
+   "lng": 126.9856,
+   "city": "Seoul",
+   "mapQuery": "Cafe Onion Anguk",
+   "photoQuery": "Anguk-dong"
+  },
+  {
+   "id": "ch-hanbokshoot",
+   "name": "Seoul Hanbok Photo Shooting",
+   "lat": 37.5779,
+   "lng": 126.974,
+   "city": "Seoul",
+   "mapQuery": "Hanbok photo studio near Gyeongbokgung",
+   "photoQuery": "Hanbok Gyeongbokgung"
+  },
+  {
+   "id": "ch-gyeongbok",
+   "name": "Gyeongbokgung Palace",
+   "lat": 37.5796,
+   "lng": 126.977,
+   "city": "Seoul",
+   "source": "https://en.wikipedia.org/wiki/Gyeongbokgung",
+   "mapQuery": "Gyeongbokgung Palace",
+   "photoQuery": "Gyeonghoeru"
+  },
+  {
+   "id": "ch-bukchon",
+   "name": "Bukchon Hanok Village",
+   "lat": 37.5815,
+   "lng": 126.985,
+   "city": "Seoul",
+   "source": "https://en.wikipedia.org/wiki/Bukchon_Hanok_Village",
+   "mapQuery": "Bukchon Hanok Village",
+   "photoQuery": "Bukchon Hanok Village"
+  },
+  {
+   "id": "ch-tosokchon",
+   "name": "Tosokchon Samgyetang",
+   "lat": 37.5779,
+   "lng": 126.9711,
+   "city": "Seoul",
+   "mapQuery": "Tosokchon Samgyetang",
+   "photoQuery": "Samgyetang"
+  },
+  {
+   "id": "ch-sanchon",
+   "name": "Sanchon",
+   "lat": 37.5737,
+   "lng": 126.9869,
+   "city": "Seoul",
+   "mapQuery": "Sanchon, Insadong",
+   "photoQuery": "Insadong street"
+  },
+  {
+   "id": "ch-galbitang",
+   "name": "Galbitang, Insadong",
+   "lat": 37.5735,
+   "lng": 126.9869,
+   "city": "Seoul",
+   "source": "https://en.wikipedia.org/wiki/Insa-dong",
+   "mapQuery": "Galbitang Insadong",
+   "photoQuery": "Galbitang"
+  },
+  {
+   "id": "ch-nails",
+   "name": "Gel nail studios, Insadong",
+   "lat": 37.5735,
+   "lng": 126.986,
+   "city": "Seoul",
+   "source": "https://en.wikipedia.org/wiki/Insa-dong",
+   "mapQuery": "Nail shop Insadong",
+   "photoQuery": "Insadong Seoul"
+  },
+  {
+   "id": "ch-facial",
+   "name": "Skin-care facial, Jongno",
+   "lat": 37.573,
+   "lng": 126.9865,
+   "city": "Seoul",
+   "mapQuery": "피부관리실 Jongno",
+   "photoQuery": "Jongno Seoul street"
+  },
+  {
+   "id": "ch-headspa",
+   "name": "JUNO Hair Myeongdong head spa",
+   "lat": 37.5638,
+   "lng": 126.9835,
+   "city": "Seoul",
+   "mapQuery": "JUNO Hair Myeongdong",
+   "photoQuery": "Myeongdong Seoul"
+  },
+  {
+   "id": "ch-dragonhill",
+   "name": "Dragon Hill Spa",
+   "lat": 37.5297,
+   "lng": 126.9648,
+   "city": "Seoul",
+   "source": "https://www.dragonhillspa.co.kr/",
+   "mapQuery": "Dragon Hill Spa, Yongsan",
+   "photoQuery": "jjimjilbang"
+  },
+  {
+   "id": "ch-samcheongbingsu",
+   "name": "Samcheong Bingsu",
+   "lat": 37.5829,
+   "lng": 126.9819,
+   "city": "Seoul",
+   "source": "https://en.wikipedia.org/wiki/Samcheong-dong",
+   "mapQuery": "Samcheong-dong",
+   "photoQuery": "Samcheong-dong"
+  },
+  {
+   "id": "ch-hyundai",
+   "name": "The Hyundai Seoul",
+   "lat": 37.5258,
+   "lng": 126.9284,
+   "city": "Seoul",
+   "source": "https://en.wikipedia.org/wiki/Hyundai_Department_Store",
+   "mapQuery": "The Hyundai Seoul, Yeouido",
+   "photoQuery": "The Hyundai Seoul"
+  },
+  {
+   "id": "ch-ifc",
+   "name": "IFC Mall Yeouido",
+   "lat": 37.5251,
+   "lng": 126.9255,
+   "city": "Seoul",
+   "source": "https://en.wikipedia.org/wiki/International_Finance_Center_Seoul",
+   "mapQuery": "IFC Mall Yeouido",
+   "photoQuery": "IFC Seoul"
+  },
+  {
+   "id": "ch-riverpocha",
+   "name": "Yeouido Hangang Park",
+   "lat": 37.5285,
+   "lng": 126.9338,
+   "city": "Seoul",
+   "source": "https://en.wikipedia.org/wiki/Hangang_Park",
+   "mapQuery": "Yeouido Hangang Park",
+   "photoQuery": "Yeouido Hangang Park"
+  },
+  {
+   "id": "ch-cruise",
+   "name": "Eland Hangang River Cruise",
+   "lat": 37.527,
+   "lng": 126.9335,
+   "city": "Seoul",
+   "source": "https://www.elandcruise.com/",
+   "mapQuery": "Eland Cruise Yeouido Pier",
+   "photoQuery": "Hangang river Yeouido"
+  },
+  {
+   "id": "ch-ikseon",
+   "name": "Ikseon-dong alleys",
+   "lat": 37.5742,
+   "lng": 126.9905,
+   "city": "Seoul",
+   "source": "https://en.wikipedia.org/wiki/Ikseon-dong",
+   "mapQuery": "Ikseon-dong Hanok Village",
+   "photoQuery": "Ikseon-dong"
+  },
+  {
+   "id": "ch-damsot",
+   "name": "Damsot Ikseon",
+   "lat": 37.5737,
+   "lng": 126.9903,
+   "city": "Seoul",
+   "mapQuery": "Damsot Ikseon",
+   "photoQuery": "Ikseon-dong hanok"
+  },
+  {
+   "id": "ch-sikmul",
+   "name": "Sikmul",
+   "lat": 37.5743,
+   "lng": 126.9903,
+   "city": "Seoul",
+   "mapQuery": "Sikmul, Ikseon-dong",
+   "photoQuery": "Ikseon-dong alley"
+  },
+  {
+   "id": "ch-artmonster",
+   "name": "Art Monster Ikseondong",
+   "lat": 37.5741,
+   "lng": 126.9904,
+   "city": "Seoul",
+   "mapQuery": "Art Monster Ikseondong",
+   "photoQuery": "Ikseon-dong"
+  },
+  {
+   "id": "ch-seosulla",
+   "name": "Seosulla-gil",
+   "lat": 37.5728,
+   "lng": 126.9948,
+   "city": "Seoul",
+   "source": "https://en.wikipedia.org/wiki/Jongmyo",
+   "mapQuery": "Seosulla-gil, Jongno",
+   "photoQuery": "Jongmyo wall"
+  },
+  {
+   "id": "ch-daesung",
+   "name": "Daesung Galbi",
+   "lat": 37.5462,
+   "lng": 127.0458,
+   "city": "Seoul",
+   "mapQuery": "Daesung Galbi, Seongsu",
+   "photoQuery": "Seongsu-dong"
+  },
+  {
+   "id": "ch-maestro",
+   "name": "Seongsu Rooftop Maestro",
+   "lat": 37.5451,
+   "lng": 127.0432,
+   "city": "Seoul",
+   "mapQuery": "Rooftop Maestro Seongsu",
+   "photoQuery": "Seongsu-dong"
+  },
+  {
+   "id": "ch-cinderella",
+   "name": "Cinderella Bar",
+   "lat": 37.5442,
+   "lng": 127.0556,
+   "city": "Seoul",
+   "mapQuery": "Cinderella Bar Seongsu",
+   "photoQuery": "Seongsu-dong street"
+  },
+  {
+   "id": "ch-storage",
+   "name": "The Storage Room",
+   "lat": 37.5438,
+   "lng": 127.0561,
+   "city": "Seoul",
+   "mapQuery": "The Storage Room Seongsu",
+   "photoQuery": "Seongsu-dong building"
+  },
+  {
+   "id": "ch-seoulforest",
+   "name": "Seoul Forest",
+   "lat": 37.5444,
+   "lng": 127.0374,
+   "city": "Seoul",
+   "source": "https://en.wikipedia.org/wiki/Seoul_Forest",
+   "mapQuery": "Seoul Forest",
+   "photoQuery": "Seoul Forest"
+  },
+  {
+   "id": "ch-morningcalm",
+   "name": "Garden of Morning Calm",
+   "lat": 37.7434,
+   "lng": 127.3524,
+   "city": "Seoul",
+   "source": "https://en.wikipedia.org/wiki/Garden_of_Morning_Calm",
+   "mapQuery": "The Garden of Morning Calm, Gapyeong",
+   "photoQuery": "Garden of Morning Calm"
+  },
+  {
+   "id": "ch-starfield",
+   "name": "Starfield Library",
+   "lat": 37.5102,
+   "lng": 127.0598,
+   "city": "Seoul",
+   "source": "https://en.wikipedia.org/wiki/COEX_Mall",
+   "mapQuery": "Starfield Library, COEX",
+   "photoQuery": "Starfield Library"
+  },
+  {
+   "id": "ch-sevenluck",
+   "name": "Seven Luck Casino COEX",
+   "lat": 37.5118,
+   "lng": 127.059,
+   "city": "Seoul",
+   "source": "https://www.7luck.com/",
+   "mapQuery": "Seven Luck Casino Gangnam COEX",
+   "photoQuery": "COEX Seoul"
+  },
+  {
+   "id": "ch-hwayeon",
+   "name": "Hwayeon Sanjang",
+   "lat": 37.5265,
+   "lng": 127.0396,
+   "city": "Seoul",
+   "mapQuery": "Hwayeon Sanjang, 12 Seolleung-ro 152-gil",
+   "photoQuery": "hanwoo beef"
+  },
+  {
+   "id": "ch-alice",
+   "name": "Alice Cheongdam",
+   "lat": 37.5246,
+   "lng": 127.041,
+   "city": "Seoul",
+   "mapQuery": "Alice Cheongdam",
+   "photoQuery": "Cheongdam-dong"
+  },
+  {
+   "id": "ch-lechamber",
+   "name": "Le Chamber",
+   "lat": 37.5247,
+   "lng": 127.0395,
+   "city": "Seoul",
+   "mapQuery": "Le Chamber Cheongdam",
+   "photoQuery": "Cheongdam-dong street"
+  },
+  {
+   "id": "ch-rodeo",
+   "name": "Apgujeong Rodeo Street",
+   "lat": 37.5273,
+   "lng": 127.04,
+   "city": "Seoul",
+   "source": "https://en.wikipedia.org/wiki/Apgujeong-dong",
+   "mapQuery": "Apgujeong Rodeo Street",
+   "photoQuery": "Apgujeong Rodeo"
+  },
+  {
+   "id": "ch-jamwon",
+   "name": "Jamwon Hangang Park",
+   "lat": 37.5215,
+   "lng": 127.02,
+   "city": "Seoul",
+   "mapQuery": "Jamwon Hangang Park",
+   "photoQuery": "Jamwon Hangang Park"
+  },
+  {
+   "id": "ch-eurwangni",
+   "name": "Eurwangni Beach",
+   "lat": 37.4456,
+   "lng": 126.3736,
+   "city": "Seoul",
+   "mapQuery": "Eurwangni Beach, Incheon",
+   "photoQuery": "Eurwangni"
+  },
+  {
+   "id": "ch-wolmi",
+   "name": "Wolmi Theme Park",
+   "lat": 37.474,
+   "lng": 126.598,
+   "city": "Seoul",
+   "source": "https://en.wikipedia.org/wiki/Wolmido",
+   "mapQuery": "Wolmi Theme Park, Incheon",
+   "photoQuery": "Wolmido"
+  },
+  {
+   "id": "ch-seatrain",
+   "name": "Wolmi Sea Train",
+   "lat": 37.4728,
+   "lng": 126.5967,
+   "city": "Seoul",
+   "mapQuery": "Wolmi Sea Train, Incheon",
+   "photoQuery": "Wolmi Sea Train"
+  },
+  {
+   "id": "ch-chinatown",
+   "name": "Incheon Chinatown",
+   "lat": 37.475,
+   "lng": 126.6175,
+   "city": "Seoul",
+   "source": "https://en.wikipedia.org/wiki/Chinatown,_Incheon",
+   "mapQuery": "Incheon Chinatown",
+   "photoQuery": "Incheon Chinatown"
+  },
+  {
+   "id": "ch-eggdrop",
+   "name": "Egg Drop Hongdae",
+   "lat": 37.5558,
+   "lng": 126.9228,
+   "city": "Seoul",
+   "mapQuery": "Egg Drop Hongdae",
+   "photoQuery": "egg sandwich"
+  },
+  {
+   "id": "ch-isaac",
+   "name": "Isaac Toast Hongdae",
+   "lat": 37.5568,
+   "lng": 126.9249,
+   "city": "Seoul",
+   "mapQuery": "Isaac Toast Hongdae",
+   "photoQuery": "Korean street toast"
+  },
+  {
+   "id": "ch-anthracite",
+   "name": "Anthracite Coffee Hongdae",
+   "lat": 37.5565,
+   "lng": 126.9248,
+   "city": "Seoul",
+   "mapQuery": "Anthracite Coffee Hongdae",
+   "photoQuery": "Hapjeong-dong"
+  },
+  {
+   "id": "ch-gyeongui",
+   "name": "Gyeongui Line Forest Park",
+   "lat": 37.5612,
+   "lng": 126.9245,
+   "city": "Seoul",
+   "source": "https://en.wikipedia.org/wiki/Gyeongui_Line_Forest_Park",
+   "mapQuery": "Gyeongui Line Forest Park, Yeonnam-dong",
+   "photoQuery": "Gyeongui Line Forest Park"
+  },
+  {
+   "id": "ch-roofcat",
+   "name": "Roof Cat Me",
+   "lat": 37.5549,
+   "lng": 126.9221,
+   "city": "Seoul",
+   "mapQuery": "Roof Cat Me Hongdae",
+   "photoQuery": "Cat cafe Seoul"
+  },
+  {
+   "id": "ch-oliveyoung-hd",
+   "name": "Olive Young Hongdae",
+   "lat": 37.5561,
+   "lng": 126.9243,
+   "city": "Seoul",
+   "source": "https://global.oliveyoung.com/",
+   "mapQuery": "Olive Young Hongdae",
+   "photoQuery": "Hongdae"
+  },
+  {
+   "id": "ch-mukshidonna",
+   "name": "Mukshidonna Hongdae",
+   "lat": 37.5556,
+   "lng": 126.9229,
+   "city": "Seoul",
+   "mapQuery": "Mukshidonna Hongdae",
+   "photoQuery": "Tteokbokki"
+  },
+  {
+   "id": "ch-starferry",
+   "name": "Star Ferry",
+   "lat": 22.2936,
+   "lng": 114.1685,
+   "city": "Hong Kong",
+   "source": "https://www.starferry.com.hk/",
+   "mapQuery": "Star Ferry Pier, Tsim Sha Tsui",
+   "photoQuery": "Star Ferry Hong Kong"
+  },
+  {
+   "id": "ch-symphony",
+   "name": "Symphony of Lights, Avenue of Stars",
+   "lat": 22.2932,
+   "lng": 114.1745,
+   "city": "Hong Kong",
+   "source": "https://en.wikipedia.org/wiki/A_Symphony_of_Lights",
+   "mapQuery": "Avenue of Stars, Tsim Sha Tsui",
+   "photoQuery": "Symphony of Lights Hong Kong"
+  },
+  {
+   "id": "ch-dtf",
+   "name": "Din Tai Fung Tsim Sha Tsui",
+   "lat": 22.3006,
+   "lng": 114.172,
+   "city": "Hong Kong",
+   "mapQuery": "Din Tai Fung, Silvercord, Tsim Sha Tsui",
+   "photoQuery": "Xiaolongbao"
+  },
+  {
+   "id": "ch-australiadairy",
+   "name": "Australia Dairy Company",
+   "lat": 22.3047,
+   "lng": 114.1712,
+   "city": "Hong Kong",
+   "source": "https://en.wikipedia.org/wiki/Australia_Dairy_Company",
+   "mapQuery": "Australia Dairy Company, Jordan",
+   "photoQuery": "Australia Dairy Company"
+  },
+  {
+   "id": "ch-lanfongyuen",
+   "name": "Lan Fong Yuen",
+   "lat": 22.282,
+   "lng": 114.1553,
+   "city": "Hong Kong",
+   "source": "https://en.wikipedia.org/wiki/Hong_Kong–style_milk_tea",
+   "mapQuery": "Lan Fong Yuen, Gage Street",
+   "photoQuery": "Lan Fong Yuen"
+  },
+  {
+   "id": "ch-peak",
+   "name": "Victoria Peak · Sky Terrace 428",
+   "lat": 22.2759,
+   "lng": 114.1455,
+   "city": "Hong Kong",
+   "source": "https://en.wikipedia.org/wiki/Victoria_Peak",
+   "mapQuery": "Sky Terrace 428, The Peak",
+   "photoQuery": "Victoria Peak view harbour"
+  },
+  {
+   "id": "ch-tamar",
+   "name": "Tamar Park",
+   "lat": 22.2808,
+   "lng": 114.1653,
+   "city": "Hong Kong",
+   "source": "https://en.wikipedia.org/wiki/Tamar_Park",
+   "mapQuery": "Tamar Park, Admiralty",
+   "photoQuery": "Tamar Park"
+  },
+  {
+   "id": "ch-elephant",
+   "name": "Elephant Grounds Central",
+   "lat": 22.2812,
+   "lng": 114.1553,
+   "city": "Hong Kong",
+   "mapQuery": "Elephant Grounds, Central",
+   "photoQuery": "Central Hong Kong street"
+  },
+  {
+   "id": "ch-yatlok",
+   "name": "Yat Lok",
+   "lat": 22.2828,
+   "lng": 114.1548,
+   "city": "Hong Kong",
+   "mapQuery": "Yat Lok, 34 Stanley Street, Central",
+   "photoQuery": "Hong Kong roast goose"
+  },
+  {
+   "id": "ch-kaukee",
+   "name": "Kau Kee",
+   "lat": 22.2846,
+   "lng": 114.153,
+   "city": "Hong Kong",
+   "mapQuery": "Kau Kee Restaurant, Gough Street",
+   "photoQuery": "Gough Street Hong Kong"
+  },
+  {
+   "id": "ch-maxims",
+   "name": "Maxim's Palace, City Hall",
+   "lat": 22.2817,
+   "lng": 114.1618,
+   "city": "Hong Kong",
+   "source": "https://en.wikipedia.org/wiki/Hong_Kong_City_Hall",
+   "mapQuery": "Maxim's Palace, City Hall, Central",
+   "photoQuery": "City Hall Hong Kong Edinburgh Place"
+  },
+  {
+   "id": "ch-timhowan",
+   "name": "Tim Ho Wan, Hong Kong Station",
+   "lat": 22.2853,
+   "lng": 114.1583,
+   "city": "Hong Kong",
+   "source": "https://en.wikipedia.org/wiki/Tim_Ho_Wan",
+   "mapQuery": "Tim Ho Wan, Hong Kong Station",
+   "photoQuery": "Tim Ho Wan"
+  },
+  {
+   "id": "ch-wongtaisin",
+   "name": "Wong Tai Sin Temple",
+   "lat": 22.3423,
+   "lng": 114.1935,
+   "city": "Hong Kong",
+   "source": "https://en.wikipedia.org/wiki/Wong_Tai_Sin_Temple_(Hong_Kong)",
+   "mapQuery": "Wong Tai Sin Temple",
+   "photoQuery": "Wong Tai Sin Temple"
+  },
+  {
+   "id": "ch-chilin",
+   "name": "Chi Lin Nunnery & Nan Lian Garden",
+   "lat": 22.3386,
+   "lng": 114.2044,
+   "city": "Hong Kong",
+   "source": "https://en.wikipedia.org/wiki/Chi_Lin_Nunnery",
+   "mapQuery": "Chi Lin Nunnery, Diamond Hill",
+   "photoQuery": "Chi Lin Nunnery"
+  },
+  {
+   "id": "ch-library",
+   "name": "Hong Kong Central Library",
+   "lat": 22.2802,
+   "lng": 114.1897,
+   "city": "Hong Kong",
+   "source": "https://en.wikipedia.org/wiki/Hong_Kong_Central_Library",
+   "mapQuery": "Hong Kong Central Library",
+   "photoQuery": "Hong Kong Central Library"
+  },
+  {
+   "id": "ch-kams",
+   "name": "Kam's Roast Goose",
+   "lat": 22.2775,
+   "lng": 114.172,
+   "city": "Hong Kong",
+   "mapQuery": "Kam's Roast Goose, Hennessy Road, Wan Chai",
+   "photoQuery": "Hong Kong roast goose rice"
+  },
+  {
+   "id": "ch-joyhing",
+   "name": "Joy Hing Roasted Meat",
+   "lat": 22.2772,
+   "lng": 114.1725,
+   "city": "Hong Kong",
+   "mapQuery": "Joy Hing Roasted Meat, Hennessy Road, Wan Chai",
+   "photoQuery": "Char siu rice"
+  },
+  {
+   "id": "ch-taicheong",
+   "name": "Tai Cheong Bakery",
+   "lat": 22.2817,
+   "lng": 114.1547,
+   "city": "Hong Kong",
+   "source": "https://en.wikipedia.org/wiki/Lyndhurst_Terrace",
+   "mapQuery": "Tai Cheong Bakery, Lyndhurst Terrace",
+   "photoQuery": "Hong Kong egg tart"
+  },
+  {
+   "id": "ch-manmo",
+   "name": "Man Mo Temple",
+   "lat": 22.284,
+   "lng": 114.1502,
+   "city": "Hong Kong",
+   "source": "https://en.wikipedia.org/wiki/Man_Mo_temples_in_Hong_Kong",
+   "mapQuery": "Man Mo Temple, Hollywood Road",
+   "photoQuery": "Man Mo Temple Sheung Wan"
+  },
+  {
+   "id": "ch-pmq",
+   "name": "Cat Street & PMQ",
+   "lat": 22.2833,
+   "lng": 114.1516,
+   "city": "Hong Kong",
+   "source": "https://www.pmq.org.hk/",
+   "mapQuery": "PMQ, 35 Aberdeen Street",
+   "photoQuery": "PMQ Hong Kong"
+  },
+  {
+   "id": "ch-taikwun",
+   "name": "Tai Kwun",
+   "lat": 22.2809,
+   "lng": 114.1544,
+   "city": "Hong Kong",
+   "source": "https://www.taikwun.hk/",
+   "mapQuery": "Tai Kwun, 10 Hollywood Road",
+   "photoQuery": "Tai Kwun"
+  },
+  {
+   "id": "ch-linheung",
+   "name": "Lin Heung Kui",
+   "lat": 22.2867,
+   "lng": 114.1512,
+   "city": "Hong Kong",
+   "mapQuery": "Lin Heung Kui, Des Voeux Road West",
+   "photoQuery": "dim sum Hong Kong"
+  },
+  {
+   "id": "ch-oldman",
+   "name": "The Old Man",
+   "lat": 22.283,
+   "lng": 114.1512,
+   "city": "Hong Kong",
+   "mapQuery": "The Old Man, Aberdeen Street, Central",
+   "photoQuery": "Lan Kwai Fong"
+  },
+  {
+   "id": "ch-np360",
+   "name": "Ngong Ping 360",
+   "lat": 22.2896,
+   "lng": 113.9412,
+   "city": "Hong Kong",
+   "source": "https://www.np360.com.hk/",
+   "mapQuery": "Ngong Ping 360 Tung Chung Terminal",
+   "photoQuery": "Ngong Ping 360"
+  },
+  {
+   "id": "ch-bigbuddha",
+   "name": "Tian Tan Buddha",
+   "lat": 22.254,
+   "lng": 113.905,
+   "city": "Hong Kong",
+   "source": "https://en.wikipedia.org/wiki/Tian_Tan_Buddha",
+   "mapQuery": "Tian Tan Buddha, Ngong Ping",
+   "photoQuery": "Tian Tan Buddha"
+  },
+  {
+   "id": "ch-polin",
+   "name": "Po Lin Monastery",
+   "lat": 22.2557,
+   "lng": 113.9078,
+   "city": "Hong Kong",
+   "source": "https://en.wikipedia.org/wiki/Po_Lin_Monastery",
+   "mapQuery": "Po Lin Monastery, Ngong Ping",
+   "photoQuery": "Po Lin Monastery"
+  },
+  {
+   "id": "ch-westk",
+   "name": "West Kowloon Art Park",
+   "lat": 22.3015,
+   "lng": 114.1575,
+   "city": "Hong Kong",
+   "source": "https://www.westk.hk/",
+   "mapQuery": "Art Park, West Kowloon Cultural District",
+   "photoQuery": "West Kowloon Cultural District park"
+  },
+  {
+   "id": "ch-mplus",
+   "name": "M+",
+   "lat": 22.304,
+   "lng": 114.16,
+   "city": "Hong Kong",
+   "source": "https://www.mplus.org.hk/",
+   "mapQuery": "M+, West Kowloon Cultural District",
+   "photoQuery": "M+ museum Hong Kong"
+  },
+  {
+   "id": "ch-mido",
+   "name": "Mido Cafe",
+   "lat": 22.3079,
+   "lng": 114.171,
+   "city": "Hong Kong",
+   "source": "https://en.wikipedia.org/wiki/Mido_Cafe",
+   "mapQuery": "Mido Cafe, Temple Street, Yau Ma Tei",
+   "photoQuery": "Mido Cafe"
+  },
+  {
+   "id": "ch-ozone",
+   "name": "Ozone, Ritz-Carlton ICC",
+   "lat": 22.3033,
+   "lng": 114.1601,
+   "city": "Hong Kong",
+   "source": "https://en.wikipedia.org/wiki/International_Commerce_Centre",
+   "mapQuery": "Ozone, The Ritz-Carlton Hong Kong",
+   "photoQuery": "International Commerce Centre"
+  },
+  {
+   "id": "ch-yeeshun",
+   "name": "Yee Shun Milk Company",
+   "lat": 22.2795,
+   "lng": 114.185,
+   "city": "Hong Kong",
+   "mapQuery": "Yee Shun Milk Company, Causeway Bay",
+   "photoQuery": "Steamed milk pudding"
+  },
+  {
+   "id": "ch-hkpark",
+   "name": "Hong Kong Park",
+   "lat": 22.2775,
+   "lng": 114.1615,
+   "city": "Hong Kong",
+   "source": "https://en.wikipedia.org/wiki/Hong_Kong_Park",
+   "mapQuery": "Hong Kong Park, Central",
+   "photoQuery": "Hong Kong Park"
+  },
+  {
+   "id": "ch-ifchk",
+   "name": "IFC Mall",
+   "lat": 22.2853,
+   "lng": 114.1588,
+   "city": "Hong Kong",
+   "source": "https://www.ifc.com.hk/",
+   "mapQuery": "IFC Mall, Central",
+   "photoQuery": "IFC Mall Hong Kong"
+  }
+ ],
+ "days": [
+  {
+   "id": "jul29",
+   "label": "Wed · Sapporo → Seoul",
+   "date": "Jul 29",
+   "hotel": "ch-myeongdong",
+   "tagline": "Land running. Drop bags in Myeongdong, eat the street, ride the cable car at sunset, finish at Dongdaemun.",
+   "blocks": [
+    {
+     "time": "11 AM",
+     "title": "Fly CTS → ICN · Jeju Air 7C 1502",
+     "text": "JR Rapid from Sapporo to New Chitose (about 36 min) by 9:15 AM. Flight 11 AM – 2:10 PM, about $200. Fill out the Korean arrival card and Q-CODE on the plane.",
+     "stops": [],
+     "mode": "transit",
+     "note": "Buy a T-money card at the ICN convenience store and load ₩30,000. It works on buses, metro, and most taxis all week."
+    },
+    {
+     "time": "2:10 PM",
+     "title": "AREX + Line 4 to Myeongdong",
+     "text": "AREX to Seoul Station (43–60 min), then Line 4 one stop to Myeongdong. About $8. Drop bags at the hotel, home for five nights.",
+     "stops": [
+      "ch-myeongdong"
+     ],
+     "mode": "transit"
+    },
+    {
+     "time": "Late lunch",
+     "title": "Hadongkwan",
+     "text": "Since 1939, one dish: milky beef-bone gomtang with brisket, rice, and kimchi. About $13. Closes 4 PM.",
+     "stops": [
+      "ch-hadongkwan"
+     ],
+     "mode": "walking",
+     "nearby": [
+      {
+       "id": "ch-kyoja",
+       "text": "Michelin Bib kalguksu: hand-cut noodles in rich broth. Order the mandu on the side. About $10."
+      },
+      {
+       "id": "ch-gogung",
+       "text": "Jeonju-style bibimbap in a brass bowl. Light but complete. About $12."
+      }
+     ]
+    },
+    {
+     "time": "3 PM",
+     "title": "Myeongdong street stalls + K-beauty",
+     "text": "Cheese corn dogs, tornado potato, egg bread, and strawberry mochi between skincare flagships. Duck into any 빙수 sign for a mango bingsu. About $25.",
+     "stops": [
+      "ch-mdstreet"
+     ],
+     "mode": "walking",
+     "note": "Buy K-beauty on day one so the tax refund has time to process. Bring your passport.",
+     "nearby": [
+      {
+       "id": "ch-oliveyoung-md",
+       "text": "The Myeongdong flagship has the deepest stock in the country. Tax refund at the till."
+      },
+      {
+       "id": "ch-mimiline",
+       "text": "Korea's largest accessory store: floors of hair clips, earrings, and phone cases at $3–50. Open 9 AM–11 PM, at Myeongdong Exit 6 or 7."
+      },
+      {
+       "id": "ch-stylenanda",
+       "text": "Seven floors of Stylenanda streetwear and 3CE makeup, rooftop café above. $25–120."
+      },
+      {
+       "id": "ch-gwangjang",
+       "text": "Swap: 15 min by metro. Bindaetteok, mayak gimbap, and japchae on plastic stools. About $20."
+      },
+      {
+       "id": "ch-namdaemun",
+       "text": "Swap: 10 min walk. Korea's oldest market, more chaotic than Gwangjang, with a kalguksu alley. About $15."
+      },
+      {
+       "id": "ch-cheonggye",
+       "text": "Swap if jet lag is winning: walk the shaded stream west to Gwanghwamun Square. Free."
+      }
+     ]
+    },
+    {
+     "time": "Dinner",
+     "title": "Mongvely KBBQ Myeongdong",
+     "text": "All-you-can-eat Korean BBQ, about ₩29,000 each plus ₩2,500 for unlimited drinks. Self-grill with endless banchan. About $25.",
+     "stops": [
+      "ch-mongvely"
+     ],
+     "mode": "walking",
+     "note": "Walk-in only. There are two Myeongdong branches a few minutes apart, so check both before queuing.",
+     "nearby": [
+      {
+       "id": "ch-wangbijip",
+       "text": "Premium: staff grill better cuts, English menus. About $45. Walk-in only; go before 6 PM."
+      }
+     ]
+    },
+    {
+     "time": "7:30 PM",
+     "title": "N Seoul Tower: cable car at sunset",
+     "text": "10-min walk to the Namsan cable car (about ₩14,000 return). Sunset is around 7:47 PM. The terrace and love-locks are free; the deck ticket is optional. About $15.",
+     "stops": [
+      "ch-namsan"
+     ],
+     "mode": "walking",
+     "note": "The cable car queue is worst 7–8 PM. Go up a little early and linger."
+    },
+    {
+     "time": "9:30 PM",
+     "title": "Dongdaemun Design Plaza + night market",
+     "text": "Line 4 from Myeongdong, about 12 min. Zaha Hadid's lit silver building, the LED rose field, and night markets that run to dawn. Free, and ideal for night-one jet lag.",
+     "stops": [
+      "ch-ddp"
+     ],
+     "mode": "transit",
+     "nearby": [
+      {
+       "id": "ch-kyochon",
+       "text": "24-hour Korean fried chicken. Honey series for sweet, red series for heat. About $20."
+      },
+      {
+       "id": "ch-ddmsnacks",
+       "text": "Tteokbokki, sundae, and skewers from tent stalls under the flyover. About $8."
+      },
+      {
+       "id": "ch-euljiro",
+       "text": "Or make it an Euljiro night, one stop away: the print district turns into Seoul's densest cluster of hidden bars."
+      },
+      {
+       "id": "ch-nogari",
+       "text": "Hundreds of office workers drinking draft at plastic tables from 7 PM. About $12."
+      },
+      {
+       "id": "ch-ranch",
+       "text": "Door disguised as a red vending machine. Craft beer and Detroit-style pizza. About $16."
+      },
+      {
+       "id": "ch-eulji-brew",
+       "text": "Neon-pink 1980s signage down a tight alley. Local craft and fried chicken. About $16."
+      },
+      {
+       "id": "ch-clique",
+       "text": "Vinyl by day; a listening lounge called The Edge by night."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "jul30",
+   "label": "Thu · Seoul",
+   "date": "Jul 30",
+   "hotel": "ch-myeongdong",
+   "tagline": "Colour, cut, Hongdae. Booked colour analysis in Mapo, Garosu-gil and a haircut, then a hanwoo dinner, the shopping street, and karaoke.",
+   "blocks": [
+    {
+     "time": "8 AM",
+     "title": "Breakfast: LUCKY SEOUL",
+     "text": "Just east of Myeongdong toward Euljiro, about 15 min on foot. About $12. Leave by 8:50 AM.",
+     "stops": [
+      "ch-lucky"
+     ],
+     "mode": "walking"
+    },
+    {
+     "time": "9:30 AM",
+     "title": "Personal Color Analysis: Vic's Lab Korea",
+     "text": "Booked [1:2] Signature Color Analysis for two. About an hour of fabric draping under daylight, then a palette report. Line 4 → 6 to Mangwon, about 30 min. Pay the balance in cash or by card via EXIMLink.",
+     "stops": [
+      "ch-vicslab"
+     ],
+     "mode": "transit",
+     "note": "Arrive 10 min early; 20+ min late is a no-refund cancellation. No coloured makeup or contacts, and wear an open collar."
+    },
+    {
+     "time": "12:30 PM",
+     "title": "Lunch + Garosu-gil",
+     "text": "Line 6 → 3 to Sinsa, about 40 min. A ginkgo-lined street of independent Korean labels, concept stores, and coffee. Lunch at a small concept kitchen, or a grilled-pork set for about ₩13,000. Free to browse.",
+     "stops": [
+      "ch-garosu"
+     ],
+     "mode": "transit",
+     "note": "Korean sizes run about one step small. Tax-free over ₩30,000 with your passport.",
+     "nearby": [
+      {
+       "id": "ch-gentlemonster",
+       "text": "The eyewear flagship is an art installation. Next to Tamburins and Nudake in Haus Dosan."
+      },
+      {
+       "id": "ch-nonfiction",
+       "text": "Minimalist Korean fragrance. Gentle Night and Santal Cream are the favourites. About $40."
+      },
+      {
+       "id": "ch-tamburins",
+       "text": "Hand creams and perfumes in a gallery-like flagship. About $45."
+      },
+      {
+       "id": "ch-moma",
+       "text": "MoMA's first standalone store outside its museums, opened 2025 on Dosan Park."
+      },
+      {
+       "id": "ch-knotted",
+       "text": "Sugar stop: cult cream donuts with the smiley mascot. About $10."
+      }
+     ]
+    },
+    {
+     "time": "3 PM",
+     "title": "Haircut: JUNO Hair",
+     "text": "Apgujeong salons have English-speaking stylists. Expect a long consultation, scalp wash, and blow-dry included. $35–90.",
+     "stops": [
+      "ch-juno"
+     ],
+     "mode": "walking",
+     "note": "Book ahead and ask for an English consultation. Bring reference photos. No tipping."
+    },
+    {
+     "time": "4:45 PM",
+     "title": "Back to the hotel to drop the haul",
+     "text": "Taxi (about ₩20,000) or Line 3 to Myeongdong. Dump the shopping, change, and be out by 5:45 PM.",
+     "stops": [
+      "ch-myeongdong"
+     ],
+     "mode": "driving"
+    },
+    {
+     "time": "6:30 PM",
+     "title": "Dinner: Yookmian Yeonnam",
+     "text": "Line 2 to Hongik Univ, about 30 min. Grade 1++ hanwoo upstairs in a Yeonnam alley. Order the bon-galbi, the yukhoe, and the truffle galbi rice. About $45.",
+     "stops": [
+      "ch-yookmian"
+     ],
+     "mode": "transit",
+     "note": "Book ahead on CatchTable or their Instagram.",
+     "nearby": [
+      {
+       "id": "ch-craftbros",
+       "text": "A drink after: twelve rotating taps and a garden terrace. About $12."
+      },
+      {
+       "id": "ch-hobar",
+       "text": "₩2,000 draft over three rowdy floors since the 1990s. About $8."
+      },
+      {
+       "id": "ch-sulbing",
+       "text": "Fruit bingsu, open late and air-conditioned. About $16."
+      }
+     ]
+    },
+    {
+     "time": "8:30 PM",
+     "title": "Hongdae shopping street",
+     "text": "About a kilometre of accessory megastores, K-beauty, streetwear, and photo booths out of Hongik Univ Exits 8 and 9. Free to browse.",
+     "stops": [
+      "ch-hss"
+     ],
+     "mode": "walking",
+     "note": "Shops close around 10–11 PM. Hit Sigonggan and the accessory stores first.",
+     "nearby": [
+      {
+       "id": "ch-sigonggan",
+       "text": "Walls of earrings, rings, and hair clips; calm and organised. Best branches: 93 Wausan-ro and 7 Yanghwa-ro 18-gil. $5–40."
+      },
+      {
+       "id": "ch-hdvintage",
+       "text": "Y2K, 90s sportswear, and Japanese brands. The best vintage in Seoul. $10–80."
+      },
+      {
+       "id": "ch-artbox",
+       "text": "Five floors of stationery, stickers, and character goods. $3–30."
+      },
+      {
+       "id": "ch-kakao",
+       "text": "Four floors of Ryan and Apeach goods. Easy gift buying. $5–60."
+      },
+      {
+       "id": "ch-object",
+       "text": "Independent Korean artists' prints, ceramics, and notebooks. $5–60."
+      }
+     ]
+    },
+    {
+     "time": "10:30 PM",
+     "title": "Soo Karaoke Club Hongdae",
+     "text": "The luxury branch: a two-storey suite with floor-to-ceiling windows over the Hongdae street. Charged by the hour. About $25.",
+     "stops": [
+      "ch-karaoke"
+     ],
+     "mode": "walking",
+     "note": "Ask for the two-floor room (2층 룸). Line 2 runs until about 12:30 AM; after that a taxi home is about ₩16,000."
+    }
+   ]
+  },
+  {
+   "id": "jul31",
+   "label": "Fri · Seoul",
+   "date": "Jul 31",
+   "hotel": "ch-myeongdong",
+   "tagline": "Hanbok, palace, river. Booked photo shoot at 9, palaces in costume, a facial, The Hyundai, the booked Hangang cruise at 7, then Ikseon-dong.",
+   "blocks": [
+    {
+     "time": "Breakfast",
+     "title": "Sundubu jjigae, Jongno",
+     "text": "Bubbling soft-tofu stew with an egg cracked in, rice, and banchan. About $9 and 30 g of protein. Look for 순두부 signs between Jonggak and Anguk.",
+     "stops": [
+      "ch-sundubu"
+     ],
+     "mode": "transit",
+     "nearby": [
+      {
+       "id": "ch-onion",
+       "text": "A century-old hanok bakery three minutes from the studio, open from 8 AM. Get the pandoro. About $12."
+      }
+     ]
+    },
+    {
+     "time": "9 AM",
+     "title": "Seoul Hanbok Photo Shooting",
+     "text": "Booked and prepaid. Hanbok fitting, hair, and accessories, then the shoot; edited files arrive later. Allow the full hour.",
+     "stops": [
+      "ch-hanbokshoot"
+     ],
+     "mode": "walking",
+     "note": "Keep the hanbok on: it gets you into all four royal palaces free. Wear simple walking shoes."
+    },
+    {
+     "time": "10:30 AM",
+     "title": "Gyeongbokgung Palace",
+     "text": "The largest Joseon palace: Geunjeongjeon hall and the Gyeonghoeru pond pavilion. Free in hanbok. Guard changes at 10 AM and 2 PM.",
+     "stops": [
+      "ch-gyeongbok"
+     ],
+     "mode": "walking",
+     "note": "Head to the back half first. The pond pavilion is usually empty before 11 AM."
+    },
+    {
+     "time": "11:45 AM",
+     "title": "Bukchon Hanok Village",
+     "text": "Lived-in hanok lanes between the palaces. Walk up Bukchon-ro 11-gil for the roofline view. Free.",
+     "stops": [
+      "ch-bukchon"
+     ],
+     "mode": "walking",
+     "note": "Residents ask for quiet. Keep voices down and don't photograph doorways."
+    },
+    {
+     "time": "Lunch",
+     "title": "Tosokchon Samgyetang",
+     "text": "A whole young chicken stuffed with rice, ginseng, and jujube in milky broth. What Koreans eat in the hottest weeks. About $18.",
+     "stops": [
+      "ch-tosokchon"
+     ],
+     "mode": "walking",
+     "nearby": [
+      {
+       "id": "ch-sanchon",
+       "text": "Multi-course Buddhist temple food from a former monk. Vegetarian. About $30."
+      },
+      {
+       "id": "ch-galbitang",
+       "text": "Clear beef short-rib soup, very protein-dense. About $16."
+      }
+     ]
+    },
+    {
+     "time": "2 PM",
+     "title": "K-beauty hour: gel nails",
+     "text": "Korean nail art at half US prices: ₩35,000 for gel, ₩45,000–70,000 with art, about ₩70,000 mani + pedi. 60–90 min. $25–55.",
+     "stops": [
+      "ch-nails"
+     ],
+     "mode": "walking",
+     "note": "Reservation only; book 2–3 days ahead on KBeautySeoul or Creatrip. Return the hanbok first.",
+     "nearby": [
+      {
+       "id": "ch-facial",
+       "text": "Skin-care shop facial: cleanse, steam, extractions, long massage, mask, and LED. ₩50,000–90,000."
+      },
+      {
+       "id": "ch-headspa",
+       "text": "Head spa: scalp diagnosis, steam, and a long massage, from about ₩60,000. Same chain as the haircut."
+      },
+      {
+       "id": "ch-dragonhill",
+       "text": "Jjimjilbang plus seshin body scrub: ₩15,000 entry and about ₩30,000 for the scrub. On the way to Yeouido."
+      },
+      {
+       "id": "ch-samcheongbingsu",
+       "text": "Afternoon sweet: old-style patbingsu in a Samcheong-dong hanok café. About $14."
+      }
+     ]
+    },
+    {
+     "time": "4:30 PM",
+     "title": "The Hyundai Seoul",
+     "text": "Line 3 → 9 to Yeouido, about 35 min. An indoor forest under a glass roof, every Korean designer label, and a destination B1 food hall. Twelve minutes' walk to the pier.",
+     "stops": [
+      "ch-hyundai"
+     ],
+     "mode": "transit",
+     "note": "Tax refund desk on the ground floor; bring your passport. Free lockers near the information desk.",
+     "nearby": [
+      {
+       "id": "ch-ifc",
+       "text": "Early-dinner backup if the food hall is heaving: Korean and international sit-downs. About $20."
+      },
+      {
+       "id": "ch-riverpocha",
+       "text": "Riverside tents for chicken and beer, plus the Friday Bamdokkaebi Night Market (6–11 PM, 100+ food trucks). About $15."
+      }
+     ]
+    },
+    {
+     "time": "7 PM",
+     "title": "Eland Hangang River Cruise",
+     "text": "Booked and prepaid, confirmation EWZ727421. An hour on the water from Yeouido pier, casting off in gold light (sunset 7:45 PM) and returning under lit bridges.",
+     "stops": [
+      "ch-cruise"
+     ],
+     "mode": "walking",
+     "note": "Board 15 min early. Take the upper open deck, port side heading out."
+    },
+    {
+     "time": "9 PM",
+     "title": "Ikseon-dong alleys",
+     "text": "Line 5 to Jongno 3-ga, about 25 min. 1920s hanok alleys full of tiny bars and kitchens, strung with lights. Free.",
+     "stops": [
+      "ch-ikseon"
+     ],
+     "mode": "transit"
+    },
+    {
+     "time": "9:15 PM",
+     "title": "Dinner: Damsot Ikseon",
+     "text": "Modern hanok dolsot: stone-pot rice with a crisp crust, grilled meats, and stews. About $25.",
+     "stops": [
+      "ch-damsot"
+     ],
+     "mode": "walking",
+     "note": "No reservations; the Friday queue moves in about 20 min. Put your name down and wander.",
+     "nearby": [
+      {
+       "id": "ch-sikmul",
+       "text": "The plant-filled hanok that started Ikseon. Makgeolli in an open courtyard. About $18."
+      },
+      {
+       "id": "ch-artmonster",
+       "text": "Craft brewery taproom in a hanok, louder and more social. About $15."
+      },
+      {
+       "id": "ch-seosulla",
+       "text": "Quieter alley of wine bars along the Jongmyo Shrine wall, five minutes away. Jongno 3-ga Exit 7."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "aug1",
+   "label": "Sat · Seoul",
+   "date": "Aug 1",
+   "hotel": "ch-myeongdong",
+   "tagline": "Sisters day. Held open, the day is theirs. Converge on Seongsu for galbi and a rooftop cocktail, then a night walk through Seoul Forest.",
+   "blocks": [
+    {
+     "time": "All day",
+     "title": "Sisters activities",
+     "text": "Held open on purpose. Spend the day however the group likes, then meet in Seongsu.",
+     "stops": [],
+     "mode": "walking"
+    },
+    {
+     "time": "6:45 PM",
+     "title": "Dinner: Daesung Galbi",
+     "text": "The grill house that started Seongsu's galbi alley: charcoal-grilled marinated pork short rib. Add doenjang-jjigae and fried rice in the pan. About $30.",
+     "stops": [
+      "ch-daesung"
+     ],
+     "mode": "transit",
+     "note": "If there's a queue, any grill house in the alley between Ttukseom and Seoul Forest stations will do.",
+     "nearby": [
+      {
+       "id": "ch-maestro",
+       "text": "Rooftop over Seoul Forest with live jazz Saturday 8:30–10:30 PM. About $18."
+      },
+      {
+       "id": "ch-cinderella",
+       "text": "Speakeasy behind a shoemaker's door; cocktails served in glass heels. About $16."
+      },
+      {
+       "id": "ch-storage",
+       "text": "Prohibition-style bar through a cheese shop. A few doors from Cinderella. About $16."
+      }
+     ]
+    },
+    {
+     "time": "8 PM",
+     "title": "Seoul Forest: night walk",
+     "text": "Lit woodland paths, the mirror pond, and a pedestrian bridge over the Han. Free and about ten degrees cooler than the streets.",
+     "stops": [
+      "ch-seoulforest"
+     ],
+     "mode": "walking",
+     "note": "Walk out onto the Han River viewing bridge at the north end. Park drinking is legal; grab beers at the entrance."
+    }
+   ]
+  },
+  {
+   "id": "aug2",
+   "label": "Sun · Seoul",
+   "date": "Aug 2",
+   "hotel": "ch-myeongdong",
+   "tagline": "Mountain garden, then the good bars. Gapyeong's Garden of Morning Calm, back for Starfield, the casino, a booked grill dinner, and Alice Cheongdam.",
+   "blocks": [
+    {
+     "time": "7:45 AM",
+     "title": "Garden of Morning Calm",
+     "text": "Korea's oldest private garden, high in the Gapyeong mountains. ITX-Cheongchun from Cheongnyangni to Cheongpyeong (about 1 hr), then the tour bus or a ₩18,000 taxi. Entry ₩11,000. Spend 3–4 hours.",
+     "stops": [
+      "ch-morningcalm"
+     ],
+     "mode": "transit",
+     "note": "Buy the ITX ticket the day before on Korail or Klook. Build a GS25 picnic for lunch; food up there is thin."
+    },
+    {
+     "time": "5 PM",
+     "title": "Starfield Library (COEX)",
+     "text": "Back via ITX and Line 2 to Samseong, about 1 hr 45 min. Thirteen-metre bookshelves with 50,000 books in the COEX atrium. Free.",
+     "stops": [
+      "ch-starfield"
+     ],
+     "mode": "transit",
+     "note": "The free Hangang River Festival runs Aug 1–16 with riverside films and concerts if an evening opens up."
+    },
+    {
+     "time": "5:40 PM",
+     "title": "Seven Luck Casino",
+     "text": "Foreigners-only casino two minutes from the library: blackjack and baccarat with English-speaking dealers. Free entry. Bring about $50.",
+     "stops": [
+      "ch-sevenluck"
+     ],
+     "mode": "walking",
+     "note": "Passport required, no exceptions. Leave by 6:45 PM."
+    },
+    {
+     "time": "7 PM",
+     "title": "Dinner: Hwayeon Sanjang",
+     "text": "Booked for two. A mountain-lodge grill house cooking hanwoo and pork over straw smoke, then charcoal. About $45. Apgujeong Rodeo Exit 4, a 10-min taxi from COEX.",
+     "stops": [
+      "ch-hwayeon"
+     ],
+     "mode": "driving"
+    },
+    {
+     "time": "8:30 PM",
+     "title": "Alice Cheongdam",
+     "text": "Booked. A flower-shop door into a Wonderland-themed room; theatrical drinks with smoke and dry ice. An Asia's 50 Best regular. About $35.",
+     "stops": [
+      "ch-alice"
+     ],
+     "mode": "walking",
+     "note": "Don't be late. Smart casual; no shorts or sandals.",
+     "nearby": [
+      {
+       "id": "ch-lechamber",
+       "text": "Behind a bookcase door: a leather-and-brass room with impeccable classics. About $30."
+      },
+      {
+       "id": "ch-rodeo",
+       "text": "The lively young strip around Apgujeong Rodeo, 10–15 min walk. Free."
+      },
+      {
+       "id": "ch-jamwon",
+       "text": "Picnic mats, fried chicken, and buskers by the Han. A 10-min taxi south. About $8."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "aug3",
+   "label": "Mon · Seoul → Incheon",
+   "date": "Aug 3",
+   "hotel": "ch-ninebrick",
+   "start": "ch-myeongdong",
+   "tagline": "Move hotels, then the beach. Bags to Nine Brick, swim at Eurwangni, ride the retro pier at Wolmido, and eat jjajangmyeon where it was invented.",
+   "blocks": [
+    {
+     "time": "7:15 AM",
+     "title": "Check out: Myeongdong New Stay Inn",
+     "text": "Out the door by 7:15 AM. Pack a day bag with swimwear, towel, and sunscreen before sealing the suitcases.",
+     "stops": [
+      "ch-myeongdong"
+     ],
+     "mode": "walking"
+    },
+    {
+     "time": "7:50 AM",
+     "title": "Drop bags: Nine Brick Hotel",
+     "text": "Line 2 to Hongik Univ, Exit 9, then 6 min on foot. Ask reception to hold the luggage (짐 좀 맡길 수 있을까요?). Free.",
+     "stops": [
+      "ch-ninebrick"
+     ],
+     "mode": "transit",
+     "nearby": [
+      {
+       "id": "ch-eggdrop",
+       "text": "Breakfast by the station: soft egg in brioche, about 25 g of protein. About $7."
+      },
+      {
+       "id": "ch-isaac",
+       "text": "Extra egg, extra ham, eaten on the AREX. About $8."
+      }
+     ]
+    },
+    {
+     "time": "9:30 AM",
+     "title": "Eurwangni Beach",
+     "text": "AREX to Incheon Airport T1, then bus 306 or a taxi, about 1 hr 15 min. A shallow bay with 24–25°C water. Parasol + two loungers about ₩30,000.",
+     "stops": [
+      "ch-eurwangni"
+     ],
+     "mode": "transit",
+     "note": "Swim within two hours of high tide; low tide exposes long flats. Bring your own lunch: the strip is mostly shellfish grills."
+    },
+    {
+     "time": "5:30 PM",
+     "title": "Wolmi Theme Park",
+     "text": "Taxi over the bridge, about 45 min and ₩30,000. Three unmodernised 1980s amusement parks, pay per ride. Do Disco Pang Pang (about ₩5,000) and My Land's Viking. About $15.",
+     "stops": [
+      "ch-wolmi"
+     ],
+     "mode": "driving",
+     "note": "The Disco Pang Pang DJ will single out foreigners. Sit in the middle to survive."
+    },
+    {
+     "time": "6:45 PM",
+     "title": "Wolmi Sea Train",
+     "text": "A 6.1 km elevated monorail loop around Wolmido, 42 min, over the port and the Yellow Sea. About $7.",
+     "stops": [
+      "ch-seatrain"
+     ],
+     "mode": "walking",
+     "note": "Time it for the 7:45 PM sunset and sit on the seaward side."
+    },
+    {
+     "time": "7:45 PM",
+     "title": "Dinner: Incheon Chinatown",
+     "text": "Where jjajangmyeon was invented in 1905. Order jjajangmyeon plus tangsuyuk to share. About $14.",
+     "stops": [
+      "ch-chinatown"
+     ],
+     "mode": "driving",
+     "note": "Skip jjamppong (the seafood one). Gonghwachun is the historic name."
+    },
+    {
+     "time": "9:15 PM",
+     "title": "Check in: Nine Brick Hotel",
+     "text": "Line 1 → AREX to Hongik Univ, about 60 min. Collect the bags and check in.",
+     "stops": [
+      "ch-ninebrick"
+     ],
+     "mode": "transit"
+    }
+   ]
+  },
+  {
+   "id": "aug4",
+   "label": "Tue · Last Seoul morning",
+   "date": "Aug 4",
+   "hotel": "ch-ninebrick",
+   "tagline": "One last Hongdae morning, then out. The Yeonnam park walk, the last of the shopping street, a final lunch, then AREX to the 3:15 to Hong Kong.",
+   "blocks": [
+    {
+     "time": "Breakfast",
+     "title": "Egg Drop Hongdae",
+     "text": "Butter-braised egg on brioche in four minutes. About $7, two minutes from the hotel.",
+     "stops": [
+      "ch-eggdrop"
+     ],
+     "mode": "walking",
+     "nearby": [
+      {
+       "id": "ch-anthracite",
+       "text": "A converted shoe factory with the neighbourhood's best pour-over. About $8."
+      }
+     ]
+    },
+    {
+     "time": "9 AM",
+     "title": "Gyeongui Line Forest Park",
+     "text": "A green ribbon over the old rail line, north through Yeonnam (\"Yeontral Park\"). Lawns, old rails, and cafés. Free.",
+     "stops": [
+      "ch-gyeongui"
+     ],
+     "mode": "walking",
+     "note": "Start at Hongik Univ Exit 3 and walk north. Coolest before 10:30 AM.",
+     "nearby": [
+      {
+       "id": "ch-hss",
+       "text": "One more quiet pass of the shopping street before noon."
+      },
+      {
+       "id": "ch-object",
+       "text": "The best last-minute gift shopping in the city."
+      },
+      {
+       "id": "ch-roofcat",
+       "text": "The biggest, best-kept cat café in Hongdae, drinks included. About $12."
+      }
+     ]
+    },
+    {
+     "time": "10:30 AM",
+     "title": "Olive Young Hongdae",
+     "text": "Last K-beauty run: sunscreens, sheet masks, and cushion compacts. Tax-free over ₩30,000 with a passport. About $60.",
+     "stops": [
+      "ch-oliveyoung-hd"
+     ],
+     "mode": "walking",
+     "note": "Buy Korean sunscreen even if nothing else. Hong Kong in August will test it."
+    },
+    {
+     "time": "11 AM",
+     "title": "Check out: Nine Brick",
+     "text": "Leave the bags at reception until about 12:20 PM. Repack the carry-on now: liquids, tax-refund receipts, and fragile buys.",
+     "stops": [
+      "ch-ninebrick"
+     ],
+     "mode": "walking"
+    },
+    {
+     "time": "Lunch",
+     "title": "Mukshidonna Tteokbokki",
+     "text": "Cook-at-your-table tteokbokki with ramen and cheese, then fried rice in the pan. About $12.",
+     "stops": [
+      "ch-mukshidonna"
+     ],
+     "mode": "walking"
+    },
+    {
+     "time": "12:30 PM",
+     "title": "AREX to Incheon → 3:15 PM to Hong Kong",
+     "text": "All-stop AREX from Hongik Univ to ICN T1, about 55 min and ₩4,750 (the Express doesn't stop here). Be at the airport by 1:30 PM. Flight about $230, landing 5:55 PM local.",
+     "stops": [],
+     "mode": "transit",
+     "note": "Process VAT refunds at the ICN kiosks before security; allow 20 min."
+    }
+   ]
+  },
+  {
+   "id": "aug4hk",
+   "label": "Tue · Hong Kong arrival",
+   "date": "Aug 4",
+   "hotel": "ch-fourseasons",
+   "tagline": "Land, settle, dinner with Milo. Airport Express to the Four Seasons, then the Star Ferry, the 8 PM light show, and dinner.",
+   "blocks": [
+    {
+     "time": "5:55 PM",
+     "title": "Airport Express to the Four Seasons",
+     "text": "24 min to Hong Kong Station, directly beneath the hotel. About $13. Showered by about 6:45 PM.",
+     "stops": [
+      "ch-fourseasons"
+     ],
+     "mode": "transit",
+     "note": "Buy an Octopus card at the airport station. Remember the in-town check-in at Hong Kong Station for Sunday."
+    },
+    {
+     "time": "7:15 PM",
+     "title": "Star Ferry to Tsim Sha Tsui",
+     "text": "Ten minutes on the old green ferry as the skyline lights up, for about 50 cents.",
+     "stops": [
+      "ch-starferry"
+     ],
+     "mode": "walking",
+     "note": "Upper deck, right-hand side heading to Kowloon."
+    },
+    {
+     "time": "8 PM",
+     "title": "Symphony of Lights",
+     "text": "A ten-minute light-and-sound show across 40+ towers, two minutes from the ferry. Free.",
+     "stops": [
+      "ch-symphony"
+     ],
+     "mode": "walking"
+    },
+    {
+     "time": "8:30 PM",
+     "title": "Dinner with Milo: Din Tai Fung",
+     "text": "Xiao long bao, pork buns, and greens. Reliable and seafood-free. About $22.",
+     "stops": [
+      "ch-dtf"
+     ],
+     "mode": "walking",
+     "nearby": [
+      {
+       "id": "ch-australiadairy",
+       "text": "Hong Kong's most famous cha chaan teng: scrambled-egg toast, milk pudding, breakneck service. About $10."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "aug5",
+   "label": "Wed · Hong Kong",
+   "date": "Aug 5",
+   "hotel": "ch-fourseasons",
+   "tagline": "The Peak in the morning, the harbour lawn all afternoon. Peak Tram early, then Tamar Park with the skyline in front of you, dinner with Milo.",
+   "blocks": [
+    {
+     "time": "Breakfast",
+     "title": "Lan Fong Yuen",
+     "text": "The cha chaan teng that invented silk-stocking milk tea, five minutes uphill. Add scrambled-egg-and-ham toast. Opens at 7. About $8.",
+     "stops": [
+      "ch-lanfongyuen"
+     ],
+     "mode": "walking"
+    },
+    {
+     "time": "8:30 AM",
+     "title": "Victoria Peak",
+     "text": "Ride the Peak Tram first thing, before queues and haze, to Sky Terrace 428. About $11.",
+     "stops": [
+      "ch-peak"
+     ],
+     "mode": "transit",
+     "note": "Walk the flat Lugard Road loop for the same view, free and empty."
+    },
+    {
+     "time": "1 PM",
+     "title": "Tamar Park: work on the lawn",
+     "text": "Harbourfront lawn with the Kowloon skyline in front and free public wifi. Ten minutes from the hotel. Free.",
+     "stops": [
+      "ch-tamar"
+     ],
+     "mode": "transit",
+     "nearby": [
+      {
+       "id": "ch-elephant",
+       "text": "Rain or heat backup in Central: roomy, air-conditioned, plenty of sockets."
+      }
+     ]
+    },
+    {
+     "time": "Dinner",
+     "title": "Dinner with Milo: Yat Lok",
+     "text": "Michelin roast goose over rice with plum sauce. Cramped, quick, and legendary. About $15.",
+     "stops": [
+      "ch-yatlok"
+     ],
+     "mode": "walking",
+     "nearby": [
+      {
+       "id": "ch-kaukee",
+       "text": "Cult beef brisket noodles in rich broth. Worth the queue. About $10."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "aug6",
+   "label": "Thu · Hong Kong",
+   "date": "Aug 6",
+   "hotel": "ch-fourseasons",
+   "tagline": "Temples in the morning, the library all afternoon. Wong Tai Sin, Chi Lin, and Nan Lian, then a head-down block at the Central Library.",
+   "blocks": [
+    {
+     "time": "Breakfast",
+     "title": "Maxim's Palace, City Hall",
+     "text": "Trolley dim sum in a chandeliered ballroom over the harbour. Char siu bao, beef balls, lo mai gai, and beef cheung fun. About $18.",
+     "stops": [
+      "ch-maxims"
+     ],
+     "mode": "walking",
+     "note": "Skip the har gow and siu mai to avoid shrimp.",
+     "nearby": [
+      {
+       "id": "ch-timhowan",
+       "text": "The famous cheap-Michelin dim sum. Get the baked BBQ pork buns. About $12."
+      }
+     ]
+    },
+    {
+     "time": "9:30 AM",
+     "title": "Wong Tai Sin Temple",
+     "text": "The city's most vibrant working temple: incense, red-and-gold pillars, and fortune sticks. Try a kau chim reading. 20 min by MTR. Free.",
+     "stops": [
+      "ch-wongtaisin"
+     ],
+     "mode": "transit"
+    },
+    {
+     "time": "11 AM",
+     "title": "Chi Lin Nunnery & Nan Lian Garden",
+     "text": "One stop on: a Tang-style wooden complex built without nails, beside a classical garden with a golden pavilion. Free.",
+     "stops": [
+      "ch-chilin"
+     ],
+     "mode": "transit",
+     "note": "Nan Lian's teahouse is a calm work spot, and its vegetarian restaurant does lunch."
+    },
+    {
+     "time": "2 PM",
+     "title": "Hong Kong Central Library",
+     "text": "Free, silent, enormous desks, and deep air-con across ten floors. The week's best head-down block.",
+     "stops": [
+      "ch-library"
+     ],
+     "mode": "transit"
+    },
+    {
+     "time": "Dinner",
+     "title": "Dinner with Milo: Kam's Roast Goose",
+     "text": "Michelin roast goose, char siu, and soy chicken. About $18.",
+     "stops": [
+      "ch-kams"
+     ],
+     "mode": "transit",
+     "note": "Book ahead or arrive early.",
+     "nearby": [
+      {
+       "id": "ch-joyhing",
+       "text": "A century-old char siu counter: honey-glazed pork over rice, always packed. About $10."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "aug7",
+   "label": "Fri · Hong Kong",
+   "date": "Aug 7",
+   "hotel": "ch-fourseasons",
+   "tagline": "Old-town lanes, then a courtyard to work in. Man Mo, Cat Street, and PMQ on foot, the afternoon at Tai Kwun, dinner with Milo.",
+   "blocks": [
+    {
+     "time": "Breakfast",
+     "title": "Tai Cheong Bakery",
+     "text": "Warm egg tarts in flaky pastry, beside the Mid-Levels Escalator. About $5. Pair it with a cha chaan teng set.",
+     "stops": [
+      "ch-taicheong"
+     ],
+     "mode": "walking"
+    },
+    {
+     "time": "10 AM",
+     "title": "Man Mo Temple",
+     "text": "A 150-year-old temple hung with giant incense coils. Ten minutes uphill from the hotel. Free.",
+     "stops": [
+      "ch-manmo"
+     ],
+     "mode": "walking"
+    },
+    {
+     "time": "11:15 AM",
+     "title": "Cat Street, Hollywood Road & PMQ",
+     "text": "Antique stalls, galleries, and street art, then PMQ's independent design studios in old police quarters. Ride the escalator down after.",
+     "stops": [
+      "ch-pmq"
+     ],
+     "mode": "walking"
+    },
+    {
+     "time": "1:30 PM",
+     "title": "Tai Kwun: courtyard cafés",
+     "text": "The restored Central Police Station: air-conditioned cafés with power plus shaded courtyard tables. Free entry.",
+     "stops": [
+      "ch-taikwun"
+     ],
+     "mode": "walking"
+    },
+    {
+     "time": "Dinner",
+     "title": "Dinner with Milo: Lin Heung Kui",
+     "text": "Old-school trolleys and clay-pot rice in a chaotic tea house. About $18.",
+     "stops": [
+      "ch-linheung"
+     ],
+     "mode": "walking",
+     "nearby": [
+      {
+       "id": "ch-dtf",
+       "text": "Soup dumplings and cold beer, if you want something easy."
+      }
+     ]
+    },
+    {
+     "time": "9:30 PM",
+     "title": "The Old Man",
+     "text": "Optional solo night: Hemingway-themed cocktails at one of Asia's best bars, with counter seating. About $20.",
+     "stops": [
+      "ch-oldman"
+     ],
+     "mode": "walking",
+     "note": "Lan Kwai Fong is two minutes up the hill for the loud version."
+    }
+   ]
+  },
+  {
+   "id": "aug8",
+   "label": "Sat · Lantau",
+   "date": "Aug 8",
+   "hotel": "ch-fourseasons",
+   "tagline": "Solo: cable car to the Big Buddha. Ngong Ping 360, the Tian Tan Buddha, Po Lin's vegetarian lunch, then West Kowloon at golden hour.",
+   "blocks": [
+    {
+     "time": "10 AM",
+     "title": "Ngong Ping 360 cable car",
+     "text": "Tung Chung line, 30 min from the hotel, then a 25-min glide over sea and hills. About $30. Crystal Cabin has a glass floor.",
+     "stops": [
+      "ch-np360"
+     ],
+     "mode": "transit",
+     "note": "Buy tickets online. Eat breakfast first; there is little on Lantau until the monastery."
+    },
+    {
+     "time": "11:15 AM",
+     "title": "Tian Tan Buddha",
+     "text": "A 34 m bronze Buddha up 268 steps, with 360° views. Free.",
+     "stops": [
+      "ch-bigbuddha"
+     ],
+     "mode": "walking"
+    },
+    {
+     "time": "12:30 PM",
+     "title": "Po Lin Monastery: vegetarian lunch",
+     "text": "Braised mushrooms, tofu, greens, and mock dishes, meat- and seafood-free. About $12.",
+     "stops": [
+      "ch-polin"
+     ],
+     "mode": "walking",
+     "note": "Leave Ngong Ping by 3:45 PM; the Saturday cable car queue down can run 30 min."
+    },
+    {
+     "time": "5 PM",
+     "title": "West Kowloon Art Park",
+     "text": "Tung Chung line to Kowloon, about 50 min. A huge harbourfront lawn at golden hour, with free wifi. Free.",
+     "stops": [
+      "ch-westk"
+     ],
+     "mode": "transit",
+     "nearby": [
+      {
+       "id": "ch-mplus",
+       "text": "Roof, air-con, and a terrace café right on the lawn."
+      }
+     ]
+    },
+    {
+     "time": "Dinner",
+     "title": "Mido Cafe",
+     "text": "A 1950s cha chaan teng with tiled walls: baked pork-chop rice and milk tea. Easy solo. About $12.",
+     "stops": [
+      "ch-mido"
+     ],
+     "mode": "transit",
+     "nearby": [
+      {
+       "id": "ch-timhowan",
+       "text": "The world's cheapest Michelin star; tick a card and eat the baked pork buns. About $13."
+      }
+     ]
+    },
+    {
+     "time": "9:30 PM",
+     "title": "Ozone at the ICC",
+     "text": "A solo cocktail on the 118th floor, the world's highest bar. Smart casual. About $25.",
+     "stops": [
+      "ch-ozone"
+     ],
+     "mode": "transit"
+    }
+   ]
+  },
+  {
+   "id": "aug9",
+   "label": "Sun · Fly home",
+   "date": "Aug 9",
+   "hotel": "ch-fourseasons",
+   "tagline": "A green hour, a last work session, then the 7 PM flight. Hong Kong Park, bags checked downstairs, a last coffee at the IFC, and the Airport Express.",
+   "blocks": [
+    {
+     "time": "Breakfast",
+     "title": "Maxim's Palace, City Hall",
+     "text": "If you skipped it Thursday, trolley dim sum is the right last meal. About $18.",
+     "stops": [
+      "ch-maxims"
+     ],
+     "mode": "walking",
+     "note": "Check your bags first at the Airport Express in-town desk under the hotel.",
+     "nearby": [
+      {
+       "id": "ch-linheung",
+       "text": "The scruffier, more chaotic trolley version. About $15."
+      },
+      {
+       "id": "ch-yeeshun",
+       "text": "Lighter: warm double-boiled milk pudding and a bun. About $6."
+      }
+     ]
+    },
+    {
+     "time": "10:30 AM",
+     "title": "Hong Kong Park",
+     "text": "Walk-through aviary, koi ponds, a conservatory, and the Flagstaff House tea museum. Free.",
+     "stops": [
+      "ch-hkpark"
+     ],
+     "mode": "walking"
+    },
+    {
+     "time": "12:30 PM",
+     "title": "IFC Mall: last coffee and work",
+     "text": "A final work block with the harbour out the window, steps from the train. The Level 4 rooftop garden is free.",
+     "stops": [
+      "ch-ifchk"
+     ],
+     "mode": "walking"
+    },
+    {
+     "time": "3:30 PM",
+     "title": "Airport Express → HKG",
+     "text": "24 min, trains every 10 min, bags already checked. About $13. Be at HKG by 5 PM for the 7 PM flight.",
+     "stops": [],
+     "mode": "transit"
+    }
+   ]
+  }
+ ],
+ "reservations": [
+  {
+   "name": "Jeju Air 7C 1502",
+   "when": "Wed Jul 29 · CTS → ICN, 11 AM – 2:10 PM",
+   "status": "About $200.",
+   "url": "https://www.jejuair.net/"
+  },
+  {
+   "name": "Vic's Lab Korea",
+   "when": "Thu Jul 30 · 9:30 AM · color analysis for two",
+   "status": "Booked; balance due at the studio.",
+   "url": "https://www.google.com/maps/search/?api=1&query=Vic%27s+Lab+Korea+Mapo+Seoul"
+  },
+  {
+   "name": "JUNO Hair haircut",
+   "when": "Thu Jul 30 · 3 PM",
+   "status": "To book; ask for an English consultation.",
+   "url": "https://www.google.com/maps/search/?api=1&query=JUNO+Hair+Garosu-gil+Seoul"
+  },
+  {
+   "name": "Yookmian Yeonnam",
+   "when": "Thu Jul 30 · 6:30 PM dinner",
+   "status": "To book on CatchTable or Instagram.",
+   "url": "https://app.catchtable.co.kr/"
+  },
+  {
+   "name": "Seoul Hanbok Photo Shooting",
+   "when": "Fri Jul 31 · 9 AM",
+   "status": "Booked and prepaid.",
+   "url": "https://www.google.com/maps/search/?api=1&query=hanbok+photo+studio+Gyeongbokgung"
+  },
+  {
+   "name": "K-beauty appointment",
+   "when": "Fri Jul 31 · 2 PM · nails, facial, or head spa",
+   "status": "To book 2–3 days ahead on KBeautySeoul or Creatrip.",
+   "url": "https://www.creatrip.com/en"
+  },
+  {
+   "name": "Eland Hangang River Cruise",
+   "when": "Fri Jul 31 · 7 PM",
+   "status": "Booked, confirmation EWZ727421.",
+   "url": "https://www.elandcruise.com/"
+  },
+  {
+   "name": "ITX-Cheongchun to Gapyeong",
+   "when": "Sun Aug 2 · leave by 7:45 AM",
+   "status": "Buy the day before.",
+   "url": "https://www.letskorail.com/"
+  },
+  {
+   "name": "Hwayeon Sanjang",
+   "when": "Sun Aug 2 · 7 PM · two people",
+   "status": "Booked.",
+   "url": "https://www.google.com/maps/search/?api=1&query=Hwayeon+Sanjang+Apgujeong"
+  },
+  {
+   "name": "Alice Cheongdam",
+   "when": "Sun Aug 2 · 8:30 PM",
+   "status": "Booked.",
+   "url": "https://www.google.com/maps/search/?api=1&query=Alice+Cheongdam+Seoul"
+  },
+  {
+   "name": "ICN → HKG",
+   "when": "Tue Aug 4 · 3:15 PM, lands 5:55 PM",
+   "status": "About $230.",
+   "url": "https://www.google.com/travel/flights"
+  },
+  {
+   "name": "Ngong Ping 360",
+   "when": "Sat Aug 8 · 10 AM",
+   "status": "Buy online to skip the queue.",
+   "url": "https://www.np360.com.hk/"
+  },
+  {
+   "name": "Flight home",
+   "when": "Sun Aug 9 · 7 PM from HKG",
+   "status": "Be at HKG by 5 PM.",
+   "url": "https://www.google.com/travel/flights"
+  }
+ ],
+ "practical": [
+  {
+   "title": "Seoul transit",
+   "text": "T-money card from any ICN convenience store, loaded with ₩30,000, covers metro, buses, and most taxis. Line 2 runs until about 12:30 AM; a late taxi across town is ₩14,000–20,000."
+  },
+  {
+   "title": "Airport",
+   "text": "AREX all-stop runs from Hongik Univ straight to ICN in about 55 min. The Express skips Hongik Univ."
+  },
+  {
+   "title": "Tax refunds",
+   "text": "Most shops refund at the till over ₩30,000 with your passport. Finish the rest at the ICN kiosks before security."
+  },
+  {
+   "title": "Hong Kong transit",
+   "text": "Octopus card from the airport station for MTR, ferries, trams, and shops. The Airport Express takes 24 min, and Hong Kong Station has in-town check-in under the hotel."
+  },
+  {
+   "title": "Hong Kong in August",
+   "text": "About 33°C and humid with afternoon storms. Work outdoors early or after 5 PM. Wi-Fi.HK covers parks, libraries, and MTR stations. Plugs are UK 3-pin."
+  },
+  {
+   "title": "Food",
+   "text": "The plan avoids seafood. Hong Kong is one hour behind Seoul."
+  }
+ ]
+}
