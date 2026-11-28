@@ -1686,11 +1686,11 @@
   "par-lodgein": {
     "photos": [
       {
-        "src": "images/galleries/par-lodgein/2.jpg",
-        "alt": "Avenue de la Porte-d'Ivry, Paris, vue depuis Ivry-sur-Seine",
-        "source": "https://commons.wikimedia.org/wiki/File:AvenuePorteIvry.jpg",
-        "image_source": "https://upload.wikimedia.org/wikipedia/commons/0/0f/AvenuePorteIvry.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "credit": "Chaoborus · CC BY-SA 3.0"
+        "src": "images/galleries/par-lodgein/1.jpg",
+        "alt": "Hôtel Lodge In Paris 13",
+        "source": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/670062178.jpg",
+        "image_source": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/670062178.jpg",
+        "credit": "Booking.com"
       }
     ]
   },
@@ -1698,24 +1698,10 @@
     "photos": [
       {
         "src": "images/galleries/flo-essence/1.jpg",
-        "alt": "Piazza dell'inipendenza",
-        "source": "https://commons.wikimedia.org/wiki/File:Piazza_dell%27inipendenza_12.JPG",
-        "image_source": "https://upload.wikimedia.org/wikipedia/commons/6/66/Piazza_dell%27inipendenza_12.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "credit": "sailko · CC BY 2.5"
-      },
-      {
-        "src": "images/galleries/flo-essence/2.jpg",
-        "alt": "Piazza dell'Indipendenza (Florence)",
-        "source": "https://commons.wikimedia.org/wiki/File:Piazza_dell%27Indipendenza_18,_Istituto_Fanfani_01.jpg",
-        "image_source": "https://upload.wikimedia.org/wikipedia/commons/2/24/Piazza_dell%27Indipendenza_18%2C_Istituto_Fanfani_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "credit": "Francesco Bini · CC BY-SA 4.0"
-      },
-      {
-        "src": "images/galleries/flo-essence/3.jpg",
-        "alt": "Piazza dell'Indipendenza (Florence)",
-        "source": "https://commons.wikimedia.org/wiki/File:Piazza_dell%27Indipendenza_21,_Palazzina_Philipson,_01.jpg",
-        "image_source": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Piazza_dell%27Indipendenza_21%2C_Palazzina_Philipson%2C_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "credit": "Francesco Bini · CC BY-SA 4.0"
+        "alt": "Essence Hotel",
+        "source": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/588648202.jpg",
+        "image_source": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/588648202.jpg",
+        "credit": "Booking.com"
       }
     ]
   },
@@ -1723,10 +1709,10 @@
     "photos": [
       {
         "src": "images/galleries/rom-bloom/1.jpg",
-        "alt": "via San Gregorio VII",
-        "source": "https://commons.wikimedia.org/wiki/File:Via_San_Gregorio_VII_(Roma).jpg",
-        "image_source": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Via_San_Gregorio_VII_%28Roma%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "credit": "Ruthven · CC0"
+        "alt": "Bloom Hotel Rome",
+        "source": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/415062376.jpg",
+        "image_source": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/415062376.jpg",
+        "credit": "Booking.com"
       }
     ]
   },

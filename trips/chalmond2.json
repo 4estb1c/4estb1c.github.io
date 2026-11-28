@@ -16,8 +16,7 @@
    "city": "Paris",
    "label": "Booked hotel",
    "source": "https://www.booking.com/hotel/fr/lodge-in-mis.html",
-   "mapQuery": "Hôtel Lodge In Paris 13, 2-16 Rue Théroigne de Méricourt, 75013",
-   "photoQuery": "Porte d'Ivry Paris"
+   "mapQuery": "Hôtel Lodge In Paris 13, 2-16 Rue Théroigne de Méricourt, 75013"
   },
   {
    "id": "flo-essence",
@@ -27,8 +26,7 @@
    "city": "Florence",
    "label": "Booked hotel",
    "source": "https://www.booking.com/hotel/it/essence-firenze.html",
-   "mapQuery": "Essence Hotel, Piazza della Indipendenza 19",
-   "photoQuery": "Piazza dell'Indipendenza Firenze"
+   "mapQuery": "Essence Hotel, Piazza della Indipendenza 19"
   },
   {
    "id": "rom-bloom",
@@ -38,8 +36,7 @@
    "city": "Rome",
    "label": "Booked hotel",
    "source": "https://www.booking.com/hotel/it/bloom-rome.html",
-   "mapQuery": "Bloom Hotel Rome, Via Giuseppe Missori 19",
-   "photoQuery": "Via Gregorio VII Roma"
+   "mapQuery": "Bloom Hotel Rome, Via Giuseppe Missori 19"
   }
  ],
  "places": [
