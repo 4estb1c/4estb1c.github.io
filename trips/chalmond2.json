@@ -3057,24 +3057,21 @@
     },
     {
      "time": "3:45 PM",
-     "title": "Musée Carnavalet",
-     "text": "The free museum of Paris history, in two Marais mansions. Revolution relics, shop signs, and Proust's bedroom.",
+     "title": "Place des Vosges and the Marais courtyards",
+     "text": "Walk the arcades around the Place des Vosges, the oldest square in Paris. Then slip into the hidden cobbled courtyards of Village Saint-Paul, full of antique dealers.",
+     "note": "Enter Village Saint-Paul through the arcades on Rue Saint-Paul or Rue Charlemagne.",
      "stops": [
-      "par-carnavalet"
+      "par-villagestpaul"
      ],
      "mode": "walking",
      "nearby": [
       {
-       "id": "par-victorhugo",
-       "text": "Victor Hugo's apartment on the corner of the Place des Vosges. Free, about 45 minutes."
+       "id": "par-carnavalet",
+       "text": "If you want a museum, the free Paris history museum is two blocks away. Last entry around 5:15 PM."
       },
       {
        "id": "par-merci",
        "text": "A three-floor design and homeware store with a used-book café."
-      },
-      {
-       "id": "par-villagestpaul",
-       "text": "Five hidden cobbled courtyards of antique dealers behind Rue Saint-Paul. Enter through the arcades on Rue Saint-Paul or Rue Charlemagne."
       },
       {
        "id": "par-genin",
@@ -3084,8 +3081,7 @@
        "id": "par-kiloshop",
        "text": "Vintage sold by weight. Leather jackets go for about €30 a kilo, so a jacket can cost under €50."
       }
-     ],
-     "note": "Last entry around 5:15 PM."
+     ]
     },
     {
      "time": "5:15 PM",
@@ -3239,10 +3235,6 @@
      "mode": "walking",
      "nearby": [
       {
-       "id": "par-palaisroyal",
-       "text": "The striped Buren columns and the quiet arcaded garden behind the Comédie-Française."
-      },
-      {
        "id": "par-vivienne",
        "text": "A mosaic-floored 1820s covered arcade with old bookshops, behind the Palais-Royal."
       },
@@ -3258,14 +3250,17 @@
     },
     {
      "time": "2 PM",
-     "title": "Musée de l'Orangerie",
-     "text": "Walk the Tuileries to Monet's eight Water Lilies murals in two oval rooms. About an hour.",
-     "note": "Book a time slot. Check holiday hours, since it may close early today.",
+     "title": "The Tuileries and the Palais-Royal",
+     "text": "Walk off the hot chocolate across the Tuileries, then cut through the Palais-Royal's arcades and striped columns on the way to the covered passages.",
      "stops": [
-      "par-orangerie"
+      "par-palaisroyal"
      ],
      "mode": "walking",
      "nearby": [
+      {
+       "id": "par-orangerie",
+       "text": "Monet's Water Lilies in two oval rooms at the end of the Tuileries. Skip it if the Louvre was enough. Book a slot if you go."
+      },
       {
        "id": "par-laduree",
        "text": "The original 1862 Ladurée tearoom on Rue Royale, five minutes from the Orangerie. Buy a box of macarons or sit for a Saint-Honoré."
@@ -3505,11 +3500,11 @@
   },
   {
    "id": "jan2",
-   "label": "Sat · Islands, Saint-Germain & the Orsay",
+   "label": "Sat · Islands & Saint-Germain",
    "date": "Jan 2",
    "year": "2027",
    "hotel": "par-lodgein",
-   "tagline": "Stained glass, bookshops, and lunch in Saint-Germain, the Orsay, then a Seine cruise, a bouillon, and a jazz cellar.",
+   "tagline": "Stained glass, bookshops, lunch, and shopping in Saint-Germain, then a Seine cruise, a bouillon, and a jazz cellar.",
    "blocks": [
     {
      "time": "9:30 AM",
@@ -3558,26 +3553,24 @@
       {
        "id": "par-herme",
        "text": "Pierre Hermé's macarons are the best in Paris. Try the Ispahan with rose, lychee, and raspberry."
-      },
-      {
-       "id": "par-bonmarche",
-       "text": "The oldest department store in Paris, with good men's and women's leather. Its food hall, La Grande Épicerie, is next door."
-      },
-      {
-       "id": "par-deyrolle",
-       "text": "A 19th-century taxidermy shop full of stuffed lions, zebras, and butterflies. Free to browse upstairs."
       }
      ]
     },
     {
      "time": "2:30 PM",
-     "title": "Musée d'Orsay",
-     "text": "Impressionists in a Beaux-Arts train station. Go up to the fifth floor first for Monet, Renoir, and Van Gogh, and the view through the giant clock.",
-     "note": "Book a time slot. Closed Mondays.",
+     "title": "Shopping in Saint-Germain",
+     "text": "Walk down Rue du Bac to Le Bon Marché, the first department store in Paris, with its food hall next door. Stop at Deyrolle on the way, a taxidermy shop open since 1831.",
      "stops": [
-      "par-orsay"
+      "par-deyrolle",
+      "par-bonmarche"
      ],
-     "mode": "walking"
+     "mode": "walking",
+     "nearby": [
+      {
+       "id": "par-orsay",
+       "text": "Impressionists in a Beaux-Arts train station, ten minutes north. Go only if you want a museum today. Book a slot."
+      }
+     ]
     },
     {
      "time": "5:15 PM",
@@ -3854,27 +3847,21 @@
   },
   {
    "id": "jan5",
-   "label": "Tue · The David & the dome",
+   "label": "Tue · The dome & the market",
    "date": "Jan 5",
    "year": "2027",
    "hotel": "flo-essence",
-   "tagline": "Michelangelo's David, the climb up Brunelleschi's dome, the market, and dinner at Cibrèo.",
+   "tagline": "Bomboloni, the climb up Brunelleschi's dome, the market, a leather jacket, and dinner at Cibrèo.",
    "blocks": [
     {
-     "time": "8:30 AM",
-     "title": "Galleria dell'Accademia",
-     "text": "Michelangelo's David, and his unfinished Prisoners lining the hall. About an hour.",
-     "note": "Book a time slot. Closed Mondays.",
+     "time": "9:30 AM",
+     "title": "Bomboloni and cappuccino at Cucciolo",
+     "text": "A slow start. A narrow bar known for bomboloni, Tuscan doughnuts filled to order with custard, chocolate, or jam. Grab one warm with a cappuccino.",
      "stops": [
-      "flo-accademia"
+      "flo-cucciolo"
      ],
      "mode": "walking",
-     "nearby": [
-      {
-       "id": "flo-regina",
-       "text": "A modern steakhouse on the Accademia's street, with a big list of Tuscan reds. Open for lunch and dinner every day. Book ahead."
-      }
-     ]
+     "nearby": []
     },
     {
      "time": "10:30 AM",
@@ -3887,16 +3874,16 @@
      "mode": "walking",
      "nearby": [
       {
+       "id": "flo-accademia",
+       "text": "Michelangelo's David is five minutes north. Skip it unless you want a museum today, since the Uffizi is tomorrow. About an hour, book a slot."
+      },
+      {
        "id": "flo-campanile",
        "text": "Giotto's bell tower: 414 steps, and the best view of the dome itself."
       },
       {
        "id": "flo-operaduomo",
        "text": "The original baptistery doors and Michelangelo's late Pietà."
-      },
-      {
-       "id": "flo-cucciolo",
-       "text": "A narrow bar known for bomboloni, Tuscan doughnuts filled to order with custard, chocolate, or jam. Grab one warm with a cappuccino."
       },
       {
        "id": "flo-scudieri",
@@ -3932,6 +3919,10 @@
       {
        "id": "flo-magichapel",
        "text": "A tiny chapel covered in Gozzoli's frescoes of the Three Kings riding through Tuscany. It fits the Epiphany theme. Closed Wednesdays, so go today. Only a few visitors fit at a time."
+      },
+      {
+       "id": "flo-regina",
+       "text": "A modern steakhouse on the Accademia's street, with a big list of Tuscan reds. Open for lunch and dinner every day. Book ahead."
       }
      ]
     },
@@ -4738,34 +4729,16 @@
    "url": "https://www.louvre.fr/en"
   },
   {
-   "name": "Musée de l'Orangerie",
-   "when": "Thursday Dec 31, 2 PM",
-   "status": "Not booked.",
-   "url": "https://www.musee-orangerie.fr/en"
-  },
-  {
-   "name": "Le Train Bleu, New Year's Eve",
+   "name": "Café de la Paix, New Year's Eve",
    "when": "Thursday Dec 31, 8 PM",
    "status": "Not booked. Book first.",
-   "url": "https://www.le-train-bleu.com/"
-  },
-  {
-   "name": "Musée d'Orsay",
-   "when": "Friday Jan 1, 1 PM",
-   "status": "Not booked.",
-   "url": "https://www.musee-orsay.fr/en"
+   "url": "https://www.sortiraparis.com/en/news/christmas-and-holidays/articles/78501-new-year-s-eve-2027-at-cafe-de-la-paix-a-dinner-in-the-spirit-of-1900-paris"
   },
   {
    "name": "Sainte-Chapelle",
    "when": "Saturday Jan 2, 9:30 AM",
    "status": "Not booked.",
    "url": "https://www.sainte-chapelle.fr/en"
-  },
-  {
-   "name": "Bistrot Paul Bert",
-   "when": "Saturday Jan 2, 8 PM",
-   "status": "Not booked. Reserve by phone.",
-   "url": "https://www.google.com/maps/search/?api=1&query=Bistrot+Paul+Bert+Paris"
   },
   {
    "name": "Versailles free first-Sunday slot",
@@ -4790,12 +4763,6 @@
    "when": "Monday Jan 4, 8 PM",
    "status": "Not booked. Reserve by phone.",
    "url": "https://www.google.com/maps/search/?api=1&query=Trattoria+Sostanza+Firenze"
-  },
-  {
-   "name": "Accademia",
-   "when": "Tuesday Jan 5, 8:30 AM",
-   "status": "Not booked.",
-   "url": "https://www.galleriaaccademiafirenze.it/en/"
   },
   {
    "name": "Brunelleschi Pass with dome slot",
@@ -4844,18 +4811,6 @@
    "when": "Saturday Jan 9, 9 AM",
    "status": "Not booked.",
    "url": "https://colosseo.it/en/"
-  },
-  {
-   "name": "Galleria Borghese",
-   "when": "Saturday Jan 9, 3 PM",
-   "status": "Not booked. Required.",
-   "url": "https://galleriaborghese.beniculturali.it/en/"
-  },
-  {
-   "name": "Felice a Testaccio",
-   "when": "Saturday Jan 9, 8 PM",
-   "status": "Not booked.",
-   "url": "https://www.feliceatestaccio.com/"
   },
   {
    "name": "Flight home from Rome",
