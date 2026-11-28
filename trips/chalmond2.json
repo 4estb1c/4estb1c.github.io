@@ -3,52 +3,120 @@
  "title": "Paris, Florence & Rome",
  "dates": "December 30, 2026 – January 10, 2027",
  "pageTitle": "Paris, Florence & Rome · Dec 30 – Jan 10",
- "intro": "Five days in Paris over New Year's, three in Florence over Epiphany, and three in Rome. Hotels are suggestions and nothing is booked yet. The booking list at the end has every timed ticket and table to reserve.",
+ "intro": "Five days in Paris over New Year's, three in Florence over Epiphany, and three in Rome. Each city lists three mid-range hotels with twin rooms. Nothing is booked yet. The booking list at the end has every timed ticket and table to reserve.",
  "embedPhotos": false,
  "mapCity": "Paris",
  "year": "2026",
  "hotels": [
   {
-   "id": "par-pavillon",
-   "name": "Le Pavillon de la Reine",
-   "lat": 48.85595,
-   "lng": 2.36632,
+   "id": "par-jeannedarc",
+   "name": "Hôtel Jeanne d'Arc Le Marais",
+   "lat": 48.8557,
+   "lng": 2.3632,
    "city": "Paris",
    "label": "Suggested hotel",
-   "source": "https://www.pavillon-de-la-reine.com/",
-   "mapQuery": "Le Pavillon de la Reine, 28 Place des Vosges",
-   "photoQuery": "Place des Vosges"
+   "source": "https://www.hoteljeannedarc.com/",
+   "mapQuery": "Hôtel Jeanne d'Arc, 3 Rue de Jarente",
+   "photoQuery": "Place du Marché-Sainte-Catherine",
+   "photoExclude": []
   },
   {
-   "id": "flo-brunelleschi",
-   "name": "Hotel Brunelleschi",
-   "lat": 43.77155,
-   "lng": 11.2556,
+   "id": "par-bretonnerie",
+   "name": "Hôtel de la Bretonnerie",
+   "lat": 48.858,
+   "lng": 2.3548,
+   "city": "Paris",
+   "label": "Suggested hotel",
+   "source": "https://www.hotelbretonnerie.com/",
+   "mapQuery": "Hôtel de la Bretonnerie, 22 Rue Sainte-Croix de la Bretonnerie",
+   "photoQuery": "Rue Sainte-Croix-de-la-Bretonnerie"
+  },
+  {
+   "id": "par-grandesecoles",
+   "name": "Hôtel des Grandes Écoles",
+   "lat": 48.8452,
+   "lng": 2.3496,
+   "city": "Paris",
+   "label": "Suggested hotel",
+   "source": "https://www.hotel-grandes-ecoles.com/",
+   "mapQuery": "Hôtel des Grandes Écoles, 75 Rue du Cardinal Lemoine",
+   "photoQuery": "Rue du Cardinal-Lemoine Paris"
+  },
+  {
+   "id": "flo-davanzati",
+   "name": "Hotel Davanzati",
+   "lat": 43.7704,
+   "lng": 11.253,
    "city": "Florence",
    "label": "Suggested hotel",
-   "source": "https://www.hotelbrunelleschi.it/",
-   "mapQuery": "Hotel Brunelleschi, Piazza Santa Elisabetta 3",
-   "photoQuery": "Via dei Calzaiuoli Firenze",
+   "source": "https://www.hoteldavanzati.it/",
+   "mapQuery": "Hotel Davanzati, Via Porta Rossa 5",
+   "photoQuery": "Palazzo Davanzati",
    "photoExclude": [
-    "Reperti",
-    "ceramic"
+    "Lowell",
+    "lapide",
+    "targa"
    ]
   },
   {
-   "id": "rom-raphael",
-   "name": "Hotel Raphael",
-   "lat": 41.9003,
-   "lng": 12.4723,
+   "id": "flo-pendini",
+   "name": "Hotel Pendini",
+   "lat": 43.771,
+   "lng": 11.2532,
+   "city": "Florence",
+   "label": "Suggested hotel",
+   "source": "https://www.hotelpendini.it/",
+   "mapQuery": "Hotel Pendini, Via Porta Rossa 2",
+   "photoQuery": "Piazza della Repubblica Florence",
+   "photoExclude": [
+    "Apple",
+    "pavimento",
+    "floor"
+   ]
+  },
+  {
+   "id": "flo-perseo",
+   "name": "Hotel Perseo",
+   "lat": 43.7737,
+   "lng": 11.2547,
+   "city": "Florence",
+   "label": "Suggested hotel",
+   "source": "https://www.hotelperseo.it/",
+   "mapQuery": "Hotel Perseo, Via de' Cerretani 1",
+   "photoQuery": "Via de' Cerretani Firenze"
+  },
+  {
+   "id": "rom-smeraldo",
+   "name": "Hotel Smeraldo",
+   "lat": 41.8944,
+   "lng": 12.4737,
    "city": "Rome",
    "label": "Suggested hotel",
-   "source": "https://www.raphaelhotel.com/",
-   "mapQuery": "Hotel Raphael, Largo Febo 2",
-   "photoQuery": "Via dei Coronari Roma",
-   "photoExclude": [
-    "Collection d",
-    "Collection_d",
-    "autographes"
-   ]
+   "source": "https://www.hotelsmeraldoroma.com/",
+   "mapQuery": "Hotel Smeraldo, Via dei Chiavari 20",
+   "photoQuery": "Campo de' Fiori"
+  },
+  {
+   "id": "rom-santachiara",
+   "name": "Albergo Santa Chiara",
+   "lat": 41.8983,
+   "lng": 12.477,
+   "city": "Rome",
+   "label": "Suggested hotel",
+   "source": "https://www.albergosantachiara.com/",
+   "mapQuery": "Albergo Santa Chiara, Via di Santa Chiara 21",
+   "photoQuery": "Piazza della Minerva Roma"
+  },
+  {
+   "id": "rom-navona",
+   "name": "Hotel Navona",
+   "lat": 41.8975,
+   "lng": 12.4744,
+   "city": "Rome",
+   "label": "Suggested hotel",
+   "source": "https://www.hotelnavona.com/",
+   "mapQuery": "Hotel Navona, Via dei Sediari 8",
+   "photoQuery": "Corso del Rinascimento Roma"
   }
  ],
  "places": [
@@ -1164,18 +1232,28 @@
    "id": "dec30",
    "label": "Wed · Arrive in Paris",
    "date": "Dec 30",
-   "hotel": "par-pavillon",
+   "hotel": "par-jeannedarc",
    "tagline": "Land at 1 PM, drop bags on the Place des Vosges, and spend the afternoon on foot in the Marais.",
    "blocks": [
     {
      "time": "2 PM",
-     "title": "Le Pavillon de la Reine",
+     "title": "Hôtel Jeanne d'Arc Le Marais",
      "text": "Land at CDG at 1 PM. Taxi at the fixed airport fare to the Right Bank, about €56 and 45 minutes. Drop bags and go.",
-     "note": "A quiet ivy-covered hotel set back from the Place des Vosges. Suggested, not booked.",
+     "note": "A small, friendly 3-star on a quiet Marais street, two minutes from the Place des Vosges. Simple, bright rooms with twin beds. One of three mid-range picks with twin rooms. Not booked. The other two are under alternatives.",
      "stops": [
-      "par-pavillon"
+      "par-jeannedarc"
      ],
-     "mode": "driving"
+     "mode": "driving",
+     "nearby": [
+      {
+       "id": "par-bretonnerie",
+       "text": "A 17th-century townhouse with wooden beams in the middle of the Marais. A five-minute walk to the Pompidou and Notre-Dame."
+      },
+      {
+       "id": "par-grandesecoles",
+       "text": "A country-style house around a private garden in the Latin Quarter, near the Panthéon. Quieter, and a longer walk to the Marais."
+      }
+     ]
     },
     {
      "time": "3 PM",
@@ -1255,7 +1333,7 @@
    "id": "dec31",
    "label": "Thu · New Year's Eve",
    "date": "Dec 31",
-   "hotel": "par-pavillon",
+   "hotel": "par-jeannedarc",
    "tagline": "The Louvre at opening, Monet's water lilies, a grand dinner, and midnight on the Champs-Élysées.",
    "blocks": [
     {
@@ -1351,7 +1429,7 @@
    "label": "Fri · New Year's Day",
    "date": "Jan 1",
    "year": "2027",
-   "hotel": "par-pavillon",
+   "hotel": "par-jeannedarc",
    "tagline": "A slow Left Bank day. Many shops close, but the Orsay and the Eiffel Tower stay open.",
    "blocks": [
     {
@@ -1437,7 +1515,7 @@
    "label": "Sat · Islands & Montmartre",
    "date": "Jan 2",
    "year": "2027",
-   "hotel": "par-pavillon",
+   "hotel": "par-jeannedarc",
    "tagline": "Stained glass in the morning, bookshops and lunch in Saint-Germain, and Montmartre before a classic bistro dinner.",
    "blocks": [
     {
@@ -1544,7 +1622,7 @@
    "label": "Sun · Versailles · last night in Paris",
    "date": "Jan 3",
    "year": "2027",
-   "hotel": "par-pavillon",
+   "hotel": "par-jeannedarc",
    "tagline": "Versailles on its free first Sunday, a Seine cruise at dusk, and steak frites in Saint-Germain.",
    "blocks": [
     {
@@ -1608,7 +1686,7 @@
    "label": "Mon · Paris → Florence",
    "date": "Jan 4",
    "year": "2027",
-   "hotel": "flo-brunelleschi",
+   "hotel": "flo-davanzati",
    "tagline": "Fly to Florence, then cross the Ponte Vecchio and climb to the city's best sunset.",
    "blocks": [
     {
@@ -1621,13 +1699,23 @@
     },
     {
      "time": "1 PM",
-     "title": "Hotel Brunelleschi",
-     "text": "Built around a Byzantine tower, a two-minute walk from the Duomo. Leave bags and go.",
-     "note": "Suggested, not booked.",
+     "title": "Hotel Davanzati",
+     "text": "A 10-minute walk from the station. Leave bags and go.",
+     "note": "A family-run 3-star in a palazzo between the Duomo and the Ponte Vecchio. Known for warm service and a free evening aperitivo. One of three mid-range picks with twin rooms. Not booked. The other two are under alternatives.",
      "stops": [
-      "flo-brunelleschi"
+      "flo-davanzati"
      ],
-     "mode": "walking"
+     "mode": "walking",
+     "nearby": [
+      {
+       "id": "flo-pendini",
+       "text": "An old-fashioned 3-star on the Piazza della Repubblica, open since 1879. Ask for a room on the square."
+      },
+      {
+       "id": "flo-perseo",
+       "text": "A simple 3-star a block from the Duomo, the cheapest of the three. Some rooms look straight at the dome."
+      }
+     ]
     },
     {
      "time": "2:30 PM",
@@ -1677,7 +1765,7 @@
    "label": "Tue · The David & the dome",
    "date": "Jan 5",
    "year": "2027",
-   "hotel": "flo-brunelleschi",
+   "hotel": "flo-davanzati",
    "tagline": "Michelangelo's David, the climb up Brunelleschi's dome, the market, and dinner at Cibrèo.",
    "blocks": [
     {
@@ -1773,7 +1861,7 @@
    "label": "Wed · Epiphany",
    "date": "Jan 6",
    "year": "2027",
-   "hotel": "flo-brunelleschi",
+   "hotel": "flo-davanzati",
    "tagline": "The Uffizi at opening, schiacciata for lunch, the Epiphany parade, and bistecca for dinner.",
    "blocks": [
     {
@@ -1858,7 +1946,7 @@
    "label": "Thu · Florence → Rome",
    "date": "Jan 7",
    "year": "2027",
-   "hotel": "rom-raphael",
+   "hotel": "rom-smeraldo",
    "tagline": "A fast train to Rome, carbonara for lunch, the Pantheon and Trevi, and dinner by the Pantheon.",
    "blocks": [
     {
@@ -1871,13 +1959,23 @@
     },
     {
      "time": "11:30 AM",
-     "title": "Hotel Raphael",
-     "text": "An ivy-covered hotel just off Piazza Navona with a rooftop terrace. Leave bags and go.",
-     "note": "Suggested, not booked.",
+     "title": "Hotel Smeraldo",
+     "text": "Taxi from Termini, about 15 minutes. Leave bags and go.",
+     "note": "A well-run 3-star with a roof terrace, a two-minute walk from Campo de' Fiori and Roscioli. Rated 9.1 from about 3,500 reviews. One of three mid-range picks with twin rooms. Not booked. The other two are under alternatives.",
      "stops": [
-      "rom-raphael"
+      "rom-smeraldo"
      ],
-     "mode": "driving"
+     "mode": "driving",
+     "nearby": [
+      {
+       "id": "rom-santachiara",
+       "text": "A classic family hotel behind the Pantheon, run by the same family for generations. Listings start around €167 a night."
+      },
+      {
+       "id": "rom-navona",
+       "text": "A small 3-star in an old palazzo between Piazza Navona and the Pantheon. Rooms are compact."
+      }
+     ]
     },
     {
      "time": "12:30 PM",
@@ -1934,7 +2032,7 @@
     {
      "time": "5:30 PM",
      "title": "Piazza Navona at night",
-     "text": "Bernini's Fountain of the Four Rivers, lit up, a minute from the hotel.",
+     "text": "Bernini's Fountain of the Four Rivers, lit up, a 10-minute walk from the hotel.",
      "stops": [
       "rom-navona"
      ],
@@ -1963,7 +2061,7 @@
    "label": "Fri · The Vatican & Trastevere",
    "date": "Jan 8",
    "year": "2027",
-   "hotel": "rom-raphael",
+   "hotel": "rom-smeraldo",
    "tagline": "The Sistine Chapel at opening, St. Peter's, sunset at Castel Sant'Angelo, and a Trastevere night.",
    "blocks": [
     {
@@ -2046,7 +2144,7 @@
    "label": "Sat · Ancient Rome",
    "date": "Jan 9",
    "year": "2027",
-   "hotel": "rom-raphael",
+   "hotel": "rom-smeraldo",
    "tagline": "The Colosseum and the Forum, the Borghese, sunset from the Pincio, and a last dinner in Testaccio.",
    "blocks": [
     {
@@ -2125,13 +2223,13 @@
    "label": "Sun · Depart Rome",
    "date": "Jan 10",
    "year": "2027",
-   "hotel": "rom-raphael",
+   "hotel": "rom-smeraldo",
    "tagline": "An early espresso, then the airport for the 10 AM departure.",
    "blocks": [
     {
      "time": "7 AM",
      "title": "Espresso at Sant'Eustachio",
-     "text": "A famous coffee bar two minutes from the hotel. Order the gran caffè.",
+     "text": "A famous coffee bar a short walk from the hotel. Order the gran caffè.",
      "note": "Opens around 7:30 AM. Skip it if the flight is early.",
      "stops": [
       "rom-santeustachio"
@@ -2152,8 +2250,8 @@
   {
    "name": "Hotels",
    "when": "Paris Dec 30 – Jan 4, Florence Jan 4–7, Rome Jan 7–10",
-   "status": "Suggestions, not booked.",
-   "url": "https://www.pavillon-de-la-reine.com/"
+   "status": "Pick one of the three in each city and ask for a twin room (two beds). Not booked.",
+   "url": "https://www.hoteljeannedarc.com/"
   },
   {
    "name": "Notre-Dame free entry slot",
