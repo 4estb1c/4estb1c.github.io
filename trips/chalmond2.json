@@ -68,6 +68,9 @@
     "farine de bl",
     "postcard",
     "carte"
+   ],
+   "photoFiles": [
+    "File:Galette étape 02.jpg"
    ]
   },
   {
@@ -87,7 +90,12 @@
    "city": "Paris",
    "source": "https://www.carnavalet.paris.fr/en",
    "mapQuery": "Musée Carnavalet, 23 Rue de Sévigné",
-   "photoQuery": "Musée Carnavalet"
+   "photoQuery": "Musée Carnavalet",
+   "photoQueries": [
+    "Musée Carnavalet garden",
+    "Musée Carnavalet interior",
+    "Hôtel Carnavalet courtyard"
+   ]
   },
   {
    "id": "par-victorhugo",
@@ -118,7 +126,8 @@
     " 51",
     "_51",
     "plaque"
-   ]
+   ],
+   "photoFiles": []
   },
   {
    "id": "par-notredame",
@@ -128,7 +137,12 @@
    "city": "Paris",
    "source": "https://www.notredamedeparis.fr/en/",
    "mapQuery": "Cathédrale Notre-Dame de Paris",
-   "photoQuery": "Notre-Dame de Paris 2025"
+   "photoQuery": "Notre-Dame de Paris 2025",
+   "photoQueries": [
+    "Notre-Dame de Paris facade",
+    "Notre-Dame de Paris nave 2024",
+    "Notre-Dame de Paris from Seine"
+   ]
   },
   {
    "id": "par-berthillon",
@@ -138,7 +152,11 @@
    "city": "Paris",
    "source": "https://www.berthillon.fr/",
    "mapQuery": "Berthillon, 29-31 Rue Saint-Louis en l'Île",
-   "photoQuery": "Île Saint-Louis"
+   "photoQuery": "Île Saint-Louis",
+   "photoFiles": [
+    "File:Houses on the Île Saint-Louis 2.jpg",
+    "File:Paris ile Cite ile Saint Louis pont Tournelle.jpg"
+   ]
   },
   {
    "id": "par-chezjanou",
@@ -153,6 +171,9 @@
     "Chelles",
     "escalier",
     "porte"
+   ],
+   "photoFiles": [
+    "File:P1140395 Paris IV place des Vosges arcades Est rwk.JPG"
    ]
   },
   {
@@ -163,7 +184,8 @@
    "city": "Paris",
    "source": "https://www.robertetlouise.com/",
    "mapQuery": "Robert et Louise, 64 Rue Vieille du Temple",
-   "photoQuery": "Rue Vieille-du-Temple Paris"
+   "photoQuery": "Rue Vieille-du-Temple Paris",
+   "photoFiles": []
   },
   {
    "id": "par-louvre",
@@ -173,7 +195,11 @@
    "city": "Paris",
    "source": "https://www.louvre.fr/en",
    "mapQuery": "Musée du Louvre, Pyramide",
-   "photoQuery": "Louvre Pyramid"
+   "photoQuery": "Louvre Pyramid",
+   "photoFiles": [
+    "File:Nike of Samothrace, Paris, Louvre.jpg",
+    "File:Decorative arts in the Louvre - Room 86 (01).jpg"
+   ]
   },
   {
    "id": "par-angelina",
@@ -186,6 +212,9 @@
    "photoQuery": "Angelina salon de thé rue de Rivoli",
    "photoExclude": [
     "Jolie"
+   ],
+   "photoFiles": [
+    "File:AngelinaParis.JPG"
    ]
   },
   {
@@ -195,7 +224,11 @@
    "lng": 2.3375,
    "city": "Paris",
    "mapQuery": "Jardin du Palais Royal",
-   "photoQuery": "Jardin du Palais-Royal"
+   "photoQuery": "Jardin du Palais-Royal",
+   "photoFiles": [
+    "File:Victor Hugo dit du Palais Royal Musée Rodin S.6686 Paris.jpg",
+    "File:Jardin du Palais-Royal, Paris.jpg"
+   ]
   },
   {
    "id": "par-orangerie",
@@ -205,7 +238,11 @@
    "city": "Paris",
    "source": "https://www.musee-orangerie.fr/en",
    "mapQuery": "Musée de l'Orangerie",
-   "photoQuery": "Musée de l'Orangerie"
+   "photoQuery": "Musée de l'Orangerie",
+   "photoFiles": [
+    "File:Musée de L'Orangerie Water Lilies Room.jpg",
+    "File:Grand bassin octogonal Jardin des Tuileries 003.jpg"
+   ]
   },
   {
    "id": "par-lafayette",
@@ -215,7 +252,12 @@
    "city": "Paris",
    "source": "https://haussmann.galerieslafayette.com/en/",
    "mapQuery": "Galeries Lafayette Haussmann, 40 Boulevard Haussmann",
-   "photoQuery": "Galeries Lafayette coupole"
+   "photoQuery": "Galeries Lafayette coupole",
+   "photoQueries": [
+    "Galeries Lafayette dome",
+    "Galeries Lafayette rooftop",
+    "Galeries Lafayette Haussmann facade"
+   ]
   },
   {
    "id": "par-trainbleu",
@@ -245,7 +287,10 @@
    "city": "Paris",
    "source": "https://www.paris-arc-de-triomphe.fr/en",
    "mapQuery": "Arc de Triomphe",
-   "photoQuery": "Arc de Triomphe night Champs-Élysées"
+   "photoQuery": "Arc de Triomphe night Champs-Élysées",
+   "photoFiles": [
+    "File:Arc de Triomphe de l'Étoile at night vertical fix.jpg"
+   ]
   },
   {
    "id": "par-sacrecoeur",
@@ -255,7 +300,11 @@
    "city": "Paris",
    "source": "https://www.sacre-coeur-montmartre.com/",
    "mapQuery": "Basilique du Sacré-Cœur de Montmartre",
-   "photoQuery": "Sacré-Cœur Montmartre"
+   "photoQuery": "Sacré-Cœur Montmartre",
+   "photoFiles": [
+    "File:Basilique du Sacré-Cœur de Montmartre - Paris - GT-01 - 2024.jpg",
+    "File:Restaurants, Place du Tertre, Paris 30 September 2019.jpg"
+   ]
   },
   {
    "id": "par-flore",
@@ -269,6 +318,10 @@
    "photoExclude": [
     "Vanessa",
     "Paradis"
+   ],
+   "photoFiles": [
+    "File:Café de Flore, 172 boulevard Saint-Germain, Paris 6e.jpg",
+    "File:Café de Flore 005a.jpg"
    ]
   },
   {
@@ -279,7 +332,11 @@
    "city": "Paris",
    "source": "https://www.lesdeuxmagots.fr/en/",
    "mapQuery": "Les Deux Magots, 6 Place Saint-Germain des Prés",
-   "photoQuery": "Les Deux Magots"
+   "photoQuery": "Les Deux Magots",
+   "photoFiles": [
+    "File:Les Deux Magots, 25 September 2019.jpg",
+    "File:Les Deux Magots (figurines).jpg"
+   ]
   },
   {
    "id": "par-orsay",
@@ -289,7 +346,12 @@
    "city": "Paris",
    "source": "https://www.musee-orsay.fr/en",
    "mapQuery": "Musée d'Orsay",
-   "photoQuery": "Musée d'Orsay"
+   "photoQuery": "Musée d'Orsay",
+   "photoQueries": [
+    "Musée d'Orsay main hall",
+    "Musée d'Orsay clock window",
+    "Musée d'Orsay facade Seine"
+   ]
   },
   {
    "id": "par-luxembourg",
@@ -303,6 +365,11 @@
    "photoExclude": [
     "Konrad Winter",
     "Winter, Getarnte"
+   ],
+   "photoQueries": [
+    "Jardin du Luxembourg palace",
+    "Medici Fountain Paris",
+    "Jardin du Luxembourg winter"
    ]
   },
   {
@@ -312,7 +379,11 @@
    "lng": 2.3348,
    "city": "Paris",
    "mapQuery": "Église Saint-Sulpice",
-   "photoQuery": "Église Saint-Sulpice Paris"
+   "photoQuery": "Église Saint-Sulpice Paris",
+   "photoFiles": [
+    "File:Saint-Sulpice, Nave, Paris 20140515 1.jpg",
+    "File:Paris 06 - St Sulpice organ 01.jpg"
+   ]
   },
   {
    "id": "par-eiffel",
@@ -322,7 +393,12 @@
    "city": "Paris",
    "source": "https://www.toureiffel.paris/en",
    "mapQuery": "Tour Eiffel",
-   "photoQuery": "Tour Eiffel night"
+   "photoQuery": "Tour Eiffel night",
+   "photoQueries": [
+    "Eiffel Tower from Champ de Mars",
+    "Eiffel Tower night illumination",
+    "Eiffel Tower from below"
+   ]
   },
   {
    "id": "par-trocadero",
@@ -337,6 +413,11 @@
     "Exposition",
     "Plaque",
     "hommage"
+   ],
+   "photoQueries": [
+    "Trocadéro Eiffel Tower view",
+    "Palais de Chaillot",
+    "Trocadéro fountains"
    ]
   },
   {
@@ -346,7 +427,11 @@
    "lng": 2.28763,
    "city": "Paris",
    "mapQuery": "Pont de Bir-Hakeim",
-   "photoQuery": "Pont de Bir-Hakeim"
+   "photoQuery": "Pont de Bir-Hakeim",
+   "photoFiles": [
+    "File:Pont de Bir-Hakeim and view on the 16th Arrondissement of Paris 140124 1.jpg",
+    "File:Tour Eiffel and Pont de Bir-Hakeim as seen from Ile aux Cygnes 140203 7.jpg"
+   ]
   },
   {
    "id": "par-bouillonpigalle",
@@ -356,7 +441,11 @@
    "city": "Paris",
    "source": "https://bouillonlesite.com/",
    "mapQuery": "Bouillon Pigalle, 22 Boulevard de Clichy",
-   "photoQuery": "Bouillon Pigalle"
+   "photoQuery": "Bouillon Pigalle",
+   "photoFiles": [
+    "File:Bouillon Pigalle.jpg",
+    "File:Café Pigalle.jpg"
+   ]
   },
   {
    "id": "par-chartier",
@@ -366,7 +455,11 @@
    "city": "Paris",
    "source": "https://www.bouillon-chartier.com/",
    "mapQuery": "Bouillon Chartier, 7 Rue du Faubourg Montmartre",
-   "photoQuery": "Bouillon Chartier"
+   "photoQuery": "Bouillon Chartier",
+   "photoFiles": [
+    "File:Panneau Bouillon Chartier Grands Boulevards (août 2023).JPG",
+    "File:Extérieur Bouillon Chartier Grands Boulevards (août 2023).jpg"
+   ]
   },
   {
    "id": "par-saintechapelle",
@@ -376,7 +469,12 @@
    "city": "Paris",
    "source": "https://www.sainte-chapelle.fr/en",
    "mapQuery": "Sainte-Chapelle",
-   "photoQuery": "Sainte-Chapelle upper chapel stained glass"
+   "photoQuery": "Sainte-Chapelle upper chapel stained glass",
+   "photoQueries": [
+    "Sainte-Chapelle upper chapel stained glass",
+    "Sainte-Chapelle exterior",
+    "Sainte-Chapelle rose window"
+   ]
   },
   {
    "id": "par-conciergerie",
@@ -390,6 +488,10 @@
    "photoExclude": [
     "Edridge",
     "Yale"
+   ],
+   "photoFiles": [
+    "File:Paris, Conciergerie -- 2014 -- 1320.jpg",
+    "File:Paris, Conciergerie, Horloge de Charles V -- 2014 -- 1324.jpg"
    ]
   },
   {
@@ -400,7 +502,11 @@
    "city": "Paris",
    "source": "https://shakespeareandcompany.com/",
    "mapQuery": "Shakespeare and Company, 37 Rue de la Bûcherie",
-   "photoQuery": "Shakespeare and Company bookstore Paris"
+   "photoQuery": "Shakespeare and Company bookstore Paris",
+   "photoFiles": [
+    "File:Shakespeare and Company, Paris 1.jpg",
+    "File:Shakespeare and Company Bookstore in Paris, France 02.jpg"
+   ]
   },
   {
    "id": "par-pantheon",
@@ -410,7 +516,11 @@
    "city": "Paris",
    "source": "https://www.paris-pantheon.fr/en",
    "mapQuery": "Panthéon",
-   "photoQuery": "Panthéon Paris"
+   "photoQuery": "Panthéon Paris",
+   "photoFiles": [
+    "File:Panthéon de Paris in July 2022 (2).jpg",
+    "File:Panthéon de Paris (Dome).jpg"
+   ]
   },
   {
    "id": "par-comptoir",
@@ -419,7 +529,11 @@
    "lng": 2.33892,
    "city": "Paris",
    "mapQuery": "Le Comptoir du Relais, 9 Carrefour de l'Odéon",
-   "photoQuery": "Carrefour de l'Odéon"
+   "photoQuery": "Carrefour de l'Odéon",
+   "photoFiles": [
+    "File:9 carrefour de l'Odéon Paris 2.jpg",
+    "File:Carrefour de l'Odéon, Paris 6e 3.jpg"
+   ]
   },
   {
    "id": "par-bouillonracine",
@@ -429,7 +543,11 @@
    "city": "Paris",
    "source": "https://www.bouillonracine.com/",
    "mapQuery": "Bouillon Racine, 3 Rue Racine",
-   "photoQuery": "Bouillon Racine"
+   "photoQuery": "Bouillon Racine",
+   "photoFiles": [
+    "File:Stairs in the Bouillon Racine (Paris).jpg",
+    "File:Interior of the Bouillon Racine (Paris) (02).png"
+   ]
   },
   {
    "id": "par-museemontmartre",
@@ -448,7 +566,11 @@
    "lng": 2.33871,
    "city": "Paris",
    "mapQuery": "Le Mur des Je t'aime, Square Jehan Rictus",
-   "photoQuery": "Mur des je t'aime"
+   "photoQuery": "Mur des je t'aime",
+   "photoFiles": [
+    "File:Muro de los je t'aime, París, Francia, 2022-10-30, DD 01.jpg",
+    "File:Le mur des je t'aime, Place des Abbesses, Montmartre, Paris (the plaque with the je t'aime in 311 languages).jpg"
+   ]
   },
   {
    "id": "par-paulbert",
@@ -457,7 +579,8 @@
    "lng": 2.38418,
    "city": "Paris",
    "mapQuery": "Bistrot Paul Bert, 18 Rue Paul Bert",
-   "photoQuery": "Rue Paul-Bert Paris"
+   "photoQuery": "Rue Paul-Bert Paris",
+   "photoFiles": []
   },
   {
    "id": "par-servan",
@@ -471,7 +594,8 @@
    "photoExclude": [
     "Bistro_(",
     "Vallotton"
-   ]
+   ],
+   "photoFiles": []
   },
   {
    "id": "par-littlereddoor",
@@ -481,7 +605,8 @@
    "city": "Paris",
    "source": "https://www.lrdparis.com/",
    "mapQuery": "Little Red Door, 60 Rue Charlot",
-   "photoQuery": "Rue Charlot Paris"
+   "photoQuery": "Rue Charlot Paris",
+   "photoFiles": []
   },
   {
    "id": "par-candelaria",
@@ -496,7 +621,8 @@
     "Auto_Passion",
     "Cinéastes",
     "panoramio"
-   ]
+   ],
+   "photoFiles": []
   },
   {
    "id": "par-versailles",
@@ -506,7 +632,11 @@
    "city": "Versailles",
    "source": "https://en.chateauversailles.fr/",
    "mapQuery": "Château de Versailles",
-   "photoQuery": "Château de Versailles Hall of Mirrors"
+   "photoQuery": "Château de Versailles Hall of Mirrors",
+   "photoFiles": [
+    "File:Chateau Versailles Galerie des Glaces.jpg",
+    "File:Palace of Versailles (courtyard).JPG"
+   ]
   },
   {
    "id": "par-ore",
@@ -516,7 +646,10 @@
    "city": "Versailles",
    "source": "https://www.ducasse-chateauversailles.com/en",
    "mapQuery": "Ore Ducasse au Château de Versailles",
-   "photoQuery": "Pavillon Dufour Versailles"
+   "photoQuery": "Pavillon Dufour Versailles",
+   "photoFiles": [
+    "File:Pavillon Dufour at the Château de Versailles.jpg"
+   ]
   },
   {
    "id": "par-trianon",
@@ -526,7 +659,11 @@
    "city": "Versailles",
    "source": "https://en.chateauversailles.fr/discover/estate/estate-trianon",
    "mapQuery": "Hameau de la Reine, Versailles",
-   "photoQuery": "Hameau de la Reine Versailles"
+   "photoQuery": "Hameau de la Reine Versailles",
+   "photoFiles": [
+    "File:Salon of mirrors with royal chandelier in the Grand Trianon Domain of Versailles France.jpg",
+    "File:West facade of Petit Trianon 002.JPG"
+   ]
   },
   {
    "id": "par-entrecote",
@@ -536,7 +673,11 @@
    "city": "Paris",
    "source": "https://www.relaisentrecote.fr/",
    "mapQuery": "Le Relais de l'Entrecôte, 20 Rue Saint-Benoît",
-   "photoQuery": "steak frites"
+   "photoQuery": "steak frites",
+   "photoFiles": [
+    "File:Reel and Brand - September 2021 - Sarah Stierch 05.jpg",
+    "File:Steak frites at The Bar at MacArthur Place in Sonoma - Sarah Stierch.jpg"
+   ]
   },
   {
    "id": "par-procope",
@@ -546,7 +687,11 @@
    "city": "Paris",
    "source": "https://www.procope.com/",
    "mapQuery": "Le Procope, 13 Rue de l'Ancienne Comédie",
-   "photoQuery": "Café Procope"
+   "photoQuery": "Café Procope",
+   "photoFiles": [
+    "File:Le Procope 1, Paris 2010.jpg",
+    "File:Paris, France. Restaurant LE PROCOPE. (PA00088496).jpg"
+   ]
   },
   {
    "id": "par-vivienne",
@@ -575,7 +720,11 @@
    "city": "Paris",
    "source": "https://www.vedettesdupontneuf.com/",
    "mapQuery": "Vedettes du Pont Neuf, Square du Vert-Galant",
-   "photoQuery": "Square du Vert-Galant Pont Neuf"
+   "photoQuery": "Square du Vert-Galant Pont Neuf",
+   "photoFiles": [
+    "File:Square du Vert-Galant @ Pont Neuf.jpg",
+    "File:Square du Vert Galant in a summer afternoon.jpg"
+   ]
   },
   {
    "id": "flo-pontevecchio",
@@ -584,7 +733,12 @@
    "lng": 11.25313,
    "city": "Florence",
    "mapQuery": "Ponte Vecchio",
-   "photoQuery": "Ponte Vecchio Florence"
+   "photoQuery": "Ponte Vecchio Florence",
+   "photoQueries": [
+    "Ponte Vecchio Florence",
+    "Ponte Vecchio jewelry shops",
+    "Ponte Vecchio night"
+   ]
   },
   {
    "id": "flo-signoria",
@@ -593,7 +747,11 @@
    "lng": 11.2556,
    "city": "Florence",
    "mapQuery": "Piazza della Signoria",
-   "photoQuery": "Piazza della Signoria"
+   "photoQuery": "Piazza della Signoria",
+   "photoFiles": [
+    "File:Florence - David - tête.jpg",
+    "File:Palazzo Vecchio by nigth.jpg"
+   ]
   },
   {
    "id": "flo-michelangelo",
@@ -602,7 +760,11 @@
    "lng": 11.265,
    "city": "Florence",
    "mapQuery": "Piazzale Michelangelo",
-   "photoQuery": "Piazzale Michelangelo view Florence"
+   "photoQuery": "Piazzale Michelangelo view Florence",
+   "photoFiles": [
+    "File:Bronze replica of Michelangelo's David in Florence.jpg",
+    "File:Florence Cathedral seen from Piazzale Michelangelo night dllu.jpg"
+   ]
   },
   {
    "id": "flo-sanminiato",
@@ -612,7 +774,11 @@
    "city": "Florence",
    "source": "https://www.sanminiatoalmonte.it/",
    "mapQuery": "Basilica di San Miniato al Monte",
-   "photoQuery": "San Miniato al Monte"
+   "photoQuery": "San Miniato al Monte",
+   "photoFiles": [
+    "File:San Miniato al Monte (Florence) - Facade.jpg",
+    "File:View of Florence from the Abbazia di San Miniato al Monte. Italy.jpg"
+   ]
   },
   {
    "id": "flo-sostanza",
@@ -627,7 +793,8 @@
     "lapide",
     "stemma",
     "targa"
-   ]
+   ],
+   "photoFiles": []
   },
   {
    "id": "flo-bucamario",
@@ -637,7 +804,10 @@
    "city": "Florence",
    "source": "https://www.bucamario.com/",
    "mapQuery": "Buca Mario, Piazza degli Ottaviani 16",
-   "photoQuery": "bistecca alla fiorentina"
+   "photoQuery": "bistecca alla fiorentina",
+   "photoFiles": [
+    "File:Bistecca alla fiorentina.jpg"
+   ]
   },
   {
    "id": "flo-uffizi",
@@ -647,7 +817,12 @@
    "city": "Florence",
    "source": "https://www.uffizi.it/en",
    "mapQuery": "Galleria degli Uffizi",
-   "photoQuery": "Uffizi Gallery corridor"
+   "photoQuery": "Uffizi Gallery corridor",
+   "photoQueries": [
+    "Uffizi corridor",
+    "Birth of Venus Uffizi room",
+    "Uffizi courtyard Arno"
+   ]
   },
   {
    "id": "flo-anticovinaio",
@@ -657,7 +832,11 @@
    "city": "Florence",
    "source": "https://www.allanticovinaio.com/",
    "mapQuery": "All'Antico Vinaio, Via dei Neri 74",
-   "photoQuery": "All'Antico Vinaio"
+   "photoQuery": "All'Antico Vinaio",
+   "photoFiles": [
+    "File:Antico Vinaio sede storica 2025.jpg",
+    "File:All'Antico Vinaio sandwich shop with customers, Rome.jpg"
+   ]
   },
   {
    "id": "flo-mercato",
@@ -667,7 +846,11 @@
    "city": "Florence",
    "source": "https://www.mercatocentrale.it/firenze/",
    "mapQuery": "Mercato Centrale Firenze",
-   "photoQuery": "Mercato Centrale Firenze"
+   "photoQuery": "Mercato Centrale Firenze",
+   "photoFiles": [
+    "File:Mercato centrale di san lorenzo 02.jpg",
+    "File:Mercato Centrale near the San Lorenzo Market (Florence) (3867491803).jpg"
+   ]
   },
   {
    "id": "flo-pitti",
@@ -677,7 +860,12 @@
    "city": "Florence",
    "source": "https://www.uffizi.it/en/pitti-palace",
    "mapQuery": "Palazzo Pitti",
-   "photoQuery": "Cavalcata dei Magi Firenze"
+   "photoQuery": "Cavalcata dei Magi Firenze",
+   "photoQueries": [
+    "Palazzo Pitti",
+    "Cavalcata dei Magi Firenze",
+    "Palazzo Pitti courtyard"
+   ]
   },
   {
    "id": "flo-boboli",
@@ -687,7 +875,11 @@
    "city": "Florence",
    "source": "https://www.uffizi.it/en/boboli-garden",
    "mapQuery": "Giardino di Boboli",
-   "photoQuery": "Giardino di Boboli"
+   "photoQuery": "Giardino di Boboli",
+   "photoFiles": [
+    "File:Jardín de Bóboli, Florencia, Italia, 2022-09-19, DD 26.jpg",
+    "File:Statue-Boboli-Gardens-Florence-Italy-2012.jpg"
+   ]
   },
   {
    "id": "flo-santospirito",
@@ -702,6 +894,10 @@
     "Pittura",
     "painting",
     "Piazza Santo Spirito.jpg"
+   ],
+   "photoFiles": [
+    "File:Exterior view of Santo Spirito (Florence) 01.jpg",
+    "File:Via romana (dal giardino corsi annalena).JPG"
    ]
   },
   {
@@ -712,7 +908,8 @@
    "city": "Florence",
    "source": "https://www.levolpieluva.com/",
    "mapQuery": "Le Volpi e l'Uva, Piazza dei Rossi 1",
-   "photoQuery": "Chianti wine glass"
+   "photoQuery": "Chianti wine glass",
+   "photoFiles": []
   },
   {
    "id": "flo-bucalapi",
@@ -722,7 +919,11 @@
    "city": "Florence",
    "source": "https://www.bucalapi.com/",
    "mapQuery": "Buca Lapi, Via del Trebbio 1r",
-   "photoQuery": "Palazzo Antinori Firenze"
+   "photoQuery": "Palazzo Antinori Firenze",
+   "photoFiles": [
+    "File:Palazzo Antinori.JPG",
+    "File:Firenze - Palazzo Antinori (40863729920).jpg"
+   ]
   },
   {
    "id": "flo-4leoni",
@@ -732,7 +933,11 @@
    "city": "Florence",
    "source": "https://www.4leoni.com/",
    "mapQuery": "Trattoria 4 Leoni, Via de' Vellutini 1r",
-   "photoQuery": "Piazza della Passera"
+   "photoQuery": "Piazza della Passera",
+   "photoFiles": [
+    "File:Piazza della passera, veduta da via dello sprone 01.jpg",
+    "File:Piazza della passera, edificio tra via toscanella e via dei vellutini, 01,0.jpg"
+   ]
   },
   {
    "id": "flo-accademia",
@@ -742,7 +947,11 @@
    "city": "Florence",
    "source": "https://www.galleriaaccademiafirenze.it/en/",
    "mapQuery": "Galleria dell'Accademia di Firenze",
-   "photoQuery": "David Michelangelo Galleria dell'Accademia"
+   "photoQuery": "David Michelangelo Galleria dell'Accademia",
+   "photoFiles": [
+    "File:Michelangelo's David 2015.jpg",
+    "File:Galleria dell'Accademia 01.jpg"
+   ]
   },
   {
    "id": "flo-duomo",
@@ -752,7 +961,11 @@
    "city": "Florence",
    "source": "https://duomo.firenze.it/en",
    "mapQuery": "Cattedrale di Santa Maria del Fiore",
-   "photoQuery": "Florence Cathedral dome Brunelleschi"
+   "photoQuery": "Florence Cathedral dome Brunelleschi",
+   "photoFiles": [
+    "File:Dome of Cattedrale di Santa Maria del Fiore (Florence).jpg",
+    "File:Florence Duomo from Michelangelo hill.jpg"
+   ]
   },
   {
    "id": "flo-campanile",
@@ -766,6 +979,10 @@
    "photoExclude": [
     "Santa Croce",
     "Santa_Croce"
+   ],
+   "photoFiles": [
+    "File:CampanileGiotto-01.jpg",
+    "File:Low-angle view of Campanile di Giotto, Florence, Italy.jpg"
    ]
   },
   {
@@ -776,7 +993,11 @@
    "city": "Florence",
    "source": "https://duomo.firenze.it/en",
    "mapQuery": "Museo dell'Opera del Duomo",
-   "photoQuery": "Museo dell'Opera del Duomo Firenze"
+   "photoQuery": "Museo dell'Opera del Duomo Firenze",
+   "photoFiles": [
+    "File:Nuovo museo dell'opera del duomo, facciatone arnolfiano di santa maria del fiore, 000.jpg",
+    "File:Arnolfo di Cambio, copy after, Dormitio virginis, original 1300-10, Museo dell'Opera del Duomo, Florence.jpg"
+   ]
   },
   {
    "id": "flo-smnpharmacy",
@@ -786,7 +1007,11 @@
    "city": "Florence",
    "source": "https://eu.smnovella.com/",
    "mapQuery": "Officina Profumo-Farmaceutica di Santa Maria Novella, Via della Scala 16",
-   "photoQuery": "Officina Profumo-Farmaceutica di Santa Maria Novella"
+   "photoQuery": "Officina Profumo-Farmaceutica di Santa Maria Novella",
+   "photoFiles": [
+    "File:Firenze - Museo dell’officina profumo - farmaceutica di Santa Maria Novella - 2024-09-24 14-20-11 001.jpg",
+    "File:Officina di Santa Maria Novella - Green Room 2017.jpg"
+   ]
   },
   {
    "id": "flo-smn",
@@ -796,7 +1021,12 @@
    "city": "Florence",
    "source": "https://www.smn.it/en/",
    "mapQuery": "Basilica di Santa Maria Novella",
-   "photoQuery": "Santa Maria Novella facade"
+   "photoQuery": "Santa Maria Novella facade",
+   "photoQueries": [
+    "Santa Maria Novella facade",
+    "Santa Maria Novella interior",
+    "Piazza Santa Maria Novella"
+   ]
   },
   {
    "id": "flo-santacroce",
@@ -806,7 +1036,12 @@
    "city": "Florence",
    "source": "https://www.santacroceopera.it/en/",
    "mapQuery": "Basilica di Santa Croce",
-   "photoQuery": "Basilica di Santa Croce Firenze"
+   "photoQuery": "Basilica di Santa Croce Firenze",
+   "photoQueries": [
+    "Basilica di Santa Croce Florence facade",
+    "Santa Croce Florence interior",
+    "Tomb of Michelangelo Santa Croce"
+   ]
   },
   {
    "id": "flo-vivoli",
@@ -816,7 +1051,11 @@
    "city": "Florence",
    "source": "https://www.vivoli.it/",
    "mapQuery": "Vivoli, Via dell'Isola delle Stinche 7r",
-   "photoQuery": "gelato Firenze"
+   "photoQuery": "gelato Firenze",
+   "photoFiles": [
+    "File:Gelato Firenze 2007.jpg",
+    "File:Gelato melone, Firenze 2009.jpg"
+   ]
   },
   {
    "id": "flo-cibreo",
@@ -826,7 +1065,10 @@
    "city": "Florence",
    "source": "https://www.cibreo.com/",
    "mapQuery": "Cibrèo Trattoria, Via dei Macci 122",
-   "photoQuery": "Mercato di Sant'Ambrogio"
+   "photoQuery": "Mercato di Sant'Ambrogio",
+   "photoFiles": [
+    "File:Mercato di sant'ambrogio.JPG"
+   ]
   },
   {
    "id": "flo-santobevitore",
@@ -836,7 +1078,8 @@
    "city": "Florence",
    "source": "https://www.ilsantobevitore.com/",
    "mapQuery": "Il Santo Bevitore, Via di Santo Spirito 64",
-   "photoQuery": "Via di Santo Spirito Firenze"
+   "photoQuery": "Via di Santo Spirito Firenze",
+   "photoFiles": []
   },
   {
    "id": "rom-roscioli",
@@ -846,7 +1089,10 @@
    "city": "Rome",
    "source": "https://www.salumeriaroscioli.com/",
    "mapQuery": "Roscioli Salumeria, Via dei Giubbonari 21",
-   "photoQuery": "spaghetti alla carbonara"
+   "photoQuery": "spaghetti alla carbonara",
+   "photoFiles": [
+    "File:Spaghetti alla Carbonara (Madrid).JPG"
+   ]
   },
   {
    "id": "rom-fornoroscioli",
@@ -856,7 +1102,10 @@
    "city": "Rome",
    "source": "https://www.anticofornoroscioli.it/",
    "mapQuery": "Antico Forno Roscioli, Via dei Chiavari 34",
-   "photoQuery": "Campo de' Fiori"
+   "photoQuery": "Campo de' Fiori",
+   "photoFiles": [
+    "File:Campo dei Fiori.jpg"
+   ]
   },
   {
    "id": "rom-pantheon",
@@ -865,7 +1114,12 @@
    "lng": 12.47687,
    "city": "Rome",
    "mapQuery": "Pantheon, Piazza della Rotonda",
-   "photoQuery": "Pantheon Rome interior oculus"
+   "photoQuery": "Pantheon Rome interior oculus",
+   "photoQueries": [
+    "Pantheon Rome exterior",
+    "Pantheon (Rome) dome interior",
+    "Piazza della Rotonda fountain Pantheon"
+   ]
   },
   {
    "id": "rom-santignazio",
@@ -874,7 +1128,11 @@
    "lng": 12.4797,
    "city": "Rome",
    "mapQuery": "Chiesa di Sant'Ignazio di Loyola",
-   "photoQuery": "Sant'Ignazio ceiling Pozzo"
+   "photoQuery": "Sant'Ignazio ceiling Pozzo",
+   "photoFiles": [
+    "File:Triumph of St. Ignatius of Loyola, ceiling fresco by Andrea Pozzo.jpg",
+    "File:Andrea pozzo, gloria di sant'ignazio, 1685-94, 13.jpg"
+   ]
   },
   {
    "id": "rom-tazzadoro",
@@ -893,7 +1151,11 @@
    "lng": 12.48331,
    "city": "Rome",
    "mapQuery": "Fontana di Trevi",
-   "photoQuery": "Trevi Fountain"
+   "photoQuery": "Trevi Fountain",
+   "photoFiles": [
+    "File:Fontaine Trevi - Rome.jpg",
+    "File:Trevi Fountain HD.jpg"
+   ]
   },
   {
    "id": "rom-giolitti",
@@ -907,6 +1169,10 @@
    "photoExclude": [
     "Tiberius",
     "Tiberio"
+   ],
+   "photoFiles": [
+    "File:Agora Gallery, Angela's Gelato, and Danielle O'Connor Jewellery, Stratford, Ontario, 2025-08-04.jpg",
+    "File:Italian ice cream.jpg"
    ]
   },
   {
@@ -916,7 +1182,12 @@
    "lng": 12.4731,
    "city": "Rome",
    "mapQuery": "Piazza Navona",
-   "photoQuery": "Piazza Navona night"
+   "photoQuery": "Piazza Navona night",
+   "photoQueries": [
+    "Fountain of the Four Rivers",
+    "Piazza Navona night",
+    "Sant'Agnese in Agone"
+   ]
   },
   {
    "id": "rom-armando",
@@ -926,7 +1197,11 @@
    "city": "Rome",
    "source": "https://www.armandoalpantheon.it/",
    "mapQuery": "Armando al Pantheon, Salita de' Crescenzi 31",
-   "photoQuery": "cacio e pepe"
+   "photoQuery": "cacio e pepe",
+   "photoFiles": [
+    "File:Spaghetti, cacio e pepe & bitter leaf salad - Tutto 2024-04-04.jpg",
+    "File:Cacio e pepe.jpg"
+   ]
   },
   {
    "id": "rom-culdesac",
@@ -936,7 +1211,8 @@
    "city": "Rome",
    "source": "https://www.enotecaculdesac.com/",
    "mapQuery": "Cul de Sac, Piazza di Pasquino 73",
-   "photoQuery": "Piazza di Pasquino"
+   "photoQuery": "Piazza di Pasquino",
+   "photoFiles": []
   },
   {
    "id": "rom-vatican",
@@ -946,7 +1222,12 @@
    "city": "Rome",
    "source": "https://www.museivaticani.va/",
    "mapQuery": "Musei Vaticani, Viale Vaticano",
-   "photoQuery": "Vatican Museums spiral staircase"
+   "photoQuery": "Vatican Museums spiral staircase",
+   "photoQueries": [
+    "Sistine Chapel ceiling",
+    "Gallery of Maps Vatican",
+    "Bramante staircase Vatican"
+   ]
   },
   {
    "id": "rom-stpeters",
@@ -956,7 +1237,12 @@
    "city": "Rome",
    "source": "https://www.basilicasanpietro.va/en/",
    "mapQuery": "Basilica di San Pietro",
-   "photoQuery": "St. Peter's Basilica interior"
+   "photoQuery": "St. Peter's Basilica interior",
+   "photoQueries": [
+    "St. Peter's Basilica facade",
+    "St. Peter's Baldachin",
+    "View from St. Peter's dome"
+   ]
   },
   {
    "id": "rom-pizzarium",
@@ -979,11 +1265,7 @@
    "photoExclude": [
     "Andrea Doria, principe di Melfi.jpg"
    ],
-   "photoFiles": [
-    "File:Circonvallazione Trionfale - Via Andrea Doria - panoramio.jpg",
-    "File:Q14 - v Andrea Doria, cinema Doria P1110923.jpg",
-    "File:Quartiere XIV Trionfale, Roma, Italy - panoramio (14).jpg"
-   ]
+   "photoFiles": []
   },
   {
    "id": "rom-castel",
@@ -997,6 +1279,11 @@
     "Mpx",
     "Vista di Roma",
     "Vista_di_Roma"
+   ],
+   "photoQueries": [
+    "Castel Sant'Angelo",
+    "Ponte Sant'Angelo angel",
+    "Castel Sant'Angelo terrace view"
    ]
   },
   {
@@ -1007,7 +1294,8 @@
    "city": "Rome",
    "source": "https://www.daenzoal29.com/",
    "mapQuery": "Da Enzo al 29, Via dei Vascellari 29",
-   "photoQuery": "Trastevere street night"
+   "photoQuery": "Trastevere street night",
+   "photoFiles": []
   },
   {
    "id": "rom-santamaria",
@@ -1016,7 +1304,12 @@
    "lng": 12.4703,
    "city": "Rome",
    "mapQuery": "Basilica di Santa Maria in Trastevere",
-   "photoQuery": "Santa Maria in Trastevere"
+   "photoQuery": "Santa Maria in Trastevere",
+   "photoQueries": [
+    "Santa Maria in Trastevere mosaics",
+    "Trastevere street",
+    "Piazza di Santa Maria in Trastevere"
+   ]
   },
   {
    "id": "rom-seu",
@@ -1026,7 +1319,11 @@
    "city": "Rome",
    "source": "https://www.seu-pizzailluminati.it/",
    "mapQuery": "Seu Pizza Illuminati, Via Angelo Bargoni 10",
-   "photoQuery": "Neapolitan pizza"
+   "photoQuery": "Neapolitan pizza",
+   "photoFiles": [
+    "File:Pizza Tradición Napolitana.jpg",
+    "File:Neapolitan pizza in Fort Lauderdale, Florida.jpg"
+   ]
   },
   {
    "id": "rom-freni",
@@ -1036,7 +1333,11 @@
    "city": "Rome",
    "source": "https://www.freniefrizioni.com/",
    "mapQuery": "Freni e Frizioni, Via del Politeama 4",
-   "photoQuery": "Piazza Trilussa"
+   "photoQuery": "Piazza Trilussa",
+   "photoFiles": [
+    "File:Trastevere - Fontanone dei cento preti a piazza Trilussa 1527.JPG",
+    "File:Piazza Trilussa (14632511149).jpg"
+   ]
   },
   {
    "id": "rom-colosseum",
@@ -1046,7 +1347,12 @@
    "city": "Rome",
    "source": "https://colosseo.it/en/",
    "mapQuery": "Colosseo",
-   "photoQuery": "Colosseum interior arena"
+   "photoQuery": "Colosseum interior arena",
+   "photoQueries": [
+    "Colosseum Rome exterior",
+    "Colosseum interior arena",
+    "Colosseum night"
+   ]
   },
   {
    "id": "rom-forum",
@@ -1062,6 +1368,11 @@
     "6k",
     "panorama",
     "Musei Capitolini"
+   ],
+   "photoQueries": [
+    "Roman Forum",
+    "Palatine Hill",
+    "Arch of Titus"
    ]
   },
   {
@@ -1075,7 +1386,8 @@
    "photoExclude": [
     "Goethe",
     "Rome (Italy), Piazza Navona -- 2013 -- 4418.jpg"
-   ]
+   ],
+   "photoFiles": []
   },
   {
    "id": "rom-mercatomonti",
@@ -1089,7 +1401,8 @@
    "photoExclude": [
     "banner",
     "panoramio"
-   ]
+   ],
+   "photoFiles": []
   },
   {
    "id": "rom-borghese",
@@ -1103,6 +1416,10 @@
    "photoExclude": [
     "Autoritratto",
     "self-portrait"
+   ],
+   "photoFiles": [
+    "File:Galleria borghese facade.jpg",
+    "File:Ceiling \"suicide of Dido\" in Galleria Borghese (Rome).jpg"
    ]
   },
   {
@@ -1112,7 +1429,11 @@
    "lng": 12.4791,
    "city": "Rome",
    "mapQuery": "Terrazza del Pincio",
-   "photoQuery": "Pincio terrace view Piazza del Popolo"
+   "photoQuery": "Pincio terrace view Piazza del Popolo",
+   "photoFiles": [
+    "File:Pincio terrace in Rome.jpg",
+    "File:Piazza del Popolo in Rome (1).jpg"
+   ]
   },
   {
    "id": "rom-felice",
@@ -1122,7 +1443,8 @@
    "city": "Rome",
    "source": "https://www.feliceatestaccio.com/",
    "mapQuery": "Felice a Testaccio, Via Mastro Giorgio 29",
-   "photoQuery": "Testaccio Roma"
+   "photoQuery": "Testaccio Roma",
+   "photoFiles": []
   },
   {
    "id": "rom-flavio",
@@ -1132,7 +1454,1540 @@
    "city": "Rome",
    "source": "https://www.ristorantevelavevodetto.it/",
    "mapQuery": "Flavio al Velavevodetto, Via di Monte Testaccio 97",
-   "photoQuery": "Monte Testaccio"
+   "photoQuery": "Monte Testaccio",
+   "photoFiles": []
+  },
+  {
+   "id": "par-bonnie",
+   "name": "Bonnie at SO/ Paris",
+   "lat": 48.849983,
+   "lng": 2.362442,
+   "city": "Paris",
+   "mapQuery": "Bonnie, 10 Rue Agrippa d'Aubigné",
+   "photoQuery": "SO Paris hotel Morland tower",
+   "source": "https://so-hotels.com/en/paris/restaurants-and-bars/bonnie/"
+  },
+  {
+   "id": "par-maryceleste",
+   "name": "Le Mary Celeste",
+   "lat": 48.861973,
+   "lng": 2.365745,
+   "city": "Paris",
+   "mapQuery": "Le Mary Celeste, 1 Rue Commines",
+   "photoQuery": "Rue Commines Paris",
+   "source": "https://www.timeout.com/paris/en/bars-pubs/le-mary-celeste",
+   "photoFiles": []
+  },
+  {
+   "id": "par-moonshiner",
+   "name": "Moonshiner",
+   "lat": 48.855639,
+   "lng": 2.371203,
+   "city": "Paris",
+   "mapQuery": "Moonshiner, 5 Rue Sedaine",
+   "photoQuery": "Rue Sedaine Paris",
+   "source": "https://www.visitparisregion.com/en/moonshiner",
+   "photoFiles": []
+  },
+  {
+   "id": "par-genin",
+   "name": "Jacques Genin",
+   "lat": 48.864469,
+   "lng": 2.364616,
+   "city": "Paris",
+   "mapQuery": "Jacques Genin, 133 Rue de Turenne",
+   "photoQuery": "Rue de Turenne Paris",
+   "source": "https://www.timeout.com/paris/en/shopping/jacques-genin",
+   "photoFiles": []
+  },
+  {
+   "id": "par-eclairdegenie",
+   "name": "L'Éclair de Génie",
+   "lat": 48.856201,
+   "lng": 2.360622,
+   "city": "Paris",
+   "mapQuery": "L'Éclair de Génie, 14 Rue Pavée",
+   "photoQuery": "Rue Pavée Paris",
+   "source": "https://www.visitparisregion.com/fr/l-eclair-de-genie",
+   "photoFiles": []
+  },
+  {
+   "id": "par-villagestpaul",
+   "name": "Village Saint-Paul",
+   "lat": 48.852713,
+   "lng": 2.360881,
+   "city": "Paris",
+   "mapQuery": "Village Saint-Paul, Rue Saint-Paul",
+   "photoQuery": "Village Saint-Paul Paris",
+   "source": "https://parisjetaime.com/eng/culture/le-village-saint-paul-le-marais-p1368",
+   "photoFiles": [
+    "File:P1270246 Paris IV Village Saint-Paul rwk.jpg",
+    "File:Village Saint-Paul @ Le Marais @ Paris (29254277246).jpg"
+   ]
+  },
+  {
+   "id": "par-kooples",
+   "name": "The Kooples, Rue des Rosiers",
+   "lat": 48.857757,
+   "lng": 2.358119,
+   "city": "Paris",
+   "mapQuery": "The Kooples, 31 Rue des Rosiers",
+   "photoQuery": "Rue des Rosiers Paris",
+   "source": "https://parisjetaime.com/shopping/the-kooples-p2429",
+   "photoFiles": []
+  },
+  {
+   "id": "par-kiloshop",
+   "name": "Kilo Shop Le Marais",
+   "lat": 48.857321,
+   "lng": 2.354757,
+   "city": "Paris",
+   "mapQuery": "Kilo Shop, 69 Rue de la Verrerie",
+   "photoQuery": "Rue de la Verrerie Paris",
+   "source": "https://www.visitparisregion.com/en/kilo-shop-le-marais",
+   "photoFiles": []
+  },
+  {
+   "id": "par-freepstar",
+   "name": "Free'P'Star",
+   "lat": 48.855852,
+   "lng": 2.358864,
+   "city": "Paris",
+   "mapQuery": "Free'P'Star, 20 Rue de Rivoli",
+   "photoQuery": "Rue de Rivoli Saint-Paul Paris",
+   "source": "https://www.visitparisregion.com/en/free-p-star",
+   "photoFiles": []
+  },
+  {
+   "id": "par-cafedesmusees",
+   "name": "Le Café des Musées",
+   "lat": 48.858071,
+   "lng": 2.364331,
+   "city": "Paris",
+   "mapQuery": "Le Café des Musées, 49 Rue de Turenne",
+   "photoQuery": "Rue de Turenne Paris",
+   "source": "https://parisbymouth.com/?p=2027",
+   "photoFiles": []
+  },
+  {
+   "id": "par-loulou",
+   "name": "Chez Loulou",
+   "lat": 48.861678,
+   "lng": 2.351259,
+   "city": "Paris",
+   "mapQuery": "Chez Loulou, 63 Rue Rambuteau",
+   "photoQuery": "Rue Rambuteau Paris",
+   "source": "https://www.sortiraparis.com/en/news/christmas-and-holidays/articles/358306-new-year-s-eve-2027-at-loulou-in-paris-a-96-dinner-with-aperitif",
+   "photoFiles": []
+  },
+  {
+   "id": "par-panoramas",
+   "name": "Passage des Panoramas",
+   "lat": 48.870954,
+   "lng": 2.341659,
+   "city": "Paris",
+   "mapQuery": "Passage des Panoramas, 11 Boulevard Montmartre",
+   "photoQuery": "Passage des Panoramas",
+   "source": "https://parisjetaime.com/culture/passage-des-panoramas-p1582",
+   "photoFiles": [
+    "File:Paris Passage Grand-Cerf 2013.jpg",
+    "File:Passage des Panoramas in July 2022.jpg"
+   ]
+  },
+  {
+   "id": "par-jouffroy",
+   "name": "Passage Jouffroy",
+   "lat": 48.872621,
+   "lng": 2.342156,
+   "city": "Paris",
+   "mapQuery": "Passage Jouffroy, 10 Boulevard Montmartre",
+   "photoQuery": "Passage Jouffroy",
+   "source": "https://www.visitparisregion.com/fr/passage-jouffroy",
+   "photoFiles": [
+    "File:P1020618 Paris IX Passage Jouffroy rwk.JPG",
+    "File:Passage Jouffroy quartier grands boulevards, Paris (22250942429).jpg"
+   ]
+  },
+  {
+   "id": "par-grevin",
+   "name": "Musée Grévin",
+   "lat": 48.871837,
+   "lng": 2.342097,
+   "city": "Paris",
+   "mapQuery": "Musée Grévin, 10 Boulevard Montmartre",
+   "photoQuery": "Musée Grévin",
+   "source": "https://www.grevin-paris.com/",
+   "photoFiles": [
+    "File:Grevin musee facade.jpg",
+    "File:Musée Grévin, Paris 30 July 2016.jpg"
+   ]
+  },
+  {
+   "id": "par-harrys",
+   "name": "Harry's New York Bar",
+   "lat": 48.869611,
+   "lng": 2.331492,
+   "city": "Paris",
+   "mapQuery": "Harry's New York Bar, 5 Rue Daunou",
+   "photoQuery": "Harry's New York Bar Paris",
+   "source": "https://www.timeout.com/paris/en/bars-pubs/harrys-new-york-bar"
+  },
+  {
+   "id": "par-printemps",
+   "name": "Printemps Haussmann",
+   "lat": 48.874154,
+   "lng": 2.327281,
+   "city": "Paris",
+   "mapQuery": "Printemps Haussmann, 64 Boulevard Haussmann",
+   "photoQuery": "Printemps Haussmann",
+   "source": "https://www.printemps.com/",
+   "photoFiles": [
+    "File:Paris 9 - Printemps cupola (2).jpg",
+    "File:Facade printemps.JPG"
+   ]
+  },
+  {
+   "id": "par-grolet",
+   "name": "Cédric Grolet Opéra",
+   "lat": 48.867957,
+   "lng": 2.333196,
+   "city": "Paris",
+   "mapQuery": "Cédric Grolet Opéra, 35 Avenue de l'Opéra",
+   "photoQuery": "Avenue de l'Opéra Paris",
+   "source": "https://cedric-grolet.com/opera/en/edito/our-maison",
+   "photoFiles": []
+  },
+  {
+   "id": "par-cafedelapaix",
+   "name": "Café de la Paix",
+   "lat": 48.870768,
+   "lng": 2.331696,
+   "city": "Paris",
+   "mapQuery": "Café de la Paix, 5 Place de l'Opéra",
+   "photoQuery": "Café de la Paix Paris",
+   "source": "https://www.sortiraparis.com/en/news/christmas-and-holidays/articles/78501-new-year-s-eve-2027-at-cafe-de-la-paix-a-dinner-in-the-spirit-of-1900-paris",
+   "photoQueries": [
+    "Café de la Paix Paris",
+    "Palais Garnier",
+    "Place de l'Opéra Paris"
+   ]
+  },
+  {
+   "id": "par-stohrer",
+   "name": "Stohrer",
+   "lat": 48.86521,
+   "lng": 2.346818,
+   "city": "Paris",
+   "mapQuery": "Stohrer, 51 Rue Montorgueil",
+   "photoQuery": "Stohrer Rue Montorgueil",
+   "source": "https://stohrer.fr/our-shops/",
+   "photoFiles": [
+    "File:51 Rue Montorgueil, Paris (05).jpg",
+    "File:Patisserie Stohrer (Paris).jpg"
+   ]
+  },
+  {
+   "id": "par-ecc",
+   "name": "Experimental Cocktail Club",
+   "lat": 48.866076,
+   "lng": 2.348219,
+   "city": "Paris",
+   "mapQuery": "Experimental Cocktail Club, 37 Rue Saint-Sauveur",
+   "photoQuery": "Rue Saint-Sauveur Paris",
+   "source": "https://www.experimentalcocktailclub.com/paris",
+   "photoFiles": []
+  },
+  {
+   "id": "par-kiliwatch",
+   "name": "Kiliwatch",
+   "lat": 48.864834,
+   "lng": 2.345527,
+   "city": "Paris",
+   "mapQuery": "Kiliwatch, 64 Rue Tiquetonne",
+   "photoQuery": "Rue Tiquetonne Paris",
+   "source": "https://parisjetaime.com/shopping/kiliwatch-p2129",
+   "photoFiles": []
+  },
+  {
+   "id": "par-resetbar",
+   "name": "Reset arcade bar",
+   "lat": 48.863368,
+   "lng": 2.348267,
+   "city": "Paris",
+   "mapQuery": "Reset, 17 Rue du Cygne",
+   "photoQuery": "Rue du Cygne Paris",
+   "source": "https://www.timeout.com/paris/en/bars-and-pubs/reset-bar",
+   "photoFiles": []
+  },
+  {
+   "id": "par-danico",
+   "name": "Danico",
+   "lat": 48.86712,
+   "lng": 2.339294,
+   "city": "Paris",
+   "mapQuery": "Danico, 6 Rue Vivienne",
+   "photoQuery": "Galerie Vivienne",
+   "source": "https://www.timeout.com/paris/en/bars-and-pubs/danico",
+   "photoFiles": []
+  },
+  {
+   "id": "par-gaudard",
+   "name": "Sébastien Gaudard, Tuileries tearoom",
+   "lat": 48.864112,
+   "lng": 2.33227,
+   "city": "Paris",
+   "mapQuery": "Sébastien Gaudard, 1 Rue des Pyramides",
+   "photoQuery": "Rue des Pyramides Paris",
+   "source": "https://sebastiengaudard.com/en/the-tuileries-tea-room-pastry-shop"
+  },
+  {
+   "id": "par-victoires",
+   "name": "Bistrot Victoires",
+   "lat": 48.865559,
+   "lng": 2.340281,
+   "city": "Paris",
+   "mapQuery": "Bistrot Victoires, 6 Rue de la Vrillière",
+   "photoQuery": "Place des Victoires Paris",
+   "source": "https://timeout.com/paris/en/restaurants/bistrot-victoires"
+  },
+  {
+   "id": "par-samaritaine",
+   "name": "La Samaritaine",
+   "lat": 48.859206,
+   "lng": 2.342353,
+   "city": "Paris",
+   "mapQuery": "La Samaritaine, 9 Rue de la Monnaie",
+   "photoQuery": "La Samaritaine Paris",
+   "source": "https://www.samaritaine.com/en/plan-your-visit/",
+   "photoQueries": [
+    "La Samaritaine glass roof",
+    "La Samaritaine peacock fresco",
+    "La Samaritaine Pont Neuf facade"
+   ]
+  },
+  {
+   "id": "par-vertgalant",
+   "name": "Square du Vert-Galant",
+   "lat": 48.857407,
+   "lng": 2.340328,
+   "city": "Paris",
+   "mapQuery": "Square du Vert-Galant, Place du Pont-Neuf",
+   "photoQuery": "Square du Vert-Galant",
+   "source": "https://en.wikipedia.org/wiki/Square_du_Vert-Galant"
+  },
+  {
+   "id": "par-laduree",
+   "name": "Ladurée Royale",
+   "lat": 48.868427,
+   "lng": 2.323614,
+   "city": "Paris",
+   "mapQuery": "Ladurée, 16 Rue Royale",
+   "photoQuery": "Ladurée rue Royale",
+   "source": "https://www.sortiraparis.com/lieux/3881-laduree-royale"
+  },
+  {
+   "id": "par-clubbarriere",
+   "name": "Club Barrière Paris",
+   "lat": 48.871972,
+   "lng": 2.301836,
+   "city": "Paris",
+   "mapQuery": "Club Barrière Paris, 104 Avenue des Champs-Élysées",
+   "photoQuery": "Avenue des Champs-Élysées night",
+   "source": "https://parisjetaime.com/eng/culture/club-barriere-paris-p4885"
+  },
+  {
+   "id": "par-alexandre3",
+   "name": "Pont Alexandre III",
+   "lat": 48.86347,
+   "lng": 2.313518,
+   "city": "Paris",
+   "mapQuery": "Pont Alexandre III, Port des Champs-Élysées",
+   "photoQuery": "Pont Alexandre III night",
+   "source": "https://en.wikipedia.org/wiki/Pont_Alexandre_III",
+   "photoQueries": [
+    "Pont Alexandre III",
+    "Pont Alexandre III lamps",
+    "Pont Alexandre III night"
+   ]
+  },
+  {
+   "id": "par-carette",
+   "name": "Carette Trocadéro",
+   "lat": 48.863724,
+   "lng": 2.287237,
+   "city": "Paris",
+   "mapQuery": "Carette, 4 Place du Trocadéro et du 11 Novembre",
+   "photoQuery": "Place du Trocadéro Paris",
+   "source": "https://www.chocoparis.com/carette/",
+   "photoFiles": [
+    "File:Place du Trocadéro-et-du-11-Novembre à Paris le 23 avril 2015 - 38.jpg"
+   ]
+  },
+  {
+   "id": "par-botaniste",
+   "name": "Le Bar Botaniste, Shangri-La",
+   "lat": 48.863719,
+   "lng": 2.293426,
+   "city": "Paris",
+   "mapQuery": "Le Bar Botaniste, 10 Avenue d'Iéna",
+   "photoQuery": "Shangri-La Hotel Paris",
+   "source": "https://parisjetaime.com/eng/restaurant/le-bar-botaniste-p700"
+  },
+  {
+   "id": "par-terrass",
+   "name": "Terrass'' Hotel rooftop",
+   "lat": 48.886471,
+   "lng": 2.333126,
+   "city": "Paris",
+   "mapQuery": "Terrass'' Hotel, 12 Rue Joseph de Maistre",
+   "photoQuery": "Terrass Hotel Montmartre",
+   "source": "https://en.terrass-hotel.com/bar-rooftop"
+  },
+  {
+   "id": "par-funiculaire",
+   "name": "Montmartre Funicular",
+   "lat": 48.885174,
+   "lng": 2.342568,
+   "city": "Paris",
+   "mapQuery": "Funiculaire de Montmartre, Place Suzanne Valadon",
+   "photoQuery": "Funiculaire de Montmartre",
+   "source": "https://www.ratp.fr/en/discover/heritage/history-montmartre-funicular"
+  },
+  {
+   "id": "par-grenierapain",
+   "name": "Le Grenier à Pain Abbesses",
+   "lat": 48.885277,
+   "lng": 2.33667,
+   "city": "Paris",
+   "mapQuery": "Le Grenier à Pain, 38 Rue des Abbesses",
+   "photoQuery": "Rue des Abbesses Paris",
+   "source": "https://parisjetaime.com/eng/shopping/le-grenier-a-pain-p2563"
+  },
+  {
+   "id": "par-odette",
+   "name": "Odette",
+   "lat": 48.852043,
+   "lng": 2.346506,
+   "city": "Paris",
+   "mapQuery": "Odette, 77 Rue Galande",
+   "photoQuery": "Rue Galande Paris",
+   "source": "https://www.sortiraparis.com/en/where-to-eat-in-paris/brunch-cafe-tea-time/articles/245599-odette-paris-la-maison-de-choux-a-la-creme-au-charme-d-antan"
+  },
+  {
+   "id": "par-caveau",
+   "name": "Le Caveau de la Huchette",
+   "lat": 48.852787,
+   "lng": 2.346298,
+   "city": "Paris",
+   "mapQuery": "Le Caveau de la Huchette, 5 Rue de la Huchette",
+   "photoQuery": "Caveau de la Huchette",
+   "source": "https://www.caveaudelahuchette.fr/2",
+   "photoFiles": [
+    "File:Caveau de la Huchette, 5 rue de la Huchette, Paris 5e 2.jpg",
+    "File:Le Caveau de la Huchette.jpg"
+   ]
+  },
+  {
+   "id": "par-herme",
+   "name": "Pierre Hermé, Rue Bonaparte",
+   "lat": 48.851539,
+   "lng": 2.332827,
+   "city": "Paris",
+   "mapQuery": "Pierre Hermé, 72 Rue Bonaparte",
+   "photoQuery": "Pierre Hermé Paris",
+   "source": "https://parisjetaime.com/eng/shopping/pierre-herme-bonaparte-p2388"
+  },
+  {
+   "id": "par-bonmarche",
+   "name": "Le Bon Marché Rive Gauche",
+   "lat": 48.85094,
+   "lng": 2.32466,
+   "city": "Paris",
+   "mapQuery": "Le Bon Marché, 24 Rue de Sèvres",
+   "photoQuery": "Le Bon Marché Paris",
+   "source": "https://parisjetaime.com/fr/shopping/le-bon-marche-rive-gauche-p3723",
+   "photoFiles": [
+    "File:Le Bon Marché, Paris 27 May 2012.jpg",
+    "File:Interior of Le Bon Marché, July 2022.jpg"
+   ]
+  },
+  {
+   "id": "par-deyrolle",
+   "name": "Deyrolle",
+   "lat": 48.856462,
+   "lng": 2.326402,
+   "city": "Paris",
+   "mapQuery": "Deyrolle, 46 Rue du Bac",
+   "photoQuery": "Deyrolle Paris",
+   "source": "https://parisjetaime.com/eng/shopping/maison-deyrolle-p2598",
+   "photoFiles": [
+    "File:Deyrolle, 46 Rue du Bac, 75007 Paris 2013.jpg"
+   ]
+  },
+  {
+   "id": "par-prescription",
+   "name": "Prescription Cocktail Club",
+   "lat": 48.854966,
+   "lng": 2.337945,
+   "city": "Paris",
+   "mapQuery": "Prescription Cocktail Club, 23 Rue Mazarine",
+   "photoQuery": "Rue Mazarine Paris",
+   "source": "https://parisjetaime.com/eng/restaurant/prescription-cocktail-club-p625"
+  },
+  {
+   "id": "par-pontdesarts",
+   "name": "Pont des Arts",
+   "lat": 48.858407,
+   "lng": 2.337548,
+   "city": "Paris",
+   "mapQuery": "Pont des Arts, Quai de Conti",
+   "photoQuery": "Pont des Arts night",
+   "source": "https://en.wikipedia.org/wiki/Pont_des_Arts",
+   "photoFiles": [
+    "File:Pont des Arts, 6e Arrondissement, Paris (HDR) 20140320 1.jpg",
+    "File:Pont des Arts by night (5346742705).jpg"
+   ]
+  },
+  {
+   "id": "par-artsforains",
+   "name": "Musée des Arts Forains, Festival du Merveilleux",
+   "lat": 48.832766,
+   "lng": 2.389338,
+   "city": "Paris",
+   "mapQuery": "Musée des Arts Forains, 53 Avenue des Terroirs de France",
+   "photoQuery": "Musée des Arts Forains",
+   "source": "https://arts-forains.com/"
+  },
+  {
+   "id": "par-imperialclub",
+   "name": "Impérial Club Paris",
+   "lat": 48.822129,
+   "lng": 2.36628,
+   "city": "Paris",
+   "mapQuery": "Impérial Club Paris, 23 Avenue d'Ivry",
+   "photoQuery": "Avenue d'Ivry Paris",
+   "source": "https://www.sortiraparis.com/en/lieux/82351-imperial-club-paris"
+  },
+  {
+   "id": "par-merlemoqueur",
+   "name": "Le Merle Moqueur, Butte-aux-Cailles",
+   "lat": 48.827731,
+   "lng": 2.350357,
+   "city": "Paris",
+   "mapQuery": "Le Merle Moqueur, 11 Rue de la Butte aux Cailles",
+   "photoQuery": "Butte-aux-Cailles",
+   "source": "https://timeout.com/paris/en/bars-pubs/le-merle-moqueur"
+  },
+  {
+   "id": "par-cablec1",
+   "name": "Câble C1 cable car",
+   "lat": 48.768746,
+   "lng": 2.464379,
+   "city": "Paris",
+   "mapQuery": "Câble C1 Pointe du Lac, Avenue Bernard Halpern, Créteil",
+   "photoQuery": "Câble C1 téléphérique",
+   "source": "https://www.iledefrance-mobilites.fr/en/le-reseau/services-de-mobilite/cable",
+   "photoFiles": [
+    "File:Téléphérique d'Île-de-France C1.jpg",
+    "File:Câble 1-pointe du lac.jpg"
+   ]
+  },
+  {
+   "id": "par-provinces",
+   "name": "Boucherie Les Provinces",
+   "lat": 48.84935,
+   "lng": 2.378527,
+   "city": "Paris",
+   "mapQuery": "Boucherie Les Provinces, 20 Rue d'Aligre",
+   "photoQuery": "Marché d'Aligre Paris",
+   "source": "https://parisbymouth.com/boucherie-les-provinces/"
+  },
+  {
+   "id": "par-syndicat",
+   "name": "Le Syndicat",
+   "lat": 48.871792,
+   "lng": 2.353659,
+   "city": "Paris",
+   "mapQuery": "Le Syndicat, 51 Rue du Faubourg Saint-Denis",
+   "photoQuery": "Rue du Faubourg Saint-Denis Paris",
+   "source": "https://www.visitparisregion.com/en/le-syndicat"
+  },
+  {
+   "id": "flo-scuolacuoio",
+   "name": "Scuola del Cuoio",
+   "lat": 43.7686,
+   "lng": 11.2627,
+   "city": "Florence",
+   "mapQuery": "Scuola del Cuoio, Via di San Giuseppe 5r",
+   "photoQuery": "Scuola del Cuoio Firenze Santa Croce",
+   "source": "https://scuoladelcuoio.it/"
+  },
+  {
+   "id": "flo-benheart",
+   "name": "Benheart",
+   "lat": 43.77163,
+   "lng": 11.2554,
+   "city": "Florence",
+   "mapQuery": "Benheart, Via dei Calzaiuoli 78r",
+   "photoQuery": "Via dei Calzaiuoli Firenze",
+   "source": "https://www.benheart.it/pages/boutiques"
+  },
+  {
+   "id": "flo-giorgio1966",
+   "name": "Giorgio 1966 Leather Factory",
+   "lat": 43.7753,
+   "lng": 11.2532,
+   "city": "Florence",
+   "mapQuery": "Giorgio 1966, Via del Canto de' Nelli 34r",
+   "photoQuery": "Mercato di San Lorenzo Firenze",
+   "source": "https://visitflorence.com/what-to-do-in-florence/shopping/buying-leather-in-florence.html"
+  },
+  {
+   "id": "flo-madova",
+   "name": "Madova Gloves",
+   "lat": 43.7676,
+   "lng": 11.2531,
+   "city": "Florence",
+   "mapQuery": "Madova, Via de' Guicciardini 1r",
+   "photoQuery": "Via de' Guicciardini Firenze",
+   "source": "https://www.frommers.com/destinations/florence/shopping/madova/"
+  },
+  {
+   "id": "flo-giannini",
+   "name": "Giulio Giannini e Figlio",
+   "lat": 43.7664,
+   "lng": 11.25064,
+   "city": "Florence",
+   "mapQuery": "Giulio Giannini e Figlio, Piazza de' Pitti 37r",
+   "photoQuery": "Piazza Pitti Firenze",
+   "source": "https://www.firenzemadeintuscany.com/en/place/giulio-giannini-figlio/"
+  },
+  {
+   "id": "flo-aquaflor",
+   "name": "Aquaflor",
+   "lat": 43.76799,
+   "lng": 11.26049,
+   "city": "Florence",
+   "mapQuery": "Aquaflor, Borgo Santa Croce 6",
+   "photoQuery": "Borgo Santa Croce Firenze",
+   "source": "https://www.firenzemadeintuscany.com/en/place/aquaflor-firenze/"
+  },
+  {
+   "id": "flo-locale",
+   "name": "Locale Firenze",
+   "lat": 43.77119,
+   "lng": 11.26001,
+   "city": "Florence",
+   "mapQuery": "Locale Firenze, Via delle Seggiole 12r",
+   "photoQuery": "Locale Firenze bar",
+   "source": "https://www.theworlds50best.com/bars/the-list/locale-firenze.html"
+  },
+  {
+   "id": "flo-manifattura",
+   "name": "Manifattura",
+   "lat": 43.77197,
+   "lng": 11.24976,
+   "city": "Florence",
+   "mapQuery": "Manifattura, Piazza di San Pancrazio 1r",
+   "photoQuery": "Piazza San Pancrazio Firenze",
+   "source": "https://mesprestiges.com/en/firenze/places/manifattura"
+  },
+  {
+   "id": "flo-giacosa",
+   "name": "Giacosa 1815",
+   "lat": 43.7722,
+   "lng": 11.24947,
+   "city": "Florence",
+   "mapQuery": "Giacosa 1815, Via della Spada 15r",
+   "photoQuery": "Caffè Giacosa Firenze",
+   "source": "https://www.giacosafirenze.com/"
+  },
+  {
+   "id": "flo-giardino25",
+   "name": "Gucci Giardino 25",
+   "lat": 43.76994,
+   "lng": 11.2567,
+   "city": "Florence",
+   "mapQuery": "Gucci Giardino 25, Piazza della Signoria 37r",
+   "photoQuery": "Piazza della Signoria night",
+   "source": "https://gucciosteria.com/it/florence/giardino/"
+  },
+  {
+   "id": "flo-rivoire",
+   "name": "Caffè Rivoire",
+   "lat": 43.76971,
+   "lng": 11.25517,
+   "city": "Florence",
+   "mapQuery": "Rivoire, Piazza della Signoria 4",
+   "photoQuery": "Caffè Rivoire Firenze",
+   "source": "https://www.italia.it/en/toscana/firenze/where-to-eat/rivoire-firenze"
+  },
+  {
+   "id": "flo-rasputin",
+   "name": "Rasputin",
+   "lat": 43.76494,
+   "lng": 11.24686,
+   "city": "Florence",
+   "mapQuery": "Rasputin, Borgo Tegolaio 21r",
+   "photoQuery": "Borgo Tegolaio Firenze",
+   "source": "https://app.tableo.com/widget/rasputin-secret-bar-italy"
+  },
+  {
+   "id": "flo-volume",
+   "name": "Volume",
+   "lat": 43.76659,
+   "lng": 11.24773,
+   "city": "Florence",
+   "mapQuery": "Volume, Piazza Santo Spirito 5r",
+   "photoQuery": "Piazza Santo Spirito night",
+   "source": "https://mesprestiges.com/en/firenze/places/volume"
+  },
+  {
+   "id": "flo-madsouls",
+   "name": "Mad Souls & Spirits",
+   "lat": 43.76993,
+   "lng": 11.24315,
+   "city": "Florence",
+   "mapQuery": "Mad Souls & Spirits, Borgo San Frediano 36r",
+   "photoQuery": "Borgo San Frediano Firenze",
+   "source": "https://mesprestiges.com/en/firenze/places/mad-souls-and-spirits"
+  },
+  {
+   "id": "flo-santino",
+   "name": "Il Santino",
+   "lat": 43.76898,
+   "lng": 11.24699,
+   "city": "Florence",
+   "mapQuery": "Il Santino, Via di Santo Spirito 60r",
+   "photoQuery": "Via di Santo Spirito Firenze",
+   "source": "https://starwinelist.com/wine-place/il-santino"
+  },
+  {
+   "id": "flo-babae",
+   "name": "Babae Wine Window",
+   "lat": 43.76857,
+   "lng": 11.24797,
+   "city": "Florence",
+   "mapQuery": "Babae, Via di Santo Spirito 21r",
+   "photoQuery": "Buchetta del vino Firenze",
+   "source": "https://atlasobscura.com/places/babae-wine-window"
+  },
+  {
+   "id": "flo-pontesantatrinita",
+   "name": "Ponte Santa Trinita",
+   "lat": 43.7697,
+   "lng": 11.2502,
+   "city": "Florence",
+   "mapQuery": "Ponte Santa Trinita",
+   "photoQuery": "Ponte Santa Trinita night",
+   "source": "https://en.wikipedia.org/wiki/Ponte_Santa_Trinita"
+  },
+  {
+   "id": "flo-tornabuoni",
+   "name": "Via de' Tornabuoni",
+   "lat": 43.7715,
+   "lng": 11.2513,
+   "city": "Florence",
+   "mapQuery": "Via de' Tornabuoni",
+   "photoQuery": "Via de' Tornabuoni Firenze",
+   "source": "https://en.wikipedia.org/wiki/Via_de%27_Tornabuoni",
+   "photoFiles": [
+    "File:Firenze Centro.jpg",
+    "File:Via Tornabuoni sera.jpg"
+   ]
+  },
+  {
+   "id": "flo-ferragamo",
+   "name": "Ferragamo flagship, Palazzo Spini Feroni",
+   "lat": 43.77044,
+   "lng": 11.25144,
+   "city": "Florence",
+   "mapQuery": "Ferragamo, Via de' Tornabuoni 4r",
+   "photoQuery": "Palazzo Spini Feroni",
+   "source": "https://en.wikipedia.org/wiki/Palazzo_Spini_Feroni",
+   "photoFiles": [
+    "File:Palazzo Spini Feroni.jpg",
+    "File:Via de' Tornabuoni 2 angolo lungarno degli acciaiuoli, palazzo spini feroni, 01.jpg"
+   ]
+  },
+  {
+   "id": "flo-cucciolo",
+   "name": "Pasticceria Cucciolo",
+   "lat": 43.77149,
+   "lng": 11.25553,
+   "city": "Florence",
+   "mapQuery": "Cucciolo, Via del Corso 25r",
+   "photoQuery": "Via del Corso Firenze",
+   "source": "https://www.spottedbylocals.com/florence/bar-pasticceria-cucciolo"
+  },
+  {
+   "id": "flo-cosi",
+   "name": "I Dolci di Patrizio Cosi",
+   "lat": 43.77147,
+   "lng": 11.26057,
+   "city": "Florence",
+   "mapQuery": "I Dolci di Patrizio Cosi, Borgo degli Albizi 15r",
+   "photoQuery": "Borgo degli Albizi Firenze",
+   "source": "https://tasteatlas.com/i-dolci-di-patrizio-cosi"
+  },
+  {
+   "id": "flo-nencioni",
+   "name": "Pasticceria Nencioni",
+   "lat": 43.77148,
+   "lng": 11.26486,
+   "city": "Florence",
+   "mapQuery": "Pasticceria Nencioni, Via Pietrapiana 24r",
+   "photoQuery": "Via Pietrapiana Firenze",
+   "source": "https://www.firenzemadeintuscany.com/en/place/pasticceria-nencioni/"
+  },
+  {
+   "id": "flo-vestri",
+   "name": "Vestri",
+   "lat": 43.77146,
+   "lng": 11.26094,
+   "city": "Florence",
+   "mapQuery": "Vestri, Borgo degli Albizi 11r",
+   "photoQuery": "Vestri cioccolato Firenze",
+   "source": "https://firenzemadeintuscany.com/en/place/vestri"
+  },
+  {
+   "id": "flo-scudieri",
+   "name": "Caffè Scudieri",
+   "lat": 43.77337,
+   "lng": 11.25446,
+   "city": "Florence",
+   "mapQuery": "Scudieri, Piazza di San Giovanni 19r",
+   "photoQuery": "Battistero Firenze Via de' Cerretani",
+   "source": "https://www.firenzemadeintuscany.com/en/place/scudieri/"
+  },
+  {
+   "id": "flo-gelateriadeineri",
+   "name": "Gelateria dei Neri",
+   "lat": 43.76796,
+   "lng": 11.25869,
+   "city": "Florence",
+   "mapQuery": "Gelateria dei Neri, Via dei Neri 9r",
+   "photoQuery": "Via dei Neri Firenze",
+   "source": "https://devourtours.com/blog/best-gelato-florence/"
+  },
+  {
+   "id": "flo-santatrinitagelato",
+   "name": "Gelateria Santa Trinita",
+   "lat": 43.76852,
+   "lng": 11.24982,
+   "city": "Florence",
+   "mapQuery": "Gelateria Santa Trinita, Piazza de' Frescobaldi 11r",
+   "photoQuery": "Piazza de' Frescobaldi Firenze",
+   "source": "https://www.firenzemadeintuscany.com/it/place/gelateria-santa-trinita/"
+  },
+  {
+   "id": "flo-carraia",
+   "name": "Gelateria La Carraia",
+   "lat": 43.76962,
+   "lng": 11.24671,
+   "city": "Florence",
+   "mapQuery": "Gelateria La Carraia, Piazza Nazario Sauro 25r",
+   "photoQuery": "Ponte alla Carraia Firenze",
+   "source": "https://www.firenzemadeintuscany.com/en/place/gelateria-la-carraia/"
+  },
+  {
+   "id": "flo-sorbettiera",
+   "name": "La Sorbettiera",
+   "lat": 43.76785,
+   "lng": 11.24079,
+   "city": "Florence",
+   "mapQuery": "La Sorbettiera, Piazza Torquato Tasso 11r",
+   "photoQuery": "Piazza Tasso Firenze",
+   "source": "https://www.eatingeurope.com/blog/la-sorbettiera-florence-review/"
+  },
+  {
+   "id": "flo-edoardo",
+   "name": "Gelateria Edoardo",
+   "lat": 43.77255,
+   "lng": 11.2577,
+   "city": "Florence",
+   "mapQuery": "Gelateria Edoardo, Piazza del Duomo 45r",
+   "photoQuery": "Piazza del Duomo Firenze",
+   "source": "https://devourtours.com/blog/best-gelato-florence/"
+  },
+  {
+   "id": "flo-percheno",
+   "name": "Perchè No!",
+   "lat": 43.77082,
+   "lng": 11.25549,
+   "city": "Florence",
+   "mapQuery": "Perchè No!, Via dei Tavolini 19r",
+   "photoQuery": "Via dei Tavolini Firenze",
+   "source": "https://devourtours.com/blog/best-gelato-florence/"
+  },
+  {
+   "id": "flo-anticotrippaio",
+   "name": "L'Antico Trippaio",
+   "lat": 43.7709,
+   "lng": 11.25635,
+   "city": "Florence",
+   "mapQuery": "L'Antico Trippaio, Piazza dei Cimatori",
+   "photoQuery": "Lampredotto Firenze trippaio",
+   "source": "https://devourtours.com/blog/lampredotto-florence/"
+  },
+  {
+   "id": "flo-fratellini",
+   "name": "I Fratellini",
+   "lat": 43.77061,
+   "lng": 11.25546,
+   "city": "Florence",
+   "mapQuery": "I Fratellini, Via dei Cimatori 38r",
+   "photoQuery": "I Fratellini Firenze",
+   "source": "https://www.frommers.com/destinations/florence/restaurants/i-fratellini"
+  },
+  {
+   "id": "flo-vinattieri",
+   "name": "Da' Vinattieri",
+   "lat": 43.77127,
+   "lng": 11.25714,
+   "city": "Florence",
+   "mapQuery": "Da' Vinattieri, Via Santa Margherita 4r",
+   "photoQuery": "Via Santa Margherita Firenze",
+   "source": "https://www.emirates.com/english/open-skies/3965530/da-vinattieri-florence"
+  },
+  {
+   "id": "flo-mario",
+   "name": "Trattoria Mario",
+   "lat": 43.77657,
+   "lng": 11.25453,
+   "city": "Florence",
+   "mapQuery": "Trattoria Mario, Via Rosina 2r",
+   "photoQuery": "Trattoria Mario Firenze",
+   "source": "https://mesprestiges.com/en/firenze/places/trattoria-mario"
+  },
+  {
+   "id": "flo-zaza",
+   "name": "Trattoria Zà Zà",
+   "lat": 43.77647,
+   "lng": 11.25448,
+   "city": "Florence",
+   "mapQuery": "Trattoria Zà Zà, Piazza del Mercato Centrale 26r",
+   "photoQuery": "Piazza del Mercato Centrale Firenze",
+   "source": "https://trattoriazaza.it/en/"
+  },
+  {
+   "id": "flo-regina",
+   "name": "Regina Bistecca",
+   "lat": 43.77467,
+   "lng": 11.25697,
+   "city": "Florence",
+   "mapQuery": "Regina Bistecca, Via Ricasoli 14r",
+   "photoQuery": "Bistecca alla fiorentina",
+   "source": "https://www.opentable.com/r/regina-bistecca-firenze"
+  },
+  {
+   "id": "flo-latini",
+   "name": "Il Latini",
+   "lat": 43.77179,
+   "lng": 11.24903,
+   "city": "Florence",
+   "mapQuery": "Il Latini, Via dei Palchetti 6r",
+   "photoQuery": "Il Latini Firenze",
+   "source": "https://guide.michelin.com/ie/en/toscana/firenze/restaurant/il-latini"
+  },
+  {
+   "id": "flo-nuvoli",
+   "name": "Fiaschetteria Nuvoli",
+   "lat": 43.77327,
+   "lng": 11.25406,
+   "city": "Florence",
+   "mapQuery": "Fiaschetteria Nuvoli, Piazza dell'Olio 15r",
+   "photoQuery": "Piazza dell'Olio Firenze",
+   "source": "https://www.firenzemadeintuscany.com/en/place/fiaschetteria-nuvoli/"
+  },
+  {
+   "id": "flo-gilli",
+   "name": "Caffè Gilli",
+   "lat": 43.77166,
+   "lng": 11.25444,
+   "city": "Florence",
+   "mapQuery": "Caffè Gilli, Via Roma 1r",
+   "photoQuery": "Caffè Gilli Firenze",
+   "source": "https://www.firenzemadeintuscany.com/en/place/caffe-gilli/"
+  },
+  {
+   "id": "flo-carousel",
+   "name": "Carousel on Piazza della Repubblica",
+   "lat": 43.7714,
+   "lng": 11.2539,
+   "city": "Florence",
+   "mapQuery": "Giostra, Piazza della Repubblica",
+   "photoQuery": "Piazza della Repubblica Firenze carousel",
+   "source": "https://www.inyourpocket.com/florence/the-carousel-at-piazza-della-repubblica_166964v"
+  },
+  {
+   "id": "flo-secretpassages",
+   "name": "Palazzo Vecchio Secret Passages",
+   "lat": 43.7693,
+   "lng": 11.2563,
+   "city": "Florence",
+   "mapQuery": "Palazzo Vecchio, Piazza della Signoria",
+   "photoQuery": "Palazzo Vecchio Studiolo",
+   "source": "https://ticketsmuseums.comune.fi.it/10_secret-passages/",
+   "photoFiles": [
+    "File:Firenze-palazzo vecchio 24.jpg",
+    "File:Vista del Studiolo de Francisco I.jpg"
+   ]
+  },
+  {
+   "id": "flo-vasari",
+   "name": "Vasari Corridor",
+   "lat": 43.768,
+   "lng": 11.2535,
+   "city": "Florence",
+   "mapQuery": "Corridoio Vasariano, Piazzale degli Uffizi",
+   "photoQuery": "Vasari Corridor",
+   "source": "https://www.uffizi.it/en/pages/tickets-fares",
+   "photoFiles": [
+    "File:Florence Italy Houses-at-Arno-River-02.jpg",
+    "File:Palazzo Pitti, end of the Vasari Corridor 2016-05-06.jpg"
+   ]
+  },
+  {
+   "id": "flo-rosegarden",
+   "name": "Giardino delle Rose",
+   "lat": 43.7633,
+   "lng": 11.2621,
+   "city": "Florence",
+   "mapQuery": "Giardino delle Rose, Viale Giuseppe Poggi 2",
+   "photoQuery": "Giardino delle Rose Firenze",
+   "source": "https://www.feelflorence.it/en/node/12083",
+   "photoFiles": [
+    "File:Firenze Giardino delle Rose Vista su Firenze 2.jpg",
+    "File:Giardino delle Rose e Firenze.jpg"
+   ]
+  },
+  {
+   "id": "flo-magichapel",
+   "name": "Magi Chapel, Palazzo Medici Riccardi",
+   "lat": 43.7752,
+   "lng": 11.2559,
+   "city": "Florence",
+   "mapQuery": "Palazzo Medici Riccardi, Via Cavour 3",
+   "photoQuery": "Benozzo Gozzoli Magi Chapel",
+   "source": "https://www.italia.it/it/toscana/firenze/luoghi-della-cultura/palazzo-medici-riccardi"
+  },
+  {
+   "id": "flo-themall",
+   "name": "The Mall Firenze",
+   "lat": 43.7003,
+   "lng": 11.457,
+   "city": "Florence",
+   "mapQuery": "The Mall Firenze, Via Europa 8, Leccio",
+   "photoQuery": "The Mall Leccio Reggello",
+   "source": "https://www.trenitalia.com/it/servizi/the-mall.html"
+  },
+  {
+   "id": "rom-rosciolicaffe",
+   "name": "Roscioli Caffè Pasticceria",
+   "lat": 41.89365,
+   "lng": 12.47531,
+   "city": "Rome",
+   "mapQuery": "Roscioli Caffè Pasticceria, Piazza Benedetto Cairoli 16",
+   "photoQuery": "Piazza Benedetto Cairoli Rome",
+   "source": "https://www.rosciolicaffe.it"
+  },
+  {
+   "id": "rom-boccione",
+   "name": "Pasticceria Boccione",
+   "lat": 41.89323,
+   "lng": 12.47691,
+   "city": "Rome",
+   "mapQuery": "Pasticceria Boccione, Via del Portico d'Ottavia 1",
+   "photoQuery": "Via del Portico d'Ottavia Rome",
+   "source": "https://www.afar.com/places/boccione-il-forno-del-ghetto-rome",
+   "photoFiles": [
+    "File:Via del Portico d'Ottavia (Rome) - Jewish shops 2005.jpg",
+    "File:Holocaust memorial plaque - via del Portico d'Ottavia Rome (3).jpg"
+   ]
+  },
+  {
+   "id": "rom-nonnabetta",
+   "name": "Nonna Betta",
+   "lat": 41.89275,
+   "lng": 12.47812,
+   "city": "Rome",
+   "mapQuery": "Nonna Betta, Via del Portico d'Ottavia 16",
+   "photoQuery": "Carciofi alla giudia",
+   "source": "https://www.turismoroma.it/en/hospitality/nonna-betta"
+  },
+  {
+   "id": "rom-nonnavincenza",
+   "name": "I Dolci di Nonna Vincenza",
+   "lat": 41.89406,
+   "lng": 12.47299,
+   "city": "Rome",
+   "mapQuery": "I Dolci di Nonna Vincenza, Via dell'Arco del Monte 98",
+   "photoQuery": "Cannoli siciliani",
+   "source": "https://tasteatlas.com/i-dolci-di-nonna-vincenza/cannoli"
+  },
+  {
+   "id": "rom-tartarughe",
+   "name": "Turtle Fountain",
+   "lat": 41.89383,
+   "lng": 12.47758,
+   "city": "Rome",
+   "mapQuery": "Fontana delle Tartarughe, Piazza Mattei",
+   "photoQuery": "Fontana delle Tartarughe Rome",
+   "source": "https://en.wikipedia.org/wiki/Fontana_delle_Tartarughe",
+   "photoFiles": [
+    "File:Fontana delle Tartarughe (The Turtle Fountain).jpg",
+    "File:The Turtle Fountain.jpg"
+   ]
+  },
+  {
+   "id": "rom-santeustachio",
+   "name": "Sant'Eustachio Il Caffè",
+   "lat": 41.89825,
+   "lng": 12.47543,
+   "city": "Rome",
+   "mapQuery": "Sant'Eustachio Il Caffè, Piazza di Sant'Eustachio 82",
+   "photoQuery": "Sant'Eustachio il Caffè Rome",
+   "source": "https://santeustachioilcaffe.it"
+  },
+  {
+   "id": "rom-galleriasordi",
+   "name": "Galleria Alberto Sordi",
+   "lat": 41.90101,
+   "lng": 12.48084,
+   "city": "Rome",
+   "mapQuery": "Galleria Alberto Sordi, Piazza Colonna",
+   "photoQuery": "Galleria Alberto Sordi Rome",
+   "source": "https://www.turismoroma.it/en/places/galleria-alberto-sordi-formerly-galleria-colonna"
+  },
+  {
+   "id": "rom-barscalini",
+   "name": "Tre Scalini on Piazza Navona",
+   "lat": 41.89925,
+   "lng": 12.47272,
+   "city": "Rome",
+   "mapQuery": "Tre Scalini, Piazza Navona 28",
+   "photoQuery": "Tre Scalini Piazza Navona",
+   "source": "https://www.turismoroma.it/en/node/132274"
+  },
+  {
+   "id": "rom-jerrythomas",
+   "name": "Jerry Thomas Speakeasy",
+   "lat": 41.89785,
+   "lng": 12.46792,
+   "city": "Rome",
+   "mapQuery": "Jerry Thomas Speakeasy, Vicolo Cellini 30",
+   "photoQuery": "Vicolo Cellini Rome",
+   "source": "https://www.thejerrythomasproject.it/speakeasy/"
+  },
+  {
+   "id": "rom-salotto42",
+   "name": "Salotto 42",
+   "lat": 41.90011,
+   "lng": 12.47939,
+   "city": "Rome",
+   "mapQuery": "Salotto 42, Piazza di Pietra 42",
+   "photoQuery": "Temple of Hadrian Piazza di Pietra night",
+   "source": "https://www.turismoroma.it/en/node/130679"
+  },
+  {
+   "id": "rom-frigidarium",
+   "name": "Frigidarium",
+   "lat": 41.89825,
+   "lng": 12.47045,
+   "city": "Rome",
+   "mapQuery": "Frigidarium, Via del Governo Vecchio 112",
+   "photoQuery": "Via del Governo Vecchio Rome",
+   "source": "https://www.afar.com/travel-tips/the-best-gelato-near-romes-historic-attractions"
+  },
+  {
+   "id": "rom-coronari",
+   "name": "Via dei Coronari",
+   "lat": 41.90048,
+   "lng": 12.47007,
+   "city": "Rome",
+   "mapQuery": "Via dei Coronari",
+   "photoQuery": "Via dei Coronari",
+   "source": "https://en.wikipedia.org/wiki/Via_dei_Coronari",
+   "photoFiles": [
+    "File:Via dei Coronari in Rome (1).jpg",
+    "File:Roma, Via dei Coronari di notte (2).jpg"
+   ]
+  },
+  {
+   "id": "rom-gelateriateatro",
+   "name": "Gelateria del Teatro",
+   "lat": 41.90047,
+   "lng": 12.46957,
+   "city": "Rome",
+   "mapQuery": "Gelateria del Teatro, Via dei Coronari 65",
+   "photoQuery": "Gelateria del Teatro Rome",
+   "source": "https://www.fodors.com/world/europe/italy/rome/restaurants/reviews/gelateria-del-teatro-166304220"
+  },
+  {
+   "id": "rom-rinascente",
+   "name": "Rinascente Via del Tritone",
+   "lat": 41.90272,
+   "lng": 12.48474,
+   "city": "Rome",
+   "mapQuery": "Rinascente, Via del Tritone 61",
+   "photoQuery": "Rinascente Via del Tritone",
+   "source": "https://turismoroma.it/en/places/la-rinascente-del-tritone"
+  },
+  {
+   "id": "rom-capuchin",
+   "name": "Capuchin Crypt",
+   "lat": 41.90479,
+   "lng": 12.48859,
+   "city": "Rome",
+   "mapQuery": "Museo e Cripta dei Frati Cappuccini, Via Vittorio Veneto 27",
+   "photoQuery": "Capuchin Crypt Rome",
+   "source": "https://museoecriptacappuccini.it/en/",
+   "photoFiles": [
+    "File:Rom (IT), Kapuzinergruft -- 2024 -- 0657.jpg",
+    "File:Capuchin Crypt.jpg"
+   ]
+  },
+  {
+   "id": "rom-margutta",
+   "name": "Via Margutta",
+   "lat": 41.90862,
+   "lng": 12.47953,
+   "city": "Rome",
+   "mapQuery": "Via Margutta",
+   "photoQuery": "Via Margutta",
+   "source": "https://en.wikipedia.org/wiki/Via_Margutta"
+  },
+  {
+   "id": "rom-condotti",
+   "name": "Via dei Condotti",
+   "lat": 41.90499,
+   "lng": 12.48011,
+   "city": "Rome",
+   "mapQuery": "Via dei Condotti",
+   "photoQuery": "Via dei Condotti",
+   "source": "https://en.wikipedia.org/wiki/Via_dei_Condotti",
+   "photoFiles": [
+    "File:Via dei Condotti.jpg",
+    "File:Via dei Condotti by Night (32979265058).jpg"
+   ]
+  },
+  {
+   "id": "rom-pompi",
+   "name": "Pompi Tiramisù",
+   "lat": 41.9065,
+   "lng": 12.48081,
+   "city": "Rome",
+   "mapQuery": "Pompi, Via della Croce 82",
+   "photoQuery": "Via della Croce Rome",
+   "source": "https://www.turismoroma.it/en/node/130854",
+   "photoFiles": []
+  },
+  {
+   "id": "rom-sermoneta",
+   "name": "Sermoneta Gloves",
+   "lat": 41.90467,
+   "lng": 12.48284,
+   "city": "Rome",
+   "mapQuery": "Sermoneta Gloves, Piazza di Spagna 61",
+   "photoQuery": "Piazza di Spagna Rome",
+   "source": "https://www.timeout.com/rome/shopping/sermoneta"
+  },
+  {
+   "id": "rom-sciascia",
+   "name": "Sciascia Caffè 1919",
+   "lat": 41.90979,
+   "lng": 12.46194,
+   "city": "Rome",
+   "mapQuery": "Sciascia Caffè 1919, Via Fabio Massimo 80/A",
+   "photoQuery": "Via Fabio Massimo Rome Prati",
+   "source": "https://www.turismoroma.it/en/hospitality/sciascia-caff%C3%A8-1919"
+  },
+  {
+   "id": "rom-sabotino",
+   "name": "Sabotino (formerly Antonini)",
+   "lat": 41.91685,
+   "lng": 12.46069,
+   "city": "Rome",
+   "mapQuery": "Sabotino, Via Sabotino 19",
+   "photoQuery": "Piazza Mazzini Rome",
+   "source": "https://www.scattidigusto.it/locali/sabotino-a-roma-bistrot-pasticceria-menu-prezzi"
+  },
+  {
+   "id": "rom-pastasciutta",
+   "name": "Pastasciutta",
+   "lat": 41.90466,
+   "lng": 12.45808,
+   "city": "Rome",
+   "mapQuery": "Pastasciutta, Via delle Grazie 5",
+   "photoQuery": "Fresh pasta Rome",
+   "source": "https://www.romeing.it/where-to-eat-near-vatican/"
+  },
+  {
+   "id": "rom-borgopio",
+   "name": "Borgo Pio",
+   "lat": 41.90375,
+   "lng": 12.46088,
+   "city": "Rome",
+   "mapQuery": "Borgo Pio",
+   "photoQuery": "Borgo Pio Rome",
+   "source": "https://en.wikipedia.org/wiki/Borgo_(rione_of_Rome)"
+  },
+  {
+   "id": "rom-sorpasso",
+   "name": "Il Sorpasso",
+   "lat": 41.90549,
+   "lng": 12.4613,
+   "city": "Rome",
+   "mapQuery": "Il Sorpasso, Via Properzio 31",
+   "photoQuery": "Via Properzio Rome",
+   "source": "https://www.timeout.com/rome/restaurants/il-sorpasso"
+  },
+  {
+   "id": "rom-colarienzo",
+   "name": "Via Cola di Rienzo",
+   "lat": 41.9075,
+   "lng": 12.4645,
+   "city": "Rome",
+   "mapQuery": "Via Cola di Rienzo",
+   "photoQuery": "Via Cola di Rienzo",
+   "source": "https://en.wikipedia.org/wiki/Via_Cola_di_Rienzo",
+   "photoFiles": []
+  },
+  {
+   "id": "rom-castroni",
+   "name": "Castroni",
+   "lat": 41.90735,
+   "lng": 12.4632,
+   "city": "Rome",
+   "mapQuery": "Castroni, Via Cola di Rienzo 196",
+   "photoQuery": "Castroni Rome",
+   "source": "https://www.turismoroma.it/en/places/castroni"
+  },
+  {
+   "id": "rom-gracchi",
+   "name": "Gelateria dei Gracchi",
+   "lat": 41.90919,
+   "lng": 12.46687,
+   "city": "Rome",
+   "mapQuery": "Gelateria dei Gracchi, Via dei Gracchi 272",
+   "photoQuery": "Gelato Rome",
+   "source": "https://www.wantedinrome.com/yellowpage/gelateria-dei-gracchi.html"
+  },
+  {
+   "id": "rom-emeralds",
+   "name": "Emerald's Independent Bar",
+   "lat": 41.90582,
+   "lng": 12.46087,
+   "city": "Rome",
+   "mapQuery": "Emerald's, Via Crescenzio 91C",
+   "photoQuery": "Via Crescenzio Rome",
+   "source": "https://turismoroma.it/en/hospitality/emeralds"
+  },
+  {
+   "id": "rom-gianicolo",
+   "name": "Gianicolo Terrace and Noon Cannon",
+   "lat": 41.89142,
+   "lng": 12.46078,
+   "city": "Rome",
+   "mapQuery": "Piazzale Giuseppe Garibaldi",
+   "photoQuery": "Piazzale Giuseppe Garibaldi Gianicolo",
+   "source": "https://www.turismoroma.it/en/page/janiculum-hill-cannon",
+   "photoFiles": [
+    "File:Rome Piazzale Giuseppe Garibaldi 001-1.jpg",
+    "File:Basilica di S. Pietro vista da Piazzale Giuseppe Garibaldi.jpg"
+   ]
+  },
+  {
+   "id": "rom-fiordiluna",
+   "name": "Fior di Luna",
+   "lat": 41.88961,
+   "lng": 12.47264,
+   "city": "Rome",
+   "mapQuery": "Fior di Luna, Via della Lungaretta 96",
+   "photoQuery": "Via della Lungaretta Trastevere",
+   "source": "https://www.timeout.com/rome/restaurants/fior-di-luna"
+  },
+  {
+   "id": "rom-suppliroma",
+   "name": "Supplì Roma",
+   "lat": 41.88823,
+   "lng": 12.47099,
+   "city": "Rome",
+   "mapQuery": "Supplì Roma, Via di San Francesco a Ripa 137",
+   "photoQuery": "Supplì Roman food",
+   "source": "https://www.turismoroma.it/en/hospitality/suppl%C3%AC-roma"
+  },
+  {
+   "id": "rom-innocenti",
+   "name": "Biscottificio Innocenti",
+   "lat": 41.88856,
+   "lng": 12.47532,
+   "city": "Rome",
+   "mapQuery": "Biscottificio Innocenti, Via della Luce 21",
+   "photoQuery": "Via della Luce Trastevere",
+   "source": "https://www.wantedinrome.com/news/trasteveres-biscuit-bakery.html"
+  },
+  {
+   "id": "rom-sancalisto",
+   "name": "Bar San Calisto",
+   "lat": 41.88905,
+   "lng": 12.47074,
+   "city": "Rome",
+   "mapQuery": "Bar San Calisto, Piazza di San Calisto 3",
+   "photoQuery": "Piazza di San Calisto Rome",
+   "source": "https://www.timeout.com/rome/bars-and-pubs/bar-san-calisto",
+   "photoFiles": [
+    "File:Roma, Piazza di San Calisto.jpg",
+    "File:Bar San Calisto in Trastevere (Roma).jpg"
+   ]
+  },
+  {
+   "id": "rom-machesiete",
+   "name": "Ma Che Siete Venuti a Fà",
+   "lat": 41.89173,
+   "lng": 12.46918,
+   "city": "Rome",
+   "mapQuery": "Ma Che Siete Venuti a Fà, Via Benedetta 25",
+   "photoQuery": "Piazza Trilussa Trastevere night",
+   "source": "https://punchdrink.com/venues/ma-che-siete-venuti-a-fa/"
+  },
+  {
+   "id": "rom-pontesisto",
+   "name": "Ponte Sisto",
+   "lat": 41.89234,
+   "lng": 12.47075,
+   "city": "Rome",
+   "mapQuery": "Ponte Sisto",
+   "photoQuery": "Ponte Sisto night",
+   "source": "https://en.wikipedia.org/wiki/Ponte_Sisto",
+   "photoFiles": [
+    "File:Rome (IT), Ponte Sisto -- 2013 -- 4094.jpg",
+    "File:Ponte Sisto and Dome od St. Peter at Night.jpg"
+   ]
+  },
+  {
+   "id": "rom-bigmama",
+   "name": "Big Mama",
+   "lat": 41.88583,
+   "lng": 12.47196,
+   "city": "Rome",
+   "mapQuery": "Big Mama, Vicolo di San Francesco a Ripa 18",
+   "photoQuery": "Trastevere Rome night street",
+   "source": "https://turismoroma.it/en/node/3167"
+  },
+  {
+   "id": "rom-maritozzaro",
+   "name": "Il Maritozzaro",
+   "lat": 41.87324,
+   "lng": 12.46727,
+   "city": "Rome",
+   "mapQuery": "Il Maritozzaro, Via Ettore Rolli 50",
+   "photoQuery": "Maritozzo con la panna",
+   "source": "https://www.mapstr.com/place/iCliHc5R2Gg"
+  },
+  {
+   "id": "rom-boccaverita",
+   "name": "Mouth of Truth",
+   "lat": 41.88823,
+   "lng": 12.4816,
+   "city": "Rome",
+   "mapQuery": "Bocca della Verità, Piazza della Bocca della Verità 18",
+   "photoQuery": "Bocca della Verità",
+   "source": "https://turismoroma.it/en/places/mouth-truth",
+   "photoFiles": [
+    "File:Bocca Della Verita.jpg",
+    "File:Rome (IT), Bocca della Verità -- 2013 -- 3479.jpg"
+   ]
+  },
+  {
+   "id": "rom-aventinekey",
+   "name": "Aventine Keyhole",
+   "lat": 41.88285,
+   "lng": 12.47855,
+   "city": "Rome",
+   "mapQuery": "Piazza dei Cavalieri di Malta",
+   "photoQuery": "Aventine keyhole",
+   "source": "https://www.orderofmalta.int/government/st-peter-basilica-through-the-keyhole/",
+   "photoFiles": [
+    "File:View of St Peter trough the holy keyhole (cropped).jpg",
+    "File:Ripa - giardino degli aranci 01.JPG"
+   ]
+  },
+  {
+   "id": "rom-trapizzino",
+   "name": "Trapizzino Testaccio",
+   "lat": 41.87971,
+   "lng": 12.47376,
+   "city": "Rome",
+   "mapQuery": "Trapizzino, Via Giovanni Branca 88",
+   "photoQuery": "Trapizzino",
+   "source": "https://www.timeout.com/rome/restaurants/trapizzino"
+  },
+  {
+   "id": "rom-fatamorgana",
+   "name": "Fatamorgana Monti",
+   "lat": 41.89562,
+   "lng": 12.49325,
+   "city": "Rome",
+   "mapQuery": "Fatamorgana, Piazza degli Zingari 5",
+   "photoQuery": "Piazza degli Zingari Monti",
+   "source": "https://www.timeout.com/rome/restaurants/fatamorgana"
+  },
+  {
+   "id": "rom-pifebo",
+   "name": "Pifebo Vintage",
+   "lat": 41.89569,
+   "lng": 12.49053,
+   "city": "Rome",
+   "mapQuery": "Pifebo, Via dei Serpenti 135",
+   "photoQuery": "Via dei Serpenti Monti Rome",
+   "source": "https://www.romeing.it/negozi-seconda-mano-vintage-roma/"
+  },
+  {
+   "id": "rom-regoli",
+   "name": "Pasticceria Regoli",
+   "lat": 41.89486,
+   "lng": 12.5009,
+   "city": "Rome",
+   "mapQuery": "Pasticceria Regoli, Via dello Statuto 60",
+   "photoQuery": "Maritozzo Roma",
+   "source": "https://www.gamberorosso.it/notizie/classifiche/migliori-maritozzi-roma/"
+  },
+  {
+   "id": "rom-drinkkong",
+   "name": "Drink Kong",
+   "lat": 41.89514,
+   "lng": 12.49787,
+   "city": "Rome",
+   "mapQuery": "Drink Kong, Piazza di San Martino ai Monti 8",
+   "photoQuery": "Piazza di San Martino ai Monti",
+   "source": "https://www.timeout.com/rome/bars-and-pubs/drink-kong"
+  },
+  {
+   "id": "rom-thecourt",
+   "name": "The Court at Palazzo Manfredi",
+   "lat": 41.89013,
+   "lng": 12.49558,
+   "city": "Rome",
+   "mapQuery": "The Court, Palazzo Manfredi, Via Labicana 125",
+   "photoQuery": "Palazzo Manfredi Colosseum",
+   "source": "https://manfredihotels.com/en/the-court/"
+  },
+  {
+   "id": "rom-coppede",
+   "name": "Quartiere Coppedè",
+   "lat": 41.91869,
+   "lng": 12.50238,
+   "city": "Rome",
+   "mapQuery": "Piazza Mincio",
+   "photoQuery": "Quartiere Coppedè",
+   "source": "https://www.turismoroma.it/en/places/quartiere-coppede",
+   "photoQueries": [
+    "Quartiere Coppedè",
+    "Fontana delle Rane",
+    "Palazzo del Ragno Coppedè"
+   ]
   }
  ],
  "days": [
@@ -1141,7 +2996,7 @@
    "label": "Wed · Arrive in Paris",
    "date": "Dec 30",
    "hotel": "par-lodgein",
-   "tagline": "Land at 1 PM, drop bags in the 13th, and spend the afternoon on foot in the Marais.",
+   "tagline": "Land at 1 PM, then a whole afternoon in the Marais: falafel, leather and vintage shops, Notre-Dame lit up, and a rooftop nightcap.",
    "blocks": [
     {
      "time": "2 PM",
@@ -1151,7 +3006,25 @@
      "stops": [
       "par-lodgein"
      ],
-     "mode": "driving"
+     "mode": "driving",
+     "nearby": [
+      {
+       "id": "par-artsforains",
+       "text": "The Festival du Merveilleux runs Dec 26 to Jan 3 in a hall full of 1900s carousels you can actually ride. It is across the river from the hotel, open 10 AM to 6 PM, and tickets are about €23 with two rides included."
+      },
+      {
+       "id": "par-imperialclub",
+       "text": "A real Paris gaming club ten minutes from the hotel, in Chinatown. Blackjack, poker, and Sic Bo, open 2 PM to 6 AM, 18+ with a passport."
+      },
+      {
+       "id": "par-merlemoqueur",
+       "text": "A cheap rum bar on the Butte-aux-Cailles, a hilltop village of cobbled lanes in the 13th. Try the house-infused rums, then wander the lit streets."
+      },
+      {
+       "id": "par-cablec1",
+       "text": "Paris's first urban cable car opened in December 2025. Take Métro 8 to Pointe du Lac and ride 4.5 km over the suburbs for a normal bus ticket."
+      }
+     ]
     },
     {
      "time": "3 PM",
@@ -1170,11 +3043,23 @@
       {
        "id": "par-enfantsrouges",
        "text": "Paris's oldest covered market, with Moroccan, Japanese, and Italian stalls at shared tables."
+      },
+      {
+       "id": "par-kooples",
+       "text": "A French label known for slim leather jackets, a few doors from L'As du Fallafel. Mid-priced and open daily."
+      },
+      {
+       "id": "par-eclairdegenie",
+       "text": "Christophe Adam's éclair shop on Rue Pavée. Glossy, inventive flavors like salted caramel and passion fruit."
+      },
+      {
+       "id": "par-freepstar",
+       "text": "A cramped, cheap vintage shop on Rue de Rivoli with racks of leather jackets. Open daily from 11 AM."
       }
      ]
     },
     {
-     "time": "4 PM",
+     "time": "3:45 PM",
      "title": "Musée Carnavalet",
      "text": "The free museum of Paris history, in two Marais mansions. Revolution relics, shop signs, and Proust's bedroom.",
      "stops": [
@@ -1189,15 +3074,27 @@
       {
        "id": "par-merci",
        "text": "A three-floor design and homeware store with a used-book café."
+      },
+      {
+       "id": "par-villagestpaul",
+       "text": "Five hidden cobbled courtyards of antique dealers behind Rue Saint-Paul. Enter through the arcades on Rue Saint-Paul or Rue Charlemagne."
+      },
+      {
+       "id": "par-genin",
+       "text": "Jacques Genin makes the best caramels in Paris. Go upstairs for a millefeuille assembled to order and a thick hot chocolate."
+      },
+      {
+       "id": "par-kiloshop",
+       "text": "Vintage sold by weight. Leather jackets go for about €30 a kilo, so a jacket can cost under €50."
       }
      ],
      "note": "Last entry around 5:15 PM."
     },
     {
-     "time": "5:45 PM",
+     "time": "5:15 PM",
      "title": "Notre-Dame at dusk",
-     "text": "Walk across to Île Saint-Louis, then into the restored cathedral. Entry is free and open into the evening.",
-     "note": "Reserve a free timed slot on the cathedral's site to skip most of the line. Stop at Berthillon on Île Saint-Louis on the way.",
+     "text": "Walk across to the islands and into the restored cathedral as the light fades. Entry is free.",
+     "note": "Reserve a free timed slot on the cathedral's site to skip most of the line. It closes around 7 PM on weekdays. Stop at Berthillon on Île Saint-Louis for ice cream.",
      "stops": [
       "par-notredame"
      ],
@@ -1206,6 +3103,23 @@
       {
        "id": "par-berthillon",
        "text": "The island's classic ice cream maker. Salted caramel and wild strawberry."
+      }
+     ]
+    },
+    {
+     "time": "6:15 PM",
+     "title": "Leather and vintage in the Marais",
+     "text": "Walk back into the Marais and shop Rue de Rivoli and Rue des Rosiers. Try on jackets at The Kooples, then dig through the vintage racks at Free'P'Star.",
+     "note": "Most Marais shops close around 7:30 or 8 PM. Both shops are a 15-minute walk from Chez Janou.",
+     "stops": [
+      "par-kooples",
+      "par-freepstar"
+     ],
+     "mode": "walking",
+     "nearby": [
+      {
+       "id": "par-kiloshop",
+       "text": "Vintage by the kilo, where a leather jacket can cost under €50."
       }
      ]
     },
@@ -1222,6 +3136,62 @@
       {
        "id": "par-robertlouise",
        "text": "Steak and lamb grilled over a wood fire in a rustic Marais room."
+      },
+      {
+       "id": "par-cafedesmusees",
+       "text": "A neighborhood bistro near Chez Janou with a well-loved grilled steak and frites. A good backup if Janou is full."
+      },
+      {
+       "id": "par-maryceleste",
+       "text": "A buzzy oyster and cocktail bar on a Marais corner, five minutes from Chez Janou. Order oysters and the Rain Dog."
+      },
+      {
+       "id": "par-paulbert",
+       "text": "The archetypal Paris bistro. Steak au poivre, frites, and a Paris-Brest."
+      },
+      {
+       "id": "par-servan",
+       "text": "A modern bistro with Asian touches from two sisters, nearby."
+      },
+      {
+       "id": "par-provinces",
+       "text": "A butcher shop that cooks your steak at a few counter seats. Pick an entrecôte or côte de bœuf from the case. No reservations."
+      }
+     ]
+    },
+    {
+     "time": "10 PM",
+     "title": "Rooftop cocktails at Bonnie",
+     "text": "Ride up the SO/ Paris tower for cocktails with a wide view over the Seine and the Marais. It is a 15-minute walk from Chez Janou.",
+     "note": "The bar is open daily 4 PM to 2 AM. The club opens Wednesday to Saturday at 11 PM, so it runs on Dec 30 if you want to dance.",
+     "stops": [
+      "par-bonnie"
+     ],
+     "mode": "walking",
+     "nearby": [
+      {
+       "id": "par-maryceleste",
+       "text": "Oysters and cocktails on a Marais street corner."
+      },
+      {
+       "id": "par-moonshiner",
+       "text": "A speakeasy hidden behind a pizzeria's freezer door."
+      },
+      {
+       "id": "par-moonshiner",
+       "text": "A speakeasy hidden behind the freezer door of a pizzeria near Bastille. Walk straight through Da Vito and push the cold-room door."
+      },
+      {
+       "id": "par-candelaria",
+       "text": "A speakeasy behind a taqueria, a block away."
+      },
+      {
+       "id": "par-syndicat",
+       "text": "A loud, graffiti-covered bar that uses only French spirits. The cocktails are clever and fairly cheap for Paris."
+      },
+      {
+       "id": "par-littlereddoor",
+       "text": "One of the world's top cocktail bars, behind a small red door in the upper Marais."
       }
      ]
     }
@@ -1232,7 +3202,7 @@
    "label": "Thu · New Year's Eve",
    "date": "Dec 31",
    "hotel": "par-lodgein",
-   "tagline": "The Louvre at opening, Monet's water lilies, a grand dinner, and midnight on the Champs-Élysées.",
+   "tagline": "The Louvre, the Tuileries, and the Opéra by day. Then champagne, a grand dinner, and midnight facing the Eiffel Tower.",
    "blocks": [
     {
      "time": "9 AM",
@@ -1247,6 +3217,18 @@
       {
        "id": "par-bourse",
        "text": "François Pinault's contemporary art under a restored dome by Tadao Ando. A 10-minute walk east."
+      },
+      {
+       "id": "par-stohrer",
+       "text": "The oldest pâtisserie in Paris, open since 1730 on Rue Montorgueil. Get the baba au rhum, which they invented."
+      },
+      {
+       "id": "par-kiliwatch",
+       "text": "A huge vintage store near Les Halles with a big wall of leather jackets. Open Monday to Saturday from 10:30 AM."
+      },
+      {
+       "id": "par-resetbar",
+       "text": "A bar with free retro arcade cabinets near Les Halles. Play the old fighting and racing games with your drinks."
       }
      ]
     },
@@ -1266,6 +3248,14 @@
       {
        "id": "par-vivienne",
        "text": "A mosaic-floored 1820s covered arcade with old bookshops, behind the Palais-Royal."
+      },
+      {
+       "id": "par-gaudard",
+       "text": "A pretty pastry tearoom facing the Tuileries, a block from Angelina. Quieter, with excellent Paris-Brest and hot chocolate."
+      },
+      {
+       "id": "par-victoires",
+       "text": "An old-school bistro by the Place des Victoires with a cheap entrecôte under a sprig of thyme. Mains are cheap for Paris."
       }
      ]
     },
@@ -1277,27 +3267,92 @@
      "stops": [
       "par-orangerie"
      ],
-     "mode": "walking"
+     "mode": "walking",
+     "nearby": [
+      {
+       "id": "par-laduree",
+       "text": "The original 1862 Ladurée tearoom on Rue Royale, five minutes from the Orangerie. Buy a box of macarons or sit for a Saint-Honoré."
+      }
+     ]
     },
     {
-     "time": "4 PM",
+     "time": "3:30 PM",
+     "title": "The covered passages",
+     "text": "Walk through two glass-roofed 19th-century arcades. Passage des Panoramas has old engravers and stamp dealers. Passage Jouffroy has toy shops and the wax museum.",
+     "note": "Panoramas is open 6 AM to midnight and Jouffroy 7 AM to 9:30 PM. Galeries Lafayette is a 10-minute walk.",
+     "stops": [
+      "par-panoramas",
+      "par-jouffroy"
+     ],
+     "mode": "walking",
+     "nearby": [
+      {
+       "id": "par-grevin",
+       "text": "The wax museum at the mouth of Passage Jouffroy. Check its Dec 31 hours."
+      },
+      {
+       "id": "par-harrys",
+       "text": "The 1911 bar where the Bloody Mary was born, between Galeries Lafayette and the passages."
+      }
+     ]
+    },
+    {
+     "time": "4:45 PM",
      "title": "Galeries Lafayette",
      "text": "See the giant Christmas tree under the stained-glass dome, then go up to the free rooftop terrace for the view.",
      "stops": [
       "par-lafayette"
      ],
-     "mode": "walking"
+     "mode": "walking",
+     "nearby": [
+      {
+       "id": "par-printemps",
+       "text": "The other great department store, next door to Galeries Lafayette. Its Art Nouveau glass dome and big men's store are worth a look."
+      },
+      {
+       "id": "par-grolet",
+       "text": "Cédric Grolet's bakery sells famous trompe-l'œil fruit pastries and croissants. Open Wednesday to Sunday, 9 AM to 6 PM, with a line."
+      }
+     ]
+    },
+    {
+     "time": "6:30 PM",
+     "title": "Champagne at Harry's Bar",
+     "stops": [
+      "par-harrys"
+     ],
+     "mode": "walking",
+     "text": "The 1911 American bar a few minutes from the Opéra, where the French 75 was named. Start the night with one before dinner.",
+     "note": "Usually open until 2 AM. No New Year's Eve ticketing has been announced, so arrive early for a seat.",
+     "nearby": [
+      {
+       "id": "par-danico",
+       "text": "A top-50 world cocktail bar behind an Italian restaurant by the Galerie Vivienne. It opens at 6 PM."
+      }
+     ]
     },
     {
      "time": "8 PM",
-     "title": "New Year's Eve dinner at Le Train Bleu",
-     "text": "A gilded 1900 dining room above the Gare de Lyon platforms, with painted ceilings and a set New Year's Eve menu.",
-     "note": "Reserve now. New Year's Eve tables sell out.",
+     "title": "New Year's Eve dinner at Café de la Paix",
      "stops": [
-      "par-trainbleu"
+      "par-cafedelapaix"
      ],
-     "mode": "transit",
+     "mode": "walking",
+     "text": "The grand 1862 café facing the Opéra serves a Paris 1900 dinner on New Year's Eve. The terrace menu is the realistic pick.",
+     "note": "Published for Dec 31, 2026: €120 on the covered terrace, or €445 with champagne in the main hall. Book on TheFork now. Leave by 10:30 PM for the Trocadéro.",
      "nearby": [
+      {
+       "id": "par-loulou",
+       "text": "A Marais bistro with a set menu of oysters or foie gras, then Charolais beef fillet or duck, then dessert. A champagne aperitif is included. Published for Dec 31, 2026: €96 per person. Book on OpenTable."
+      },
+      {
+       "id": "par-trainbleu",
+       "text": "The gilded 1900 dining room above Gare de Lyon. It serves a set New Year's Eve menu in a room that feels like a party. The 2026 menu is not announced yet. Book as soon as it opens, since it sells out."
+      },
+      {
+       "id": "par-chartier",
+       "text": "The cheap, historic bouillon on the Grands Boulevards keeps its normal menu on New Year's Eve. Expect about €25 a head without drinks. No special menu has been announced. It takes no reservations, so go early and expect a line."
+      },
       {
        "id": "par-julien",
        "text": "A cheaper Art Nouveau bouillon with classic French dishes at low prices."
@@ -1305,18 +3360,59 @@
      ]
     },
     {
-     "time": "11:15 PM",
-     "title": "Midnight on the Champs-Élysées",
-     "text": "Fireworks and a light show on the Arc de Triomphe at midnight. Huge crowds and a security perimeter.",
-     "note": "Some Métro stations near the Champs close. Walk a few blocks out before you ride home.",
+     "time": "11 PM",
+     "title": "Midnight at the Trocadéro",
      "stops": [
-      "par-arc"
+      "par-trocadero"
      ],
      "mode": "transit",
+     "text": "Stand on the Trocadéro terrace facing the Eiffel Tower across the river. At midnight the tower sparkles, and the Arc fireworks pop up behind you. It is crowded and happy, but not a Times Square crush.",
+     "note": "Métro line 9 from the Opéra to Trocadéro, about 15 minutes. In 2025 Iéna and Boissière stations shut at 4 PM and Passy at 9 PM, so use Trocadéro station and arrive by 11 PM. Bag checks, and no glass bottles. Transport was free from 5 PM Dec 31 to noon Jan 1.",
      "nearby": [
       {
+       "id": "par-carette",
+       "text": "A tearoom on the Place du Trocadéro itself. Get a hot chocolate or a glass of champagne before you take your spot. Usually open until about midnight. It gets very busy on Dec 31."
+      },
+      {
+       "id": "par-botaniste",
+       "text": "The Shangri-La's botanical cocktail bar is a few steps from the Trocadéro. Cocktails cost about €30. Usually open daily 6 PM to 2 AM. Ask ahead about a New Year's Eve booking or cover charge."
+      },
+      {
+       "id": "par-alexandre3",
+       "text": "The gilded bridge has a clear side view of the Eiffel Tower sparkle. It is calmer than the Trocadéro and close to the Champs-Élysées south entrance. Concorde, Champs-Élysées–Clemenceau, and Tuileries stations closed at 4 PM in 2025. Walk in from Invalides."
+      },
+      {
        "id": "par-sacrecoeur",
-       "text": "A quieter view from the steps of Sacré-Cœur, looking over the whole city at midnight."
+       "text": "The basilica steps look over the whole city. The mood is relaxed, with people popping bottles on the stairs. The Arc fireworks are far away from here and look small. Expect crowds on the steps and some loose firecrackers."
+      },
+      {
+       "id": "par-arc",
+       "text": "Skip unless you want the big crowd. The official show is on the Champs-Élysées. At 11:50 PM a light show is projected on the Arc de Triomphe, then fireworks start at midnight. This is the Times Square of Paris: a fenced avenue packed with hundreds of thousands of people from 7 PM, with bag checks. Étoile station closed at 2 PM in 2025. Go only if you want the big crowd."
+      }
+     ]
+    },
+    {
+     "time": "12:15 AM",
+     "title": "After midnight along the Seine",
+     "stops": [
+      "par-eiffel",
+      "par-alexandre3"
+     ],
+     "mode": "walking",
+     "text": "Cross the Pont d'Iéna under the glowing tower, then walk the river east to the gilded Pont Alexandre III, about 30 minutes. The trains are packed until about 1 AM, so a late drink is the easy way to wait.",
+     "note": "Métro line 7 home runs from Palais Royal, a taxi or a short Métro ride from the bridge. Expect surge prices on ride apps until 2 AM.",
+     "nearby": [
+      {
+       "id": "par-ecc",
+       "text": "The famous speakeasy near Les Halles runs late on weekend and holiday nights. Usually open until 4 AM on Fridays and Saturdays. New Year's Eve may need a ticket or reservation."
+      },
+      {
+       "id": "par-pontdesarts",
+       "text": "Walk along the Seine to the Pont des Arts after midnight. In 2025 public transport was free from 5 PM on Dec 31 to noon on Jan 1. Expect packed trains near the Champs-Élysées until about 1 AM, when its stations reopen."
+      },
+      {
+       "id": "par-clubbarriere",
+       "text": "A smart gaming club on the Champs-Élysées with blackjack, poker, and punto banco. Usually open 1 PM to 6 AM, 18+ with a passport."
       }
      ]
     }
@@ -1328,7 +3424,7 @@
    "date": "Jan 1",
    "year": "2027",
    "hotel": "par-lodgein",
-   "tagline": "A slow Left Bank day. Many shops close, but the Orsay and the Eiffel Tower stay open.",
+   "tagline": "A slow holiday on the Left Bank: Saint-Germain and the Luxembourg, then the Eiffel Tower at sunset and steak frites.",
    "blocks": [
     {
      "time": "11 AM",
@@ -1346,17 +3442,7 @@
      ]
     },
     {
-     "time": "1 PM",
-     "title": "Musée d'Orsay",
-     "text": "Impressionists in a Beaux-Arts train station. Go up to the fifth floor first for Monet, Renoir, and Van Gogh, and the view through the giant clock.",
-     "note": "Book a time slot. Open on Jan 1 and closed Mondays.",
-     "stops": [
-      "par-orsay"
-     ],
-     "mode": "walking"
-    },
-    {
-     "time": "4 PM",
+     "time": "12:30 PM",
      "title": "Jardin du Luxembourg",
      "text": "A winter walk past the palace, the Medici Fountain, and the bare chestnut alleys.",
      "stops": [
@@ -1371,8 +3457,8 @@
      ]
     },
     {
-     "time": "5:30 PM",
-     "title": "The Eiffel Tower after dark",
+     "time": "3:30 PM",
+     "title": "The Eiffel Tower at sunset",
      "text": "Walk under the tower, then cross to the Trocadéro. It sparkles for five minutes at the top of every hour after dark.",
      "note": "Going up is optional. If you want the summit, book online.",
      "stops": [
@@ -1387,22 +3473,34 @@
       {
        "id": "par-birhakeim",
        "text": "A two-level iron bridge with a framed view of the tower."
+      },
+      {
+       "id": "par-carette",
+       "text": "A 1927 tearoom on the Place du Trocadéro, open every day. Order the hot chocolate in a silver pot with a dish of whipped cream."
+      },
+      {
+       "id": "par-alexandre3",
+       "text": "The most ornate bridge in Paris, with gilded statues and old lamps. Walk it after dark with the Eiffel Tower in view."
       }
      ]
     },
     {
-     "time": "8 PM",
-     "title": "Dinner at Bouillon Pigalle",
-     "text": "A cheap, cheerful French canteen that opens every day of the year. Snails, duck confit, and profiteroles.",
-     "note": "No reservations. Expect a short queue.",
+     "time": "7:30 PM",
+     "title": "Dinner at Le Relais de l'Entrecôte",
+     "text": "One dish only: steak with a secret green sauce and endless frites. It opens every day, but check holiday hours.",
+     "note": "No reservations. Get there early.",
      "stops": [
-      "par-bouillonpigalle"
+      "par-entrecote"
      ],
      "mode": "transit",
      "nearby": [
       {
-       "id": "par-chartier",
-       "text": "The original 1896 bouillon. Also open every day."
+       "id": "par-procope",
+       "text": "Paris's oldest café, open since 1686, with coq au vin and Napoleon's hat."
+      },
+      {
+       "id": "par-prescription",
+       "text": "A dark, theatrical cocktail bar two streets from the Entrecôte. Usually open 8 PM to 2 AM."
       }
      ]
     }
@@ -1410,11 +3508,11 @@
   },
   {
    "id": "jan2",
-   "label": "Sat · Islands & Montmartre",
+   "label": "Sat · Islands, Saint-Germain & the Orsay",
    "date": "Jan 2",
    "year": "2027",
    "hotel": "par-lodgein",
-   "tagline": "Stained glass in the morning, bookshops and lunch in Saint-Germain, and Montmartre before a classic bistro dinner.",
+   "tagline": "Stained glass, bookshops, and lunch in Saint-Germain, the Orsay, then a Seine cruise, a bouillon, and a jazz cellar.",
    "blocks": [
     {
      "time": "9:30 AM",
@@ -1444,6 +3542,10 @@
       {
        "id": "par-pantheon",
        "text": "Foucault's pendulum and the crypt of Voltaire, Hugo, and Curie."
+      },
+      {
+       "id": "par-odette",
+       "text": "A tiny shop selling choux cream puffs in flavors like pistachio and salted caramel. A box of six is about €10."
       }
      ]
     },
@@ -1457,59 +3559,81 @@
      "mode": "walking",
      "nearby": [
       {
-       "id": "par-bouillonracine",
-       "text": "An Art Nouveau room of mirrors and tiles with Belgian-French cooking."
+       "id": "par-herme",
+       "text": "Pierre Hermé's macarons are the best in Paris. Try the Ispahan with rose, lychee, and raspberry."
+      },
+      {
+       "id": "par-bonmarche",
+       "text": "The oldest department store in Paris, with good men's and women's leather. Its food hall, La Grande Épicerie, is next door."
+      },
+      {
+       "id": "par-deyrolle",
+       "text": "A 19th-century taxidermy shop full of stuffed lions, zebras, and butterflies. Free to browse upstairs."
       }
      ]
     },
     {
-     "time": "3 PM",
-     "title": "Sacré-Cœur and Montmartre",
-     "text": "Climb to the basilica, then wander the Place du Tertre and down the Rue de l'Abreuvoir.",
+     "time": "2:30 PM",
+     "title": "Musée d'Orsay",
+     "text": "Impressionists in a Beaux-Arts train station. Go up to the fifth floor first for Monet, Renoir, and Van Gogh, and the view through the giant clock.",
+     "note": "Book a time slot. Closed Mondays.",
      "stops": [
-      "par-sacrecoeur"
+      "par-orsay"
      ],
-     "mode": "transit",
+     "mode": "walking"
+    },
+    {
+     "time": "5:15 PM",
+     "title": "La Samaritaine",
+     "text": "The restored Art Nouveau department store by the Pont Neuf. Look up at the glass roof and peacock fresco, and browse the leather and menswear floors.",
+     "note": "Open daily 10 AM to 8 PM, including Sundays. The Seine cruise leaves a few minutes' walk away.",
+     "stops": [
+      "par-samaritaine"
+     ],
+     "mode": "walking",
      "nearby": [
       {
-       "id": "par-museemontmartre",
-       "text": "Renoir's old studio and gardens overlooking the last Montmartre vineyard."
-      },
-      {
-       "id": "par-jetaime",
-       "text": "A wall of 'I love you' in 250 languages."
+       "id": "par-vertgalant",
+       "text": "The leafy tip of the Île de la Cité, right by the cruise dock. It is lovely after dark."
       }
      ]
+    },
+    {
+     "time": "6:30 PM",
+     "title": "Seine cruise at dusk",
+     "text": "An hour-long boat ride from the tip of the Île de la Cité as the bridges light up.",
+     "stops": [
+      "par-vedettes"
+     ],
+     "mode": "walking"
     },
     {
      "time": "8 PM",
-     "title": "Dinner at Bistrot Paul Bert",
-     "text": "The archetypal Paris bistro. Steak au poivre, frites, and a Paris-Brest.",
-     "note": "Reserve by phone.",
+     "title": "Dinner at Bouillon Racine",
      "stops": [
-      "par-paulbert"
+      "par-bouillonracine"
      ],
-     "mode": "transit",
-     "nearby": [
-      {
-       "id": "par-servan",
-       "text": "A modern bistro with Asian touches from two sisters, nearby."
-      }
-     ]
+     "mode": "walking",
+     "text": "A 1906 Art Nouveau dining room of mirrors and carved wood. Order the beef cheek or the duck confit, then the crème brûlée.",
+     "note": "Reserve online. A 10-minute walk to the jazz cellar after."
     },
     {
-     "time": "10:30 PM",
-     "title": "Cocktails at Little Red Door",
-     "text": "One of the world's top cocktail bars, behind a small red door in the upper Marais.",
-     "note": "Walk-in only. Arrive before 11 PM.",
+     "time": "10 PM",
+     "title": "Swing jazz at Le Caveau de la Huchette",
+     "text": "A medieval cellar where locals swing-dance to live jazz every night. It appeared in La La Land, and anyone can join the dance floor.",
+     "note": "Open nightly from about 9 PM, until about 4 AM on Saturdays. There is a cover charge at the door.",
      "stops": [
-      "par-littlereddoor"
+      "par-caveau"
      ],
-     "mode": "transit",
+     "mode": "walking",
      "nearby": [
       {
-       "id": "par-candelaria",
-       "text": "A speakeasy behind a taqueria, a block away."
+       "id": "par-prescription",
+       "text": "A dark, theatrical cocktail bar near the Entrecôte."
+      },
+      {
+       "id": "par-pontdesarts",
+       "text": "Walk the footbridge on the way, with the Louvre lit up on one side."
       }
      ]
     }
@@ -1517,11 +3641,11 @@
   },
   {
    "id": "jan3",
-   "label": "Sun · Versailles · last night in Paris",
+   "label": "Sun · Versailles & Montmartre",
    "date": "Jan 3",
    "year": "2027",
    "hotel": "par-lodgein",
-   "tagline": "Versailles on its free first Sunday, a Seine cruise at dusk, and steak frites in Saint-Germain.",
+   "tagline": "Versailles on its free first Sunday, then Montmartre at night: the funicular, Sacré-Cœur, a bouillon, and a rooftop.",
    "blocks": [
     {
      "time": "9 AM",
@@ -1554,28 +3678,61 @@
     },
     {
      "time": "6 PM",
-     "title": "Seine cruise at dusk",
-     "text": "An hour-long boat ride from the tip of the Île de la Cité as the bridges light up.",
+     "title": "Sacré-Cœur and Montmartre at night",
+     "text": "Ride the funicular up from the bottom of the steps, then see the basilica lit up and the city below. Wander the Place du Tertre and down the Rue de l'Abreuvoir.",
      "stops": [
-      "par-vedettes"
-     ],
-     "mode": "transit"
-    },
-    {
-     "time": "8 PM",
-     "title": "Dinner at Le Relais de l'Entrecôte",
-     "text": "One dish only: steak with a secret green sauce and endless frites. Open Sunday.",
-     "note": "No reservations. Get there early.",
-     "stops": [
-      "par-entrecote"
+      "par-sacrecoeur"
      ],
      "mode": "transit",
      "nearby": [
       {
-       "id": "par-procope",
-       "text": "Paris's oldest café, open since 1686, with coq au vin and Napoleon's hat."
+       "id": "par-museemontmartre",
+       "text": "Renoir's old studio and gardens overlooking the last Montmartre vineyard."
+      },
+      {
+       "id": "par-jetaime",
+       "text": "A wall of 'I love you' in 250 languages."
+      },
+      {
+       "id": "par-funiculaire",
+       "text": "A two-minute funicular up the hill to Sacré-Cœur. It costs one Métro ticket, and you must validate a new one at the gate."
+      },
+      {
+       "id": "par-grenierapain",
+       "text": "A winner of the Paris best-baguette prize, just off Place des Abbesses. Grab a baguette tradition or a croissant. Closed Tuesday and Wednesday."
+      },
+      {
+       "id": "par-terrass",
+       "text": "A heated, covered rooftop bar with a view over Paris to the Eiffel Tower. No reservations, and cocktails start at 3:30 PM."
+      }
+     ],
+     "note": "The basilica stays open until 10:30 PM. The funicular takes one Métro ticket."
+    },
+    {
+     "time": "8 PM",
+     "title": "Dinner at Bouillon Pigalle",
+     "text": "A cheap, cheerful French canteen that opens every day of the year. Snails, duck confit, and profiteroles.",
+     "note": "No reservations. Expect a short queue.",
+     "stops": [
+      "par-bouillonpigalle"
+     ],
+     "mode": "walking",
+     "nearby": [
+      {
+       "id": "par-chartier",
+       "text": "The original 1896 bouillon. Also open every day."
       }
      ]
+    },
+    {
+     "time": "10 PM",
+     "title": "Nightcap on the Terrass'' rooftop",
+     "text": "Walk ten minutes uphill from Pigalle to a heated rooftop bar with a view across all of Paris. Watch the Eiffel Tower sparkle on the hour.",
+     "note": "Open to non-guests without a reservation. Check the Sunday closing time before you go.",
+     "stops": [
+      "par-terrass"
+     ],
+     "mode": "walking"
     }
    ]
   },
@@ -1613,7 +3770,33 @@
       "flo-signoria",
       "flo-pontevecchio"
      ],
-     "mode": "walking"
+     "mode": "walking",
+     "nearby": [
+      {
+       "id": "flo-fratellini",
+       "text": "A hole-in-the-wall since 1875 selling small panini and glasses of wine for a few euros. Eat standing on the street, since there are no tables. Closed Sundays and cash only."
+      },
+      {
+       "id": "flo-anticotrippaio",
+       "text": "A street cart on Piazza dei Cimatori selling lampredotto, slow-cooked cow stomach in a roll. Ask for it bagnato, with the bun dipped in broth, and green sauce on top."
+      },
+      {
+       "id": "flo-vinattieri",
+       "text": "A tiny lampredotto and tripe window near Dante's house, popular with locals. The lampredotto is stewed with tomato and onion, so it stays soft."
+      },
+      {
+       "id": "flo-secretpassages",
+       "text": "A guided tour of the hidden staircases inside Palazzo Vecchio, including Francesco I's secret study. Groups are about 12 people, so book a slot ahead."
+      },
+      {
+       "id": "flo-madova",
+       "text": "A glove maker at the south end of the Ponte Vecchio since 1919. Every pair is made in its own workshop, lined in silk, cashmere, or wool. Closed Sundays."
+      },
+      {
+       "id": "flo-percheno",
+       "text": "An old gelateria a minute from the Signoria, open since 1939. Get the pistachio or the fior di latte."
+      }
+     ]
     },
     {
      "time": "4:15 PM",
@@ -1627,6 +3810,10 @@
       {
        "id": "flo-sanminiato",
        "text": "A Romanesque church just above, where monks sing Gregorian vespers in the early evening."
+      },
+      {
+       "id": "flo-rosegarden",
+       "text": "A free terraced garden just below Piazzale Michelangelo, with a small Japanese garden and bronze sculptures by Folon. It closes around 5 PM in winter, so go up through it."
       }
      ]
     },
@@ -1643,6 +3830,26 @@
       {
        "id": "flo-bucamario",
        "text": "A cellar trattoria serving bistecca alla fiorentina since 1886."
+      }
+     ]
+    },
+    {
+     "time": "10 PM",
+     "title": "Negroni nightcap on the Signoria",
+     "text": "Walk 12 minutes from Sostanza to Gucci Giardino 25, a small cocktail bar facing Palazzo Vecchio. Order a Negroni, the drink Florence invented in 1919. Then walk home past the lit Duomo.",
+     "note": "Book a table online. Open until about 1 AM.",
+     "stops": [
+      "flo-giardino25"
+     ],
+     "mode": "walking",
+     "nearby": [
+      {
+       "id": "flo-gilli",
+       "text": "Florence's oldest café, on Piazza della Repubblica and open until about midnight. A good spot for a late Negroni or a hot chocolate."
+      },
+      {
+       "id": "flo-carousel",
+       "text": "An antique carousel with gilded horses, run by the same family for over 100 years. It runs from about November to May, and adults can ride."
       }
      ]
     }
@@ -1664,7 +3871,13 @@
      "stops": [
       "flo-accademia"
      ],
-     "mode": "walking"
+     "mode": "walking",
+     "nearby": [
+      {
+       "id": "flo-regina",
+       "text": "A modern steakhouse on the Accademia's street, with a big list of Tuscan reds. Open for lunch and dinner every day. Book ahead."
+      }
+     ]
     },
     {
      "time": "10:30 AM",
@@ -1683,6 +3896,18 @@
       {
        "id": "flo-operaduomo",
        "text": "The original baptistery doors and Michelangelo's late Pietà."
+      },
+      {
+       "id": "flo-cucciolo",
+       "text": "A narrow bar known for bomboloni, Tuscan doughnuts filled to order with custard, chocolate, or jam. Grab one warm with a cappuccino."
+      },
+      {
+       "id": "flo-scudieri",
+       "text": "A historic café on the corner facing the Baptistery. Try the budino di riso, a small rice-pudding tart in buttery pastry."
+      },
+      {
+       "id": "flo-edoardo",
+       "text": "An organic gelateria right on the Duomo square that makes its own cones. A good stop after the dome climb."
       }
      ]
     },
@@ -1693,7 +3918,25 @@
      "stops": [
       "flo-mercato"
      ],
-     "mode": "walking"
+     "mode": "walking",
+     "nearby": [
+      {
+       "id": "flo-mario",
+       "text": "A family trattoria behind the market, open at lunch only since 1953. Shared tables, no bookings, and a bistecca priced by weight. Closed Sundays and cash only."
+      },
+      {
+       "id": "flo-zaza",
+       "text": "A big trattoria on the market square, open from 11 AM to 11 PM every day. Order the ribollita or the pappardelle with wild boar."
+      },
+      {
+       "id": "flo-giorgio1966",
+       "text": "A leather shop locals rate as fair, with jackets that can be altered or made to your measurements in a few days. Compare it with the San Lorenzo stalls next door before you buy anything there."
+      },
+      {
+       "id": "flo-magichapel",
+       "text": "A tiny chapel covered in Gozzoli's frescoes of the Three Kings riding through Tuscany. It fits the Epiphany theme. Closed Wednesdays, so go today. Only a few visitors fit at a time."
+      }
+     ]
     },
     {
      "time": "2:30 PM",
@@ -1723,6 +3966,42 @@
       {
        "id": "flo-vivoli",
        "text": "One of Florence's oldest gelato shops, a block away."
+      },
+      {
+       "id": "flo-aquaflor",
+       "text": "A perfume workshop in a palazzo by Santa Croce, making scents by hand from raw essences. Ask to smell the Florentine iris."
+      },
+      {
+       "id": "flo-vestri",
+       "text": "A chocolate shop with a machine that keeps hot chocolate turning all day. Choose 65 or 75 percent, plain or with chili. Closed Sundays."
+      },
+      {
+       "id": "flo-cosi",
+       "text": "A pastry shop famous for bomboloni and cream-filled cornetti, with a constant line of locals. Closed Sundays."
+      },
+      {
+       "id": "flo-nencioni",
+       "text": "An old pastry shop near the Sant'Ambrogio market. Budino di riso and sfogliatine come out of the oven around 4 PM."
+      }
+     ]
+    },
+    {
+     "time": "5 PM",
+     "title": "Leather jacket at Scuola del Cuoio",
+     "text": "A leather school founded after World War II in the old friars' rooms behind Santa Croce. You can watch artisans cut and stitch, and the jackets are made in-house. Prices are high, but the quality is real.",
+     "note": "Closes around 6 PM, so go before the basilica if you want more time. Items it does not stock can be made to order and shipped. Florence's winter sales usually start in early January, so ask about discounts. Avoid jackets from San Lorenzo stalls: check for a vera pelle label, a stiff, thin hide, and pushy sellers.",
+     "stops": [
+      "flo-scuolacuoio"
+     ],
+     "mode": "walking",
+     "nearby": [
+      {
+       "id": "flo-benheart",
+       "text": "A young Florentine brand that makes all its leather jackets in Italy. It can make a jacket in another color or size in about a week and ship it home."
+      },
+      {
+       "id": "flo-themall",
+       "text": "A luxury outlet with Gucci, Prada, and Saint Laurent stores in the hills east of the city. The direct bus from near Santa Maria Novella takes under an hour each way, so it costs a half day."
       }
      ]
     },
@@ -1739,6 +4018,22 @@
       {
        "id": "flo-santobevitore",
        "text": "Candlelit Oltrarno wine bar and restaurant with modern Tuscan food."
+      }
+     ]
+    },
+    {
+     "time": "10 PM",
+     "title": "Cocktails at Locale",
+     "text": "A world-ranked cocktail bar in a 13th-century palazzo, five minutes from Cibrèo. Drinks use house-made infusions and are served in rooms with vaulted ceilings and old stone.",
+     "note": "Open about 7:30 PM to 2 AM daily. Reserve a table for a weekday night.",
+     "stops": [
+      "flo-locale"
+     ],
+     "mode": "walking",
+     "nearby": [
+      {
+       "id": "flo-nuvoli",
+       "text": "An old standing wine bar behind the Duomo, on the walk home. Glasses of Chianti cost a few euros. Closed Mondays."
       }
      ]
     }
@@ -1760,7 +4055,21 @@
      "stops": [
       "flo-uffizi"
      ],
-     "mode": "walking"
+     "mode": "walking",
+     "nearby": [
+      {
+       "id": "flo-vasari",
+       "text": "The raised passage the Medici used to walk from the Uffizi over the Ponte Vecchio to Palazzo Pitti. It needs a special Uffizi ticket with a timed slot, and it ends near the parade's start."
+      },
+      {
+       "id": "flo-rivoire",
+       "text": "A café on the Signoria since 1872, known for thick winter hot chocolate. Sit inside, since the terrace prices are high."
+      },
+      {
+       "id": "flo-gelateriadeineri",
+       "text": "A small gelateria behind the Uffizi. Try the chocolate with chili or the ricotta and fig."
+      }
+     ]
     },
     {
      "time": "12 PM",
@@ -1800,7 +4109,17 @@
      "stops": [
       "flo-santospirito"
      ],
-     "mode": "walking"
+     "mode": "walking",
+     "nearby": [
+      {
+       "id": "flo-giannini",
+       "text": "A family bookbinder facing Palazzo Pitti since 1856, selling marbled paper, journals, and leather desk goods. Hours on the holiday may be short."
+      },
+      {
+       "id": "flo-sorbettiera",
+       "text": "A family gelateria on Piazza Tasso, at the far end of San Frediano. The flavors change with the season."
+      }
+     ]
     },
     {
      "time": "6 PM",
@@ -1810,6 +4129,27 @@
       "flo-volpi"
      ],
      "mode": "walking"
+    },
+    {
+     "time": "7 PM",
+     "title": "Via de' Tornabuoni and a Negroni at Giacosa",
+     "text": "Walk up Florence's luxury street on the way to dinner, past the Ferragamo, Gucci, and Pucci flagships. Stop at Giacosa, the café where Count Negroni first asked for his drink in 1919.",
+     "note": "Shops in the center usually open on Epiphany, but many close by 7:30 PM. Order the Negroni Giacosa.",
+     "stops": [
+      "flo-tornabuoni",
+      "flo-giacosa"
+     ],
+     "mode": "walking",
+     "nearby": [
+      {
+       "id": "flo-ferragamo",
+       "text": "Ferragamo's flagship fills a medieval palazzo at the river end of the street. The shoes are the reason to go."
+      },
+      {
+       "id": "flo-manifattura",
+       "text": "A small cocktail bar near Buca Lapi that uses only Italian spirits and vermouths. A good spot for a pre-dinner drink."
+      }
+     ]
     },
     {
      "time": "8 PM",
@@ -1824,6 +4164,47 @@
       {
        "id": "flo-4leoni",
        "text": "An Oltrarno trattoria known for pear and pecorino ravioli."
+      },
+      {
+       "id": "flo-latini",
+       "text": "A loud, old trattoria with hams hanging from the ceiling and shared tables. It serves a big bistecca and closes on Mondays, so tonight works."
+      }
+     ]
+    },
+    {
+     "time": "10:30 PM",
+     "title": "Over the river to Santo Spirito",
+     "text": "Walk off the steak across Ponte Santa Trinita, which has the best night view of the Ponte Vecchio. Then head to Piazza Santo Spirito, the Oltrarno's main nightlife square. Volume is a bar inside an old hat-form workshop, with the old tools still on the walls.",
+     "note": "Volume is open until about 2 AM. The walk back to the hotel takes about 25 minutes.",
+     "stops": [
+      "flo-pontesantatrinita",
+      "flo-volume"
+     ],
+     "mode": "walking",
+     "nearby": [
+      {
+       "id": "flo-rasputin",
+       "text": "A hidden speakeasy behind an unmarked door, and Florence's first. Book ahead, since entry is by reservation only and you ring a bell to get in."
+      },
+      {
+       "id": "flo-madsouls",
+       "text": "A small, well-loved cocktail bar in San Frediano with a short, changing menu. Tell the bartender what you like and let them choose."
+      },
+      {
+       "id": "flo-santino",
+       "text": "A tiny wine bar with a few tables and a great list by the glass. Ask for a natural Tuscan red."
+      },
+      {
+       "id": "flo-babae",
+       "text": "A bistro that reopened its old wine window. Knock on the little wooden hatch and get a glass handed out to the street. It pours in the evening only."
+      },
+      {
+       "id": "flo-santatrinitagelato",
+       "text": "A gelateria at the foot of Ponte Santa Trinita, open late. Try the black sesame."
+      },
+      {
+       "id": "flo-carraia",
+       "text": "A gelateria by Ponte alla Carraia with big portions and low prices. Open late every night."
       }
      ]
     }
@@ -1835,7 +4216,7 @@
    "date": "Jan 7",
    "year": "2027",
    "hotel": "rom-bloom",
-   "tagline": "A fast train to Rome, carbonara for lunch, the Pantheon and Trevi, and dinner by the Pantheon.",
+   "tagline": "A fast train, then the historic center on foot: Roscioli, the Pantheon, Trevi, the Spanish Steps, Pincio at sunset, and Via dei Condotti.",
    "blocks": [
     {
      "time": "9:30 AM",
@@ -1868,11 +4249,31 @@
       {
        "id": "rom-fornoroscioli",
        "text": "The family bakery around the corner. Pizza bianca and pizza rossa by the slice."
+      },
+      {
+       "id": "rom-rosciolicaffe",
+       "text": "Roscioli's own pastry bar, two minutes away. Get a maritozzo, a soft bun split and packed with whipped cream."
+      },
+      {
+       "id": "rom-boccione",
+       "text": "A tiny, unsigned Jewish bakery in the Ghetto, a 3-minute walk. Order the ricotta and sour cherry tart. Cash only, and it often sells out by afternoon. Closed Saturdays."
+      },
+      {
+       "id": "rom-nonnabetta",
+       "text": "A Roman Jewish trattoria on the Ghetto's main street. January is artichoke season, so try the carciofi alla giudia, fried whole until the leaves crunch like chips. Closed Tuesdays."
+      },
+      {
+       "id": "rom-nonnavincenza",
+       "text": "A Sicilian pastry shop around the corner from Roscioli. They fill the cannoli to order with sheep's-milk ricotta."
+      },
+      {
+       "id": "rom-tartarughe",
+       "text": "A small Renaissance fountain in Piazza Mattei, with bronze boys pushing turtles into the basin. It takes two minutes and sits on the way to the Ghetto."
       }
      ]
     },
     {
-     "time": "2:30 PM",
+     "time": "2:15 PM",
      "title": "The Pantheon",
      "text": "A 1,900-year-old temple with a concrete dome and an open oculus. About 30 minutes.",
      "note": "Book the small entry ticket online.",
@@ -1888,11 +4289,19 @@
       {
        "id": "rom-tazzadoro",
        "text": "Espresso, or granita di caffè with whipped cream, at the bar."
+      },
+      {
+       "id": "rom-santeustachio",
+       "text": "A coffee bar from 1938, steps from the Pantheon. Order the gran caffè, a foamy, pre-sweetened espresso. Pay at the register first."
+      },
+      {
+       "id": "rom-galleriasordi",
+       "text": "A 1920s glass-roofed arcade on Via del Corso, a 5-minute walk. It reopened in 2024 with about 15 shops under a stained-glass ceiling."
       }
      ]
     },
     {
-     "time": "3:30 PM",
+     "time": "3 PM",
      "title": "Trevi Fountain and the Spanish Steps",
      "text": "Toss a coin at Trevi, then walk ten minutes to the Spanish Steps as the light fades.",
      "note": "Access to the fountain basin is now managed and can queue. Go early or late.",
@@ -1904,17 +4313,71 @@
       {
        "id": "rom-giolitti",
        "text": "Rome's classic gelateria since 1900."
+      },
+      {
+       "id": "rom-rinascente",
+       "text": "A department store between Trevi and the Corso. The basement shows a stretch of the ancient Aqua Virgo aqueduct, and the top floor has a terrace over the rooftops."
+      },
+      {
+       "id": "rom-capuchin",
+       "text": "Chapels decorated with the bones of about 3,700 friars, arranged into chandeliers and arches. It is 10 minutes up from Trevi on Via Veneto and takes about 40 minutes."
       }
      ]
     },
     {
-     "time": "5:30 PM",
+     "time": "4:15 PM",
+     "title": "Sunset from the Pincio",
+     "text": "Climb from the top of the Spanish Steps along the Viale Trinità dei Monti to the Pincio terrace. The sun sets over St. Peter's dome around 4:55 PM.",
+     "stops": [
+      "rom-pincio"
+     ],
+     "mode": "walking",
+     "nearby": [
+      {
+       "id": "rom-borghese",
+       "text": "Bernini's marble sculptures and Caravaggios in a villa at the far end of the park. Entry is by 2-hour timed slot only, so book a 2 PM slot to fit it in. Reservation required. Book the 3 PM slot."
+      },
+      {
+       "id": "rom-coppede",
+       "text": "A small 1920s neighborhood of fairy-tale towers, frescoes, and a frog fountain, a 10-minute taxi from the Borghese. It is best in daylight, so go first if you have time."
+      }
+     ]
+    },
+    {
+     "time": "5:15 PM",
+     "title": "Shopping from Via Margutta to Via dei Condotti",
+     "text": "Walk down from the Pincio to Via Margutta, a quiet lane of art studios where Roman Holiday was filmed. Then cut over to Via dei Condotti, Rome's luxury street, with Gucci, Prada, Bulgari, and Valentino. It ends at the Spanish Steps.",
+     "note": "Most shops stay open until 7:30 or 8 PM. Piazza Navona is a 15-minute walk from the Spanish Steps.",
+     "stops": [
+      "rom-margutta",
+      "rom-condotti"
+     ],
+     "mode": "walking",
+     "nearby": [
+      {
+       "id": "rom-pompi",
+       "text": "Rome's best-known tiramisù, sold in single boxes to eat on the street. Try the classic and the strawberry one."
+      },
+      {
+       "id": "rom-sermoneta",
+       "text": "A glove maker since 1960 with a tiny shop on Piazza di Spagna. Hundreds of colors of Italian leather gloves, fitted to your hand."
+      }
+     ]
+    },
+    {
+     "time": "7 PM",
      "title": "Piazza Navona at night",
-     "text": "Bernini's Fountain of the Four Rivers, lit up, a 10-minute walk from the Trevi Fountain.",
+     "text": "Bernini's Fountain of the Four Rivers, lit up, a 15-minute walk from the Spanish Steps.",
      "stops": [
       "rom-navona"
      ],
-     "mode": "walking"
+     "mode": "walking",
+     "nearby": [
+      {
+       "id": "rom-barscalini",
+       "text": "The café that invented the tartufo, a ball of chocolate gelato with a cherry inside and a dark chocolate shell. Eat it at the bar for less than at a table."
+      }
+     ]
     },
     {
      "time": "8 PM",
@@ -1931,36 +4394,80 @@
        "text": "One of Rome's first wine bars, with a long list and cheese and salumi plates."
       }
      ]
+    },
+    {
+     "time": "10:15 PM",
+     "title": "Cocktails at Jerry Thomas Speakeasy",
+     "text": "A 10-minute walk from dinner to an unmarked door on a dark lane. Inside is a tiny 1920s-style bar that started Rome's cocktail revival. Ask the bartender for something built on Italian amari.",
+     "note": "Book a table on the website, which also gives you the door password. It opens at 9 PM. Bring cash for the small membership fee and the drinks.",
+     "stops": [
+      "rom-jerrythomas"
+     ],
+     "mode": "walking",
+     "nearby": [
+      {
+       "id": "rom-salotto42",
+       "text": "A sleek cocktail lounge facing the 2,000-year-old columns of the Temple of Hadrian, lit up at night. Easier to walk into than Jerry Thomas."
+      },
+      {
+       "id": "rom-frigidarium",
+       "text": "A late-night gelateria near Navona. Get it dipped in chocolate and rolled in nuts."
+      }
+     ]
     }
    ]
   },
   {
    "id": "jan8",
-   "label": "Fri · The Vatican & Trastevere",
+   "label": "Fri · The Vatican & Prati",
    "date": "Jan 8",
    "year": "2027",
    "hotel": "rom-bloom",
-   "tagline": "The Sistine Chapel at opening, St. Peter's, sunset at Castel Sant'Angelo, and a Trastevere night.",
+   "tagline": "A whole day around the Vatican: the Sistine Chapel at opening, St. Peter's and its dome, Prati shopping, and sunset at Castel Sant'Angelo.",
    "blocks": [
     {
      "time": "8 AM",
      "title": "Vatican Museums and the Sistine Chapel",
      "text": "The Raphael Rooms, the map gallery, and Michelangelo's ceiling. Plan on three hours.",
-     "note": "Book the first entry slot on the official site. Closed Sundays.",
+     "note": "Book the first timed entry on the official Vatican Museums site as soon as dates open. Resellers sell an earlier 7:30 AM entry with breakfast for about €119, which gets you in before the crowds. Shoulders and knees must be covered in the museums, the Sistine Chapel, and St. Peter's, or you can be turned away. Bring photo ID. No photos or talking in the Sistine Chapel. Tickets are single entry, so you cannot leave and come back.",
      "stops": [
       "rom-vatican"
      ],
-     "mode": "walking"
+     "mode": "walking",
+     "nearby": [
+      {
+       "id": "rom-sciascia",
+       "text": "A 1919 coffee roaster in Prati, a 10-minute walk from the museum entrance. Order the caffè al cioccolato, an espresso in a cup lined with melted dark chocolate. Opens at 7 AM."
+      },
+      {
+       "id": "rom-sabotino",
+       "text": "A Prati pastry shop since the 1960s, long known as Antonini. Locals come for the cornetti at breakfast and the small cakes in the window."
+      }
+     ]
     },
     {
      "time": "11:30 AM",
-     "title": "St. Peter's Basilica",
+     "title": "St. Peter's Basilica and the dome climb",
      "text": "Michelangelo's Pietà and Bernini's canopy. Entry is free. Climb the dome for a view over the square.",
-     "note": "Cover shoulders and knees. Expect a security line.",
+     "note": "A side door from the Sistine Chapel straight into St. Peter's is often limited to guided groups. If it is closed to you, walk back out and around to St. Peter's Square, about 15 minutes, and use the basilica's own security line. Climb the dome: 551 steps, or take the lift for the first 231 and climb the last 320. It costs about €10 to €15, opens around 7:30 or 8 AM, and closes at 5 PM in winter. The last stretch is a narrow, leaning spiral. St. Peter's can close at short notice for ceremonies. Check the day before.",
      "stops": [
       "rom-stpeters"
      ],
-     "mode": "walking"
+     "mode": "walking",
+     "nearby": [
+      {
+       "id": "rom-borgopio",
+       "text": "A pedestrian lane of old houses, cafés, and religious-goods shops between St. Peter's and Castel Sant'Angelo. It runs beside the Passetto, the walled escape corridor the popes used."
+      },
+      {
+       "id": "rom-pastasciutta",
+       "text": "A tiny counter near St. Peter's where they roll fresh pasta in front of you and serve it in minutes. A plate costs under €10. Try the cacio e pepe or the amatriciana."
+      },
+      {
+       "id": "rom-gianicolo",
+       "text": "The cannon on the Gianicolo fires a blank at exactly noon every day. The terrace is a 20-minute walk south of St. Peter's and has one of the widest views of the city."
+      }
+     ]
     },
     {
      "time": "1:30 PM",
@@ -1973,7 +4480,27 @@
      "nearby": [
       {
        "id": "rom-trionfale",
-       "text": "Rome's largest covered market, open Saturday mornings."
+       "text": "Rome's largest covered market, open Monday to Saturday mornings."
+      }
+     ]
+    },
+    {
+     "time": "2:45 PM",
+     "title": "Shopping on Via Cola di Rienzo",
+     "text": "Prati's main shopping street, a 10-minute walk from Pizzarium. It is a long, wide avenue of Italian chains, shoe shops, and food stores where Romans actually shop. It ends near the Tiber, close to Castel Sant'Angelo.",
+     "note": "Shops reopen after lunch by about 3:30 PM and stay open until 7:30 or 8 PM.",
+     "stops": [
+      "rom-colarienzo"
+     ],
+     "mode": "walking",
+     "nearby": [
+      {
+       "id": "rom-castroni",
+       "text": "A food hall and coffee roaster on the street since the 1930s. Good for Italian coffee, chocolate, and gifts to take home."
+      },
+      {
+       "id": "rom-gracchi",
+       "text": "A small gelateria a block off Cola di Rienzo. Fruit flavors are made with fresh fruit, and the pistachio is excellent."
       }
      ]
     },
@@ -1987,31 +4514,34 @@
      "mode": "walking"
     },
     {
-     "time": "7:30 PM",
-     "title": "Trastevere",
-     "text": "Walk the ivy-covered lanes to the golden mosaics of Santa Maria in Trastevere.",
+     "time": "5:45 PM",
+     "title": "Via dei Coronari",
+     "text": "Cross the angel bridge from Castel Sant'Angelo and walk Via dei Coronari, a quiet lane of antique shops and old palazzi. It ends near Piazza Navona.",
+     "note": "Shops close around 7:30 PM. Walk back over the angel bridge to Prati for dinner, about 15 minutes.",
      "stops": [
-      "rom-santamaria"
-     ],
-     "mode": "walking"
-    },
-    {
-     "time": "8:30 PM",
-     "title": "Dinner at Da Enzo al 29",
-     "text": "A tiny trattoria with some of the best carbonara and fried artichokes in Rome.",
-     "note": "No reservations at dinner. Put your name down and wait with a drink.",
-     "stops": [
-      "rom-daenzo"
+      "rom-coronari"
      ],
      "mode": "walking",
      "nearby": [
       {
-       "id": "rom-seu",
-       "text": "Creative Neapolitan-style pizza, ranked among Italy's best."
-      },
+       "id": "rom-gelateriateatro",
+       "text": "Gelato made in the window, with flavors like white peach and lavender or ricotta and fig. It sits halfway down the street."
+      }
+     ]
+    },
+    {
+     "time": "8 PM",
+     "title": "Dinner at Il Sorpasso",
+     "stops": [
+      "rom-sorpasso"
+     ],
+     "mode": "walking",
+     "text": "A buzzy Prati wine bar and kitchen with cured meats hanging over the counter. Order a plate of salumi and the Roman pastas.",
+     "note": "Book ahead for Friday night. Emerald's cocktail bar is around the corner for after.",
+     "nearby": [
       {
-       "id": "rom-freni",
-       "text": "A Trastevere aperitivo bar in a former garage, busy with locals."
+       "id": "rom-emeralds",
+       "text": "A small, salon-style cocktail bar 10 minutes from Castel Sant'Angelo. The Sazerac and the dirty martini get the most praise. Good for a drink after sunset."
       }
      ]
     }
@@ -2019,11 +4549,11 @@
   },
   {
    "id": "jan9",
-   "label": "Sat · Ancient Rome",
+   "label": "Sat · Ancient Rome & Trastevere",
    "date": "Jan 9",
    "year": "2027",
    "hotel": "rom-bloom",
-   "tagline": "The Colosseum and the Forum, the Borghese, sunset from the Pincio, and a last dinner in Testaccio.",
+   "tagline": "The Colosseum and the Forum, lunch in Monti, the Aventine keyhole at sunset, and a last night in Trastevere.",
    "blocks": [
     {
      "time": "9 AM",
@@ -2056,41 +4586,112 @@
       {
        "id": "rom-mercatomonti",
        "text": "A weekend market of vintage clothes and local designers."
+      },
+      {
+       "id": "rom-fatamorgana",
+       "text": "Gelato with odd, good flavors like basil, honey and walnut, or chocolate with tobacco. It opens around 1:30 PM, two minutes from lunch."
+      },
+      {
+       "id": "rom-pifebo",
+       "text": "A big vintage shop on Monti's main shopping street. It is strong on leather jackets, boots, and bags at secondhand prices."
+      },
+      {
+       "id": "rom-regoli",
+       "text": "A pastry shop from 1916 that many Romans say makes the city's best maritozzo. It is a 10-minute walk east of Monti. Closed Tuesdays."
       }
      ]
     },
     {
-     "time": "3:30 PM",
-     "title": "Galleria Borghese",
-     "text": "Bernini's Apollo and Daphne and the Rape of Proserpina, plus Caravaggio and Canova. Two-hour visits.",
-     "note": "Reservation required. Book the 3 PM slot.",
+     "time": "3:15 PM",
+     "title": "Mouth of Truth and the Aventine keyhole",
      "stops": [
-      "rom-borghese"
+      "rom-boccaverita",
+      "rom-aventinekey"
      ],
-     "mode": "driving"
+     "mode": "driving",
+     "text": "Put a hand in the Mouth of Truth, then climb the Aventine. Peek through the Knights of Malta keyhole at St. Peter's dome, and watch the sunset from the Orange Garden next door.",
+     "note": "A 10-minute taxi from Monti. The Orange Garden closes at dusk, about 5 PM. Then walk 20 minutes down and over the river to Trastevere.",
+     "nearby": [
+      {
+       "id": "rom-trapizzino",
+       "text": "The original trapizzino shop in Testaccio, a 15-minute walk down from the Aventine. A pocket of pizza dough stuffed with Roman stews like chicken cacciatore or oxtail."
+      }
+     ]
     },
     {
-     "time": "5 PM",
-     "title": "Sunset from the Pincio",
-     "text": "Walk through the Villa Borghese park to the terrace over Piazza del Popolo and the domes of Rome.",
+     "time": "5:45 PM",
+     "title": "Trastevere",
+     "text": "Walk the ivy-covered lanes to the golden mosaics of Santa Maria in Trastevere.",
      "stops": [
-      "rom-pincio"
+      "rom-santamaria"
      ],
-     "mode": "walking"
+     "mode": "walking",
+     "nearby": [
+      {
+       "id": "rom-fiordiluna",
+       "text": "A small Trastevere gelateria that makes everything from scratch. The pistachio and dark chocolate are the ones to get."
+      },
+      {
+       "id": "rom-suppliroma",
+       "text": "A Trastevere fry shop for supplì, fried rice balls with a string of molten mozzarella inside. Try the classic and the cacio e pepe one. Closed Sundays."
+      },
+      {
+       "id": "rom-innocenti",
+       "text": "A family biscuit bakery with a huge old oven. Buy a bag of brutti ma buoni, crunchy hazelnut meringue cookies, for later. Closed Sundays."
+      }
+     ]
     },
     {
      "time": "8 PM",
-     "title": "Last dinner at Felice a Testaccio",
-     "text": "Cacio e pepe tossed at the table, and Roman lamb. A local favorite since 1936.",
-     "note": "Reserve.",
+     "title": "Dinner at Da Enzo al 29",
+     "text": "A tiny trattoria with some of the best carbonara and fried artichokes in Rome.",
+     "note": "No reservations at dinner. Put your name down and wait with a drink.",
      "stops": [
-      "rom-felice"
+      "rom-daenzo"
      ],
-     "mode": "driving",
+     "mode": "walking",
      "nearby": [
       {
-       "id": "rom-flavio",
-       "text": "Roman classics in a dining room cut into an ancient hill of broken amphorae."
+       "id": "rom-seu",
+       "text": "Creative Neapolitan-style pizza, ranked among Italy's best."
+      },
+      {
+       "id": "rom-freni",
+       "text": "A Trastevere aperitivo bar in a former garage, busy with locals."
+      },
+      {
+       "id": "rom-felice",
+       "text": "Cacio e pepe tossed at the table, and Roman lamb. A local favorite since 1936. Reserve."
+      }
+     ]
+    },
+    {
+     "time": "10:15 PM",
+     "title": "Trastevere bars and the Tiber at night",
+     "text": "Start at Bar San Calisto, a scruffy local favorite where a big Peroni is about €2.50. Then walk five minutes to Ma Che Siete Venuti a Fà, a tiny pub with 16 Italian craft beers on tap. Finish on Ponte Sisto, a footbridge with St. Peter's dome lit up down the river.",
+     "note": "At San Calisto, pay at the register first, then hand your receipt to the bartender. Ma Che Siete is open until 2 AM.",
+     "stops": [
+      "rom-sancalisto",
+      "rom-machesiete",
+      "rom-pontesisto"
+     ],
+     "mode": "walking",
+     "nearby": [
+      {
+       "id": "rom-bigmama",
+       "text": "A small basement blues and jazz club in Trastevere since 1984. Shows usually start around 10:30 PM, so check the night's lineup."
+      },
+      {
+       "id": "rom-maritozzaro",
+       "text": "A late-night pastry bar, a 10-minute taxi south, serving maritozzi until about midnight. A classic Roman end to a night out."
+      },
+      {
+       "id": "rom-drinkkong",
+       "text": "Worth a 15-minute taxi to Monti. Drink Kong is a dark, neon-lit bar with retro arcade games, and it ranks among the World's 50 Best Bars. Pick a drink with a high Kong Factor for the house style."
+      },
+      {
+       "id": "rom-thecourt",
+       "text": "A hotel terrace bar looking straight at the lit-up Colosseum. Pricey, at about €25 a cocktail, but the view is hard to beat. Reserve ahead."
       }
      ]
     }

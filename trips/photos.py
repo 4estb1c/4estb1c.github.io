@@ -4,7 +4,8 @@ Run: python trips/photos.py <slug> [place_id ...]
 Reads `<slug>.json`, writes `images/galleries/<id>/1-3.jpg`, and records alt
 text, credit, and license in `<slug>.photos.json`. Places already in that file
 are skipped unless named. A place may set "photoQuery" (search text),
-"photoFiles" (exact Commons file titles), or "photoExclude" (title fragments
+"photoQueries" (one search per view), "photoFiles" (exact Commons file
+titles, one to three, or none for a place with no good photo), or "photoExclude" (title fragments
 to reject) to steer the choice.
 """
 
@@ -54,21 +55,50 @@ def plain(value, limit=140):
     return text if len(text) <= limit else text[:limit].rsplit(" ", 1)[0] + "…"
 
 
-def candidates(place, city):
-    if place.get("photoFiles"):
-        return place["photoFiles"]
-    query = place.get("photoQuery") or f'{place.get("mapQuery", place["name"])} {city}'
+def search(query):
     hits = api(action="query", list="search", srnamespace=6, srlimit=20, srsearch=query + " filetype:bitmap")
     return [hit["title"] for hit in hits["query"]["search"] if not SKIP.search(hit["title"])]
 
 
+def candidates(place, city):
+    if "photoFiles" in place:  # An empty list means the place has no good photo.
+        return place["photoFiles"]
+    query = place.get("photoQuery") or f'{place.get("mapQuery", place["name"])} {city}'
+    # "photoQueries" gives one search per view (facade, interior, square), so the three photos differ.
+    # Otherwise Commons' reviewed Quality images come first, interleaved with the plain search.
+    queries = place.get("photoQueries") or [query + " incategory:Quality_images", query]
+    lists = [search(q) for q in queries]
+    titles = []
+    for pair in zip(*(lst + [None] * (20 - len(lst)) for lst in lists)):
+        titles += [t for t in pair if t and t not in titles]
+    return titles
+
+
+def stem(title):
+    """Title without numbers or extension, to spot a series such as 'Interior 02' and 'Interior 05'."""
+    return re.sub(r"[\W\d_]+", " ", title.rsplit(".", 1)[0].lower().replace("file:", "")).strip()
+
+
+def dhash(data):
+    """64-bit difference hash, so two shots of the same view are rejected."""
+    from PIL import Image
+    import io
+    image = Image.open(io.BytesIO(data)).convert("L").resize((9, 8))
+    px = list(image.tobytes())
+    return sum(1 << i for i in range(64) if px[(i // 8) * 9 + i % 8] > px[(i // 8) * 9 + i % 8 + 1])
+
+
 def fetch(place, city):
     titles = candidates(place, city)
+    need = len(titles) if "photoFiles" in place else 3
     if not titles:
         return place["id"], None
     # 960 px is one of Commons' standard thumbnail widths, which it serves from cache.
-    info = api(action="query", prop="imageinfo", titles="|".join(titles[:20]), iiprop="url|size|extmetadata", iiurlwidth=960)
-    pages = {page["title"]: page for page in info["query"]["pages"] if "imageinfo" in page}
+    pages = {}
+    for start in range(0, min(len(titles), 40), 20):
+        info = api(action="query", prop="imageinfo", titles="|".join(titles[start:start + 20]), iiprop="url|size|extmetadata", iiurlwidth=960)
+        pages.update({page["title"]: page for page in info["query"]["pages"] if "imageinfo" in page})
+    seen_stems, hashes, interiors = set(), [], 0
     chosen = []
     for title in titles:
         page = pages.get(title) or pages.get(title.replace("_", " "))
@@ -81,16 +111,28 @@ def fetch(place, city):
         ratio = image["width"] / image["height"]
         if not place.get("photoFiles") and (image["width"] < 900 or image["height"] < 550 or not 0.6 <= ratio <= 2.0 or HISTORIC.search(title)):
             continue
+        if not place.get("photoFiles"):
+            # Variety: no two from one numbered series, no near-identical views, at most two interiors.
+            if stem(title) in seen_stems or (interiors >= 2 and "interior" in title.lower()):
+                continue
+            data = get(image["thumburl"])
+            h = dhash(data)
+            if any(bin(h ^ other).count("1") < 12 for other in hashes):
+                continue
+            seen_stems.add(stem(title))
+            hashes.append(h)
+            interiors += "interior" in title.lower()
+            image["data"] = data
         chosen.append((title, image))
-        if len(chosen) == 3:
+        if len(chosen) == need:
             break
-    if len(chosen) < 3:
+    if len(chosen) < need:
         return place["id"], None
     folder = ROOT / "images/galleries" / place["id"]
     folder.mkdir(parents=True, exist_ok=True)
     photos = []
     for index, (title, image) in enumerate(chosen, 1):
-        (folder / f"{index}.jpg").write_bytes(get(image["thumburl"]))
+        (folder / f"{index}.jpg").write_bytes(image.get("data") or get(image["thumburl"]))
         meta = image.get("extmetadata", {})
         description = plain(meta.get("ImageDescription", {}).get("value")) or plain(meta.get("ObjectName", {}).get("value"))
         artist = plain(meta.get("Artist", {}).get("value"), 80)
