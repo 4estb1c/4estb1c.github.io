@@ -1,4 +1,4 @@
-/* Portable Montréal itinerary. Explicit stop IDs replace the old template's heading matching. */
+/* Trip itinerary pages. Explicit stop IDs replace the old template's heading matching. */
 (() => {
   const photos = JSON.parse(document.getElementById('photos-data').textContent);
   const routes = JSON.parse(document.getElementById('routes-data').textContent);
@@ -25,6 +25,7 @@
       return;
     }
     const plan = routes.days[day];
+    const hotel = plan.hotel || routes.hotel;
     const mobile = window.matchMedia?.('(max-width: 640px), (pointer: coarse)').matches ?? false;
     const map = L.map(container, {
       scrollWheelZoom:false,
@@ -47,7 +48,7 @@
     });
     tiles.addTo(map);
     const groups = new Map();
-    const coordinates = [[routes.hotel.lat,routes.hotel.lng]];
+    const coordinates = [[hotel.lat,hotel.lng]];
     plan.stops.forEach(stop => {
       const key = `${stop.lat},${stop.lng}`;
       if (!groups.has(key)) groups.set(key,[]);
@@ -55,7 +56,7 @@
       coordinates.push([stop.lat,stop.lng]);
     });
     // Dashed segments are an ordering aid; actual navigation uses each stop's directions.
-    const path = [[routes.hotel.lat,routes.hotel.lng], ...plan.stops.map(stop=>[stop.lat,stop.lng])];
+    const path = [[hotel.lat,hotel.lng], ...plan.stops.map(stop=>[stop.lat,stop.lng])];
     if(path.length>1)L.polyline(path,{color:plan.color,weight:2.5,dashArray:'6,6',opacity:.7}).addTo(map);
     groups.forEach(stops => {
       const first = stops[0];
@@ -64,8 +65,8 @@
       const popup = stops.map(stop=>`<b>${stop.n}. ${escapeHtml(stop.name)}</b><br>${escapeHtml(stop.time)}<br><a href="#${stop.anchor}">See this stop and photos</a>`).join('<hr>');
       L.marker([first.lat,first.lng],{icon,title:first.name}).addTo(map).bindPopup(popup);
     });
-    if(!plan.stops.some(stop=>stop.id===routes.hotel.id)) {
-      L.marker([routes.hotel.lat,routes.hotel.lng],{title:routes.hotel.name,icon:L.divIcon({className:'',html:'<span class="map-pin" style="background:#1a1612">H</span>',iconSize:[28,28]})}).addTo(map).bindPopup(`<b>${escapeHtml(routes.hotel.name)}</b><br>Your booked hotel base`);
+    if(!plan.stops.some(stop=>stop.id===hotel.id)) {
+      L.marker([hotel.lat,hotel.lng],{title:hotel.name,icon:L.divIcon({className:'',html:'<span class="map-pin" style="background:#1a1612">H</span>',iconSize:[28,28]})}).addTo(map).bindPopup(`<b>${escapeHtml(hotel.name)}</b><br>${escapeHtml(hotel.label === 'Booked' ? 'Your booked hotel base' : (hotel.label || 'Hotel base'))}`);
     }
     const bounds = L.latLngBounds(coordinates);
     map.fitBounds(bounds,{padding:[35,35],maxZoom:16});
