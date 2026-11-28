@@ -14,7 +14,7 @@ from pathlib import Path
 from urllib.parse import urlencode
 
 ROOT = Path(__file__).resolve().parent
-TRIPS = ["montreal", "chalmond2"]
+TRIPS = ["montreal", "chalmond", "chalmond2"]
 PALETTE = ["#8b5d3b", "#2a5d57", "#9d4edd", "#c0392b", "#0891b2", "#b7791f", "#3d5a80", "#6a4c93"]
 
 
@@ -43,8 +43,9 @@ def build(slug):
 
     def photo_strip(place_id):
         used.add(place_id)
-        photos = galleries[place_id]["photos"]
-        assert len(photos) == 3, place_id
+        photos = galleries.get(place_id, {}).get("photos", [])[:3]
+        if not photos:
+            return ''
         markup = []
         for index, photo in enumerate(photos):
             key = f"{place_id}-{index}"
