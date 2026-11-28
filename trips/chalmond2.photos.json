@@ -1899,31 +1899,6 @@
       }
     ]
   },
-  "rom-navona": {
-    "photos": [
-      {
-        "src": "images/galleries/rom-navona/1.jpg",
-        "alt": "Corso del Rinascimento, Rome, Italy",
-        "source": "https://commons.wikimedia.org/wiki/File:Corso_del_Rinascimento_(Rome)_12.jpg",
-        "image_source": "https://upload.wikimedia.org/wikipedia/commons/0/01/Corso_del_Rinascimento_%28Rome%29_12.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "credit": "Wilfredor · CC0"
-      },
-      {
-        "src": "images/galleries/rom-navona/2.jpg",
-        "alt": "Roma, corso Rinascimento con polizia schierata per una manifestazione studentesca",
-        "source": "https://commons.wikimedia.org/wiki/File:S_Eustachio-Parione_-_corso_rinascimento_con_polizia_schierata_1100900.JPG",
-        "image_source": "https://upload.wikimedia.org/wikipedia/commons/7/71/S_Eustachio-Parione_-_corso_rinascimento_con_polizia_schierata_1100900.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "credit": "Lalupa · CC BY-SA 3.0"
-      },
-      {
-        "src": "images/galleries/rom-navona/3.jpg",
-        "alt": "Roma, corso Rinascimento: a sinistra la facciata della chiesa di Nostra Signora del Sacro Cuore (1938)",
-        "source": "https://commons.wikimedia.org/wiki/File:Parione_-_Nostra_Signora_del_Sacro_Cuore_gi%C3%A0_san_Giacomo_degli_spagnoli_facciata_su_Corso_Rinascimento_1010084.JPG",
-        "image_source": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Parione_-_Nostra_Signora_del_Sacro_Cuore_gi%C3%A0_san_Giacomo_degli_spagnoli_facciata_su_Corso_Rinascimento_1010084.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "credit": "Lalupa · CC BY-SA 3.0"
-      }
-    ]
-  },
   "rom-culdesac": {
     "photos": [
       {
@@ -2499,31 +2474,6 @@
       }
     ]
   },
-  "rom-santeustachio": {
-    "photos": [
-      {
-        "src": "images/galleries/rom-santeustachio/1.jpg",
-        "alt": "Caffè Sant Eustachio. Fabulous and old school. Roma - Italia",
-        "source": "https://commons.wikimedia.org/wiki/File:Caff%C3%A8_Sant_Eustacchio.jpg",
-        "image_source": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Caff%C3%A8_Sant_Eustacchio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "credit": "Jerry Michalski · CC BY-SA 2.0"
-      },
-      {
-        "src": "images/galleries/rom-santeustachio/2.jpg",
-        "alt": "Caffè Sant'Eustachio at the opening hour, one of the most famous coffeehouses in Rome, Italy",
-        "source": "https://commons.wikimedia.org/wiki/File:Roma_-_Caff%C3%A8_Sant%27Eustachio.jpg",
-        "image_source": "https://upload.wikimedia.org/wikipedia/commons/8/86/Roma_-_Caff%C3%A8_Sant%27Eustachio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "credit": "Blackcat · CC BY-SA 4.0"
-      },
-      {
-        "src": "images/galleries/rom-santeustachio/3.jpg",
-        "alt": "Le café Sant'Eustachio à Rome, célèbre café italien fondé en 1938",
-        "source": "https://commons.wikimedia.org/wiki/File:Caff%C3%A8_Sant%27Eustachio.JPG",
-        "image_source": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Caff%C3%A8_Sant%27Eustachio.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "credit": "LPLT · CC BY-SA 3.0"
-      }
-    ]
-  },
   "rom-trionfale": {
     "photos": [
       {
@@ -2549,203 +2499,75 @@
       }
     ]
   },
-  "par-jeannedarc": {
+  "rom-navona": {
     "photos": [
       {
-        "src": "images/galleries/par-jeannedarc/1.jpg",
-        "alt": "Place du Marché Sainte-Catherine @ Le Marais @ Paris",
-        "source": "https://commons.wikimedia.org/wiki/File:Place_du_March%C3%A9_Sainte-Catherine_@_Le_Marais_@_Paris_(34371146596).jpg",
-        "image_source": "https://upload.wikimedia.org/wikipedia/commons/2/20/Place_du_March%C3%A9_Sainte-Catherine_%40_Le_Marais_%40_Paris_%2834371146596%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "credit": "Guilhem Vellut from Paris, France · CC BY 2.0"
+        "src": "images/galleries/rom-navona/1.jpg",
+        "alt": "Piazza Navona (Rome) at night",
+        "source": "https://commons.wikimedia.org/wiki/File:Piazza_Navona_(Rome)_at_night.jpg",
+        "image_source": "https://upload.wikimedia.org/wikipedia/commons/0/08/Piazza_Navona_%28Rome%29_at_night.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "credit": "NikonZ7II · CC BY-SA 4.0"
       },
       {
-        "src": "images/galleries/par-jeannedarc/2.jpg",
-        "alt": "Place du Marché Sainte-Catherine @ Le Marais @ Paris",
-        "source": "https://commons.wikimedia.org/wiki/File:Place_du_March%C3%A9_Sainte-Catherine_@_Le_Marais_@_Paris_(34253403482).jpg",
-        "image_source": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Place_du_March%C3%A9_Sainte-Catherine_%40_Le_Marais_%40_Paris_%2834253403482%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "credit": "Guilhem Vellut from Paris, France · CC BY 2.0"
+        "src": "images/galleries/rom-navona/2.jpg",
+        "alt": "piazza navona, rome august 2010",
+        "source": "https://commons.wikimedia.org/wiki/File:Piazza_navona_rome.JPG",
+        "image_source": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Piazza_navona_rome.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "credit": "Hanc1 · CC BY-SA 3.0"
       },
       {
-        "src": "images/galleries/par-jeannedarc/3.jpg",
-        "alt": "Le Marché, 2 Place du Marché Sainte-Catherine, 75004 Paris, France.",
-        "source": "https://commons.wikimedia.org/wiki/File:Le_March%C3%A9,_2_Place_du_March%C3%A9_Sainte-Catherine,_75004_Paris_2008.jpg",
-        "image_source": "https://upload.wikimedia.org/wikipedia/commons/7/73/Le_March%C3%A9%2C_2_Place_du_March%C3%A9_Sainte-Catherine%2C_75004_Paris_2008.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "credit": "Jesús Gorriti from Madrid, Spain · CC BY-SA 2.0"
+        "src": "images/galleries/rom-navona/3.jpg",
+        "alt": "Piazza Navona is a square in Rome, Italy. It is built on the site of the Stadium of Domitian, built in the 1st century AD, and follows the…",
+        "source": "https://commons.wikimedia.org/wiki/File:Piazza_Navona_-_48137032936.jpg",
+        "image_source": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Piazza_Navona_-_48137032936.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "credit": "George M. Groutas · CC BY 2.0"
       }
     ]
   },
-  "par-grandesecoles": {
+  "par-lodgein": {
     "photos": [
       {
-        "src": "images/galleries/par-grandesecoles/1.jpg",
-        "alt": "Cardinal-Lemoine street - Paris",
-        "source": "https://commons.wikimedia.org/wiki/File:2004.05.06_Photo_035_Paris_V_Rue_du_Cardinal_le_Moine_reductwk.jpg",
-        "image_source": "https://upload.wikimedia.org/wikipedia/commons/0/0b/2004.05.06_Photo_035_Paris_V_Rue_du_Cardinal_le_Moine_reductwk.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "credit": "Mbzt · CC BY-SA 3.0"
-      },
-      {
-        "src": "images/galleries/par-grandesecoles/2.jpg",
-        "alt": "Rue du Cardinal-Lemoine in Paris",
-        "source": "https://commons.wikimedia.org/wiki/File:Paris-Rue_du_Cardinal_Lemoine-112-2017-gje.jpg",
-        "image_source": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Paris-Rue_du_Cardinal_Lemoine-112-2017-gje.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "credit": "Gerd Eichmann · CC BY-SA 4.0"
-      },
-      {
-        "src": "images/galleries/par-grandesecoles/3.jpg",
-        "alt": "Rue du Cardinal-Lemoine in Paris",
-        "source": "https://commons.wikimedia.org/wiki/File:Paris-Rue_du_Cardinal_Lemoine-114-2017-gje.jpg",
-        "image_source": "https://upload.wikimedia.org/wikipedia/commons/1/10/Paris-Rue_du_Cardinal_Lemoine-114-2017-gje.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "credit": "Gerd Eichmann · CC BY-SA 4.0"
+        "src": "images/galleries/par-lodgein/2.jpg",
+        "alt": "Avenue de la Porte-d'Ivry, Paris, vue depuis Ivry-sur-Seine",
+        "source": "https://commons.wikimedia.org/wiki/File:AvenuePorteIvry.jpg",
+        "image_source": "https://upload.wikimedia.org/wikipedia/commons/0/0f/AvenuePorteIvry.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "credit": "Chaoborus · CC BY-SA 3.0"
       }
     ]
   },
-  "flo-davanzati": {
+  "flo-essence": {
     "photos": [
       {
-        "src": "images/galleries/flo-davanzati/1.jpg",
-        "alt": "Le collezioni di Palazzo Davanzati a Firenze.",
-        "source": "https://commons.wikimedia.org/wiki/File:Firenze_-_Palazzo_Davanzati_3251.JPG",
-        "image_source": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Firenze_-_Palazzo_Davanzati_3251.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "credit": "Phyrexian · CC BY-SA 4.0"
-      },
-      {
-        "src": "images/galleries/flo-davanzati/2.jpg",
-        "alt": "Palazzo davanzati",
-        "source": "https://commons.wikimedia.org/wiki/File:Palazzo_davanzati_12.JPG",
-        "image_source": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Palazzo_davanzati_12.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "src": "images/galleries/flo-essence/1.jpg",
+        "alt": "Piazza dell'inipendenza",
+        "source": "https://commons.wikimedia.org/wiki/File:Piazza_dell%27inipendenza_12.JPG",
+        "image_source": "https://upload.wikimedia.org/wikipedia/commons/6/66/Piazza_dell%27inipendenza_12.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "credit": "sailko · CC BY 2.5"
       },
       {
-        "src": "images/galleries/flo-davanzati/3.jpg",
-        "alt": "Davanzati Palace, Museum of antique florentine house (Museo della Casa fiorentina antica) stairs in Florence, Italy",
-        "source": "https://commons.wikimedia.org/wiki/File:Palazzo_Davanzati_scale_1.JPG",
-        "image_source": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Palazzo_Davanzati_scale_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "credit": "Sailko · CC BY 2.5"
+        "src": "images/galleries/flo-essence/2.jpg",
+        "alt": "Piazza dell'Indipendenza (Florence)",
+        "source": "https://commons.wikimedia.org/wiki/File:Piazza_dell%27Indipendenza_18,_Istituto_Fanfani_01.jpg",
+        "image_source": "https://upload.wikimedia.org/wikipedia/commons/2/24/Piazza_dell%27Indipendenza_18%2C_Istituto_Fanfani_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "credit": "Francesco Bini · CC BY-SA 4.0"
+      },
+      {
+        "src": "images/galleries/flo-essence/3.jpg",
+        "alt": "Piazza dell'Indipendenza (Florence)",
+        "source": "https://commons.wikimedia.org/wiki/File:Piazza_dell%27Indipendenza_21,_Palazzina_Philipson,_01.jpg",
+        "image_source": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Piazza_dell%27Indipendenza_21%2C_Palazzina_Philipson%2C_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "credit": "Francesco Bini · CC BY-SA 4.0"
       }
     ]
   },
-  "flo-pendini": {
+  "rom-bloom": {
     "photos": [
       {
-        "src": "images/galleries/flo-pendini/1.jpg",
-        "alt": "Gilli, Piazza della Repubblica (Florence)",
-        "source": "https://commons.wikimedia.org/wiki/File:Gilli_(Florence)_Piazza_della_Repubblica.jpg",
-        "image_source": "https://upload.wikimedia.org/wikipedia/commons/b/be/Gilli_%28Florence%29_Piazza_della_Repubblica.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "credit": "Freepenguin · CC BY-SA 3.0"
-      },
-      {
-        "src": "images/galleries/flo-pendini/2.jpg",
-        "alt": "Piazza della Repubblica (Florence)",
-        "source": "https://commons.wikimedia.org/wiki/File:Piazza_della_Repubblica_(Florence)_20150811.jpg",
-        "image_source": "https://upload.wikimedia.org/wikipedia/commons/0/01/Piazza_della_Repubblica_%28Florence%29_20150811.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "credit": "Suicasmo · CC BY-SA 4.0"
-      },
-      {
-        "src": "images/galleries/flo-pendini/3.jpg",
-        "alt": "Panoramic view of Piazza della Repubblica seen from Campanile di Giotto, Florence, Italy",
-        "source": "https://commons.wikimedia.org/wiki/File:Piazza_della_Repubblica_seen_from_Campanile_di_Giotto,_Florence,_Italy.jpg",
-        "image_source": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Piazza_della_Repubblica_seen_from_Campanile_di_Giotto%2C_Florence%2C_Italy.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "credit": "Fabio Pani · CC BY-SA 4.0"
-      }
-    ]
-  },
-  "par-bretonnerie": {
-    "photos": [
-      {
-        "src": "images/galleries/par-bretonnerie/1.jpg",
-        "alt": "Rue Sainte-Croix-de-la-Bretonnerie and Rue Aubriot, Paris.",
-        "source": "https://commons.wikimedia.org/wiki/File:Rue_Sainte-Croix-de-la-Bretonnerie_and_Rue_Aubriot,_Paris_24_August_2013.jpg",
-        "image_source": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Rue_Sainte-Croix-de-la-Bretonnerie_and_Rue_Aubriot%2C_Paris_24_August_2013.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "credit": "flightlog · CC BY 2.0"
-      },
-      {
-        "src": "images/galleries/par-bretonnerie/2.jpg",
-        "alt": "Rue Sainte-Croix de la Bretonnerie angle square Sainrte Croix de la Bretonnerie",
-        "source": "https://commons.wikimedia.org/wiki/File:Rue_Sainte-Croix_de_la_Bretonnerie_angle_square_Sainrte_Croix_de_la_Bretonnerie.jpg",
-        "image_source": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Rue_Sainte-Croix_de_la_Bretonnerie_angle_square_Sainrte_Croix_de_la_Bretonnerie.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "credit": "VVVCFFrance · CC BY-SA 4.0"
-      },
-      {
-        "src": "images/galleries/par-bretonnerie/3.jpg",
-        "alt": "Rue Sainte-Croix de la Bretonnerie 16",
-        "source": "https://commons.wikimedia.org/wiki/File:Rue_Sainte-Croix_de_la_Bretonnerie_16.jpg",
-        "image_source": "https://upload.wikimedia.org/wikipedia/commons/3/33/Rue_Sainte-Croix_de_la_Bretonnerie_16.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "credit": "VVVCFFrance · CC BY-SA 4.0"
-      }
-    ]
-  },
-  "rom-smeraldo": {
-    "photos": [
-      {
-        "src": "images/galleries/rom-smeraldo/1.jpg",
-        "alt": "Giordano Bruno in Campo de' fiori",
-        "source": "https://commons.wikimedia.org/wiki/File:Giordano_Bruno_in_Campo_de%27_fiori.jpg",
-        "image_source": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Giordano_Bruno_in_Campo_de%27_fiori.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "credit": "Livioandronico2013 · CC BY-SA 4.0"
-      },
-      {
-        "src": "images/galleries/rom-smeraldo/2.jpg",
-        "alt": "Piazza Campo dei Fiori, Rome: the market with the statue to Giordano Bruno in the background.",
-        "source": "https://commons.wikimedia.org/wiki/File:Campo_dei_Fiori.jpg",
-        "image_source": "https://upload.wikimedia.org/wikipedia/commons/3/37/Campo_dei_Fiori.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "credit": "Myrabella · CC BY-SA 3.0"
-      },
-      {
-        "src": "images/galleries/rom-smeraldo/3.jpg",
-        "alt": "Campo de' Fiori in Rome, Lazio, Italy",
-        "source": "https://commons.wikimedia.org/wiki/File:Campo_de%27_Fiori_(2).jpg",
-        "image_source": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Campo_de%27_Fiori_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "credit": "Krzysztof Golik · CC BY-SA 4.0"
-      }
-    ]
-  },
-  "flo-perseo": {
-    "photos": [
-      {
-        "src": "images/galleries/flo-perseo/1.jpg",
-        "alt": "Via de' Cerretani Firenze",
-        "source": "https://commons.wikimedia.org/wiki/File:Via_de%27_Cerretani_001.JPG",
-        "image_source": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Via_de%27_Cerretani_001.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "credit": "Freepenguin · CC BY-SA 3.0"
-      },
-      {
-        "src": "images/galleries/flo-perseo/2.jpg",
-        "alt": "Via de' Cerretani Firenze",
-        "source": "https://commons.wikimedia.org/wiki/File:Via_de%27_Cerretani_06.JPG",
-        "image_source": "https://upload.wikimedia.org/wikipedia/commons/1/17/Via_de%27_Cerretani_06.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "credit": "Freepenguin · CC BY-SA 3.0"
-      },
-      {
-        "src": "images/galleries/flo-perseo/3.jpg",
-        "alt": "Via de' Cerretani Firenze",
-        "source": "https://commons.wikimedia.org/wiki/File:Via_de%27_Cerretani_003.JPG",
-        "image_source": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Via_de%27_Cerretani_003.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "credit": "Freepenguin · CC BY-SA 3.0"
-      }
-    ]
-  },
-  "rom-santachiara": {
-    "photos": [
-      {
-        "src": "images/galleries/rom-santachiara/1.jpg",
-        "alt": "Rome, Italy.",
-        "source": "https://commons.wikimedia.org/wiki/File:Roma,_Piazza_della_Minerva.jpg",
-        "image_source": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Roma%2C_Piazza_della_Minerva.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "credit": "Palickap · CC BY-SA 4.0"
-      },
-      {
-        "src": "images/galleries/rom-santachiara/2.jpg",
-        "alt": "Piazza della Minerva",
-        "source": "https://commons.wikimedia.org/wiki/File:Piazza_della_Minerva_-_panoramio_(1).jpg",
-        "image_source": "https://upload.wikimedia.org/wikipedia/commons/4/48/Piazza_della_Minerva_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "credit": "Vlad Lesnov · CC BY 3.0"
-      },
-      {
-        "src": "images/galleries/rom-santachiara/3.jpg",
-        "alt": "Piazza della Minerva -square in Rome.",
-        "source": "https://commons.wikimedia.org/wiki/File:Piazza_della_Minerva_Rome_20141021.jpg",
-        "image_source": "https://upload.wikimedia.org/wikipedia/commons/3/31/Piazza_della_Minerva_Rome_20141021.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "credit": "Estormiz · CC0"
+        "src": "images/galleries/rom-bloom/1.jpg",
+        "alt": "via San Gregorio VII",
+        "source": "https://commons.wikimedia.org/wiki/File:Via_San_Gregorio_VII_(Roma).jpg",
+        "image_source": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Via_San_Gregorio_VII_%28Roma%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "credit": "Ruthven · CC0"
       }
     ]
   }
